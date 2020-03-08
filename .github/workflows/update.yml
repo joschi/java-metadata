@@ -1,0 +1,29 @@
+name: Update release metadata
+on:
+  push:
+    branches:
+    - master
+  schedule:
+    - cron: '0 */6 * * *'
+jobs:
+  update:
+    runs-on: 'ubuntu-latest'
+    steps:
+    - uses: actions/checkout@v2
+    - uses: mstksg/get-package@v1
+      with:
+        apt-get: jq jo perl curl
+    - name: Run update script
+      env:
+        GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: ./bin/update.bash
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add docs/
+        test -z $(git status -s) || git commit -m "Update release metadata"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}

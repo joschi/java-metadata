@@ -1,0 +1,521 @@
+openapi: "3.0.0"
+info:
+  description: "Java Metadata API"
+  version: "1.0.0"
+  title: "Java Metadata API"
+  contact:
+    name: "GitHub"
+    url: "https://github.com/joschi/java-metadata/issues"
+servers:
+  - url: "https://joschi.github.io/java-metadata/"
+tags:
+- name: "checksum"
+  description: "Checksum files for JRE/JDK download artifacts"
+- name: "metadata"
+  description: "Meta data of JRE/JDK download artifacts"
+components:
+  schemas:
+    hashAlgorithms:
+      type: string
+      enum:
+        - "md5"
+        - "sha1"
+        - "sha256"
+        - "sha512"
+    vendors:
+      type: string
+      enum:
+        - "adoptopenjdk"
+        - "corretto"
+        - "graalvm"
+        - "liberica"
+        - "sapmachine"
+        - "zulu"
+    operatingSystems:
+      type: string
+      enum:
+        - "linux"
+        - "macosx"
+        - "windows"
+        - "solaris"
+        - "aix"
+    architectures:
+      type: string
+      enum:
+        - "x86_64"
+        - "i686"
+        - "aarch64"
+        - "arm32"
+        - "arm32-vfp-hflt"
+        - "ppc64"
+        - "ppc64le"
+        - "s390"
+        - "s390x"
+        - "sparcv9"
+    variants:
+      type: string
+      enum:
+        - "jre"
+        - "jdk"
+    metadata:
+      type: "object"
+      properties:
+        vendor:
+          $ref: '#/components/schemas/vendors'
+        filename:
+          type: string
+        file_type:
+          type: string
+        release_type:
+          type: string
+          enum:
+            - "ea"
+            - "ga"
+        version:
+          type: string
+        java_version:
+          type: string
+        jvm_impl:
+          type: string
+          enum:
+            - "hotspot"
+            - "openj9"
+        os:
+          $ref: '#/components/schemas/operatingSystems'
+        architecture:
+          $ref: '#/components/schemas/architectures'
+        variant:
+          type: string
+          enum:
+            - "jre"
+            - "jdk"
+        features:
+          type: "array"
+          items:
+            type: string
+        url:
+          type: string
+          format: uri
+        md5:
+          type: string
+          pattern: '^[a-fA-F0-9]{32}$'
+        md5_file:
+          type: string
+        sha1:
+          type: string
+          pattern: '^[a-fA-F0-9]{40}$'
+        sha1_file:
+          type: string
+        sha256:
+          type: string
+          pattern: '^[a-fA-F0-9]{64}$'
+        sha256_file:
+          type: string
+        sha512:
+          type: string
+          pattern: '^[a-fA-F0-9]{128}$'
+        sha512_file:
+          type: string
+        size:
+          type: integer
+          format: int32
+      example:
+        {
+          "vendor": "adoptopenjdk",
+          "filename": "OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz",
+          "release_type": "ga",
+          "version": "14.0.0+36.1",
+          "java_version": "14+36",
+          "jvm_impl": "hotspot",
+          "os": "linux",
+          "architecture": "x86_64",
+          "file_type": "tar.gz",
+          "variant": "jdk",
+          "features": [],
+          "url": "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14%2B36/OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz",
+          "md5": "320a1f6dbff0a37f2fdac5ddd34a9742",
+          "md5_file": "OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz.md5",
+          "sha1": "bf76d736f4b738e3e16ea747134a5bda4cf3b1e9",
+          "sha1_file": "OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz.sha1",
+          "sha256": "6c06853332585ab58834d9e8a02774b388e6e062ef6c4084b4f058c67f2e81b5",
+          "sha256_file": "OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz.sha256",
+          "sha512": "1851cf24db0b48007a2373d8596cf4b8d832d10a2f41316799c4af2bd37cbab4b211e7913d431b59f6bc212957cdbae401c6bcd389635c248c939433cef63516",
+          "sha512_file": "OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz.sha512",
+          "size": 216382990
+        }
+    response:
+      type: array
+      items:
+        $ref: '#/components/schemas/metadata'
+      example:
+        [
+          {
+            "vendor": "adoptopenjdk",
+            "filename": "OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz",
+            "release_type": "ga",
+            "version": "14.0.0+36.1",
+            "java_version": "14+36",
+            "jvm_impl": "hotspot",
+            "os": "linux",
+            "architecture": "x86_64",
+            "file_type": "tar.gz",
+            "variant": "jdk",
+            "features": [],
+            "url": "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14%2B36/OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz",
+            "md5": "320a1f6dbff0a37f2fdac5ddd34a9742",
+            "md5_file": "OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz.md5",
+            "sha1": "bf76d736f4b738e3e16ea747134a5bda4cf3b1e9",
+            "sha1_file": "OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz.sha1",
+            "sha256": "6c06853332585ab58834d9e8a02774b388e6e062ef6c4084b4f058c67f2e81b5",
+            "sha256_file": "OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz.sha256",
+            "sha512": "1851cf24db0b48007a2373d8596cf4b8d832d10a2f41316799c4af2bd37cbab4b211e7913d431b59f6bc212957cdbae401c6bcd389635c248c939433cef63516",
+            "sha512_file": "OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz.sha512",
+            "size": 216382990
+          }
+        ]
+paths:
+  "/checksums/{vendor}/{artifact_name}.{hash_algorithm}":
+    get:
+      description: "Get the checksum file for a download artifact"
+      tags:
+      - "checksum"
+      operationId: "getChecksum"
+      parameters:
+        - name: "vendor"
+          in: path
+          description: "The JDK/JRE vendor"
+          required: true
+          schema:
+            $ref: '#/components/schemas/vendors'
+        - name: "artifact_name"
+          in: path
+          description: "The (file) name of the download artifact"
+          required: true
+          schema:
+            type: string
+        - name: "hash_algorithm"
+          in: path
+          description: "The hash algorithm"
+          required: true
+          schema:
+            $ref: '#/components/schemas/hashAlgorithms'
+      responses:
+        200:
+          description: "Checksum file for the download artifact"
+          content:
+            "text/plain":
+              schema:
+                type: string
+              example: >-
+                6c06853332585ab58834d9e8a02774b388e6e062ef6c4084b4f058c67f2e81b5  OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz
+        404:
+          description: "Invalid input"
+  "/metadata/all.json":
+    get:
+      description: "Get the meta data for all JDK/JREs"
+      tags:
+      - "metadata"
+      operationId: "getAllMetaData"
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+  "/metadata/vendor/{vendor}/{artifact_name}.json":
+    get:
+      description: "Get the meta data for a specific download artifact a given vendor"
+      tags:
+      - "metadata"
+      operationId: "GetVendorArtifact"
+      parameters:
+        - name: "vendor"
+          in: path
+          description: "The JDK/JRE vendor"
+          required: true
+          schema:
+            $ref: '#/components/schemas/vendors'
+        - name: artifact_name
+          in: path
+          description: "The (file) name of the download artifact"
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/metadata'
+        404:
+          description: "Invalid input"
+  "/metadata/vendor/{vendor}/all.json":
+    get:
+      description: "Get the meta data for all JDK/JREs of a given vendor"
+      tags:
+      - "metadata"
+      operationId: "GetAllVendor"
+      parameters:
+        - name: "vendor"
+          in: path
+          description: "The JDK/JRE vendor"
+          required: true
+          schema:
+            $ref: '#/components/schemas/vendors'
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Invalid input"
+  "/metadata/vendor/{vendor}/arch/{architecture}.json":
+    get:
+      description: "Get the meta data for the JDK/JREs of a given vendor and machine architecture"
+      tags:
+      - "metadata"
+      operationId: "GetVendorArchitecture"
+      parameters:
+        - name: "vendor"
+          in: path
+          description: "The JDK/JRE vendor"
+          required: true
+          schema:
+            $ref: '#/components/schemas/vendors'
+        - name: "architecture"
+          in: path
+          description: "The machine architecture"
+          required: true
+          schema:
+            $ref: '#/components/schemas/architectures'
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Invalid input"
+  "/metadata/vendor/{vendor}/arch/{architecture}/os/{operating_system}.json":
+    get:
+      description: "Get the meta data for the JDK/JREs of a given vendor, machine architecture, and operating system"
+      tags:
+      - "metadata"
+      operationId: "GetVendorArchitectureOs"
+      parameters:
+        - name: "vendor"
+          in: path
+          description: "The JDK/JRE vendor"
+          required: true
+          schema:
+            $ref: '#/components/schemas/vendors'
+        - name: "architecture"
+          in: path
+          description: "The machine architecture"
+          required: true
+          schema:
+            $ref: '#/components/schemas/architectures'
+        - name: "operating_system"
+          in: path
+          description: "The operating system"
+          required: true
+          schema:
+            $ref: '#/components/schemas/operatingSystems'
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Invalid input"
+  "/metadata/{variant}/all.json":
+    get:
+      description: "Get the meta data for a given variant"
+      tags:
+      - "metadata"
+      operationId: "GetAllVariant"
+      parameters:
+        - name: variant
+          in: path
+          description: "The variant (JDK or JRE)"
+          required: true
+          schema:
+            $ref: '#/components/schemas/variants'
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Invalid input"
+  "/metadata/{variant}/arch/{architecture}.json":
+    get:
+      description: "Get the meta data for a given variant and machine architecture"
+      tags:
+      - "metadata"
+      operationId: "GetVariantArchitecture"
+      parameters:
+        - name: variant
+          in: path
+          description: "The variant (JDK or JRE)"
+          required: true
+          schema:
+            $ref: '#/components/schemas/variants'
+        - name: "architecture"
+          in: path
+          description: "The machine architecture"
+          required: true
+          schema:
+            $ref: '#/components/schemas/architectures'
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Invalid input"
+  "/metadata/{variant}/arch/{architecture}/os/{operating_system}.json":
+    get:
+      description: "Get the meta data for a given variant, machine architecture, and operating system"
+      tags:
+      - "metadata"
+      operationId: "GetVariantArchitectureOs"
+      parameters:
+        - name: variant
+          in: path
+          description: "The variant (JDK or JRE)"
+          required: true
+          schema:
+            $ref: '#/components/schemas/variants'
+        - name: "architecture"
+          in: path
+          description: "The machine architecture"
+          required: true
+          schema:
+            $ref: '#/components/schemas/architectures'
+        - name: "operating_system"
+          in: path
+          description: "The operating system"
+          required: true
+          schema:
+            $ref: '#/components/schemas/operatingSystems'
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Invalid input"
+  "/metadata/arch/{architecture}.json":
+    get:
+      description: "Get the meta data for a given machine architecture"
+      tags:
+      - "metadata"
+      operationId: "GetArchitecture"
+      parameters:
+        - name: "architecture"
+          in: path
+          description: "The machine architecture"
+          required: true
+          schema:
+            $ref: '#/components/schemas/architectures'
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Invalid input"
+  "/metadata/arch/{architecture}/os/{operating_system}.json":
+    get:
+      description: "Get the meta data for a given machine architecture and operating system"
+      tags:
+      - "metadata"
+      operationId: "GetArchitectureOs"
+      parameters:
+        - name: "architecture"
+          in: path
+          description: "The machine architecture"
+          required: true
+          schema:
+            $ref: '#/components/schemas/architectures'
+        - name: "operating_system"
+          in: path
+          description: "The operating system"
+          required: true
+          schema:
+            $ref: '#/components/schemas/operatingSystems'
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Invalid input"
+  "/metadata/os/{operating_system}.json":
+    get:
+      description: "Get the meta data for a given operating system"
+      tags:
+      - "metadata"
+      operationId: "GetOperatingSystem"
+      parameters:
+        - name: "operating_system"
+          in: path
+          description: "The operating system"
+          required: true
+          schema:
+            $ref: '#/components/schemas/operatingSystems'
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Invalid input"
+  "/metadata/os/{operating_system}/arch/{architecture}.json":
+    get:
+      description: "Get the meta data for a given operating system and machine architecture"
+      tags:
+      - "metadata"
+      operationId: "GetOsArchitecture"
+      parameters:
+        - name: "operating_system"
+          in: path
+          description: "The operating system"
+          required: true
+          schema:
+            $ref: '#/components/schemas/operatingSystems'
+        - name: "architecture"
+          in: path
+          description: "The machine architecture"
+          required: true
+          schema:
+            $ref: '#/components/schemas/architectures'
+      responses:
+        200:
+          description: "Meta data about download artifact"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Invalid input"

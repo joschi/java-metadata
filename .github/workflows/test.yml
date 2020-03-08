@@ -1,0 +1,20 @@
+name: Test
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+jobs:
+  test:
+    runs-on: 'ubuntu-latest'
+    steps:
+    - uses: actions/checkout@v2
+    - uses: mstksg/get-package@v1
+      with:
+        apt-get: shellcheck
+    - name: Run ShellCheck
+      run: |
+        shellcheck -V
+        shellcheck -x bin/*.bash
