@@ -182,5 +182,28 @@
     "variant": "jdk",
     "vendor": "corretto",
     "version": "8.252.09.1"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "amazon-corretto-8.252.09.2-windows-x64-jdk.zip",
+    "java_version": "8.252.09.2",
+    "jvm_impl": "hotspot",
+    "md5": "4bfd0ac81bb41f2be35cce676caacab0",
+    "md5_file": "amazon-corretto-8.252.09.2-windows-x64-jdk.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "fad18186ef5c67f16c3cbc97ce9b40ea2884e666",
+    "sha1_file": "amazon-corretto-8.252.09.2-windows-x64-jdk.zip.sha1",
+    "sha256": "78a81b2c8814a7f56ebabcdb8e037daf00634cf0bfc66a1e86587897ee30994b",
+    "sha256_file": "amazon-corretto-8.252.09.2-windows-x64-jdk.zip.sha256",
+    "sha512": "e28a463aa47612ded8745894444c06d7325689549dbb42970f5e4e27a2999f8d8e9f95cff6f05226ce39d394ce2942080ed0625617dff667342403c8d1483a46",
+    "sha512_file": "amazon-corretto-8.252.09.2-windows-x64-jdk.zip.sha512",
+    "size": 120169182,
+    "url": "https://corretto.aws/downloads/resources/8.252.09.2/amazon-corretto-8.252.09.2-windows-x64-jdk.zip",
+    "variant": "jdk",
+    "vendor": "corretto",
+    "version": "8.252.09.2"
   }
 ]
