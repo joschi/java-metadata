@@ -90,7 +90,7 @@ components:
         architecture:
           $ref: '#/components/schemas/architectures'
         image_type:
-          $ref: '#/components/schemas/image_types'
+          $ref: '#/components/schemas/imageTypes'
         features:
           type: "array"
           items:
