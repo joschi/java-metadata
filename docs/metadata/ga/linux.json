@@ -12563,7 +12563,7 @@
     "size": 337861097,
     "url": "https://github.com/oracle/graal/releases/download/vm-19.0.0/graalvm-ce-linux-amd64-19.0.0.tar.gz",
     "vendor": "graalvm",
-    "version": "19.0.0.tar"
+    "version": "19.0.0"
   },
   {
     "architecture": "x86_64",
@@ -12586,7 +12586,7 @@
     "size": 337146838,
     "url": "https://github.com/oracle/graal/releases/download/vm-19.0.2/graalvm-ce-linux-amd64-19.0.2.tar.gz",
     "vendor": "graalvm",
-    "version": "19.0.2.tar"
+    "version": "19.0.2"
   },
   {
     "architecture": "x86_64",
@@ -12609,7 +12609,7 @@
     "size": 322463478,
     "url": "https://github.com/oracle/graal/releases/download/vm-19.1.0/graalvm-ce-linux-amd64-19.1.0.tar.gz",
     "vendor": "graalvm",
-    "version": "19.1.0.tar"
+    "version": "19.1.0"
   },
   {
     "architecture": "x86_64",
@@ -12632,7 +12632,7 @@
     "size": 322434905,
     "url": "https://github.com/oracle/graal/releases/download/vm-19.1.1/graalvm-ce-linux-amd64-19.1.1.tar.gz",
     "vendor": "graalvm",
-    "version": "19.1.1.tar"
+    "version": "19.1.1"
   },
   {
     "architecture": "x86_64",
@@ -12678,7 +12678,7 @@
     "size": 355172564,
     "url": "https://github.com/oracle/graal/releases/download/vm-19.2.0.1/graalvm-ce-linux-amd64-19.2.0.1.tar.gz",
     "vendor": "graalvm",
-    "version": "19.2.0.1.tar"
+    "version": "19.2.0.1"
   },
   {
     "architecture": "x86_64",
@@ -12701,7 +12701,7 @@
     "size": 355160460,
     "url": "https://github.com/oracle/graal/releases/download/vm-19.2.0/graalvm-ce-linux-amd64-19.2.0.tar.gz",
     "vendor": "graalvm",
-    "version": "19.2.0.tar"
+    "version": "19.2.0"
   },
   {
     "architecture": "x86_64",
@@ -12724,7 +12724,7 @@
     "size": 356840837,
     "url": "https://github.com/oracle/graal/releases/download/vm-19.2.1/graalvm-ce-linux-amd64-19.2.1.tar.gz",
     "vendor": "graalvm",
-    "version": "19.2.1.tar"
+    "version": "19.2.1"
   },
   {
     "architecture": "x86_64",
