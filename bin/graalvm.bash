@@ -35,7 +35,7 @@ function download {
 		echo "Skipping ${filename}"
 	else
 		# shellcheck disable=SC2016
-		local regex='s/^graalvm-ce-java([0-9]{1,2})-(linux|darwin|windows)-(aarch64|amd64)-([0-9+.]{2,})\.(.+)$/JAVA_VERSION="$1" OS="$2" ARCH="$3" VERSION="$4" EXT="$5"/g'
+		local regex='s/^graalvm-ce-java([0-9]{1,2})-(linux|darwin|windows)-(aarch64|amd64)-([0-9+.]{2,})\.(zip|tar\.gz)$/JAVA_VERSION="$1" OS="$2" ARCH="$3" VERSION="$4" EXT="$5"/g'
 
 		local JAVA_VERSION=""
 		local OS=""

@@ -40,11 +40,11 @@ function download {
 		then
 			release_type="ea"
 			# shellcheck disable=SC2016
-			regex='s/^graalvm-ce-([0-9+.]{2,}-rc[0-9]+)-(linux|macos)-amd64\.(.+)$/OS="$2" VERSION="$1" EXT="$3"/g'
+			regex='s/^graalvm-ce-([0-9+.]{2,}-rc[0-9]+)-(linux|macos)-amd64\.(zip|tar\.gz)$/OS="$2" VERSION="$1" EXT="$3"/g'
 		else
 			release_type="ga"
 			# shellcheck disable=SC2016
-			regex='s/^graalvm-ce-(linux|darwin|windows)-(aarch64|amd64)-([0-9+.]{2,}[^.]*)\.(.+)$/OS="$1" ARCH="$2" VERSION="$3" EXT="$4"/g'
+			regex='s/^graalvm-ce-(linux|darwin|windows)-(aarch64|amd64)-([0-9+.]{2,}[^.]*)\.(zip|tar\.gz)$/OS="$1" ARCH="$2" VERSION="$3" EXT="$4"/g'
 		fi
 
 		local OS=""
