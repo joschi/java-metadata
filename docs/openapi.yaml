@@ -67,6 +67,7 @@ components:
       enum:
         - "hotspot"
         - "openj9"
+        - "graalvm"
     metadata:
       type: "object"
       properties:

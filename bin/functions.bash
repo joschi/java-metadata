@@ -169,7 +169,7 @@ function aggregate_metadata {
 	supported_os=$(find_supported_os "${all_json}")
 	local supported_image_type='jre jdk'
 	local release_types='ea ga'
-	local jvm_impls='hotspot openj9'
+	local jvm_impls='hotspot openj9 graalvm'
 	local vendors='adoptopenjdk corretto graalvm liberica sapmachine zulu'
 
 
