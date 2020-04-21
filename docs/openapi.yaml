@@ -275,7 +275,7 @@ paths:
                 $ref: '#/components/schemas/response'
         404:
           description: "Invalid input"
-  "/metadata/{release_type}/{os}/{arch}/{image_type}/{jvm_impl}/{vendor}.json"
+  "/metadata/{release_type}/{os}/{arch}/{image_type}/{jvm_impl}/{vendor}.json":
     get:
       description: "List of information about Java distributions that match the current query"
       tags:
