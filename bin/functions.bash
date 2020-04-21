@@ -87,8 +87,8 @@ function metadata_json {
 		vendor="${1}" \
 		filename="${2}" \
 		release_type="${3:-"ga"}" \
-		version="${4}" \
-		java_version="${5}" \
+		version=\""${4}"\" \
+		java_version=\""${5}"\" \
 		jvm_impl="${6:-"hotspot"}" \
 		os="${7}" \
 		architecture="${8}" \
@@ -96,13 +96,13 @@ function metadata_json {
 		image_type="${10}" \
 		features="$(jo -a "${features[@]}" < /dev/null)" \
 		url="${12}" \
-		md5="${13}" \
+		md5=\""${13}"\" \
 		md5_file="${2}.md5" \
-		sha1="${14}" \
+		sha1=\""${14}\"" \
 		sha1_file="${2}.sha1" \
-		sha256="${15}" \
+		sha256=\""${15}"\" \
 		sha256_file="${2}.sha256" \
-		sha512="${16}" \
+		sha512=\""${16}"\" \
 		sha512_file="${2}.sha512" \
 		size="${17}"
 }
