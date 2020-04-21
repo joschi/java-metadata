@@ -235,7 +235,7 @@
     "file_type": "msi",
     "filename": "sapmachine-jdk-14_windows-x64_bin.msi",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "645cea05ac2d25167d74adbc9a57b68e",
     "md5_file": "sapmachine-jdk-14_windows-x64_bin.msi.md5",
@@ -250,7 +250,7 @@
     "size": 196562944,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_windows-x64_bin.msi",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -258,7 +258,7 @@
     "file_type": "zip",
     "filename": "sapmachine-jdk-14_windows-x64_bin.zip",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "3156a19cb2a4bacbfb9882c80022c51e",
     "md5_file": "sapmachine-jdk-14_windows-x64_bin.zip.md5",
@@ -273,6 +273,6 @@
     "size": 200945464,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_windows-x64_bin.zip",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   }
 ]

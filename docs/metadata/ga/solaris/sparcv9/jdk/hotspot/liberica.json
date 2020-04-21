@@ -343,7 +343,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk12-solaris-sparcv9-lite.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "f4f572a7ace262e837da10c698a7c7af",
     "md5_file": "bellsoft-jdk12-solaris-sparcv9-lite.tar.gz.md5",
@@ -358,7 +358,7 @@
     "size": 85779168,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-solaris-sparcv9-lite.tar.gz",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "sparcv9",
@@ -366,7 +366,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk12-solaris-sparcv9.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "20d5dc6d6a8cd822f8e075142e35bda4",
     "md5_file": "bellsoft-jdk12-solaris-sparcv9.tar.gz.md5",
@@ -381,7 +381,7 @@
     "size": 215765444,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-solaris-sparcv9.tar.gz",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "sparcv9",

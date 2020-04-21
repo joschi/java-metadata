@@ -5,7 +5,7 @@
     "file_type": "tar.gz",
     "filename": "zulu13.0.3-ea-jdk13-linux_i686.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "135bc8ead8cf76f79a1340aa40e71a50",
     "md5_file": "zulu13.0.3-ea-jdk13-linux_i686.tar.gz.md5",

@@ -10587,7 +10587,7 @@
     "file_type": "tar.gz",
     "filename": "zulu11.1+23-ea-jdk11-linux_x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "hotspot",
     "md5": "9e5a36f2548c9791b225a21f01c3b8ea",
     "md5_file": "zulu11.1+23-ea-jdk11-linux_x64.tar.gz.md5",
@@ -10610,7 +10610,7 @@
     "file_type": "zip",
     "filename": "zulu11.1+23-ea-jdk11-macosx_x64.zip",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "hotspot",
     "md5": "83419e64df9b37d831b463ec7e3189c1",
     "md5_file": "zulu11.1+23-ea-jdk11-macosx_x64.zip.md5",
@@ -10633,7 +10633,7 @@
     "file_type": "zip",
     "filename": "zulu11.1+23-ea-jdk11-win_x64.zip",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "hotspot",
     "md5": "e423cdb304bff7de6bbecececb31021d",
     "md5_file": "zulu11.1+23-ea-jdk11-win_x64.zip.md5",
@@ -10725,7 +10725,7 @@
     "file_type": "tar.gz",
     "filename": "zulu12-ea-jdk12-linux_x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "59b37f99a844c85da87f9999124c5c57",
     "md5_file": "zulu12-ea-jdk12-linux_x64.tar.gz.md5",
@@ -10740,7 +10740,7 @@
     "size": 207723788,
     "url": "https://static.azul.com/zulu/bin/zulu12-ea-jdk12-linux_x64.tar.gz",
     "vendor": "zulu",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -10748,7 +10748,7 @@
     "file_type": "zip",
     "filename": "zulu12-ea-jdk12-macosx_x64.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "9c5f10bd3165b8c34cae97c26922eed0",
     "md5_file": "zulu12-ea-jdk12-macosx_x64.zip.md5",
@@ -10763,7 +10763,7 @@
     "size": 203529768,
     "url": "https://static.azul.com/zulu/bin/zulu12-ea-jdk12-macosx_x64.zip",
     "vendor": "zulu",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -10771,7 +10771,7 @@
     "file_type": "zip",
     "filename": "zulu12-ea-jdk12-win_x64.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "56e17cd76a96ea39548125aa3c5f8d75",
     "md5_file": "zulu12-ea-jdk12-win_x64.zip.md5",
@@ -10786,7 +10786,7 @@
     "size": 204251626,
     "url": "https://static.azul.com/zulu/bin/zulu12-ea-jdk12-win_x64.zip",
     "vendor": "zulu",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -10809,7 +10809,7 @@
     "size": 207723788,
     "url": "https://static.azul.com/zulu/bin/zulu12-ea-jdk12.0.0-ea-linux_x64.tar.gz",
     "vendor": "zulu",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -10832,7 +10832,7 @@
     "size": 203529768,
     "url": "https://static.azul.com/zulu/bin/zulu12-ea-jdk12.0.0-ea-macosx_x64.zip",
     "vendor": "zulu",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -10855,7 +10855,7 @@
     "size": 204251626,
     "url": "https://static.azul.com/zulu/bin/zulu12-ea-jdk12.0.0-ea-win_x64.zip",
     "vendor": "zulu",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "i686",
@@ -10863,7 +10863,7 @@
     "file_type": "tar.gz",
     "filename": "zulu13.0.3-ea-jdk13-linux_i686.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "135bc8ead8cf76f79a1340aa40e71a50",
     "md5_file": "zulu13.0.3-ea-jdk13-linux_i686.tar.gz.md5",
@@ -10886,7 +10886,7 @@
     "file_type": "tar.gz",
     "filename": "zulu13.0.3-ea-jdk13-linux_x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "cacd3de6575c64b6b506e57012217603",
     "md5_file": "zulu13.0.3-ea-jdk13-linux_x64.tar.gz.md5",
@@ -10909,7 +10909,7 @@
     "file_type": "zip",
     "filename": "zulu13.0.3-ea-jdk13-macosx_x64.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "0a7195cee09126f3d65f7df82e90eb03",
     "md5_file": "zulu13.0.3-ea-jdk13-macosx_x64.zip.md5",
@@ -10932,7 +10932,7 @@
     "file_type": "zip",
     "filename": "zulu13.0.3-ea-jdk13-win_i686.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "44d4fe44f4d6eae1683e23c6390bdbee",
     "md5_file": "zulu13.0.3-ea-jdk13-win_i686.zip.md5",
@@ -10955,7 +10955,7 @@
     "file_type": "zip",
     "filename": "zulu13.0.3-ea-jdk13-win_x64.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "57adf94dfd92d9cd337a6d934a4572bc",
     "md5_file": "zulu13.0.3-ea-jdk13-win_x64.zip.md5",

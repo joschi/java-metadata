@@ -4007,7 +4007,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jdk-14_linux-ppc64_bin.tar.gz",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "f0c1c2ff45a0001d490f1eb07bbfe3ec",
     "md5_file": "sapmachine-jdk-14_linux-ppc64_bin.tar.gz.md5",
@@ -4022,7 +4022,7 @@
     "size": 187443912,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_linux-ppc64_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "ppc64le",
@@ -4030,7 +4030,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jdk-14_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "941629e759b97aea9f049ceb6e4825b2",
     "md5_file": "sapmachine-jdk-14_linux-ppc64le_bin.tar.gz.md5",
@@ -4045,7 +4045,7 @@
     "size": 186208783,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -4053,7 +4053,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jdk-14_linux-x64_bin.tar.gz",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "90c0411e0c05e30402d6496eb9cedcc5",
     "md5_file": "sapmachine-jdk-14_linux-x64_bin.tar.gz.md5",
@@ -4068,7 +4068,7 @@
     "size": 205157783,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -4076,7 +4076,7 @@
     "file_type": "dmg",
     "filename": "sapmachine-jdk-14_osx-x64_bin.dmg",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "78c159eadeb68d6d9147eaca13c4d8cf",
     "md5_file": "sapmachine-jdk-14_osx-x64_bin.dmg.md5",
@@ -4091,7 +4091,7 @@
     "size": 206863534,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_osx-x64_bin.dmg",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -4099,7 +4099,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jdk-14_osx-x64_bin.tar.gz",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "18e41f7fafce141e48cd240d6e37c74e",
     "md5_file": "sapmachine-jdk-14_osx-x64_bin.tar.gz.md5",
@@ -4114,7 +4114,7 @@
     "size": 196690978,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_osx-x64_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -4122,7 +4122,7 @@
     "file_type": "msi",
     "filename": "sapmachine-jdk-14_windows-x64_bin.msi",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "645cea05ac2d25167d74adbc9a57b68e",
     "md5_file": "sapmachine-jdk-14_windows-x64_bin.msi.md5",
@@ -4137,7 +4137,7 @@
     "size": 196562944,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_windows-x64_bin.msi",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -4145,7 +4145,7 @@
     "file_type": "zip",
     "filename": "sapmachine-jdk-14_windows-x64_bin.zip",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "3156a19cb2a4bacbfb9882c80022c51e",
     "md5_file": "sapmachine-jdk-14_windows-x64_bin.zip.md5",
@@ -4160,7 +4160,7 @@
     "size": 200945464,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_windows-x64_bin.zip",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "ppc64",
@@ -10286,7 +10286,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jre-14_linux-ppc64_bin.tar.gz",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "5ecdcd86e8a6329020c4d2c0ce6b45ab",
     "md5_file": "sapmachine-jre-14_linux-ppc64_bin.tar.gz.md5",
@@ -10301,7 +10301,7 @@
     "size": 50765813,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_linux-ppc64_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "ppc64le",
@@ -10309,7 +10309,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jre-14_linux-ppc64le_bin.tar.gz",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "fcb2a34a290744e2bcd3739f6b3e46a7",
     "md5_file": "sapmachine-jre-14_linux-ppc64le_bin.tar.gz.md5",
@@ -10324,7 +10324,7 @@
     "size": 50175313,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -10332,7 +10332,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jre-14_linux-x64_bin.tar.gz",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "1701f52c713aba15450142f1e38277bc",
     "md5_file": "sapmachine-jre-14_linux-x64_bin.tar.gz.md5",
@@ -10347,7 +10347,7 @@
     "size": 54772532,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -10355,7 +10355,7 @@
     "file_type": "dmg",
     "filename": "sapmachine-jre-14_osx-x64_bin.dmg",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "4b661a340bcb7bfc61d06d4dd7fd6de4",
     "md5_file": "sapmachine-jre-14_osx-x64_bin.dmg.md5",
@@ -10370,7 +10370,7 @@
     "size": 57008181,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_osx-x64_bin.dmg",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -10378,7 +10378,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jre-14_osx-x64_bin.tar.gz",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "61bccc2f1d750cb2e51d5b79867eb281",
     "md5_file": "sapmachine-jre-14_osx-x64_bin.tar.gz.md5",
@@ -10393,7 +10393,7 @@
     "size": 50002437,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_osx-x64_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -10401,7 +10401,7 @@
     "file_type": "msi",
     "filename": "sapmachine-jre-14_windows-x64_bin.msi",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "2b8a83c6066d8ea503339c8cd2380b0c",
     "md5_file": "sapmachine-jre-14_windows-x64_bin.msi.md5",
@@ -10416,7 +10416,7 @@
     "size": 50884608,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_windows-x64_bin.msi",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -10424,7 +10424,7 @@
     "file_type": "zip",
     "filename": "sapmachine-jre-14_windows-x64_bin.zip",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "a69ca70e789ef6e7250859de538863e3",
     "md5_file": "sapmachine-jre-14_windows-x64_bin.zip.md5",
@@ -10439,7 +10439,7 @@
     "size": 50844973,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_windows-x64_bin.zip",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "ppc64",

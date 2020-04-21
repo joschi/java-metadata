@@ -1175,7 +1175,7 @@
     "file_type": "dmg",
     "filename": "bellsoft-jdk12-macos-amd64-lite.dmg",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "975f2b44d5f6b831ea081c065df7f618",
     "md5_file": "bellsoft-jdk12-macos-amd64-lite.dmg.md5",
@@ -1190,7 +1190,7 @@
     "size": 73691254,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-macos-amd64-lite.dmg",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1200,7 +1200,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk12-macos-amd64-lite.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "4c600ac480ff1d263cb6efcf1aadeb9b",
     "md5_file": "bellsoft-jdk12-macos-amd64-lite.zip.md5",
@@ -1215,7 +1215,7 @@
     "size": 73519602,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-macos-amd64-lite.zip",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1223,7 +1223,7 @@
     "file_type": "dmg",
     "filename": "bellsoft-jdk12-macos-amd64.dmg",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "671b50841154e25673d080aa7d40da61",
     "md5_file": "bellsoft-jdk12-macos-amd64.dmg.md5",
@@ -1238,7 +1238,7 @@
     "size": 276805838,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-macos-amd64.dmg",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1246,7 +1246,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk12-macos-amd64.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "91130632a7391362e08ed4860dfc05f6",
     "md5_file": "bellsoft-jdk12-macos-amd64.zip.md5",
@@ -1261,7 +1261,7 @@
     "size": 282634642,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-macos-amd64.zip",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1511,7 +1511,7 @@
     "file_type": "dmg",
     "filename": "bellsoft-jdk13-macos-amd64-lite.dmg",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "87eab8f753620207ae8b6197aecba3ab",
     "md5_file": "bellsoft-jdk13-macos-amd64-lite.dmg.md5",
@@ -1526,7 +1526,7 @@
     "size": 75464168,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64-lite.dmg",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -1536,7 +1536,7 @@
     "file_type": "pkg",
     "filename": "bellsoft-jdk13-macos-amd64-lite.pkg",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "6b0f1fc9117893a43c5c4c56d70479b3",
     "md5_file": "bellsoft-jdk13-macos-amd64-lite.pkg.md5",
@@ -1551,7 +1551,7 @@
     "size": 75337497,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64-lite.pkg",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -1561,7 +1561,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk13-macos-amd64-lite.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "3022b9957c67fb9e49de87abf9882a30",
     "md5_file": "bellsoft-jdk13-macos-amd64-lite.zip.md5",
@@ -1576,7 +1576,7 @@
     "size": 75300042,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64-lite.zip",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -1584,7 +1584,7 @@
     "file_type": "dmg",
     "filename": "bellsoft-jdk13-macos-amd64.dmg",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "7de2fcf8e897b2000d8a965422c5cd6d",
     "md5_file": "bellsoft-jdk13-macos-amd64.dmg.md5",
@@ -1599,7 +1599,7 @@
     "size": 282384313,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64.dmg",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -1607,7 +1607,7 @@
     "file_type": "pkg",
     "filename": "bellsoft-jdk13-macos-amd64.pkg",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "d30fc2c55ca8c024a8f207711b7bc9d7",
     "md5_file": "bellsoft-jdk13-macos-amd64.pkg.md5",
@@ -1622,7 +1622,7 @@
     "size": 282745460,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64.pkg",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -1630,7 +1630,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk13-macos-amd64.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "60d62eb5792712f154e96be1860b14f7",
     "md5_file": "bellsoft-jdk13-macos-amd64.zip.md5",
@@ -1645,7 +1645,7 @@
     "size": 287778542,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64.zip",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",

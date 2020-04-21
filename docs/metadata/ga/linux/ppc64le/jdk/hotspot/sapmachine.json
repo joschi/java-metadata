@@ -143,7 +143,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jdk-14_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "941629e759b97aea9f049ceb6e4825b2",
     "md5_file": "sapmachine-jdk-14_linux-ppc64le_bin.tar.gz.md5",
@@ -158,6 +158,6 @@
     "size": 186208783,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   }
 ]

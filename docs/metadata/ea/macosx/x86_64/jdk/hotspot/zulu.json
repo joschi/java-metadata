@@ -5,7 +5,7 @@
     "file_type": "zip",
     "filename": "zulu11.1+23-ea-jdk11-macosx_x64.zip",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "hotspot",
     "md5": "83419e64df9b37d831b463ec7e3189c1",
     "md5_file": "zulu11.1+23-ea-jdk11-macosx_x64.zip.md5",
@@ -51,7 +51,7 @@
     "file_type": "zip",
     "filename": "zulu12-ea-jdk12-macosx_x64.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "9c5f10bd3165b8c34cae97c26922eed0",
     "md5_file": "zulu12-ea-jdk12-macosx_x64.zip.md5",
@@ -66,7 +66,7 @@
     "size": 203529768,
     "url": "https://static.azul.com/zulu/bin/zulu12-ea-jdk12-macosx_x64.zip",
     "vendor": "zulu",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -89,7 +89,7 @@
     "size": 203529768,
     "url": "https://static.azul.com/zulu/bin/zulu12-ea-jdk12.0.0-ea-macosx_x64.zip",
     "vendor": "zulu",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -97,7 +97,7 @@
     "file_type": "zip",
     "filename": "zulu13.0.3-ea-jdk13-macosx_x64.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "0a7195cee09126f3d65f7df82e90eb03",
     "md5_file": "zulu13.0.3-ea-jdk13-macosx_x64.zip.md5",

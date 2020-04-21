@@ -99,7 +99,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk11-linux-amd64-lite.tar.gz",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "hotspot",
     "md5": "19d7fb062a9a0bade9dca7a538cb3559",
     "md5_file": "bellsoft-jdk11-linux-amd64-lite.tar.gz.md5",
@@ -114,7 +114,7 @@
     "size": 113035311,
     "url": "https://github.com/bell-sw/Liberica/releases/download/11/bellsoft-jdk11-linux-amd64-lite.tar.gz",
     "vendor": "liberica",
-    "version": 11
+    "version": "11"
   },
   {
     "architecture": "x86_64",
@@ -122,7 +122,7 @@
     "file_type": "deb",
     "filename": "bellsoft-jdk11-linux-amd64.deb",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "hotspot",
     "md5": "e7426fcb2cca6581a7fb2ab7fce12fb0",
     "md5_file": "bellsoft-jdk11-linux-amd64.deb.md5",
@@ -137,7 +137,7 @@
     "size": 241158578,
     "url": "https://github.com/bell-sw/Liberica/releases/download/11/bellsoft-jdk11-linux-amd64.deb",
     "vendor": "liberica",
-    "version": 11
+    "version": "11"
   },
   {
     "architecture": "x86_64",
@@ -145,7 +145,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk11-linux-amd64.tar.gz",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "hotspot",
     "md5": "f62e4f3df68359b1c5846cb91ea42a52",
     "md5_file": "bellsoft-jdk11-linux-amd64.tar.gz.md5",
@@ -160,7 +160,7 @@
     "size": 284209967,
     "url": "https://github.com/bell-sw/Liberica/releases/download/11/bellsoft-jdk11-linux-amd64.tar.gz",
     "vendor": "liberica",
-    "version": 11
+    "version": "11"
   },
   {
     "architecture": "x86_64",
@@ -1745,7 +1745,7 @@
     "file_type": "deb",
     "filename": "bellsoft-jdk12-linux-amd64-lite.deb",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "97da701b4542e9c1201d337ec32c9f82",
     "md5_file": "bellsoft-jdk12-linux-amd64-lite.deb.md5",
@@ -1760,7 +1760,7 @@
     "size": 71649986,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-linux-amd64-lite.deb",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1770,7 +1770,7 @@
     "file_type": "rpm",
     "filename": "bellsoft-jdk12-linux-amd64-lite.rpm",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "1317c04ff8091fc5949937836781e112",
     "md5_file": "bellsoft-jdk12-linux-amd64-lite.rpm.md5",
@@ -1785,7 +1785,7 @@
     "size": 73400820,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-linux-amd64-lite.rpm",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1795,7 +1795,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk12-linux-amd64-lite.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "843482a5671670932c80d62e5135036b",
     "md5_file": "bellsoft-jdk12-linux-amd64-lite.tar.gz.md5",
@@ -1810,7 +1810,7 @@
     "size": 76878060,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-linux-amd64-lite.tar.gz",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1818,7 +1818,7 @@
     "file_type": "deb",
     "filename": "bellsoft-jdk12-linux-amd64.deb",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "62c3748ed00b242832140bb8bdcc76a0",
     "md5_file": "bellsoft-jdk12-linux-amd64.deb.md5",
@@ -1833,7 +1833,7 @@
     "size": 250970462,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-linux-amd64.deb",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1841,7 +1841,7 @@
     "file_type": "rpm",
     "filename": "bellsoft-jdk12-linux-amd64.rpm",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "dec95bda0002bb74c9db68ef298b07f5",
     "md5_file": "bellsoft-jdk12-linux-amd64.rpm.md5",
@@ -1856,7 +1856,7 @@
     "size": 262978636,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-linux-amd64.rpm",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1864,7 +1864,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk12-linux-amd64.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "cc71730856b1b021bc84426b6aa66c81",
     "md5_file": "bellsoft-jdk12-linux-amd64.tar.gz.md5",
@@ -1879,7 +1879,7 @@
     "size": 295083440,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-linux-amd64.tar.gz",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1890,7 +1890,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk12-linux-x64-musl-lite.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "a622f131fc27eeed96a70de6b35bf58e",
     "md5_file": "bellsoft-jdk12-linux-x64-musl-lite.tar.gz.md5",
@@ -1905,7 +1905,7 @@
     "size": 76667195,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-linux-x64-musl-lite.tar.gz",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -1915,7 +1915,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk12-linux-x64-musl.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "e7e5296d170671a7f41be70921b44d5b",
     "md5_file": "bellsoft-jdk12-linux-x64-musl.tar.gz.md5",
@@ -1930,7 +1930,7 @@
     "size": 209243871,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-linux-x64-musl.tar.gz",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -2330,7 +2330,7 @@
     "file_type": "deb",
     "filename": "bellsoft-jdk13-linux-amd64-lite.deb",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "ec0e10d9108f05d99d7794b00591b96b",
     "md5_file": "bellsoft-jdk13-linux-amd64-lite.deb.md5",
@@ -2345,7 +2345,7 @@
     "size": 73816540,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-amd64-lite.deb",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -2355,7 +2355,7 @@
     "file_type": "rpm",
     "filename": "bellsoft-jdk13-linux-amd64-lite.rpm",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "8e36a5e3793b7de251e8707c701e715b",
     "md5_file": "bellsoft-jdk13-linux-amd64-lite.rpm.md5",
@@ -2370,7 +2370,7 @@
     "size": 75613224,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-amd64-lite.rpm",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -2380,7 +2380,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk13-linux-amd64-lite.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "e4baeea6ebe448a2260c664684978c88",
     "md5_file": "bellsoft-jdk13-linux-amd64-lite.tar.gz.md5",
@@ -2395,7 +2395,7 @@
     "size": 78534759,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-amd64-lite.tar.gz",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -2403,7 +2403,7 @@
     "file_type": "deb",
     "filename": "bellsoft-jdk13-linux-amd64.deb",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "0dce83693a1f7ca63fed7c38cd98d74c",
     "md5_file": "bellsoft-jdk13-linux-amd64.deb.md5",
@@ -2418,7 +2418,7 @@
     "size": 255275054,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-amd64.deb",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -2426,7 +2426,7 @@
     "file_type": "rpm",
     "filename": "bellsoft-jdk13-linux-amd64.rpm",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "82684b5893c483a6a60e69485b75eacc",
     "md5_file": "bellsoft-jdk13-linux-amd64.rpm.md5",
@@ -2441,7 +2441,7 @@
     "size": 267579128,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-amd64.rpm",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -2449,7 +2449,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk13-linux-amd64.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "92522ee817e816f20b71581cc11c3a09",
     "md5_file": "bellsoft-jdk13-linux-amd64.tar.gz.md5",
@@ -2464,7 +2464,7 @@
     "size": 298819719,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-amd64.tar.gz",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -2475,7 +2475,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk13-linux-x64-musl-lite.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "539b63478bfc1af209f1ac01b62c9d50",
     "md5_file": "bellsoft-jdk13-linux-x64-musl-lite.tar.gz.md5",
@@ -2490,7 +2490,7 @@
     "size": 78353994,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-x64-musl-lite.tar.gz",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -2500,7 +2500,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk13-linux-x64-musl.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "f2d51b62a9f03e29a6843adad01bee9a",
     "md5_file": "bellsoft-jdk13-linux-x64-musl.tar.gz.md5",
@@ -2515,7 +2515,7 @@
     "size": 212319153,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-x64-musl.tar.gz",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",

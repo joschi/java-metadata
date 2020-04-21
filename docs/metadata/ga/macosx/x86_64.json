@@ -4450,7 +4450,7 @@
     "file_type": "tar.gz",
     "filename": "graalvm-ce-java11-darwin-amd64-19.3.0.2.tar.gz",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "graalvm",
     "md5": "d30350b56e409951db441a612520780d",
     "md5_file": "graalvm-ce-java11-darwin-amd64-19.3.0.2.tar.gz.md5",
@@ -4473,7 +4473,7 @@
     "file_type": "tar.gz",
     "filename": "graalvm-ce-java11-darwin-amd64-19.3.0.tar.gz",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "graalvm",
     "md5": "78783460cb28481a3f9c52e865be671f",
     "md5_file": "graalvm-ce-java11-darwin-amd64-19.3.0.tar.gz.md5",
@@ -4496,7 +4496,7 @@
     "file_type": "tar.gz",
     "filename": "graalvm-ce-java11-darwin-amd64-19.3.1.tar.gz",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "graalvm",
     "md5": "0ff353297cdb84daf8d1d33f24c94a66",
     "md5_file": "graalvm-ce-java11-darwin-amd64-19.3.1.tar.gz.md5",
@@ -4519,7 +4519,7 @@
     "file_type": "tar.gz",
     "filename": "graalvm-ce-java11-darwin-amd64-20.0.0.tar.gz",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "graalvm",
     "md5": "729ffac758eedcba8e79bc3e00c4a927",
     "md5_file": "graalvm-ce-java11-darwin-amd64-20.0.0.tar.gz.md5",
@@ -4542,7 +4542,7 @@
     "file_type": "tar.gz",
     "filename": "graalvm-ce-java8-darwin-amd64-19.3.0.2.tar.gz",
     "image_type": "jdk",
-    "java_version": 8,
+    "java_version": "8",
     "jvm_impl": "graalvm",
     "md5": "f3f9d881d2256c4ed0e7d1955564fd06",
     "md5_file": "graalvm-ce-java8-darwin-amd64-19.3.0.2.tar.gz.md5",
@@ -4565,7 +4565,7 @@
     "file_type": "tar.gz",
     "filename": "graalvm-ce-java8-darwin-amd64-19.3.0.tar.gz",
     "image_type": "jdk",
-    "java_version": 8,
+    "java_version": "8",
     "jvm_impl": "graalvm",
     "md5": "46b71057a38c611abc7b065bf34ad0cc",
     "md5_file": "graalvm-ce-java8-darwin-amd64-19.3.0.tar.gz.md5",
@@ -4588,7 +4588,7 @@
     "file_type": "tar.gz",
     "filename": "graalvm-ce-java8-darwin-amd64-19.3.1.tar.gz",
     "image_type": "jdk",
-    "java_version": 8,
+    "java_version": "8",
     "jvm_impl": "graalvm",
     "md5": "f46401b24f583d8cb6564ab71e323c67",
     "md5_file": "graalvm-ce-java8-darwin-amd64-19.3.1.tar.gz.md5",
@@ -4611,7 +4611,7 @@
     "file_type": "tar.gz",
     "filename": "graalvm-ce-java8-darwin-amd64-20.0.0.tar.gz",
     "image_type": "jdk",
-    "java_version": 8,
+    "java_version": "8",
     "jvm_impl": "graalvm",
     "md5": "1816d1f3884b6d5a1c3b6f7599449223",
     "md5_file": "graalvm-ce-java8-darwin-amd64-20.0.0.tar.gz.md5",
@@ -5804,7 +5804,7 @@
     "file_type": "dmg",
     "filename": "bellsoft-jdk12-macos-amd64-lite.dmg",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "975f2b44d5f6b831ea081c065df7f618",
     "md5_file": "bellsoft-jdk12-macos-amd64-lite.dmg.md5",
@@ -5819,7 +5819,7 @@
     "size": 73691254,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-macos-amd64-lite.dmg",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -5829,7 +5829,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk12-macos-amd64-lite.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "4c600ac480ff1d263cb6efcf1aadeb9b",
     "md5_file": "bellsoft-jdk12-macos-amd64-lite.zip.md5",
@@ -5844,7 +5844,7 @@
     "size": 73519602,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-macos-amd64-lite.zip",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -5852,7 +5852,7 @@
     "file_type": "dmg",
     "filename": "bellsoft-jdk12-macos-amd64.dmg",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "671b50841154e25673d080aa7d40da61",
     "md5_file": "bellsoft-jdk12-macos-amd64.dmg.md5",
@@ -5867,7 +5867,7 @@
     "size": 276805838,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-macos-amd64.dmg",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -5875,7 +5875,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk12-macos-amd64.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "91130632a7391362e08ed4860dfc05f6",
     "md5_file": "bellsoft-jdk12-macos-amd64.zip.md5",
@@ -5890,7 +5890,7 @@
     "size": 282634642,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-macos-amd64.zip",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -6140,7 +6140,7 @@
     "file_type": "dmg",
     "filename": "bellsoft-jdk13-macos-amd64-lite.dmg",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "87eab8f753620207ae8b6197aecba3ab",
     "md5_file": "bellsoft-jdk13-macos-amd64-lite.dmg.md5",
@@ -6155,7 +6155,7 @@
     "size": 75464168,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64-lite.dmg",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -6165,7 +6165,7 @@
     "file_type": "pkg",
     "filename": "bellsoft-jdk13-macos-amd64-lite.pkg",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "6b0f1fc9117893a43c5c4c56d70479b3",
     "md5_file": "bellsoft-jdk13-macos-amd64-lite.pkg.md5",
@@ -6180,7 +6180,7 @@
     "size": 75337497,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64-lite.pkg",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -6190,7 +6190,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk13-macos-amd64-lite.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "3022b9957c67fb9e49de87abf9882a30",
     "md5_file": "bellsoft-jdk13-macos-amd64-lite.zip.md5",
@@ -6205,7 +6205,7 @@
     "size": 75300042,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64-lite.zip",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -6213,7 +6213,7 @@
     "file_type": "dmg",
     "filename": "bellsoft-jdk13-macos-amd64.dmg",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "7de2fcf8e897b2000d8a965422c5cd6d",
     "md5_file": "bellsoft-jdk13-macos-amd64.dmg.md5",
@@ -6228,7 +6228,7 @@
     "size": 282384313,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64.dmg",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -6236,7 +6236,7 @@
     "file_type": "pkg",
     "filename": "bellsoft-jdk13-macos-amd64.pkg",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "d30fc2c55ca8c024a8f207711b7bc9d7",
     "md5_file": "bellsoft-jdk13-macos-amd64.pkg.md5",
@@ -6251,7 +6251,7 @@
     "size": 282745460,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64.pkg",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -6259,7 +6259,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk13-macos-amd64.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "60d62eb5792712f154e96be1860b14f7",
     "md5_file": "bellsoft-jdk13-macos-amd64.zip.md5",
@@ -6274,7 +6274,7 @@
     "size": 287778542,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-macos-amd64.zip",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -9770,7 +9770,7 @@
     "file_type": "dmg",
     "filename": "sapmachine-jdk-14_osx-x64_bin.dmg",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "78c159eadeb68d6d9147eaca13c4d8cf",
     "md5_file": "sapmachine-jdk-14_osx-x64_bin.dmg.md5",
@@ -9785,7 +9785,7 @@
     "size": 206863534,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_osx-x64_bin.dmg",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -9793,7 +9793,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jdk-14_osx-x64_bin.tar.gz",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "18e41f7fafce141e48cd240d6e37c74e",
     "md5_file": "sapmachine-jdk-14_osx-x64_bin.tar.gz.md5",
@@ -9808,7 +9808,7 @@
     "size": 196690978,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_osx-x64_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -10046,7 +10046,7 @@
     "file_type": "dmg",
     "filename": "sapmachine-jre-14_osx-x64_bin.dmg",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "4b661a340bcb7bfc61d06d4dd7fd6de4",
     "md5_file": "sapmachine-jre-14_osx-x64_bin.dmg.md5",
@@ -10061,7 +10061,7 @@
     "size": 57008181,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_osx-x64_bin.dmg",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -10069,7 +10069,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jre-14_osx-x64_bin.tar.gz",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "61bccc2f1d750cb2e51d5b79867eb281",
     "md5_file": "sapmachine-jre-14_osx-x64_bin.tar.gz.md5",
@@ -10084,7 +10084,7 @@
     "size": 50002437,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_osx-x64_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -10092,7 +10092,7 @@
     "file_type": "dmg",
     "filename": "zulu10.1+11-jdk10-macosx_x64.dmg",
     "image_type": "jdk",
-    "java_version": 10,
+    "java_version": "10",
     "jvm_impl": "hotspot",
     "md5": "32148bb3013f7c7a143e80c8e84b0325",
     "md5_file": "zulu10.1+11-jdk10-macosx_x64.dmg.md5",
@@ -10115,7 +10115,7 @@
     "file_type": "tar.gz",
     "filename": "zulu10.1+11-jdk10-macosx_x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 10,
+    "java_version": "10",
     "jvm_impl": "hotspot",
     "md5": "7f9e2be77920aba4ca975c282ea23583",
     "md5_file": "zulu10.1+11-jdk10-macosx_x64.tar.gz.md5",
@@ -10138,7 +10138,7 @@
     "file_type": "zip",
     "filename": "zulu10.1+11-jdk10-macosx_x64.zip",
     "image_type": "jdk",
-    "java_version": 10,
+    "java_version": "10",
     "jvm_impl": "hotspot",
     "md5": "6ab9b350787a118ed4b8204d28701271",
     "md5_file": "zulu10.1+11-jdk10-macosx_x64.zip.md5",
@@ -11988,7 +11988,7 @@
     "file_type": "dmg",
     "filename": "zulu12.1.3-ca-jdk12-macosx_x64.dmg",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "8fdba311f2f793f5836901ff16a8e661",
     "md5_file": "zulu12.1.3-ca-jdk12-macosx_x64.dmg.md5",
@@ -12011,7 +12011,7 @@
     "file_type": "tar.gz",
     "filename": "zulu12.1.3-ca-jdk12-macosx_x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "bc696d037774eaa3553bc9037fc0dc2e",
     "md5_file": "zulu12.1.3-ca-jdk12-macosx_x64.tar.gz.md5",
@@ -12034,7 +12034,7 @@
     "file_type": "zip",
     "filename": "zulu12.1.3-ca-jdk12-macosx_x64.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "eb5f20b513719f73e5d387d22b1478ad",
     "md5_file": "zulu12.1.3-ca-jdk12-macosx_x64.zip.md5",
@@ -12310,7 +12310,7 @@
     "file_type": "dmg",
     "filename": "zulu13.27.9-ca-jdk13-macosx_x64.dmg",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "e9b6da36f10c7241b53f3d6f8b8720fb",
     "md5_file": "zulu13.27.9-ca-jdk13-macosx_x64.dmg.md5",
@@ -12333,7 +12333,7 @@
     "file_type": "tar.gz",
     "filename": "zulu13.27.9-ca-jdk13-macosx_x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "53733cacb121151600c1fd8f7bf4a296",
     "md5_file": "zulu13.27.9-ca-jdk13-macosx_x64.tar.gz.md5",
@@ -12356,7 +12356,7 @@
     "file_type": "zip",
     "filename": "zulu13.27.9-ca-jdk13-macosx_x64.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "4c6f0326928fd09c025c4bc537e58254",
     "md5_file": "zulu13.27.9-ca-jdk13-macosx_x64.zip.md5",
@@ -12989,7 +12989,7 @@
     "file_type": "dmg",
     "filename": "zulu14.27.1-ca-jdk14-macosx_x64.dmg",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "1baaf8f813d667ec320813a58a90aedf",
     "md5_file": "zulu14.27.1-ca-jdk14-macosx_x64.dmg.md5",
@@ -13012,7 +13012,7 @@
     "file_type": "tar.gz",
     "filename": "zulu14.27.1-ca-jdk14-macosx_x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "d235c7708c608b741a13e0d1e7cccb6b",
     "md5_file": "zulu14.27.1-ca-jdk14-macosx_x64.tar.gz.md5",
@@ -13035,7 +13035,7 @@
     "file_type": "zip",
     "filename": "zulu14.27.1-ca-jdk14-macosx_x64.zip",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "857f82ad650cb7276fcee49538cecbb1",
     "md5_file": "zulu14.27.1-ca-jdk14-macosx_x64.zip.md5",

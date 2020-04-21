@@ -2284,7 +2284,7 @@
     "file_type": "deb",
     "filename": "bellsoft-jdk13-linux-ppc64le-lite.deb",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "5bebda807f3966eb7122640fb0dcbc1f",
     "md5_file": "bellsoft-jdk13-linux-ppc64le-lite.deb.md5",
@@ -2299,7 +2299,7 @@
     "size": 65909428,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-ppc64le-lite.deb",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "ppc64le",
@@ -2309,7 +2309,7 @@
     "file_type": "rpm",
     "filename": "bellsoft-jdk13-linux-ppc64le-lite.rpm",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "446cfc682e8c007367417d8cd9293409",
     "md5_file": "bellsoft-jdk13-linux-ppc64le-lite.rpm.md5",
@@ -2324,7 +2324,7 @@
     "size": 67483876,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-ppc64le-lite.rpm",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "ppc64le",
@@ -2334,7 +2334,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk13-linux-ppc64le-lite.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "2bd16294a68ea3192de9566fd978f92e",
     "md5_file": "bellsoft-jdk13-linux-ppc64le-lite.tar.gz.md5",
@@ -2349,7 +2349,7 @@
     "size": 70813988,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-ppc64le-lite.tar.gz",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "ppc64le",
@@ -2357,7 +2357,7 @@
     "file_type": "deb",
     "filename": "bellsoft-jdk13-linux-ppc64le.deb",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "5b6efe778b6df9c0d241561f6283c3c0",
     "md5_file": "bellsoft-jdk13-linux-ppc64le.deb.md5",
@@ -2372,7 +2372,7 @@
     "size": 157179684,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-ppc64le.deb",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "ppc64le",
@@ -2380,7 +2380,7 @@
     "file_type": "rpm",
     "filename": "bellsoft-jdk13-linux-ppc64le.rpm",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "7d0e2ab1db15a17eca827d0e8e5109dc",
     "md5_file": "bellsoft-jdk13-linux-ppc64le.rpm.md5",
@@ -2395,7 +2395,7 @@
     "size": 164438636,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-ppc64le.rpm",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "ppc64le",
@@ -2403,7 +2403,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk13-linux-ppc64le.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "7bca9fe7d0377ccb3da0923e776a5dcb",
     "md5_file": "bellsoft-jdk13-linux-ppc64le.tar.gz.md5",
@@ -2418,7 +2418,7 @@
     "size": 182861549,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-linux-ppc64le.tar.gz",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "ppc64le",
@@ -3491,7 +3491,7 @@
     "file_type": "tar.gz",
     "filename": "sapmachine-jdk-14_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "941629e759b97aea9f049ceb6e4825b2",
     "md5_file": "sapmachine-jdk-14_linux-ppc64le_bin.tar.gz.md5",
@@ -3506,6 +3506,6 @@
     "size": 186208783,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   }
 ]

@@ -764,7 +764,7 @@
     "file_type": "tar.gz",
     "filename": "zulu11.1+23-ea-jdk11-linux_x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "hotspot",
     "md5": "9e5a36f2548c9791b225a21f01c3b8ea",
     "md5_file": "zulu11.1+23-ea-jdk11-linux_x64.tar.gz.md5",
@@ -810,7 +810,7 @@
     "file_type": "tar.gz",
     "filename": "zulu12-ea-jdk12-linux_x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "59b37f99a844c85da87f9999124c5c57",
     "md5_file": "zulu12-ea-jdk12-linux_x64.tar.gz.md5",
@@ -825,7 +825,7 @@
     "size": 207723788,
     "url": "https://static.azul.com/zulu/bin/zulu12-ea-jdk12-linux_x64.tar.gz",
     "vendor": "zulu",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -848,7 +848,7 @@
     "size": 207723788,
     "url": "https://static.azul.com/zulu/bin/zulu12-ea-jdk12.0.0-ea-linux_x64.tar.gz",
     "vendor": "zulu",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -856,7 +856,7 @@
     "file_type": "tar.gz",
     "filename": "zulu13.0.3-ea-jdk13-linux_x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "cacd3de6575c64b6b506e57012217603",
     "md5_file": "zulu13.0.3-ea-jdk13-linux_x64.tar.gz.md5",

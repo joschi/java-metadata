@@ -6024,7 +6024,7 @@
     "file_type": "zip",
     "filename": "graalvm-ce-java11-windows-amd64-19.3.0.2.zip",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "graalvm",
     "md5": "109642a20d5727cf3ce6274bb57ddc45",
     "md5_file": "graalvm-ce-java11-windows-amd64-19.3.0.2.zip.md5",
@@ -6047,7 +6047,7 @@
     "file_type": "zip",
     "filename": "graalvm-ce-java11-windows-amd64-19.3.0.zip",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "graalvm",
     "md5": "a4157342b10e310865ee399f6cd7dadc",
     "md5_file": "graalvm-ce-java11-windows-amd64-19.3.0.zip.md5",
@@ -6070,7 +6070,7 @@
     "file_type": "zip",
     "filename": "graalvm-ce-java11-windows-amd64-19.3.1.zip",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "graalvm",
     "md5": "d18a21d704d599f4373eea5442a91374",
     "md5_file": "graalvm-ce-java11-windows-amd64-19.3.1.zip.md5",
@@ -6093,7 +6093,7 @@
     "file_type": "zip",
     "filename": "graalvm-ce-java11-windows-amd64-20.0.0.zip",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "graalvm",
     "md5": "d78b8aea63308cf76b95687baa946c50",
     "md5_file": "graalvm-ce-java11-windows-amd64-20.0.0.zip.md5",
@@ -6116,7 +6116,7 @@
     "file_type": "zip",
     "filename": "graalvm-ce-java8-windows-amd64-19.3.0.2.zip",
     "image_type": "jdk",
-    "java_version": 8,
+    "java_version": "8",
     "jvm_impl": "graalvm",
     "md5": "24ce5dcbaa62640eb426238302737704",
     "md5_file": "graalvm-ce-java8-windows-amd64-19.3.0.2.zip.md5",
@@ -6139,7 +6139,7 @@
     "file_type": "zip",
     "filename": "graalvm-ce-java8-windows-amd64-19.3.0.zip",
     "image_type": "jdk",
-    "java_version": 8,
+    "java_version": "8",
     "jvm_impl": "graalvm",
     "md5": "723e3ab3232460ea6c994edf283ccdc8",
     "md5_file": "graalvm-ce-java8-windows-amd64-19.3.0.zip.md5",
@@ -6162,7 +6162,7 @@
     "file_type": "zip",
     "filename": "graalvm-ce-java8-windows-amd64-19.3.1.zip",
     "image_type": "jdk",
-    "java_version": 8,
+    "java_version": "8",
     "jvm_impl": "graalvm",
     "md5": "9756a15b7d65ec237476262efce89aa5",
     "md5_file": "graalvm-ce-java8-windows-amd64-19.3.1.zip.md5",
@@ -6185,7 +6185,7 @@
     "file_type": "zip",
     "filename": "graalvm-ce-java8-windows-amd64-20.0.0.zip",
     "image_type": "jdk",
-    "java_version": 8,
+    "java_version": "8",
     "jvm_impl": "graalvm",
     "md5": "80720349cd6aa505b4a12badd7327a8a",
     "md5_file": "graalvm-ce-java8-windows-amd64-20.0.0.zip.md5",
@@ -6233,7 +6233,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk11-windows-amd64-lite.zip",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "hotspot",
     "md5": "80d7c81b606abb6927da479e92d2bd07",
     "md5_file": "bellsoft-jdk11-windows-amd64-lite.zip.md5",
@@ -6248,7 +6248,7 @@
     "size": 71239746,
     "url": "https://github.com/bell-sw/Liberica/releases/download/11/bellsoft-jdk11-windows-amd64-lite.zip",
     "vendor": "liberica",
-    "version": 11
+    "version": "11"
   },
   {
     "architecture": "x86_64",
@@ -6256,7 +6256,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk11-windows-amd64.zip",
     "image_type": "jdk",
-    "java_version": 11,
+    "java_version": "11",
     "jvm_impl": "hotspot",
     "md5": "cf2ca8ede5820d1ab9d4ca20f1fa4c63",
     "md5_file": "bellsoft-jdk11-windows-amd64.zip.md5",
@@ -6271,7 +6271,7 @@
     "size": 192366999,
     "url": "https://github.com/bell-sw/Liberica/releases/download/11/bellsoft-jdk11-windows-amd64.zip",
     "vendor": "liberica",
-    "version": 11
+    "version": "11"
   },
   {
     "architecture": "x86_64",
@@ -7889,7 +7889,7 @@
     "file_type": "msi",
     "filename": "bellsoft-jdk12-windows-amd64-lite.msi",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "6f0292b946088ec200a52a2e9c4a08b3",
     "md5_file": "bellsoft-jdk12-windows-amd64-lite.msi.md5",
@@ -7904,7 +7904,7 @@
     "size": 75055104,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-windows-amd64-lite.msi",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -7914,7 +7914,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk12-windows-amd64-lite.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "c76b41bec10650089f510e85e5a31d79",
     "md5_file": "bellsoft-jdk12-windows-amd64-lite.zip.md5",
@@ -7929,7 +7929,7 @@
     "size": 74088274,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-windows-amd64-lite.zip",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -7937,7 +7937,7 @@
     "file_type": "msi",
     "filename": "bellsoft-jdk12-windows-amd64.msi",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "596a62889e2b4efbea8639542282b9b0",
     "md5_file": "bellsoft-jdk12-windows-amd64.msi.md5",
@@ -7952,7 +7952,7 @@
     "size": 274776064,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-windows-amd64.msi",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -7960,7 +7960,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk12-windows-amd64.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "1049b569a2538c8bc950386021730616",
     "md5_file": "bellsoft-jdk12-windows-amd64.zip.md5",
@@ -7975,7 +7975,7 @@
     "size": 279067460,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-windows-amd64.zip",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "i686",
@@ -7985,7 +7985,7 @@
     "file_type": "msi",
     "filename": "bellsoft-jdk12-windows-i586-lite.msi",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "e978844b5f82d54f94d2d39d90538960",
     "md5_file": "bellsoft-jdk12-windows-i586-lite.msi.md5",
@@ -8000,7 +8000,7 @@
     "size": 67645440,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-windows-i586-lite.msi",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "i686",
@@ -8010,7 +8010,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk12-windows-i586-lite.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "94295f1b0312f73161f99af2f5b943ea",
     "md5_file": "bellsoft-jdk12-windows-i586-lite.zip.md5",
@@ -8025,7 +8025,7 @@
     "size": 66714995,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-windows-i586-lite.zip",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "i686",
@@ -8033,7 +8033,7 @@
     "file_type": "msi",
     "filename": "bellsoft-jdk12-windows-i586.msi",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "4384aa66602c3f7e1fcd881ebce18927",
     "md5_file": "bellsoft-jdk12-windows-i586.msi.md5",
@@ -8048,7 +8048,7 @@
     "size": 245981184,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-windows-i586.msi",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "i686",
@@ -8056,7 +8056,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk12-windows-i586.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "3db16fd5f9f20602c32f5c36109a7d48",
     "md5_file": "bellsoft-jdk12-windows-i586.zip.md5",
@@ -8071,7 +8071,7 @@
     "size": 249356980,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-windows-i586.zip",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -8465,7 +8465,7 @@
     "file_type": "msi",
     "filename": "bellsoft-jdk13-windows-amd64-lite.msi",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "9274340b37e045f39cfc64058261f6f1",
     "md5_file": "bellsoft-jdk13-windows-amd64-lite.msi.md5",
@@ -8480,7 +8480,7 @@
     "size": 76468224,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-windows-amd64-lite.msi",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -8490,7 +8490,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk13-windows-amd64-lite.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "f74f3c2d0a2de1b82ba8710f95e2b0ff",
     "md5_file": "bellsoft-jdk13-windows-amd64-lite.zip.md5",
@@ -8505,7 +8505,7 @@
     "size": 75453405,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-windows-amd64-lite.zip",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -8513,7 +8513,7 @@
     "file_type": "msi",
     "filename": "bellsoft-jdk13-windows-amd64.msi",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "0ce62b1d38d8f3184a6d47cf14fecd2d",
     "md5_file": "bellsoft-jdk13-windows-amd64.msi.md5",
@@ -8528,7 +8528,7 @@
     "size": 271036416,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-windows-amd64.msi",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -8536,7 +8536,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk13-windows-amd64.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "0f6346e3b63186d2e78609fe379fa3b4",
     "md5_file": "bellsoft-jdk13-windows-amd64.zip.md5",
@@ -8551,7 +8551,7 @@
     "size": 275267247,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-windows-amd64.zip",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "i686",
@@ -8561,7 +8561,7 @@
     "file_type": "msi",
     "filename": "bellsoft-jdk13-windows-i586-lite.msi",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "7d7a9d914dc31b3dcc2e88539bf0be2c",
     "md5_file": "bellsoft-jdk13-windows-i586-lite.msi.md5",
@@ -8576,7 +8576,7 @@
     "size": 68841472,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-windows-i586-lite.msi",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "i686",
@@ -8586,7 +8586,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk13-windows-i586-lite.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "f3f79c2630a31bd7d58694481d83f179",
     "md5_file": "bellsoft-jdk13-windows-i586-lite.zip.md5",
@@ -8601,7 +8601,7 @@
     "size": 67879159,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-windows-i586-lite.zip",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "i686",
@@ -8609,7 +8609,7 @@
     "file_type": "msi",
     "filename": "bellsoft-jdk13-windows-i586.msi",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "ca1c7cff6ae3b80f8d96e9e2cf75632a",
     "md5_file": "bellsoft-jdk13-windows-i586.msi.md5",
@@ -8624,7 +8624,7 @@
     "size": 243838976,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-windows-i586.msi",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "i686",
@@ -8632,7 +8632,7 @@
     "file_type": "zip",
     "filename": "bellsoft-jdk13-windows-i586.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "165fdcaf996a6f00700bd357addd8aec",
     "md5_file": "bellsoft-jdk13-windows-i586.zip.md5",
@@ -8647,7 +8647,7 @@
     "size": 247137098,
     "url": "https://github.com/bell-sw/Liberica/releases/download/13/bellsoft-jdk13-windows-i586.zip",
     "vendor": "liberica",
-    "version": 13
+    "version": "13"
   },
   {
     "architecture": "x86_64",
@@ -13326,7 +13326,7 @@
     "file_type": "msi",
     "filename": "sapmachine-jdk-14_windows-x64_bin.msi",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "645cea05ac2d25167d74adbc9a57b68e",
     "md5_file": "sapmachine-jdk-14_windows-x64_bin.msi.md5",
@@ -13341,7 +13341,7 @@
     "size": 196562944,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_windows-x64_bin.msi",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -13349,7 +13349,7 @@
     "file_type": "zip",
     "filename": "sapmachine-jdk-14_windows-x64_bin.zip",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "3156a19cb2a4bacbfb9882c80022c51e",
     "md5_file": "sapmachine-jdk-14_windows-x64_bin.zip.md5",
@@ -13364,7 +13364,7 @@
     "size": 200945464,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_windows-x64_bin.zip",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -13602,7 +13602,7 @@
     "file_type": "msi",
     "filename": "sapmachine-jre-14_windows-x64_bin.msi",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "2b8a83c6066d8ea503339c8cd2380b0c",
     "md5_file": "sapmachine-jre-14_windows-x64_bin.msi.md5",
@@ -13617,7 +13617,7 @@
     "size": 50884608,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_windows-x64_bin.msi",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "x86_64",
@@ -13625,7 +13625,7 @@
     "file_type": "zip",
     "filename": "sapmachine-jre-14_windows-x64_bin.zip",
     "image_type": "jre",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "a69ca70e789ef6e7250859de538863e3",
     "md5_file": "sapmachine-jre-14_windows-x64_bin.zip.md5",
@@ -13640,7 +13640,7 @@
     "size": 50844973,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_windows-x64_bin.zip",
     "vendor": "sapmachine",
-    "version": 14
+    "version": "14"
   },
   {
     "architecture": "i686",
@@ -13648,7 +13648,7 @@
     "file_type": "zip",
     "filename": "zulu10.1+11-jdk10-win_i686.zip",
     "image_type": "jdk",
-    "java_version": 10,
+    "java_version": "10",
     "jvm_impl": "hotspot",
     "md5": "8fa6cfb031ff23c9a8a2a0e9e7b99078",
     "md5_file": "zulu10.1+11-jdk10-win_i686.zip.md5",
@@ -13671,7 +13671,7 @@
     "file_type": "msi",
     "filename": "zulu10.1+11-jdk10-win_x64.msi",
     "image_type": "jdk",
-    "java_version": 10,
+    "java_version": "10",
     "jvm_impl": "hotspot",
     "md5": "1711d742c32285c960d26b1684d5e191",
     "md5_file": "zulu10.1+11-jdk10-win_x64.msi.md5",
@@ -13694,7 +13694,7 @@
     "file_type": "zip",
     "filename": "zulu10.1+11-jdk10-win_x64.zip",
     "image_type": "jdk",
-    "java_version": 10,
+    "java_version": "10",
     "jvm_impl": "hotspot",
     "md5": "abac1de9c1e86f40bb412b438c2adb66",
     "md5_file": "zulu10.1+11-jdk10-win_x64.zip.md5",
@@ -15260,7 +15260,7 @@
     "file_type": "zip",
     "filename": "zulu12.1.3-ca-jdk12-win_i686.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "7cf2976b9c242dee19c893d805ae366f",
     "md5_file": "zulu12.1.3-ca-jdk12-win_i686.zip.md5",
@@ -15283,7 +15283,7 @@
     "file_type": "msi",
     "filename": "zulu12.1.3-ca-jdk12-win_x64.msi",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "8593a559bab293b508742b06742778d9",
     "md5_file": "zulu12.1.3-ca-jdk12-win_x64.msi.md5",
@@ -15306,7 +15306,7 @@
     "file_type": "zip",
     "filename": "zulu12.1.3-ca-jdk12-win_x64.zip",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "9befe203ca29773ec67661e23ac915cf",
     "md5_file": "zulu12.1.3-ca-jdk12-win_x64.zip.md5",
@@ -15398,7 +15398,7 @@
     "file_type": "msi",
     "filename": "zulu12.1.3-ca-jre12-win_x64.msi",
     "image_type": "jre",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "c328ce06dfbada98d48e160c0cd6c894",
     "md5_file": "zulu12.1.3-ca-jre12-win_x64.msi.md5",
@@ -15421,7 +15421,7 @@
     "file_type": "zip",
     "filename": "zulu12.1.3-ca-jre12-win_x64.zip",
     "image_type": "jre",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "51a574b393f07571f6989efd5647bf6b",
     "md5_file": "zulu12.1.3-ca-jre12-win_x64.zip.md5",
@@ -15628,7 +15628,7 @@
     "file_type": "zip",
     "filename": "zulu13.27.9-ca-jdk13-win_i686.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "355be49b03c9f549dfbbc4f46df16b96",
     "md5_file": "zulu13.27.9-ca-jdk13-win_i686.zip.md5",
@@ -15651,7 +15651,7 @@
     "file_type": "msi",
     "filename": "zulu13.27.9-ca-jdk13-win_x64.msi",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "afa13efc21ceef7a79f3a9f5cd4a22d1",
     "md5_file": "zulu13.27.9-ca-jdk13-win_x64.msi.md5",
@@ -15674,7 +15674,7 @@
     "file_type": "zip",
     "filename": "zulu13.27.9-ca-jdk13-win_x64.zip",
     "image_type": "jdk",
-    "java_version": 13,
+    "java_version": "13",
     "jvm_impl": "hotspot",
     "md5": "86f599b53d1f7cece8a2d70d719098b4",
     "md5_file": "zulu13.27.9-ca-jdk13-win_x64.zip.md5",
@@ -16330,7 +16330,7 @@
     "file_type": "zip",
     "filename": "zulu14.27.1-ca-jdk14-win_i686.zip",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "5544bb22a2074aae91fa081db425bb14",
     "md5_file": "zulu14.27.1-ca-jdk14-win_i686.zip.md5",
@@ -16353,7 +16353,7 @@
     "file_type": "msi",
     "filename": "zulu14.27.1-ca-jdk14-win_x64.msi",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "b2b03f8ab5c2a92707ce7865cfe084e8",
     "md5_file": "zulu14.27.1-ca-jdk14-win_x64.msi.md5",
@@ -16376,7 +16376,7 @@
     "file_type": "zip",
     "filename": "zulu14.27.1-ca-jdk14-win_x64.zip",
     "image_type": "jdk",
-    "java_version": 14,
+    "java_version": "14",
     "jvm_impl": "hotspot",
     "md5": "bb80885eb10aaccf232f21527f7ffa95",
     "md5_file": "zulu14.27.1-ca-jdk14-win_x64.zip.md5",

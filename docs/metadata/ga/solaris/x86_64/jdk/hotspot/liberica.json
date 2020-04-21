@@ -343,7 +343,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk12-solaris-x64-lite.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "bf09430932a05d5acb5e026c919d7776",
     "md5_file": "bellsoft-jdk12-solaris-x64-lite.tar.gz.md5",
@@ -358,7 +358,7 @@
     "size": 91176945,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-solaris-x64-lite.tar.gz",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
@@ -366,7 +366,7 @@
     "file_type": "tar.gz",
     "filename": "bellsoft-jdk12-solaris-x64.tar.gz",
     "image_type": "jdk",
-    "java_version": 12,
+    "java_version": "12",
     "jvm_impl": "hotspot",
     "md5": "d5c10d5d27513de0aa214122ba3cedee",
     "md5_file": "bellsoft-jdk12-solaris-x64.tar.gz.md5",
@@ -381,7 +381,7 @@
     "size": 229281137,
     "url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-solaris-x64.tar.gz",
     "vendor": "liberica",
-    "version": 12
+    "version": "12"
   },
   {
     "architecture": "x86_64",
