@@ -1844,7 +1844,7 @@
   {
     "architecture": "x86_64",
     "features": [],
-    "file_type": "gz",
+    "file_type": "tar.gz",
     "filename": "graalvm-ce-darwin-amd64-19.0.0.tar.gz",
     "image_type": "jdk",
     "java_version": "8",
@@ -1867,7 +1867,7 @@
   {
     "architecture": "x86_64",
     "features": [],
-    "file_type": "gz",
+    "file_type": "tar.gz",
     "filename": "graalvm-ce-darwin-amd64-19.0.2.tar.gz",
     "image_type": "jdk",
     "java_version": "8",
@@ -1890,7 +1890,7 @@
   {
     "architecture": "x86_64",
     "features": [],
-    "file_type": "gz",
+    "file_type": "tar.gz",
     "filename": "graalvm-ce-darwin-amd64-19.1.0.tar.gz",
     "image_type": "jdk",
     "java_version": "8",
@@ -1913,7 +1913,7 @@
   {
     "architecture": "x86_64",
     "features": [],
-    "file_type": "gz",
+    "file_type": "tar.gz",
     "filename": "graalvm-ce-darwin-amd64-19.1.1.tar.gz",
     "image_type": "jdk",
     "java_version": "8",
@@ -1959,7 +1959,7 @@
   {
     "architecture": "x86_64",
     "features": [],
-    "file_type": "gz",
+    "file_type": "tar.gz",
     "filename": "graalvm-ce-darwin-amd64-19.2.0.1.tar.gz",
     "image_type": "jdk",
     "java_version": "8",
@@ -1982,7 +1982,7 @@
   {
     "architecture": "x86_64",
     "features": [],
-    "file_type": "gz",
+    "file_type": "tar.gz",
     "filename": "graalvm-ce-darwin-amd64-19.2.0.tar.gz",
     "image_type": "jdk",
     "java_version": "8",
@@ -2005,7 +2005,7 @@
   {
     "architecture": "x86_64",
     "features": [],
-    "file_type": "gz",
+    "file_type": "tar.gz",
     "filename": "graalvm-ce-darwin-amd64-19.2.1.tar.gz",
     "image_type": "jdk",
     "java_version": "8",
