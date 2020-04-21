@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "bellsoft-jdk8u192-linux-amd64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u192",
+    "jvm_impl": "hotspot",
+    "md5": "c37fc3d88988fa7947d06d8843dc2bf6",
+    "md5_file": "bellsoft-jdk8u192-linux-amd64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "2e80e75f19c020cced4265accf63f42f80390aea",
+    "sha1_file": "bellsoft-jdk8u192-linux-amd64.tar.gz.sha1",
+    "sha256": "c14bc5147290ea785e9f4f9013fc48422a9f4d1c13ae8aef6ef2143294aba95c",
+    "sha256_file": "bellsoft-jdk8u192-linux-amd64.tar.gz.sha256",
+    "sha512": "1334f64d6d46bdf4e887f05524342f381e90d7d3b23cae93a825fb2265804214b6cd87ea31baa57b313175ab87d320249902abb1273c7206f38eec0c571b84b8",
+    "sha512_file": "bellsoft-jdk8u192-linux-amd64.tar.gz.sha512",
+    "size": 75305224,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u192.amd64/bellsoft-jdk8u192-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "8u192"
+  }
+]
