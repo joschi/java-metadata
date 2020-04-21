@@ -37,12 +37,12 @@ function archive_filename {
 	local os="${2}"
 	local arch="${3}"
 	local ext="${4}"
-	local variant="${5}"
-	if [[ "${VARIANT}" = 'none' ]]
+	local image_type="${5}"
+	if [[ "${IMAGE_TYPE}" = 'none' ]]
 	then
 		echo "amazon-corretto-${version}-${os}-${arch}.${ext}"
 	else
-		echo "amazon-corretto-${version}-${os}-${arch}-${variant}.${ext}"
+		echo "amazon-corretto-${version}-${os}-${arch}-${image_type}.${ext}"
 	fi
 }
 
@@ -68,7 +68,7 @@ function get_exts_for_os {
 	esac
 }
 
-function get_variants_for_os_and_ext {
+function get_image_types_for_os_and_ext {
 	case "${1}" in
 	'linux') echo 'none'
 		;;
@@ -90,9 +90,9 @@ function download {
 	local os="${2}"
 	local arch="${3}"
 	local ext="${4}"
-	local variant="${5}"
+	local image_type="${5}"
 	local filename
-	filename="$(archive_filename "${version}" "${os}" "${arch}" "${ext}" "${variant}")"
+	filename="$(archive_filename "${version}" "${os}" "${arch}" "${ext}" "${image_type}")"
 
 	local url
 	local metadata_file="${METADATA_DIR}/${filename}.json"
@@ -126,7 +126,7 @@ function download {
 			"$(normalize_os "${os}")" \
 			"$(normalize_arch "${arch}")" \
 			"${ext}" \
-			"${variant}" \
+			"${image_type}" \
 			'' \
 			"${url}" \
 			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
@@ -154,9 +154,9 @@ do
 		do
 			for EXT in $(get_exts_for_os "${OS}")
 			do
-				for VARIANT in $(get_variants_for_os_and_ext "${OS}" "${EXT}")
+				for IMAGE_TYPE in $(get_image_types_for_os_and_ext "${OS}" "${EXT}")
 				do
-					download "${CORRETTO_VERSION}" "${OS}" "${ARCH}" "${EXT}" "${VARIANT}" || echo "Cannot download $(archive_filename "${CORRETTO_VERSION}" "${OS}" "${ARCH}" "${EXT}" "${VARIANT}")"
+					download "${CORRETTO_VERSION}" "${OS}" "${ARCH}" "${EXT}" "${IMAGE_TYPE}" || echo "Cannot download $(archive_filename "${CORRETTO_VERSION}" "${OS}" "${ARCH}" "${EXT}" "${IMAGE_TYPE}")"
 				done
 			done
 		done

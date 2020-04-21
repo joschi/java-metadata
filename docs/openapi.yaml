@@ -57,7 +57,7 @@ components:
       enum:
         - "ea"
         - "ga"
-    variants:
+    imageTypes:
       type: string
       enum:
         - "jre"
@@ -88,8 +88,8 @@ components:
           $ref: '#/components/schemas/operatingSystems'
         architecture:
           $ref: '#/components/schemas/architectures'
-        variant:
-          $ref: '#/components/schemas/variants'
+        image_type:
+          $ref: '#/components/schemas/image_types'
         features:
           type: "array"
           items:
@@ -131,7 +131,7 @@ components:
           "os": "linux",
           "architecture": "x86_64",
           "file_type": "tar.gz",
-          "variant": "jdk",
+          "image_type": "jdk",
           "features": [],
           "url": "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14%2B36/OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz",
           "md5": "320a1f6dbff0a37f2fdac5ddd34a9742",
@@ -160,7 +160,7 @@ components:
             "os": "linux",
             "architecture": "x86_64",
             "file_type": "tar.gz",
-            "variant": "jdk",
+            "image_type": "jdk",
             "features": [],
             "url": "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14%2B36/OpenJDK14U-jdk_x64_linux_hotspot_14_36.tar.gz",
             "md5": "320a1f6dbff0a37f2fdac5ddd34a9742",
@@ -274,7 +274,7 @@ paths:
                 $ref: '#/components/schemas/response'
         404:
           description: "Invalid input"
-  "/metadata/{release_type}/{os}/{arch}/{variant}/{jvm_impl}/{vendor}.json"
+  "/metadata/{release_type}/{os}/{arch}/{image_type}/{jvm_impl}/{vendor}.json"
     get:
       description: "List of information about Java distributions that match the current query"
       tags:
@@ -299,12 +299,12 @@ paths:
           required: true
           schema:
             $ref: '#/components/schemas/architectures'
-        - name: "variant"
+        - name: "image_type"
           in: path
-          description: "The distribution variant"
+          description: "The distribution image type"
           required: true
           schema:
-            $ref: '#/components/schemas/variants'
+            $ref: '#/components/schemas/imageTypes'
         - name: "jvm_impl"
           in: path
           description: "The JVM implementation"

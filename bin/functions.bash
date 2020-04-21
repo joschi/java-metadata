@@ -93,7 +93,7 @@ function metadata_json {
 		os="${7}" \
 		architecture="${8}" \
 		file_type="${9}" \
-		variant="${10}" \
+		image_type="${10}" \
 		features="$(jo -a "${features[@]}" < /dev/null)" \
 		url="${12}" \
 		md5="${13}" \
@@ -167,7 +167,7 @@ function aggregate_metadata {
 	supported_arch=$(find_supported_arch "${all_json}")
 	local supported_os
 	supported_os=$(find_supported_os "${all_json}")
-	local supported_variant='jre jdk'
+	local supported_image_type='jre jdk'
 	local release_types='ea ga'
 	local jvm_impls='hotspot openj9'
 	local vendors='adoptopenjdk corretto graalvm liberica sapmachine zulu'
@@ -193,17 +193,17 @@ function aggregate_metadata {
 				ensure_directory "${arch_dir}"
 				jq -S "[.[] | select(.architecture == \"${arch}\")]" "${os_dir}/../${os}.json" > "${arch_dir}/../${arch}.json"
 
-				for variant in $supported_variant
+				for image_type in $supported_image_type
 				do
-					local variant_dir="${arch_dir}/${variant}"
-					ensure_directory "${variant_dir}"
-					jq -S "[.[] | select(.variant == \"${variant}\")]" "${arch_dir}/../${arch}.json" > "${variant_dir}/../${variant}.json"
+					local image_type_dir="${arch_dir}/${image_type}"
+					ensure_directory "${image_type_dir}"
+					jq -S "[.[] | select(.image_type == \"${image_type}\")]" "${arch_dir}/../${arch}.json" > "${image_type_dir}/../${image_type}.json"
 
 					for jvm_impl in $jvm_impls
 					do
-						local jvm_impl_dir="${variant_dir}/${jvm_impl}"
+						local jvm_impl_dir="${image_type_dir}/${jvm_impl}"
 						ensure_directory "${jvm_impl_dir}"
-						jq -S "[.[] | select(.jvm_impl == \"${jvm_impl}\")]" "${variant_dir}/../${variant}.json" > "${jvm_impl_dir}/../${jvm_impl}.json"
+						jq -S "[.[] | select(.jvm_impl == \"${jvm_impl}\")]" "${image_type_dir}/../${image_type}.json" > "${jvm_impl_dir}/../${jvm_impl}.json"
 
 						for vendor in $vendors
 						do

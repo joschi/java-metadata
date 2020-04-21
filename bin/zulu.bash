@@ -48,7 +48,7 @@ function normalize_features {
 }
 
 # shellcheck disable=SC2016
-REGEX='s/^zulu([0-9+_.]{2,})-(?:(ca-fx-dbg|ca-fx|ca-dbg|ca|ea|dbg)-)?(jdk|jre)(.*)-(linux|macosx|win)_(musl_x64|x64|i686)\.(.*)$/VERSION="$1" RELEASE_TYPE="$2" VARIANT="$3" JAVA_VERSION="$4" OS="$5" ARCH="$6" ARCHIVE="$7"/g'
+REGEX='s/^zulu([0-9+_.]{2,})-(?:(ca-fx-dbg|ca-fx|ca-dbg|ca|ea|dbg)-)?(jdk|jre)(.*)-(linux|macosx|win)_(musl_x64|x64|i686)\.(.*)$/VERSION="$1" RELEASE_TYPE="$2" IMAGE_TYPE="$3" JAVA_VERSION="$4" OS="$5" ARCH="$6" ARCHIVE="$7"/g'
 
 INDEX_FILE="${TEMP_DIR}/index.html"
 download_file 'https://static.azul.com/zulu/bin/' "${INDEX_FILE}"
@@ -67,7 +67,7 @@ do
 		RELEASE_TYPE=""
 		VERSION=""
 		JAVA_VERSION=""
-		VARIANT=""
+		IMAGE_TYPE=""
 		OS=""
 		ARCH=""
 		ARCHIVE=""
@@ -91,7 +91,7 @@ do
 			"$(normalize_os "${OS}")" \
 			"$(normalize_arch "${ARCH}")" \
 			"${ARCHIVE}" \
-			"${VARIANT}" \
+			"${IMAGE_TYPE}" \
 			"${FEATURES}" \
 			"${ZULU_URL}" \
 			"$(hash_file 'md5' "${ZULU_ARCHIVE}" "${CHECKSUM_DIR}")" \

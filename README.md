@@ -64,7 +64,7 @@ sha256sum -c zulu11.37.17-ca-jre11.0.6-linux_x64.tar.gz.sha256
 | `os`           | Supported operating system            |
 | `architecture` | Supported machine architecture        |
 | `file_type`    | `tar.gz`, `zip`, `dmg`, `msi`         |
-| `variant`      | JRE (`jre`) or JDK (`jdk`)            |
+| `image_type`   | JRE (`jre`) or JDK (`jdk`)            |
 | `features`     | Features of the distribution          |
 | `url`          | Full source URL of the artifact       |
 | `md5`          | MD5 checksum of the artifact          |
@@ -91,7 +91,7 @@ Example:
   "os": "linux",
   "architecture": "x86_64",
   "file_type": "tar.gz",
-  "variant": "jdk",
+  "image_type": "jdk",
   "features": [
     "javafx"
   ],

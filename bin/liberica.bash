@@ -71,9 +71,9 @@ function download {
 		echo "Skipping ${tag_name} - ${filename}"
 	else
 		# shellcheck disable=SC2016
-		local regex='s/^bellsoft-(jre|jdk)(.+)-(linux|windows|macos|solaris)-(amd64|i386|i586|aarch64|arm64|ppc64le|arm32-vfp-hflt|x64|sparcv9)-?(fx|lite|full|musl|musl-lite)?\.(deb|rpm|msi|dmg|pkg|tar\.gz|zip)$/VARIANT="$1" VERSION="$2" OS="$3" ARCH="$4" FEATURES="$5" EXT="$6"/g'
+		local regex='s/^bellsoft-(jre|jdk)(.+)-(linux|windows|macos|solaris)-(amd64|i386|i586|aarch64|arm64|ppc64le|arm32-vfp-hflt|x64|sparcv9)-?(fx|lite|full|musl|musl-lite)?\.(deb|rpm|msi|dmg|pkg|tar\.gz|zip)$/IMAGE_TYPE="$1" VERSION="$2" OS="$3" ARCH="$4" FEATURES="$5" EXT="$6"/g'
 
-		local VARIANT=""
+		local IMAGE_TYPE=""
 		local VERSION=""
 		local OS=""
 		local ARCH=""
@@ -96,7 +96,7 @@ function download {
 			"$(normalize_os "${OS}")" \
 			"$(normalize_arch "${ARCH}")" \
 			"${EXT}" \
-			"${VARIANT}" \
+			"${IMAGE_TYPE}" \
 			"$(normalize_features "${FEATURES}")" \
 			"${url}" \
 			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \

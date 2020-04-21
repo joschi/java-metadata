@@ -47,13 +47,13 @@ function download {
 		if echo "${asset_name}" | grep -q 'rpm$'
 		then
 			# shellcheck disable=SC2016
-			regex='s/^sapmachine-(jdk|jre)-([0-9].{1,})\.x86_64\.rpm$/VARIANT="$1" VERSION="$2" OS="linux" ARCH="x64" EXT="rpm"/g'
+			regex='s/^sapmachine-(jdk|jre)-([0-9].{1,})\.x86_64\.rpm$/IMAGE_TYPE="$1" VERSION="$2" OS="linux" ARCH="x64" EXT="rpm"/g'
 		else
 			# shellcheck disable=SC2016
-			regex='s/^sapmachine-(jdk|jre)-([0-9].{1,})_(linux|osx|windows)-(x64|ppc64|ppc64le)_bin\.(.+)$/VARIANT="$1" VERSION="$2" OS="$3" ARCH="$4" EXT="$5"/g'
+			regex='s/^sapmachine-(jdk|jre)-([0-9].{1,})_(linux|osx|windows)-(x64|ppc64|ppc64le)_bin\.(.+)$/IMAGE_TYPE="$1" VERSION="$2" OS="$3" ARCH="$4" EXT="$5"/g'
 		fi
 
-		local VARIANT=""
+		local IMAGE_TYPE=""
 		local VERSION=""
 		local OS=""
 		local ARCH=""
@@ -75,7 +75,7 @@ function download {
 			"$(normalize_os "${OS}")" \
 			"$(normalize_arch "${ARCH}")" \
 			"${EXT}" \
-			"${VARIANT}" \
+			"${IMAGE_TYPE}" \
 			'' \
 			"${url}" \
 			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
