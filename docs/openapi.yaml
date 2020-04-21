@@ -52,11 +52,21 @@ components:
         - "s390"
         - "s390x"
         - "sparcv9"
+    releaseTypes:
+      type: string
+      enum:
+        - "ea"
+        - "ga"
     variants:
       type: string
       enum:
         - "jre"
         - "jdk"
+    jvmImpls:
+      type: string
+      enum:
+        - "hotspot"
+        - "openj9"
     metadata:
       type: "object"
       properties:
@@ -67,28 +77,19 @@ components:
         file_type:
           type: string
         release_type:
-          type: string
-          enum:
-            - "ea"
-            - "ga"
+          $ref: '#/components/schemas/releaseTypes'
         version:
           type: string
         java_version:
           type: string
         jvm_impl:
-          type: string
-          enum:
-            - "hotspot"
-            - "openj9"
+          $ref: '#/components/schemas/jvmImpls'
         os:
           $ref: '#/components/schemas/operatingSystems'
         architecture:
           $ref: '#/components/schemas/architectures'
         variant:
-          type: string
-          enum:
-            - "jre"
-            - "jdk"
+          $ref: '#/components/schemas/variants'
         features:
           type: "array"
           items:
@@ -212,10 +213,10 @@ paths:
           description: "Invalid input"
   "/metadata/all.json":
     get:
-      description: "Get the meta data for all JDK/JREs"
+      description: "List of information about all indexed Java distributions"
       tags:
       - "metadata"
-      operationId: "getAllMetaData"
+      operationId: "findAll"
       responses:
         200:
           description: "Meta data about download artifact"
@@ -225,10 +226,10 @@ paths:
                 $ref: '#/components/schemas/response'
   "/metadata/vendor/{vendor}/{artifact_name}.json":
     get:
-      description: "Get the meta data for a specific download artifact a given vendor"
+      description: "List of information about the given Java distribution by the given vendor"
       tags:
       - "metadata"
-      operationId: "GetVendorArtifact"
+      operationId: "findByVendorArtifact"
       parameters:
         - name: "vendor"
           in: path
@@ -253,14 +254,14 @@ paths:
           description: "Invalid input"
   "/metadata/vendor/{vendor}/all.json":
     get:
-      description: "Get the meta data for all JDK/JREs of a given vendor"
+      description: "List of information about Java distributions by the given vendor"
       tags:
       - "metadata"
-      operationId: "GetAllVendor"
+      operationId: "findByVendor"
       parameters:
         - name: "vendor"
           in: path
-          description: "The JDK/JRE vendor"
+          description: "The JVM vendor"
           required: true
           schema:
             $ref: '#/components/schemas/vendors'
@@ -273,243 +274,49 @@ paths:
                 $ref: '#/components/schemas/response'
         404:
           description: "Invalid input"
-  "/metadata/vendor/{vendor}/arch/{architecture}.json":
+  "/metadata/{release_type}/{os}/{arch}/{variant}/{jvm_impl}/{vendor}.json"
     get:
-      description: "Get the meta data for the JDK/JREs of a given vendor and machine architecture"
+      description: "List of information about Java distributions that match the current query"
       tags:
       - "metadata"
-      operationId: "GetVendorArchitecture"
+      operationId: "findByReleaseTypeOsArchVariantJvmImpl/Vendor"
       parameters:
+        - name: "release_type"
+          in: path
+          description: "The release type"
+          required: true
+          schema:
+            $ref: '#/components/schemas/releaseTypes'
+        - name: "os"
+          in: path
+          description: "The operating system"
+          required: true
+          schema:
+            $ref: '#/components/schemas/operatingSystems'
+        - name: "arch"
+          in: path
+          description: "The machine architecture"
+          required: true
+          schema:
+            $ref: '#/components/schemas/architectures'
+        - name: "variant"
+          in: path
+          description: "The distribution variant"
+          required: true
+          schema:
+            $ref: '#/components/schemas/variants'
+        - name: "jvm_impl"
+          in: path
+          description: "The JVM implementation"
+          required: true
+          schema:
+            $ref: '#/components/schemas/jvmImpls'
         - name: "vendor"
           in: path
-          description: "The JDK/JRE vendor"
+          description: "The JVM vendor"
           required: true
           schema:
             $ref: '#/components/schemas/vendors'
-        - name: "architecture"
-          in: path
-          description: "The machine architecture"
-          required: true
-          schema:
-            $ref: '#/components/schemas/architectures'
-      responses:
-        200:
-          description: "Meta data about download artifact"
-          content:
-            "application/json":
-              schema:
-                $ref: '#/components/schemas/response'
-        404:
-          description: "Invalid input"
-  "/metadata/vendor/{vendor}/arch/{architecture}/os/{operating_system}.json":
-    get:
-      description: "Get the meta data for the JDK/JREs of a given vendor, machine architecture, and operating system"
-      tags:
-      - "metadata"
-      operationId: "GetVendorArchitectureOs"
-      parameters:
-        - name: "vendor"
-          in: path
-          description: "The JDK/JRE vendor"
-          required: true
-          schema:
-            $ref: '#/components/schemas/vendors'
-        - name: "architecture"
-          in: path
-          description: "The machine architecture"
-          required: true
-          schema:
-            $ref: '#/components/schemas/architectures'
-        - name: "operating_system"
-          in: path
-          description: "The operating system"
-          required: true
-          schema:
-            $ref: '#/components/schemas/operatingSystems'
-      responses:
-        200:
-          description: "Meta data about download artifact"
-          content:
-            "application/json":
-              schema:
-                $ref: '#/components/schemas/response'
-        404:
-          description: "Invalid input"
-  "/metadata/{variant}/all.json":
-    get:
-      description: "Get the meta data for a given variant"
-      tags:
-      - "metadata"
-      operationId: "GetAllVariant"
-      parameters:
-        - name: variant
-          in: path
-          description: "The variant (JDK or JRE)"
-          required: true
-          schema:
-            $ref: '#/components/schemas/variants'
-      responses:
-        200:
-          description: "Meta data about download artifact"
-          content:
-            "application/json":
-              schema:
-                $ref: '#/components/schemas/response'
-        404:
-          description: "Invalid input"
-  "/metadata/{variant}/arch/{architecture}.json":
-    get:
-      description: "Get the meta data for a given variant and machine architecture"
-      tags:
-      - "metadata"
-      operationId: "GetVariantArchitecture"
-      parameters:
-        - name: variant
-          in: path
-          description: "The variant (JDK or JRE)"
-          required: true
-          schema:
-            $ref: '#/components/schemas/variants'
-        - name: "architecture"
-          in: path
-          description: "The machine architecture"
-          required: true
-          schema:
-            $ref: '#/components/schemas/architectures'
-      responses:
-        200:
-          description: "Meta data about download artifact"
-          content:
-            "application/json":
-              schema:
-                $ref: '#/components/schemas/response'
-        404:
-          description: "Invalid input"
-  "/metadata/{variant}/arch/{architecture}/os/{operating_system}.json":
-    get:
-      description: "Get the meta data for a given variant, machine architecture, and operating system"
-      tags:
-      - "metadata"
-      operationId: "GetVariantArchitectureOs"
-      parameters:
-        - name: variant
-          in: path
-          description: "The variant (JDK or JRE)"
-          required: true
-          schema:
-            $ref: '#/components/schemas/variants'
-        - name: "architecture"
-          in: path
-          description: "The machine architecture"
-          required: true
-          schema:
-            $ref: '#/components/schemas/architectures'
-        - name: "operating_system"
-          in: path
-          description: "The operating system"
-          required: true
-          schema:
-            $ref: '#/components/schemas/operatingSystems'
-      responses:
-        200:
-          description: "Meta data about download artifact"
-          content:
-            "application/json":
-              schema:
-                $ref: '#/components/schemas/response'
-        404:
-          description: "Invalid input"
-  "/metadata/arch/{architecture}.json":
-    get:
-      description: "Get the meta data for a given machine architecture"
-      tags:
-      - "metadata"
-      operationId: "GetArchitecture"
-      parameters:
-        - name: "architecture"
-          in: path
-          description: "The machine architecture"
-          required: true
-          schema:
-            $ref: '#/components/schemas/architectures'
-      responses:
-        200:
-          description: "Meta data about download artifact"
-          content:
-            "application/json":
-              schema:
-                $ref: '#/components/schemas/response'
-        404:
-          description: "Invalid input"
-  "/metadata/arch/{architecture}/os/{operating_system}.json":
-    get:
-      description: "Get the meta data for a given machine architecture and operating system"
-      tags:
-      - "metadata"
-      operationId: "GetArchitectureOs"
-      parameters:
-        - name: "architecture"
-          in: path
-          description: "The machine architecture"
-          required: true
-          schema:
-            $ref: '#/components/schemas/architectures'
-        - name: "operating_system"
-          in: path
-          description: "The operating system"
-          required: true
-          schema:
-            $ref: '#/components/schemas/operatingSystems'
-      responses:
-        200:
-          description: "Meta data about download artifact"
-          content:
-            "application/json":
-              schema:
-                $ref: '#/components/schemas/response'
-        404:
-          description: "Invalid input"
-  "/metadata/os/{operating_system}.json":
-    get:
-      description: "Get the meta data for a given operating system"
-      tags:
-      - "metadata"
-      operationId: "GetOperatingSystem"
-      parameters:
-        - name: "operating_system"
-          in: path
-          description: "The operating system"
-          required: true
-          schema:
-            $ref: '#/components/schemas/operatingSystems'
-      responses:
-        200:
-          description: "Meta data about download artifact"
-          content:
-            "application/json":
-              schema:
-                $ref: '#/components/schemas/response'
-        404:
-          description: "Invalid input"
-  "/metadata/os/{operating_system}/arch/{architecture}.json":
-    get:
-      description: "Get the meta data for a given operating system and machine architecture"
-      tags:
-      - "metadata"
-      operationId: "GetOsArchitecture"
-      parameters:
-        - name: "operating_system"
-          in: path
-          description: "The operating system"
-          required: true
-          schema:
-            $ref: '#/components/schemas/operatingSystems'
-        - name: "architecture"
-          in: path
-          description: "The machine architecture"
-          required: true
-          schema:
-            $ref: '#/components/schemas/architectures'
       responses:
         200:
           description: "Meta data about download artifact"

@@ -107,4 +107,3 @@ do
 done
 
 jq -s -S . "${METADATA_DIR}"/zulu*.json > "${METADATA_DIR}/all.json"
-aggregate_metadata "${METADATA_DIR}/all.json" "${METADATA_DIR}"

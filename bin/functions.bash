@@ -167,55 +167,54 @@ function aggregate_metadata {
 	supported_arch=$(find_supported_arch "${all_json}")
 	local supported_os
 	supported_os=$(find_supported_os "${all_json}")
-	local supported_variant
-	supported_variant='jre jdk'
+	local supported_variant='jre jdk'
+	local release_types='ea ga'
+	local jvm_impls='hotspot openj9'
+	local vendors='adoptopenjdk corretto graalvm liberica sapmachine zulu'
 
-	for arch in $supported_arch
+
+	# https://api.adoptopenjdk.net/swagger-ui/
+	# /v3/binary/latest/{feature_version}/{release_type}/{os}/{arch}/{image_type}/{jvm_impl}/{heap_size}/{vendor}
+	for release_type in $release_types
 	do
-		local arch_dir="${metadata_dir}/arch"
-		ensure_directory "${arch_dir}"
-		jq -S "[.[] | select(.architecture == \"${arch}\")]" "${all_json}" > "${arch_dir}/${arch}.json"
+		local release_type_dir="${metadata_dir}/${release_type}"
+		ensure_directory "${release_type_dir}"
+		jq -S "[.[] | select(.release_type == \"${release_type}\")]" "${all_json}" > "${release_type_dir}/../${release_type}.json"
 
-		local os_dir="${arch_dir}/${arch}/os"
-		ensure_directory "${os_dir}"
 		for os in $supported_os
 		do
-			jq -S "[.[] | select(.os == \"${os}\")]" "${arch_dir}/${arch}.json" > "${os_dir}/${os}.json"
-		done
-	done
-
-	for os in $supported_os
-	do
-		local os_dir="${metadata_dir}/os"
-		ensure_directory "${os_dir}"
-		jq -S "[.[] | select(.os == \"${os}\")]" "${metadata_dir}/all.json" > "${os_dir}/${os}.json"
-
-		local arch_dir="${os_dir}/${os}/arch"
-		ensure_directory "${arch_dir}"
-		for arch in $supported_arch
-		do
-			jq -S "[.[] | select(.architecture == \"${arch}\")]" "${os_dir}/${os}.json" > "${arch_dir}/${arch}.json"
-		done
-	done
-
-	for variant in $supported_variant
-	do
-		local variant_dir="${metadata_dir}/${variant}"
-		ensure_directory "${variant_dir}"
-		jq -S "[.[] | select(.variant == \"${variant}\")]" "${all_json}" > "${variant_dir}/all.json"
-
-		local arch_dir="${variant_dir}/arch"
-		ensure_directory "${arch_dir}"
-		for arch in $supported_arch
-		do
-			jq -S "[.[] | select(.architecture == \"${arch}\")]" "${variant_dir}/all.json" > "${arch_dir}/${arch}.json"
-
-			local os_dir="${arch_dir}/${arch}/os"
+			local os_dir="${release_type_dir}/${os}"
 			ensure_directory "${os_dir}"
-			for os in $supported_os
+			jq -S "[.[] | select(.os == \"${os}\")]" "${release_type_dir}/../${release_type}.json" > "${os_dir}/../${os}.json"
+
+			for arch in $supported_arch
 			do
-				jq -S "[.[] | select(.os == \"${os}\")]" "${arch_dir}/${arch}.json" > "${os_dir}/${os}.json"
+				local arch_dir="${os_dir}/${arch}"
+				ensure_directory "${arch_dir}"
+				jq -S "[.[] | select(.architecture == \"${arch}\")]" "${os_dir}/../${os}.json" > "${arch_dir}/../${arch}.json"
+
+				for variant in $supported_variant
+				do
+					local variant_dir="${arch_dir}/${variant}"
+					ensure_directory "${variant_dir}"
+					jq -S "[.[] | select(.variant == \"${variant}\")]" "${arch_dir}/../${arch}.json" > "${variant_dir}/../${variant}.json"
+
+					for jvm_impl in $jvm_impls
+					do
+						local jvm_impl_dir="${variant_dir}/${jvm_impl}"
+						ensure_directory "${jvm_impl_dir}"
+						jq -S "[.[] | select(.jvm_impl == \"${jvm_impl}\")]" "${variant_dir}/../${variant}.json" > "${jvm_impl_dir}/../${jvm_impl}.json"
+
+						for vendor in $vendors
+						do
+							local vendor_dir="${jvm_impl_dir}/${vendor}"
+							ensure_directory "${vendor_dir}"
+							jq -S "[.[] | select(.vendor == \"${vendor}\")]" "${jvm_impl_dir}/../${jvm_impl}.json" > "${vendor_dir}/../${vendor}.json"
+						done
+					done
+				done
 			done
 		done
+
 	done
 }
