@@ -18,7 +18,7 @@
     "sha512_file": "amazon-corretto-11.0.2.9.1-linux-x64.tar.gz.sha512",
     "size": 191350938,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.2.9.1/amazon-corretto-11.0.2.9.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.2.9.1"
   },
@@ -41,7 +41,7 @@
     "sha512_file": "amazon-corretto-11.0.2.9.1-macosx-x64.pkg.sha512",
     "size": 190118297,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.2.9.1/amazon-corretto-11.0.2.9.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.2.9.1"
   },
@@ -64,7 +64,7 @@
     "sha512_file": "amazon-corretto-11.0.2.9.1-macosx-x64.tar.gz.sha512",
     "size": 190151349,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.2.9.1/amazon-corretto-11.0.2.9.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.2.9.1"
   },
@@ -87,7 +87,7 @@
     "sha512_file": "amazon-corretto-11.0.2.9.1-windows-x64.msi.sha512",
     "size": 167284224,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.2.9.1/amazon-corretto-11.0.2.9.1-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.2.9.1"
   },
@@ -110,7 +110,7 @@
     "sha512_file": "amazon-corretto-11.0.2.9.2-linux-x64.tar.gz.sha512",
     "size": 191350019,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.2.9.2/amazon-corretto-11.0.2.9.2-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.2.9.2"
   },
@@ -133,7 +133,7 @@
     "sha512_file": "amazon-corretto-11.0.2.9.3-linux-x64.tar.gz.sha512",
     "size": 191380228,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.2.9.3/amazon-corretto-11.0.2.9.3-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.2.9.3"
   },
@@ -156,7 +156,7 @@
     "sha512_file": "amazon-corretto-11.0.2.9.3-macosx-x64.pkg.sha512",
     "size": 184887607,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.2.9.3/amazon-corretto-11.0.2.9.3-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.2.9.3"
   },
@@ -179,7 +179,7 @@
     "sha512_file": "amazon-corretto-11.0.2.9.3-macosx-x64.tar.gz.sha512",
     "size": 184838643,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.2.9.3/amazon-corretto-11.0.2.9.3-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.2.9.3"
   },
@@ -202,7 +202,7 @@
     "sha512_file": "amazon-corretto-11.0.2.9.3-windows-x64.msi.sha512",
     "size": 167221248,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.2.9.3/amazon-corretto-11.0.2.9.3-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.2.9.3"
   },
@@ -225,7 +225,7 @@
     "sha512_file": "amazon-corretto-11.0.3.7.1-linux-aarch64.tar.gz.sha512",
     "size": 189515322,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.3.7.1/amazon-corretto-11.0.3.7.1-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.3.7.1"
   },
@@ -248,7 +248,7 @@
     "sha512_file": "amazon-corretto-11.0.3.7.1-linux-x64.tar.gz.sha512",
     "size": 191441498,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.3.7.1/amazon-corretto-11.0.3.7.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.3.7.1"
   },
@@ -271,7 +271,7 @@
     "sha512_file": "amazon-corretto-11.0.3.7.1-macosx-x64.pkg.sha512",
     "size": 184942216,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.3.7.1/amazon-corretto-11.0.3.7.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.3.7.1"
   },
@@ -294,7 +294,7 @@
     "sha512_file": "amazon-corretto-11.0.3.7.1-macosx-x64.tar.gz.sha512",
     "size": 184892496,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.3.7.1/amazon-corretto-11.0.3.7.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.3.7.1"
   },
@@ -317,7 +317,7 @@
     "sha512_file": "amazon-corretto-11.0.3.7.1-windows-x64.msi.sha512",
     "size": 167276544,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.3.7.1/amazon-corretto-11.0.3.7.1-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.3.7.1"
   },
@@ -340,7 +340,7 @@
     "sha512_file": "amazon-corretto-11.0.4.11.1-linux-aarch64.tar.gz.sha512",
     "size": 190260851,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.4.11.1/amazon-corretto-11.0.4.11.1-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.4.11.1"
   },
@@ -363,7 +363,7 @@
     "sha512_file": "amazon-corretto-11.0.4.11.1-linux-x64.tar.gz.sha512",
     "size": 192168550,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.4.11.1/amazon-corretto-11.0.4.11.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.4.11.1"
   },
@@ -386,7 +386,7 @@
     "sha512_file": "amazon-corretto-11.0.4.11.1-macosx-x64.pkg.sha512",
     "size": 185442900,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.4.11.1/amazon-corretto-11.0.4.11.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.4.11.1"
   },
@@ -409,7 +409,7 @@
     "sha512_file": "amazon-corretto-11.0.4.11.1-macosx-x64.tar.gz.sha512",
     "size": 185406373,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.4.11.1/amazon-corretto-11.0.4.11.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.4.11.1"
   },
@@ -432,7 +432,7 @@
     "sha512_file": "amazon-corretto-11.0.4.11.1-windows-x64.msi.sha512",
     "size": 168257536,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.4.11.1/amazon-corretto-11.0.4.11.1-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.4.11.1"
   },
@@ -455,7 +455,7 @@
     "sha512_file": "amazon-corretto-11.0.5.10.1-linux-aarch64.tar.gz.sha512",
     "size": 190425881,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.5.10.1/amazon-corretto-11.0.5.10.1-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.5.10.1"
   },
@@ -478,7 +478,7 @@
     "sha512_file": "amazon-corretto-11.0.5.10.1-linux-x64.tar.gz.sha512",
     "size": 192358972,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.5.10.1/amazon-corretto-11.0.5.10.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.5.10.1"
   },
@@ -501,7 +501,7 @@
     "sha512_file": "amazon-corretto-11.0.5.10.1-macosx-x64.pkg.sha512",
     "size": 183743450,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.5.10.1/amazon-corretto-11.0.5.10.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.5.10.1"
   },
@@ -524,7 +524,7 @@
     "sha512_file": "amazon-corretto-11.0.5.10.1-macosx-x64.tar.gz.sha512",
     "size": 183708591,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.5.10.1/amazon-corretto-11.0.5.10.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.5.10.1"
   },
@@ -547,7 +547,7 @@
     "sha512_file": "amazon-corretto-11.0.5.10.1-windows-x64.msi.sha512",
     "size": 167636480,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.5.10.1/amazon-corretto-11.0.5.10.1-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.5.10.1"
   },
@@ -570,7 +570,7 @@
     "sha512_file": "amazon-corretto-11.0.5.10.2-macosx-x64.pkg.sha512",
     "size": 183754669,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.5.10.2/amazon-corretto-11.0.5.10.2-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.5.10.2"
   },
@@ -593,7 +593,7 @@
     "sha512_file": "amazon-corretto-11.0.5.10.2-macosx-x64.tar.gz.sha512",
     "size": 183712226,
     "url": "https://d3pxv6yz143wms.cloudfront.net/11.0.5.10.2/amazon-corretto-11.0.5.10.2-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.5.10.2"
   },
@@ -616,7 +616,7 @@
     "sha512_file": "amazon-corretto-11.0.6.10.1-linux-aarch64.tar.gz.sha512",
     "size": 190717764,
     "url": "https://corretto.aws/downloads/resources/11.0.6.10.1/amazon-corretto-11.0.6.10.1-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.6.10.1"
   },
@@ -639,7 +639,7 @@
     "sha512_file": "amazon-corretto-11.0.6.10.1-linux-x64.tar.gz.sha512",
     "size": 192619863,
     "url": "https://corretto.aws/downloads/resources/11.0.6.10.1/amazon-corretto-11.0.6.10.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.6.10.1"
   },
@@ -662,7 +662,7 @@
     "sha512_file": "amazon-corretto-11.0.6.10.1-macosx-x64.pkg.sha512",
     "size": 185288444,
     "url": "https://corretto.aws/downloads/resources/11.0.6.10.1/amazon-corretto-11.0.6.10.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.6.10.1"
   },
@@ -685,7 +685,7 @@
     "sha512_file": "amazon-corretto-11.0.6.10.1-macosx-x64.tar.gz.sha512",
     "size": 185259464,
     "url": "https://corretto.aws/downloads/resources/11.0.6.10.1/amazon-corretto-11.0.6.10.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.6.10.1"
   },
@@ -708,7 +708,7 @@
     "sha512_file": "amazon-corretto-11.0.6.10.1-windows-x64-jdk.zip.sha512",
     "size": 184751002,
     "url": "https://corretto.aws/downloads/resources/11.0.6.10.1/amazon-corretto-11.0.6.10.1-windows-x64-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "11.0.6.10.1"
   },
@@ -731,7 +731,7 @@
     "sha512_file": "amazon-corretto-11.0.6.10.1-windows-x64.msi.sha512",
     "size": 167869440,
     "url": "https://corretto.aws/downloads/resources/11.0.6.10.1/amazon-corretto-11.0.6.10.1-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.6.10.1"
   },
@@ -754,7 +754,7 @@
     "sha512_file": "amazon-corretto-11.0.7.10.1-linux-aarch64.tar.gz.sha512",
     "size": 190871933,
     "url": "https://corretto.aws/downloads/resources/11.0.7.10.1/amazon-corretto-11.0.7.10.1-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.7.10.1"
   },
@@ -777,7 +777,7 @@
     "sha512_file": "amazon-corretto-11.0.7.10.1-linux-x64.tar.gz.sha512",
     "size": 192208421,
     "url": "https://corretto.aws/downloads/resources/11.0.7.10.1/amazon-corretto-11.0.7.10.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.7.10.1"
   },
@@ -800,7 +800,7 @@
     "sha512_file": "amazon-corretto-11.0.7.10.1-macosx-x64.pkg.sha512",
     "size": 185346829,
     "url": "https://corretto.aws/downloads/resources/11.0.7.10.1/amazon-corretto-11.0.7.10.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.7.10.1"
   },
@@ -823,7 +823,7 @@
     "sha512_file": "amazon-corretto-11.0.7.10.1-macosx-x64.tar.gz.sha512",
     "size": 183996208,
     "url": "https://corretto.aws/downloads/resources/11.0.7.10.1/amazon-corretto-11.0.7.10.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.7.10.1"
   },
@@ -846,7 +846,7 @@
     "sha512_file": "amazon-corretto-11.0.7.10.1-windows-x64-jdk.zip.sha512",
     "size": 184907881,
     "url": "https://corretto.aws/downloads/resources/11.0.7.10.1/amazon-corretto-11.0.7.10.1-windows-x64-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "11.0.7.10.1"
   },
@@ -869,7 +869,7 @@
     "sha512_file": "amazon-corretto-11.0.7.10.1-windows-x64.msi.sha512",
     "size": 167970816,
     "url": "https://corretto.aws/downloads/resources/11.0.7.10.1/amazon-corretto-11.0.7.10.1-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "11.0.7.10.1"
   },
@@ -892,7 +892,7 @@
     "sha512_file": "amazon-corretto-8.202.08.2-linux-x64.tar.gz.sha512",
     "size": 116544498,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.202.08.2/amazon-corretto-8.202.08.2-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.202.08.2"
   },
@@ -915,7 +915,7 @@
     "sha512_file": "amazon-corretto-8.202.08.2-macosx-x64.pkg.sha512",
     "size": 115620810,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.202.08.2/amazon-corretto-8.202.08.2-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.202.08.2"
   },
@@ -938,7 +938,7 @@
     "sha512_file": "amazon-corretto-8.202.08.2-macosx-x64.tar.gz.sha512",
     "size": 115674406,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.202.08.2/amazon-corretto-8.202.08.2-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.202.08.2"
   },
@@ -961,7 +961,7 @@
     "sha512_file": "amazon-corretto-8.202.08.2-windows-x64-jdk.zip.sha512",
     "size": 126342436,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.202.08.2/amazon-corretto-8.202.08.2-windows-x64-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.202.08.2"
   },
@@ -984,7 +984,7 @@
     "sha512_file": "amazon-corretto-8.202.08.2-windows-x64-jre.zip.sha512",
     "size": 46281918,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.202.08.2/amazon-corretto-8.202.08.2-windows-x64-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.202.08.2"
   },
@@ -1007,7 +1007,7 @@
     "sha512_file": "amazon-corretto-8.202.08.2-windows-x64.msi.sha512",
     "size": 112288768,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.202.08.2/amazon-corretto-8.202.08.2-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.202.08.2"
   },
@@ -1030,7 +1030,7 @@
     "sha512_file": "amazon-corretto-8.202.08.2-windows-x86-jdk.zip.sha512",
     "size": 125583723,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.202.08.2/amazon-corretto-8.202.08.2-windows-x86-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.202.08.2"
   },
@@ -1053,7 +1053,7 @@
     "sha512_file": "amazon-corretto-8.202.08.2-windows-x86-jre.zip.sha512",
     "size": 45500623,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.202.08.2/amazon-corretto-8.202.08.2-windows-x86-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.202.08.2"
   },
@@ -1076,7 +1076,7 @@
     "sha512_file": "amazon-corretto-8.202.08.2-windows-x86.msi.sha512",
     "size": 110860800,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.202.08.2/amazon-corretto-8.202.08.2-windows-x86.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.202.08.2"
   },
@@ -1099,7 +1099,7 @@
     "sha512_file": "amazon-corretto-8.212.04.2-linux-x64.tar.gz.sha512",
     "size": 116563510,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.212.04.2/amazon-corretto-8.212.04.2-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.212.04.2"
   },
@@ -1122,7 +1122,7 @@
     "sha512_file": "amazon-corretto-8.212.04.2-macosx-x64.pkg.sha512",
     "size": 114875525,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.212.04.2/amazon-corretto-8.212.04.2-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.212.04.2"
   },
@@ -1145,7 +1145,7 @@
     "sha512_file": "amazon-corretto-8.212.04.2-macosx-x64.tar.gz.sha512",
     "size": 114842259,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.212.04.2/amazon-corretto-8.212.04.2-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.212.04.2"
   },
@@ -1168,7 +1168,7 @@
     "sha512_file": "amazon-corretto-8.212.04.2-windows-x64-jdk.zip.sha512",
     "size": 118448154,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.212.04.2/amazon-corretto-8.212.04.2-windows-x64-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.212.04.2"
   },
@@ -1191,7 +1191,7 @@
     "sha512_file": "amazon-corretto-8.212.04.2-windows-x64-jre.zip.sha512",
     "size": 46935976,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.212.04.2/amazon-corretto-8.212.04.2-windows-x64-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.212.04.2"
   },
@@ -1214,7 +1214,7 @@
     "sha512_file": "amazon-corretto-8.212.04.2-windows-x64.msi.sha512",
     "size": 112436736,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.212.04.2/amazon-corretto-8.212.04.2-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.212.04.2"
   },
@@ -1237,7 +1237,7 @@
     "sha512_file": "amazon-corretto-8.212.04.2-windows-x86-jdk.zip.sha512",
     "size": 117592648,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.212.04.2/amazon-corretto-8.212.04.2-windows-x86-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.212.04.2"
   },
@@ -1260,7 +1260,7 @@
     "sha512_file": "amazon-corretto-8.212.04.2-windows-x86-jre.zip.sha512",
     "size": 46130338,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.212.04.2/amazon-corretto-8.212.04.2-windows-x86-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.212.04.2"
   },
@@ -1283,7 +1283,7 @@
     "sha512_file": "amazon-corretto-8.212.04.2-windows-x86.msi.sha512",
     "size": 110967296,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.212.04.2/amazon-corretto-8.212.04.2-windows-x86.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.212.04.2"
   },
@@ -1306,7 +1306,7 @@
     "sha512_file": "amazon-corretto-8.212.04.3-linux-aarch64.tar.gz.sha512",
     "size": 99850194,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.212.04.3/amazon-corretto-8.212.04.3-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.212.04.3"
   },
@@ -1329,7 +1329,7 @@
     "sha512_file": "amazon-corretto-8.222.10.1-linux-x64.tar.gz.sha512",
     "size": 116825317,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.222.10.1/amazon-corretto-8.222.10.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.222.10.1"
   },
@@ -1352,7 +1352,7 @@
     "sha512_file": "amazon-corretto-8.222.10.1-macosx-x64.pkg.sha512",
     "size": 114982564,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.222.10.1/amazon-corretto-8.222.10.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.222.10.1"
   },
@@ -1375,7 +1375,7 @@
     "sha512_file": "amazon-corretto-8.222.10.1-macosx-x64.tar.gz.sha512",
     "size": 114942417,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.222.10.1/amazon-corretto-8.222.10.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.222.10.1"
   },
@@ -1398,7 +1398,7 @@
     "sha512_file": "amazon-corretto-8.222.10.4-linux-aarch64.tar.gz.sha512",
     "size": 100085850,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.222.10.4/amazon-corretto-8.222.10.4-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.222.10.4"
   },
@@ -1421,7 +1421,7 @@
     "sha512_file": "amazon-corretto-8.232.09.1-linux-aarch64.tar.gz.sha512",
     "size": 100138062,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/amazon-corretto-8.232.09.1-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.232.09.1"
   },
@@ -1444,7 +1444,7 @@
     "sha512_file": "amazon-corretto-8.232.09.1-linux-x64.tar.gz.sha512",
     "size": 116846676,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/amazon-corretto-8.232.09.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.232.09.1"
   },
@@ -1467,7 +1467,7 @@
     "sha512_file": "amazon-corretto-8.232.09.1-macosx-x64.pkg.sha512",
     "size": 114987410,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/amazon-corretto-8.232.09.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.232.09.1"
   },
@@ -1490,7 +1490,7 @@
     "sha512_file": "amazon-corretto-8.232.09.1-macosx-x64.tar.gz.sha512",
     "size": 114952253,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/amazon-corretto-8.232.09.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.232.09.1"
   },
@@ -1513,7 +1513,7 @@
     "sha512_file": "amazon-corretto-8.232.09.1-windows-x64-jdk.zip.sha512",
     "size": 119857097,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/amazon-corretto-8.232.09.1-windows-x64-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.232.09.1"
   },
@@ -1536,7 +1536,7 @@
     "sha512_file": "amazon-corretto-8.232.09.1-windows-x64-jre.zip.sha512",
     "size": 48244836,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/amazon-corretto-8.232.09.1-windows-x64-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.232.09.1"
   },
@@ -1559,7 +1559,7 @@
     "sha512_file": "amazon-corretto-8.232.09.1-windows-x64.msi.sha512",
     "size": 114202624,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/amazon-corretto-8.232.09.1-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.232.09.1"
   },
@@ -1582,7 +1582,7 @@
     "sha512_file": "amazon-corretto-8.232.09.1-windows-x86-jdk.zip.sha512",
     "size": 118997749,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/amazon-corretto-8.232.09.1-windows-x86-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.232.09.1"
   },
@@ -1605,7 +1605,7 @@
     "sha512_file": "amazon-corretto-8.232.09.1-windows-x86-jre.zip.sha512",
     "size": 47440758,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/amazon-corretto-8.232.09.1-windows-x86-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.232.09.1"
   },
@@ -1628,7 +1628,7 @@
     "sha512_file": "amazon-corretto-8.232.09.1-windows-x86.msi.sha512",
     "size": 112706560,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/amazon-corretto-8.232.09.1-windows-x86.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.232.09.1"
   },
@@ -1651,7 +1651,7 @@
     "sha512_file": "amazon-corretto-8.232.09.2-macosx-x64.pkg.sha512",
     "size": 114984665,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.2/amazon-corretto-8.232.09.2-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.232.09.2"
   },
@@ -1674,7 +1674,7 @@
     "sha512_file": "amazon-corretto-8.232.09.2-macosx-x64.tar.gz.sha512",
     "size": 114941248,
     "url": "https://d3pxv6yz143wms.cloudfront.net/8.232.09.2/amazon-corretto-8.232.09.2-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.232.09.2"
   },
@@ -1697,7 +1697,7 @@
     "sha512_file": "amazon-corretto-8.242.07.1-linux-aarch64.tar.gz.sha512",
     "size": 100159492,
     "url": "https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.07.1"
   },
@@ -1720,7 +1720,7 @@
     "sha512_file": "amazon-corretto-8.242.07.1-linux-x64.tar.gz.sha512",
     "size": 116892087,
     "url": "https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.07.1"
   },
@@ -1743,7 +1743,7 @@
     "sha512_file": "amazon-corretto-8.242.07.1-macosx-x64.pkg.sha512",
     "size": 115024268,
     "url": "https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.07.1"
   },
@@ -1766,7 +1766,7 @@
     "sha512_file": "amazon-corretto-8.242.07.1-macosx-x64.tar.gz.sha512",
     "size": 114990825,
     "url": "https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.07.1"
   },
@@ -1789,7 +1789,7 @@
     "sha512_file": "amazon-corretto-8.242.07.1-windows-x64-jdk.zip.sha512",
     "size": 119902285,
     "url": "https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-windows-x64-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.242.07.1"
   },
@@ -1812,7 +1812,7 @@
     "sha512_file": "amazon-corretto-8.242.07.1-windows-x64-jre.zip.sha512",
     "size": 48279570,
     "url": "https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-windows-x64-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.242.07.1"
   },
@@ -1835,7 +1835,7 @@
     "sha512_file": "amazon-corretto-8.242.07.1-windows-x64.msi.sha512",
     "size": 114290688,
     "url": "https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.07.1"
   },
@@ -1858,7 +1858,7 @@
     "sha512_file": "amazon-corretto-8.242.07.1-windows-x86-jdk.zip.sha512",
     "size": 119052135,
     "url": "https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-windows-x86-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.242.07.1"
   },
@@ -1881,7 +1881,7 @@
     "sha512_file": "amazon-corretto-8.242.07.1-windows-x86-jre.zip.sha512",
     "size": 47485104,
     "url": "https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-windows-x86-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.242.07.1"
   },
@@ -1904,7 +1904,7 @@
     "sha512_file": "amazon-corretto-8.242.07.1-windows-x86.msi.sha512",
     "size": 112808960,
     "url": "https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-windows-x86.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.07.1"
   },
@@ -1927,7 +1927,7 @@
     "sha512_file": "amazon-corretto-8.242.08.1-linux-aarch64.tar.gz.sha512",
     "size": 100157428,
     "url": "https://corretto.aws/downloads/resources/8.242.08.1/amazon-corretto-8.242.08.1-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.08.1"
   },
@@ -1950,7 +1950,7 @@
     "sha512_file": "amazon-corretto-8.242.08.1-linux-x64.tar.gz.sha512",
     "size": 116888810,
     "url": "https://corretto.aws/downloads/resources/8.242.08.1/amazon-corretto-8.242.08.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.08.1"
   },
@@ -1973,7 +1973,7 @@
     "sha512_file": "amazon-corretto-8.242.08.1-macosx-x64.pkg.sha512",
     "size": 115027863,
     "url": "https://corretto.aws/downloads/resources/8.242.08.1/amazon-corretto-8.242.08.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.08.1"
   },
@@ -1996,7 +1996,7 @@
     "sha512_file": "amazon-corretto-8.242.08.1-macosx-x64.tar.gz.sha512",
     "size": 114198995,
     "url": "https://corretto.aws/downloads/resources/8.242.08.1/amazon-corretto-8.242.08.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.08.1"
   },
@@ -2019,7 +2019,7 @@
     "sha512_file": "amazon-corretto-8.242.08.1-windows-x64-jdk.zip.sha512",
     "size": 119905151,
     "url": "https://corretto.aws/downloads/resources/8.242.08.1/amazon-corretto-8.242.08.1-windows-x64-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.242.08.1"
   },
@@ -2042,7 +2042,7 @@
     "sha512_file": "amazon-corretto-8.242.08.1-windows-x64-jre.zip.sha512",
     "size": 48280414,
     "url": "https://corretto.aws/downloads/resources/8.242.08.1/amazon-corretto-8.242.08.1-windows-x64-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.242.08.1"
   },
@@ -2065,7 +2065,7 @@
     "sha512_file": "amazon-corretto-8.242.08.1-windows-x86-jdk.zip.sha512",
     "size": 119053652,
     "url": "https://corretto.aws/downloads/resources/8.242.08.1/amazon-corretto-8.242.08.1-windows-x86-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.242.08.1"
   },
@@ -2088,7 +2088,7 @@
     "sha512_file": "amazon-corretto-8.242.08.1-windows-x86-jre.zip.sha512",
     "size": 47485014,
     "url": "https://corretto.aws/downloads/resources/8.242.08.1/amazon-corretto-8.242.08.1-windows-x86-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.242.08.1"
   },
@@ -2111,7 +2111,7 @@
     "sha512_file": "amazon-corretto-8.242.08.2-macosx-x64.pkg.sha512",
     "size": 115079773,
     "url": "https://corretto.aws/downloads/resources/8.242.08.2/amazon-corretto-8.242.08.2-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.08.2"
   },
@@ -2134,7 +2134,7 @@
     "sha512_file": "amazon-corretto-8.242.08.2-macosx-x64.tar.gz.sha512",
     "size": 115106884,
     "url": "https://corretto.aws/downloads/resources/8.242.08.2/amazon-corretto-8.242.08.2-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.242.08.2"
   },
@@ -2157,7 +2157,7 @@
     "sha512_file": "amazon-corretto-8.252.09.1-linux-aarch64.tar.gz.sha512",
     "size": 100443579,
     "url": "https://corretto.aws/downloads/resources/8.252.09.1/amazon-corretto-8.252.09.1-linux-aarch64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.252.09.1"
   },
@@ -2180,7 +2180,7 @@
     "sha512_file": "amazon-corretto-8.252.09.1-linux-x64.tar.gz.sha512",
     "size": 116474279,
     "url": "https://corretto.aws/downloads/resources/8.252.09.1/amazon-corretto-8.252.09.1-linux-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.252.09.1"
   },
@@ -2203,7 +2203,7 @@
     "sha512_file": "amazon-corretto-8.252.09.1-macosx-x64.pkg.sha512",
     "size": 115350808,
     "url": "https://corretto.aws/downloads/resources/8.252.09.1/amazon-corretto-8.252.09.1-macosx-x64.pkg",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.252.09.1"
   },
@@ -2226,7 +2226,7 @@
     "sha512_file": "amazon-corretto-8.252.09.1-macosx-x64.tar.gz.sha512",
     "size": 115383787,
     "url": "https://corretto.aws/downloads/resources/8.252.09.1/amazon-corretto-8.252.09.1-macosx-x64.tar.gz",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.252.09.1"
   },
@@ -2249,7 +2249,7 @@
     "sha512_file": "amazon-corretto-8.252.09.1-windows-x64-jdk.zip.sha512",
     "size": 120113773,
     "url": "https://corretto.aws/downloads/resources/8.252.09.1/amazon-corretto-8.252.09.1-windows-x64-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.252.09.1"
   },
@@ -2272,7 +2272,7 @@
     "sha512_file": "amazon-corretto-8.252.09.1-windows-x64-jre.zip.sha512",
     "size": 48405210,
     "url": "https://corretto.aws/downloads/resources/8.252.09.1/amazon-corretto-8.252.09.1-windows-x64-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.252.09.1"
   },
@@ -2295,7 +2295,7 @@
     "sha512_file": "amazon-corretto-8.252.09.1-windows-x64.msi.sha512",
     "size": 114487296,
     "url": "https://corretto.aws/downloads/resources/8.252.09.1/amazon-corretto-8.252.09.1-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.252.09.1"
   },
@@ -2318,7 +2318,7 @@
     "sha512_file": "amazon-corretto-8.252.09.1-windows-x86-jdk.zip.sha512",
     "size": 119320684,
     "url": "https://corretto.aws/downloads/resources/8.252.09.1/amazon-corretto-8.252.09.1-windows-x86-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.252.09.1"
   },
@@ -2341,7 +2341,7 @@
     "sha512_file": "amazon-corretto-8.252.09.1-windows-x86-jre.zip.sha512",
     "size": 47608301,
     "url": "https://corretto.aws/downloads/resources/8.252.09.1/amazon-corretto-8.252.09.1-windows-x86-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.252.09.1"
   },
@@ -2364,7 +2364,7 @@
     "sha512_file": "amazon-corretto-8.252.09.1-windows-x86.msi.sha512",
     "size": 113055232,
     "url": "https://corretto.aws/downloads/resources/8.252.09.1/amazon-corretto-8.252.09.1-windows-x86.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.252.09.1"
   },
@@ -2387,7 +2387,7 @@
     "sha512_file": "amazon-corretto-8.252.09.2-windows-x64-jdk.zip.sha512",
     "size": 120169182,
     "url": "https://corretto.aws/downloads/resources/8.252.09.2/amazon-corretto-8.252.09.2-windows-x64-jdk.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "corretto",
     "version": "8.252.09.2"
   },
@@ -2410,7 +2410,7 @@
     "sha512_file": "amazon-corretto-8.252.09.2-windows-x64-jre.zip.sha512",
     "size": 48404832,
     "url": "https://corretto.aws/downloads/resources/8.252.09.2/amazon-corretto-8.252.09.2-windows-x64-jre.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "corretto",
     "version": "8.252.09.2"
   },
@@ -2433,7 +2433,7 @@
     "sha512_file": "amazon-corretto-8.252.09.2-windows-x64.msi.sha512",
     "size": 114532864,
     "url": "https://corretto.aws/downloads/resources/8.252.09.2/amazon-corretto-8.252.09.2-windows-x64.msi",
-    "variant": "none",
+    "image_type": "none",
     "vendor": "corretto",
     "version": "8.252.09.2"
   }

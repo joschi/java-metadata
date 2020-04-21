@@ -18,7 +18,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6-1.x86_64.rpm.sha512",
     "size": 169353350,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jdk-11.0.6-1.x86_64.rpm",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6-1"
   },
@@ -41,7 +41,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6-ea.10_linux-ppc64_bin.tar.gz.sha512",
     "size": 176254978,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jdk-11.0.6-ea.10_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -64,7 +64,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6-ea.10_linux-ppc64le_bin.tar.gz.sha512",
     "size": 174967711,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jdk-11.0.6-ea.10_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -87,7 +87,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6-ea.10_linux-x64_bin.tar.gz.sha512",
     "size": 192222535,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jdk-11.0.6-ea.10_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -110,7 +110,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6-ea.10_osx-x64_bin.dmg.sha512",
     "size": 192952624,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jdk-11.0.6-ea.10_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -133,7 +133,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6-ea.10_osx-x64_bin.tar.gz.sha512",
     "size": 183806735,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jdk-11.0.6-ea.10_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -156,7 +156,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6-ea.10_windows-x64_bin.msi.sha512",
     "size": 184479744,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jdk-11.0.6-ea.10_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -179,7 +179,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6-ea.10_windows-x64_bin.zip.sha512",
     "size": 188816251,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jdk-11.0.6-ea.10_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -202,7 +202,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6.0.1_linux-ppc64_bin.tar.gz.sha512",
     "size": 176254312,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jdk-11.0.6.0.1_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -225,7 +225,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6.0.1_linux-ppc64le_bin.tar.gz.sha512",
     "size": 174969526,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jdk-11.0.6.0.1_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -248,7 +248,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6.0.1_linux-x64_bin.tar.gz.sha512",
     "size": 192210592,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jdk-11.0.6.0.1_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -271,7 +271,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6.0.1_osx-x64_bin.dmg.sha512",
     "size": 194366956,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jdk-11.0.6.0.1_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -294,7 +294,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6.0.1_osx-x64_bin.tar.gz.sha512",
     "size": 185255060,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jdk-11.0.6.0.1_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -317,7 +317,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6.0.1_windows-x64_bin.msi.sha512",
     "size": 184479744,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jdk-11.0.6.0.1_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -340,7 +340,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6.0.1_windows-x64_bin.zip.sha512",
     "size": 188820438,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jdk-11.0.6.0.1_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -363,7 +363,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6_linux-ppc64_bin.tar.gz.sha512",
     "size": 176255963,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jdk-11.0.6_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -386,7 +386,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6_linux-ppc64le_bin.tar.gz.sha512",
     "size": 174973385,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jdk-11.0.6_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -409,7 +409,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6_linux-x64_bin.tar.gz.sha512",
     "size": 192222229,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jdk-11.0.6_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -432,7 +432,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6_osx-x64_bin.dmg.sha512",
     "size": 192951879,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jdk-11.0.6_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -455,7 +455,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6_osx-x64_bin.tar.gz.sha512",
     "size": 183806137,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jdk-11.0.6_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -478,7 +478,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6_windows-x64_bin.msi.sha512",
     "size": 184479744,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jdk-11.0.6_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -501,7 +501,7 @@
     "sha512_file": "sapmachine-jdk-11.0.6_windows-x64_bin.zip.sha512",
     "size": 188816760,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jdk-11.0.6_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -524,7 +524,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-1.x86_64.rpm.sha512",
     "size": 169430659,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7-1.x86_64.rpm",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-1"
   },
@@ -547,7 +547,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.10_linux-ppc64_bin.tar.gz.sha512",
     "size": 176361125,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jdk-11.0.7-ea.10_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -570,7 +570,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.10_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175207799,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jdk-11.0.7-ea.10_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -593,7 +593,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.10_linux-x64_bin.tar.gz.sha512",
     "size": 192298481,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jdk-11.0.7-ea.10_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -616,7 +616,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.10_osx-x64_bin.dmg.sha512",
     "size": 193066884,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jdk-11.0.7-ea.10_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -639,7 +639,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.10_osx-x64_bin.tar.gz.sha512",
     "size": 183873248,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jdk-11.0.7-ea.10_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -662,7 +662,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.10_windows-x64_bin.msi.sha512",
     "size": 192651264,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jdk-11.0.7-ea.10_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -685,7 +685,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.10_windows-x64_bin.zip.sha512",
     "size": 196965664,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jdk-11.0.7-ea.10_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -708,7 +708,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.1_linux-ppc64_bin.tar.gz.sha512",
     "size": 176287362,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jdk-11.0.7-ea.1_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -731,7 +731,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.1_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175137726,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jdk-11.0.7-ea.1_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -754,7 +754,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.1_linux-x64_bin.tar.gz.sha512",
     "size": 192253711,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jdk-11.0.7-ea.1_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -777,7 +777,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.1_osx-x64_bin.dmg.sha512",
     "size": 192946816,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jdk-11.0.7-ea.1_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -800,7 +800,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.1_osx-x64_bin.tar.gz.sha512",
     "size": 183841884,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jdk-11.0.7-ea.1_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -823,7 +823,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.1_windows-x64_bin.msi.sha512",
     "size": 184553472,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jdk-11.0.7-ea.1_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -846,7 +846,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.1_windows-x64_bin.zip.sha512",
     "size": 188877800,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jdk-11.0.7-ea.1_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -869,7 +869,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.2_linux-ppc64_bin.tar.gz.sha512",
     "size": 176320287,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jdk-11.0.7-ea.2_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -892,7 +892,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.2_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175174112,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jdk-11.0.7-ea.2_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -915,7 +915,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.2_linux-x64_bin.tar.gz.sha512",
     "size": 192293641,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jdk-11.0.7-ea.2_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -938,7 +938,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.2_osx-x64_bin.dmg.sha512",
     "size": 193120362,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jdk-11.0.7-ea.2_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -961,7 +961,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.2_osx-x64_bin.tar.gz.sha512",
     "size": 183852531,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jdk-11.0.7-ea.2_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -984,7 +984,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.2_windows-x64_bin.msi.sha512",
     "size": 184553472,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jdk-11.0.7-ea.2_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -1007,7 +1007,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.2_windows-x64_bin.zip.sha512",
     "size": 188875378,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jdk-11.0.7-ea.2_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -1030,7 +1030,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.3_linux-ppc64_bin.tar.gz.sha512",
     "size": 176320647,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jdk-11.0.7-ea.3_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -1053,7 +1053,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.3_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175179169,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jdk-11.0.7-ea.3_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -1076,7 +1076,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.3_linux-x64_bin.tar.gz.sha512",
     "size": 192290537,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jdk-11.0.7-ea.3_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -1099,7 +1099,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.3_osx-x64_bin.dmg.sha512",
     "size": 193094155,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jdk-11.0.7-ea.3_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -1122,7 +1122,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.3_osx-x64_bin.tar.gz.sha512",
     "size": 183860666,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jdk-11.0.7-ea.3_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -1145,7 +1145,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.3_windows-x64_bin.msi.sha512",
     "size": 184553472,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jdk-11.0.7-ea.3_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -1168,7 +1168,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.3_windows-x64_bin.zip.sha512",
     "size": 188889358,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jdk-11.0.7-ea.3_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -1191,7 +1191,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.4_linux-ppc64_bin.tar.gz.sha512",
     "size": 176324277,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jdk-11.0.7-ea.4_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -1214,7 +1214,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.4_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175180199,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jdk-11.0.7-ea.4_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -1237,7 +1237,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.4_linux-x64_bin.tar.gz.sha512",
     "size": 192295959,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jdk-11.0.7-ea.4_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -1260,7 +1260,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.4_osx-x64_bin.dmg.sha512",
     "size": 193080518,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jdk-11.0.7-ea.4_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -1283,7 +1283,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.4_osx-x64_bin.tar.gz.sha512",
     "size": 183858617,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jdk-11.0.7-ea.4_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -1306,7 +1306,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.4_windows-x64_bin.msi.sha512",
     "size": 184561664,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jdk-11.0.7-ea.4_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -1329,7 +1329,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.4_windows-x64_bin.zip.sha512",
     "size": 188884772,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jdk-11.0.7-ea.4_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -1352,7 +1352,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.5_linux-ppc64_bin.tar.gz.sha512",
     "size": 176326504,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jdk-11.0.7-ea.5_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -1375,7 +1375,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.5_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175178488,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jdk-11.0.7-ea.5_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -1398,7 +1398,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.5_linux-x64_bin.tar.gz.sha512",
     "size": 192289386,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jdk-11.0.7-ea.5_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -1421,7 +1421,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.5_osx-x64_bin.dmg.sha512",
     "size": 193062029,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jdk-11.0.7-ea.5_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -1444,7 +1444,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.5_osx-x64_bin.tar.gz.sha512",
     "size": 183858447,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jdk-11.0.7-ea.5_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -1467,7 +1467,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.5_windows-x64_bin.zip.sha512",
     "size": 188890257,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jdk-11.0.7-ea.5_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -1490,7 +1490,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.6_linux-ppc64_bin.tar.gz.sha512",
     "size": 176321290,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jdk-11.0.7-ea.6_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -1513,7 +1513,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.6_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175181078,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jdk-11.0.7-ea.6_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -1536,7 +1536,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.6_osx-x64_bin.dmg.sha512",
     "size": 193113514,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jdk-11.0.7-ea.6_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -1559,7 +1559,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.6_osx-x64_bin.tar.gz.sha512",
     "size": 183859655,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jdk-11.0.7-ea.6_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -1582,7 +1582,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.6_windows-x64_bin.msi.sha512",
     "size": 184561664,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jdk-11.0.7-ea.6_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -1605,7 +1605,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.6_windows-x64_bin.zip.sha512",
     "size": 188888932,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jdk-11.0.7-ea.6_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -1628,7 +1628,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.7_linux-ppc64_bin.tar.gz.sha512",
     "size": 176325623,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jdk-11.0.7-ea.7_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -1651,7 +1651,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.7_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175175074,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jdk-11.0.7-ea.7_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -1674,7 +1674,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.7_linux-x64_bin.tar.gz.sha512",
     "size": 192294001,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jdk-11.0.7-ea.7_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -1697,7 +1697,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.7_osx-x64_bin.dmg.sha512",
     "size": 193128486,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jdk-11.0.7-ea.7_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -1720,7 +1720,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.7_osx-x64_bin.tar.gz.sha512",
     "size": 183863701,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jdk-11.0.7-ea.7_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -1743,7 +1743,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.7_windows-x64_bin.msi.sha512",
     "size": 184561664,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jdk-11.0.7-ea.7_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -1766,7 +1766,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.7_windows-x64_bin.zip.sha512",
     "size": 188888384,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jdk-11.0.7-ea.7_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -1789,7 +1789,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.8_linux-ppc64_bin.tar.gz.sha512",
     "size": 176329632,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jdk-11.0.7-ea.8_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -1812,7 +1812,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.8_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175179544,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jdk-11.0.7-ea.8_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -1835,7 +1835,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.8_linux-x64_bin.tar.gz.sha512",
     "size": 192291943,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jdk-11.0.7-ea.8_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -1858,7 +1858,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.8_osx-x64_bin.dmg.sha512",
     "size": 193133601,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jdk-11.0.7-ea.8_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -1881,7 +1881,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.8_osx-x64_bin.tar.gz.sha512",
     "size": 183865662,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jdk-11.0.7-ea.8_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -1904,7 +1904,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.8_windows-x64_bin.msi.sha512",
     "size": 184565760,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jdk-11.0.7-ea.8_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -1927,7 +1927,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.8_windows-x64_bin.zip.sha512",
     "size": 188890880,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jdk-11.0.7-ea.8_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -1950,7 +1950,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.9_linux-ppc64_bin.tar.gz.sha512",
     "size": 176325604,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jdk-11.0.7-ea.9_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -1973,7 +1973,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.9_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175176115,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jdk-11.0.7-ea.9_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -1996,7 +1996,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.9_linux-x64_bin.tar.gz.sha512",
     "size": 192293538,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jdk-11.0.7-ea.9_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -2019,7 +2019,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.9_osx-x64_bin.dmg.sha512",
     "size": 192964424,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jdk-11.0.7-ea.9_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -2042,7 +2042,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.9_osx-x64_bin.tar.gz.sha512",
     "size": 183876267,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jdk-11.0.7-ea.9_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -2065,7 +2065,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.9_windows-x64_bin.msi.sha512",
     "size": 184565760,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jdk-11.0.7-ea.9_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -2088,7 +2088,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-ea.9_windows-x64_bin.zip.sha512",
     "size": 188890513,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jdk-11.0.7-ea.9_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -2111,7 +2111,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-internal_linux-ppc64_bin.tar.gz.sha512",
     "size": 176364169,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7-internal_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-internal"
   },
@@ -2134,7 +2134,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-internal_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175200030,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7-internal_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-internal"
   },
@@ -2157,7 +2157,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7-internal_linux-x64_bin.tar.gz.sha512",
     "size": 192306009,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7-internal_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7-internal"
   },
@@ -2180,7 +2180,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7_linux-ppc64_bin.tar.gz.sha512",
     "size": 176371957,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -2203,7 +2203,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7_linux-ppc64le_bin.tar.gz.sha512",
     "size": 175192712,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -2226,7 +2226,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7_linux-x64_bin.tar.gz.sha512",
     "size": 192303551,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -2249,7 +2249,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7_osx-x64_bin.dmg.sha512",
     "size": 194408918,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -2272,7 +2272,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7_osx-x64_bin.tar.gz.sha512",
     "size": 185316649,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -2295,7 +2295,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7_windows-x64_bin.msi.sha512",
     "size": 192651264,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -2318,7 +2318,7 @@
     "sha512_file": "sapmachine-jdk-11.0.7_windows-x64_bin.zip.sha512",
     "size": 196969562,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jdk-11.0.7_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -2341,7 +2341,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2-1.x86_64.rpm.sha512",
     "size": 179679059,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jdk-13.0.2-1.x86_64.rpm",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2-1"
   },
@@ -2364,7 +2364,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2-ea.8_linux-ppc64_bin.tar.gz.sha512",
     "size": 184882503,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jdk-13.0.2-ea.8_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -2387,7 +2387,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2-ea.8_linux-ppc64le_bin.tar.gz.sha512",
     "size": 183588129,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jdk-13.0.2-ea.8_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -2410,7 +2410,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2-ea.8_linux-x64_bin.tar.gz.sha512",
     "size": 202549830,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jdk-13.0.2-ea.8_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -2433,7 +2433,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2-ea.8_osx-x64_bin.dmg.sha512",
     "size": 203045108,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jdk-13.0.2-ea.8_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -2456,7 +2456,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2-ea.8_osx-x64_bin.tar.gz.sha512",
     "size": 193107222,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jdk-13.0.2-ea.8_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -2479,7 +2479,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2-ea.8_windows-x64_bin.msi.sha512",
     "size": 193798144,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jdk-13.0.2-ea.8_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -2502,7 +2502,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2-ea.8_windows-x64_bin.zip.sha512",
     "size": 198134891,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jdk-13.0.2-ea.8_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -2525,7 +2525,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2_linux-ppc64_bin.tar.gz.sha512",
     "size": 184880363,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jdk-13.0.2_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -2548,7 +2548,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2_linux-ppc64le_bin.tar.gz.sha512",
     "size": 183581228,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jdk-13.0.2_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -2571,7 +2571,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2_linux-x64_bin.tar.gz.sha512",
     "size": 202548672,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jdk-13.0.2_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -2594,7 +2594,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2_osx-x64_bin.dmg.sha512",
     "size": 203015478,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jdk-13.0.2_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -2617,7 +2617,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2_osx-x64_bin.tar.gz.sha512",
     "size": 193106884,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jdk-13.0.2_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -2640,7 +2640,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2_windows-x64_bin.msi.sha512",
     "size": 193794048,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jdk-13.0.2_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -2663,7 +2663,7 @@
     "sha512_file": "sapmachine-jdk-13.0.2_windows-x64_bin.zip.sha512",
     "size": 198132787,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jdk-13.0.2_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -2686,7 +2686,7 @@
     "sha512_file": "sapmachine-jdk-14-1.x86_64.rpm.sha512",
     "size": 181948710,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14-1.x86_64.rpm",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-1"
   },
@@ -2709,7 +2709,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.1_linux-ppc64_bin.tar.gz.sha512",
     "size": 187445284,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14-ea.1_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -2732,7 +2732,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.1_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186199611,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14-ea.1_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -2755,7 +2755,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.1_linux-x64_bin.tar.gz.sha512",
     "size": 205156449,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14-ea.1_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -2778,7 +2778,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.1_osx-x64_bin.dmg.sha512",
     "size": 205608088,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14-ea.1_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -2801,7 +2801,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.1_osx-x64_bin.tar.gz.sha512",
     "size": 195592729,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14-ea.1_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -2824,7 +2824,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.1_windows-x64_bin.msi.sha512",
     "size": 204976128,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14-ea.1_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -2847,7 +2847,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.1_windows-x64_bin.zip.sha512",
     "size": 209352561,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14-ea.1_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -2870,7 +2870,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.32_linux-ppc64_bin.tar.gz.sha512",
     "size": 187399862,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jdk-14-ea.32_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -2893,7 +2893,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.32_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186171159,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jdk-14-ea.32_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -2916,7 +2916,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.32_linux-x64_bin.tar.gz.sha512",
     "size": 205062753,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jdk-14-ea.32_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -2939,7 +2939,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.32_osx-x64_bin.dmg.sha512",
     "size": 205415350,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jdk-14-ea.32_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -2962,7 +2962,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.32_osx-x64_bin.tar.gz.sha512",
     "size": 195520487,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jdk-14-ea.32_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -2985,7 +2985,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.32_windows-x64_bin.msi.sha512",
     "size": 196464640,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jdk-14-ea.32_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -3008,7 +3008,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.32_windows-x64_bin.zip.sha512",
     "size": 200844893,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jdk-14-ea.32_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -3031,7 +3031,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.33_linux-ppc64_bin.tar.gz.sha512",
     "size": 187440768,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jdk-14-ea.33_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -3054,7 +3054,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.33_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186220212,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jdk-14-ea.33_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -3077,7 +3077,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.33_linux-x64_bin.tar.gz.sha512",
     "size": 205111815,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jdk-14-ea.33_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -3100,7 +3100,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.33_osx-x64_bin.dmg.sha512",
     "size": 205678221,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jdk-14-ea.33_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -3123,7 +3123,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.33_osx-x64_bin.tar.gz.sha512",
     "size": 195579725,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jdk-14-ea.33_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -3146,7 +3146,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.33_windows-x64_bin.msi.sha512",
     "size": 196517888,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jdk-14-ea.33_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -3169,7 +3169,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.33_windows-x64_bin.zip.sha512",
     "size": 200898312,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jdk-14-ea.33_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -3192,7 +3192,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.34_linux-ppc64_bin.tar.gz.sha512",
     "size": 187441683,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jdk-14-ea.34_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -3215,7 +3215,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.34_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186221230,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jdk-14-ea.34_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -3238,7 +3238,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.34_linux-x64_bin.tar.gz.sha512",
     "size": 205141414,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jdk-14-ea.34_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -3261,7 +3261,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.34_osx-x64_bin.dmg.sha512",
     "size": 205645027,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jdk-14-ea.34_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -3284,7 +3284,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.34_osx-x64_bin.tar.gz.sha512",
     "size": 195616098,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jdk-14-ea.34_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -3307,7 +3307,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.34_windows-x64_bin.msi.sha512",
     "size": 196554752,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jdk-14-ea.34_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -3330,7 +3330,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.34_windows-x64_bin.zip.sha512",
     "size": 200939817,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jdk-14-ea.34_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -3353,7 +3353,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.36_linux-ppc64_bin.tar.gz.sha512",
     "size": 187446395,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jdk-14-ea.36_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -3376,7 +3376,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.36_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186209563,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jdk-14-ea.36_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -3399,7 +3399,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.36_linux-x64_bin.tar.gz.sha512",
     "size": 205150082,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jdk-14-ea.36_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -3422,7 +3422,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.36_osx-x64_bin.dmg.sha512",
     "size": 205602538,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jdk-14-ea.36_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -3445,7 +3445,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.36_osx-x64_bin.tar.gz.sha512",
     "size": 195625846,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jdk-14-ea.36_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -3468,7 +3468,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.36_windows-x64_bin.msi.sha512",
     "size": 196612096,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jdk-14-ea.36_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -3491,7 +3491,7 @@
     "sha512_file": "sapmachine-jdk-14-ea.36_windows-x64_bin.zip.sha512",
     "size": 200997812,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jdk-14-ea.36_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -3514,7 +3514,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-1.x86_64.rpm.sha512",
     "size": 181968172,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jdk-14.0.1-1.x86_64.rpm",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-1"
   },
@@ -3537,7 +3537,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.1_linux-ppc64_bin.tar.gz.sha512",
     "size": 187449329,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14.0.1-ea.1_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -3560,7 +3560,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.1_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186209226,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14.0.1-ea.1_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -3583,7 +3583,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.1_linux-x64_bin.tar.gz.sha512",
     "size": 205152633,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14.0.1-ea.1_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -3606,7 +3606,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.1_osx-x64_bin.dmg.sha512",
     "size": 205744182,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14.0.1-ea.1_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -3629,7 +3629,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.1_osx-x64_bin.tar.gz.sha512",
     "size": 195592595,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14.0.1-ea.1_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -3652,7 +3652,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.1_windows-x64_bin.msi.sha512",
     "size": 204976128,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14.0.1-ea.1_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -3675,7 +3675,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.1_windows-x64_bin.zip.sha512",
     "size": 209362914,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jdk-14.0.1-ea.1_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -3698,7 +3698,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.7_linux-ppc64_bin.tar.gz.sha512",
     "size": 187490175,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jdk-14.0.1-ea.7_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -3721,7 +3721,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.7_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186229073,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jdk-14.0.1-ea.7_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -3744,7 +3744,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.7_linux-x64_bin.tar.gz.sha512",
     "size": 205149974,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jdk-14.0.1-ea.7_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -3767,7 +3767,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.7_osx-x64_bin.dmg.sha512",
     "size": 205668707,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jdk-14.0.1-ea.7_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -3790,7 +3790,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.7_osx-x64_bin.tar.gz.sha512",
     "size": 195596358,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jdk-14.0.1-ea.7_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -3813,7 +3813,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.7_windows-x64_bin.msi.sha512",
     "size": 204972032,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jdk-14.0.1-ea.7_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -3836,7 +3836,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1-ea.7_windows-x64_bin.zip.sha512",
     "size": 209355022,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jdk-14.0.1-ea.7_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -3859,7 +3859,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1_linux-ppc64_bin.tar.gz.sha512",
     "size": 187481956,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jdk-14.0.1_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -3882,7 +3882,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186232435,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jdk-14.0.1_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -3905,7 +3905,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1_linux-x64_bin.tar.gz.sha512",
     "size": 205158960,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jdk-14.0.1_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -3928,7 +3928,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1_osx-x64_bin.dmg.sha512",
     "size": 206861587,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jdk-14.0.1_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -3951,7 +3951,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1_osx-x64_bin.tar.gz.sha512",
     "size": 196683804,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jdk-14.0.1_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -3974,7 +3974,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1_windows-x64_bin.msi.sha512",
     "size": 204967936,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jdk-14.0.1_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -3997,7 +3997,7 @@
     "sha512_file": "sapmachine-jdk-14.0.1_windows-x64_bin.zip.sha512",
     "size": 209349098,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jdk-14.0.1_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -4020,7 +4020,7 @@
     "sha512_file": "sapmachine-jdk-14_linux-ppc64_bin.tar.gz.sha512",
     "size": 187443912,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -4043,7 +4043,7 @@
     "sha512_file": "sapmachine-jdk-14_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186208783,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -4066,7 +4066,7 @@
     "sha512_file": "sapmachine-jdk-14_linux-x64_bin.tar.gz.sha512",
     "size": 205157783,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -4089,7 +4089,7 @@
     "sha512_file": "sapmachine-jdk-14_osx-x64_bin.dmg.sha512",
     "size": 206863534,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -4112,7 +4112,7 @@
     "sha512_file": "sapmachine-jdk-14_osx-x64_bin.tar.gz.sha512",
     "size": 196690978,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -4135,7 +4135,7 @@
     "sha512_file": "sapmachine-jdk-14_windows-x64_bin.msi.sha512",
     "size": 196562944,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -4158,7 +4158,7 @@
     "sha512_file": "sapmachine-jdk-14_windows-x64_bin.zip.sha512",
     "size": 200945464,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jdk-14_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -4181,7 +4181,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.10_linux-ppc64_bin.tar.gz.sha512",
     "size": 187103027,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jdk-15-ea.10_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -4204,7 +4204,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.10_linux-x64_bin.tar.gz.sha512",
     "size": 204658705,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jdk-15-ea.10_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -4227,7 +4227,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.10_osx-x64_bin.dmg.sha512",
     "size": 205093893,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jdk-15-ea.10_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -4250,7 +4250,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.10_osx-x64_bin.tar.gz.sha512",
     "size": 195274454,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jdk-15-ea.10_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -4273,7 +4273,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.10_windows-x64_bin.msi.sha512",
     "size": 196206592,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jdk-15-ea.10_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -4296,7 +4296,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.10_windows-x64_bin.zip.sha512",
     "size": 200586382,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jdk-15-ea.10_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -4319,7 +4319,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.11_linux-ppc64_bin.tar.gz.sha512",
     "size": 186810783,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jdk-15-ea.11_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -4342,7 +4342,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.11_linux-ppc64le_bin.tar.gz.sha512",
     "size": 185581291,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jdk-15-ea.11_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -4365,7 +4365,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.11_linux-x64_bin.tar.gz.sha512",
     "size": 204401097,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jdk-15-ea.11_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -4388,7 +4388,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.11_osx-x64_bin.dmg.sha512",
     "size": 204589775,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jdk-15-ea.11_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -4411,7 +4411,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.11_osx-x64_bin.tar.gz.sha512",
     "size": 194803745,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jdk-15-ea.11_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -4434,7 +4434,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.11_windows-x64_bin.msi.sha512",
     "size": 195715072,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jdk-15-ea.11_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -4457,7 +4457,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.11_windows-x64_bin.zip.sha512",
     "size": 200126518,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jdk-15-ea.11_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -4480,7 +4480,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.12_linux-ppc64_bin.tar.gz.sha512",
     "size": 186831772,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jdk-15-ea.12_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -4503,7 +4503,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.12_linux-ppc64le_bin.tar.gz.sha512",
     "size": 185598004,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jdk-15-ea.12_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -4526,7 +4526,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.12_linux-x64_bin.tar.gz.sha512",
     "size": 204598506,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jdk-15-ea.12_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -4549,7 +4549,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.12_osx-x64_bin.dmg.sha512",
     "size": 204676297,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jdk-15-ea.12_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -4572,7 +4572,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.12_osx-x64_bin.tar.gz.sha512",
     "size": 194996887,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jdk-15-ea.12_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -4595,7 +4595,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.12_windows-x64_bin.msi.sha512",
     "size": 195903488,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jdk-15-ea.12_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -4618,7 +4618,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.12_windows-x64_bin.zip.sha512",
     "size": 200320452,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jdk-15-ea.12_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -4641,7 +4641,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.13_linux-ppc64_bin.tar.gz.sha512",
     "size": 186837948,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jdk-15-ea.13_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -4664,7 +4664,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.13_linux-ppc64le_bin.tar.gz.sha512",
     "size": 185614367,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jdk-15-ea.13_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -4687,7 +4687,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.13_linux-x64_bin.tar.gz.sha512",
     "size": 204613173,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jdk-15-ea.13_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -4710,7 +4710,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.13_osx-x64_bin.dmg.sha512",
     "size": 204710406,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jdk-15-ea.13_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -4733,7 +4733,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.13_osx-x64_bin.tar.gz.sha512",
     "size": 195001871,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jdk-15-ea.13_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -4756,7 +4756,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.13_windows-x64_bin.msi.sha512",
     "size": 195907584,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jdk-15-ea.13_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -4779,7 +4779,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.13_windows-x64_bin.zip.sha512",
     "size": 200325857,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jdk-15-ea.13_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -4802,7 +4802,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.14_linux-ppc64_bin.tar.gz.sha512",
     "size": 186845792,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jdk-15-ea.14_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -4825,7 +4825,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.14_linux-ppc64le_bin.tar.gz.sha512",
     "size": 185612413,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jdk-15-ea.14_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -4848,7 +4848,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.14_linux-x64_bin.tar.gz.sha512",
     "size": 204590852,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jdk-15-ea.14_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -4871,7 +4871,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.14_osx-x64_bin.dmg.sha512",
     "size": 204663424,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jdk-15-ea.14_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -4894,7 +4894,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.14_osx-x64_bin.tar.gz.sha512",
     "size": 194982785,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jdk-15-ea.14_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -4917,7 +4917,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.14_windows-x64_bin.msi.sha512",
     "size": 195899392,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jdk-15-ea.14_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -4940,7 +4940,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.14_windows-x64_bin.zip.sha512",
     "size": 200317208,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jdk-15-ea.14_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -4963,7 +4963,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.15_linux-ppc64_bin.tar.gz.sha512",
     "size": 186841956,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jdk-15-ea.15_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -4986,7 +4986,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.15_linux-ppc64le_bin.tar.gz.sha512",
     "size": 185602508,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jdk-15-ea.15_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -5009,7 +5009,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.15_linux-x64_bin.tar.gz.sha512",
     "size": 204621669,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jdk-15-ea.15_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -5032,7 +5032,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.15_osx-x64_bin.dmg.sha512",
     "size": 204723157,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jdk-15-ea.15_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -5055,7 +5055,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.15_osx-x64_bin.tar.gz.sha512",
     "size": 194986367,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jdk-15-ea.15_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -5078,7 +5078,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.15_windows-x64_bin.msi.sha512",
     "size": 195891200,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jdk-15-ea.15_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -5101,7 +5101,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.15_windows-x64_bin.zip.sha512",
     "size": 200304921,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jdk-15-ea.15_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -5124,7 +5124,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.16_linux-ppc64_bin.tar.gz.sha512",
     "size": 186898190,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jdk-15-ea.16_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -5147,7 +5147,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.16_linux-ppc64le_bin.tar.gz.sha512",
     "size": 185651219,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jdk-15-ea.16_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -5170,7 +5170,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.16_linux-x64_bin.tar.gz.sha512",
     "size": 204675261,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jdk-15-ea.16_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -5193,7 +5193,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.16_osx-x64_bin.dmg.sha512",
     "size": 204721807,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jdk-15-ea.16_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -5216,7 +5216,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.16_osx-x64_bin.tar.gz.sha512",
     "size": 195015232,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jdk-15-ea.16_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -5239,7 +5239,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.16_windows-x64_bin.msi.sha512",
     "size": 195932160,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jdk-15-ea.16_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -5262,7 +5262,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.16_windows-x64_bin.zip.sha512",
     "size": 200346433,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jdk-15-ea.16_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -5285,7 +5285,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.17_linux-ppc64_bin.tar.gz.sha512",
     "size": 186918355,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jdk-15-ea.17_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -5308,7 +5308,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.17_linux-ppc64le_bin.tar.gz.sha512",
     "size": 185673003,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jdk-15-ea.17_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -5331,7 +5331,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.17_linux-x64_bin.tar.gz.sha512",
     "size": 204697685,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jdk-15-ea.17_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -5354,7 +5354,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.17_osx-x64_bin.dmg.sha512",
     "size": 204740172,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jdk-15-ea.17_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -5377,7 +5377,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.17_osx-x64_bin.tar.gz.sha512",
     "size": 195026959,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jdk-15-ea.17_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -5400,7 +5400,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.17_windows-x64_bin.msi.sha512",
     "size": 204255232,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jdk-15-ea.17_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -5423,7 +5423,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.17_windows-x64_bin.zip.sha512",
     "size": 208658120,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jdk-15-ea.17_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -5446,7 +5446,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.18_linux-ppc64_bin.tar.gz.sha512",
     "size": 185560406,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jdk-15-ea.18_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -5469,7 +5469,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.18_linux-ppc64le_bin.tar.gz.sha512",
     "size": 184312730,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jdk-15-ea.18_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -5492,7 +5492,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.18_linux-x64_bin.tar.gz.sha512",
     "size": 203118794,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jdk-15-ea.18_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -5515,7 +5515,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.18_osx-x64_bin.dmg.sha512",
     "size": 203210706,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jdk-15-ea.18_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -5538,7 +5538,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.18_osx-x64_bin.tar.gz.sha512",
     "size": 193632616,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jdk-15-ea.18_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -5561,7 +5561,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.18_windows-x64_bin.msi.sha512",
     "size": 202784768,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jdk-15-ea.18_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -5584,7 +5584,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.18_windows-x64_bin.zip.sha512",
     "size": 207161269,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jdk-15-ea.18_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -5607,7 +5607,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.19_linux-ppc64_bin.tar.gz.sha512",
     "size": 185649596,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jdk-15-ea.19_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -5630,7 +5630,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.19_linux-ppc64le_bin.tar.gz.sha512",
     "size": 184415771,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jdk-15-ea.19_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -5653,7 +5653,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.19_linux-x64_bin.tar.gz.sha512",
     "size": 203208214,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jdk-15-ea.19_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -5676,7 +5676,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.19_osx-x64_bin.dmg.sha512",
     "size": 203297160,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jdk-15-ea.19_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -5699,7 +5699,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.19_osx-x64_bin.tar.gz.sha512",
     "size": 193698685,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jdk-15-ea.19_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -5722,7 +5722,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.19_windows-x64_bin.msi.sha512",
     "size": 202858496,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jdk-15-ea.19_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -5745,7 +5745,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.19_windows-x64_bin.zip.sha512",
     "size": 207236956,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jdk-15-ea.19_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -5768,7 +5768,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.6_linux-ppc64_bin.tar.gz.sha512",
     "size": 187504800,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jdk-15-ea.6_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -5791,7 +5791,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.6_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186246096,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jdk-15-ea.6_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -5814,7 +5814,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.6_linux-x64_bin.tar.gz.sha512",
     "size": 205075896,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jdk-15-ea.6_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -5837,7 +5837,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.6_osx-x64_bin.dmg.sha512",
     "size": 205610794,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jdk-15-ea.6_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -5860,7 +5860,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.6_osx-x64_bin.tar.gz.sha512",
     "size": 195595987,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jdk-15-ea.6_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -5883,7 +5883,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.6_windows-x64_bin.msi.sha512",
     "size": 196571136,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jdk-15-ea.6_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -5906,7 +5906,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.6_windows-x64_bin.zip.sha512",
     "size": 200952337,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jdk-15-ea.6_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -5929,7 +5929,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.7_linux-ppc64_bin.tar.gz.sha512",
     "size": 187547980,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jdk-15-ea.7_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -5952,7 +5952,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.7_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186307937,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jdk-15-ea.7_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -5975,7 +5975,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.7_linux-x64_bin.tar.gz.sha512",
     "size": 205128782,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jdk-15-ea.7_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -5998,7 +5998,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.7_osx-x64_bin.dmg.sha512",
     "size": 205557359,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jdk-15-ea.7_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -6021,7 +6021,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.7_osx-x64_bin.tar.gz.sha512",
     "size": 195652752,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jdk-15-ea.7_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -6044,7 +6044,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.7_windows-x64_bin.msi.sha512",
     "size": 196624384,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jdk-15-ea.7_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -6067,7 +6067,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.7_windows-x64_bin.zip.sha512",
     "size": 201004871,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jdk-15-ea.7_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -6090,7 +6090,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.8_linux-ppc64_bin.tar.gz.sha512",
     "size": 187445964,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+8/sapmachine-jdk-15-ea.8_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.8"
   },
@@ -6113,7 +6113,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.8_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186212683,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+8/sapmachine-jdk-15-ea.8_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.8"
   },
@@ -6136,7 +6136,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.8_linux-x64_bin.tar.gz.sha512",
     "size": 205067652,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+8/sapmachine-jdk-15-ea.8_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.8"
   },
@@ -6159,7 +6159,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.8_osx-x64_bin.dmg.sha512",
     "size": 205532361,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+8/sapmachine-jdk-15-ea.8_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.8"
   },
@@ -6182,7 +6182,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.8_osx-x64_bin.tar.gz.sha512",
     "size": 195591341,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+8/sapmachine-jdk-15-ea.8_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.8"
   },
@@ -6205,7 +6205,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.9_linux-ppc64_bin.tar.gz.sha512",
     "size": 187394836,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jdk-15-ea.9_linux-ppc64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -6228,7 +6228,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.9_linux-ppc64le_bin.tar.gz.sha512",
     "size": 186155403,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jdk-15-ea.9_linux-ppc64le_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -6251,7 +6251,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.9_linux-x64_bin.tar.gz.sha512",
     "size": 204983891,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jdk-15-ea.9_linux-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -6274,7 +6274,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.9_osx-x64_bin.dmg.sha512",
     "size": 205581216,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jdk-15-ea.9_osx-x64_bin.dmg",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -6297,7 +6297,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.9_osx-x64_bin.tar.gz.sha512",
     "size": 195578717,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jdk-15-ea.9_osx-x64_bin.tar.gz",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -6320,7 +6320,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.9_windows-x64_bin.msi.sha512",
     "size": 196497408,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jdk-15-ea.9_windows-x64_bin.msi",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -6343,7 +6343,7 @@
     "sha512_file": "sapmachine-jdk-15-ea.9_windows-x64_bin.zip.sha512",
     "size": 200883225,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jdk-15-ea.9_windows-x64_bin.zip",
-    "variant": "jdk",
+    "image_type": "jdk",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -6366,7 +6366,7 @@
     "sha512_file": "sapmachine-jre-11.0.6-ea.10_linux-ppc64_bin.tar.gz.sha512",
     "size": 38893307,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jre-11.0.6-ea.10_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -6389,7 +6389,7 @@
     "sha512_file": "sapmachine-jre-11.0.6-ea.10_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38339889,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jre-11.0.6-ea.10_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -6412,7 +6412,7 @@
     "sha512_file": "sapmachine-jre-11.0.6-ea.10_linux-x64_bin.tar.gz.sha512",
     "size": 42423909,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jre-11.0.6-ea.10_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -6435,7 +6435,7 @@
     "sha512_file": "sapmachine-jre-11.0.6-ea.10_osx-x64_bin.dmg.sha512",
     "size": 43614923,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jre-11.0.6-ea.10_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -6458,7 +6458,7 @@
     "sha512_file": "sapmachine-jre-11.0.6-ea.10_osx-x64_bin.tar.gz.sha512",
     "size": 37680582,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jre-11.0.6-ea.10_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -6481,7 +6481,7 @@
     "sha512_file": "sapmachine-jre-11.0.6-ea.10_windows-x64_bin.msi.sha512",
     "size": 39043072,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jre-11.0.6-ea.10_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -6504,7 +6504,7 @@
     "sha512_file": "sapmachine-jre-11.0.6-ea.10_windows-x64_bin.zip.sha512",
     "size": 38946191,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6+10/sapmachine-jre-11.0.6-ea.10_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6-ea.10"
   },
@@ -6527,7 +6527,7 @@
     "sha512_file": "sapmachine-jre-11.0.6.0.1_linux-ppc64_bin.tar.gz.sha512",
     "size": 38893369,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jre-11.0.6.0.1_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -6550,7 +6550,7 @@
     "sha512_file": "sapmachine-jre-11.0.6.0.1_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38338883,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jre-11.0.6.0.1_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -6573,7 +6573,7 @@
     "sha512_file": "sapmachine-jre-11.0.6.0.1_linux-x64_bin.tar.gz.sha512",
     "size": 42423472,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jre-11.0.6.0.1_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -6596,7 +6596,7 @@
     "sha512_file": "sapmachine-jre-11.0.6.0.1_osx-x64_bin.dmg.sha512",
     "size": 44139609,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jre-11.0.6.0.1_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -6619,7 +6619,7 @@
     "sha512_file": "sapmachine-jre-11.0.6.0.1_osx-x64_bin.tar.gz.sha512",
     "size": 38206993,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jre-11.0.6.0.1_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -6642,7 +6642,7 @@
     "sha512_file": "sapmachine-jre-11.0.6.0.1_windows-x64_bin.msi.sha512",
     "size": 39043072,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jre-11.0.6.0.1_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -6665,7 +6665,7 @@
     "sha512_file": "sapmachine-jre-11.0.6.0.1_windows-x64_bin.zip.sha512",
     "size": 38947697,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6.0.1/sapmachine-jre-11.0.6.0.1_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6.0.1"
   },
@@ -6688,7 +6688,7 @@
     "sha512_file": "sapmachine-jre-11.0.6_linux-ppc64_bin.tar.gz.sha512",
     "size": 38892874,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jre-11.0.6_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -6711,7 +6711,7 @@
     "sha512_file": "sapmachine-jre-11.0.6_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38339633,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jre-11.0.6_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -6734,7 +6734,7 @@
     "sha512_file": "sapmachine-jre-11.0.6_linux-x64_bin.tar.gz.sha512",
     "size": 42423033,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jre-11.0.6_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -6757,7 +6757,7 @@
     "sha512_file": "sapmachine-jre-11.0.6_osx-x64_bin.dmg.sha512",
     "size": 43616556,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jre-11.0.6_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -6780,7 +6780,7 @@
     "sha512_file": "sapmachine-jre-11.0.6_osx-x64_bin.tar.gz.sha512",
     "size": 37679559,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jre-11.0.6_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -6803,7 +6803,7 @@
     "sha512_file": "sapmachine-jre-11.0.6_windows-x64_bin.msi.sha512",
     "size": 39047168,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jre-11.0.6_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -6826,7 +6826,7 @@
     "sha512_file": "sapmachine-jre-11.0.6_windows-x64_bin.zip.sha512",
     "size": 38943753,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.6/sapmachine-jre-11.0.6_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.6"
   },
@@ -6849,7 +6849,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.10_linux-ppc64_bin.tar.gz.sha512",
     "size": 38927646,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jre-11.0.7-ea.10_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -6872,7 +6872,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.10_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38419652,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jre-11.0.7-ea.10_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -6895,7 +6895,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.10_linux-x64_bin.tar.gz.sha512",
     "size": 42461201,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jre-11.0.7-ea.10_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -6918,7 +6918,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.10_osx-x64_bin.dmg.sha512",
     "size": 43630365,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jre-11.0.7-ea.10_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -6941,7 +6941,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.10_osx-x64_bin.tar.gz.sha512",
     "size": 37695300,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jre-11.0.7-ea.10_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -6964,7 +6964,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.10_windows-x64_bin.msi.sha512",
     "size": 42897408,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jre-11.0.7-ea.10_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -6987,7 +6987,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.10_windows-x64_bin.zip.sha512",
     "size": 42809551,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+10/sapmachine-jre-11.0.7-ea.10_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.10"
   },
@@ -7010,7 +7010,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.1_linux-ppc64_bin.tar.gz.sha512",
     "size": 38892418,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jre-11.0.7-ea.1_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -7033,7 +7033,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.1_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38389313,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jre-11.0.7-ea.1_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -7056,7 +7056,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.1_linux-x64_bin.tar.gz.sha512",
     "size": 42435315,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jre-11.0.7-ea.1_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -7079,7 +7079,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.1_osx-x64_bin.dmg.sha512",
     "size": 43632281,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jre-11.0.7-ea.1_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -7102,7 +7102,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.1_osx-x64_bin.tar.gz.sha512",
     "size": 37689072,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jre-11.0.7-ea.1_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -7125,7 +7125,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.1_windows-x64_bin.msi.sha512",
     "size": 39059456,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jre-11.0.7-ea.1_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -7148,7 +7148,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.1_windows-x64_bin.zip.sha512",
     "size": 38963559,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+1/sapmachine-jre-11.0.7-ea.1_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.1"
   },
@@ -7171,7 +7171,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.2_linux-ppc64_bin.tar.gz.sha512",
     "size": 38916382,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jre-11.0.7-ea.2_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -7194,7 +7194,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.2_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38409219,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jre-11.0.7-ea.2_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -7217,7 +7217,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.2_linux-x64_bin.tar.gz.sha512",
     "size": 42455792,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jre-11.0.7-ea.2_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -7240,7 +7240,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.2_osx-x64_bin.dmg.sha512",
     "size": 43632692,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jre-11.0.7-ea.2_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -7263,7 +7263,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.2_osx-x64_bin.tar.gz.sha512",
     "size": 37693518,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jre-11.0.7-ea.2_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -7286,7 +7286,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.2_windows-x64_bin.msi.sha512",
     "size": 39059456,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jre-11.0.7-ea.2_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -7309,7 +7309,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.2_windows-x64_bin.zip.sha512",
     "size": 38959196,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+2/sapmachine-jre-11.0.7-ea.2_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.2"
   },
@@ -7332,7 +7332,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.3_linux-ppc64_bin.tar.gz.sha512",
     "size": 38917675,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jre-11.0.7-ea.3_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -7355,7 +7355,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.3_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38407735,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jre-11.0.7-ea.3_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -7378,7 +7378,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.3_linux-x64_bin.tar.gz.sha512",
     "size": 42455845,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jre-11.0.7-ea.3_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -7401,7 +7401,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.3_osx-x64_bin.dmg.sha512",
     "size": 43635832,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jre-11.0.7-ea.3_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -7424,7 +7424,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.3_osx-x64_bin.tar.gz.sha512",
     "size": 37695841,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jre-11.0.7-ea.3_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -7447,7 +7447,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.3_windows-x64_bin.msi.sha512",
     "size": 39067648,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jre-11.0.7-ea.3_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -7470,7 +7470,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.3_windows-x64_bin.zip.sha512",
     "size": 38964414,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+3/sapmachine-jre-11.0.7-ea.3_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.3"
   },
@@ -7493,7 +7493,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.4_linux-ppc64_bin.tar.gz.sha512",
     "size": 38917857,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jre-11.0.7-ea.4_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -7516,7 +7516,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.4_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38407678,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jre-11.0.7-ea.4_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -7539,7 +7539,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.4_linux-x64_bin.tar.gz.sha512",
     "size": 42450402,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jre-11.0.7-ea.4_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -7562,7 +7562,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.4_osx-x64_bin.dmg.sha512",
     "size": 43634145,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jre-11.0.7-ea.4_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -7585,7 +7585,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.4_osx-x64_bin.tar.gz.sha512",
     "size": 37695885,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jre-11.0.7-ea.4_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -7608,7 +7608,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.4_windows-x64_bin.msi.sha512",
     "size": 39063552,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jre-11.0.7-ea.4_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -7631,7 +7631,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.4_windows-x64_bin.zip.sha512",
     "size": 38963840,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+4/sapmachine-jre-11.0.7-ea.4_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.4"
   },
@@ -7654,7 +7654,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.5_linux-ppc64_bin.tar.gz.sha512",
     "size": 38917658,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jre-11.0.7-ea.5_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -7677,7 +7677,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.5_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38409106,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jre-11.0.7-ea.5_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -7700,7 +7700,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.5_linux-x64_bin.tar.gz.sha512",
     "size": 42451832,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jre-11.0.7-ea.5_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -7723,7 +7723,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.5_osx-x64_bin.dmg.sha512",
     "size": 43634259,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jre-11.0.7-ea.5_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -7746,7 +7746,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.5_osx-x64_bin.tar.gz.sha512",
     "size": 37696273,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jre-11.0.7-ea.5_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -7769,7 +7769,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.5_windows-x64_bin.msi.sha512",
     "size": 39063552,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jre-11.0.7-ea.5_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -7792,7 +7792,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.5_windows-x64_bin.zip.sha512",
     "size": 38963198,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+5/sapmachine-jre-11.0.7-ea.5_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.5"
   },
@@ -7815,7 +7815,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.6_linux-ppc64_bin.tar.gz.sha512",
     "size": 38920742,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jre-11.0.7-ea.6_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -7838,7 +7838,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.6_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38411283,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jre-11.0.7-ea.6_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -7861,7 +7861,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.6_linux-x64_bin.tar.gz.sha512",
     "size": 42453011,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jre-11.0.7-ea.6_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -7884,7 +7884,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.6_osx-x64_bin.dmg.sha512",
     "size": 43638297,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jre-11.0.7-ea.6_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -7907,7 +7907,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.6_osx-x64_bin.tar.gz.sha512",
     "size": 37697568,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jre-11.0.7-ea.6_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -7930,7 +7930,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.6_windows-x64_bin.msi.sha512",
     "size": 39067648,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jre-11.0.7-ea.6_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -7953,7 +7953,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.6_windows-x64_bin.zip.sha512",
     "size": 38967437,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+6/sapmachine-jre-11.0.7-ea.6_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.6"
   },
@@ -7976,7 +7976,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.7_linux-ppc64_bin.tar.gz.sha512",
     "size": 38922383,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jre-11.0.7-ea.7_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -7999,7 +7999,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.7_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38410006,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jre-11.0.7-ea.7_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -8022,7 +8022,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.7_linux-x64_bin.tar.gz.sha512",
     "size": 42450705,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jre-11.0.7-ea.7_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -8045,7 +8045,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.7_osx-x64_bin.dmg.sha512",
     "size": 43638463,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jre-11.0.7-ea.7_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -8068,7 +8068,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.7_osx-x64_bin.tar.gz.sha512",
     "size": 37697716,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jre-11.0.7-ea.7_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -8091,7 +8091,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.7_windows-x64_bin.msi.sha512",
     "size": 39067648,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jre-11.0.7-ea.7_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -8114,7 +8114,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.7_windows-x64_bin.zip.sha512",
     "size": 38967438,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+7/sapmachine-jre-11.0.7-ea.7_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.7"
   },
@@ -8137,7 +8137,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.8_linux-ppc64_bin.tar.gz.sha512",
     "size": 38922415,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jre-11.0.7-ea.8_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -8160,7 +8160,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.8_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38411669,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jre-11.0.7-ea.8_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -8183,7 +8183,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.8_linux-x64_bin.tar.gz.sha512",
     "size": 42450284,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jre-11.0.7-ea.8_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -8206,7 +8206,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.8_osx-x64_bin.dmg.sha512",
     "size": 43638418,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jre-11.0.7-ea.8_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -8229,7 +8229,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.8_osx-x64_bin.tar.gz.sha512",
     "size": 37697623,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jre-11.0.7-ea.8_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -8252,7 +8252,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.8_windows-x64_bin.msi.sha512",
     "size": 39067648,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jre-11.0.7-ea.8_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -8275,7 +8275,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.8_windows-x64_bin.zip.sha512",
     "size": 38967767,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+8/sapmachine-jre-11.0.7-ea.8_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.8"
   },
@@ -8298,7 +8298,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.9_linux-ppc64_bin.tar.gz.sha512",
     "size": 38922115,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jre-11.0.7-ea.9_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -8321,7 +8321,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.9_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38411493,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jre-11.0.7-ea.9_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -8344,7 +8344,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.9_linux-x64_bin.tar.gz.sha512",
     "size": 42451563,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jre-11.0.7-ea.9_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -8367,7 +8367,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.9_osx-x64_bin.dmg.sha512",
     "size": 43643372,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jre-11.0.7-ea.9_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -8390,7 +8390,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.9_osx-x64_bin.tar.gz.sha512",
     "size": 37695135,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jre-11.0.7-ea.9_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -8413,7 +8413,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.9_windows-x64_bin.msi.sha512",
     "size": 39067648,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jre-11.0.7-ea.9_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -8436,7 +8436,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-ea.9_windows-x64_bin.zip.sha512",
     "size": 38966686,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7+9/sapmachine-jre-11.0.7-ea.9_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-ea.9"
   },
@@ -8459,7 +8459,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-internal_linux-ppc64_bin.tar.gz.sha512",
     "size": 38927092,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jre-11.0.7-internal_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-internal"
   },
@@ -8482,7 +8482,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-internal_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38419278,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jre-11.0.7-internal_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-internal"
   },
@@ -8505,7 +8505,7 @@
     "sha512_file": "sapmachine-jre-11.0.7-internal_linux-x64_bin.tar.gz.sha512",
     "size": 42462558,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jre-11.0.7-internal_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7-internal"
   },
@@ -8528,7 +8528,7 @@
     "sha512_file": "sapmachine-jre-11.0.7_linux-ppc64_bin.tar.gz.sha512",
     "size": 38927566,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jre-11.0.7_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -8551,7 +8551,7 @@
     "sha512_file": "sapmachine-jre-11.0.7_linux-ppc64le_bin.tar.gz.sha512",
     "size": 38418519,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jre-11.0.7_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -8574,7 +8574,7 @@
     "sha512_file": "sapmachine-jre-11.0.7_linux-x64_bin.tar.gz.sha512",
     "size": 42461592,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jre-11.0.7_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -8597,7 +8597,7 @@
     "sha512_file": "sapmachine-jre-11.0.7_osx-x64_bin.dmg.sha512",
     "size": 44165947,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jre-11.0.7_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -8620,7 +8620,7 @@
     "sha512_file": "sapmachine-jre-11.0.7_osx-x64_bin.tar.gz.sha512",
     "size": 38223336,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jre-11.0.7_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -8643,7 +8643,7 @@
     "sha512_file": "sapmachine-jre-11.0.7_windows-x64_bin.msi.sha512",
     "size": 42897408,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jre-11.0.7_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -8666,7 +8666,7 @@
     "sha512_file": "sapmachine-jre-11.0.7_windows-x64_bin.zip.sha512",
     "size": 42809059,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.7/sapmachine-jre-11.0.7_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "11.0.7"
   },
@@ -8689,7 +8689,7 @@
     "sha512_file": "sapmachine-jre-13.0.2-ea.8_linux-ppc64_bin.tar.gz.sha512",
     "size": 42340512,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jre-13.0.2-ea.8_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -8712,7 +8712,7 @@
     "sha512_file": "sapmachine-jre-13.0.2-ea.8_linux-ppc64le_bin.tar.gz.sha512",
     "size": 41733115,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jre-13.0.2-ea.8_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -8735,7 +8735,7 @@
     "sha512_file": "sapmachine-jre-13.0.2-ea.8_linux-x64_bin.tar.gz.sha512",
     "size": 46501479,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jre-13.0.2-ea.8_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -8758,7 +8758,7 @@
     "sha512_file": "sapmachine-jre-13.0.2-ea.8_osx-x64_bin.dmg.sha512",
     "size": 47651846,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jre-13.0.2-ea.8_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -8781,7 +8781,7 @@
     "sha512_file": "sapmachine-jre-13.0.2-ea.8_osx-x64_bin.tar.gz.sha512",
     "size": 41317584,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jre-13.0.2-ea.8_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -8804,7 +8804,7 @@
     "sha512_file": "sapmachine-jre-13.0.2-ea.8_windows-x64_bin.msi.sha512",
     "size": 42557440,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jre-13.0.2-ea.8_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -8827,7 +8827,7 @@
     "sha512_file": "sapmachine-jre-13.0.2-ea.8_windows-x64_bin.zip.sha512",
     "size": 42484048,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jre-13.0.2-ea.8_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2-ea.8"
   },
@@ -8850,7 +8850,7 @@
     "sha512_file": "sapmachine-jre-13.0.2_linux-ppc64_bin.tar.gz.sha512",
     "size": 42340289,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jre-13.0.2_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -8873,7 +8873,7 @@
     "sha512_file": "sapmachine-jre-13.0.2_linux-ppc64le_bin.tar.gz.sha512",
     "size": 41733824,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jre-13.0.2_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -8896,7 +8896,7 @@
     "sha512_file": "sapmachine-jre-13.0.2_linux-x64_bin.tar.gz.sha512",
     "size": 46502744,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jre-13.0.2_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -8919,7 +8919,7 @@
     "sha512_file": "sapmachine-jre-13.0.2_osx-x64_bin.dmg.sha512",
     "size": 47641191,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jre-13.0.2_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -8942,7 +8942,7 @@
     "sha512_file": "sapmachine-jre-13.0.2_osx-x64_bin.tar.gz.sha512",
     "size": 41318285,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jre-13.0.2_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -8965,7 +8965,7 @@
     "sha512_file": "sapmachine-jre-13.0.2_windows-x64_bin.msi.sha512",
     "size": 42557440,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jre-13.0.2_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -8988,7 +8988,7 @@
     "sha512_file": "sapmachine-jre-13.0.2_windows-x64_bin.zip.sha512",
     "size": 42482892,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jre-13.0.2_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "13.0.2"
   },
@@ -9011,7 +9011,7 @@
     "sha512_file": "sapmachine-jre-14-ea.1_linux-ppc64_bin.tar.gz.sha512",
     "size": 50766562,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14-ea.1_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -9034,7 +9034,7 @@
     "sha512_file": "sapmachine-jre-14-ea.1_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50180255,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14-ea.1_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -9057,7 +9057,7 @@
     "sha512_file": "sapmachine-jre-14-ea.1_linux-x64_bin.tar.gz.sha512",
     "size": 54773499,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14-ea.1_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -9080,7 +9080,7 @@
     "sha512_file": "sapmachine-jre-14-ea.1_osx-x64_bin.dmg.sha512",
     "size": 56536020,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14-ea.1_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -9103,7 +9103,7 @@
     "sha512_file": "sapmachine-jre-14-ea.1_osx-x64_bin.tar.gz.sha512",
     "size": 49556119,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14-ea.1_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -9126,7 +9126,7 @@
     "sha512_file": "sapmachine-jre-14-ea.1_windows-x64_bin.msi.sha512",
     "size": 54951936,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14-ea.1_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -9149,7 +9149,7 @@
     "sha512_file": "sapmachine-jre-14-ea.1_windows-x64_bin.zip.sha512",
     "size": 54916383,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14-ea.1_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.1"
   },
@@ -9172,7 +9172,7 @@
     "sha512_file": "sapmachine-jre-14-ea.32_linux-ppc64_bin.tar.gz.sha512",
     "size": 50740374,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jre-14-ea.32_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -9195,7 +9195,7 @@
     "sha512_file": "sapmachine-jre-14-ea.32_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50153922,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jre-14-ea.32_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -9218,7 +9218,7 @@
     "sha512_file": "sapmachine-jre-14-ea.32_linux-x64_bin.tar.gz.sha512",
     "size": 54740826,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jre-14-ea.32_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -9241,7 +9241,7 @@
     "sha512_file": "sapmachine-jre-14-ea.32_osx-x64_bin.dmg.sha512",
     "size": 56506319,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jre-14-ea.32_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -9264,7 +9264,7 @@
     "sha512_file": "sapmachine-jre-14-ea.32_osx-x64_bin.tar.gz.sha512",
     "size": 49527685,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jre-14-ea.32_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -9287,7 +9287,7 @@
     "sha512_file": "sapmachine-jre-14-ea.32_windows-x64_bin.msi.sha512",
     "size": 50851840,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jre-14-ea.32_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -9310,7 +9310,7 @@
     "sha512_file": "sapmachine-jre-14-ea.32_windows-x64_bin.zip.sha512",
     "size": 50815166,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+32/sapmachine-jre-14-ea.32_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.32"
   },
@@ -9333,7 +9333,7 @@
     "sha512_file": "sapmachine-jre-14-ea.33_linux-ppc64_bin.tar.gz.sha512",
     "size": 50763495,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jre-14-ea.33_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -9356,7 +9356,7 @@
     "sha512_file": "sapmachine-jre-14-ea.33_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50179934,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jre-14-ea.33_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -9379,7 +9379,7 @@
     "sha512_file": "sapmachine-jre-14-ea.33_linux-x64_bin.tar.gz.sha512",
     "size": 54766109,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jre-14-ea.33_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -9402,7 +9402,7 @@
     "sha512_file": "sapmachine-jre-14-ea.33_osx-x64_bin.dmg.sha512",
     "size": 56534334,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jre-14-ea.33_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -9425,7 +9425,7 @@
     "sha512_file": "sapmachine-jre-14-ea.33_osx-x64_bin.tar.gz.sha512",
     "size": 49550120,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jre-14-ea.33_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -9448,7 +9448,7 @@
     "sha512_file": "sapmachine-jre-14-ea.33_windows-x64_bin.msi.sha512",
     "size": 50876416,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jre-14-ea.33_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -9471,7 +9471,7 @@
     "sha512_file": "sapmachine-jre-14-ea.33_windows-x64_bin.zip.sha512",
     "size": 50839022,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+33/sapmachine-jre-14-ea.33_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.33"
   },
@@ -9494,7 +9494,7 @@
     "sha512_file": "sapmachine-jre-14-ea.34_linux-ppc64_bin.tar.gz.sha512",
     "size": 50763481,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jre-14-ea.34_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -9517,7 +9517,7 @@
     "sha512_file": "sapmachine-jre-14-ea.34_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50179865,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jre-14-ea.34_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -9540,7 +9540,7 @@
     "sha512_file": "sapmachine-jre-14-ea.34_linux-x64_bin.tar.gz.sha512",
     "size": 54767104,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jre-14-ea.34_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -9563,7 +9563,7 @@
     "sha512_file": "sapmachine-jre-14-ea.34_osx-x64_bin.dmg.sha512",
     "size": 56539738,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jre-14-ea.34_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -9586,7 +9586,7 @@
     "sha512_file": "sapmachine-jre-14-ea.34_osx-x64_bin.tar.gz.sha512",
     "size": 49556129,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jre-14-ea.34_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -9609,7 +9609,7 @@
     "sha512_file": "sapmachine-jre-14-ea.34_windows-x64_bin.msi.sha512",
     "size": 50884608,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jre-14-ea.34_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -9632,7 +9632,7 @@
     "sha512_file": "sapmachine-jre-14-ea.34_windows-x64_bin.zip.sha512",
     "size": 50843780,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+34/sapmachine-jre-14-ea.34_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.34"
   },
@@ -9655,7 +9655,7 @@
     "sha512_file": "sapmachine-jre-14-ea.36_linux-ppc64_bin.tar.gz.sha512",
     "size": 50765014,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jre-14-ea.36_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -9678,7 +9678,7 @@
     "sha512_file": "sapmachine-jre-14-ea.36_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50177536,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jre-14-ea.36_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -9701,7 +9701,7 @@
     "sha512_file": "sapmachine-jre-14-ea.36_linux-x64_bin.tar.gz.sha512",
     "size": 54773187,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jre-14-ea.36_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -9724,7 +9724,7 @@
     "sha512_file": "sapmachine-jre-14-ea.36_osx-x64_bin.dmg.sha512",
     "size": 56540230,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jre-14-ea.36_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -9747,7 +9747,7 @@
     "sha512_file": "sapmachine-jre-14-ea.36_osx-x64_bin.tar.gz.sha512",
     "size": 49558011,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jre-14-ea.36_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -9770,7 +9770,7 @@
     "sha512_file": "sapmachine-jre-14-ea.36_windows-x64_bin.msi.sha512",
     "size": 50933760,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jre-14-ea.36_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -9793,7 +9793,7 @@
     "sha512_file": "sapmachine-jre-14-ea.36_windows-x64_bin.zip.sha512",
     "size": 50892116,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14+36/sapmachine-jre-14-ea.36_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14-ea.36"
   },
@@ -9816,7 +9816,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.1_linux-ppc64_bin.tar.gz.sha512",
     "size": 50765952,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14.0.1-ea.1_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -9839,7 +9839,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.1_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50179267,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14.0.1-ea.1_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -9862,7 +9862,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.1_linux-x64_bin.tar.gz.sha512",
     "size": 54775474,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14.0.1-ea.1_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -9885,7 +9885,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.1_osx-x64_bin.dmg.sha512",
     "size": 56535891,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14.0.1-ea.1_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -9908,7 +9908,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.1_osx-x64_bin.tar.gz.sha512",
     "size": 49556459,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14.0.1-ea.1_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -9931,7 +9931,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.1_windows-x64_bin.msi.sha512",
     "size": 54956032,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14.0.1-ea.1_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -9954,7 +9954,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.1_windows-x64_bin.zip.sha512",
     "size": 54919627,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+1/sapmachine-jre-14.0.1-ea.1_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.1"
   },
@@ -9977,7 +9977,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.7_linux-ppc64_bin.tar.gz.sha512",
     "size": 50779616,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jre-14.0.1-ea.7_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -10000,7 +10000,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.7_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50186199,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jre-14.0.1-ea.7_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -10023,7 +10023,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.7_linux-x64_bin.tar.gz.sha512",
     "size": 54774502,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jre-14.0.1-ea.7_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -10046,7 +10046,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.7_osx-x64_bin.dmg.sha512",
     "size": 56535111,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jre-14.0.1-ea.7_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -10069,7 +10069,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.7_osx-x64_bin.tar.gz.sha512",
     "size": 49556727,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jre-14.0.1-ea.7_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -10092,7 +10092,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.7_windows-x64_bin.msi.sha512",
     "size": 54947840,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jre-14.0.1-ea.7_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -10115,7 +10115,7 @@
     "sha512_file": "sapmachine-jre-14.0.1-ea.7_windows-x64_bin.zip.sha512",
     "size": 54916523,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1+7/sapmachine-jre-14.0.1-ea.7_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1-ea.7"
   },
@@ -10138,7 +10138,7 @@
     "sha512_file": "sapmachine-jre-14.0.1_linux-ppc64_bin.tar.gz.sha512",
     "size": 50777308,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jre-14.0.1_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -10161,7 +10161,7 @@
     "sha512_file": "sapmachine-jre-14.0.1_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50187498,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jre-14.0.1_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -10184,7 +10184,7 @@
     "sha512_file": "sapmachine-jre-14.0.1_linux-x64_bin.tar.gz.sha512",
     "size": 54773562,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jre-14.0.1_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -10207,7 +10207,7 @@
     "sha512_file": "sapmachine-jre-14.0.1_osx-x64_bin.dmg.sha512",
     "size": 57019520,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jre-14.0.1_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -10230,7 +10230,7 @@
     "sha512_file": "sapmachine-jre-14.0.1_osx-x64_bin.tar.gz.sha512",
     "size": 50009308,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jre-14.0.1_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -10253,7 +10253,7 @@
     "sha512_file": "sapmachine-jre-14.0.1_windows-x64_bin.msi.sha512",
     "size": 54947840,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jre-14.0.1_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -10276,7 +10276,7 @@
     "sha512_file": "sapmachine-jre-14.0.1_windows-x64_bin.zip.sha512",
     "size": 54919298,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14.0.1/sapmachine-jre-14.0.1_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "14.0.1"
   },
@@ -10299,7 +10299,7 @@
     "sha512_file": "sapmachine-jre-14_linux-ppc64_bin.tar.gz.sha512",
     "size": 50765813,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -10322,7 +10322,7 @@
     "sha512_file": "sapmachine-jre-14_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50175313,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -10345,7 +10345,7 @@
     "sha512_file": "sapmachine-jre-14_linux-x64_bin.tar.gz.sha512",
     "size": 54772532,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -10368,7 +10368,7 @@
     "sha512_file": "sapmachine-jre-14_osx-x64_bin.dmg.sha512",
     "size": 57008181,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -10391,7 +10391,7 @@
     "sha512_file": "sapmachine-jre-14_osx-x64_bin.tar.gz.sha512",
     "size": 50002437,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -10414,7 +10414,7 @@
     "sha512_file": "sapmachine-jre-14_windows-x64_bin.msi.sha512",
     "size": 50884608,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -10437,7 +10437,7 @@
     "sha512_file": "sapmachine-jre-14_windows-x64_bin.zip.sha512",
     "size": 50844973,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": 14
   },
@@ -10460,7 +10460,7 @@
     "sha512_file": "sapmachine-jre-15-ea.10_linux-ppc64_bin.tar.gz.sha512",
     "size": 50815131,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jre-15-ea.10_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -10483,7 +10483,7 @@
     "sha512_file": "sapmachine-jre-15-ea.10_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50218954,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jre-15-ea.10_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -10506,7 +10506,7 @@
     "sha512_file": "sapmachine-jre-15-ea.10_linux-x64_bin.tar.gz.sha512",
     "size": 54717755,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jre-15-ea.10_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -10529,7 +10529,7 @@
     "sha512_file": "sapmachine-jre-15-ea.10_osx-x64_bin.dmg.sha512",
     "size": 56548395,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jre-15-ea.10_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -10552,7 +10552,7 @@
     "sha512_file": "sapmachine-jre-15-ea.10_osx-x64_bin.tar.gz.sha512",
     "size": 49589393,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jre-15-ea.10_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -10575,7 +10575,7 @@
     "sha512_file": "sapmachine-jre-15-ea.10_windows-x64_bin.msi.sha512",
     "size": 50909184,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jre-15-ea.10_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -10598,7 +10598,7 @@
     "sha512_file": "sapmachine-jre-15-ea.10_windows-x64_bin.zip.sha512",
     "size": 50862115,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+10/sapmachine-jre-15-ea.10_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.10"
   },
@@ -10621,7 +10621,7 @@
     "sha512_file": "sapmachine-jre-15-ea.11_linux-ppc64_bin.tar.gz.sha512",
     "size": 50769164,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jre-15-ea.11_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -10644,7 +10644,7 @@
     "sha512_file": "sapmachine-jre-15-ea.11_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50196926,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jre-15-ea.11_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -10667,7 +10667,7 @@
     "sha512_file": "sapmachine-jre-15-ea.11_linux-x64_bin.tar.gz.sha512",
     "size": 54698272,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jre-15-ea.11_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -10690,7 +10690,7 @@
     "sha512_file": "sapmachine-jre-15-ea.11_osx-x64_bin.dmg.sha512",
     "size": 56319350,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jre-15-ea.11_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -10713,7 +10713,7 @@
     "sha512_file": "sapmachine-jre-15-ea.11_osx-x64_bin.tar.gz.sha512",
     "size": 49473447,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jre-15-ea.11_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -10736,7 +10736,7 @@
     "sha512_file": "sapmachine-jre-15-ea.11_windows-x64_bin.msi.sha512",
     "size": 50786304,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jre-15-ea.11_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -10759,7 +10759,7 @@
     "sha512_file": "sapmachine-jre-15-ea.11_windows-x64_bin.zip.sha512",
     "size": 50761967,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+11/sapmachine-jre-15-ea.11_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.11"
   },
@@ -10782,7 +10782,7 @@
     "sha512_file": "sapmachine-jre-15-ea.12_linux-ppc64_bin.tar.gz.sha512",
     "size": 50783602,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jre-15-ea.12_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -10805,7 +10805,7 @@
     "sha512_file": "sapmachine-jre-15-ea.12_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50204668,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jre-15-ea.12_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -10828,7 +10828,7 @@
     "sha512_file": "sapmachine-jre-15-ea.12_linux-x64_bin.tar.gz.sha512",
     "size": 54749708,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jre-15-ea.12_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -10851,7 +10851,7 @@
     "sha512_file": "sapmachine-jre-15-ea.12_osx-x64_bin.dmg.sha512",
     "size": 56365668,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jre-15-ea.12_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -10874,7 +10874,7 @@
     "sha512_file": "sapmachine-jre-15-ea.12_osx-x64_bin.tar.gz.sha512",
     "size": 49513064,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jre-15-ea.12_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -10897,7 +10897,7 @@
     "sha512_file": "sapmachine-jre-15-ea.12_windows-x64_bin.msi.sha512",
     "size": 50827264,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jre-15-ea.12_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -10920,7 +10920,7 @@
     "sha512_file": "sapmachine-jre-15-ea.12_windows-x64_bin.zip.sha512",
     "size": 50805457,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+12/sapmachine-jre-15-ea.12_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.12"
   },
@@ -10943,7 +10943,7 @@
     "sha512_file": "sapmachine-jre-15-ea.13_linux-ppc64_bin.tar.gz.sha512",
     "size": 50781377,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jre-15-ea.13_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -10966,7 +10966,7 @@
     "sha512_file": "sapmachine-jre-15-ea.13_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50207102,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jre-15-ea.13_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -10989,7 +10989,7 @@
     "sha512_file": "sapmachine-jre-15-ea.13_linux-x64_bin.tar.gz.sha512",
     "size": 54750171,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jre-15-ea.13_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -11012,7 +11012,7 @@
     "sha512_file": "sapmachine-jre-15-ea.13_osx-x64_bin.dmg.sha512",
     "size": 56380502,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jre-15-ea.13_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -11035,7 +11035,7 @@
     "sha512_file": "sapmachine-jre-15-ea.13_osx-x64_bin.tar.gz.sha512",
     "size": 49512091,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jre-15-ea.13_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -11058,7 +11058,7 @@
     "sha512_file": "sapmachine-jre-15-ea.13_windows-x64_bin.msi.sha512",
     "size": 50831360,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jre-15-ea.13_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -11081,7 +11081,7 @@
     "sha512_file": "sapmachine-jre-15-ea.13_windows-x64_bin.zip.sha512",
     "size": 50803410,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+13/sapmachine-jre-15-ea.13_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.13"
   },
@@ -11104,7 +11104,7 @@
     "sha512_file": "sapmachine-jre-15-ea.14_linux-ppc64_bin.tar.gz.sha512",
     "size": 50786834,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jre-15-ea.14_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -11127,7 +11127,7 @@
     "sha512_file": "sapmachine-jre-15-ea.14_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50211895,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jre-15-ea.14_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -11150,7 +11150,7 @@
     "sha512_file": "sapmachine-jre-15-ea.14_linux-x64_bin.tar.gz.sha512",
     "size": 54744354,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jre-15-ea.14_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -11173,7 +11173,7 @@
     "sha512_file": "sapmachine-jre-15-ea.14_osx-x64_bin.dmg.sha512",
     "size": 56367661,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jre-15-ea.14_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -11196,7 +11196,7 @@
     "sha512_file": "sapmachine-jre-15-ea.14_osx-x64_bin.tar.gz.sha512",
     "size": 49510663,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jre-15-ea.14_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -11219,7 +11219,7 @@
     "sha512_file": "sapmachine-jre-15-ea.14_windows-x64_bin.msi.sha512",
     "size": 50831360,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jre-15-ea.14_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -11242,7 +11242,7 @@
     "sha512_file": "sapmachine-jre-15-ea.14_windows-x64_bin.zip.sha512",
     "size": 50800389,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+14/sapmachine-jre-15-ea.14_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.14"
   },
@@ -11265,7 +11265,7 @@
     "sha512_file": "sapmachine-jre-15-ea.15_linux-ppc64_bin.tar.gz.sha512",
     "size": 50786882,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jre-15-ea.15_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -11288,7 +11288,7 @@
     "sha512_file": "sapmachine-jre-15-ea.15_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50205000,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jre-15-ea.15_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -11311,7 +11311,7 @@
     "sha512_file": "sapmachine-jre-15-ea.15_linux-x64_bin.tar.gz.sha512",
     "size": 54761168,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jre-15-ea.15_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -11334,7 +11334,7 @@
     "sha512_file": "sapmachine-jre-15-ea.15_osx-x64_bin.dmg.sha512",
     "size": 56363070,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jre-15-ea.15_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -11357,7 +11357,7 @@
     "sha512_file": "sapmachine-jre-15-ea.15_osx-x64_bin.tar.gz.sha512",
     "size": 49515469,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jre-15-ea.15_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -11380,7 +11380,7 @@
     "sha512_file": "sapmachine-jre-15-ea.15_windows-x64_bin.msi.sha512",
     "size": 50827264,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jre-15-ea.15_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -11403,7 +11403,7 @@
     "sha512_file": "sapmachine-jre-15-ea.15_windows-x64_bin.zip.sha512",
     "size": 50801629,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+15/sapmachine-jre-15-ea.15_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.15"
   },
@@ -11426,7 +11426,7 @@
     "sha512_file": "sapmachine-jre-15-ea.16_linux-ppc64_bin.tar.gz.sha512",
     "size": 50818355,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jre-15-ea.16_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -11449,7 +11449,7 @@
     "sha512_file": "sapmachine-jre-15-ea.16_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50228428,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jre-15-ea.16_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -11472,7 +11472,7 @@
     "sha512_file": "sapmachine-jre-15-ea.16_linux-x64_bin.tar.gz.sha512",
     "size": 54787342,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jre-15-ea.16_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -11495,7 +11495,7 @@
     "sha512_file": "sapmachine-jre-15-ea.16_osx-x64_bin.dmg.sha512",
     "size": 56402536,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jre-15-ea.16_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -11518,7 +11518,7 @@
     "sha512_file": "sapmachine-jre-15-ea.16_osx-x64_bin.tar.gz.sha512",
     "size": 49535255,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jre-15-ea.16_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -11541,7 +11541,7 @@
     "sha512_file": "sapmachine-jre-15-ea.16_windows-x64_bin.msi.sha512",
     "size": 50847744,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jre-15-ea.16_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -11564,7 +11564,7 @@
     "sha512_file": "sapmachine-jre-15-ea.16_windows-x64_bin.zip.sha512",
     "size": 50830287,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+16/sapmachine-jre-15-ea.16_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.16"
   },
@@ -11587,7 +11587,7 @@
     "sha512_file": "sapmachine-jre-15-ea.17_linux-ppc64_bin.tar.gz.sha512",
     "size": 50829769,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jre-15-ea.17_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -11610,7 +11610,7 @@
     "sha512_file": "sapmachine-jre-15-ea.17_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50239657,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jre-15-ea.17_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -11633,7 +11633,7 @@
     "sha512_file": "sapmachine-jre-15-ea.17_linux-x64_bin.tar.gz.sha512",
     "size": 54792482,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jre-15-ea.17_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -11656,7 +11656,7 @@
     "sha512_file": "sapmachine-jre-15-ea.17_osx-x64_bin.dmg.sha512",
     "size": 56403642,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jre-15-ea.17_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -11679,7 +11679,7 @@
     "sha512_file": "sapmachine-jre-15-ea.17_osx-x64_bin.tar.gz.sha512",
     "size": 49536965,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jre-15-ea.17_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -11702,7 +11702,7 @@
     "sha512_file": "sapmachine-jre-15-ea.17_windows-x64_bin.msi.sha512",
     "size": 54853632,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jre-15-ea.17_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -11725,7 +11725,7 @@
     "sha512_file": "sapmachine-jre-15-ea.17_windows-x64_bin.zip.sha512",
     "size": 54839292,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+17/sapmachine-jre-15-ea.17_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.17"
   },
@@ -11748,7 +11748,7 @@
     "sha512_file": "sapmachine-jre-15-ea.18_linux-ppc64_bin.tar.gz.sha512",
     "size": 50844223,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jre-15-ea.18_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -11771,7 +11771,7 @@
     "sha512_file": "sapmachine-jre-15-ea.18_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50262439,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jre-15-ea.18_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -11794,7 +11794,7 @@
     "sha512_file": "sapmachine-jre-15-ea.18_linux-x64_bin.tar.gz.sha512",
     "size": 54708017,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jre-15-ea.18_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -11817,7 +11817,7 @@
     "sha512_file": "sapmachine-jre-15-ea.18_osx-x64_bin.dmg.sha512",
     "size": 56394895,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jre-15-ea.18_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -11840,7 +11840,7 @@
     "sha512_file": "sapmachine-jre-15-ea.18_osx-x64_bin.tar.gz.sha512",
     "size": 49540307,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jre-15-ea.18_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -11863,7 +11863,7 @@
     "sha512_file": "sapmachine-jre-15-ea.18_windows-x64_bin.msi.sha512",
     "size": 54833152,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jre-15-ea.18_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -11886,7 +11886,7 @@
     "sha512_file": "sapmachine-jre-15-ea.18_windows-x64_bin.zip.sha512",
     "size": 54809243,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+18/sapmachine-jre-15-ea.18_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.18"
   },
@@ -11909,7 +11909,7 @@
     "sha512_file": "sapmachine-jre-15-ea.19_linux-ppc64_bin.tar.gz.sha512",
     "size": 50876134,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jre-15-ea.19_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -11932,7 +11932,7 @@
     "sha512_file": "sapmachine-jre-15-ea.19_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50279725,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jre-15-ea.19_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -11955,7 +11955,7 @@
     "sha512_file": "sapmachine-jre-15-ea.19_linux-x64_bin.tar.gz.sha512",
     "size": 54736948,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jre-15-ea.19_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -11978,7 +11978,7 @@
     "sha512_file": "sapmachine-jre-15-ea.19_osx-x64_bin.dmg.sha512",
     "size": 56412375,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jre-15-ea.19_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -12001,7 +12001,7 @@
     "sha512_file": "sapmachine-jre-15-ea.19_osx-x64_bin.tar.gz.sha512",
     "size": 49552054,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jre-15-ea.19_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -12024,7 +12024,7 @@
     "sha512_file": "sapmachine-jre-15-ea.19_windows-x64_bin.msi.sha512",
     "size": 54845440,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jre-15-ea.19_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -12047,7 +12047,7 @@
     "sha512_file": "sapmachine-jre-15-ea.19_windows-x64_bin.zip.sha512",
     "size": 54831701,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+19/sapmachine-jre-15-ea.19_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.19"
   },
@@ -12070,7 +12070,7 @@
     "sha512_file": "sapmachine-jre-15-ea.6_linux-ppc64_bin.tar.gz.sha512",
     "size": 50817349,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jre-15-ea.6_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -12093,7 +12093,7 @@
     "sha512_file": "sapmachine-jre-15-ea.6_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50211696,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jre-15-ea.6_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -12116,7 +12116,7 @@
     "sha512_file": "sapmachine-jre-15-ea.6_linux-x64_bin.tar.gz.sha512",
     "size": 54736656,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jre-15-ea.6_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -12139,7 +12139,7 @@
     "sha512_file": "sapmachine-jre-15-ea.6_osx-x64_bin.dmg.sha512",
     "size": 56546102,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jre-15-ea.6_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -12162,7 +12162,7 @@
     "sha512_file": "sapmachine-jre-15-ea.6_osx-x64_bin.tar.gz.sha512",
     "size": 49571893,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jre-15-ea.6_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -12185,7 +12185,7 @@
     "sha512_file": "sapmachine-jre-15-ea.6_windows-x64_bin.msi.sha512",
     "size": 50900992,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jre-15-ea.6_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -12208,7 +12208,7 @@
     "sha512_file": "sapmachine-jre-15-ea.6_windows-x64_bin.zip.sha512",
     "size": 50855976,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+6/sapmachine-jre-15-ea.6_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.6"
   },
@@ -12231,7 +12231,7 @@
     "sha512_file": "sapmachine-jre-15-ea.7_linux-ppc64_bin.tar.gz.sha512",
     "size": 50820417,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jre-15-ea.7_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -12254,7 +12254,7 @@
     "sha512_file": "sapmachine-jre-15-ea.7_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50220075,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jre-15-ea.7_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -12277,7 +12277,7 @@
     "sha512_file": "sapmachine-jre-15-ea.7_linux-x64_bin.tar.gz.sha512",
     "size": 54746518,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jre-15-ea.7_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -12300,7 +12300,7 @@
     "sha512_file": "sapmachine-jre-15-ea.7_osx-x64_bin.dmg.sha512",
     "size": 56561566,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jre-15-ea.7_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -12323,7 +12323,7 @@
     "sha512_file": "sapmachine-jre-15-ea.7_osx-x64_bin.tar.gz.sha512",
     "size": 49579121,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jre-15-ea.7_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -12346,7 +12346,7 @@
     "sha512_file": "sapmachine-jre-15-ea.7_windows-x64_bin.msi.sha512",
     "size": 50905088,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jre-15-ea.7_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -12369,7 +12369,7 @@
     "sha512_file": "sapmachine-jre-15-ea.7_windows-x64_bin.zip.sha512",
     "size": 50867131,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+7/sapmachine-jre-15-ea.7_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.7"
   },
@@ -12392,7 +12392,7 @@
     "sha512_file": "sapmachine-jre-15-ea.8_linux-ppc64_bin.tar.gz.sha512",
     "size": 50845628,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+8/sapmachine-jre-15-ea.8_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.8"
   },
@@ -12415,7 +12415,7 @@
     "sha512_file": "sapmachine-jre-15-ea.8_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50237703,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+8/sapmachine-jre-15-ea.8_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.8"
   },
@@ -12438,7 +12438,7 @@
     "sha512_file": "sapmachine-jre-15-ea.8_linux-x64_bin.tar.gz.sha512",
     "size": 54779690,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+8/sapmachine-jre-15-ea.8_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.8"
   },
@@ -12461,7 +12461,7 @@
     "sha512_file": "sapmachine-jre-15-ea.8_osx-x64_bin.dmg.sha512",
     "size": 56603119,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+8/sapmachine-jre-15-ea.8_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.8"
   },
@@ -12484,7 +12484,7 @@
     "sha512_file": "sapmachine-jre-15-ea.8_osx-x64_bin.tar.gz.sha512",
     "size": 49613324,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+8/sapmachine-jre-15-ea.8_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.8"
   },
@@ -12507,7 +12507,7 @@
     "sha512_file": "sapmachine-jre-15-ea.9_linux-ppc64_bin.tar.gz.sha512",
     "size": 50840733,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jre-15-ea.9_linux-ppc64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -12530,7 +12530,7 @@
     "sha512_file": "sapmachine-jre-15-ea.9_linux-ppc64le_bin.tar.gz.sha512",
     "size": 50232916,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jre-15-ea.9_linux-ppc64le_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -12553,7 +12553,7 @@
     "sha512_file": "sapmachine-jre-15-ea.9_linux-x64_bin.tar.gz.sha512",
     "size": 54754182,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jre-15-ea.9_linux-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -12576,7 +12576,7 @@
     "sha512_file": "sapmachine-jre-15-ea.9_osx-x64_bin.dmg.sha512",
     "size": 56594084,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jre-15-ea.9_osx-x64_bin.dmg",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -12599,7 +12599,7 @@
     "sha512_file": "sapmachine-jre-15-ea.9_osx-x64_bin.tar.gz.sha512",
     "size": 49620046,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jre-15-ea.9_osx-x64_bin.tar.gz",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -12622,7 +12622,7 @@
     "sha512_file": "sapmachine-jre-15-ea.9_windows-x64_bin.msi.sha512",
     "size": 50921472,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jre-15-ea.9_windows-x64_bin.msi",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   },
@@ -12645,7 +12645,7 @@
     "sha512_file": "sapmachine-jre-15-ea.9_windows-x64_bin.zip.sha512",
     "size": 50882738,
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15+9/sapmachine-jre-15-ea.9_windows-x64_bin.zip",
-    "variant": "jre",
+    "image_type": "jre",
     "vendor": "sapmachine",
     "version": "15-ea.9"
   }
