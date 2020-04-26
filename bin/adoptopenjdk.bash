@@ -21,6 +21,21 @@ CHECKSUM_DIR="${2}/${VENDOR}"
 ensure_directory "${METADATA_DIR}"
 ensure_directory "${CHECKSUM_DIR}"
 
+function normalize_version {
+	local jvm_impl="$1"
+	local name="$2"
+	local version="$3"
+
+	if [[ "${jvm_impl}" == "openj9" ]] && [[ "${name}" =~ "openj9" ]] && [[ ! "${version}" =~ "openj9" ]]
+	then
+		local openj9_version
+		openj9_version=$(echo "${name}" | perl -pe 's/^.*_(openj9-\d+\.\d+\.\d+)\..+$/$1/')
+		echo "${version}.${openj9_version}"
+	else
+		echo "${version}"
+	fi
+}
+
 function normalize_features {
 	declare -a features
 	if [[ "${1}" == "large" ]]
@@ -52,6 +67,13 @@ function download {
 	url=$(jq -r '.link' <<< "${json}")
 	local archive="${METADATA_DIR}/${filename}"
 
+	local version
+	version="$(jq -r '.version' <<< "${json}")"
+	local jvm_impl
+	jvm_impl="$(jq -r '.jvm_impl' <<< "${json}")"
+	local normalized_version
+	normalized_version="$(normalize_version "${jvm_impl}" "${filename}" "${version}")"
+
 	local metadata_file="${METADATA_DIR}/${filename}.json"
 	if [[ -f "${metadata_file}" ]]
 	then
@@ -68,9 +90,9 @@ function download {
 			"${VENDOR}" \
 			"${filename}" \
 			'ga' \
-			"$(jq -r '.version' <<< "${json}")" \
+			"${normalized_version}" \
 			"$(jq -r '.java_version' <<< "${json}")" \
-			"$(jq -r '.jvm_impl' <<< "${json}")" \
+			"${jvm_impl}" \
 			"$(normalize_os "$(jq -r '.os' <<< "${json}")")" \
 			"$(normalize_arch "$(jq -r '.architecture' <<< "${json}")")" \
 			"${ext}" \
