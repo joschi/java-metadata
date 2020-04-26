@@ -20,7 +20,7 @@
     "size": 436585706,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/graalvm-ce-java11-linux-aarch64-19.3.0.2.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0.2"
+    "version": "19.3.0.2+java11"
   },
   {
     "architecture": "aarch64",
@@ -43,7 +43,7 @@
     "size": 436467916,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0/graalvm-ce-java11-linux-aarch64-19.3.0.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0"
+    "version": "19.3.0+java11"
   },
   {
     "architecture": "aarch64",
@@ -66,7 +66,7 @@
     "size": 438202800,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.1/graalvm-ce-java11-linux-aarch64-19.3.1.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.1"
+    "version": "19.3.1+java11"
   },
   {
     "architecture": "aarch64",
@@ -89,6 +89,6 @@
     "size": 485110937,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.0.0/graalvm-ce-java11-linux-aarch64-20.0.0.tar.gz",
     "vendor": "graalvm",
-    "version": "20.0.0"
+    "version": "20.0.0+java11"
   }
 ]

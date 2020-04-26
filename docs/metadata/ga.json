@@ -25603,7 +25603,7 @@
     "size": 448511231,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/graalvm-ce-java11-darwin-amd64-19.3.0.2.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0.2"
+    "version": "19.3.0.2+java11"
   },
   {
     "architecture": "x86_64",
@@ -25626,7 +25626,7 @@
     "size": 448564759,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0/graalvm-ce-java11-darwin-amd64-19.3.0.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0"
+    "version": "19.3.0+java11"
   },
   {
     "architecture": "x86_64",
@@ -25649,7 +25649,7 @@
     "size": 450067870,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.1/graalvm-ce-java11-darwin-amd64-19.3.1.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.1"
+    "version": "19.3.1+java11"
   },
   {
     "architecture": "x86_64",
@@ -25672,7 +25672,7 @@
     "size": 475292772,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.0.0/graalvm-ce-java11-darwin-amd64-20.0.0.tar.gz",
     "vendor": "graalvm",
-    "version": "20.0.0"
+    "version": "20.0.0+java11"
   },
   {
     "architecture": "aarch64",
@@ -25695,7 +25695,7 @@
     "size": 436585706,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/graalvm-ce-java11-linux-aarch64-19.3.0.2.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0.2"
+    "version": "19.3.0.2+java11"
   },
   {
     "architecture": "aarch64",
@@ -25718,7 +25718,7 @@
     "size": 436467916,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0/graalvm-ce-java11-linux-aarch64-19.3.0.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0"
+    "version": "19.3.0+java11"
   },
   {
     "architecture": "aarch64",
@@ -25741,7 +25741,7 @@
     "size": 438202800,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.1/graalvm-ce-java11-linux-aarch64-19.3.1.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.1"
+    "version": "19.3.1+java11"
   },
   {
     "architecture": "aarch64",
@@ -25764,7 +25764,7 @@
     "size": 485110937,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.0.0/graalvm-ce-java11-linux-aarch64-20.0.0.tar.gz",
     "vendor": "graalvm",
-    "version": "20.0.0"
+    "version": "20.0.0+java11"
   },
   {
     "architecture": "x86_64",
@@ -25787,7 +25787,7 @@
     "size": 463288140,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/graalvm-ce-java11-linux-amd64-19.3.0.2.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0.2"
+    "version": "19.3.0.2+java11"
   },
   {
     "architecture": "x86_64",
@@ -25810,7 +25810,7 @@
     "size": 465117693,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0/graalvm-ce-java11-linux-amd64-19.3.0.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0"
+    "version": "19.3.0+java11"
   },
   {
     "architecture": "x86_64",
@@ -25833,7 +25833,7 @@
     "size": 464937788,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.1/graalvm-ce-java11-linux-amd64-19.3.1.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.1"
+    "version": "19.3.1+java11"
   },
   {
     "architecture": "x86_64",
@@ -25856,7 +25856,7 @@
     "size": 492853306,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.0.0/graalvm-ce-java11-linux-amd64-20.0.0.tar.gz",
     "vendor": "graalvm",
-    "version": "20.0.0"
+    "version": "20.0.0+java11"
   },
   {
     "architecture": "x86_64",
@@ -25879,7 +25879,7 @@
     "size": 239331649,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/graalvm-ce-java11-windows-amd64-19.3.0.2.zip",
     "vendor": "graalvm",
-    "version": "19.3.0.2"
+    "version": "19.3.0.2+java11"
   },
   {
     "architecture": "x86_64",
@@ -25902,7 +25902,7 @@
     "size": 241714888,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0/graalvm-ce-java11-windows-amd64-19.3.0.zip",
     "vendor": "graalvm",
-    "version": "19.3.0"
+    "version": "19.3.0+java11"
   },
   {
     "architecture": "x86_64",
@@ -25925,7 +25925,7 @@
     "size": 239630258,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.1/graalvm-ce-java11-windows-amd64-19.3.1.zip",
     "vendor": "graalvm",
-    "version": "19.3.1"
+    "version": "19.3.1+java11"
   },
   {
     "architecture": "x86_64",
@@ -25948,7 +25948,7 @@
     "size": 367181905,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.0.0/graalvm-ce-java11-windows-amd64-20.0.0.zip",
     "vendor": "graalvm",
-    "version": "20.0.0"
+    "version": "20.0.0+java11"
   },
   {
     "architecture": "x86_64",
@@ -25971,7 +25971,7 @@
     "size": 356588464,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/graalvm-ce-java8-darwin-amd64-19.3.0.2.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0.2"
+    "version": "19.3.0.2+java8"
   },
   {
     "architecture": "x86_64",
@@ -25994,7 +25994,7 @@
     "size": 356582812,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0/graalvm-ce-java8-darwin-amd64-19.3.0.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0"
+    "version": "19.3.0+java8"
   },
   {
     "architecture": "x86_64",
@@ -26017,7 +26017,7 @@
     "size": 357777334,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.1/graalvm-ce-java8-darwin-amd64-19.3.1.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.1"
+    "version": "19.3.1+java8"
   },
   {
     "architecture": "x86_64",
@@ -26040,7 +26040,7 @@
     "size": 379557294,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.0.0/graalvm-ce-java8-darwin-amd64-20.0.0.tar.gz",
     "vendor": "graalvm",
-    "version": "20.0.0"
+    "version": "20.0.0+java8"
   },
   {
     "architecture": "x86_64",
@@ -26063,7 +26063,7 @@
     "size": 365787553,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/graalvm-ce-java8-linux-amd64-19.3.0.2.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0.2"
+    "version": "19.3.0.2+java8"
   },
   {
     "architecture": "x86_64",
@@ -26086,7 +26086,7 @@
     "size": 365745349,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0/graalvm-ce-java8-linux-amd64-19.3.0.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.0"
+    "version": "19.3.0+java8"
   },
   {
     "architecture": "x86_64",
@@ -26109,7 +26109,7 @@
     "size": 367006999,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.1/graalvm-ce-java8-linux-amd64-19.3.1.tar.gz",
     "vendor": "graalvm",
-    "version": "19.3.1"
+    "version": "19.3.1+java8"
   },
   {
     "architecture": "x86_64",
@@ -26132,7 +26132,7 @@
     "size": 389644535,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.0.0/graalvm-ce-java8-linux-amd64-20.0.0.tar.gz",
     "vendor": "graalvm",
-    "version": "20.0.0"
+    "version": "20.0.0+java8"
   },
   {
     "architecture": "x86_64",
@@ -26155,7 +26155,7 @@
     "size": 161488212,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/graalvm-ce-java8-windows-amd64-19.3.0.2.zip",
     "vendor": "graalvm",
-    "version": "19.3.0.2"
+    "version": "19.3.0.2+java8"
   },
   {
     "architecture": "x86_64",
@@ -26178,7 +26178,7 @@
     "size": 161485736,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0/graalvm-ce-java8-windows-amd64-19.3.0.zip",
     "vendor": "graalvm",
-    "version": "19.3.0"
+    "version": "19.3.0+java8"
   },
   {
     "architecture": "x86_64",
@@ -26201,7 +26201,7 @@
     "size": 161565476,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.1/graalvm-ce-java8-windows-amd64-19.3.1.zip",
     "vendor": "graalvm",
-    "version": "19.3.1"
+    "version": "19.3.1+java8"
   },
   {
     "architecture": "x86_64",
@@ -26224,7 +26224,7 @@
     "size": 281292813,
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.0.0/graalvm-ce-java8-windows-amd64-20.0.0.zip",
     "vendor": "graalvm",
-    "version": "20.0.0"
+    "version": "20.0.0+java8"
   },
   {
     "architecture": "x86_64",
