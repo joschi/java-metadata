@@ -53,7 +53,7 @@ function download {
 			"${VENDOR}" \
 			"${filename}" \
 			'ga' \
-			"${VERSION}" \
+			"${VERSION}+java${JAVA_VERSION}" \
 			"${JAVA_VERSION}" \
 			'graalvm' \
 			"$(normalize_os "${OS}")" \
