@@ -274,5 +274,28 @@
     "url": "https://github.com/oracle/graal/releases/download/vm-1.0.0-rc9/graalvm-ce-1.0.0-rc9-macos-amd64.tar.gz",
     "vendor": "graalvm",
     "version": "1.0.0-rc9"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "graalvm-ce-darwin-amd64-19.2.0-dev-b01.tar.gz",
+    "image_type": "jdk",
+    "java_version": "8",
+    "jvm_impl": "graalvm",
+    "md5": "dbbae808e815b52035fd41f21603bd31",
+    "md5_file": "graalvm-ce-darwin-amd64-19.2.0-dev-b01.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ea",
+    "sha1": "c96a3c4cd0211515ea4bb68e54ebdd4449b423eb",
+    "sha1_file": "graalvm-ce-darwin-amd64-19.2.0-dev-b01.tar.gz.sha1",
+    "sha256": "c6ad3e3d193edb539321a0847602985e829728cc7a050adb09a37544693749af",
+    "sha256_file": "graalvm-ce-darwin-amd64-19.2.0-dev-b01.tar.gz.sha256",
+    "sha512": "4c3fb1124275af6145541387d91f9c12c89bb7c7dd4193c75bfa7ada7c44a67ab8dfb94a9fcdf36bfe91dae39bc039d89468b85692ff248ae2535cddab730a8e",
+    "sha512_file": "graalvm-ce-darwin-amd64-19.2.0-dev-b01.tar.gz.sha512",
+    "size": 347943995,
+    "url": "https://github.com/oracle/graal/releases/download/vm-19.2.0-dev-b01/graalvm-ce-darwin-amd64-19.2.0-dev-b01.tar.gz",
+    "vendor": "graalvm",
+    "version": "19.2.0-dev-b01"
   }
 ]
