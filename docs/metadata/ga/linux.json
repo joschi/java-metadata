@@ -7648,7 +7648,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "large_heap"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8-OPENJ9_x64_LinuxLH_jdk8u181-b13_openj9-0.9.0.tar.gz",
     "image_type": "jdk",
