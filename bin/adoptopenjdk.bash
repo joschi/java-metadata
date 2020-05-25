@@ -122,8 +122,11 @@ AVAILABLE_RELEASES=$(jq '.available_releases[]' "${RELEASES_FILE}")
 
 for release in ${AVAILABLE_RELEASES}
 do
-	RELEASE_FILE="${TEMP_DIR}/release-${release}.json"
-	download_file "https://api.adoptopenjdk.net/v3/assets/feature_releases/${release}/ga?page=0&page_size=1000&project=jdk&sort_order=ASC&vendor=adoptopenjdk" "${RELEASE_FILE}"
+	page=0
+	while download_file "https://api.adoptopenjdk.net/v3/assets/feature_releases/${release}/ga?page=${page}&page_size=20&project=jdk&sort_order=ASC&vendor=adoptopenjdk" "${TEMP_DIR}/release-${release}-${page}.json"
+	do
+		page=$((page+1))
+	done
 done
 
 FLATTEN_QUERY='add |
