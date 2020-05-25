@@ -136,5 +136,28 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jdk_sparcv9_solaris_hotspot_8u242b08.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.242+8.1"
+  },
+  {
+    "architecture": "sparcv9",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_sparcv9_solaris_hotspot_8u252b09.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_252-b09",
+    "jvm_impl": "hotspot",
+    "md5": "99e10d9396b4ee8a389c7b54468c27ff",
+    "md5_file": "OpenJDK8U-jdk_sparcv9_solaris_hotspot_8u252b09.tar.gz.md5",
+    "os": "solaris",
+    "release_type": "ga",
+    "sha1": "4ca7058e38bb02fa4387df3106ec280ac3109a0d",
+    "sha1_file": "OpenJDK8U-jdk_sparcv9_solaris_hotspot_8u252b09.tar.gz.sha1",
+    "sha256": "bbc12b78013b5103a5be55312326c1d76b14c0d809e798248137618eb5cd2786",
+    "sha256_file": "OpenJDK8U-jdk_sparcv9_solaris_hotspot_8u252b09.tar.gz.sha256",
+    "sha512": "3a12b86d373df0a506423dcb6370903bda375b451d4d5352a474aaa5d068424a472c1d0ef8b1ed7de9b84c5ec7ccd4c853e9473395a83ecb9013f108aad364a3",
+    "sha512_file": "OpenJDK8U-jdk_sparcv9_solaris_hotspot_8u252b09.tar.gz.sha512",
+    "size": 106974600,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_sparcv9_solaris_hotspot_8u252b09.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.252+9.1"
   }
 ]

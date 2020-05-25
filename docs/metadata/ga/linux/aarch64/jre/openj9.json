@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK11U-jre_aarch64_linux_openj9_11.0.7_10_openj9-0.20.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.7-ea+10",
+    "jvm_impl": "openj9",
+    "md5": "410ab0ecfc112fe4a4b7e1b9f347e12b",
+    "md5_file": "OpenJDK11U-jre_aarch64_linux_openj9_11.0.7_10_openj9-0.20.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "aea836ac872331e96384b616438342509dc44792",
+    "sha1_file": "OpenJDK11U-jre_aarch64_linux_openj9_11.0.7_10_openj9-0.20.0.tar.gz.sha1",
+    "sha256": "37ae26443abb02d2ab041eced9be948f0d20db03183aaf3c159ef682eeeabf9b",
+    "sha256_file": "OpenJDK11U-jre_aarch64_linux_openj9_11.0.7_10_openj9-0.20.0.tar.gz.sha256",
+    "sha512": "ec1162664a27c7626b42d4a08aa66fb4a5a7f3bd6ba0e17e2897b873bf3a486fbea0d6fdd5de00b87ec2b6f1f4fbecc70293516fc8166bed33549f187f371ad8",
+    "sha512_file": "OpenJDK11U-jre_aarch64_linux_openj9_11.0.7_10_openj9-0.20.0.tar.gz.sha512",
+    "size": 39727250,
+    "url": "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10_openj9-0.20.0/OpenJDK11U-jre_aarch64_linux_openj9_11.0.7_10_openj9-0.20.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "11.0.7-ea+10.1.openj9-0.20.0"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "large_heap"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK11U-jre_aarch64_linux_openj9_linuxXL_11.0.7_10_openj9-0.20.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.7-ea+10",
+    "jvm_impl": "openj9",
+    "md5": "6b0d5d3870ee644ea544f4210c278815",
+    "md5_file": "OpenJDK11U-jre_aarch64_linux_openj9_linuxXL_11.0.7_10_openj9-0.20.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "f00222a296254a1a9d5509062b2e0f936ed1904e",
+    "sha1_file": "OpenJDK11U-jre_aarch64_linux_openj9_linuxXL_11.0.7_10_openj9-0.20.0.tar.gz.sha1",
+    "sha256": "d3dc6bc4e2428ac891c00f137404b5a6f1b394ab11dbfef397307b862bd402f1",
+    "sha256_file": "OpenJDK11U-jre_aarch64_linux_openj9_linuxXL_11.0.7_10_openj9-0.20.0.tar.gz.sha256",
+    "sha512": "8a8ba5b95805973f028327e416344b78480b090b65a75ccee61d3e80b289b87ab8dda961a819d65bf89a4bce9a88ee52a47c94d405e6794e9374e31d3268a785",
+    "sha512_file": "OpenJDK11U-jre_aarch64_linux_openj9_linuxXL_11.0.7_10_openj9-0.20.0.tar.gz.sha512",
+    "size": 39719372,
+    "url": "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10_openj9-0.20.0/OpenJDK11U-jre_aarch64_linux_openj9_linuxXL_11.0.7_10_openj9-0.20.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "11.0.7-ea+10.1.openj9-0.20.0"
+  }
+]
