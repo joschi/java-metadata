@@ -65,6 +65,12 @@ function download {
 		return 0
 	fi
 
+	if [[ "${image_type}" = 'debugimage' ]]
+	then
+		echo "Skipping debug image ${filename}"
+		return 0
+	fi
+
 	local ext
 	# shellcheck disable=SC2016
 	ext=$(echo "${filename}" | perl -pe 's/^.*\.(zip|tar\.gz)$/$1/g')
