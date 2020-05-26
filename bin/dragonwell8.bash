@@ -48,12 +48,14 @@ function download {
 		local VERSION=""
 		local RELEASE_TYPE=""
 		local OS=""
+		local ARCH=""
 		local EXT=""
 		if [[ "${filename}" == 'Alibaba_Dragonwell8_Linux_x64_8.0-preview.tar.gz' ]]
 		then
 			VERSION="8.0.0-preview"
 			RELEASE_TYPE="ea"
 			OS="Linux"
+			ARCH="x64"
 			EXT="tar.gz"
 		else
 			# shellcheck disable=SC2016
