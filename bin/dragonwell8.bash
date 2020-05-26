@@ -23,7 +23,7 @@ ensure_directory "${CHECKSUM_DIR}"
 
 function normalize_release_type {
 	case "${1}" in
-	*Experimental*) echo 'ea'
+	ea|*Experimental*) echo 'ea'
 		;;
 	*) echo 'ga'
 		;;
