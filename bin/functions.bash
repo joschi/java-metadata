@@ -109,11 +109,11 @@ function metadata_json {
 
 function normalize_os {
 	case "${1}" in
-	'linux') echo 'linux'
+	'linux'|'Linux') echo 'linux'
 		;;
 	'mac'|'macos'|'macosx'|'osx'|'darwin') echo 'macosx'
 		;;
-	'win'|'windows') echo 'windows'
+	'win'|'windows'|'Windows') echo 'windows'
 		;;
 	'solaris') echo 'solaris'
 		;;
