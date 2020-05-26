@@ -42,11 +42,6 @@ function normalize_features {
 	then
 		features+=("large_heap")
 	fi
-	# Handle miscategorized builds: https://github.com/AdoptOpenJDK/openjdk-api-v3/issues/204
-	if [[ "${2}" =~ 'LH' ]]
-	then
-		features+=("large_heap")
-	fi
 	echo "${features[@]}"
 }
 
@@ -108,7 +103,7 @@ function download {
 			"$(normalize_arch "$(jq -r '.architecture' <<< "${json}")")" \
 			"${ext}" \
 			"$(jq -r '.image_type' <<< "${json}")" \
-			"$(normalize_features "$(jq -r '.heap_size' <<< "${json}")" "${filename}")" \
+			"$(normalize_features "$(jq -r '.heap_size' <<< "${json}")")" \
 			"${url}" \
 			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}")" \
