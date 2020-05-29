@@ -2361,7 +2361,7 @@
     "size": 195546552,
     "url": "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.1%2B13/OpenJDK11U-jdk_x64_linux_openj9_jdk-11.0.1_13_openj9-0.11.0_11.0.1_13.tar.gz",
     "vendor": "adoptopenjdk",
-    "version": "11.0.1+13.OpenJDK11U-jdk_x64_linux_openj9_jdk-11.0.1_13_openj9-0.11.0_11.0.1_13.tar.gz"
+    "version": "11.0.1+13.openj9-0.11.0"
   },
   {
     "architecture": "x86_64",
@@ -2384,7 +2384,7 @@
     "size": 195362557,
     "url": "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.1%2B13/OpenJDK11U-jdk_x64_linux_openj9_linuxXL-jdk-11.0.1_13_openj9-0.11.0_11.0.1_13.tar.gz",
     "vendor": "adoptopenjdk",
-    "version": "11.0.1+13.OpenJDK11U-jdk_x64_linux_openj9_linuxXL-jdk-11.0.1_13_openj9-0.11.0_11.0.1_13.tar.gz"
+    "version": "11.0.1+13.openj9-0.11.0"
   },
   {
     "architecture": "x86_64",
@@ -2409,7 +2409,7 @@
     "size": 198670163,
     "url": "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.2%2B9/OpenJDK11U-jdk_x64_linux_openj9_linuxXL_11.0.2_9-openj9-0.12.0.tar.gz",
     "vendor": "adoptopenjdk",
-    "version": "11.0.2+9.OpenJDK11U-jdk_x64_linux_openj9_linuxXL_11.0.2_9-openj9-0.12.0.tar.gz"
+    "version": "11.0.2+9.openj9-0.12.0"
   },
   {
     "architecture": "x86_64",
@@ -2434,7 +2434,7 @@
     "size": 198616386,
     "url": "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.2%2B9_openj9-0.12.1/OpenJDK11U-jdk_x64_linux_openj9_linuxXL_11.0.2_9_openj9-0.12.1-openj9-0.12.1.tar.gz",
     "vendor": "adoptopenjdk",
-    "version": "11.0.2+9.OpenJDK11U-jdk_x64_linux_openj9_linuxXL_11.0.2_9_openj9-0.12.1-openj9-0.12.1.tar.gz"
+    "version": "11.0.2+9.openj9-0.12.1"
   },
   {
     "architecture": "x86_64",
@@ -10143,7 +10143,7 @@
     "size": 116634219,
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u202-b08/OpenJDK8U-jdk_x64_linux_openj9_linuxXL_8u202b08-openj9-0.12.0.tar.gz",
     "vendor": "adoptopenjdk",
-    "version": "8.0.202+8.OpenJDK8U-jdk_x64_linux_openj9_linuxXL_8u202b08-openj9-0.12.0.tar.gz"
+    "version": "8.0.202+8.openj9-0.12.0"
   },
   {
     "architecture": "x86_64",
