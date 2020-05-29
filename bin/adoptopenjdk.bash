@@ -29,7 +29,7 @@ function normalize_version {
 	if [[ "${jvm_impl}" == "openj9" ]] && [[ "${name}" =~ "openj9" ]] && [[ ! "${version}" =~ "openj9" ]]
 	then
 		local openj9_version
-		openj9_version=$(echo "${name}" | perl -pe 's/^.*_(openj9-\d+\.\d+\.\d+)\..+$/$1/')
+		openj9_version=$(echo "${name}" | perl -pe 's/^.*(?:[_-](openj9[-_]\d+\.\d+\.\d+[a-z]?)){1,}.*\..+$/$1/')
 		echo "${version}.${openj9_version}"
 	else
 		echo "${version}"
