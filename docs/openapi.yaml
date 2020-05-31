@@ -27,8 +27,11 @@ components:
       enum:
         - "adoptopenjdk"
         - "corretto"
+        - "dragonwell"
         - "graalvm"
+        - "java-se-ri"
         - "liberica"
+        - "openjdk"
         - "sapmachine"
         - "zulu"
     operatingSystems:
