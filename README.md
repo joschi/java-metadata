@@ -13,7 +13,9 @@ Supported OpenJDK distributions:
 * [Corretto](https://aws.amazon.com/corretto/)
 * [Dragonwell](https://cn.aliyun.com/product/dragonwell)
 * [GraalVM Community Edition](https://www.graalvm.org/)
+* [Java SE Reference Implementations](https://jdk.java.net/)
 * [Liberica](https://bell-sw.com/)
+* [OpenJDK](https://jdk.java.net/)
 * [SapMachine](https://sap.github.io/SapMachine/)
 * [Zulu Community](https://www.azul.com/products/zulu-community/)
 
