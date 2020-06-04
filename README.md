@@ -21,7 +21,7 @@ Supported OpenJDK distributions:
 
 ## Usage
 
-You can fetch the latest metadata for all Zulu Community™ releases at the following URL:
+You can fetch the latest metadata for all releases at the following URL:
 
 ```
 https://joschi.github.io/java-metadata/metadata/all.json
