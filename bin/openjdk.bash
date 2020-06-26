@@ -36,12 +36,14 @@ REGEX='s/^openjdk-([0-9]{1,}[^_]*)_(linux|osx|windows)-(aarch64|x64-musl|x64)_bi
 INDEX_ARCHIVE="${TEMP_DIR}/index-archive.html"
 INDEX_14="${TEMP_DIR}/index-14.html"
 INDEX_15="${TEMP_DIR}/index-15.html"
+INDEX_16="${TEMP_DIR}/index-16.html"
 
 download_file 'http://jdk.java.net/archive/' "${INDEX_ARCHIVE}"
 download_file 'http://jdk.java.net/14/' "${INDEX_14}"
 download_file 'http://jdk.java.net/15/' "${INDEX_15}"
+download_file 'http://jdk.java.net/16/' "${INDEX_16}"
 
-URLS=$(grep -h -o -E 'href="https://download.java.net/java/.*/[^/]*\.(tar\.gz|zip)"' "${INDEX_ARCHIVE}" "${INDEX_14}" "${INDEX_15}" | perl -pe 's/href="(.+)"/$1/g' | sort -V)
+URLS=$(grep -h -o -E 'href="https://download.java.net/java/.*/[^/]*\.(tar\.gz|zip)"' "${INDEX_ARCHIVE}" "${INDEX_14}" "${INDEX_15}" "${INDEX_16}" | perl -pe 's/href="(.+)"/$1/g' | sort -V)
 for URL in ${URLS}
 do
 	FILE="$(perl -pe 's/https.*\/([^\/]+)/$1/g' <<< "${URL}")"
