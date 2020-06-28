@@ -115,6 +115,11 @@ function download {
 
 		download_file "${url}" "${archive}" || return 1
 
+		if [[ "${image_type}" = "none" ]]
+		then
+			image_type="jdk"
+		fi
+
 		local json
 		json="$(metadata_json \
 			"${VENDOR}" \
