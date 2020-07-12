@@ -117,7 +117,7 @@ versions=$(jq -r '.[].tag_name' "${TEMP_DIR}/releases-${VENDOR}.json" | sort -V)
 for version in ${versions}
 do
 	prerelease=$(jq -r  ".[] | select(.tag_name == \"${version}\") | .prerelease" "${TEMP_DIR}/releases-${VENDOR}.json")
-	assets=$(jq -r  ".[] | select(.tag_name == \"${version}\") | .assets[] | select(.content_type != \"text/plain\") | select (.name | endswith(\".bom\") | not) | select (.name | endswith(\"-src.tar.gz\") | not) | .name" "${TEMP_DIR}/releases-${VENDOR}.json")
+	assets=$(jq -r  ".[] | select(.tag_name == \"${version}\") | .assets[] | select(.content_type != \"text/plain\") | select (.name | endswith(\".bom\") | not) | select (.name | endswith(\"-src.tar.gz\") | not) | select (.name | endswith(\"-src-full.tar.gz\") | not) | .name" "${TEMP_DIR}/releases-${VENDOR}.json")
 	for asset in ${assets}
 	do
 		download "${version}" "${asset}" "${prerelease}" || echo "Cannot download ${asset}"
