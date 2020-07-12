@@ -2,7 +2,7 @@ name: Update release metadata
 on:
   push:
     branches:
-    - master
+    - main
   schedule:
     - cron: '0 */6 * * *'
 jobs:
@@ -24,6 +24,7 @@ jobs:
         git add docs/
         test -z $(git status -s) || git commit -m "Update release metadata"
     - name: Push changes
-      uses: ad-m/github-push-action@master
+      uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
