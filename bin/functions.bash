@@ -119,7 +119,7 @@ function normalize_os {
 		;;
 	'aix') echo 'aix'
 		;;
-	*) echo "unknown-os-${1}" ; return 1
+	*) echo "unknown-os-${1}" ; exit 1
 		;;
 	esac
 }
@@ -146,7 +146,7 @@ function normalize_arch {
 		;;
 	'sparcv9') echo 'sparcv9'
 		;;
-	*) echo "unknown-architecture-${1}" ; return 1
+	*) echo "unknown-architecture-${1}" ; exit 1
 		;;
 	esac
 }
