@@ -1309,5 +1309,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-16+4/sapmachine-jdk-16-ea.4_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "16-ea.4"
+  },
+  {
+    "architecture": "ppc64le",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-16-ea.5_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "16-ea.5",
+    "jvm_impl": "hotspot",
+    "md5": "371f6a0569e429c3ae7c6b5559690ee3",
+    "md5_file": "sapmachine-jdk-16-ea.5_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "68f8d16bec40cb52311884e16ca619ddb500564b",
+    "sha1_file": "sapmachine-jdk-16-ea.5_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "ae56e4a0d5d6b909a751f5c00e00350d87d128a1c54b5ffa8fc7c9e054d228e2",
+    "sha256_file": "sapmachine-jdk-16-ea.5_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "21120a203b7f0fe308f58f586845e215e9bd9c710c337e7fbaeb27a15ca806e2c166fec6e7048605a8e2ebeba197e1aaa5c792063f315a78d89b541a2a0fd5f2",
+    "sha512_file": "sapmachine-jdk-16-ea.5_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 183175401,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-16+5/sapmachine-jdk-16-ea.5_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "16-ea.5"
   }
 ]
