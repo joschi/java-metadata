@@ -50,6 +50,8 @@ function get_archs_for_os {
 	case "${1}" in
 	'linux') echo 'x64' 'aarch64'
 		;;
+	'alpine-linux') echo 'x64'
+		;;
 	'macosx') echo 'x64'
 		;;
 	'windows') echo 'x64' 'x86'
@@ -61,6 +63,8 @@ function get_exts_for_os {
 	case "${1}" in
 	'linux') echo 'tar.gz' 'rpm' 'deb'
 		;;
+	'alpine-linux') echo 'tar.gz'
+		;;
 	'macosx') echo 'tar.gz' 'pkg'
 		;;
 	'windows') echo 'zip' 'msi'
@@ -71,6 +75,8 @@ function get_exts_for_os {
 function get_image_types_for_os_and_ext {
 	case "${1}" in
 	'linux') echo 'none'
+		;;
+	'alpine-linux') echo 'none'
 		;;
 	'macosx') echo 'none'
 		;;
@@ -85,6 +91,14 @@ function get_image_types_for_os_and_ext {
 	esac
 }
 
+function normalize_features {
+	case "${1}" in
+	'linux'|'macosx'|'windows')
+		;;
+	'alpine-linux') echo 'musl'
+		;;
+	esac
+}
 function download {
 	local version="${1}"
 	local os="${2}"
@@ -132,7 +146,7 @@ function download {
 			"$(normalize_arch "${arch}")" \
 			"${ext}" \
 			"${image_type}" \
-			'' \
+			"$(normalize_features "${os}")" \
 			"${url}" \
 			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}")" \
@@ -153,7 +167,7 @@ jq -s 'add' "${TEMP_DIR}/releases-corretto-8.json" "${TEMP_DIR}/releases-corrett
 
 for CORRETTO_VERSION in $(jq -r '.[].name' "${TEMP_DIR}/releases-corretto.json" | sort -V)
 do
-	for OS in 'linux' 'macosx' 'windows'
+	for OS in 'linux' 'macosx' 'windows' 'alpine-linux'
 	do
 		for ARCH in $(get_archs_for_os "${OS}")
 		do
