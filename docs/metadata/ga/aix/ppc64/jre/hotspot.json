@@ -504,5 +504,28 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_ppc64_aix_hotspot_8u252b09.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.252+9.1"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_ppc64_aix_hotspot_8u262b10.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_262-b10",
+    "jvm_impl": "hotspot",
+    "md5": "0ae1cbb73f30b1f9901100db3627960a",
+    "md5_file": "OpenJDK8U-jre_ppc64_aix_hotspot_8u262b10.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "cc53df232796e6aee7bae9cc453232d891252530",
+    "sha1_file": "OpenJDK8U-jre_ppc64_aix_hotspot_8u262b10.tar.gz.sha1",
+    "sha256": "74fd1c5a74bde243ff31ed69d594905a04f644b88d1c77b70c60598dabc2b96d",
+    "sha256_file": "OpenJDK8U-jre_ppc64_aix_hotspot_8u262b10.tar.gz.sha256",
+    "sha512": "63cda1fe43f22e0b05512e37ebe1de30003e091d9a78a6f15188678f1cec25668ebd68e99f33cf7b127eec5f833e74e38d0fb608b54790d7b608a85cbc95130d",
+    "sha512_file": "OpenJDK8U-jre_ppc64_aix_hotspot_8u262b10.tar.gz.sha512",
+    "size": 42161846,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64_aix_hotspot_8u262b10.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.262+10"
   }
 ]
