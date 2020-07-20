@@ -831,6 +831,31 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "openjdk-15-ea+31_linux-x64-musl_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "15-ea+31",
+    "jvm_impl": "hotspot",
+    "md5": "1d671c59dfddc71c0b42b7484bccab10",
+    "md5_file": "openjdk-15-ea+31_linux-x64-musl_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "ebd7641c0510088aa567f9df2c293b266e387b6f",
+    "sha1_file": "openjdk-15-ea+31_linux-x64-musl_bin.tar.gz.sha1",
+    "sha256": "da7abd4d3b3511ed2da8aba25b7ff67863261a0c8b5e7e771cf0fbfadcc7f4fd",
+    "sha256_file": "openjdk-15-ea+31_linux-x64-musl_bin.tar.gz.sha256",
+    "sha512": "3f356c7ce2c2ebe5ab290415bb724719be3d7ca601c75b9f8c2fadf2209a848aff1808e597304b5126c398e5ac5ee0bf97bf203709ed2708ce7d10c403109c12",
+    "sha512_file": "openjdk-15-ea+31_linux-x64-musl_bin.tar.gz.sha512",
+    "size": 196139680,
+    "url": "https://download.java.net/java/early_access/alpine/31/binaries/openjdk-15-ea+31_linux-x64-musl_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "15-ea+31"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "openjdk-15-ea+31_linux-x64_bin.tar.gz",
@@ -1010,6 +1035,31 @@
     "sha512_file": "openjdk-16-ea+5_linux-aarch64_bin.tar.gz.sha512",
     "size": 170529767,
     "url": "https://download.java.net/java/early_access/jdk16/5/GPL/openjdk-16-ea+5_linux-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "16-ea+5"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "openjdk-16-ea+5_linux-x64-musl_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "16-ea+5",
+    "jvm_impl": "hotspot",
+    "md5": "4d9c4a6649411e004ec88b48654315da",
+    "md5_file": "openjdk-16-ea+5_linux-x64-musl_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "4b7bf24c1916b35197dd79d42893aaf29a199c8e",
+    "sha1_file": "openjdk-16-ea+5_linux-x64-musl_bin.tar.gz.sha1",
+    "sha256": "1ec940bea148a7ececda635c209de3836fe4e6511f5d49d4248cf6d52c77aac8",
+    "sha256_file": "openjdk-16-ea+5_linux-x64-musl_bin.tar.gz.sha256",
+    "sha512": "e46b8c646acbd3bf7bb5d0b4d278991429a0c3686936d131cc9e0a762ff2217f2fc0e07d72e8c9511a225e6bb545e6af1ab698a1234afdabb3d8f5c4458ef4db",
+    "sha512_file": "openjdk-16-ea+5_linux-x64-musl_bin.tar.gz.sha512",
+    "size": 196809088,
+    "url": "https://download.java.net/java/early_access/alpine/5/binaries/openjdk-16-ea+5_linux-x64-musl_bin.tar.gz",
     "vendor": "openjdk",
     "version": "16-ea+5"
   },
