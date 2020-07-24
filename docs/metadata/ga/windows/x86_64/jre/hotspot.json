@@ -3486,6 +3486,31 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu14.29.23-ca-fx-jre14.0.2-win_x64.zip",
+    "image_type": "jre",
+    "java_version": "14.0.2",
+    "jvm_impl": "hotspot",
+    "md5": "5f53f24d2637527210133d88b9939150",
+    "md5_file": "zulu14.29.23-ca-fx-jre14.0.2-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "36377354a862a0385d3b21e1f3606eb054c4a830",
+    "sha1_file": "zulu14.29.23-ca-fx-jre14.0.2-win_x64.zip.sha1",
+    "sha256": "3562a82e25e490c8069c6263dbaebddc3a10b831e24a8c41b5298c6c16330516",
+    "sha256_file": "zulu14.29.23-ca-fx-jre14.0.2-win_x64.zip.sha256",
+    "sha512": "a710e0daff6467ae1cc2b2bd5a823a3aa667fc4a255c0da8d71242f48d4bd5aa14d0c415c3973e7fbc2c8060cf3dbddc7f20490f76b99477db0325b54f6ac87b",
+    "sha512_file": "zulu14.29.23-ca-fx-jre14.0.2-win_x64.zip.sha512",
+    "size": 72421090,
+    "url": "https://static.azul.com/zulu/bin/zulu14.29.23-ca-fx-jre14.0.2-win_x64.zip",
+    "vendor": "zulu",
+    "version": "14.29.23"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "zip",
     "filename": "zulu14.29.23-ca-jre14.0.2-win_x64.zip",
