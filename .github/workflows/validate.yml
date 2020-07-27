@@ -1,0 +1,24 @@
+name: Validate release metadata
+on:
+  schedule:
+    - cron: '0 3 * * *'
+jobs:
+  update:
+    runs-on: 'ubuntu-latest'
+    steps:
+    - uses: actions/checkout@v2
+    - uses: mstksg/get-package@v1
+      with:
+        apt-get: jq curl
+    - name: Run validation script
+      run: "git rm $(find docs/metadata/vendor -name '*.json' ! -name all.json -exec bin/validate.bash {} \;)"
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git status
+        git diff-index --quiet HEAD || git commit -m "Remove invalid release metadata"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
