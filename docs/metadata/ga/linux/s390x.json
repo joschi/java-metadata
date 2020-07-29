@@ -2870,6 +2870,29 @@
   },
   {
     "architecture": "s390x",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_265-b01",
+    "jvm_impl": "openj9",
+    "md5": "e67aae5cd3d4646a81b570c072517af5",
+    "md5_file": "OpenJDK8U-jdk_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "053b4a1f133e6aeac9740a4d2bce61ddceb77e08",
+    "sha1_file": "OpenJDK8U-jdk_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.sha1",
+    "sha256": "54b9dbcf9f221a0c2ed469b3b5828b56b2cf22fbbf61f0b462b4a9db0737f7f7",
+    "sha256_file": "OpenJDK8U-jdk_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.sha256",
+    "sha512": "0b144cb6654db2314c99b50e24c22cd5ae820460138ed07c3645a022ee04b3b89f39395ee6a5c22e398bef6e62b4c2cbe2caa100e04dad1b4517f5fd3fbd402e",
+    "sha512_file": "OpenJDK8U-jdk_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.sha512",
+    "size": 114448892,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.265+1.openj9-0.21.0"
+  },
+  {
+    "architecture": "s390x",
     "features": [
       "large_heap"
     ],
@@ -2942,6 +2965,31 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_linuxXL_8u262b10_openj9-0.21.0.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.262+10.openj9-0.21.0"
+  },
+  {
+    "architecture": "s390x",
+    "features": [
+      "large_heap"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_265-b01",
+    "jvm_impl": "openj9",
+    "md5": "8580c656626d043db416e189f212a098",
+    "md5_file": "OpenJDK8U-jdk_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "9b56f3e55d4c75cb7672152dc89e94cb13e79d0e",
+    "sha1_file": "OpenJDK8U-jdk_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha1",
+    "sha256": "adb058888a53c11bf1e83fa137a0c19cf673974526e65e635ba207bc048d40cb",
+    "sha256_file": "OpenJDK8U-jdk_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha256",
+    "sha512": "bad00f1d70a3409509f5a456f59d47be1d45ae6c11619d35deace8733e9a74e247b146f41ca5e8887fa1698a43a26db2e60b562e4d28ad3d0cb2f9a4edd792c9",
+    "sha512_file": "OpenJDK8U-jdk_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha512",
+    "size": 114438083,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.265+1.openj9-0.21.0"
   },
   {
     "architecture": "s390x",
@@ -3405,6 +3453,29 @@
   },
   {
     "architecture": "s390x",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_265-b01",
+    "jvm_impl": "openj9",
+    "md5": "f949e669370ae45a3cec41ae4db9da5b",
+    "md5_file": "OpenJDK8U-jre_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "189fac8c083bce269655262885b04dea53d3c013",
+    "sha1_file": "OpenJDK8U-jre_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.sha1",
+    "sha256": "ec573cb2361b5fee3944387329d7859889d73c6c8a7d5f7ecf0d95503efda726",
+    "sha256_file": "OpenJDK8U-jre_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.sha256",
+    "sha512": "1654c4b374850cc2179963e34b0dc8623eaf3e5de9a098aad50325003661b56dbf8207808e2e9c2216587a6a8eee211f9ba8ee036fcf281b7795a660800c0b7a",
+    "sha512_file": "OpenJDK8U-jre_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.sha512",
+    "size": 47998397,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jre_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.265+1.openj9-0.21.0"
+  },
+  {
+    "architecture": "s390x",
     "features": [
       "large_heap"
     ],
@@ -3477,6 +3548,31 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_s390x_linux_openj9_linuxXL_8u262b10_openj9-0.21.0.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.262+10.openj9-0.21.0"
+  },
+  {
+    "architecture": "s390x",
+    "features": [
+      "large_heap"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_265-b01",
+    "jvm_impl": "openj9",
+    "md5": "860a4fd25e8aa116787761a7e2e1044f",
+    "md5_file": "OpenJDK8U-jre_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "ede3fb036256e4d69d8058bae5f8d58e65e60402",
+    "sha1_file": "OpenJDK8U-jre_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha1",
+    "sha256": "f7398b577a9bfabc6847dac28cdece458bb82381f14b520e7a2594bce5cc8063",
+    "sha256_file": "OpenJDK8U-jre_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha256",
+    "sha512": "6b1e0e3eca5c5eb3c3948b3b73417ffb409f0741d227eb0d731733c1a1cdbba048476f2eb0a19a09c57e263ee2988e0a30adc863847443e079276a24b203f4cb",
+    "sha512_file": "OpenJDK8U-jre_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha512",
+    "size": 47983531,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jre_s390x_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.265+1.openj9-0.21.0"
   },
   {
     "architecture": "s390x",

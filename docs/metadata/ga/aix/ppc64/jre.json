@@ -1194,5 +1194,28 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_ppc64_aix_openj9_8u262b10_openj9-0.21.0.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.262+10.openj9-0.21.0"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_ppc64_aix_openj9_8u265b01_openj9-0.21.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_265-b01",
+    "jvm_impl": "openj9",
+    "md5": "e022b86323dc5805304fea1cdfd29387",
+    "md5_file": "OpenJDK8U-jre_ppc64_aix_openj9_8u265b01_openj9-0.21.0.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "516daa213ed77c472eb9e44e1d2d6965d50a1117",
+    "sha1_file": "OpenJDK8U-jre_ppc64_aix_openj9_8u265b01_openj9-0.21.0.tar.gz.sha1",
+    "sha256": "dd7551050357bc2340b12c8ea581b884d44069c7b6c03793c6470c9b60d67590",
+    "sha256_file": "OpenJDK8U-jre_ppc64_aix_openj9_8u265b01_openj9-0.21.0.tar.gz.sha256",
+    "sha512": "389123c92bb4795523e936e5b22b8c892e2e46ed04b9c4a2b4735f5539dd0e3de3d5f2e3c87fd31833ed968cb0be9d7d6478121ecc88abb91ff76314f283ea70",
+    "sha512_file": "OpenJDK8U-jre_ppc64_aix_openj9_8u265b01_openj9-0.21.0.tar.gz.sha512",
+    "size": 49790462,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jre_ppc64_aix_openj9_8u265b01_openj9-0.21.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.265+1.openj9-0.21.0"
   }
 ]

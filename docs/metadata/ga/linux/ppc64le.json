@@ -3037,6 +3037,31 @@
   },
   {
     "architecture": "ppc64le",
+    "features": [
+      "large_heap"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_265-b01",
+    "jvm_impl": "openj9",
+    "md5": "6dbc5dfa252974e3c51be82f1e1bff5d",
+    "md5_file": "OpenJDK8U-jdk_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "8cf71b2b198f4bf805e781be9ce8491326b3024b",
+    "sha1_file": "OpenJDK8U-jdk_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha1",
+    "sha256": "27b5b27c2f52e44cd33ee3f93f4a17cfb54608218a01f59ef159b1ac625a91bf",
+    "sha256_file": "OpenJDK8U-jdk_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha256",
+    "sha512": "ec6f8832c8444ef346555b9c5cba92375e771b56e5c367fda9aab33a8ebae2feaf30c131eb166826abd3885da5e2484ec0ea85f8080ebb93f31dfec3d389d402",
+    "sha512_file": "OpenJDK8U-jdk_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha512",
+    "size": 115256240,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.265+1.openj9-0.21.0"
+  },
+  {
+    "architecture": "ppc64le",
     "features": [],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_ppc64le_linux_hotspot_8u192b12.tar.gz",
@@ -3569,6 +3594,31 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_ppc64le_linux_openj9_linuxXL_8u262b10_openj9-0.21.0.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.262+10.openj9-0.21.0"
+  },
+  {
+    "architecture": "ppc64le",
+    "features": [
+      "large_heap"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_265-b01",
+    "jvm_impl": "openj9",
+    "md5": "732b5cffe9af8c0ac7612ab233eecf11",
+    "md5_file": "OpenJDK8U-jre_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "01cd91a27977f93b19484be58b3ec6ebc45c547a",
+    "sha1_file": "OpenJDK8U-jre_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha1",
+    "sha256": "ab5cf48183b37d3f8ef1767feae85eedba0f178019449e895e946f498a884f2d",
+    "sha256_file": "OpenJDK8U-jre_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha256",
+    "sha512": "1e00b298dceeb678259021444dcbd4f4275b7867172c2e0641a68b54d6e7e96989b3c273475681e1c583c9f6fad680bdad2f04d0edbb0aedbe02b3ff8c89b733",
+    "sha512_file": "OpenJDK8U-jre_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha512",
+    "size": 48631824,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jre_ppc64le_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.265+1.openj9-0.21.0"
   },
   {
     "architecture": "ppc64le",

@@ -2092,6 +2092,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_x64_linux_openj9_8u265b01_openj9-0.21.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_265-b01",
+    "jvm_impl": "openj9",
+    "md5": "c2b1a8aea1d2f9774d13f54df4cd09d1",
+    "md5_file": "OpenJDK8U-jdk_x64_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "33bd40fb62f130d351fb311303d826e1d1d7f434",
+    "sha1_file": "OpenJDK8U-jdk_x64_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.sha1",
+    "sha256": "88ff739005cbb012f3ee73d426bd75810ce7de551d08e555475a261d57e3ecbf",
+    "sha256_file": "OpenJDK8U-jdk_x64_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.sha256",
+    "sha512": "520b441148c3db41e07d90799182b91d767a538047ebef0fc65a1ecf576409e53e4f546bc14c916200ba2a66476d42320e21eed490352e792ea65468f7128efb",
+    "sha512_file": "OpenJDK8U-jdk_x64_linux_openj9_8u265b01_openj9-0.21.0.tar.gz.sha512",
+    "size": 114669715,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u265b01_openj9-0.21.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.265+1.openj9-0.21.0"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "large_heap"
     ],
@@ -2389,6 +2412,31 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_linuxXL_8u262b10_openj9-0.21.0.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.262+10.openj9-0.21.0"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "large_heap"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_x64_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_265-b01",
+    "jvm_impl": "openj9",
+    "md5": "962f4408614cd69d8707a860e6bec515",
+    "md5_file": "OpenJDK8U-jdk_x64_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "b3990bf80283397d3031f73a8a183fbc23a48bf5",
+    "sha1_file": "OpenJDK8U-jdk_x64_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha1",
+    "sha256": "181098891bbc13e2e64443bf2ebfefee136cea1aced3ef9036739442a44a8374",
+    "sha256_file": "OpenJDK8U-jdk_x64_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha256",
+    "sha512": "0a28c2d7d2606a90b2fbe7d095b46c2cae8fbdc4098bdaf86381c8648db5bc59029a158fef6678bacba31b510adb4457ddb37dd26290fef1b4872b6c449b965c",
+    "sha512_file": "OpenJDK8U-jdk_x64_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz.sha512",
+    "size": 114654840,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_linuxXL_8u265b01_openj9-0.21.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.265+1.openj9-0.21.0"
   },
   {
     "architecture": "x86_64",
