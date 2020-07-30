@@ -297,5 +297,28 @@
     "url": "https://corretto.aws/downloads/resources/8.262.10.1/amazon-corretto-8.262.10.1-linux-aarch64.tar.gz",
     "vendor": "corretto",
     "version": "8.262.10.1"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "amazon-corretto-8.265.01.1-linux-aarch64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.265.01.1",
+    "jvm_impl": "hotspot",
+    "md5": "01871d4bf6e51a4b358b4ed7271ec1d8",
+    "md5_file": "amazon-corretto-8.265.01.1-linux-aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "9666a1c2c9d896ee57e3675eceb83923ff463fd7",
+    "sha1_file": "amazon-corretto-8.265.01.1-linux-aarch64.tar.gz.sha1",
+    "sha256": "2e3755bac052ad7c502adbaec7823328644af3767abd1169974b144805eb718e",
+    "sha256_file": "amazon-corretto-8.265.01.1-linux-aarch64.tar.gz.sha256",
+    "sha512": "3e031fd67c9dfe82140bc22b3b25b2fcb350120b74a603194c3e501579e89d221cb3bc6eda4bbb6ebcfdf8566a335cab9599f1cea0c810fa3785f4c3b26cb7c3",
+    "sha512_file": "amazon-corretto-8.265.01.1-linux-aarch64.tar.gz.sha512",
+    "size": 101500381,
+    "url": "https://corretto.aws/downloads/resources/8.265.01.1/amazon-corretto-8.265.01.1-linux-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.265.01.1"
   }
 ]

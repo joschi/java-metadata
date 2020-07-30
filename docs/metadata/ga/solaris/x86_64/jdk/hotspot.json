@@ -896,5 +896,28 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/8u262+10/bellsoft-jdk8u262+10-solaris-x64.tar.gz",
     "vendor": "liberica",
     "version": "8u262+10"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "bellsoft-jdk8u265+1-solaris-x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u265+1",
+    "jvm_impl": "hotspot",
+    "md5": "5d3bb948e67bba0f1e1490064ec0aacd",
+    "md5_file": "bellsoft-jdk8u265+1-solaris-x64.tar.gz.md5",
+    "os": "solaris",
+    "release_type": "ga",
+    "sha1": "1e20b6596bf2899cdcee4f4117e903da3a897a97",
+    "sha1_file": "bellsoft-jdk8u265+1-solaris-x64.tar.gz.sha1",
+    "sha256": "5dd399159361d4003bc371ba16615c142ff6f65aedd7e994e9ca37a5d36ecf2b",
+    "sha256_file": "bellsoft-jdk8u265+1-solaris-x64.tar.gz.sha256",
+    "sha512": "23b119c09090b3893c7a3aa2b47c79061aecde3b542d00b5b708385219f1e653645cd5d1d8d95cdc061278d3d7765d1ef76fd582d68ca678053ff50b45163b2e",
+    "sha512_file": "bellsoft-jdk8u265+1-solaris-x64.tar.gz.sha512",
+    "size": 108067396,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u265+1/bellsoft-jdk8u265+1-solaris-x64.tar.gz",
+    "vendor": "liberica",
+    "version": "8u265+1"
   }
 ]
