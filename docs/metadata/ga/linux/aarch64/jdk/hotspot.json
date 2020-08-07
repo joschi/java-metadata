@@ -4724,5 +4724,28 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/8u265+1/bellsoft-jdk8u265+1-linux-aarch64.tar.gz",
     "vendor": "liberica",
     "version": "8u265+1"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "openjdk-15_linux-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "15",
+    "jvm_impl": "hotspot",
+    "md5": "98852d442fdc804c7bccfa541fbddf71",
+    "md5_file": "openjdk-15_linux-aarch64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "c898305db7f521a560deeeb448f8e2806507f3a0",
+    "sha1_file": "openjdk-15_linux-aarch64_bin.tar.gz.sha1",
+    "sha256": "e5b7110c2fb889096b4fa5942b51c6b12dd892ca4325861d58131cad737a743b",
+    "sha256_file": "openjdk-15_linux-aarch64_bin.tar.gz.sha256",
+    "sha512": "4db7e5d87f41aac31829846b98866f5eddaaba7eab87e0c33203c69742327e0096a73e393265959eb1b773550e46ed0aaf2c173e5898fec920ca01a5989e03b4",
+    "sha512_file": "openjdk-15_linux-aarch64_bin.tar.gz.sha512",
+    "size": 170470625,
+    "url": "https://download.java.net/java/GA/jdk15/779bf45e88a44cbd9ea6621d33e33db1/35/GPL/openjdk-15_linux-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "15"
   }
 ]
