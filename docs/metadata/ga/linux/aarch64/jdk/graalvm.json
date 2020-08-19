@@ -159,5 +159,28 @@
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.1.0/graalvm-ce-java11-linux-aarch64-20.1.0.tar.gz",
     "vendor": "graalvm",
     "version": "20.1.0+java11"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "graalvm-ce-java11-linux-aarch64-20.2.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "11",
+    "jvm_impl": "graalvm",
+    "md5": "ff74cf434fe9bc9188cc99edc808f8d0",
+    "md5_file": "graalvm-ce-java11-linux-aarch64-20.2.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "567230b8d8a5aa3e5600e57ec0016e820d5fc0ac",
+    "sha1_file": "graalvm-ce-java11-linux-aarch64-20.2.0.tar.gz.sha1",
+    "sha256": "eafc0a574dceb1f1a8f87fef733c7132b6ea3ff95caf832b4b5d7b47c24fb9f6",
+    "sha256_file": "graalvm-ce-java11-linux-aarch64-20.2.0.tar.gz.sha256",
+    "sha512": "17483bb155bbb639a87e6a3b6de5a8eaa98aab576c028c2a0c1f397586d8c64d5f379670e3fb145705f89088b00b06335709e6e3cbacd71f8ec9941ea8687d6b",
+    "sha512_file": "graalvm-ce-java11-linux-aarch64-20.2.0.tar.gz.sha512",
+    "size": 433547490,
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.2.0/graalvm-ce-java11-linux-aarch64-20.2.0.tar.gz",
+    "vendor": "graalvm",
+    "version": "20.2.0+java11"
   }
 ]
