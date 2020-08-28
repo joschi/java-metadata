@@ -73,7 +73,14 @@ do
 		ARCHIVE=""
 
 		# Parse meta-data from file name
-		eval "$(echo "${ZULU_FILE}" | perl -pe "${REGEX}")"
+		PARSED_NAME=$(perl -pe "${REGEX}" <<< "${ZULU_FILE}")
+		if [[ "${PARSED_NAME}" = "${ZULU_FILE}" ]]
+		then
+			echo "Regular expression didn't match ${ZULU_FILE}"
+			continue
+		else
+			eval "${PARSED_NAME}"
+		fi
 
 		FEATURES="$(normalize_features "${RELEASE_TYPE}" "${ARCH}")"
 		if [[ "${ARCH}" = 'musl_x64' ]]
