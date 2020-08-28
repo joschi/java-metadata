@@ -3235,6 +3235,29 @@
   },
   {
     "architecture": "i686",
+    "features": [],
+    "file_type": "zip",
+    "filename": "zulu8.11.0.3-ea-cp3-jre8.0.66-win_i686.zip",
+    "image_type": "jre",
+    "java_version": "8.0.66",
+    "jvm_impl": "hotspot",
+    "md5": "3809464853a238e8583a31c140144380",
+    "md5_file": "zulu8.11.0.3-ea-cp3-jre8.0.66-win_i686.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "c0ffcb76dd21221f5d12b8758d7a9e4531d582f4",
+    "sha1_file": "zulu8.11.0.3-ea-cp3-jre8.0.66-win_i686.zip.sha1",
+    "sha256": "a7b4651cefb298c05c5d5b070f1fa0402e23818bc85dc451c59ba77112bfff52",
+    "sha256_file": "zulu8.11.0.3-ea-cp3-jre8.0.66-win_i686.zip.sha256",
+    "sha512": "b4beacca4156576283d898662d8b437a97827717ff0482985ae44809dee9dc3d0541cef562b2145b7511b628ff19143cb3500cf35c9d4c9bc5ceb7587ee2d802",
+    "sha512_file": "zulu8.11.0.3-ea-cp3-jre8.0.66-win_i686.zip.sha512",
+    "size": 18296991,
+    "url": "https://static.azul.com/zulu/bin/zulu8.11.0.3-ea-cp3-jre8.0.66-win_i686.zip",
+    "vendor": "zulu",
+    "version": "8.11.0.3"
+  },
+  {
+    "architecture": "i686",
     "features": [
       "javafx"
     ],

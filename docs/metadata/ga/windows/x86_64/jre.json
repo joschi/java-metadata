@@ -5477,5 +5477,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu8.48.0.53-ca-jre8.0.265-win_x64.zip",
     "vendor": "zulu",
     "version": "8.48.0.53"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "msi",
+    "filename": "zulu9.0.0.15-ca-jre9.0.0-win_x64.msi",
+    "image_type": "jre",
+    "java_version": "9.0.0",
+    "jvm_impl": "hotspot",
+    "md5": "e2c961d8310b3abb4c52645baa78d802",
+    "md5_file": "zulu9.0.0.15-ca-jre9.0.0-win_x64.msi.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "42e32ea41f2414b2de82eca29636c009b6ee68fe",
+    "sha1_file": "zulu9.0.0.15-ca-jre9.0.0-win_x64.msi.sha1",
+    "sha256": "79dcea60ab63869b2ece6c35fa58b70c3f1e84874b33a25ec59601bf7816781a",
+    "sha256_file": "zulu9.0.0.15-ca-jre9.0.0-win_x64.msi.sha256",
+    "sha512": "14b1c4384e85bfa79afea77038b01b0ac1c1b095d26d0d60445c10f1b0906ea435c375718fbada40cccb1ea3573efcfb9e68ec74ab8c86e6b885ef398394fe6d",
+    "sha512_file": "zulu9.0.0.15-ca-jre9.0.0-win_x64.msi.sha512",
+    "size": 37027840,
+    "url": "https://static.azul.com/zulu/bin/zulu9.0.0.15-ca-jre9.0.0-win_x64.msi",
+    "vendor": "zulu",
+    "version": "9.0.0.15"
   }
 ]
