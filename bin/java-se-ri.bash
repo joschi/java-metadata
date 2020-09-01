@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 set -Euo pipefail
-set -x
+
 TEMP_DIR=$(mktemp -d)
 trap 'rm -rf ${TEMP_DIR}' EXIT
 
