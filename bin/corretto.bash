@@ -116,12 +116,12 @@ function download {
 	then
 		echo "Skipping ${filename}"
 	else
-		if check_url_exists "https://d3pxv6yz143wms.cloudfront.net/${version}/${filename}"
-		then
-			url="https://d3pxv6yz143wms.cloudfront.net/${version}/${filename}"
-		elif check_url_exists "https://corretto.aws/downloads/resources/${version}/${filename}"
+		if check_url_exists "https://corretto.aws/downloads/resources/${version}/${filename}"
 		then
 			url="https://corretto.aws/downloads/resources/${version}/${filename}"
+		elif check_url_exists "https://d3pxv6yz143wms.cloudfront.net/${version}/${filename}"
+		then
+			url="https://d3pxv6yz143wms.cloudfront.net/${version}/${filename}"
 		else
 			echo "Couldn't find download URL for ${filename}"
 			return 1
@@ -162,10 +162,11 @@ function download {
 
 download_github_releases 'corretto' 'corretto-8' "${TEMP_DIR}/releases-corretto-8.json"
 download_github_releases 'corretto' 'corretto-11' "${TEMP_DIR}/releases-corretto-11.json"
+download_github_releases 'corretto' 'corretto-jdk' "${TEMP_DIR}/releases-corretto-jdk.json"
 
-jq -s 'add' "${TEMP_DIR}/releases-corretto-8.json" "${TEMP_DIR}/releases-corretto-11.json" > "${TEMP_DIR}/releases-corretto.json"
+jq -s 'add' "${TEMP_DIR}/releases-corretto-8.json" "${TEMP_DIR}/releases-corretto-11.json" "${TEMP_DIR}/releases-corretto-jdk.json" > "${TEMP_DIR}/releases-corretto.json"
 
-for CORRETTO_VERSION in $(jq -r '.[].name' "${TEMP_DIR}/releases-corretto.json" | sort -V)
+for CORRETTO_VERSION in $(jq -r '.[].tag_name' "${TEMP_DIR}/releases-corretto.json" | sort -V)
 do
 	for OS in 'linux' 'macosx' 'windows' 'alpine-linux'
 	do
