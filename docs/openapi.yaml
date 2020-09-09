@@ -31,6 +31,7 @@ components:
         - "graalvm"
         - "java-se-ri"
         - "liberica"
+        - "mandrel"
         - "openjdk"
         - "sapmachine"
         - "zulu"
