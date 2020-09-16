@@ -182,5 +182,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_linux-ppc64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "14"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-15_linux-ppc64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "15",
+    "jvm_impl": "hotspot",
+    "md5": "50dd39e951e271245ffb2f914d11badb",
+    "md5_file": "sapmachine-jre-15_linux-ppc64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "7460bb82a17e1062a74c1d9de15db135f6f58a8b",
+    "sha1_file": "sapmachine-jre-15_linux-ppc64_bin.tar.gz.sha1",
+    "sha256": "dfe7ba2331a892bd0a130ebeb7191166cbb8bcd696009e706ae2289d019f7b9c",
+    "sha256_file": "sapmachine-jre-15_linux-ppc64_bin.tar.gz.sha256",
+    "sha512": "95b27a782cbff492721a5010ccb5789c2668e10a3b444931f9cb7c83bcc51be983ee6aac24f73aa7791b4c73a8da77e7a8820899c595af21f1e1f6e45a694568",
+    "sha512_file": "sapmachine-jre-15_linux-ppc64_bin.tar.gz.sha512",
+    "size": 52657535,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15/sapmachine-jre-15_linux-ppc64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "15"
   }
 ]

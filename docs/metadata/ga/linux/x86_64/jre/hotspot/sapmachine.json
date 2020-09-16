@@ -182,5 +182,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-14/sapmachine-jre-14_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "14"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-15_linux-x64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "15",
+    "jvm_impl": "hotspot",
+    "md5": "a2c0444fe7a5b987ad95e1732dac3c67",
+    "md5_file": "sapmachine-jre-15_linux-x64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "7146036a13dbfc8aa0979e02371defc18becda4a",
+    "sha1_file": "sapmachine-jre-15_linux-x64_bin.tar.gz.sha1",
+    "sha256": "211c57914754b7e558cfceb22c6e02bc5121215e59c7aff6f43d5293f3943378",
+    "sha256_file": "sapmachine-jre-15_linux-x64_bin.tar.gz.sha256",
+    "sha512": "abca68d5699480e7e1efb496f86013dddaf526330469f7452578e48ebd6b7dd952c2c8725862a50c1d11059440f42cb6173bdc2f0b044234059c494ca8194082",
+    "sha512_file": "sapmachine-jre-15_linux-x64_bin.tar.gz.sha512",
+    "size": 56173283,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15/sapmachine-jre-15_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "15"
   }
 ]
