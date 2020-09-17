@@ -45,10 +45,18 @@ function download {
 	else
 		download_file "${url}" "${archive}" || return 1
 
-		# shellcheck disable=SC2016
-		local regex='s/^Alibaba_Dragonwell_([0-9\+].{1,}.*)_(?:(GA|Experimental)_)?(Linux|Windows)_(x64)\.(.*)$/VERSION="$1" RELEASE_TYPE="$2" OS="$3" ARCH="$4" EXT="$5"/g'
+		local regex
+		if [[ "${filename}" = Alibaba_Dragonwell* ]];
+		then
+			# shellcheck disable=SC2016
+			regex='s/^Alibaba_Dragonwell_([0-9\+].{1,}.*)_(?:(GA|Experimental)_)?(Linux|Windows)_(x64)\.(.*)$/VERSION="$1" JAVA_VERSION="$1" RELEASE_TYPE="$2" OS="$3" ARCH="$4" EXT="$5"/g'
+		else
+			# shellcheck disable=SC2016
+			regex='s/^OpenJDK(?:[0-9\+].{1,})_(x64)_(linux)_dragonwell_dragonwell-([0-9.]+)_jdk-([0-9.]+)-(ga|.*)\.tar\.gz$/ARCH="$1" OS="$2" VERSION="$3" JAVA_VERSION="$4" RELEASE_TYPE="$5" EXT="tar.gz"/g'
+		fi
 
 		local VERSION=""
+		local JAVA_VERSION=""
 		local RELEASE_TYPE=""
 		local OS=""
 		local ARCH=""
@@ -68,7 +76,7 @@ function download {
 			"${filename}" \
 			"$(normalize_release_type "${RELEASE_TYPE}")" \
 			"${VERSION}" \
-			"${VERSION}" \
+			"${JAVA_VERSION}" \
 			'hotspot' \
 			"$(normalize_os "${OS}")" \
 			"$(normalize_arch "${ARCH}")" \
