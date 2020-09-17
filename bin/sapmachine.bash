@@ -50,7 +50,7 @@ function download {
 			regex='s/^sapmachine-(jdk|jre)-([0-9].{1,})\.x86_64\.rpm$/IMAGE_TYPE="$1" VERSION="$2" OS="linux" ARCH="x64" EXT="rpm"/g'
 		else
 			# shellcheck disable=SC2016
-			regex='s/^sapmachine-(jdk|jre)-([0-9].{1,})_(linux|osx|windows)-(x64|ppc64|ppc64le)_bin\.(.+)$/IMAGE_TYPE="$1" VERSION="$2" OS="$3" ARCH="$4" EXT="$5"/g'
+			regex='s/^sapmachine-(jdk|jre)-([0-9].{1,})_(linux|osx|windows)-(x64|aarch64|ppc64|ppc64le)_bin\.(.+)$/IMAGE_TYPE="$1" VERSION="$2" OS="$3" ARCH="$4" EXT="$5"/g'
 		fi
 
 		local IMAGE_TYPE=""
