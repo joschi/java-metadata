@@ -596,5 +596,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu16.0.35-ea-jdk16.0.0-ea.16-linux_i686.tar.gz",
     "vendor": "zulu",
     "version": "16.0.35"
+  },
+  {
+    "architecture": "i686",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "zulu16.0.37-ea-jdk16.0.0-ea.17-linux_i686.tar.gz",
+    "image_type": "jdk",
+    "java_version": "16.0.0-ea.17",
+    "jvm_impl": "hotspot",
+    "md5": "572b9dd436ce13d695de77d9376d3516",
+    "md5_file": "zulu16.0.37-ea-jdk16.0.0-ea.17-linux_i686.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "fd478eab4af3e180df18322fd90d5a8d12faba8d",
+    "sha1_file": "zulu16.0.37-ea-jdk16.0.0-ea.17-linux_i686.tar.gz.sha1",
+    "sha256": "ec2588db291c40a7ce6be198e0a338c7344f2b3dc3e73a133d5d925b979f4f40",
+    "sha256_file": "zulu16.0.37-ea-jdk16.0.0-ea.17-linux_i686.tar.gz.sha256",
+    "sha512": "4399b07f855f95a3c13a1665cc77bee514d469d673c3c624c51c700508e725737d09fd94d6cbbeddc2e79a8f195cbadc60a66a362b8050f64266f6ed72469d8a",
+    "sha512_file": "zulu16.0.37-ea-jdk16.0.0-ea.17-linux_i686.tar.gz.sha512",
+    "size": 194521811,
+    "url": "https://static.azul.com/zulu/bin/zulu16.0.37-ea-jdk16.0.0-ea.17-linux_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "16.0.37"
   }
 ]
