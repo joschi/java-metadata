@@ -159,5 +159,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-16+14/sapmachine-jre-16-eabeta.14_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "16-eabeta.14"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-16-eabeta.15_linux-aarch64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "16-eabeta.15",
+    "jvm_impl": "hotspot",
+    "md5": "b100533891745c4e45654f9e86b90342",
+    "md5_file": "sapmachine-jre-16-eabeta.15_linux-aarch64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "172abfb20eed067afc69027e9fccb0f2b00f287f",
+    "sha1_file": "sapmachine-jre-16-eabeta.15_linux-aarch64_bin.tar.gz.sha1",
+    "sha256": "931be9c6302e19874a91c2c41e2df0fd88b9f6b366cbe8438b7bcbbc514c5344",
+    "sha256_file": "sapmachine-jre-16-eabeta.15_linux-aarch64_bin.tar.gz.sha256",
+    "sha512": "b7f0c40bbadb0a29cc310d4e3178d5d3986c5a046a66083d99e92d5b11bafa90a71121765e5e1c2eb8f7c397b04d6af50afb6fcbea6413d66e3e7cd4481db4cf",
+    "sha512_file": "sapmachine-jre-16-eabeta.15_linux-aarch64_bin.tar.gz.sha512",
+    "size": 55350345,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-16+15/sapmachine-jre-16-eabeta.15_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "16-eabeta.15"
   }
 ]
