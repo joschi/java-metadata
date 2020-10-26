@@ -3157,6 +3157,31 @@
   },
   {
     "architecture": "i686",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu8.50.0.21-ca-fx-jre8.0.272-linux_i686.tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.272",
+    "jvm_impl": "hotspot",
+    "md5": "6eabb9af8d112a1cc9886642577260ba",
+    "md5_file": "zulu8.50.0.21-ca-fx-jre8.0.272-linux_i686.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "1cc000720c5c1036076659872bc11b8fcc3cf01f",
+    "sha1_file": "zulu8.50.0.21-ca-fx-jre8.0.272-linux_i686.tar.gz.sha1",
+    "sha256": "12e826add4b40cfe55e14db424b9281ae24c5ee622f0e27d5a1e2e57ca0111b4",
+    "sha256_file": "zulu8.50.0.21-ca-fx-jre8.0.272-linux_i686.tar.gz.sha256",
+    "sha512": "4f4cc05add4a3991ba94f2c57f18333ec805ef5faa5974058726157dddfc25022b615343f2274a54bca7ffa68fc78318711ce366a9ceaefa7db0fb6cd6184a9c",
+    "sha512_file": "zulu8.50.0.21-ca-fx-jre8.0.272-linux_i686.tar.gz.sha512",
+    "size": 85144033,
+    "url": "https://static.azul.com/zulu/bin/zulu8.50.0.21-ca-fx-jre8.0.272-linux_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "8.50.0.21"
+  },
+  {
+    "architecture": "i686",
     "features": [],
     "file_type": "tar.gz",
     "filename": "zulu8.50.0.21-ca-jre8.0.272-linux_i686.tar.gz",
