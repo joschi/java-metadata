@@ -118,6 +118,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "openjdk-16-ea+23_linux-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "16-ea+23",
+    "jvm_impl": "hotspot",
+    "md5": "2eda5f70036262a2eecbb06b3606e4bf",
+    "md5_file": "openjdk-16-ea+23_linux-x64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "1dfca5a5e0df78bf9889f72315da1bcb14e8e5ee",
+    "sha1_file": "openjdk-16-ea+23_linux-x64_bin.tar.gz.sha1",
+    "sha256": "efed45c4c7fd4de6a27845c6457b8b5a86ea95da655bdcf3b8407fdc978f6fbd",
+    "sha256_file": "openjdk-16-ea+23_linux-x64_bin.tar.gz.sha256",
+    "sha512": "0ad9ce88ca297b6ed261ba3f70821ca8c89b593ae0d1078471d421fe4bdb50a849cb62a8dd4dc77c83f898e7c57ac62d248de94cbc0429da322add7d2a43d660",
+    "sha512_file": "openjdk-16-ea+23_linux-x64_bin.tar.gz.sha512",
+    "size": 182697561,
+    "url": "https://download.java.net/java/early_access/jdk16/23/GPL/openjdk-16-ea+23_linux-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "16-ea+23"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "musl"
     ],
