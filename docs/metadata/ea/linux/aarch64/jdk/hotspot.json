@@ -550,5 +550,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-16+23/sapmachine-jdk-16-eabeta.23_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "16-eabeta.23"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-16-eabeta.24_linux-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "16-eabeta.24",
+    "jvm_impl": "hotspot",
+    "md5": "cb81e446d202ff4d4c443bd1a12bff3d",
+    "md5_file": "sapmachine-jdk-16-eabeta.24_linux-aarch64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "f418b9028acea8c7b7c6336a61ed539f802b57e0",
+    "sha1_file": "sapmachine-jdk-16-eabeta.24_linux-aarch64_bin.tar.gz.sha1",
+    "sha256": "44847800f1607ac3866efa5d4195db2bc450afa044473db363e613e445336426",
+    "sha256_file": "sapmachine-jdk-16-eabeta.24_linux-aarch64_bin.tar.gz.sha256",
+    "sha512": "d860e83ce7a90eca5afd1f943bf0720ea18c68ec849bc6ab791a9f57e9735fa0dfc1023ee1e01211f98292927df90bb10e8fc9d795e10bac7ece81b0e0346c76",
+    "sha512_file": "sapmachine-jdk-16-eabeta.24_linux-aarch64_bin.tar.gz.sha512",
+    "size": 203610938,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-16+24/sapmachine-jdk-16-eabeta.24_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "16-eabeta.24"
   }
 ]
