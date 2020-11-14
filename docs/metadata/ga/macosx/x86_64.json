@@ -3982,6 +3982,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_275-b01",
+    "jvm_impl": "openj9",
+    "md5": "2d935fda9905063e0d59420f08de55e1",
+    "md5_file": "OpenJDK8U-jdk_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "a70e080dea151f72a2b4eb8db87fac8bc5e2a236",
+    "sha1_file": "OpenJDK8U-jdk_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz.sha1",
+    "sha256": "0e19282fe1dae272f1383f726cc6fc70d77816bebe07e0959ac2c9b9b711f709",
+    "sha256_file": "OpenJDK8U-jdk_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz.sha256",
+    "sha512": "bf6f19d54e00277529e736bb9764dd2909cfc491e031143a6de821c59db7c174755cf0973035b0f776267572ab4dc4cf188280069e9d5b5cb64dd141b42ae48f",
+    "sha512_file": "OpenJDK8U-jdk_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz.sha512",
+    "size": 114196051,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u275-b01_openj9-0.23.0/OpenJDK8U-jdk_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.275+1.openj9-0.23.0"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "large_heap"
     ],
@@ -4229,6 +4252,31 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jdk_x64_mac_openj9_macosXL_8u272b10_openj9-0.23.0.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.272+10.openj9-0.23.0"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "large_heap"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_275-b01",
+    "jvm_impl": "openj9",
+    "md5": "cfb3ae82960ca547a71c1801f801292a",
+    "md5_file": "OpenJDK8U-jdk_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "e7b5d46d4b856b6a63a77cc849f5bbf6672791ed",
+    "sha1_file": "OpenJDK8U-jdk_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz.sha1",
+    "sha256": "5f2375de68ec0d0ff4d42670aa54416948fcdd62a1cc035023c27d5d090522ab",
+    "sha256_file": "OpenJDK8U-jdk_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz.sha256",
+    "sha512": "3d8a38b7b390c8de4f27a1ef96a83048642dc2b630f9fdc84f1efdffb8a3fb99de3e46f764fba31b157596be522ba1efb091f3f4138090193ae84a21e0411cbd",
+    "sha512_file": "OpenJDK8U-jdk_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz.sha512",
+    "size": 114907169,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u275-b01_openj9-0.23.0/OpenJDK8U-jdk_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.275+1.openj9-0.23.0"
   },
   {
     "architecture": "x86_64",
@@ -4784,6 +4832,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_275-b01",
+    "jvm_impl": "openj9",
+    "md5": "b632ca63a865aaaddb48296d3c824080",
+    "md5_file": "OpenJDK8U-jre_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "ec5a541e4ae7be5c4af38ee58c6486393495e49f",
+    "sha1_file": "OpenJDK8U-jre_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz.sha1",
+    "sha256": "b43f3219aa77f06047694622b678af3156293bb7206c39a8dbacf32e49632903",
+    "sha256_file": "OpenJDK8U-jre_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz.sha256",
+    "sha512": "330c1803150eb0992536186ef5ba5b7f3239d5800b0610c6699a026c22f657d00d4e91c50615c12fae40403a15ee4ae981ee569efc9aedc56f9e678a2b42ca2a",
+    "sha512_file": "OpenJDK8U-jre_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz.sha512",
+    "size": 47010342,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u275-b01_openj9-0.23.0/OpenJDK8U-jre_x64_mac_openj9_8u275b01_openj9-0.23.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.275+1.openj9-0.23.0"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "large_heap"
     ],
@@ -5031,6 +5102,31 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jre_x64_mac_openj9_macosXL_8u272b10_openj9-0.23.0.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.272+10.openj9-0.23.0"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "large_heap"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_275-b01",
+    "jvm_impl": "openj9",
+    "md5": "ac3af071e4831710c35085d3f4dea2a8",
+    "md5_file": "OpenJDK8U-jre_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "684c283d9594b004ea8b80949ad868ccbfa80488",
+    "sha1_file": "OpenJDK8U-jre_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz.sha1",
+    "sha256": "2d78eed9b0e0daacffcee724a83c94e260f1264b623c5026ab7c884c9999790f",
+    "sha256_file": "OpenJDK8U-jre_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz.sha256",
+    "sha512": "e7f7065f5c438b9e696e984c099bca4bce7bced9513f08b27305a5a244c5ec6519dc20d4c4d97aed876afd5d1e73c5989142b6ed6dace361a10df1be9d6fdb3d",
+    "sha512_file": "OpenJDK8U-jre_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz.sha512",
+    "size": 47223945,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u275-b01_openj9-0.23.0/OpenJDK8U-jre_x64_mac_openj9_macosXL_8u275b01_openj9-0.23.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.275+1.openj9-0.23.0"
   },
   {
     "architecture": "x86_64",
