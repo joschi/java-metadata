@@ -182,5 +182,28 @@
     "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-20.2.0.0.Final/mandrel-java11-linux-amd64-20.2.0.0.Final.tar.gz",
     "vendor": "mandrel",
     "version": "20.2.0.0.Final+java11"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "mandrel-java11-linux-amd64-20.3.0.0.Beta1.tar.gz",
+    "image_type": "jdk",
+    "java_version": "11",
+    "jvm_impl": "graalvm",
+    "md5": "0f1cda82312940d7973aaefb5fdb59df",
+    "md5_file": "mandrel-java11-linux-amd64-20.3.0.0.Beta1.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "ec7906c97a43ae429a5a073e04e83ca44b0ed416",
+    "sha1_file": "mandrel-java11-linux-amd64-20.3.0.0.Beta1.tar.gz.sha1",
+    "sha256": "5d2dcf6d63ee04f95714b1e9c18f4ad77b9559e66bee3338ce4a97a16ae461e3",
+    "sha256_file": "mandrel-java11-linux-amd64-20.3.0.0.Beta1.tar.gz.sha256",
+    "sha512": "707aaee2b300512e6d6a0f920784a6580a648a6d8e87d0b63cae9831d1955f33e9c3c0e39ead1dada3222495cb1c14a4dc3e2cee29e1dc1ed8ca890be8225e90",
+    "sha512_file": "mandrel-java11-linux-amd64-20.3.0.0.Beta1.tar.gz.sha512",
+    "size": 219521417,
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-20.3.0.0.Beta1/mandrel-java11-linux-amd64-20.3.0.0.Beta1.tar.gz",
+    "vendor": "mandrel",
+    "version": "20.3.0.0.Beta1+java11"
   }
 ]
