@@ -14,7 +14,7 @@ fi
 # shellcheck source=bin/functions.bash
 source "$(dirname "${0}")/functions.bash"
 
-VENDOR='dragonwell'
+VENDOR='trava'
 METADATA_DIR="${1}/${VENDOR}"
 CHECKSUM_DIR="${2}/${VENDOR}"
 
@@ -35,35 +35,33 @@ function download {
 	local asset_name="${2}"
 	local filename="${asset_name}"
 
-	local url="https://github.com/alibaba/dragonwell8/releases/download/${tag_name}/${asset_name}"
-	local metadata_file="${METADATA_DIR}/${filename}.json"
-	local archive="${TEMP_DIR}/${filename}"
+	local VERSION=""
+	local ARCH="x86_64"
+	local RELEASE_TYPE="ga"
+	local OS=""
+	local EXT=""
+
+	# shellcheck disable=SC2016
+	local tag_regex='s/^dcevm8u([0-9]+)b([0-9])+$/VERSION="8.0.$1+$2"/g'
+
+	# Parse meta-data from version tag
+	eval "$(perl -pe "${tag_regex}" <<< "${tag_name}")"
+
+	# shellcheck disable=SC2016
+	local filename_regex='s/^java8-openjdk-dcevm-(linux|osx|windows)\.(.*)$/OS="$1" EXT="$2"/g'
+
+	# Parse meta-data from file name
+	eval "$(perl -pe "${filename_regex}" <<< "${asset_name}")"
+
+	local url="https://github.com/TravaOpenJDK/trava-jdk-8-dcevm/releases/download/${tag_name}/${asset_name}"
+	local metadata_file="${METADATA_DIR}/${VENDOR}-${VERSION}-${OS}.${EXT}.json"
+	local archive="${TEMP_DIR}/${VENDOR}-${VERSION}-${OS}.${EXT}"
 
 	if [[ -f "${metadata_file}" ]]
 	then
 		echo "Skipping ${filename}"
 	else
 		download_file "${url}" "${archive}" || return 1
-
-		local VERSION=""
-		local RELEASE_TYPE=""
-		local OS=""
-		local ARCH=""
-		local EXT=""
-		if [[ "${filename}" == 'Alibaba_Dragonwell8_Linux_x64_8.0-preview.tar.gz' ]]
-		then
-			VERSION="8.0.0-preview"
-			RELEASE_TYPE="ea"
-			OS="Linux"
-			ARCH="x64"
-			EXT="tar.gz"
-		else
-			# shellcheck disable=SC2016
-			local regex='s/^Alibaba_Dragonwell_([0-9].{1,})-(GA|Experimental)_(Linux|Windows)_(x64)\.(.*)$/VERSION="$1" RELEASE_TYPE="$2" OS="$3" ARCH="$4" EXT="$5"/g'
-
-			# Parse meta-data from file name
-			eval "$(perl -pe "${regex}" <<< "${asset_name}")"
-		fi
 
 		local json
 		json="$(metadata_json \
@@ -79,12 +77,12 @@ function download {
 			'jdk' \
 			'' \
 			"${url}" \
-			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
-			"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}")" \
-			"$(hash_file 'sha256' "${archive}" "${CHECKSUM_DIR}")" \
-			"$(hash_file 'sha512' "${archive}" "${CHECKSUM_DIR}")" \
+			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}" "${asset_name}")" \
+			"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}" "${asset_name}")" \
+			"$(hash_file 'sha256' "${archive}" "${CHECKSUM_DIR}" "${asset_name}")" \
+			"$(hash_file 'sha512' "${archive}" "${CHECKSUM_DIR}" "${asset_name}")" \
 			"$(file_size "${archive}")" \
-			"${filename}"
+			"$(basename "${archive}")"
 		)"
 
 		echo "${json}" > "${metadata_file}"
@@ -93,7 +91,7 @@ function download {
 }
 
 RELEASE_FILE="${TEMP_DIR}/releases-${VENDOR}-8.json"
-download_github_releases 'alibaba' 'dragonwell8' "${RELEASE_FILE}"
+download_github_releases 'TravaOpenJDK' 'trava-jdk-8-dcevm' "${RELEASE_FILE}"
 
 versions=$(jq -r '.[].tag_name' "${RELEASE_FILE}" | sort -V)
 for version in ${versions}
@@ -105,4 +103,4 @@ do
 	done
 done
 
-jq -s -S . "${METADATA_DIR}"/Alibaba_Dragonwell*.json > "${METADATA_DIR}/all.json"
+jq -s -S . "${METADATA_DIR}"/trava-8*.json > "${METADATA_DIR}/all.json"

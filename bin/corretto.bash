@@ -152,7 +152,8 @@ function download {
 			"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha256' "${archive}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha512' "${archive}" "${CHECKSUM_DIR}")" \
-			"$(file_size "${archive}")"
+			"$(file_size "${archive}")" \
+			"${filename}"
 		)"
 
 		echo "${json}" > "${metadata_file}"

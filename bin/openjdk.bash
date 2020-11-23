@@ -86,7 +86,8 @@ do
 			"$(hash_file 'sha1' "${ARCHIVE}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha256' "${ARCHIVE}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha512' "${ARCHIVE}" "${CHECKSUM_DIR}")" \
-			"$(file_size "${ARCHIVE}")"
+			"$(file_size "${ARCHIVE}")" \
+			"${FILE}"
 		)"
 
 		echo "${METADATA_JSON}" > "${METADATA_FILE}"
