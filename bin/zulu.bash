@@ -105,7 +105,8 @@ do
 			"$(hash_file 'sha1' "${ZULU_ARCHIVE}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha256' "${ZULU_ARCHIVE}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha512' "${ZULU_ARCHIVE}" "${CHECKSUM_DIR}")" \
-			"$(file_size "${ZULU_ARCHIVE}")"
+			"$(file_size "${ZULU_ARCHIVE}")" \
+			"${ZULU_FILE}"
 		)"
 
 		echo "${METADATA_JSON}" > "${METADATA_FILE}"

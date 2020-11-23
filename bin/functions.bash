@@ -41,13 +41,20 @@ function hash_file {
 	local output_directory="${3}"
 	local filename
 	filename="$(basename "${archive}")"
+	local real_filename
+	if [[ -z "${4}" ]]
+	then
+		real_filename="${filename}"
+	else
+		real_filename="${4}"
+	fi
 	local cmd
 	cmd="$(command -v "${hashalg}sum")"
 	local checksum
 	checksum=$("${cmd}" "${archive}" | cut -f 1 -d ' ')
 
 	ensure_directory "${output_directory}"
-	echo "${checksum}  ${filename}" > "${output_directory}/${filename}.${hashalg}"
+	echo "${checksum}  ${real_filename}" > "${output_directory}/${filename}.${hashalg}"
 	echo "${checksum}"
 }
 
@@ -97,13 +104,13 @@ function metadata_json {
 		features="$(jo -a "${features[@]}" < /dev/null)" \
 		url="${12}" \
 		-s md5="${13}" \
-		md5_file="${2}.md5" \
+		md5_file="${18}.md5" \
 		-s sha1="${14}" \
-		sha1_file="${2}.sha1" \
+		sha1_file="${18}.sha1" \
 		-s sha256="${15}" \
-		sha256_file="${2}.sha256" \
+		sha256_file="${18}.sha256" \
 		-s sha512="${16}" \
-		sha512_file="${2}.sha512" \
+		sha512_file="${18}.sha512" \
 		size="${17}"
 }
 
