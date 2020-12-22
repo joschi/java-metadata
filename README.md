@@ -18,6 +18,7 @@ Supported OpenJDK distributions:
 * [Mandrel](https://github.com/graalvm/mandrel)
 * [OpenJDK](https://jdk.java.net/)
 * [SapMachine](https://sap.github.io/SapMachine/)
+* [Trava OpenJDK](https://github.com/TravaOpenJDK/)
 * [Zulu Community](https://www.azul.com/products/zulu-community/)
 
 ## Usage
