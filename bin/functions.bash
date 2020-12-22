@@ -139,7 +139,7 @@ function normalize_arch {
 		;;
 	'aarch64'|'arm64') echo 'aarch64'
 		;;
-	'arm'|'arm32') echo 'arm32'
+	'arm'|'arm32'|'armv7') echo 'arm32'
 		;;
 	'arm32-vfp-hflt') echo 'arm32-vfp-hflt'
 		;;

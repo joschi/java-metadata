@@ -48,7 +48,7 @@ function archive_filename {
 
 function get_archs_for_os {
 	case "${1}" in
-	'linux') echo 'x64' 'aarch64'
+	'linux') echo 'x86' 'x64' 'aarch64' 'armv7'
 		;;
 	'alpine-linux') echo 'x64'
 		;;
