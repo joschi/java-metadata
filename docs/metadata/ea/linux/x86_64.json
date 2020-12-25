@@ -672,6 +672,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "openjdk-16-ea+30_linux-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "16-ea+30",
+    "jvm_impl": "hotspot",
+    "md5": "",
+    "md5_file": "openjdk-16-ea+30_linux-x64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "",
+    "sha1_file": "openjdk-16-ea+30_linux-x64_bin.tar.gz.sha1",
+    "sha256": "",
+    "sha256_file": "openjdk-16-ea+30_linux-x64_bin.tar.gz.sha256",
+    "sha512": "",
+    "sha512_file": "openjdk-16-ea+30_linux-x64_bin.tar.gz.sha512",
+    "size": 184383815,
+    "url": "https://download.java.net/java/early_access/jdk16/30/GPL/openjdk-16-ea+30_linux-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "16-ea+30"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "musl"
     ],
