@@ -113,5 +113,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15.0.1/sapmachine-jdk-15.0.1-beta_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "15.0.1-beta"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-15.0.2-beta_linux-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "15.0.2-beta",
+    "jvm_impl": "hotspot",
+    "md5": "",
+    "md5_file": "sapmachine-jdk-15.0.2-beta_linux-aarch64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "",
+    "sha1_file": "sapmachine-jdk-15.0.2-beta_linux-aarch64_bin.tar.gz.sha1",
+    "sha256": "",
+    "sha256_file": "sapmachine-jdk-15.0.2-beta_linux-aarch64_bin.tar.gz.sha256",
+    "sha512": "",
+    "sha512_file": "sapmachine-jdk-15.0.2-beta_linux-aarch64_bin.tar.gz.sha512",
+    "size": 199538783,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-15.0.2/sapmachine-jdk-15.0.2-beta_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "15.0.2-beta"
   }
 ]
