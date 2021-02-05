@@ -23,7 +23,7 @@ ensure_directory "${CHECKSUM_DIR}"
 
 function normalize_release_type {
 	case "${1}" in
-	ea|*Experimental*) echo 'ea'
+	ea|*Experimental*|FP1) echo 'ea'
 		;;
 	*) echo 'ga'
 		;;
@@ -49,10 +49,10 @@ function download {
 		if [[ "${filename}" = Alibaba_Dragonwell* ]];
 		then
 			# shellcheck disable=SC2016
-			regex='s/^Alibaba_Dragonwell_([0-9\+].{1,}.*)_(?:(GA|Experimental)_)?(Linux|Windows)_(x64)\.(.*)$/VERSION="$1" JAVA_VERSION="$1" RELEASE_TYPE="$2" OS="$3" ARCH="$4" EXT="$5"/g'
+			regex='s/^Alibaba_Dragonwell_([0-9\+].{1,}.*)_(?:(GA|Experimental|GA_Experimental|FP1)_)?(Linux|Windows)_(aarch64|x64)\.(.*)$/VERSION="$1" JAVA_VERSION="$1" RELEASE_TYPE="$2" OS="$3" ARCH="$4" EXT="$5"/g'
 		else
 			# shellcheck disable=SC2016
-			regex='s/^OpenJDK(?:[0-9\+].{1,})_(x64)_(linux)_dragonwell_dragonwell-([0-9.]+)_jdk-([0-9.]+)-(ga|.*)\.tar\.gz$/ARCH="$1" OS="$2" VERSION="$3" JAVA_VERSION="$4" RELEASE_TYPE="$5" EXT="tar.gz"/g'
+			regex='s/^OpenJDK(?:[0-9\+].{1,})_(x64|aarch64)_(linux|windows)_dragonwell_dragonwell-([0-9.]+)(?:_jdk)?[-_]([0-9._]+)-?(ga|.*)\.(tar\.gz|zip)$/ARCH="$1" OS="$2" VERSION="$3" JAVA_VERSION="$4" RELEASE_TYPE="$5" EXT="$6"/g'
 		fi
 
 		local VERSION=""
@@ -64,6 +64,11 @@ function download {
 
 		# Parse meta-data from file name
 		eval "$(perl -pe "${regex}" <<< "${asset_name}")"
+
+		if [[ -z "${RELEASE_TYPE}" ]]
+		then
+			RELEASE_TYPE='ga'
+		fi
 
 		if [[ "${VERSION}" =~ "preview" ]]
 		then
