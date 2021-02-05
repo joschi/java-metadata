@@ -42,11 +42,11 @@ function hash_file {
 	local filename
 	filename="$(basename "${archive}")"
 	local real_filename
-	if [[ -z "${4}" ]]
+	if [[ $# == 4 && -n "${4}" ]]
 	then
-		real_filename="${filename}"
-	else
 		real_filename="${4}"
+	else
+		real_filename="${filename}"
 	fi
 	local cmd
 	cmd="$(command -v "${hashalg}sum")"
