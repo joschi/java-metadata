@@ -80,7 +80,7 @@ download_github_releases 'graalvm' 'graalvm-ce-builds' "${TEMP_DIR}/releases-gra
 versions=$(jq -r '.[].tag_name' "${TEMP_DIR}/releases-graalvm.json" | sort -V)
 for version in ${versions}
 do
-	assets=$(jq -r  ".[] | select(.tag_name == \"${version}\") | .assets[].name | select(startswith(\"graalvm-ce\"))" "${TEMP_DIR}/releases-graalvm.json")
+	assets=$(jq -r  ".[] | select(.tag_name == \"${version}\") | .assets[].name | select(startswith(\"graalvm-ce\")) | select(endswith(\"tar.gz\") or endswith(\"zip\"))" "${TEMP_DIR}/releases-graalvm.json")
 	for asset in ${assets}
 	do
 		download "${version}" "${asset}" || echo "Cannot download ${asset}"
