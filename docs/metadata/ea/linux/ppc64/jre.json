@@ -2942,5 +2942,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17+8/sapmachine-jre-17-ea.8_linux-ppc64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "17-ea.8"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-17-ea.9_linux-ppc64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "17-ea.9",
+    "jvm_impl": "hotspot",
+    "md5": "3b65a8a343b2bcbf71e6058214a5b141",
+    "md5_file": "sapmachine-jre-17-ea.9_linux-ppc64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "fab4ff9d3a35bbcf140a505f026a4ab86c86f924",
+    "sha1_file": "sapmachine-jre-17-ea.9_linux-ppc64_bin.tar.gz.sha1",
+    "sha256": "7108811510c6f32b48db923ebf72a7da9bdd454e272d19e1600663951d56b80b",
+    "sha256_file": "sapmachine-jre-17-ea.9_linux-ppc64_bin.tar.gz.sha256",
+    "sha512": "5c403fa638712b32d9c7068c7d91f346b004257ac51a5f5c3e5b5e68a41d508ce4110037e631df3a672aa8a5703214d86c38fb47ac2417b8ca92fb4801b4e349",
+    "sha512_file": "sapmachine-jre-17-ea.9_linux-ppc64_bin.tar.gz.sha512",
+    "size": 45609476,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17+9/sapmachine-jre-17-ea.9_linux-ppc64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17-ea.9"
   }
 ]
