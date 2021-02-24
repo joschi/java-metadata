@@ -435,5 +435,28 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u275-b01/OpenJDK8U-jre_arm_linux_hotspot_8u275b01.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.275+1"
+  },
+  {
+    "architecture": "arm32",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_arm_linux_hotspot_jdk8u282-b08.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_282-b08",
+    "jvm_impl": "hotspot",
+    "md5": "5bf3ea67b57e28606b6f201f44a31300",
+    "md5_file": "OpenJDK8U-jre_arm_linux_hotspot_jdk8u282-b08.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "85719c428c8d1fbee2940cbc5633f6e0f42b573f",
+    "sha1_file": "OpenJDK8U-jre_arm_linux_hotspot_jdk8u282-b08.tar.gz.sha1",
+    "sha256": "0f3704b3fb751ad82d95ed00c36dcf977145c8ce36d1f611039c88b88dc89e60",
+    "sha256_file": "OpenJDK8U-jre_arm_linux_hotspot_jdk8u282-b08.tar.gz.sha256",
+    "sha512": "ff712609d33825cff8d1a4a852bdd1ca9ee1270f067a4b68f6fc3d014b27c216f2cbce7b68ca547ff1c77f93b49b510dca7aa8cecbeb9a552110719c791b9003",
+    "sha512_file": "OpenJDK8U-jre_arm_linux_hotspot_jdk8u282-b08.tar.gz.sha512",
+    "size": 38739842,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08/OpenJDK8U-jre_arm_linux_hotspot_jdk8u282-b08.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.282+8"
   }
 ]
