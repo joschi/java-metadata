@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "Alibaba_Dragonwell_8.5.5-FP1_Linux_aarch64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.5.5",
+    "jvm_impl": "hotspot",
+    "md5": "ab80c4f638510de8c7211b7b7734f946",
+    "md5_file": "Alibaba_Dragonwell_8.5.5-FP1_Linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "4444abb62beb196f1afa1c53962e4a39dc99db43",
+    "sha1_file": "Alibaba_Dragonwell_8.5.5-FP1_Linux_aarch64.tar.gz.sha1",
+    "sha256": "270b4205c01241b38b198a5879eafd9e6f4047ea59d9896a26d305c3937b5a03",
+    "sha256_file": "Alibaba_Dragonwell_8.5.5-FP1_Linux_aarch64.tar.gz.sha256",
+    "sha512": "d6fd1ae0eccd35eabd8a4582e84a529fdd9d992a9404a7c0c12bfa8caaa0d693f18221da006a72caca3628f9234f6e1db2e095abb45af701149ce67a6e6323e4",
+    "sha512_file": "Alibaba_Dragonwell_8.5.5-FP1_Linux_aarch64.tar.gz.sha512",
+    "size": 100423646,
+    "url": "https://github.com/alibaba/dragonwell8/releases/download/dragonwell-8.5.5_jdk8u275-b2/Alibaba_Dragonwell_8.5.5-FP1_Linux_aarch64.tar.gz",
+    "vendor": "dragonwell",
+    "version": "8.5.5"
+  }
+]
