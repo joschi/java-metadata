@@ -177,8 +177,7 @@ function aggregate_metadata {
 	local supported_image_type='jre jdk'
 	local release_types='ea ga'
 	local jvm_impls='hotspot openj9 graalvm'
-	local vendors='adoptopenjdk corretto graalvm liberica sapmachine zulu'
-
+	local vendors='adoptopenjdk corretto dragonwell graalvm java-se-ri liberica mandrel openjdk sapmachine trava zulu'
 
 	# https://api.adoptopenjdk.net/swagger-ui/
 	# /v3/binary/latest/{feature_version}/{release_type}/{os}/{arch}/{image_type}/{jvm_impl}/{heap_size}/{vendor}
