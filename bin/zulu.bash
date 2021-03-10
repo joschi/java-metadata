@@ -48,12 +48,12 @@ function normalize_features {
 }
 
 # shellcheck disable=SC2016
-REGEX='s/^zulu([0-9+_.]{2,})-(?:(ca-fx-dbg|ca-fx|ca-hl|ca-dbg|ea-cp3|ca|ea|dbg|oem)-)?(jdk|jre)(.*)-(linux|macosx|win)_(musl_x64|x64|i686)\.(.*)$/VERSION="$1" RELEASE_TYPE="$2" IMAGE_TYPE="$3" JAVA_VERSION="$4" OS="$5" ARCH="$6" ARCHIVE="$7"/g'
+REGEX='s/^zulu([0-9+_.]{2,})-(?:(ca-fx-dbg|ca-fx|ca-hl|ca-dbg|ea-cp3|ca|ea|dbg|oem)-)?(jdk|jre)(.*)-(linux|macosx|win|solaris)_(musl_x64|x64|i686|aarch32hf|aarch32sf|aarch64|ppc64|sparcv9)\.(.*)$/VERSION="$1" RELEASE_TYPE="$2" IMAGE_TYPE="$3" JAVA_VERSION="$4" OS="$5" ARCH="$6" ARCHIVE="$7"/g'
 
 INDEX_FILE="${TEMP_DIR}/index.html"
 download_file 'https://static.azul.com/zulu/bin/' "${INDEX_FILE}"
 
-ZULU_FILES=$(grep -o -E '<a href="(zulu.+-(linux|macosx|win)_(musl_x64|x64|i686)\.(tar\.gz|zip|msi|dmg))">' "${INDEX_FILE}" | perl -pe 's/<a href="(.+)">/$1/g' | sort -V)
+ZULU_FILES=$(grep -o -E '<a href="(zulu.+-(linux|macosx|win|solaris)_(musl_x64|x64|i686|aarch32hf|aarch32sf|aarch64|ppc64|sparcv9)\.(tar\.gz|zip|msi|dmg))">' "${INDEX_FILE}" | perl -pe 's/<a href="(.+)">/$1/g' | sort -V)
 for ZULU_FILE in ${ZULU_FILES}
 do
 	METADATA_FILE="${METADATA_DIR}/${ZULU_FILE}.json"
