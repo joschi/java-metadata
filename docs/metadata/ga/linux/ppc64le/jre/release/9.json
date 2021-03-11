@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "ppc64le",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK9U-jre_ppc64le_linux_hotspot_9.0.4_11.tar.gz",
+    "image_type": "jre",
+    "java_version": "9.0.4+11",
+    "jvm_impl": "hotspot",
+    "md5": "fcf8b1b7734404ec4e844d7f085289d7",
+    "md5_file": "OpenJDK9U-jre_ppc64le_linux_hotspot_9.0.4_11.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "bbecc2b30a6b4b14e7a06a0bed526caf4258330d",
+    "sha1_file": "OpenJDK9U-jre_ppc64le_linux_hotspot_9.0.4_11.tar.gz.sha1",
+    "sha256": "84bbfca72cbabf04a2fd0e35d0faba03f91977573600edc23714b03aa1ec6fd9",
+    "sha256_file": "OpenJDK9U-jre_ppc64le_linux_hotspot_9.0.4_11.tar.gz.sha256",
+    "sha512": "fe094e6b15189480771b42ccb585950f992f6b80db57d8bd5706b538902b59413afd03d7e2120e09dbbcf750fbccdb4ac53bee59b33b1b937e7e61e4a18363b0",
+    "sha512_file": "OpenJDK9U-jre_ppc64le_linux_hotspot_9.0.4_11.tar.gz.sha512",
+    "size": 36863119,
+    "url": "https://github.com/AdoptOpenJDK/openjdk9-binaries/releases/download/jdk-9.0.4%2B11/OpenJDK9U-jre_ppc64le_linux_hotspot_9.0.4_11.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "9.0.4+11"
+  }
+]

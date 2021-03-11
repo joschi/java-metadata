@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "ppc64le",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-13.0.2_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "13.0.2",
+    "jvm_impl": "hotspot",
+    "md5": "78253ab9550eefcf776574886896eda7",
+    "md5_file": "sapmachine-jre-13.0.2_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "0ee2d67d147d851d12b992f0c38933158bf2cb8d",
+    "sha1_file": "sapmachine-jre-13.0.2_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "6e08da804da0e0715af32ceb24a8106149de3acc92b78879c319f2eec8dc1679",
+    "sha256_file": "sapmachine-jre-13.0.2_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "91ff6cab0a3a5f0564ea52268bdb63e0434cfa4724491cc59b9274e692846da6a299316e09931106f3610fd8d69544183f0f8357932d5089a91397d9ab1c53c9",
+    "sha512_file": "sapmachine-jre-13.0.2_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 41733824,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jre-13.0.2_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "13.0.2"
+  }
+]

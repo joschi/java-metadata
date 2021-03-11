@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "openjdk-7u75-b13-linux-x64-18_dec_2014.tar.gz",
+    "image_type": "jdk",
+    "java_version": "7u75-b13",
+    "jvm_impl": "hotspot",
+    "md5": "538acd35c6cf6977fa19d21ab2c17b0a",
+    "md5_file": "openjdk-7u75-b13-linux-x64-18_dec_2014.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "7960b65c034a1f2f848b1e57a7607ea739e92e64",
+    "sha1_file": "openjdk-7u75-b13-linux-x64-18_dec_2014.tar.gz.sha1",
+    "sha256": "56d84d0bfc8c1194d501c889765a387e949d6a063feef6608e5e12b8152411fb",
+    "sha256_file": "openjdk-7u75-b13-linux-x64-18_dec_2014.tar.gz.sha256",
+    "sha512": "de660d03cd10b83c49abd01c23a041acfbe01f762fda153943cb49430af8d08394dd9e26d7fcff07fcfbb6138589eed1df6e68ea8617f39957d4df0e20b2f3ff",
+    "sha512_file": "openjdk-7u75-b13-linux-x64-18_dec_2014.tar.gz.sha512",
+    "size": 156554803,
+    "url": "https://download.java.net/openjdk/jdk7u75/ri/openjdk-7u75-b13-linux-x64-18_dec_2014.tar.gz",
+    "vendor": "java-se-ri",
+    "version": "7u75-b13"
+  }
+]

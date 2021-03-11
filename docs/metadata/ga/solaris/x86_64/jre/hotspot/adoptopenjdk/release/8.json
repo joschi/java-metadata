@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_x64_solaris_hotspot_8u212b04.tar.gz",
+    "image_type": "jre",
+    "java_version": "8u212-b04",
+    "jvm_impl": "hotspot",
+    "md5": "f5530d1af8eecad0b43739c598ba352b",
+    "md5_file": "OpenJDK8U-jre_x64_solaris_hotspot_8u212b04.tar.gz.md5",
+    "os": "solaris",
+    "release_type": "ga",
+    "sha1": "e900d15c4691e0313a2ee9c7f56f22700ef75505",
+    "sha1_file": "OpenJDK8U-jre_x64_solaris_hotspot_8u212b04.tar.gz.sha1",
+    "sha256": "7091b9bbb3ef3f556f46d55f239d85bbe3fc13f05849d10c0f92217ca5b6d66c",
+    "sha256_file": "OpenJDK8U-jre_x64_solaris_hotspot_8u212b04.tar.gz.sha256",
+    "sha512": "becfc511a3fcd96641197fc0ae8b07f4e93ca8d1d9b1ac0ad2f53efb34df55bfefc3e71e3d52b0755cb49bbf53b07027542e38ba671dab727587c7b94c0c28ab",
+    "sha512_file": "OpenJDK8U-jre_x64_solaris_hotspot_8u212b04.tar.gz.sha512",
+    "size": 41998400,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_x64_solaris_hotspot_8u212b04.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.212+4"
+  }
+]

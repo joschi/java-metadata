@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK13U-jre_ppc64_aix_hotspot_13.0.2_8.tar.gz",
+    "image_type": "jre",
+    "java_version": "13.0.2+8",
+    "jvm_impl": "hotspot",
+    "md5": "3c59a7338b31d590cb9c34580388e6ed",
+    "md5_file": "OpenJDK13U-jre_ppc64_aix_hotspot_13.0.2_8.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "0d65e1ad4720e23f4cd80ae9ac4ace2c0cf1149e",
+    "sha1_file": "OpenJDK13U-jre_ppc64_aix_hotspot_13.0.2_8.tar.gz.sha1",
+    "sha256": "def7589f4c76efd806c098e3193f561e71c5bbd5115e5de853c76c40300a6bb3",
+    "sha256_file": "OpenJDK13U-jre_ppc64_aix_hotspot_13.0.2_8.tar.gz.sha256",
+    "sha512": "b0923172a216787de9de54cffc2eab9b736536b520dfcbdb34d129fc6f516b156d519989236aba94d439f8e06933fbf7a2f80c8b3cd463307bed620716859cd4",
+    "sha512_file": "OpenJDK13U-jre_ppc64_aix_hotspot_13.0.2_8.tar.gz.sha512",
+    "size": 45447495,
+    "url": "https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_ppc64_aix_hotspot_13.0.2_8.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "13.0.2+8.1"
+  }
+]

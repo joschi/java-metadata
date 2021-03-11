@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "openjdk-9.0.4_osx-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "9.0.4",
+    "jvm_impl": "hotspot",
+    "md5": "3219a9158985aade4df39b0c117c9fa3",
+    "md5_file": "openjdk-9.0.4_osx-x64_bin.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "e939933b8cd696e8ea6f76aece42ecf6b03ab544",
+    "sha1_file": "openjdk-9.0.4_osx-x64_bin.tar.gz.sha1",
+    "sha256": "66415406716fc42cff36e2d74ae991d46c42b3cf317b0425c7bf67697c616716",
+    "sha256_file": "openjdk-9.0.4_osx-x64_bin.tar.gz.sha256",
+    "sha512": "60165644db51b3e584b22cd31483794aced1646250544b566b405992dffeac636ef705f805381b4bce240f7f5c9ef5783e314de8ed829bb3c0a834cfd01b8785",
+    "sha512_file": "openjdk-9.0.4_osx-x64_bin.tar.gz.sha512",
+    "size": 188745049,
+    "url": "https://download.java.net/java/GA/jdk9/9.0.4/binaries/openjdk-9.0.4_osx-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "9.0.4"
+  }
+]

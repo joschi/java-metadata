@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK12U-jre_ppc64_aix_hotspot_12.0.1_12.tar.gz",
+    "image_type": "jre",
+    "java_version": "12.0.1+12",
+    "jvm_impl": "hotspot",
+    "md5": "d01afa7126ab7da02675b56c1f2cb37d",
+    "md5_file": "OpenJDK12U-jre_ppc64_aix_hotspot_12.0.1_12.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "baf579c8e830b3c511521dff00096e91870aea8c",
+    "sha1_file": "OpenJDK12U-jre_ppc64_aix_hotspot_12.0.1_12.tar.gz.sha1",
+    "sha256": "bd349ffba59a7a0547ef0bbfaf9ea9f6633727dabb34ab2dca0baaa8187db862",
+    "sha256_file": "OpenJDK12U-jre_ppc64_aix_hotspot_12.0.1_12.tar.gz.sha256",
+    "sha512": "866ea9ff1bb8edfeb18faca331268f38c0d97852da9d276cc4c9d7f4ecca35cacd5efe1c2a26643d16cd89e819629f316aab17823562ef01cff49dbdf0197cbb",
+    "sha512_file": "OpenJDK12U-jre_ppc64_aix_hotspot_12.0.1_12.tar.gz.sha512",
+    "size": 42870676,
+    "url": "https://github.com/AdoptOpenJDK/openjdk12-binaries/releases/download/jdk-12.0.1%2B12/OpenJDK12U-jre_ppc64_aix_hotspot_12.0.1_12.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "12.0.1+12"
+  }
+]

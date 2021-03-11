@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK10-OPENJ9_x64_Linux_jdk-10.0.2.13_openj9-0.9.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "10.0.2+13",
+    "jvm_impl": "openj9",
+    "md5": "fb86f836423dea728aa360ae95ec5e21",
+    "md5_file": "OpenJDK10-OPENJ9_x64_Linux_jdk-10.0.2.13_openj9-0.9.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "c9bd1efc464c83af241f31ddeddb957a1eb2e83a",
+    "sha1_file": "OpenJDK10-OPENJ9_x64_Linux_jdk-10.0.2.13_openj9-0.9.0.tar.gz.sha1",
+    "sha256": "1ef0dab3853b2f3666091854ef8149fcb85970254558d5d62cfa9446831779d1",
+    "sha256_file": "OpenJDK10-OPENJ9_x64_Linux_jdk-10.0.2.13_openj9-0.9.0.tar.gz.sha256",
+    "sha512": "b2f3f5167a1ef3207cfb1686eb18d44f2a9e1d60e7bfb0d3accdcbbe5cf2b63df3cbf2c9d3163aa3f3047159ef6653700c5f95462217645c1444ef92b13d2ce8",
+    "sha512_file": "OpenJDK10-OPENJ9_x64_Linux_jdk-10.0.2.13_openj9-0.9.0.tar.gz.sha512",
+    "size": 214736882,
+    "url": "https://github.com/AdoptOpenJDK/openjdk10-openj9-releases/releases/download/jdk-10.0.2%2B13_openj9-0.9.0/OpenJDK10-OPENJ9_x64_Linux_jdk-10.0.2.13_openj9-0.9.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "10.0.2+13.openj9-0.9.0"
+  }
+]

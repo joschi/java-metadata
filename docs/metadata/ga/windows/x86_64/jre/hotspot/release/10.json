@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "OpenJDK10U-jre_x64_windows_hotspot_10.0.2_13.zip",
+    "image_type": "jre",
+    "java_version": "10.0.2+13.1",
+    "jvm_impl": "hotspot",
+    "md5": "5320d4caa78a92c9ccb8cce09536a835",
+    "md5_file": "OpenJDK10U-jre_x64_windows_hotspot_10.0.2_13.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "905f973013fa90c5703a4d96d27615118be1135f",
+    "sha1_file": "OpenJDK10U-jre_x64_windows_hotspot_10.0.2_13.zip.sha1",
+    "sha256": "01d3edfac2caccc1d8f66c73992dd6bc1c7edf57be239653a688cd6f8fac00b4",
+    "sha256_file": "OpenJDK10U-jre_x64_windows_hotspot_10.0.2_13.zip.sha256",
+    "sha512": "d5189995ef975951ad6f92dbfff74423e6e58a5d2d276bfb4fdba45a17413633f227798357bbfeca13e4747ff126bf5035726be49bebda2be09b47449d3f45a2",
+    "sha512_file": "OpenJDK10U-jre_x64_windows_hotspot_10.0.2_13.zip.sha512",
+    "size": 39471140,
+    "url": "https://github.com/AdoptOpenJDK/openjdk10-binaries/releases/download/jdk-10.0.2%2B13.1/OpenJDK10U-jre_x64_windows_hotspot_10.0.2_13.zip",
+    "vendor": "adoptopenjdk",
+    "version": "10.0.2+13.1"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK9U-jdk_ppc64_aix_hotspot_9.0.4_11.tar.gz",
+    "image_type": "jdk",
+    "java_version": "9.0.4+11",
+    "jvm_impl": "hotspot",
+    "md5": "c333247c96fb82ac51143c0eab93ba45",
+    "md5_file": "OpenJDK9U-jdk_ppc64_aix_hotspot_9.0.4_11.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "ec49e0209a5f84783593389d33367d50b38e913b",
+    "sha1_file": "OpenJDK9U-jdk_ppc64_aix_hotspot_9.0.4_11.tar.gz.sha1",
+    "sha256": "d304cbfc9674ff1e1b0caf916b59c32ee9c477e5be6cfa071131b866cd54ec4c",
+    "sha256_file": "OpenJDK9U-jdk_ppc64_aix_hotspot_9.0.4_11.tar.gz.sha256",
+    "sha512": "c25d03a928ace602030a6937509776f4d3401b0f16e7c021831a9faa779f8013edd5e1306d6c28664f22fda04691f2a0db8ff22689fec0f69048f7d3eead0166",
+    "sha512_file": "OpenJDK9U-jdk_ppc64_aix_hotspot_9.0.4_11.tar.gz.sha512",
+    "size": 198434805,
+    "url": "https://github.com/AdoptOpenJDK/openjdk9-binaries/releases/download/jdk-9.0.4%2B11/OpenJDK9U-jdk_ppc64_aix_hotspot_9.0.4_11.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "9.0.4+11"
+  }
+]

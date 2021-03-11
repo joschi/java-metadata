@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "ppc64le",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-13.0.2-ea.8_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "13.0.2-ea.8",
+    "jvm_impl": "hotspot",
+    "md5": "e391ccd3c74bd72769385a48c6cb6ae4",
+    "md5_file": "sapmachine-jdk-13.0.2-ea.8_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "29477496d2ae776b116c38317ea11fc8215c11e8",
+    "sha1_file": "sapmachine-jdk-13.0.2-ea.8_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "d8254967c8f88f388ff49f12920b1fcbe40db3f472ad7edd00b8521b63d801a9",
+    "sha256_file": "sapmachine-jdk-13.0.2-ea.8_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "cde64b3b73d3d8b604e35305b6ef877dd62fc56655354afd9a6159676db1182aa57e498c6a30da41439a131d855c66e54b9d78d6cc9995571626e2d13bbbff24",
+    "sha512_file": "sapmachine-jdk-13.0.2-ea.8_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 183588129,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2+8/sapmachine-jdk-13.0.2-ea.8_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "13.0.2-ea.8"
+  }
+]

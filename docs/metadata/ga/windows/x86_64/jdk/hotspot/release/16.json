@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "openjdk-16_windows-x64_bin.zip",
+    "image_type": "jdk",
+    "java_version": "16",
+    "jvm_impl": "hotspot",
+    "md5": "d8a60f3c7e438360e40436eb75ad095c",
+    "md5_file": "openjdk-16_windows-x64_bin.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "03091a475b8a65f91233649a16d730d088143cc0",
+    "sha1_file": "openjdk-16_windows-x64_bin.zip.sha1",
+    "sha256": "38aa60e21be0cd20d0ed5078d05f264b02c8b1db5d9e881db43e7de5a623875e",
+    "sha256_file": "openjdk-16_windows-x64_bin.zip.sha256",
+    "sha512": "c944fbe1a614f9ed8d202b7a30182fab66c0e8771a83a5c17707154a3e849a474303cfc7220094844fc809177c8f47c0c0a4c8144c1cb2444a9b0bfa9f448dfc",
+    "sha512_file": "openjdk-16_windows-x64_bin.zip.sha512",
+    "size": 183611057,
+    "url": "https://download.java.net/java/GA/jdk16/7863447f0ab643c585b9bdebf67c69db/35/GPL/openjdk-16_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "16"
+  }
+]

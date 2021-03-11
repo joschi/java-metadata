@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK12U-jdk_ppc64_aix_openj9_12.0.1_12_openj9-0.14.1.tar.gz",
+    "image_type": "jdk",
+    "java_version": "12.0.1+12",
+    "jvm_impl": "openj9",
+    "md5": "898c19af63d95ede9be1ee2a54e66425",
+    "md5_file": "OpenJDK12U-jdk_ppc64_aix_openj9_12.0.1_12_openj9-0.14.1.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "431665c3e969e504722bf7f403225639e087c707",
+    "sha1_file": "OpenJDK12U-jdk_ppc64_aix_openj9_12.0.1_12_openj9-0.14.1.tar.gz.sha1",
+    "sha256": "912418449124294d0073e074d9f795860ed19d866f6fcfd49626c046881335b8",
+    "sha256_file": "OpenJDK12U-jdk_ppc64_aix_openj9_12.0.1_12_openj9-0.14.1.tar.gz.sha256",
+    "sha512": "e4d329e46adabb66d895a1360a020f69376be508e76d9beb6b1b64579db7fd16516de9bd3b22c1ee1499fd276a18ad06106fab2996230218a6b13b58e94a3702",
+    "sha512_file": "OpenJDK12U-jdk_ppc64_aix_openj9_12.0.1_12_openj9-0.14.1.tar.gz.sha512",
+    "size": 220048557,
+    "url": "https://github.com/AdoptOpenJDK/openjdk12-binaries/releases/download/jdk-12.0.1%2B12_openj9-0.14.1/OpenJDK12U-jdk_ppc64_aix_openj9_12.0.1_12_openj9-0.14.1.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "12.0.1+12.openj9-0.14.1"
+  }
+]

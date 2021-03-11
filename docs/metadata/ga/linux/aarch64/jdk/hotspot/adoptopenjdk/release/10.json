@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK10U-jdk_aarch64_linux_hotspot_10.0.2_13.tar.gz",
+    "image_type": "jdk",
+    "java_version": "10.0.2+13.1",
+    "jvm_impl": "hotspot",
+    "md5": "d4625bd7c699433d0b5f8c3c7ef6d52c",
+    "md5_file": "OpenJDK10U-jdk_aarch64_linux_hotspot_10.0.2_13.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "f91228e7791301947fe59cded41efee6df53d4d0",
+    "sha1_file": "OpenJDK10U-jdk_aarch64_linux_hotspot_10.0.2_13.tar.gz.sha1",
+    "sha256": "a4fc4e7a9204d6f450c71f0e82f3bf77571a6c52ae612227f99733848e893612",
+    "sha256_file": "OpenJDK10U-jdk_aarch64_linux_hotspot_10.0.2_13.tar.gz.sha256",
+    "sha512": "58f502ed52b428de715696efbe8fcd012745985d4394ed34a866edfe984ffc30b8cf22d39c69e011bd9d334493bdb54a906f390bc66d291f3b285f096c4c4a8d",
+    "sha512_file": "OpenJDK10U-jdk_aarch64_linux_hotspot_10.0.2_13.tar.gz.sha512",
+    "size": 191222154,
+    "url": "https://github.com/AdoptOpenJDK/openjdk10-binaries/releases/download/jdk-10.0.2%2B13.1/OpenJDK10U-jdk_aarch64_linux_hotspot_10.0.2_13.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "10.0.2+13.1"
+  }
+]
