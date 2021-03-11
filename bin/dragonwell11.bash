@@ -115,4 +115,4 @@ do
 	done
 done
 
-jq -s -S . "${METADATA_DIR}"/Alibaba_Dragonwell*.json > "${METADATA_DIR}/all.json"
+jq -s -S . "${METADATA_DIR}"/{Alibaba_Dragonwell,OpenJDK}*.json > "${METADATA_DIR}/all.json"
