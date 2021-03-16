@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "amazon-corretto-16.0.0.36.1-linux-aarch64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "16.0.0.36.1",
+    "jvm_impl": "hotspot",
+    "md5": "c550926bebc1665c116194a82e343b6e",
+    "md5_file": "amazon-corretto-16.0.0.36.1-linux-aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "043aea46239b9ed58506758c9f35d5c4624989f6",
+    "sha1_file": "amazon-corretto-16.0.0.36.1-linux-aarch64.tar.gz.sha1",
+    "sha256": "2efe75c9197b8fa4c9be8bd44507cf8fc212bbb6f4f0fe03cc4e1e0650f42ee4",
+    "sha256_file": "amazon-corretto-16.0.0.36.1-linux-aarch64.tar.gz.sha256",
+    "sha512": "c06477cddae3ad77c726eee51fb7a579981b5fa39aa93c172cea591cb5fc60b034e02c450b0c0cb436f8ec7a346895aac1b834b8d213470f69e8d2286d8dd15b",
+    "sha512_file": "amazon-corretto-16.0.0.36.1-linux-aarch64.tar.gz.sha512",
+    "size": 206381768,
+    "url": "https://corretto.aws/downloads/resources/16.0.0.36.1/amazon-corretto-16.0.0.36.1-linux-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "16.0.0.36.1"
+  }
+]
