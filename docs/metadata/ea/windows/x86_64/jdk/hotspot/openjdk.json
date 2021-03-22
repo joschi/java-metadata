@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "openjdk-17-ea+14_windows-x64_bin.zip",
+    "image_type": "jdk",
+    "java_version": "17-ea+14",
+    "jvm_impl": "hotspot",
+    "md5": "9b42d4ca54b3c6c574380dbeed982790",
+    "md5_file": "openjdk-17-ea+14_windows-x64_bin.zip.md5",
+    "os": "windows",
+    "release_type": "ea",
+    "sha1": "d0481948cf4901b162f25d7137190f6150e8fcc0",
+    "sha1_file": "openjdk-17-ea+14_windows-x64_bin.zip.sha1",
+    "sha256": "bb67e52010e2fcab6f54a97cf4b9124b66ae27bb3f2edc17a77a0a681e6b166e",
+    "sha256_file": "openjdk-17-ea+14_windows-x64_bin.zip.sha256",
+    "sha512": "b77fb968e06eed07b51c4c944e465c99ebe004ee9414bea8ceec5e522256d0cbbaed31158eb15ea765e25b1db8725fa205bbc450fe5a2934d211c2c7d63a7905",
+    "sha512_file": "openjdk-17-ea+14_windows-x64_bin.zip.sha512",
+    "size": 184223140,
+    "url": "https://download.java.net/java/early_access/jdk17/14/GPL/openjdk-17-ea+14_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "17-ea+14"
+  }
+]
