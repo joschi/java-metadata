@@ -21,5 +21,28 @@
     "url": "https://download.java.net/java/early_access/jdk17/14/GPL/openjdk-17-ea+14_linux-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "17-ea+14"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "openjdk-17-ea+15_linux-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "17-ea+15",
+    "jvm_impl": "hotspot",
+    "md5": "c952c829b32beba07520d9d15e1375bf",
+    "md5_file": "openjdk-17-ea+15_linux-aarch64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "a1b054845af0317dbb8543d2c244c40e49691fa7",
+    "sha1_file": "openjdk-17-ea+15_linux-aarch64_bin.tar.gz.sha1",
+    "sha256": "93178b313750b38e1bbc811b989dcee27d988cb223b30ba829122ecdbd08f403",
+    "sha256_file": "openjdk-17-ea+15_linux-aarch64_bin.tar.gz.sha256",
+    "sha512": "0f3f433f23d165c59db60729d9ee757492b29a44f91124e2125a504013de5451d434f1f7bd1ca5d185c134bc1938b7c3ea57939bf81fda52eed79ea8b292111c",
+    "sha512_file": "openjdk-17-ea+15_linux-aarch64_bin.tar.gz.sha512",
+    "size": 176973910,
+    "url": "https://download.java.net/java/early_access/jdk17/15/GPL/openjdk-17-ea+15_linux-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "17-ea+15"
   }
 ]
