@@ -48,14 +48,14 @@ function download {
 	eval "$(perl -pe "${tag_regex}" <<< "${tag_name}")"
 
 	# shellcheck disable=SC2016
-	local filename_regex='s/^java11-openjdk-dcevm-(linux|osx|windows)\.(.*)$/OS="$1" EXT="$2"/g'
+	local filename_regex='s/^java11-openjdk-dcevm-(linux|osx|windows)-?(amd64|arm64)?\.(.*)$/OS="$1" ARCH="$2" EXT="$3"/g'
 
 	# Parse meta-data from file name
 	eval "$(perl -pe "${filename_regex}" <<< "${asset_name}")"
 
 	local url="https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases/download/${tag_name}/${asset_name}"
 	local metadata_file="${METADATA_DIR}/${VENDOR}-${VERSION}-${OS}.${EXT}.json"
-	local archive="${TEMP_DIR}/${VENDOR}-${VERSION}-${OS}.${EXT}"
+	local archive="${TEMP_DIR}/${VENDOR}-${VERSION}-${OS}-${ARCH:=x86_64}.${EXT}"
 
 	if [[ -f "${metadata_file}" ]]
 	then
