@@ -389,5 +389,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu17.0.33-ea-jdk17.0.0-ea.12-macosx_aarch64.zip",
     "vendor": "zulu",
     "version": "17.0.33"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "zulu17.0.35-ea-jdk17.0.0-ea.13-macosx_aarch64.zip",
+    "image_type": "jdk",
+    "java_version": "17.0.0-ea.13",
+    "jvm_impl": "hotspot",
+    "md5": "e947849d94adf21d5eabd4506a348426",
+    "md5_file": "zulu17.0.35-ea-jdk17.0.0-ea.13-macosx_aarch64.zip.md5",
+    "os": "macosx",
+    "release_type": "ea",
+    "sha1": "41d44a2a41fe7b83b495397745b98b2e6fe2bd6b",
+    "sha1_file": "zulu17.0.35-ea-jdk17.0.0-ea.13-macosx_aarch64.zip.sha1",
+    "sha256": "cb5a253a63229f6b8b719d4081ba1aca17415cbed5ffa156a746c47e262c5a2f",
+    "sha256_file": "zulu17.0.35-ea-jdk17.0.0-ea.13-macosx_aarch64.zip.sha256",
+    "sha512": "e758343c3eb3396fd05c02042fc25fcdd445dd6133277f407ad22b2614e12747021e3aa15f348779bfb6f69d61b2d05913f6bf976e0b33f266d467bf047da5a3",
+    "sha512_file": "zulu17.0.35-ea-jdk17.0.0-ea.13-macosx_aarch64.zip.sha512",
+    "size": 200862989,
+    "url": "https://static.azul.com/zulu/bin/zulu17.0.35-ea-jdk17.0.0-ea.13-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "17.0.35"
   }
 ]
