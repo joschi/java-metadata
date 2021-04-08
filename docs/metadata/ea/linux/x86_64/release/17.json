@@ -526,5 +526,53 @@
     "url": "https://static.azul.com/zulu/bin/zulu17.0.35-ea-jdk17.0.0-ea.13-linux_x64.tar.gz",
     "vendor": "zulu",
     "version": "17.0.35"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu17.0.41-ea-jdk17.0.0-ea.16-linux_musl_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.0-ea.16",
+    "jvm_impl": "hotspot",
+    "md5": "8cfec848db854778699fac2ad45756a4",
+    "md5_file": "zulu17.0.41-ea-jdk17.0.0-ea.16-linux_musl_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "90f8d9bc730c3d1c0b6385923efec93ad8ae62be",
+    "sha1_file": "zulu17.0.41-ea-jdk17.0.0-ea.16-linux_musl_x64.tar.gz.sha1",
+    "sha256": "0d78234741a4861eabb11a7c3e08cdd88387eead30fb3cde056b4c6ec3cea455",
+    "sha256_file": "zulu17.0.41-ea-jdk17.0.0-ea.16-linux_musl_x64.tar.gz.sha256",
+    "sha512": "7dc06286807197bfd8090f577cdf462af87659e97dddf91ec3675f8869f14b68eb2eb69b08aab89c58de51d4c2501db8bf065774350395bd33380861da16134c",
+    "sha512_file": "zulu17.0.41-ea-jdk17.0.0-ea.16-linux_musl_x64.tar.gz.sha512",
+    "size": 212499907,
+    "url": "https://static.azul.com/zulu/bin/zulu17.0.41-ea-jdk17.0.0-ea.16-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.0.41"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "zulu17.0.41-ea-jdk17.0.0-ea.16-linux_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.0-ea.16",
+    "jvm_impl": "hotspot",
+    "md5": "f7a0a14f82eecf888342305d7ee9f75f",
+    "md5_file": "zulu17.0.41-ea-jdk17.0.0-ea.16-linux_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "f0a422d795becb4118795f338f55fcbe19ea2bbb",
+    "sha1_file": "zulu17.0.41-ea-jdk17.0.0-ea.16-linux_x64.tar.gz.sha1",
+    "sha256": "82be3b27ff74036810df343d1a7266bb2347a3874e7a5bd2bf5539e3487ce310",
+    "sha256_file": "zulu17.0.41-ea-jdk17.0.0-ea.16-linux_x64.tar.gz.sha256",
+    "sha512": "754d73f06a48db358a2bb361f3fd3074ebfe7adc6746229085229e60992138b76ca378b724e467a1c4df9daed9c3827313edb564bcf5941e72ebec99d8db08f8",
+    "sha512_file": "zulu17.0.41-ea-jdk17.0.0-ea.16-linux_x64.tar.gz.sha512",
+    "size": 213202176,
+    "url": "https://static.azul.com/zulu/bin/zulu17.0.41-ea-jdk17.0.0-ea.16-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.0.41"
   }
 ]

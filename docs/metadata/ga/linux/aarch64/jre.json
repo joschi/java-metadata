@@ -5028,5 +5028,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-16/sapmachine-jre-16-beta_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "16-beta"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "zulu16.28.11-ca-jre16.0.0-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "16.0.0",
+    "jvm_impl": "hotspot",
+    "md5": "67c9a70dd875f4953cde31dec7e11c7e",
+    "md5_file": "zulu16.28.11-ca-jre16.0.0-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "d7d814a55b50ec88ecc6bed0802065e1b9ade446",
+    "sha1_file": "zulu16.28.11-ca-jre16.0.0-linux_aarch64.tar.gz.sha1",
+    "sha256": "38f9f0e597cd49e7092fe05d85b1742aa0c905616eb139a7cf6f81e92681f5a1",
+    "sha256_file": "zulu16.28.11-ca-jre16.0.0-linux_aarch64.tar.gz.sha256",
+    "sha512": "ef8d4146e5394eb1c5a23281684de41800ae6291f82ce2697d9c545f5377e1237d0205ed04eff8b01d5af35dbfa0729769c170336f0e673e361857ee39aecede",
+    "sha512_file": "zulu16.28.11-ca-jre16.0.0-linux_aarch64.tar.gz.sha512",
+    "size": 41885374,
+    "url": "https://static.azul.com/zulu/bin/zulu16.28.11-ca-jre16.0.0-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "16.28.11"
   }
 ]
