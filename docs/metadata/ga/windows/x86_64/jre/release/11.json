@@ -2321,5 +2321,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu11.45.27-ca-jre11.0.10-win_x64.zip",
     "vendor": "zulu",
     "version": "11.45.27"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "zulu11.48.21-ca-jre11.0.11-win_x64.zip",
+    "image_type": "jre",
+    "java_version": "11.0.11",
+    "jvm_impl": "hotspot",
+    "md5": "ccf9e97eeeb804946c56a9b10803e64f",
+    "md5_file": "zulu11.48.21-ca-jre11.0.11-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "f6e84f48f44f45d7a93e88af806e5c4ae7f837ea",
+    "sha1_file": "zulu11.48.21-ca-jre11.0.11-win_x64.zip.sha1",
+    "sha256": "03a78e5aca9dc77006ecf85b3c79e5342e15b89dfd0995768ab86939fe04f42e",
+    "sha256_file": "zulu11.48.21-ca-jre11.0.11-win_x64.zip.sha256",
+    "sha512": "92ff325ea85915f1da96ebab7be261aec25c7a4244bd16933a636e05fdb733a9ca51045c638515f2bc60435a3ac168f2256947a30d977c4be29b18c03afb36ba",
+    "sha512_file": "zulu11.48.21-ca-jre11.0.11-win_x64.zip.sha512",
+    "size": 40312508,
+    "url": "https://static.azul.com/zulu/bin/zulu11.48.21-ca-jre11.0.11-win_x64.zip",
+    "vendor": "zulu",
+    "version": "11.48.21"
   }
 ]

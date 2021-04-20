@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "graalvm-ce-java16-linux-aarch64-21.1.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "16",
+    "jvm_impl": "graalvm",
+    "md5": "5d132e43b6ca83fa0f3bcd4db9b8edba",
+    "md5_file": "graalvm-ce-java16-linux-aarch64-21.1.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "dc6a41c33ceb18797bd4c470249927c76f853d77",
+    "sha1_file": "graalvm-ce-java16-linux-aarch64-21.1.0.tar.gz.sha1",
+    "sha256": "407a228a9fa67132143a9890dfc1c64184b9bd211b35095d3489d6089a36ba2c",
+    "sha256_file": "graalvm-ce-java16-linux-aarch64-21.1.0.tar.gz.sha256",
+    "sha512": "532c12bf785d34c132132159ce487764b725bd75052f950c23fb7706f30008462ab5b0e7b473033fc3e70c811051b45c78103d1415b07787b66454987e3758fa",
+    "sha512_file": "graalvm-ce-java16-linux-aarch64-21.1.0.tar.gz.sha512",
+    "size": 405636421,
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.1.0/graalvm-ce-java16-linux-aarch64-21.1.0.tar.gz",
+    "vendor": "graalvm",
+    "version": "21.1.0+java16"
+  }
+]

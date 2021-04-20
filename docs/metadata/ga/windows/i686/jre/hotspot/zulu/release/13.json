@@ -309,5 +309,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu13.37.21-ca-jre13.0.6-win_i686.zip",
     "vendor": "zulu",
     "version": "13.37.21"
+  },
+  {
+    "architecture": "i686",
+    "features": [],
+    "file_type": "zip",
+    "filename": "zulu13.40.15-ca-jre13.0.7-win_i686.zip",
+    "image_type": "jre",
+    "java_version": "13.0.7",
+    "jvm_impl": "hotspot",
+    "md5": "6cee926e204bea07c94e85d113f2211e",
+    "md5_file": "zulu13.40.15-ca-jre13.0.7-win_i686.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "fc25e54599978860ba3066ba27f2e30bf4055eda",
+    "sha1_file": "zulu13.40.15-ca-jre13.0.7-win_i686.zip.sha1",
+    "sha256": "c4cd10949dbe47db7c46112a3bbb81193ea3c904d822612924ed17c03cc0f26d",
+    "sha256_file": "zulu13.40.15-ca-jre13.0.7-win_i686.zip.sha256",
+    "sha512": "b7eb964a2888834feaea14454726721f595c32092fa536341bce245707ddddbbbd4bc3551782cfd2dc35343c462d4a059f8d2fd86b3b4dbcfa1418bfc70faf87",
+    "sha512_file": "zulu13.40.15-ca-jre13.0.7-win_i686.zip.sha512",
+    "size": 40206828,
+    "url": "https://static.azul.com/zulu/bin/zulu13.40.15-ca-jre13.0.7-win_i686.zip",
+    "vendor": "zulu",
+    "version": "13.40.15"
   }
 ]

@@ -1076,5 +1076,53 @@
     "url": "https://static.azul.com/zulu/bin/zulu15.29.15-ca-jre15.0.2-linux_x64.tar.gz",
     "vendor": "zulu",
     "version": "15.29.15"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu15.32.15-ca-jre15.0.3-linux_musl_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "15.0.3",
+    "jvm_impl": "hotspot",
+    "md5": "7b0d25d4f472cfce56290f2ff49c9108",
+    "md5_file": "zulu15.32.15-ca-jre15.0.3-linux_musl_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "0f4632006e38a1bbe6f7542b4518fadbbd3af109",
+    "sha1_file": "zulu15.32.15-ca-jre15.0.3-linux_musl_x64.tar.gz.sha1",
+    "sha256": "5e3eac9fc026ab34c1478f6ba922b5640cb662387809c6a0c955190bf874961c",
+    "sha256_file": "zulu15.32.15-ca-jre15.0.3-linux_musl_x64.tar.gz.sha256",
+    "sha512": "a18c937147a8f7e5dfea7e03d11213e68297841cbfd317cac3c815c33281365e6d56ec2b34a0fb112b0db2e44929db4bdba8da213d2deb9c819fcd446308628d",
+    "sha512_file": "zulu15.32.15-ca-jre15.0.3-linux_musl_x64.tar.gz.sha512",
+    "size": 47652865,
+    "url": "https://static.azul.com/zulu/bin/zulu15.32.15-ca-jre15.0.3-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "15.32.15"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "zulu15.32.15-ca-jre15.0.3-linux_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "15.0.3",
+    "jvm_impl": "hotspot",
+    "md5": "5826ff6a03a5eaf5fcf88c8b2bf92fb7",
+    "md5_file": "zulu15.32.15-ca-jre15.0.3-linux_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "9b6b675bbf6479f583aad1f6d706b7994e7c976e",
+    "sha1_file": "zulu15.32.15-ca-jre15.0.3-linux_x64.tar.gz.sha1",
+    "sha256": "b7b2c242e5b7a94a1beebc128e96d452f02397d251611e51748fbed1e1e52c7f",
+    "sha256_file": "zulu15.32.15-ca-jre15.0.3-linux_x64.tar.gz.sha256",
+    "sha512": "02fd3ac6ed27bdf4a8dec81db69f0a819a7cae192ee025cd0a8102a2cf4abe3668fd18f7ca11514aa4d696eb419a78d6ea6598324237a71835d71e872389649f",
+    "sha512_file": "zulu15.32.15-ca-jre15.0.3-linux_x64.tar.gz.sha512",
+    "size": 48042451,
+    "url": "https://static.azul.com/zulu/bin/zulu15.32.15-ca-jre15.0.3-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "15.32.15"
   }
 ]
