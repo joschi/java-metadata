@@ -297,5 +297,28 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/8u282+8/bellsoft-jre8u282+8-solaris-x64.tar.gz",
     "vendor": "liberica",
     "version": "8u282+8"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "bellsoft-jre8u292+10-solaris-x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "8u292+10",
+    "jvm_impl": "hotspot",
+    "md5": "00bf95f908e146da498c73fc90ed46e1",
+    "md5_file": "bellsoft-jre8u292+10-solaris-x64.tar.gz.md5",
+    "os": "solaris",
+    "release_type": "ga",
+    "sha1": "06a81f43fa55ae307044f16eb5d5e89c599e8c7d",
+    "sha1_file": "bellsoft-jre8u292+10-solaris-x64.tar.gz.sha1",
+    "sha256": "4ab2bfcd48be68267b03766c1b17b7ffb17f401955267368cd3aafed8da13556",
+    "sha256_file": "bellsoft-jre8u292+10-solaris-x64.tar.gz.sha256",
+    "sha512": "7bd48eff1f0dbb2b5784964666bc8ea43a9c3031c8432850320a70ce10aa8fcee24315702b177c02821b00ffc7b017d2009e19cdae085ee6ade9180597b4ab70",
+    "sha512_file": "bellsoft-jre8u292+10-solaris-x64.tar.gz.sha512",
+    "size": 45203980,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u292+10/bellsoft-jre8u292+10-solaris-x64.tar.gz",
+    "vendor": "liberica",
+    "version": "8u292+10"
   }
 ]

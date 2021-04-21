@@ -274,5 +274,28 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/8u282+8/bellsoft-jre8u282+8-solaris-sparcv9.tar.gz",
     "vendor": "liberica",
     "version": "8u282+8"
+  },
+  {
+    "architecture": "sparcv9",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "bellsoft-jre8u292+10-solaris-sparcv9.tar.gz",
+    "image_type": "jre",
+    "java_version": "8u292+10",
+    "jvm_impl": "hotspot",
+    "md5": "2a0ae03da4d21dcc2b8020c7402926b5",
+    "md5_file": "bellsoft-jre8u292+10-solaris-sparcv9.tar.gz.md5",
+    "os": "solaris",
+    "release_type": "ga",
+    "sha1": "00642d21e313865adaaafb22ef76e0cd9305993f",
+    "sha1_file": "bellsoft-jre8u292+10-solaris-sparcv9.tar.gz.sha1",
+    "sha256": "9e9bf96403232fa2cd9487ebd6ba308181ab4da6ed7274b11966db83a8051788",
+    "sha256_file": "bellsoft-jre8u292+10-solaris-sparcv9.tar.gz.sha256",
+    "sha512": "07815b5a88698b0dd19bcb6d423ffc70268a133c4b3c646e8bb4e4a87d050daf649ce53491b82331faca4857f1c7ab4ca2dd0263aebb2844e70d90f1ac54bca8",
+    "sha512_file": "bellsoft-jre8u292+10-solaris-sparcv9.tar.gz.sha512",
+    "size": 46385487,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u292+10/bellsoft-jre8u292+10-solaris-sparcv9.tar.gz",
+    "vendor": "liberica",
+    "version": "8u292+10"
   }
 ]
