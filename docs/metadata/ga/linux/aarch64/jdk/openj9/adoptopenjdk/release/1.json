@@ -67,5 +67,28 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08_openj9-0.24.0/OpenJDK8U-jdk_aarch64_linux_openj9_8u282b08_openj9-0.24.0.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.282-ea+8.openj9-0.24.0"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_aarch64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_292-ea-b10",
+    "jvm_impl": "openj9",
+    "md5": "e0e0c7dae0d86f1bd52a84cac18c7ab1",
+    "md5_file": "OpenJDK8U-jdk_aarch64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "bffaeb007c54eb171f79cd00fc94dc30cc53dc40",
+    "sha1_file": "OpenJDK8U-jdk_aarch64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.sha1",
+    "sha256": "b168245ddc18b85135c15ed6baea5cbcc06192b49af04dcfa698458373efc061",
+    "sha256_file": "OpenJDK8U-jdk_aarch64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.sha256",
+    "sha512": "6cd3e0ca4435e260b6dea1603c5b049ee131db9bf684898ad07a535c43811eb215c322610d0735c04f7de38199a9526f3fc3b85b1a831aadce769b0a7360eaab",
+    "sha512_file": "OpenJDK8U-jdk_aarch64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.sha512",
+    "size": 113917363,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10_openj9-0.26.0/OpenJDK8U-jdk_aarch64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.292-ea+10.openj9-0.26.0"
   }
 ]

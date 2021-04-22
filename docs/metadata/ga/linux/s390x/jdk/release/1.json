@@ -438,6 +438,29 @@
   },
   {
     "architecture": "s390x",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_s390x_linux_openj9_8u292b10_openj9-0.26.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_292-b10",
+    "jvm_impl": "openj9",
+    "md5": "6b3b919f3dd8573a269322f10b5c838d",
+    "md5_file": "OpenJDK8U-jdk_s390x_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "8c872be071d00cfa6e7ce3170da919bcbba5269a",
+    "sha1_file": "OpenJDK8U-jdk_s390x_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.sha1",
+    "sha256": "7aff99f87482d5bb0969f13cddecfb600e755d428ae14f4292d08d4a1ea5f080",
+    "sha256_file": "OpenJDK8U-jdk_s390x_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.sha256",
+    "sha512": "3c3495005302dc219d6b70305ac353dd60e87203cf2e02f07b62d12666ab23a492f51ae247e864296d93a7ef41e0b6f5ea148951f99f623f03fc0c6a2fb6db16",
+    "sha512_file": "OpenJDK8U-jdk_s390x_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.sha512",
+    "size": 115469621,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10_openj9-0.26.0/OpenJDK8U-jdk_s390x_linux_openj9_8u292b10_openj9-0.26.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.292+10.openj9-0.26.0"
+  },
+  {
+    "architecture": "s390x",
     "features": [
       "large_heap"
     ],

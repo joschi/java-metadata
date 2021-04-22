@@ -438,6 +438,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_x64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_292-b10",
+    "jvm_impl": "openj9",
+    "md5": "a2efa50f3c2a5a73b2bf05d4f2622a19",
+    "md5_file": "OpenJDK8U-jre_x64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "ea3c69764a85b0dfde53907774d26032b1def3e6",
+    "sha1_file": "OpenJDK8U-jre_x64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.sha1",
+    "sha256": "6d5b67979e0935febe893895b622647bf8a59df6093ae57074db11d2ac9373ea",
+    "sha256_file": "OpenJDK8U-jre_x64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.sha256",
+    "sha512": "0e37c9e850b5e08b8dafaa26ac03eea87aa64b678c64d297e3cd7e5385c6bfbe8193c07baaf2beef6762de2ab7345f0b9f7b70a2db7988805a0e422684ad3541",
+    "sha512_file": "OpenJDK8U-jre_x64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz.sha512",
+    "size": 49335650,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10_openj9-0.26.0/OpenJDK8U-jre_x64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.292+10.openj9-0.26.0"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "large_heap"
     ],

@@ -1,0 +1,25 @@
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "pkg",
+    "filename": "microsoft-jdk-11.0.11.9.1-macos-x64.pkg",
+    "image_type": "jdk",
+    "java_version": "11.0.11.9.1",
+    "jvm_impl": "hotspot",
+    "md5": "cf95a1005283fea7337c3b04c583d86e",
+    "md5_file": "microsoft-jdk-11.0.11.9.1-macos-x64.pkg.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "d381a1a92bcc623293f588b3e451611bbf7a2f02",
+    "sha1_file": "microsoft-jdk-11.0.11.9.1-macos-x64.pkg.sha1",
+    "sha256": "3f378080a74bce8687a36978d4093b7a585011a527d84e867aa990a9b69e0301",
+    "sha256_file": "microsoft-jdk-11.0.11.9.1-macos-x64.pkg.sha256",
+    "sha512": "889f3b9474d7826512e0ec9e9f1c9a698e5431aaef56f2474a933251e8871da2260967f29578050ef95c30261acca81343dacd64edd4a60bedfd5603e980e071",
+    "sha512_file": "microsoft-jdk-11.0.11.9.1-macos-x64.pkg.sha512",
+    "size": 191576396,
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.11.9.1-macos-x64.pkg",
+    "vendor": "microsoft",
+    "version": "11.0.11.9.1"
+  }
+]
