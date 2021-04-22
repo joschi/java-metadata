@@ -205,5 +205,28 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08/OpenJDK8U-jre_x64_linux_hotspot_8u282b08.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "8.0.282+8"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_x64_linux_hotspot_8u292b10.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_292-b10",
+    "jvm_impl": "hotspot",
+    "md5": "4fce6b46d70dc8a9ed00669b361e4279",
+    "md5_file": "OpenJDK8U-jre_x64_linux_hotspot_8u292b10.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "55848001c21214d30ca1362bace8613ce9733516",
+    "sha1_file": "OpenJDK8U-jre_x64_linux_hotspot_8u292b10.tar.gz.sha1",
+    "sha256": "cad66f48f90167ed19030c71f8f0580702c43cce5ce5a0d76833f7a5ae7c402a",
+    "sha256_file": "OpenJDK8U-jre_x64_linux_hotspot_8u292b10.tar.gz.sha256",
+    "sha512": "fd63dceddcd32b0f48b6d35c14ab3165f2b45152fdbc2bcaf833ed2624d833592cf1001627029fd04f9b77a033e2d4e993830d54c2e7c08adde5cd7a684447fd",
+    "sha512_file": "OpenJDK8U-jre_x64_linux_hotspot_8u292b10.tar.gz.sha512",
+    "size": 41355668,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jre_x64_linux_hotspot_8u292b10.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.292+10"
   }
 ]

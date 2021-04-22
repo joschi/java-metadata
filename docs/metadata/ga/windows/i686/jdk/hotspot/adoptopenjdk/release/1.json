@@ -205,5 +205,28 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08/OpenJDK8U-jdk_x86-32_windows_hotspot_8u282b08.zip",
     "vendor": "adoptopenjdk",
     "version": "8.0.282+8"
+  },
+  {
+    "architecture": "i686",
+    "features": [],
+    "file_type": "zip",
+    "filename": "OpenJDK8U-jdk_x86-32_windows_hotspot_8u292b10.zip",
+    "image_type": "jdk",
+    "java_version": "1.8.0_292-b10",
+    "jvm_impl": "hotspot",
+    "md5": "4fc66998eba7288f9d08581dffe2f5c6",
+    "md5_file": "OpenJDK8U-jdk_x86-32_windows_hotspot_8u292b10.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "85ece60c62a93c74eef7a7d478850aba3cb3f659",
+    "sha1_file": "OpenJDK8U-jdk_x86-32_windows_hotspot_8u292b10.zip.sha1",
+    "sha256": "beb02f3446c25aa8f16bebdbc29f479c1204e6e194d0c927fb69b2e447371749",
+    "sha256_file": "OpenJDK8U-jdk_x86-32_windows_hotspot_8u292b10.zip.sha256",
+    "sha512": "798bf86bb4be7f4d5fca7e35ce3043e603e4bbaa67440144ff05050471f89116f745af770762eef884a22a4b370d19656487465cb8bc866eef3e904d676d12d5",
+    "sha512_file": "OpenJDK8U-jdk_x86-32_windows_hotspot_8u292b10.zip.sha512",
+    "size": 105146874,
+    "url": "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x86-32_windows_hotspot_8u292b10.zip",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.292+10"
   }
 ]
