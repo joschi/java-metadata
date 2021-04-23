@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "OpenJDK16U-jre_x64_windows_openj9_16.0.1_9_openj9-0.26.0.zip",
+    "image_type": "jre",
+    "java_version": "16.0.1+9",
+    "jvm_impl": "openj9",
+    "md5": "8fe623c2fbc2f68a0bb7a07b5edd3eb0",
+    "md5_file": "OpenJDK16U-jre_x64_windows_openj9_16.0.1_9_openj9-0.26.0.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "d8cc4b4d0edc0b1a542161e459d2393a0e2f51dd",
+    "sha1_file": "OpenJDK16U-jre_x64_windows_openj9_16.0.1_9_openj9-0.26.0.zip.sha1",
+    "sha256": "77318a7ebd0fa9cdaa69822a4bd426e28818a5296a1cb510a60b3dff04261f70",
+    "sha256_file": "OpenJDK16U-jre_x64_windows_openj9_16.0.1_9_openj9-0.26.0.zip.sha256",
+    "sha512": "2e715f62cceffdc982903430e9e1441ce0607aa4f67d0e198aa7303858d8b1584ccda27f7d97d3f09da185ee2af7eec8102938608b1087ad2e571ab3623e2683",
+    "sha512_file": "OpenJDK16U-jre_x64_windows_openj9_16.0.1_9_openj9-0.26.0.zip.sha512",
+    "size": 42997357,
+    "url": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9_openj9-0.26.0/OpenJDK16U-jre_x64_windows_openj9_16.0.1_9_openj9-0.26.0.zip",
+    "vendor": "adoptopenjdk",
+    "version": "16.0.1+9.openj9-0.26.0"
+  }
+]

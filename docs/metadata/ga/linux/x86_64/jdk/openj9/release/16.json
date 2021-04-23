@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK16U-jdk_x64_linux_openj9_16.0.1_9_openj9-0.26.0.tar.gz",
+    "image_type": "jdk",
+    "java_version": "16.0.1+9",
+    "jvm_impl": "openj9",
+    "md5": "a1e16f9d17da9c356278f782db4a679e",
+    "md5_file": "OpenJDK16U-jdk_x64_linux_openj9_16.0.1_9_openj9-0.26.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "d076384767ae0b323fce5045bdb7be2e44f3294c",
+    "sha1_file": "OpenJDK16U-jdk_x64_linux_openj9_16.0.1_9_openj9-0.26.0.tar.gz.sha1",
+    "sha256": "7395aaa479a7410bbe5bd5efc43d2669718c61ba146b06657315dbd467b98bf1",
+    "sha256_file": "OpenJDK16U-jdk_x64_linux_openj9_16.0.1_9_openj9-0.26.0.tar.gz.sha256",
+    "sha512": "03b4cc06369204eb59ab919efd495e4fddbb0c19339b3e36af12e5ce3906331bfc0a0a6f6bf6fdaca2bcce2078c0f194ebf7335cba709bcb56c7a16785d5ea5e",
+    "sha512_file": "OpenJDK16U-jdk_x64_linux_openj9_16.0.1_9_openj9-0.26.0.tar.gz.sha512",
+    "size": 205241701,
+    "url": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9_openj9-0.26.0/OpenJDK16U-jdk_x64_linux_openj9_16.0.1_9_openj9-0.26.0.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "16.0.1+9.openj9-0.26.0"
+  }
+]
