@@ -118,7 +118,7 @@ function normalize_os {
 	case "${1}" in
 	'linux'|'Linux'|'alpine-linux') echo 'linux'
 		;;
-	'mac'|'macos'|'macosx'|'osx'|'darwin') echo 'macosx'
+	'mac'|'macos'|'macosx'|'osx'|'darwin'|'macOS') echo 'macosx'
 		;;
 	'win'|'windows'|'Windows') echo 'windows'
 		;;
