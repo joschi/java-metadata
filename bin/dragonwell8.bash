@@ -57,9 +57,16 @@ function download {
 			OS="Linux"
 			ARCH="x64"
 			EXT="tar.gz"
+		elif [[ "${filename}" =~ ^Alibaba_Dragonwell_8.6.6_ ]]
+		then
+			# shellcheck disable=SC2016
+			local regex='s/^Alibaba_Dragonwell_([0-9].{1,})(_GA|Experimental|GA_Experimental|FP1)?_(x64|aarch64)_(Linux|linux|Windows|windows)\.(.*)$/VERSION="$1" RELEASE_TYPE="$2" ARCH="$3" OS="$4" EXT="$5"/g'
+
+			# Parse meta-data from file name
+			eval "$(perl -pe "${regex}" <<< "${asset_name}")"
 		else
 			# shellcheck disable=SC2016
-			local regex='s/^Alibaba_Dragonwell_([0-9].{1,})[-_](GA|Experimental|GA_Experimental|FP1)_(Linux|Windows)_(x64|aarch64)\.(.*)$/VERSION="$1" RELEASE_TYPE="$2" OS="$3" ARCH="$4" EXT="$5"/g'
+			local regex='s/^Alibaba_Dragonwell_([0-9].{1,})[-_](GA|Experimental|GA_Experimental|FP1)_(Linux|linux|Windows|windows)_(x64|aarch64)\.(.*)$/VERSION="$1" RELEASE_TYPE="$2" OS="$3" ARCH="$4" EXT="$5"/g'
 
 			# Parse meta-data from file name
 			eval "$(perl -pe "${regex}" <<< "${asset_name}")"

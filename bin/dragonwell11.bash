@@ -49,7 +49,7 @@ function download {
 		if [[ "${filename}" = Alibaba_Dragonwell* ]];
 		then
 			# shellcheck disable=SC2016
-			regex='s/^Alibaba_Dragonwell_([0-9\+].{1,}.*)_(?:(GA|Experimental|GA_Experimental|FP1)_)?(Linux|Windows)_(aarch64|x64)\.(.*)$/VERSION="$1" JAVA_VERSION="$1" RELEASE_TYPE="$2" OS="$3" ARCH="$4" EXT="$5"/g'
+			regex='s/^Alibaba_Dragonwell_([0-9\+.]{1,}[^_]*)(?:_alpine)?[_-](?:(GA|Experimental|GA_Experimental|FP1)_)?(Linux|linux|Windows|windows)_(aarch64|x64)\.(.*)$/VERSION="$1" JAVA_VERSION="$1" RELEASE_TYPE="$2" OS="$3" ARCH="$4" EXT="$5"/g'
 		else
 			# shellcheck disable=SC2016
 			regex='s/^OpenJDK(?:[0-9\+].{1,})_(x64|aarch64)_(linux|windows)_dragonwell_dragonwell-([0-9.]+)(?:_jdk)?[-_]([0-9._]+)-?(ga|.*)\.(tar\.gz|zip)$/ARCH="$1" OS="$2" VERSION="$3" JAVA_VERSION="$4" RELEASE_TYPE="$5" EXT="$6"/g'
@@ -61,6 +61,7 @@ function download {
 		local OS=""
 		local ARCH=""
 		local EXT=""
+		local FEATURES=""
 
 		# Parse meta-data from file name
 		eval "$(perl -pe "${regex}" <<< "${asset_name}")"
@@ -75,6 +76,11 @@ function download {
 			RELEASE_TYPE='ea'
 		fi
 
+		if [[ "${filename}" =~ "_alpine" ]]
+		then
+			FEATURES='musl'
+		fi
+
 		local json
 		json="$(metadata_json \
 			"${VENDOR}" \
@@ -87,7 +93,7 @@ function download {
 			"$(normalize_arch "${ARCH}")" \
 			"${EXT}" \
 			'jdk' \
-			'' \
+			"${FEATURES}" \
 			"${url}" \
 			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}")" \
