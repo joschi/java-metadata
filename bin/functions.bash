@@ -170,23 +170,6 @@ function find_supported_vendors {
 	jq -r '.[].vendor' "$1" | sort | uniq
 }
 
-function find_supported_releases {
-	jq -r '.[].java_version' "$1" | sed -e 's/^\([0-9]*\).*/\1/' | sort -n | uniq
-}
-
-function aggregate_releases {
-	local releases=$1
-	local metadata_dir="$2"
-	local json="$3"
-
-	for release in $releases
-	do
-		local release_dir="${metadata_dir}/release"
-		ensure_directory "${release_dir}"
-		jq -S "[.[] | select((.java_version == \"${release}\") or (.java_version | startswith(\"${release}.\")) or (.java_version | startswith(\"${release}u\")))]" "${json}" > "${release_dir}/${release}.json"
-	done
-}
-
 function aggregate_metadata {
 	local all_json="$1"
 	local metadata_dir="$2"
@@ -200,10 +183,6 @@ function aggregate_metadata {
 	local jvm_impls='hotspot openj9 graalvm'
 	local vendors
 	vendors=$(find_supported_vendors "${all_json}")
-	local releases
-	releases=$(find_supported_releases "${all_json}")
-
-	aggregate_releases "${releases}" "${metadata_dir}" "${all_json}"
 
 	# https://api.adoptopenjdk.net/swagger-ui/
 	# /v3/binary/latest/{feature_version}/{release_type}/{os}/{arch}/{image_type}/{jvm_impl}/{heap_size}/{vendor}
@@ -212,42 +191,36 @@ function aggregate_metadata {
 		local release_type_dir="${metadata_dir}/${release_type}"
 		ensure_directory "${release_type_dir}"
 		jq -S "[.[] | select(.release_type == \"${release_type}\")]" "${all_json}" > "${release_type_dir}/../${release_type}.json"
-		aggregate_releases "${releases}" "${release_type_dir}" "${release_type_dir}/../${release_type}.json"
 
 		for os in $supported_os
 		do
 			local os_dir="${release_type_dir}/${os}"
 			ensure_directory "${os_dir}"
 			jq -S "[.[] | select(.os == \"${os}\")]" "${release_type_dir}/../${release_type}.json" > "${os_dir}/../${os}.json"
-			aggregate_releases "${releases}" "${os_dir}" "${os_dir}/../${os}.json"
 
 			for arch in $supported_arch
 			do
 				local arch_dir="${os_dir}/${arch}"
 				ensure_directory "${arch_dir}"
 				jq -S "[.[] | select(.architecture == \"${arch}\")]" "${os_dir}/../${os}.json" > "${arch_dir}/../${arch}.json"
-				aggregate_releases "${releases}" "${arch_dir}" "${arch_dir}/../${arch}.json"
 
 				for image_type in $supported_image_type
 				do
 					local image_type_dir="${arch_dir}/${image_type}"
 					ensure_directory "${image_type_dir}"
 					jq -S "[.[] | select(.image_type == \"${image_type}\")]" "${arch_dir}/../${arch}.json" > "${image_type_dir}/../${image_type}.json"
-					aggregate_releases "${releases}" "${image_type_dir}" "${image_type_dir}/../${image_type}.json"
 
 					for jvm_impl in $jvm_impls
 					do
 						local jvm_impl_dir="${image_type_dir}/${jvm_impl}"
 						ensure_directory "${jvm_impl_dir}"
 						jq -S "[.[] | select(.jvm_impl == \"${jvm_impl}\")]" "${image_type_dir}/../${image_type}.json" > "${jvm_impl_dir}/../${jvm_impl}.json"
-						aggregate_releases "${releases}" "${jvm_impl_dir}" "${jvm_impl_dir}/../${jvm_impl}.json"
 
 						for vendor in $vendors
 						do
 							local vendor_dir="${jvm_impl_dir}/${vendor}"
 							ensure_directory "${vendor_dir}"
 							jq -S "[.[] | select(.vendor == \"${vendor}\")]" "${jvm_impl_dir}/../${jvm_impl}.json" > "${vendor_dir}/../${vendor}.json"
-							aggregate_releases "${releases}" "${vendor_dir}" "${vendor_dir}/../${vendor}.json"
 						done
 					done
 				done
