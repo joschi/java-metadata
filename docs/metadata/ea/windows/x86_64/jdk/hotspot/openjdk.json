@@ -44,5 +44,28 @@
     "url": "https://download.java.net/java/early_access/jdk17/19/GPL/openjdk-17-ea+19_windows-x64_bin.zip",
     "vendor": "openjdk",
     "version": "17-ea+19"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "openjdk-17-ea+20_windows-x64_bin.zip",
+    "image_type": "jdk",
+    "java_version": "17-ea+20",
+    "jvm_impl": "hotspot",
+    "md5": "263d4328ff03e3e3e302eaf47d1569ea",
+    "md5_file": "openjdk-17-ea+20_windows-x64_bin.zip.md5",
+    "os": "windows",
+    "release_type": "ea",
+    "sha1": "a5a343afb6abaa9d9d30f14ee50fc459366092aa",
+    "sha1_file": "openjdk-17-ea+20_windows-x64_bin.zip.sha1",
+    "sha256": "dc5e49aa398cd724454363f811da6a3e1c33c484b5fd72c350468cdec4ed2f65",
+    "sha256_file": "openjdk-17-ea+20_windows-x64_bin.zip.sha256",
+    "sha512": "13572536df2a66929502c9c329be2e1ff3ae432e5866627fce20d47154c02753091d9eaef9fef761bf9d6de6688359f2e20268796e0c519fc6ec02e7747cae37",
+    "sha512_file": "openjdk-17-ea+20_windows-x64_bin.zip.sha512",
+    "size": 184570656,
+    "url": "https://download.java.net/java/early_access/jdk17/20/GPL/openjdk-17-ea+20_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "17-ea+20"
   }
 ]

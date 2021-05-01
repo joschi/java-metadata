@@ -3540,5 +3540,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-16/sapmachine-jre-16_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "16"
+  },
+  {
+    "architecture": "ppc64le",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-17-internal.0_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "17-internal.0",
+    "jvm_impl": "hotspot",
+    "md5": "0d05904443fa90c563f4a9ce623ed519",
+    "md5_file": "sapmachine-jre-17-internal.0_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "fe64288f88b87d46e8265648beb2377f022e3b86",
+    "sha1_file": "sapmachine-jre-17-internal.0_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "ec50899807008b05d7fdbffd13b00dd8b661d10b1ab0cc0bb29d0068d9c0a1bc",
+    "sha256_file": "sapmachine-jre-17-internal.0_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "ae4bd18e4fd5b2f326d3c3458bb699eadaaff45ac51a8339e892d48980839e5030aaf3550769aff30d425f874901dacca9823f386da9798ac7e5782df37401b7",
+    "sha512_file": "sapmachine-jre-17-internal.0_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 44846011,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17+20/sapmachine-jre-17-internal.0_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17-internal.0"
   }
 ]
