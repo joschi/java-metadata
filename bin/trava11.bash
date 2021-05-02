@@ -53,7 +53,7 @@ function download {
 	# Parse meta-data from file name
 	eval "$(perl -pe "${filename_regex}" <<< "${asset_name}")"
 
-	local url="https://github.com/TravaOpenJDK/trava-jdk-11-dcevm-newgen/releases/download/${tag_name}/${asset_name}"
+	local url="https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases/download/${tag_name}/${asset_name}"
 	local metadata_file="${METADATA_DIR}/${VENDOR}-${VERSION}-${OS}.${EXT}.json"
 	local archive="${TEMP_DIR}/${VENDOR}-${VERSION}-${OS}-${ARCH:=x86_64}.${EXT}"
 
@@ -91,7 +91,7 @@ function download {
 }
 
 RELEASE_FILE="${TEMP_DIR}/releases-${VENDOR}-11.json"
-download_github_releases 'TravaOpenJDK' 'trava-jdk-11-dcevm-newgen' "${RELEASE_FILE}"
+download_github_releases 'TravaOpenJDK' 'trava-jdk-11-dcevm' "${RELEASE_FILE}"
 
 versions=$(jq -r '.[].tag_name' "${RELEASE_FILE}" | sort -V)
 for version in ${versions}
