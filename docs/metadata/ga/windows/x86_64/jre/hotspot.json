@@ -6317,6 +6317,31 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu13.40.15-ca-fx-jre13.0.7-win_x64.zip",
+    "image_type": "jre",
+    "java_version": "13.0.7",
+    "jvm_impl": "hotspot",
+    "md5": "bdfcc96a6c357950eed8165afc0c700f",
+    "md5_file": "zulu13.40.15-ca-fx-jre13.0.7-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "06a2866e4a3991f63f488c622eaec806f1ea83ce",
+    "sha1_file": "zulu13.40.15-ca-fx-jre13.0.7-win_x64.zip.sha1",
+    "sha256": "4db27b48d74d27a847d14117172da7fe49c31a525e4fe7dc680fab317f513442",
+    "sha256_file": "zulu13.40.15-ca-fx-jre13.0.7-win_x64.zip.sha256",
+    "sha512": "eedc4c98c5f38d1d574c2c7e77e2c515ef78de3f626d70566dfb5096ee1e961b7145ee0dcc0d79a562f3beeeff02d1afee57516b7f2a03d761ecbe495ef20797",
+    "sha512_file": "zulu13.40.15-ca-fx-jre13.0.7-win_x64.zip.sha512",
+    "size": 73083436,
+    "url": "https://static.azul.com/zulu/bin/zulu13.40.15-ca-fx-jre13.0.7-win_x64.zip",
+    "vendor": "zulu",
+    "version": "13.40.15"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "msi",
     "filename": "zulu13.40.15-ca-jre13.0.7-win_x64.msi",
@@ -6740,6 +6765,31 @@
     "url": "https://static.azul.com/zulu/bin/zulu15.29.15-ca-jre15.0.2-win_x64.zip",
     "vendor": "zulu",
     "version": "15.29.15"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu15.32.15-ca-fx-jre15.0.3-win_x64.zip",
+    "image_type": "jre",
+    "java_version": "15.0.3",
+    "jvm_impl": "hotspot",
+    "md5": "b22c899dc9acd20f6783abf8af94ab95",
+    "md5_file": "zulu15.32.15-ca-fx-jre15.0.3-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "3f73606a2864cee62333e155108f38816390e9b9",
+    "sha1_file": "zulu15.32.15-ca-fx-jre15.0.3-win_x64.zip.sha1",
+    "sha256": "5cdbb13135daac571e661e46783a3c92e8c62030e1a4963f6185064e3be73925",
+    "sha256_file": "zulu15.32.15-ca-fx-jre15.0.3-win_x64.zip.sha256",
+    "sha512": "cc712077e8052848093d8b6c345d3edf769d969fddde69e30df563d5abd9827674ec43700f6da235d21381567acf3867b2be5f4de48a0e205e2bb93d32a759e1",
+    "sha512_file": "zulu15.32.15-ca-fx-jre15.0.3-win_x64.zip.sha512",
+    "size": 74738296,
+    "url": "https://static.azul.com/zulu/bin/zulu15.32.15-ca-fx-jre15.0.3-win_x64.zip",
+    "vendor": "zulu",
+    "version": "15.32.15"
   },
   {
     "architecture": "x86_64",
