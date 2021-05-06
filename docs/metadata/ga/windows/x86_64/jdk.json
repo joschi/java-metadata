@@ -15392,6 +15392,31 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu16.30.15-ca-fx-jdk16.0.1-win_x64.zip",
+    "image_type": "jdk",
+    "java_version": "16.0.1",
+    "jvm_impl": "hotspot",
+    "md5": "e5030d19123eea21eadd92e2a291e7e1",
+    "md5_file": "zulu16.30.15-ca-fx-jdk16.0.1-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "ab35981f30e0fc14d560ca54b611029ee38883cb",
+    "sha1_file": "zulu16.30.15-ca-fx-jdk16.0.1-win_x64.zip.sha1",
+    "sha256": "36a45d39b786af205b1150a03de4b8c9f3bcaa0feaac71f0b445353ada69f7d1",
+    "sha256_file": "zulu16.30.15-ca-fx-jdk16.0.1-win_x64.zip.sha256",
+    "sha512": "a13697e3130e4acf8040e1ba071a4b875eae31e6a585494acf22180eb114b0d64281ad5ed9bec2221b51108e8dd8014d7009a8d7a5a98fd3a3fe5462da1b735b",
+    "sha512_file": "zulu16.30.15-ca-fx-jdk16.0.1-win_x64.zip.sha512",
+    "size": 280633963,
+    "url": "https://static.azul.com/zulu/bin/zulu16.30.15-ca-fx-jdk16.0.1-win_x64.zip",
+    "vendor": "zulu",
+    "version": "16.30.15"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "msi",
     "filename": "zulu16.30.15-ca-jdk16.0.1-win_x64.msi",

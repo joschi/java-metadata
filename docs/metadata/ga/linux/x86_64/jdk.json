@@ -20744,6 +20744,31 @@
   {
     "architecture": "x86_64",
     "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu16.30.15-ca-fx-jdk16.0.1-linux_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "16.0.1",
+    "jvm_impl": "hotspot",
+    "md5": "a92f59cf4040dc3c034d8cbed4ba73f0",
+    "md5_file": "zulu16.30.15-ca-fx-jdk16.0.1-linux_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "72d13e40361b63521690a6458dfd36b5c834f597",
+    "sha1_file": "zulu16.30.15-ca-fx-jdk16.0.1-linux_x64.tar.gz.sha1",
+    "sha256": "da332fcd2e73afb228b6bc7775f60aa6ec1b4e7e4b928960c3726c55bf9db653",
+    "sha256_file": "zulu16.30.15-ca-fx-jdk16.0.1-linux_x64.tar.gz.sha256",
+    "sha512": "39be76592d736866537f58784c39739e2fd6603db19355da93a2c63309c67b15133876f96bb1c040f7072c52b0665eaba5e964f20de81ca3923147921600630a",
+    "sha512_file": "zulu16.30.15-ca-fx-jdk16.0.1-linux_x64.tar.gz.sha512",
+    "size": 301308716,
+    "url": "https://static.azul.com/zulu/bin/zulu16.30.15-ca-fx-jdk16.0.1-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "16.30.15"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
       "musl"
     ],
     "file_type": "tar.gz",
