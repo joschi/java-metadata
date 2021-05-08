@@ -31,7 +31,7 @@ function normalize_release_type {
 }
 
 # shellcheck disable=SC2016
-REGEX='s/^openjdk-([0-9]{1,}[^_]*)_(linux|osx|windows)-(aarch64|x64-musl|x64)_bin\.(tar\.gz|zip)$/VERSION="$1" OS="$2" ARCH="$3" EXT="$4"/g'
+REGEX='s/^openjdk-([0-9]{1,}[^_]*)_(linux|osx|macos|windows)-(aarch64|x64-musl|x64)_bin\.(tar\.gz|zip)$/VERSION="$1" OS="$2" ARCH="$3" EXT="$4"/g'
 
 INDEX_ARCHIVE="${TEMP_DIR}/index-archive.html"
 INDEX_14="${TEMP_DIR}/index-14.html"
