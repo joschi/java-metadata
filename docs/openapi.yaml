@@ -32,6 +32,7 @@ components:
         - "java-se-ri"
         - "liberica"
         - "mandrel"
+        - "microsoft"
         - "openjdk"
         - "sapmachine"
         - "trava"
