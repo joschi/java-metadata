@@ -25,9 +25,9 @@ ensure_directory "${CHECKSUM_DIR}"
 REGEX='s/^microsoft-jdk-([0-9+.]{3,})-(linux|macos|macOS|windows)-(x64|aarch64)\.(.*)$/VERSION="$1" OS="$2" ARCH="$3" ARCHIVE="$4"/g'
 
 INDEX_FILE="${TEMP_DIR}/index.html"
-download_file 'https://www.microsoft.com/openjdk' "${INDEX_FILE}"
+download_file 'https://docs.microsoft.com/en-us/java/openjdk/download' "${INDEX_FILE}"
 
-MSJDK_FILES=$(grep -o -E '<a href="https://aka.ms/download-jdk/(microsoft-jdk-.+-(linux|macos|macOS|windows)-(x64|aarch64)\.(tar\.gz|zip|msi|dmg|pkg))">' "${INDEX_FILE}" | perl -pe 's/<a href="https:\/\/aka.ms\/download-jdk\/(.+)">/$1/g' | sort -V)
+MSJDK_FILES=$(grep -o -E '<a href="https://aka.ms/download-jdk/(microsoft-jdk-.+-(linux|macos|macOS|windows)-(x64|aarch64)\.(tar\.gz|zip|msi|dmg|pkg))"' "${INDEX_FILE}" | perl -pe 's/<a href="https:\/\/aka.ms\/download-jdk\/(.+)"/$1/g' | sort -V)
 for MSJDK_FILE in ${MSJDK_FILES}
 do
 	METADATA_FILE="${METADATA_DIR}/${MSJDK_FILE}.json"
@@ -38,7 +38,6 @@ do
 		echo "Skipping ${MSJDK_FILE}"
 	else
 		download_file "${MSJDK_URL}" "${MSJDK_ARCHIVE}"
-		RELEASE_TYPE="ea"
 		VERSION=""
 		OS=""
 		ARCH=""
@@ -52,6 +51,12 @@ do
 			continue
 		else
 			eval "${PARSED_NAME}"
+		fi
+		if [[ "$ARCH" = "aarch64" ]]
+		then
+			RELEASE_TYPE="ea"
+		else
+			RELEASE_TYPE="ga"
 		fi
 
 		METADATA_JSON="$(metadata_json \
