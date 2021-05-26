@@ -16,6 +16,7 @@ Supported OpenJDK distributions:
 * [Java SE Reference Implementations](https://jdk.java.net/)
 * [Liberica](https://bell-sw.com/)
 * [Mandrel](https://github.com/graalvm/mandrel)
+* [Microsoft OpenJDK](https://www.microsoft.com/openjdk)
 * [OpenJDK](https://jdk.java.net/)
 * [SapMachine](https://sap.github.io/SapMachine/)
 * [Trava OpenJDK](https://github.com/TravaOpenJDK/)
