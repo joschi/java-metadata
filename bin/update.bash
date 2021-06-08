@@ -28,6 +28,7 @@ for vendor in \
 	'dragonwell11' \
 	'openjdk' \
 	'openjdk-loom' \
+	'openjdk-panama' \
 	'java-se-ri' \
 	'mandrel' \
 	'trava8' \
