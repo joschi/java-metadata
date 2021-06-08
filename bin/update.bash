@@ -29,6 +29,7 @@ for vendor in \
 	'openjdk' \
 	'openjdk-loom' \
 	'openjdk-panama' \
+	'openjdk-valhalla' \
 	'java-se-ri' \
 	'mandrel' \
 	'trava8' \
