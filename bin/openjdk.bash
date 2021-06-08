@@ -34,18 +34,14 @@ function normalize_release_type {
 REGEX='s/^openjdk-([0-9]{1,}[^_]*)_(linux|osx|macos|windows)-(aarch64|x64-musl|x64)_bin\.(tar\.gz|zip)$/VERSION="$1" OS="$2" ARCH="$3" EXT="$4"/g'
 
 INDEX_ARCHIVE="${TEMP_DIR}/index-archive.html"
-INDEX_14="${TEMP_DIR}/index-14.html"
-INDEX_15="${TEMP_DIR}/index-15.html"
 INDEX_16="${TEMP_DIR}/index-16.html"
-INDEX_17="${TEMP_DIR}/index-15.html"
+INDEX_17="${TEMP_DIR}/index-17.html"
 
 download_file 'http://jdk.java.net/archive/' "${INDEX_ARCHIVE}"
-download_file 'http://jdk.java.net/14/' "${INDEX_14}"
-download_file 'http://jdk.java.net/15/' "${INDEX_15}"
 download_file 'http://jdk.java.net/16/' "${INDEX_16}"
 download_file 'http://jdk.java.net/17/' "${INDEX_17}"
 
-URLS=$(grep -h -o -E 'href="https://download.java.net/java/.*/[^/]*\.(tar\.gz|zip)"' "${INDEX_ARCHIVE}" "${INDEX_14}" "${INDEX_15}" "${INDEX_16}" "${INDEX_17}" | perl -pe 's/href="(.+)"/$1/g' | sort -V)
+URLS=$(grep -h -o -E 'href="https://download.java.net/java/.*/[^/]*\.(tar\.gz|zip)"' "${INDEX_ARCHIVE}" "${INDEX_16}" "${INDEX_17}" | perl -pe 's/href="(.+)"/$1/g' | sort -V)
 for URL in ${URLS}
 do
 	FILE="$(perl -pe 's/https.*\/([^\/]+)/$1/g' <<< "${URL}")"
