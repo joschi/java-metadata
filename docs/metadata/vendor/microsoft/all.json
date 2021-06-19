@@ -125,7 +125,7 @@
     "md5": "4f84e7f76421847c153d8eaa1e47c006",
     "md5_file": "microsoft-jdk-16.0.1.9.1-linux-aarch64.tar.gz.md5",
     "os": "linux",
-    "release_type": "ea",
+    "release_type": "ga",
     "sha1": "33ad619eedd53ed1c902c0197b9f6ce1a64a2f15",
     "sha1_file": "microsoft-jdk-16.0.1.9.1-linux-aarch64.tar.gz.sha1",
     "sha256": "72a80321714888de6bdbf60ac321eaf3f4f199c195895a268a501409be826a62",
