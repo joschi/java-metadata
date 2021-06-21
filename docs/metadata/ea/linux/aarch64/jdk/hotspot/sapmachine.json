@@ -1907,5 +1907,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17+9/sapmachine-jdk-17-eabeta.9_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "17-eabeta.9"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-18-eabeta.1_linux-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "18-eabeta.1",
+    "jvm_impl": "hotspot",
+    "md5": "2c237012e80dfd550b8fd43b004d48b7",
+    "md5_file": "sapmachine-jdk-18-eabeta.1_linux-aarch64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "4d657ea630bafcf4ba539c74627de6af60ced92d",
+    "sha1_file": "sapmachine-jdk-18-eabeta.1_linux-aarch64_bin.tar.gz.sha1",
+    "sha256": "b075f1b5d9759a80042fd31763fdc918aaedf4a6105393e079bfa7c8c9ad73f7",
+    "sha256_file": "sapmachine-jdk-18-eabeta.1_linux-aarch64_bin.tar.gz.sha256",
+    "sha512": "6eed9c6463c7c5772b68e31dd266a588f6fd31861f52f01d819feac3abdecf900b063e1cb99e53629e5317c48fe77c49c31900601560f08b6acad919af8b7693",
+    "sha512_file": "sapmachine-jdk-18-eabeta.1_linux-aarch64_bin.tar.gz.sha512",
+    "size": 191292830,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-18+1/sapmachine-jdk-18-eabeta.1_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "18-eabeta.1"
   }
 ]
