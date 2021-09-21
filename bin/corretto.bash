@@ -163,9 +163,10 @@ function download {
 
 download_github_releases 'corretto' 'corretto-8' "${TEMP_DIR}/releases-corretto-8.json"
 download_github_releases 'corretto' 'corretto-11' "${TEMP_DIR}/releases-corretto-11.json"
+download_github_releases 'corretto' 'corretto-11' "${TEMP_DIR}/releases-corretto-17.json"
 download_github_releases 'corretto' 'corretto-jdk' "${TEMP_DIR}/releases-corretto-jdk.json"
 
-jq -s 'add' "${TEMP_DIR}/releases-corretto-8.json" "${TEMP_DIR}/releases-corretto-11.json" "${TEMP_DIR}/releases-corretto-jdk.json" > "${TEMP_DIR}/releases-corretto.json"
+jq -s 'add' "${TEMP_DIR}/releases-corretto-8.json" "${TEMP_DIR}/releases-corretto-11.json"  "${TEMP_DIR}/releases-corretto-17.json" "${TEMP_DIR}/releases-corretto-jdk.json" > "${TEMP_DIR}/releases-corretto.json"
 
 for CORRETTO_VERSION in $(jq -r '.[].tag_name' "${TEMP_DIR}/releases-corretto.json" | sort -V)
 do
