@@ -66,6 +66,18 @@ function download {
 		return 0
 	fi
 
+	if [[ "${image_type}" = 'sources' ]]
+	then
+		echo "Skipping sources ${filename}"
+		return 0
+	fi
+
+	if [[ "${image_type}" = 'staticlibs' ]]
+	then
+		echo "Skipping static libraries ${filename}"
+		return 0
+	fi
+
 	local ext
 	# shellcheck disable=SC2016
 	ext=$(echo "${filename}" | perl -pe 's/^.*\.(zip|tar\.gz)$/$1/g')
