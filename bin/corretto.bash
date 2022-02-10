@@ -52,7 +52,7 @@ function get_archs_for_os {
 		;;
 	'alpine-linux') echo 'x64'
 		;;
-	'macosx') echo 'x64'
+	'macosx') echo 'x64' 'aarch64'
 		;;
 	'windows') echo 'x64' 'x86'
 		;;
