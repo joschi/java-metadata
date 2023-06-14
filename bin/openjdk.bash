@@ -34,18 +34,18 @@ function normalize_release_type {
 REGEX='s/^openjdk-([0-9]{1,}[^_]*)_(linux|osx|macos|windows)-(aarch64|x64-musl|x64)_bin\.(tar\.gz|zip)$/VERSION="$1" OS="$2" ARCH="$3" EXT="$4"/g'
 
 INDEX_ARCHIVE="${TEMP_DIR}/index-archive.html"
-INDEX_18="${TEMP_DIR}/index-18.html"
 INDEX_19="${TEMP_DIR}/index-19.html"
 INDEX_20="${TEMP_DIR}/index-20.html"
 INDEX_21="${TEMP_DIR}/index-21.html"
+INDEX_22="${TEMP_DIR}/index-22.html"
 
 download_file 'http://jdk.java.net/archive/' "${INDEX_ARCHIVE}"
-download_file 'http://jdk.java.net/18/' "${INDEX_18}"
 download_file 'http://jdk.java.net/19/' "${INDEX_19}"
 download_file 'http://jdk.java.net/20/' "${INDEX_20}"
 download_file 'http://jdk.java.net/21/' "${INDEX_21}"
+download_file 'http://jdk.java.net/22/' "${INDEX_22}"
 
-URLS=$(grep -h -o -E 'href="https://download.java.net/java/.*/[^/]*\.(tar\.gz|zip)"' "${INDEX_ARCHIVE}" "${INDEX_18}" "${INDEX_19}" "${INDEX_20}" | perl -pe 's/href="(.+)"/$1/g' | sort -V)
+URLS=$(grep -h -o -E 'href="https://download.java.net/java/.*/[^/]*\.(tar\.gz|zip)"' "${INDEX_ARCHIVE}" "${INDEX_19}" "${INDEX_20}" "${INDEX_21}" "${INDEX_22}" | perl -pe 's/href="(.+)"/$1/g' | sort -V)
 for URL in ${URLS}
 do
 	FILE="$(perl -pe 's/https.*\/([^\/]+)/$1/g' <<< "${URL}")"
