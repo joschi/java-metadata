@@ -31,7 +31,7 @@ vendors=(
 	"$(cmd 'semeru16')"
 	"$(cmd 'semeru17')"
 	"$(cmd 'graalvm-legacy')"
-	"$(cmd 'graalvm')"
+	"$(cmd 'graalvm-ce')"
 	"$(cmd 'zulu')"
 	"$(cmd 'sapmachine')"
 	"$(cmd 'liberica')"

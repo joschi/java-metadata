@@ -34,6 +34,7 @@ function download {
 	then
 		echo "Skipping ${filename}"
 	else
+		# Prior graalvm 23         : graalvm-ce-java17-darwin-amd64-22.3.2.tar.gz
 		# shellcheck disable=SC2016
 		local regex='s/^graalvm-ce-(?:complete-)?java([0-9]{1,2})-(linux|darwin|windows)-(aarch64|amd64)-([0-9+.]{2,})\.(zip|tar\.gz)$/JAVA_VERSION="$1" OS="$2" ARCH="$3" VERSION="$4" EXT="$5"/g'
 
