@@ -40,6 +40,7 @@ vendors=(
 	"$(cmd 'dragonwell11')"
 	"$(cmd 'dragonwell17')"
 	"$(cmd 'oracle')"
+	"$(cmd 'oracle-graalvm')"
 	"$(cmd 'openjdk')"
 	"$(cmd 'openjdk-panama')"
 	"$(cmd 'openjdk-valhalla')"
