@@ -42,7 +42,6 @@ function download {
 		local JAVA_VERSION=""
 		local OS=""
 		local ARCH=""
-		local VERSION=""
 		local EXT=""
 
 		# Parse meta-data from file name
@@ -55,7 +54,7 @@ function download {
 			"${VENDOR}" \
 			"${filename}" \
 			'ga' \
-			"${VERSION}+java${JAVA_VERSION}" \
+			"${JAVA_VERSION}" \
 			"${JAVA_VERSION}" \
 			'graalvm' \
 			"$(normalize_os "${OS}")" \
