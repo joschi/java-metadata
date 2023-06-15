@@ -34,8 +34,8 @@ function download {
 	then
 		echo "Skipping ${filename}"
 	else
-	  # Starting from graalvm 23 : graalvm-community-jdk-17.0.7_macos-aarch64_bin.tar.gz
-	  #                            graalvm-community-jdk-17.0.7_linux-x64_bin.tar.gz
+		# Starting from graalvm 23 : graalvm-community-jdk-17.0.7_macos-aarch64_bin.tar.gz
+		#                            graalvm-community-jdk-17.0.7_linux-x64_bin.tar.gz
 		# shellcheck disable=SC2016
 		local regex='s/^graalvm-community-jdk-([0-9]{1,2}\.[0-9]{1}\.[0-9]{1,3})_(linux|macos|windows)-(aarch64|x64)_bin\.(zip|tar\.gz)$/JAVA_VERSION="$1" OS="$2" ARCH="$3" EXT="$4"/g'
 
