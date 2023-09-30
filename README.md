@@ -21,6 +21,7 @@ Supported OpenJDK distributions:
 * [Microsoft OpenJDK](https://www.microsoft.com/openjdk)
 * [OpenJDK](https://jdk.java.net/)
 * [Oracle JDK](https://www.oracle.com/java/)
+* [Oracle GraalVM](https://www.graalvm.org/)
 * [SapMachine](https://sap.github.io/SapMachine/)
 * [Tencent Kona](https://cloud.tencent.com/document/product/1149)
 * [Trava OpenJDK](https://github.com/TravaOpenJDK/)
