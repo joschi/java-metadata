@@ -21,34 +21,37 @@ CHECKSUM_DIR="${2}/${VENDOR}"
 ensure_directory "${METADATA_DIR}"
 ensure_directory "${CHECKSUM_DIR}"
 
-function normalize_release_type {
-	case "${1}" in
-	"ca"|"ca-fx"|"") echo 'ga'
-		;;
-	"ea") echo 'ea'
-		;;
-	"ca-dbg"|"ca-fx-dbg"|"dbg") echo 'debug'
-		;;
-	*) return 1
-		;;
-	esac
-}
-
-function normalize_features {
-	declare -a features
-	if [[ "${1}" == "ca-fx" ]] || [[ "${1}" == "ca-fx-dbg" ]]
-	then
-		features+=("javafx")
-	fi
-	if [[ "${2}" == "musl_x64" ]]
-	then
-		features+=("musl")
-	fi
-	echo "${features[@]}"
-}
-
 # shellcheck disable=SC2016
 REGEX='s/^jdk-([0-9+.]{2,})_(linux|macos|windows)-(x64|aarch64)_bin\.(tar\.gz|zip|msi|dmg|exe|deb|rpm)$/VERSION="$1" OS="$2" ARCH="$3" ARCHIVE="$4"/g'
+
+function current_releases {
+	local version="$1"
+
+	# https://www.oracle.com/java/technologies/jdk-script-friendly-urls/
+	local -a params=(
+		'linux,aarch64,rpm:tar.gz'
+		'linux,x64,deb:rpm:tar.gz'
+		'macos,aarch64,dmg:tar.gz'
+		'macos,x64,dmg:tar.gz'
+		'windows,x64,exe:msi:zip'
+		)
+	for param in "${params[@]}"
+	do
+		local os
+		os=$(cut -f1 -d, <<<"$param")
+		local arch
+		arch=$(cut -f2 -d, <<<"$param")
+		local ext_list
+		ext_list=$(cut -f3 -d, <<<"$param")
+		local exts
+		exts=$(cut -f3 -d: <<<"$ext_list")
+
+		for ext in ${exts}
+		do
+			echo "graalvm-jdk-${version}_${os}-${arch}_bin.${ext}"
+		done
+	done
+}
 
 function download_and_parse {
 	MAJOR_VERSION="${1}"
@@ -57,7 +60,10 @@ function download_and_parse {
 	download_file "https://www.oracle.com/java/technologies/javase/jdk${MAJOR_VERSION}-archive-downloads.html" "${INDEX_FILE}"
 
 	JDK_FILES=$(grep -o -E '<a href="https://download\.oracle\.com/java/.+/archive/(jdk-.+_(linux|macos|windows)-(x64|aarch64)_bin\.(tar\.gz|zip|msi|dmg|exe|deb|rpm))">' "${INDEX_FILE}" | perl -pe 's#<a href="https://download\.oracle\.com/java/.+/archive/(.+)">#$1#g' | sort -V)
-	for JDK_FILE in ${JDK_FILES}
+	CURRENT_RELEASE=$(curl -sSf https://www.oracle.com/java/technologies/downloads/ | (grep "<h3 id=\"java${MAJOR_VERSION}\"" || true) | perl -pe 's#<h3 id="java[0-9]{2}">JDK Development Kit (.+) downloads</h3>#$1#g')
+	JDK_FILES_CURRENT=$(current_releases "${CURRENT_RELEASE}")
+
+	for JDK_FILE in ${JDK_FILES} ${JDK_FILES_CURRENT}
 	do
 		METADATA_FILE="${METADATA_DIR}/${JDK_FILE}.json"
 		JDK_ARCHIVE="${TEMP_DIR}/${JDK_FILE}"
@@ -109,7 +115,7 @@ function download_and_parse {
 	done
 }
 
-for version in 17 18 19 20 21
+for version in 17 18 19 20 21 22
 do
 	download_and_parse "$version"
 done
