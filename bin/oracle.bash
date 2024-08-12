@@ -43,10 +43,8 @@ function current_releases {
 		arch=$(cut -f2 -d, <<<"$param")
 		local ext_list
 		ext_list=$(cut -f3 -d, <<<"$param")
-		local exts
-		exts=$(cut -f3 -d: <<<"$ext_list")
 
-		for ext in ${exts}
+		for ext in ${ext_list//:/ }
 		do
 			echo "jdk-${version}_${os}-${arch}_bin.${ext}"
 		done
