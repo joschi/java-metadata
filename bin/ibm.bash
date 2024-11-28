@@ -51,7 +51,7 @@ do
         OS="linux"
         ARCH=$ARCHITECTURE
         ARCHIVE=$(echo "$IBM_FILE" | perl -pe 's#.*\.([^.]+)$#$1#g')
-        if [[ "${IBM_FILE}" = *"jdk"* ]]
+        if [[ "${IBM_FILE}" = *"sdk"* ]]
         then
           IMAGE_TYPE="jdk"
         else
