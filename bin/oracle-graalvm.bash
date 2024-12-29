@@ -77,7 +77,11 @@ function download_and_parse {
 		then
 			echo "Skipping ${JDK_FILE}"
 		else
-			download_file "${JDK_URL}" "${JDK_ARCHIVE}"
+			if ! download_file "${JDK_URL}" "${JDK_ARCHIVE}";
+			then
+				echo "Failed to download ${JDK_FILE}, skipping"
+				continue
+			fi
 			VERSION=""
 			OS=""
 			ARCH=""
