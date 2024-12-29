@@ -67,7 +67,7 @@ function download_and_parse {
 
 	for JDK_FILE in ${JDK_FILES} ${JDK_FILES_CURRENT}
 	do
-		if [[ -n "${JDK_FILE}" ]]
+		if [[ -z "${JDK_FILE}" ]]
 		then
 			continue
 		fi
