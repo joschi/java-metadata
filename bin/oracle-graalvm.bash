@@ -65,7 +65,7 @@ function download_and_parse {
 
 	for JDK_FILE in ${JDK_FILES} ${JDK_FILES_CURRENT}
 	do
-		if [[ -n "${JDK_FILE}" ]]
+		if [[ -z "${JDK_FILE}" ]]
 		then
 			continue
 		fi
@@ -77,7 +77,11 @@ function download_and_parse {
 		then
 			echo "Skipping ${JDK_FILE}"
 		else
-			download_file "${JDK_URL}" "${JDK_ARCHIVE}"
+			if ! download_file "${JDK_URL}" "${JDK_ARCHIVE}";
+			then
+				echo "Failed to download ${JDK_FILE}, skipping"
+				continue
+			fi
 			VERSION=""
 			OS=""
 			ARCH=""
