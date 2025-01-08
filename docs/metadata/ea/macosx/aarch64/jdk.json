@@ -32568,5 +32568,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu24.0.65-beta-jdk24.0.0-beta.28-macosx_aarch64.zip",
     "vendor": "zulu",
     "version": "24.0.65"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "zulu24.0.67-beta-jdk24.0.0-beta.29-macosx_aarch64.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0-beta.29",
+    "jvm_impl": "hotspot",
+    "md5": "d0c2dad66cd503ae36ee1a4bbfae19c7",
+    "md5_file": "zulu24.0.67-beta-jdk24.0.0-beta.29-macosx_aarch64.zip.md5",
+    "os": "macosx",
+    "release_type": "ea",
+    "sha1": "e8967ed905aee35e5436f9042f7cc1f6dfe999cb",
+    "sha1_file": "zulu24.0.67-beta-jdk24.0.0-beta.29-macosx_aarch64.zip.sha1",
+    "sha256": "67f1c307548fd58f9c250815c34332faa044690766c20da8f9de53f56bb193ca",
+    "sha256_file": "zulu24.0.67-beta-jdk24.0.0-beta.29-macosx_aarch64.zip.sha256",
+    "sha512": "17f3791ef76d673f8523cf685b49712cff842be5fb3e0d37094d6c3cc466b79047f7dec809d5c80488e4bf592aaf6426081a23fbd575c1f9cedab71f8a6cd99b",
+    "sha512_file": "zulu24.0.67-beta-jdk24.0.0-beta.29-macosx_aarch64.zip.sha512",
+    "size": 225948005,
+    "url": "https://static.azul.com/zulu/bin/zulu24.0.67-beta-jdk24.0.0-beta.29-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "24.0.67"
   }
 ]
