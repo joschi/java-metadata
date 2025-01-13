@@ -23,11 +23,10 @@ ensure_directory "${CHECKSUM_DIR}"
 
 
 function download {
-	local tag_name="${1}"
-	local asset_name="${2}"
-	local url="${3}"
-	local release_type="${4}"
-	local description="${5}"
+	local asset_name="${1}"
+	local url="${2}"
+	local release_type="${3}"
+	local description="${4}"
 	local filename="${asset_name}"
 
 	local metadata_file="${METADATA_DIR}/${filename}.json"
@@ -42,6 +41,7 @@ function download {
 	then
 		download_file "${url}" "${archive}" || return 1
 
+		# shellcheck disable=SC2016
 		local regex='s/^jbr(sdk)?(?:_\w+)?-([0-9\+.]{1,})-(linux-musl|linux|osx|macos|windows)-(aarch64|x64|x86)(?:-\w+)?-(b[0-9\+.]{1,})(?:_\w+)?\.(tar\.gz|zip|pkg)$/ARCH="$4" OS="$3" VERSION="$2$5" JAVA_VERSION="$3" IMAGE_TYPE="$1" EXT="$6"/g'
 
 		local VERSION=""
@@ -125,7 +125,7 @@ download_github_releases 'JetBrains' 'JetBrainsRuntime' "${RELEASE_FILE}"
 versions=$(jq -r '.[].tag_name' "${RELEASE_FILE}" | sort -V)
 
 assets_json=${TEMP_DIR}/assets-parsed.json
-jq  '[ .[] | ({version: .tag_name, type: (if .prerelease then "ea" else "ga" end)  }  + (.body | capture("\\|\\s*(?:\\*\\*)?(?<description>[^|]+?)(?:\\*\\*)?\\s*\\|\\s*\\[(?<file>[^\\]]+)\\]\\((?<url>https:[^\\)]+)\\)\\s*\\|\\s*\\[checksum\\]\\((?<checksum_url>https:[^\\)]+)\\)";"g")) ) ]' $RELEASE_FILE > "${assets_json}"
+jq  '[ .[] | ({version: .tag_name, type: (if .prerelease then "ea" else "ga" end)  }  + (.body | capture("\\|\\s*(?:\\*\\*)?(?<description>[^|]+?)(?:\\*\\*)?\\s*\\|\\s*\\[(?<file>[^\\]]+)\\]\\((?<url>https:[^\\)]+)\\)\\s*\\|\\s*\\[checksum\\]\\((?<checksum_url>https:[^\\)]+)\\)";"g")) ) ]' "$RELEASE_FILE" > "${assets_json}"
 
 for version in ${versions}
 do
@@ -136,7 +136,7 @@ do
 	readarray -t descriptions < <(jq -r ".[] | select(.version == \"${version}\") | .description" "${assets_json}")
 	for ((i = 0; i < ${#assets[@]}; i++));
 	do
-		download "${version}" "${assets[i]}" "${download_urls[i]}" "${release_types[i]}" "${descriptions[i]}" || echo "Cannot download ${asset}"
+		download "${assets[i]}" "${download_urls[i]}" "${release_types[i]}" "${descriptions[i]}" || echo "Cannot download ${asset_name}"
 	done
 
 done
