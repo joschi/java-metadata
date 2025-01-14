@@ -68,7 +68,7 @@ vendors=(
 	"$(cmd 'jetbrains')"
 )
 
-printf '%s\n' "${vendors[@]}" | parallel -P 1 --verbose "bash {} ${METADATA_DIR}/vendor ${CHECKSUM_DIR} ; echo \"{} EXIT CODE: \$?\""
+printf '%s\n' "${vendors[@]}" | parallel -P 4 --verbose "bash {} ${METADATA_DIR}/vendor ${CHECKSUM_DIR} ; echo \"{} EXIT CODE: \$?\""
 
 jq -s 'add' "${METADATA_DIR}"/vendor/*/all.json > "${METADATA_DIR}/all.json"
 aggregate_metadata "${METADATA_DIR}/all.json" "${METADATA_DIR}"
