@@ -42,7 +42,7 @@ function download {
 		download_file "${url}" "${archive}" || return 1
 
 		# shellcheck disable=SC2016
-		local regex='s/^jbr(sdk)?(?:_\w+)?-([0-9\+.]{1,})-(linux-musl|linux|osx|macos|windows)-(aarch64|x64|x86)(?:-\w+)?-(b[0-9\+.]{1,})(?:_\w+)?\.(tar\.gz|zip|pkg)$/ARCH="$4" OS="$3" VERSION="$2$5" JAVA_VERSION="$3" IMAGE_TYPE="$1" EXT="$6"/g'
+		local regex='s/^jbr(sdk)?(?:_\w+)?-([0-9][0-9\+._]{1,})-(linux-musl|linux|osx|macos|windows)-(aarch64|x64|x86)(?:-\w+)?-(b[0-9\+.]{1,})(?:_\w+)?\.(tar\.gz|zip|pkg)$/ARCH="$4" OS="$3" VERSION="$2$5" JAVA_VERSION="$3" IMAGE_TYPE="$1" EXT="$6"/g'
 
 		local VERSION=""
 		local JAVA_VERSION=""
@@ -56,6 +56,7 @@ function download {
 		# Parse meta-data from file name
 		eval "$(perl -pe "${regex}" <<< "${asset_name}")"
 
+		VERSION="${VERSION//_/.}"
 
 		if [[ -z "${IMAGE_TYPE}" ]]
 		then
