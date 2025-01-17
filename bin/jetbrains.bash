@@ -32,8 +32,6 @@ function download {
 	local metadata_file="${METADATA_DIR}/${filename}.json"
 	local archive="${TEMP_DIR}/${filename}"
 
-	echo "asset ${asset_name} : |${description}|"
-
 	if [[ -f "${metadata_file}" ]]
 	then
 		echo "Skipping ${filename}"
