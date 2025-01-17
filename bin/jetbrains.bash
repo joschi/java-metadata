@@ -57,6 +57,11 @@ function download {
 		eval "$(perl -pe "${regex}" <<< "${asset_name}")"
 
 		VERSION="${VERSION//_/.}"
+		if [[ -z "$VERSION" ]]; then
+			echo "Skipping ${filename}, failed to detech metadata"
+			return
+		fi
+
 
 		if [[ -z "${IMAGE_TYPE}" ]]
 		then
