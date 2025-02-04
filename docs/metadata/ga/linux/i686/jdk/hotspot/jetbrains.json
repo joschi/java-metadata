@@ -3205,5 +3205,53 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-linux-x86-b825.77_diz.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6b825.77"
+  },
+  {
+    "architecture": "i686",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-linux-x86-b872.80.tar.gz",
+    "image_type": "jdk",
+    "java_version": "linux",
+    "jvm_impl": "hotspot",
+    "md5": "63470cd1f7f0e9f22b71123a8062e646",
+    "md5_file": "jbrsdk-21.0.6-linux-x86-b872.80.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "ca7ed43b0055156cc1a3489b134714952a262fb2",
+    "sha1_file": "jbrsdk-21.0.6-linux-x86-b872.80.tar.gz.sha1",
+    "sha256": "8c81bed2e1d64de2e8abdf582e72f864b2ea9600e0c85b373031119fa0685900",
+    "sha256_file": "jbrsdk-21.0.6-linux-x86-b872.80.tar.gz.sha256",
+    "sha512": "6fe490b1815a0d74c82defc7d3387fc0bdbd6ea07a0d3fa2fb9ce19446b5cd8ed0d252da6ba2e4cb21a544a248fc57a55c97228e9ea88fee1ed1e19495275973",
+    "sha512_file": "jbrsdk-21.0.6-linux-x86-b872.80.tar.gz.sha512",
+    "size": 220312355,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-linux-x86-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
+  },
+  {
+    "architecture": "i686",
+    "features": [
+      "debug"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-linux-x86-b872.80_diz.tar.gz",
+    "image_type": "jdk",
+    "java_version": "linux",
+    "jvm_impl": "hotspot",
+    "md5": "0d19b1cea90ff2341b2958bde1466e06",
+    "md5_file": "jbrsdk-21.0.6-linux-x86-b872.80_diz.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "721dbdb5fe9dea22667036259e3895532e9746ba",
+    "sha1_file": "jbrsdk-21.0.6-linux-x86-b872.80_diz.tar.gz.sha1",
+    "sha256": "2d439ef27e23c814957ca3fe8b95b1bb3524e064e45723d92cbd345a842ee3f5",
+    "sha256_file": "jbrsdk-21.0.6-linux-x86-b872.80_diz.tar.gz.sha256",
+    "sha512": "2bf37949161783d3921885d093915fd2a0a65018abad4fbe775779000f9d18df4accce763483fa33466bcc07e516b70b21984c0fe20507cdb9a69c4c31a6c58b",
+    "sha512_file": "jbrsdk-21.0.6-linux-x86-b872.80_diz.tar.gz.sha512",
+    "size": 213071471,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-linux-x86-b872.80_diz.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
   }
 ]

@@ -32636,6 +32636,29 @@
     "version": "21.0.6b825.77"
   },
   {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "jbr-21.0.6-windows-aarch64-b872.80.tar.gz",
+    "image_type": "jre",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "7570de1f1f68fcdea3967c3d9bdb1e98",
+    "md5_file": "jbr-21.0.6-windows-aarch64-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "89cab26235c8a0c562cf0ad08cb8c453fb81b523",
+    "sha1_file": "jbr-21.0.6-windows-aarch64-b872.80.tar.gz.sha1",
+    "sha256": "1d05fedc3f72272eecbd16e9c570fcf26cdd7873bb8c935f854bce45ee9a79b1",
+    "sha256_file": "jbr-21.0.6-windows-aarch64-b872.80.tar.gz.sha256",
+    "sha512": "96ddfcd192502ec8e1e3730a82f3497e52ee11fb5871a8ca443037467fdf15c9a0edb5ba5ad87866c61608b48ba0a086b95c45ee9e22f3a90d11a9c5fc34b2ac",
+    "sha512_file": "jbr-21.0.6-windows-aarch64-b872.80.tar.gz.sha512",
+    "size": 75514499,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-windows-aarch64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
+  },
+  {
     "architecture": "x86_64",
     "features": [],
     "file_type": "tar.gz",
@@ -32682,6 +32705,29 @@
     "version": "21.0.6b825.77"
   },
   {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "jbr-21.0.6-windows-x64-b872.80.tar.gz",
+    "image_type": "jre",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "340cdff8675e62be849c7b7bd704561d",
+    "md5_file": "jbr-21.0.6-windows-x64-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "3175bea0ca4e591fb5b4b96ac2f98bf6119e62bd",
+    "sha1_file": "jbr-21.0.6-windows-x64-b872.80.tar.gz.sha1",
+    "sha256": "63e0a2651f72a68bb6f3670a462c018a91793a05956d86de372338e127b15311",
+    "sha256_file": "jbr-21.0.6-windows-x64-b872.80.tar.gz.sha256",
+    "sha512": "48b131fd1a823102091cf64faea63f6ca175d25f522458651ea0f9a9dcf9fb38f563e2c85c0c894fa522eb6a2fffde8f065f60f038b2a984ba0e13c6c93d2013",
+    "sha512_file": "jbr-21.0.6-windows-x64-b872.80.tar.gz.sha512",
+    "size": 85055410,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-windows-x64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
+  },
+  {
     "architecture": "i686",
     "features": [],
     "file_type": "tar.gz",
@@ -32726,6 +32772,29 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-windows-x86-b825.77.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6b825.77"
+  },
+  {
+    "architecture": "i686",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "jbr-21.0.6-windows-x86-b872.80.tar.gz",
+    "image_type": "jre",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "50211e5b6923ca25688796097ec688f4",
+    "md5_file": "jbr-21.0.6-windows-x86-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "39163d5d852d2889c4c5ac9e5c4e1f753ea46730",
+    "sha1_file": "jbr-21.0.6-windows-x86-b872.80.tar.gz.sha1",
+    "sha256": "ea266e4cddf71f1dd18fa25b6a68bd13c6da021139e9e0c2b4a534191f4161dc",
+    "sha256_file": "jbr-21.0.6-windows-x86-b872.80.tar.gz.sha256",
+    "sha512": "770cf978ab9f3f2d245e0494367bdcc9dfb1e7f548c50361fd8416a5ac97ebfe4a22141029c768077b27530797bdb59bdc7428a972cce1fa41f8fa8ad5f2f3cc",
+    "sha512_file": "jbr-21.0.6-windows-x86-b872.80.tar.gz.sha512",
+    "size": 84599687,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-windows-x86-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
   },
   {
     "architecture": "x86_64",
@@ -37433,6 +37502,32 @@
     "version": "21.0.6b825.77"
   },
   {
+    "architecture": "aarch64",
+    "features": [
+      "fastdebug",
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbr_fd-21.0.6-windows-aarch64-b872.80.tar.gz",
+    "image_type": "jre",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "d3ab0b112574b4963be1e8c6a729b548",
+    "md5_file": "jbr_fd-21.0.6-windows-aarch64-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "e5a4a420f7a5770fc7f2fdd6de90d3de7adf3492",
+    "sha1_file": "jbr_fd-21.0.6-windows-aarch64-b872.80.tar.gz.sha1",
+    "sha256": "326d99f39e67840ad6fb1a59f85ecca4a6d9ae8c6b649d51217a0de44643540d",
+    "sha256_file": "jbr_fd-21.0.6-windows-aarch64-b872.80.tar.gz.sha256",
+    "sha512": "c67f65a0d86a43d0ef10e02658767a3f1525a3d8dc1876c985d54eb2a75c107b2eb0112a81fecf2a695c2ffea9ee9f59d0b19349775f9dc8017774c5b72943c5",
+    "sha512_file": "jbr_fd-21.0.6-windows-aarch64-b872.80.tar.gz.sha512",
+    "size": 207367619,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-21.0.6-windows-aarch64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
+  },
+  {
     "architecture": "x86_64",
     "features": [
       "fastdebug",
@@ -37483,6 +37578,32 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-21.0.6-windows-x64-b825.77.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6b825.77"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "fastdebug",
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbr_fd-21.0.6-windows-x64-b872.80.tar.gz",
+    "image_type": "jre",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "09ef280a35633736c1c5652cb5b82e72",
+    "md5_file": "jbr_fd-21.0.6-windows-x64-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "043fec848db304dfb4e6875ecc2d781c3e41f39d",
+    "sha1_file": "jbr_fd-21.0.6-windows-x64-b872.80.tar.gz.sha1",
+    "sha256": "39cbf759ca3ab3bd05d3cd6c2689b5d1dcafbd1549659e3c714245cc9c8443b3",
+    "sha256_file": "jbr_fd-21.0.6-windows-x64-b872.80.tar.gz.sha256",
+    "sha512": "628367f194215794f49fe95de4ef1868c0477040fdabcebf42954dec0d59b545490a62a67c1652beccec4e17d761bee56923eee805ef4c6f10e848cc3bfce600",
+    "sha512_file": "jbr_fd-21.0.6-windows-x64-b872.80.tar.gz.sha512",
+    "size": 238343701,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-21.0.6-windows-x64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
   },
   {
     "architecture": "x86_64",
@@ -41985,6 +42106,31 @@
     "version": "21.0.6b825.77"
   },
   {
+    "architecture": "aarch64",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbr_jcef-21.0.6-windows-aarch64-b872.80.tar.gz",
+    "image_type": "jre",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "8dcbdc39eaa3cfe265ebbebad49779ac",
+    "md5_file": "jbr_jcef-21.0.6-windows-aarch64-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "38b7bf9f9001713271ee8c1e3b1c46967613acc8",
+    "sha1_file": "jbr_jcef-21.0.6-windows-aarch64-b872.80.tar.gz.sha1",
+    "sha256": "2dfe5b50243d56e20953bf672fcb813b79e90cb8aae204e64a7528d971e83854",
+    "sha256_file": "jbr_jcef-21.0.6-windows-aarch64-b872.80.tar.gz.sha256",
+    "sha512": "6b92a4b98f2806d2a88bc3b44966e8226e0615820643176671b898f9c40bfb6633b83db3de825badc8cd5d419b22050fe1ff40c40d09c0a6998e8948205157b9",
+    "sha512_file": "jbr_jcef-21.0.6-windows-aarch64-b872.80.tar.gz.sha512",
+    "size": 204064203,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-windows-aarch64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
+  },
+  {
     "architecture": "x86_64",
     "features": [
       "jcef"
@@ -42033,6 +42179,31 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-windows-x64-b825.77.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6b825.77"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbr_jcef-21.0.6-windows-x64-b872.80.tar.gz",
+    "image_type": "jre",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "ec7605bb0bdc46e07d8d80c9080b6637",
+    "md5_file": "jbr_jcef-21.0.6-windows-x64-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "13d265b77f439f7ec522e188aee6acc9f29022d2",
+    "sha1_file": "jbr_jcef-21.0.6-windows-x64-b872.80.tar.gz.sha1",
+    "sha256": "3f1b9a50961a133862235435ae1f3e16d0e5fdaab85df811cfe68d05dbf85c5b",
+    "sha256_file": "jbr_jcef-21.0.6-windows-x64-b872.80.tar.gz.sha256",
+    "sha512": "2ef250fcfe0864d4c5511edb3cd419785b3669fcf07d3ce9ee20172462100ff28034e1cf905cc0e98e4d7e71a2961da4a5feee0722e36edb965da954e453208c",
+    "sha512_file": "jbr_jcef-21.0.6-windows-x64-b872.80.tar.gz.sha512",
+    "size": 233588144,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-windows-x64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
   },
   {
     "architecture": "x86_64",
@@ -52008,6 +52179,29 @@
   },
   {
     "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-windows-aarch64-b872.80.tar.gz",
+    "image_type": "jdk",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "0c6efd565a526e809b47251b36f82813",
+    "md5_file": "jbrsdk-21.0.6-windows-aarch64-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "87739d7cd9c7f123b5a5b93ae5423aed1cb8e072",
+    "sha1_file": "jbrsdk-21.0.6-windows-aarch64-b872.80.tar.gz.sha1",
+    "sha256": "e88f78e89d4fbb4bb11c311fcc3c216b930e69f69850883e776eb444b224b56d",
+    "sha256_file": "jbrsdk-21.0.6-windows-aarch64-b872.80.tar.gz.sha256",
+    "sha512": "b6e057c06a949b81d8051064f7619d2a2f7c7238efc2610cbfdde183ab0023052038c64b5221ff60025fbcc53435a03977ac0c07ec9f0a28000e1bda058764ac",
+    "sha512_file": "jbrsdk-21.0.6-windows-aarch64-b872.80.tar.gz.sha512",
+    "size": 249922916,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-windows-aarch64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
+  },
+  {
+    "architecture": "aarch64",
     "features": [
       "fastdebug"
     ],
@@ -52057,6 +52251,31 @@
     "version": "21.0.6b825.77"
   },
   {
+    "architecture": "aarch64",
+    "features": [
+      "fastdebug"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-windows-aarch64-fastdebug-b872.80.tar.gz",
+    "image_type": "jdk",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "1f2e886ef45ef220f77def5dfb9a96b7",
+    "md5_file": "jbrsdk-21.0.6-windows-aarch64-fastdebug-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "4047cbbcfd8e07ed42de4d5baf5957c5663d7c0e",
+    "sha1_file": "jbrsdk-21.0.6-windows-aarch64-fastdebug-b872.80.tar.gz.sha1",
+    "sha256": "5b3ca294d0ec0e4779df9bceeeecb200d6e8a56a64879d5ae7f4bad3175e6344",
+    "sha256_file": "jbrsdk-21.0.6-windows-aarch64-fastdebug-b872.80.tar.gz.sha256",
+    "sha512": "60e886198a1d7bdb87ad45e71faa4edadbe7e4d1ed02abfa77d85b0d7162f79c366143f48b778fa778290a3cf5a27c7ecd4dd1db59aa202ab7e8c73c4b20cda5",
+    "sha512_file": "jbrsdk-21.0.6-windows-aarch64-fastdebug-b872.80.tar.gz.sha512",
+    "size": 523004176,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-windows-aarch64-fastdebug-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
+  },
+  {
     "architecture": "x86_64",
     "features": [],
     "file_type": "tar.gz",
@@ -52101,6 +52320,29 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-windows-x64-b825.77.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6b825.77"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-windows-x64-b872.80.tar.gz",
+    "image_type": "jdk",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "98fe96a7c3fd3b2e5a759ad3afaf90cf",
+    "md5_file": "jbrsdk-21.0.6-windows-x64-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "137224d58e302ca820c9aa73d35149bf7c53cac8",
+    "sha1_file": "jbrsdk-21.0.6-windows-x64-b872.80.tar.gz.sha1",
+    "sha256": "d04f6e2935d9276857900f53a8267fd8113e92e4c67eac248682dadd40a33d0e",
+    "sha256_file": "jbrsdk-21.0.6-windows-x64-b872.80.tar.gz.sha256",
+    "sha512": "4937ecc861b4308f9bbdb7cca0dbc5244a329a4583f4ea09570514ebefbce3d70517d56bb96889ebfefc2261b8c02ac8065bce04870e721bbbb1260476be1c30",
+    "sha512_file": "jbrsdk-21.0.6-windows-x64-b872.80.tar.gz.sha512",
+    "size": 264162212,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-windows-x64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
   },
   {
     "architecture": "x86_64",
@@ -52153,6 +52395,31 @@
     "version": "21.0.6b825.77"
   },
   {
+    "architecture": "x86_64",
+    "features": [
+      "fastdebug"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-windows-x64-fastdebug-b872.80.tar.gz",
+    "image_type": "jdk",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "a2a5b86af4b29eaf4b9d56e3e4ea69bb",
+    "md5_file": "jbrsdk-21.0.6-windows-x64-fastdebug-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "e816ed54ceca86dca0c3453379206bd913a2200c",
+    "sha1_file": "jbrsdk-21.0.6-windows-x64-fastdebug-b872.80.tar.gz.sha1",
+    "sha256": "afce3356f6547284b2ad6e39c8acd1ae119458d74eff90fd5c0165f1d11a4e00",
+    "sha256_file": "jbrsdk-21.0.6-windows-x64-fastdebug-b872.80.tar.gz.sha256",
+    "sha512": "74363ace68f681a24abdca035c0f27b38b3f795b7cea07a4e19d47c73196ccb8fa437b0ff9d024c3bd020a2d128cde059fa63bd3fd5a7b86cae8013ee84d3e9b",
+    "sha512_file": "jbrsdk-21.0.6-windows-x64-fastdebug-b872.80.tar.gz.sha512",
+    "size": 581361731,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-windows-x64-fastdebug-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
+  },
+  {
     "architecture": "i686",
     "features": [],
     "file_type": "tar.gz",
@@ -52197,6 +52464,29 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-windows-x86-b825.77.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6b825.77"
+  },
+  {
+    "architecture": "i686",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-windows-x86-b872.80.tar.gz",
+    "image_type": "jdk",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "2751fb63fb2cb91bea685b0399fabb9a",
+    "md5_file": "jbrsdk-21.0.6-windows-x86-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "dc2ef3546b34a3a6d2be9a1d1c22ec73d7d48563",
+    "sha1_file": "jbrsdk-21.0.6-windows-x86-b872.80.tar.gz.sha1",
+    "sha256": "74a69d6d26a93d8e3add3ae2cd1bb4a857d1da7a7f4207606668d623dab7291f",
+    "sha256_file": "jbrsdk-21.0.6-windows-x86-b872.80.tar.gz.sha256",
+    "sha512": "c16ef9fe4da3b9774233c6eda2bdfef6c11a8275c5b57d7c259a2e6c1f9732ae584346766b313aaba6fe349e2961677b7ee67bc5675adcbb07b24133bb99c68f",
+    "sha512_file": "jbrsdk-21.0.6-windows-x86-b872.80.tar.gz.sha512",
+    "size": 264165352,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-windows-x86-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
   },
   {
     "architecture": "x86_64",
@@ -56724,6 +57014,31 @@
     "version": "21.0.6b825.77"
   },
   {
+    "architecture": "aarch64",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk_jcef-21.0.6-windows-aarch64-b872.80.tar.gz",
+    "image_type": "jdk",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "fd7697e46e82ef2545d5d0ecdd3e0d64",
+    "md5_file": "jbrsdk_jcef-21.0.6-windows-aarch64-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "f167f0702217b5941b1d27bea8ef9bb506e5e6c0",
+    "sha1_file": "jbrsdk_jcef-21.0.6-windows-aarch64-b872.80.tar.gz.sha1",
+    "sha256": "569a1d1bb97fac422e39aaa4cf47ccbb223208b9332bda28e63aed18561add8c",
+    "sha256_file": "jbrsdk_jcef-21.0.6-windows-aarch64-b872.80.tar.gz.sha256",
+    "sha512": "e95191d6f226f5c4355c67c56d895df89cd9cbec1c7d9f7dbbeb2bfabc5b4db997f88bcafcd6b26ffe6b4076127878d521f7ae23feb4565fb607e075f803b5c4",
+    "sha512_file": "jbrsdk_jcef-21.0.6-windows-aarch64-b872.80.tar.gz.sha512",
+    "size": 506542975,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-windows-aarch64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
+  },
+  {
     "architecture": "x86_64",
     "features": [
       "jcef"
@@ -56772,6 +57087,31 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-windows-x64-b825.77.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6b825.77"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk_jcef-21.0.6-windows-x64-b872.80.tar.gz",
+    "image_type": "jdk",
+    "java_version": "windows",
+    "jvm_impl": "hotspot",
+    "md5": "47a790eee89841b44d35ddad4a8e7d40",
+    "md5_file": "jbrsdk_jcef-21.0.6-windows-x64-b872.80.tar.gz.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "ea5a94de4944a841ab3a83a013eeb7caf984dd36",
+    "sha1_file": "jbrsdk_jcef-21.0.6-windows-x64-b872.80.tar.gz.sha1",
+    "sha256": "10b2d7704af694345e4b5ae814ad28f1b6f65ccc3b1c118e7098e0d312604c5d",
+    "sha256_file": "jbrsdk_jcef-21.0.6-windows-x64-b872.80.tar.gz.sha256",
+    "sha512": "4a7de5880c746c1275479ee504177b1a9d6294de88fb20166d2a7d1d0b9f79f0bf42299c44450cef1ee696ef2cffc878545b7eef137ea96a977a73b7d694f04e",
+    "sha512_file": "jbrsdk_jcef-21.0.6-windows-x64-b872.80.tar.gz.sha512",
+    "size": 560660796,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-windows-x64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
   },
   {
     "architecture": "x86_64",

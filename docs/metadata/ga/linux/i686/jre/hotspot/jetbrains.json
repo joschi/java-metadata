@@ -1562,5 +1562,28 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-linux-x86-b825.77.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6b825.77"
+  },
+  {
+    "architecture": "i686",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "jbr-21.0.6-linux-x86-b872.80.tar.gz",
+    "image_type": "jre",
+    "java_version": "linux",
+    "jvm_impl": "hotspot",
+    "md5": "35dc18cf633f4ef4a42cd6722b16c24b",
+    "md5_file": "jbr-21.0.6-linux-x86-b872.80.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "0d5b287214aca75769a1dedb2c9c9bae905e538c",
+    "sha1_file": "jbr-21.0.6-linux-x86-b872.80.tar.gz.sha1",
+    "sha256": "fe1149b684f66147a6d14e0b3d4dfd0bc48ff17ca02db8800c0f875173dcadcb",
+    "sha256_file": "jbr-21.0.6-linux-x86-b872.80.tar.gz.sha256",
+    "sha512": "5d4ab7e0411a021cb73711cbc5ab52068750d6aaf3118fefa214c634855c05d97754e9b9b2827818198c1720526b49328842da441352ded5f5ab4c4bad117449",
+    "sha512_file": "jbr-21.0.6-linux-x86-b872.80.tar.gz.sha512",
+    "size": 82461157,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-linux-x86-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6b872.80"
   }
 ]
