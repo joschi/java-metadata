@@ -57093,6 +57093,57 @@
   {
     "architecture": "x86_64",
     "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu17.56.15-ca-crac-jre17.0.14-linux_musl_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.14",
+    "jvm_impl": "hotspot",
+    "md5": "b23858bee0ee27aef0587c93348ef5b9",
+    "md5_file": "zulu17.56.15-ca-crac-jre17.0.14-linux_musl_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "55d7201f5f41a8cf90bd4d665f065439509ea8be",
+    "sha1_file": "zulu17.56.15-ca-crac-jre17.0.14-linux_musl_x64.tar.gz.sha1",
+    "sha256": "b0bee4427d59b625a188839044f21b992eb065040d1d04f4c25f763160c82cf3",
+    "sha256_file": "zulu17.56.15-ca-crac-jre17.0.14-linux_musl_x64.tar.gz.sha256",
+    "sha512": "a5abd96c9367b9f6b12deec17c88dbde17d25e40774c76faa0fcfc52158bc9fed0571e8f958bfb94f4596e8de82c24b6b20160a25e6655b523515ba5edf49ff8",
+    "sha512_file": "zulu17.56.15-ca-crac-jre17.0.14-linux_musl_x64.tar.gz.sha512",
+    "size": 50726806,
+    "url": "https://static.azul.com/zulu/bin/zulu17.56.15-ca-crac-jre17.0.14-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.56.15"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu17.56.15-ca-crac-jre17.0.14-linux_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.14",
+    "jvm_impl": "hotspot",
+    "md5": "61bc15a568b81ef380eefad8fe87a44d",
+    "md5_file": "zulu17.56.15-ca-crac-jre17.0.14-linux_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "5c2a53f34c98a3acdacf992de36b2c63706c1f4e",
+    "sha1_file": "zulu17.56.15-ca-crac-jre17.0.14-linux_x64.tar.gz.sha1",
+    "sha256": "8d7ca3ac1ca939044c9dca94473099efbb61a5a48a505605f3af271fc439d719",
+    "sha256_file": "zulu17.56.15-ca-crac-jre17.0.14-linux_x64.tar.gz.sha256",
+    "sha512": "9bd84d08c11a2a124ec50438faf69823453214d8a08d5f20c51979f22dabfaa318c9cbb92d102025147bb396a9ad00bced72bda3ed80b0b081cd52fa664b611d",
+    "sha512_file": "zulu17.56.15-ca-crac-jre17.0.14-linux_x64.tar.gz.sha512",
+    "size": 49191577,
+    "url": "https://static.azul.com/zulu/bin/zulu17.56.15-ca-crac-jre17.0.14-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.56.15"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
       "javafx"
     ],
     "file_type": "tar.gz",
@@ -59080,6 +59131,57 @@
   {
     "architecture": "x86_64",
     "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu21.40.17-ca-crac-jre21.0.6-linux_musl_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.6",
+    "jvm_impl": "hotspot",
+    "md5": "4e317d0cdb72003fc6658f9da52bc45e",
+    "md5_file": "zulu21.40.17-ca-crac-jre21.0.6-linux_musl_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "8d9c2b37bf60b6f8e81ee7235f9a9de568d96a78",
+    "sha1_file": "zulu21.40.17-ca-crac-jre21.0.6-linux_musl_x64.tar.gz.sha1",
+    "sha256": "3c22739208745d26fcc30017e8d05f00c8ecc3f22638e9f24b1655b3f4598fab",
+    "sha256_file": "zulu21.40.17-ca-crac-jre21.0.6-linux_musl_x64.tar.gz.sha256",
+    "sha512": "2ffa9f7970f31dc1bf20ad7b168fc5f60a8211c09f74d6a58e88145f1f39f2b5f843766533a70f273f92163d924e07ed82153d4ffad0df7cd2c35818c1d60f94",
+    "sha512_file": "zulu21.40.17-ca-crac-jre21.0.6-linux_musl_x64.tar.gz.sha512",
+    "size": 56562750,
+    "url": "https://static.azul.com/zulu/bin/zulu21.40.17-ca-crac-jre21.0.6-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.40.17"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu21.40.17-ca-crac-jre21.0.6-linux_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.6",
+    "jvm_impl": "hotspot",
+    "md5": "409eb166ea9a9b587d984f0947531cc2",
+    "md5_file": "zulu21.40.17-ca-crac-jre21.0.6-linux_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "636c614a397eefa36ac606623a6d65f32f181232",
+    "sha1_file": "zulu21.40.17-ca-crac-jre21.0.6-linux_x64.tar.gz.sha1",
+    "sha256": "55ccca2111b7a98b06997109ddd5f06bd7dee0d10e41932f2731f330f2e774e4",
+    "sha256_file": "zulu21.40.17-ca-crac-jre21.0.6-linux_x64.tar.gz.sha256",
+    "sha512": "bf0651ff6ecf7cf7a3cb92caa31bb80d25cf8b8ee6faba1c24c7021eb3b1f6c546c67adf09dfbd50d31758337599f75ca881c11b633149c5a2a1c75df444b83e",
+    "sha512_file": "zulu21.40.17-ca-crac-jre21.0.6-linux_x64.tar.gz.sha512",
+    "size": 55121546,
+    "url": "https://static.azul.com/zulu/bin/zulu21.40.17-ca-crac-jre21.0.6-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.40.17"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
       "javafx"
     ],
     "file_type": "tar.gz",
@@ -59957,6 +60059,57 @@
     "url": "https://static.azul.com/zulu/bin/zulu23.30.13-ca-jre23.0.1-linux_x64.zip",
     "vendor": "zulu",
     "version": "23.30.13"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu23.32.11-ca-crac-jre23.0.2-linux_musl_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "23.0.2",
+    "jvm_impl": "hotspot",
+    "md5": "f5225574cadf98f856b76143c1298002",
+    "md5_file": "zulu23.32.11-ca-crac-jre23.0.2-linux_musl_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "5bed570b252c4c66c0ef0ba44235341192e34810",
+    "sha1_file": "zulu23.32.11-ca-crac-jre23.0.2-linux_musl_x64.tar.gz.sha1",
+    "sha256": "93f7d6db30cf87f1daac6f391e5b5fab9065cad61738b9045fed8a547eeed023",
+    "sha256_file": "zulu23.32.11-ca-crac-jre23.0.2-linux_musl_x64.tar.gz.sha256",
+    "sha512": "4889c2da3f506058c17ab4ac69749e9c84627a7e71a6851028eec118b168c602aa67a63280ba7cace531358c80c3405103213d6f744f80b38fe85f732d2c1b76",
+    "sha512_file": "zulu23.32.11-ca-crac-jre23.0.2-linux_musl_x64.tar.gz.sha512",
+    "size": 56624953,
+    "url": "https://static.azul.com/zulu/bin/zulu23.32.11-ca-crac-jre23.0.2-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "23.32.11"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu23.32.11-ca-crac-jre23.0.2-linux_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "23.0.2",
+    "jvm_impl": "hotspot",
+    "md5": "2aae4db446dcd7e031358a3e9bc7a844",
+    "md5_file": "zulu23.32.11-ca-crac-jre23.0.2-linux_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "25477ec47e8999fdcf93b15741df9d39eebd9783",
+    "sha1_file": "zulu23.32.11-ca-crac-jre23.0.2-linux_x64.tar.gz.sha1",
+    "sha256": "0ca015cb68dc0920e1f21539ae8202a1b6abb13fa48970b3cf49e24b5084047e",
+    "sha256_file": "zulu23.32.11-ca-crac-jre23.0.2-linux_x64.tar.gz.sha256",
+    "sha512": "aa682295d94b104f50f77645eb55a1cf3a32d6dc3a971c66d0aaa77ffc3895f5fb6604e4aef60724b9d7c447f86073959b5721b133b0fb084a3e527b20a488e9",
+    "sha512_file": "zulu23.32.11-ca-crac-jre23.0.2-linux_x64.tar.gz.sha512",
+    "size": 55148876,
+    "url": "https://static.azul.com/zulu/bin/zulu23.32.11-ca-crac-jre23.0.2-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "23.32.11"
   },
   {
     "architecture": "x86_64",
