@@ -38,7 +38,7 @@ INDEX_21="${TEMP_DIR}/index-21.html"
 INDEX_22="${TEMP_DIR}/index-22.html"
 INDEX_23="${TEMP_DIR}/index-23.html"
 INDEX_24="${TEMP_DIR}/index-24.html"
-INDEX_24="${TEMP_DIR}/index-25.html"
+INDEX_25="${TEMP_DIR}/index-25.html"
 
 download_file 'http://jdk.java.net/archive/' "${INDEX_ARCHIVE}"
 download_file 'http://jdk.java.net/21/' "${INDEX_21}"
