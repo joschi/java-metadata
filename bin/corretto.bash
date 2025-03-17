@@ -170,6 +170,7 @@ download_github_releases 'corretto' 'corretto-20' "${TEMP_DIR}/releases-corretto
 download_github_releases 'corretto' 'corretto-21' "${TEMP_DIR}/releases-corretto-21.json"
 download_github_releases 'corretto' 'corretto-22' "${TEMP_DIR}/releases-corretto-22.json"
 download_github_releases 'corretto' 'corretto-23' "${TEMP_DIR}/releases-corretto-23.json"
+download_github_releases 'corretto' 'corretto-24' "${TEMP_DIR}/releases-corretto-24.json"
 download_github_releases 'corretto' 'corretto-jdk' "${TEMP_DIR}/releases-corretto-jdk.json"
 
 jq -s 'add' \
@@ -179,9 +180,10 @@ jq -s 'add' \
 	"${TEMP_DIR}/releases-corretto-18.json" \
 	"${TEMP_DIR}/releases-corretto-19.json" \
 	"${TEMP_DIR}/releases-corretto-20.json" \
- 	"${TEMP_DIR}/releases-corretto-21.json" \
- 	"${TEMP_DIR}/releases-corretto-22.json" \
- 	"${TEMP_DIR}/releases-corretto-23.json" \
+	"${TEMP_DIR}/releases-corretto-21.json" \
+	"${TEMP_DIR}/releases-corretto-22.json" \
+	"${TEMP_DIR}/releases-corretto-23.json" \
+	"${TEMP_DIR}/releases-corretto-24.json" \
 	"${TEMP_DIR}/releases-corretto-jdk.json" \
 	> "${TEMP_DIR}/releases-corretto.json"
 
