@@ -190358,29 +190358,6 @@
     "version": "23+25-ea"
   },
   {
-    "architecture": "unknown-architecture-",
-    "features": [],
-    "file_type": null,
-    "filename": "bellsoft-jdk23+25-ea-src-leyden.tar.gz",
-    "image_type": null,
-    "java_version": "",
-    "jvm_impl": "hotspot",
-    "md5": "5f2e5c5d61f449845cf8e0cbe16e5166",
-    "md5_file": "bellsoft-jdk23+25-ea-src-leyden.tar.gz.md5",
-    "os": "unknown-os-",
-    "release_type": "ga",
-    "sha1": "6c0b567124dc4ed3f0058e803c3720f5aa16ddc7",
-    "sha1_file": "bellsoft-jdk23+25-ea-src-leyden.tar.gz.sha1",
-    "sha256": "1ffebfba2ad460b3f5a307bdb36fb944762f295f521e639e2ec9b0a092cac8f4",
-    "sha256_file": "bellsoft-jdk23+25-ea-src-leyden.tar.gz.sha256",
-    "sha512": "d223a09dede9ceeb92b00f589f1cbfa59eae8744235746a9cdb4532b46be00ae2cc38b0a776cd680b5aef25e6045785b481a1917b01d9b0870e6b512524ad266",
-    "sha512_file": "bellsoft-jdk23+25-ea-src-leyden.tar.gz.sha512",
-    "size": 119471133,
-    "url": "https://github.com/bell-sw/Liberica/releases/download/23+25-ea-leyden/bellsoft-jdk23+25-ea-src-leyden.tar.gz",
-    "vendor": "liberica",
-    "version": ""
-  },
-  {
     "architecture": "aarch64",
     "features": [
       "leyden"
@@ -197773,29 +197750,6 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/24+2-ea-leyden/bellsoft-jdk24+2-ea-macos-amd64-lite-leyden.zip",
     "vendor": "liberica",
     "version": "24+2-ea"
-  },
-  {
-    "architecture": "unknown-architecture-",
-    "features": [],
-    "file_type": null,
-    "filename": "bellsoft-jdk24+2-ea-src-leyden.tar.gz",
-    "image_type": null,
-    "java_version": "",
-    "jvm_impl": "hotspot",
-    "md5": "903ebfef42ae438e74b652842b5dd713",
-    "md5_file": "bellsoft-jdk24+2-ea-src-leyden.tar.gz.md5",
-    "os": "unknown-os-",
-    "release_type": "ga",
-    "sha1": "098a73b564a9b23817aa538f1faba4d78e6afed3",
-    "sha1_file": "bellsoft-jdk24+2-ea-src-leyden.tar.gz.sha1",
-    "sha256": "6af35963b92f904a57ffdb64011d866a5bf58791e599b1d190debbd5615dba38",
-    "sha256_file": "bellsoft-jdk24+2-ea-src-leyden.tar.gz.sha256",
-    "sha512": "d0a97dc4f1ef286e2f704ec3ee8f6a73f988a9a3e64e0ffe06436aa4fdf17408d073c7edd0734f09557964bc6a6df8e8250e3a17ef37a76718482cb5a3285a1b",
-    "sha512_file": "bellsoft-jdk24+2-ea-src-leyden.tar.gz.sha512",
-    "size": 119496330,
-    "url": "https://github.com/bell-sw/Liberica/releases/download/24+2-ea-leyden/bellsoft-jdk24+2-ea-src-leyden.tar.gz",
-    "vendor": "liberica",
-    "version": ""
   },
   {
     "architecture": "aarch64",
