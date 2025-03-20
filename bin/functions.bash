@@ -143,6 +143,8 @@ function normalize_arch {
 		;;
 	'arm32-vfp-hflt'|'aarch32hf') echo 'arm32-vfp-hflt'
 		;;
+	'ppc') echo 'ppc32'
+		;;
 	'ppc64') echo 'ppc64'
 		;;
 	'ppc64le') echo 'ppc64le'

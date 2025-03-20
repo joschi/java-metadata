@@ -59,6 +59,7 @@ components:
         - "aarch64"
         - "arm32"
         - "arm32-vfp-hflt"
+        - "ppc32"
         - "ppc64"
         - "ppc64le"
         - "s390"
