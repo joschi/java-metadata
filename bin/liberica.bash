@@ -126,7 +126,7 @@ versions=$(jq -r '.[].tag_name' "${TEMP_DIR}/releases-${VENDOR}.json" | sort -V)
 for version in ${versions}
 do
 	prerelease=$(jq -r  ".[] | select(.tag_name == \"${version}\") | .prerelease" "${TEMP_DIR}/releases-${VENDOR}.json")
-	assets=$(jq -r  ".[] | select(.tag_name == \"${version}\") | .assets[] | select(.content_type != \"text/plain\") | select (.name | endswith(\".txt\") | not) | select (.name | endswith(\".bom\") | not) | select (.name | endswith(\".json\") | not) | select (.name | endswith(\"-src.tar.gz\") | not) | select (.name | endswith(\"-src-full.tar.gz\") | not) | select (.name | endswith(\"-src-crac.tar.gz\") | not) | select (.name | contains(\"-full-nosign\") | not) | .name" "${TEMP_DIR}/releases-${VENDOR}.json")
+	assets=$(jq -r  ".[] | select(.tag_name == \"${version}\") | .assets[] | select(.content_type != \"text/plain\") | select (.name | endswith(\".txt\") | not) | select (.name | endswith(\".bom\") | not) | select (.name | endswith(\".json\") | not) | select (.name | endswith(\"-src.tar.gz\") | not) | select (.name | endswith(\"-src-full.tar.gz\") | not) | select (.name | endswith(\"-src-crac.tar.gz\") | not) | select (.name | endswith(\"-src-leyden.tar.gz\") | not) | select (.name | contains(\"-full-nosign\") | not) | .name" "${TEMP_DIR}/releases-${VENDOR}.json")
 	for asset in ${assets}
 	do
 		download "${version}" "${asset}" "${prerelease}" || echo "Cannot download ${asset}"
