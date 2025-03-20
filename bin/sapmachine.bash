@@ -47,7 +47,7 @@ function download {
 		if echo "${asset_name}" | grep -q 'rpm$'
 		then
 			# shellcheck disable=SC2016
-			regex='s/^sapmachine-(jdk|jre)-([0-9].+)\.x86_64\.rpm$/IMAGE_TYPE="$1" VERSION="$2" OS="linux" ARCH="x64" EXT="rpm"/g'
+			regex='s/^sapmachine-(jdk|jre)-([0-9].+)\.(aarch64|ppc64le|x86_64)\.rpm$/IMAGE_TYPE="$1" VERSION="$2" OS="linux" ARCH="$3" EXT="rpm"/g'
 		else
 			# shellcheck disable=SC2016
 			regex='s/^sapmachine-(jdk|jre)-([0-9].+)_(aix|linux|macos|osx|windows)-(x64|aarch64|ppc64|ppc64le|x64)-?(.*)_bin\.(.+)$/IMAGE_TYPE="$1" VERSION="$2" OS="$3" ARCH="$4" FEATURES="$5" EXT="$6"/g'
