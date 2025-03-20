@@ -93,11 +93,6 @@ function download_and_parse {
 	done
 }
 
-for version in 17 18 19 20 21 22 23 24
-do
-	download_and_parse "$version"
-done
-
 # Latest
 download_file "https://java.oraclecloud.com/javaVersions" "${TEMP_DIR}/latest-versions.json"
 for version in $(jq -r '.items[].latestReleaseVersion' "${TEMP_DIR}/latest-versions.json")
@@ -158,3 +153,9 @@ do
 		fi
 	done
 done
+
+for version in 17 18 19 20 21 22 23
+do
+	download_and_parse "$version"
+done
+
