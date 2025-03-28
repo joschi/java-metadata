@@ -98,6 +98,13 @@ download_file "https://java.oraclecloud.com/javaVersions" "${TEMP_DIR}/latest-ve
 for version in $(jq -r '.items[].latestReleaseVersion' "${TEMP_DIR}/latest-versions.json")
 do
 	download_file "https://java.oraclecloud.com/javaReleases/${version}" "${TEMP_DIR}/release-${version}.json"
+	LICENSE_TYPE=$(jq -r '.licenseDetails.licenseType' "${TEMP_DIR}/release-${version}.json")
+	if [[ "$LICENSE_TYPE" = "OTN" ]]
+	then
+		echo "Skipping OTN licensed versions"
+		continue
+	fi
+
 	for JDK_URL in $(jq -r '.artifacts[].downloadUrl' "${TEMP_DIR}/release-${version}.json")
 	do
 		JDK_FILE=$(basename "${JDK_URL}")
@@ -159,3 +166,4 @@ do
 	download_and_parse "$version"
 done
 
+jq -s -S . "${METADATA_DIR}"/jdk-*.json > "${METADATA_DIR}/all.json"
