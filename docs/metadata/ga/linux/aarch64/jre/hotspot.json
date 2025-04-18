@@ -38872,6 +38872,31 @@
   },
   {
     "architecture": "aarch64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu11.80.21-ca-fx-jre11.0.27-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.27",
+    "jvm_impl": "hotspot",
+    "md5": "8fe013ad2cad67768fdc7e5233c4a849",
+    "md5_file": "zulu11.80.21-ca-fx-jre11.0.27-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "9bc0f1afe1be9e5a0f857171b3860997be1a6edd",
+    "sha1_file": "zulu11.80.21-ca-fx-jre11.0.27-linux_aarch64.tar.gz.sha1",
+    "sha256": "09e2f4d2efe6833be6d3cf95baddf8ade3e2f97c8fa3b42eebe05f13b746c7cb",
+    "sha256_file": "zulu11.80.21-ca-fx-jre11.0.27-linux_aarch64.tar.gz.sha256",
+    "sha512": "6af5938fd64ecda04fa11f05df6d17dff311cebaca29d779b3eee65f2f05702f34001326941644b14cf4c3f0d225cde6c3e441b4569b0bb7b9a5532d10ffad3b",
+    "sha512_file": "zulu11.80.21-ca-fx-jre11.0.27-linux_aarch64.tar.gz.sha512",
+    "size": 90582843,
+    "url": "https://static.azul.com/zulu/bin/zulu11.80.21-ca-fx-jre11.0.27-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.80.21"
+  },
+  {
+    "architecture": "aarch64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "zulu11.80.21-ca-jre11.0.27-linux_aarch64.tar.gz",
@@ -40562,6 +40587,31 @@
   },
   {
     "architecture": "aarch64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu17.58.21-ca-fx-jre17.0.15-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.15",
+    "jvm_impl": "hotspot",
+    "md5": "41d05e6b09b39cde1a349d4ba44c8e05",
+    "md5_file": "zulu17.58.21-ca-fx-jre17.0.15-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "3918bc6485e5a0f7feee03f7217dc17ca7faf7a9",
+    "sha1_file": "zulu17.58.21-ca-fx-jre17.0.15-linux_aarch64.tar.gz.sha1",
+    "sha256": "cae91770b9de51cc7bf0cb8b321fbe3bd4e72338da626172a1d3aa31cd09e7aa",
+    "sha256_file": "zulu17.58.21-ca-fx-jre17.0.15-linux_aarch64.tar.gz.sha256",
+    "sha512": "90a195eb621787aa9792834579a2167c95d96d70f1d7b1d838963b2c950b76f1b3eefc03db940cba80ed4b429d4e6dd8d0483392875a4190f40ed749e1437e4c",
+    "sha512_file": "zulu17.58.21-ca-fx-jre17.0.15-linux_aarch64.tar.gz.sha512",
+    "size": 93897513,
+    "url": "https://static.azul.com/zulu/bin/zulu17.58.21-ca-fx-jre17.0.15-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.58.21"
+  },
+  {
+    "architecture": "aarch64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "zulu17.58.21-ca-jre17.0.15-linux_aarch64.tar.gz",
@@ -41880,6 +41930,31 @@
   },
   {
     "architecture": "aarch64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu21.42.19-ca-fx-jre21.0.7-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.7",
+    "jvm_impl": "hotspot",
+    "md5": "608d74df8ec7b14bad627c13033b4bf2",
+    "md5_file": "zulu21.42.19-ca-fx-jre21.0.7-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "c39b24a337a9a9dc82e79e75ba4d6529b728561c",
+    "sha1_file": "zulu21.42.19-ca-fx-jre21.0.7-linux_aarch64.tar.gz.sha1",
+    "sha256": "77a54024e954e05ed7dde1a3b2ad37178340265e2203b48ebf4ce7ddffbd07cf",
+    "sha256_file": "zulu21.42.19-ca-fx-jre21.0.7-linux_aarch64.tar.gz.sha256",
+    "sha512": "b0128542ad544321115de081835a63cda161c97af0fbb2465bdc803d2023cb691bae88ffa60aca12f6ef9e672db17b0500f9bd77ada78ef12f1552d7523c7a14",
+    "sha512_file": "zulu21.42.19-ca-fx-jre21.0.7-linux_aarch64.tar.gz.sha512",
+    "size": 99574463,
+    "url": "https://static.azul.com/zulu/bin/zulu21.42.19-ca-fx-jre21.0.7-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.42.19"
+  },
+  {
+    "architecture": "aarch64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "zulu21.42.19-ca-jre21.0.7-linux_aarch64.tar.gz",
@@ -42869,6 +42944,31 @@
   {
     "architecture": "aarch64",
     "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu24.30.13-ca-fx-jre24.0.1-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "24.0.1",
+    "jvm_impl": "hotspot",
+    "md5": "30f79183fe761d9aac38a313d722a900",
+    "md5_file": "zulu24.30.13-ca-fx-jre24.0.1-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "2b393b68ee54a04a14bc4b4116a1cced47d3844f",
+    "sha1_file": "zulu24.30.13-ca-fx-jre24.0.1-linux_aarch64.tar.gz.sha1",
+    "sha256": "3b2097972e08da3acf84bf12fc59909a7c0b7a4037738f01f8f9ec3fd249b971",
+    "sha256_file": "zulu24.30.13-ca-fx-jre24.0.1-linux_aarch64.tar.gz.sha256",
+    "sha512": "2821f9520b4180ae84686589872d1ce5158aa46b57c844a62dc6abdb8195c72f93dbbe8f0b3d97f64c614025bb074f75cb36ad05d98223aab0ff272fc0ec9db9",
+    "sha512_file": "zulu24.30.13-ca-fx-jre24.0.1-linux_aarch64.tar.gz.sha512",
+    "size": 107248315,
+    "url": "https://static.azul.com/zulu/bin/zulu24.30.13-ca-fx-jre24.0.1-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.30.13"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
       "musl"
     ],
     "file_type": "tar.gz",
@@ -43405,6 +43505,31 @@
     "url": "https://static.azul.com/zulu/bin/zulu8.84.0.15-ca-jre8.0.442-linux_musl_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "8.84.0.15"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu8.86.0.25-ca-fx-jre8.0.452-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.452",
+    "jvm_impl": "hotspot",
+    "md5": "a41e299ab8c644ea7714c4a59a6d2ac2",
+    "md5_file": "zulu8.86.0.25-ca-fx-jre8.0.452-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "c51a7e95ff322c1166117de5ea9fb78a4dc27df8",
+    "sha1_file": "zulu8.86.0.25-ca-fx-jre8.0.452-linux_aarch64.tar.gz.sha1",
+    "sha256": "b97c5e8a549ae837ab8ce0d4789a978a5e1cd22ab30ff541a062b06670abdba8",
+    "sha256_file": "zulu8.86.0.25-ca-fx-jre8.0.452-linux_aarch64.tar.gz.sha256",
+    "sha512": "a1c9c19559d4c48cbfa8e6704bb53a924b9cd97a09f49b4084d1845d897d636c359fcfea38d899e7b66774d1893222643f2e6b50c45a3d716d73f742b1785e57",
+    "sha512_file": "zulu8.86.0.25-ca-fx-jre8.0.452-linux_aarch64.tar.gz.sha512",
+    "size": 100702050,
+    "url": "https://static.azul.com/zulu/bin/zulu8.86.0.25-ca-fx-jre8.0.452-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.86.0.25"
   },
   {
     "architecture": "aarch64",
