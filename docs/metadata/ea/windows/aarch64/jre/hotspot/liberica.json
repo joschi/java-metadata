@@ -98,5 +98,55 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/24+2-ea-leyden/bellsoft-jre24+2-ea-windows-aarch64-leyden.zip",
     "vendor": "liberica",
     "version": "24+2-ea"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "leyden"
+    ],
+    "file_type": "msi",
+    "filename": "bellsoft-jre25+21-ea-windows-aarch64-leyden.msi",
+    "image_type": "jre",
+    "java_version": "25+21-ea",
+    "jvm_impl": "hotspot",
+    "md5": "2077ae7a757e23bcf12ca183c89edce0",
+    "md5_file": "bellsoft-jre25+21-ea-windows-aarch64-leyden.msi.md5",
+    "os": "windows",
+    "release_type": "ea",
+    "sha1": "a93c9c9a066ed5a2666e07330e7cdac7804c400a",
+    "sha1_file": "bellsoft-jre25+21-ea-windows-aarch64-leyden.msi.sha1",
+    "sha256": "f94d9321c7855efb47b983ffb1d58eb9d4403082e4ca92d8b0263445ee294d5a",
+    "sha256_file": "bellsoft-jre25+21-ea-windows-aarch64-leyden.msi.sha256",
+    "sha512": "2ae791d61701ec5d71f76ec00ed3a50841807e7133c7b016e7c2b8752fbe9ac5bf961aff3537ee1dbef6f9687aa4ffd480c795d0963464225f9d0256be24d62b",
+    "sha512_file": "bellsoft-jre25+21-ea-windows-aarch64-leyden.msi.sha512",
+    "size": 40763392,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25+21-ea-leyden/bellsoft-jre25+21-ea-windows-aarch64-leyden.msi",
+    "vendor": "liberica",
+    "version": "25+21-ea"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "filename": "bellsoft-jre25+21-ea-windows-aarch64-leyden.zip",
+    "image_type": "jre",
+    "java_version": "25+21-ea",
+    "jvm_impl": "hotspot",
+    "md5": "1c1d82a78600827ccc0b0a6b9ac286bf",
+    "md5_file": "bellsoft-jre25+21-ea-windows-aarch64-leyden.zip.md5",
+    "os": "windows",
+    "release_type": "ea",
+    "sha1": "7c5c584cd1e3349c37e113e5994efc4a106da1c6",
+    "sha1_file": "bellsoft-jre25+21-ea-windows-aarch64-leyden.zip.sha1",
+    "sha256": "550f863829acb4c5d04d19f96d64598808c36b792f22b24d5ca337adbd90048a",
+    "sha256_file": "bellsoft-jre25+21-ea-windows-aarch64-leyden.zip.sha256",
+    "sha512": "a9f05ec43ce5e890d722a08efe0294104fc6660b9646c485c14be96216b2b88b90e562b963730597c21684ae2efc851963f23bff673c8edc2631f0009c18cd36",
+    "sha512_file": "bellsoft-jre25+21-ea-windows-aarch64-leyden.zip.sha512",
+    "size": 39967045,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25+21-ea-leyden/bellsoft-jre25+21-ea-windows-aarch64-leyden.zip",
+    "vendor": "liberica",
+    "version": "25+21-ea"
   }
 ]
