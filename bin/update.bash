@@ -64,6 +64,7 @@ vendors=(
 	"$(cmd 'kona8')"
 	"$(cmd 'kona11')"
 	"$(cmd 'kona17')"
+	"$(cmd 'kona21')"
 	"$(cmd 'ibm')"
 	"$(cmd 'jetbrains')"
 )
