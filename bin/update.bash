@@ -67,6 +67,7 @@ vendors=(
 	"$(cmd 'kona21')"
 	"$(cmd 'ibm')"
 	"$(cmd 'jetbrains')"
+	"$(cmd 'redhat')"
 )
 
 printf '%s\n' "${vendors[@]}" | parallel -P 4 --verbose "bash {} ${METADATA_DIR}/vendor ${CHECKSUM_DIR} ; echo \"{} EXIT CODE: \$?\""
