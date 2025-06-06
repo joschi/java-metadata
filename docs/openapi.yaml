@@ -26,11 +26,14 @@ components:
       type: string
       enum:
         - "adoptopenjdk"
+        - "bisheng"
         - "corretto"
         - "dragonwell"
         - "graalvm"
         - "graalvm-community"
+        - "ibm"
         - "java-se-ri"
+        - "jetbrains"
         - "kona"
         - "liberica"
         - "mandrel"
@@ -38,6 +41,7 @@ components:
         - "openjdk"
         - "oracle"
         - "oracle-graalvm"
+        - "redhat"
         - "sapmachine"
         - "semeru"
         - "temurin"
