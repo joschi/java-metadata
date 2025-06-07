@@ -26168,7 +26168,7 @@
     "file_type": "zip",
     "filename": "java-1.8.0-openjdk-1.8.0.452.b09-1.win.jre.x86_64.zip",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "jdk8u452-b09",
     "jvm_impl": "hotspot",
     "md5": "164a1d4646e0fea9119c0fedba4546db",
     "md5_file": "java-1.8.0-openjdk-1.8.0.452.b09-1.win.jre.x86_64.zip.md5",
@@ -26183,7 +26183,7 @@
     "size": 47707052,
     "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/April_2025/java-1.8.0-openjdk-1.8.0.452.b09-1.win.jre.x86_64.zip",
     "vendor": "redhat",
-    "version": ""
+    "version": "u452-b09_1"
   },
   {
     "architecture": "x86_64",
@@ -26191,7 +26191,7 @@
     "file_type": "zip",
     "filename": "java-17-openjdk-17.0.15.0.6-1.win.jre.x86_64.zip",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "17.0.15+6",
     "jvm_impl": "hotspot",
     "md5": "d98782c8d369e91cced44ee46ea4daa3",
     "md5_file": "java-17-openjdk-17.0.15.0.6-1.win.jre.x86_64.zip.md5",
@@ -26206,7 +26206,7 @@
     "size": 51457217,
     "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/April_2025/java-17-openjdk-17.0.15.0.6-1.win.jre.x86_64.zip",
     "vendor": "redhat",
-    "version": ""
+    "version": "17.0.15+6_1"
   },
   {
     "architecture": "x86_64",
@@ -26214,7 +26214,7 @@
     "file_type": "zip",
     "filename": "java-21-openjdk-21.0.7.0.6-1.win.jre.x86_64.zip",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "21.0.7+6",
     "jvm_impl": "hotspot",
     "md5": "f841e87c71464730ff15fc63b7795082",
     "md5_file": "java-21-openjdk-21.0.7.0.6-1.win.jre.x86_64.zip.md5",
@@ -26229,7 +26229,7 @@
     "size": 58466828,
     "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/April_2025/java-21-openjdk-21.0.7.0.6-1.win.jre.x86_64.zip",
     "vendor": "redhat",
-    "version": ""
+    "version": "21.0.7+6_1"
   },
   {
     "architecture": "x86_64",

@@ -6713,7 +6713,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u322-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_322-b06",
     "jvm_impl": "hotspot",
     "md5": "e8b4a8c0db1ce66413e6de64dc03cc7d",
     "md5_file": "bisheng-jre-8u322-linux-x64.tar.gz.md5",
@@ -6728,7 +6728,7 @@
     "size": 41399479,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u322-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u322-b06"
   },
   {
     "architecture": "x86_64",
@@ -6736,7 +6736,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u332-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_332-b11",
     "jvm_impl": "hotspot",
     "md5": "041dd1393c0190787fdce880631a493c",
     "md5_file": "bisheng-jre-8u332-linux-x64.tar.gz.md5",
@@ -6751,7 +6751,7 @@
     "size": 41144749,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u332-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u332-b11"
   },
   {
     "architecture": "x86_64",
@@ -6759,7 +6759,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u342-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_342-b11",
     "jvm_impl": "hotspot",
     "md5": "3eb8c018516853fc91f28096fc62ab5f",
     "md5_file": "bisheng-jre-8u342-linux-x64.tar.gz.md5",
@@ -6774,7 +6774,7 @@
     "size": 41145745,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u342-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u342-b11"
   },
   {
     "architecture": "x86_64",
@@ -6782,7 +6782,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u352-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_352-b11",
     "jvm_impl": "hotspot",
     "md5": "ae8365c20387ecabb588edc342bf154b",
     "md5_file": "bisheng-jre-8u352-linux-x64.tar.gz.md5",
@@ -6797,7 +6797,7 @@
     "size": 46793498,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u352-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u352-b11"
   },
   {
     "architecture": "x86_64",
@@ -6805,7 +6805,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u362-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_362-b11",
     "jvm_impl": "hotspot",
     "md5": "5f87e60703eb7134398c3daecb97732d",
     "md5_file": "bisheng-jre-8u362-linux-x64.tar.gz.md5",
@@ -6820,7 +6820,7 @@
     "size": 46844748,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u362-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u362-b11"
   },
   {
     "architecture": "x86_64",
@@ -6828,7 +6828,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u372-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_372-b11",
     "jvm_impl": "hotspot",
     "md5": "7183bfdc4647adda9858791fad16dbef",
     "md5_file": "bisheng-jre-8u372-linux-x64.tar.gz.md5",
@@ -6843,7 +6843,7 @@
     "size": 46864692,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u372-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u372-b11"
   },
   {
     "architecture": "x86_64",
@@ -6851,7 +6851,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u382-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_382-b13",
     "jvm_impl": "hotspot",
     "md5": "37f5f83e17af897c2b52a687d7f81522",
     "md5_file": "bisheng-jre-8u382-linux-x64.tar.gz.md5",
@@ -6866,7 +6866,7 @@
     "size": 46899748,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u382-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u382-b13"
   },
   {
     "architecture": "x86_64",
@@ -6874,7 +6874,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u392-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_392-b12",
     "jvm_impl": "hotspot",
     "md5": "432fc2ceac6167075f8ff18250d7a354",
     "md5_file": "bisheng-jre-8u392-linux-x64.tar.gz.md5",
@@ -6889,7 +6889,7 @@
     "size": 46919340,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u392-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u392-b12"
   },
   {
     "architecture": "x86_64",
@@ -6897,7 +6897,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u402-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_402-b11",
     "jvm_impl": "hotspot",
     "md5": "82e5a553fd7a60eaccf6e8b5962f34fc",
     "md5_file": "bisheng-jre-8u402-linux-x64.tar.gz.md5",
@@ -6912,7 +6912,7 @@
     "size": 46932740,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u402-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u402-b11"
   },
   {
     "architecture": "x86_64",
@@ -6920,7 +6920,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u412-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_412-b11",
     "jvm_impl": "hotspot",
     "md5": "e3958d36a52d62b5ee710aa9c4caa9c4",
     "md5_file": "bisheng-jre-8u412-linux-x64.tar.gz.md5",
@@ -6935,7 +6935,7 @@
     "size": 46939361,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u412-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u412-b11"
   },
   {
     "architecture": "x86_64",
@@ -6943,7 +6943,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u422-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_422-b12",
     "jvm_impl": "hotspot",
     "md5": "1962cf09bc34de78c13734afd08bac07",
     "md5_file": "bisheng-jre-8u422-linux-x64.tar.gz.md5",
@@ -6958,7 +6958,7 @@
     "size": 46982034,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u422-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u422-b12"
   },
   {
     "architecture": "x86_64",
@@ -6966,7 +6966,7 @@
     "file_type": "tar.gz",
     "filename": "bisheng-jre-8u432-linux-x64.tar.gz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "1.8.0_432-b11",
     "jvm_impl": "hotspot",
     "md5": "8b141ac885353d8d86d1679506aadd71",
     "md5_file": "bisheng-jre-8u432-linux-x64.tar.gz.md5",
@@ -6981,7 +6981,7 @@
     "size": 46980618,
     "url": "https://mirrors.huaweicloud.com/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u432-linux-x64.tar.gz",
     "vendor": "bisheng",
-    "version": ""
+    "version": "8u432-b11"
   },
   {
     "architecture": "x86_64",
@@ -41930,7 +41930,7 @@
     "file_type": "tar.xz",
     "filename": "java-1.8.0-openjdk-portable-1.8.0.452.b09-1.portable.jre.el.x86_64.tar.xz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "jdk8u452-b09",
     "jvm_impl": "hotspot",
     "md5": "ac7ab10144216cf506018cb116f45631",
     "md5_file": "java-1.8.0-openjdk-portable-1.8.0.452.b09-1.portable.jre.el.x86_64.tar.xz.md5",
@@ -41945,7 +41945,7 @@
     "size": 31345504,
     "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/April_2025/java-1.8.0-openjdk-portable-1.8.0.452.b09-1.portable.jre.el.x86_64.tar.xz",
     "vendor": "redhat",
-    "version": ""
+    "version": "u452-b09_1"
   },
   {
     "architecture": "x86_64",
@@ -41953,7 +41953,7 @@
     "file_type": "tar.xz",
     "filename": "java-17-openjdk-17.0.15.0.6-1.portable.jre.el.x86_64.tar.xz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "17.0.15+6",
     "jvm_impl": "hotspot",
     "md5": "c22dde53199661aa7ad9979e7359454f",
     "md5_file": "java-17-openjdk-17.0.15.0.6-1.portable.jre.el.x86_64.tar.xz.md5",
@@ -41968,7 +41968,7 @@
     "size": 29519680,
     "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/April_2025/java-17-openjdk-17.0.15.0.6-1.portable.jre.el.x86_64.tar.xz",
     "vendor": "redhat",
-    "version": ""
+    "version": "17.0.15+6_1"
   },
   {
     "architecture": "x86_64",
@@ -41976,7 +41976,7 @@
     "file_type": "tar.xz",
     "filename": "java-21-openjdk-21.0.7.0.6-1.portable.jre.x86_64.tar.xz",
     "image_type": "jre",
-    "java_version": "",
+    "java_version": "21.0.7+6",
     "jvm_impl": "hotspot",
     "md5": "3155596b3066ae13c964464fcd0f4399",
     "md5_file": "java-21-openjdk-21.0.7.0.6-1.portable.jre.x86_64.tar.xz.md5",
@@ -41991,7 +41991,7 @@
     "size": 32513412,
     "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/April_2025/java-21-openjdk-21.0.7.0.6-1.portable.jre.x86_64.tar.xz",
     "vendor": "redhat",
-    "version": ""
+    "version": "21.0.7+6_1"
   },
   {
     "architecture": "x86_64",
