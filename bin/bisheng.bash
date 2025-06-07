@@ -100,7 +100,7 @@ function download {
 			"$(normalize_arch "$(jq -r '.architecture' <<< "${json}")")" \
 			"${ext}" \
 			"$(jq -r '.image_type' <<< "${json}")" \
-			"$(normalize_features "$(jq -r '.heap_size' <<< "${json}")")" \
+			"" \
 			"${url}" \
 			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}")" \
@@ -131,19 +131,16 @@ done
 FLATTEN_QUERY='add |
 .[] |
 [{
-	release_type: .release_type,
-	java_version: .version_data.openjdk_version,
-	version: .version_data.semver,
+	java_version: .openjdk_version_data.openjdk_version,
+	version: .release_name[3:],
 	binary: .binaries[],
 }] |
 .[] |
 {
-	release_type,
 	java_version,
 	version,
 	architecture: .binary.architecture,
 	os: .binary.os,
-	heap_size: .binary.heap_size,
 	image_type: .binary.image_type,
 	jvm_impl: .binary.jvm_impl,
 	link: .binary.package.link,
