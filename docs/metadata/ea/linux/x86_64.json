@@ -80479,5 +80479,53 @@
     "url": "https://static.azul.com/zulu/bin/zulu25.0.39-beta-jdk25.0.0-beta.27-linux_x64.tar.gz",
     "vendor": "zulu",
     "version": "25.0.39"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu25.0.41-beta-jdk25.0.0-beta.28-linux_musl_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-beta.28",
+    "jvm_impl": "hotspot",
+    "md5": "588c62ada78da1e54cf3d7e83609d3cc",
+    "md5_file": "zulu25.0.41-beta-jdk25.0.0-beta.28-linux_musl_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "3e6fb0bfb6d352fb60a6605e5bad4405907b65b9",
+    "sha1_file": "zulu25.0.41-beta-jdk25.0.0-beta.28-linux_musl_x64.tar.gz.sha1",
+    "sha256": "200f0b73e3bb61c3dcaf406227c243ee41f048b0e5b623c61cc40adcc39bf4a9",
+    "sha256_file": "zulu25.0.41-beta-jdk25.0.0-beta.28-linux_musl_x64.tar.gz.sha256",
+    "sha512": "9a5de19b342cf0c93d3e15c198a68fb6fa4735e6be39da0db692424b4eda1373e8e2741e9516fd3af1ea65d1306ec6ca93bc454e7b8d939049113d185919d3db",
+    "sha512_file": "zulu25.0.41-beta-jdk25.0.0-beta.28-linux_musl_x64.tar.gz.sha512",
+    "size": 232893229,
+    "url": "https://static.azul.com/zulu/bin/zulu25.0.41-beta-jdk25.0.0-beta.28-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.0.41"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "zulu25.0.41-beta-jdk25.0.0-beta.28-linux_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-beta.28",
+    "jvm_impl": "hotspot",
+    "md5": "6c1bf42ef2323f088509518e22979a93",
+    "md5_file": "zulu25.0.41-beta-jdk25.0.0-beta.28-linux_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "2dc24c4a42577543054d018776ae85c59981cded",
+    "sha1_file": "zulu25.0.41-beta-jdk25.0.0-beta.28-linux_x64.tar.gz.sha1",
+    "sha256": "5dd72c06ef7a9a01817a9a395e93ba2eef78c39d03e26cd2d90507d2a2ff9ef7",
+    "sha256_file": "zulu25.0.41-beta-jdk25.0.0-beta.28-linux_x64.tar.gz.sha256",
+    "sha512": "ec60e4077b22773b55d64f0888a91799458d5818654680d8eeba0d062e7afdac4a91ce46a6b4dc73efddc8d703bbed000d34ab96c681a8814071c52fc82d0cdc",
+    "sha512_file": "zulu25.0.41-beta-jdk25.0.0-beta.28-linux_x64.tar.gz.sha512",
+    "size": 231262211,
+    "url": "https://static.azul.com/zulu/bin/zulu25.0.41-beta-jdk25.0.0-beta.28-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.0.41"
   }
 ]
