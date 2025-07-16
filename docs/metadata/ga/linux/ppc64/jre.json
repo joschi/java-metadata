@@ -963,6 +963,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jre-17.0.16_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.16",
+    "jvm_impl": "hotspot",
+    "md5": "bc08517cd21487fa8197338bd5211572",
+    "md5_file": "sapmachine-jre-17.0.16_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "7796f44e380bd0423595ad4f2ad17adf1303b009",
+    "sha1_file": "sapmachine-jre-17.0.16_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "d372f1aec7d6f697f7110f58f1244daccc292c60ec7b2ed5bf911350ebb32f7d",
+    "sha256_file": "sapmachine-jre-17.0.16_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "c4da43755e651d88f4b27ac73e794fc7581b0f0337094fe4cc9c773b53408b8e406f1610eed6dc8cd79f40b75ad5819ead1caacc6f992003580b8a8b015574d1",
+    "sha512_file": "sapmachine-jre-17.0.16_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 46937960,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.16/sapmachine-jre-17.0.16_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.16"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jre-17.0.4-snapshot.0_linux-ppc64le_bin.tar.gz",
     "image_type": "jre",
     "java_version": "17.0.4-snapshot.0",
@@ -1638,6 +1663,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jre-21.0.8_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8",
+    "jvm_impl": "hotspot",
+    "md5": "7e71084e068f22bef8e9bf79263ce96f",
+    "md5_file": "sapmachine-jre-21.0.8_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "46f24a2aad45cd5d00d09835c762fa743181cfe9",
+    "sha1_file": "sapmachine-jre-21.0.8_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "74b3539715deb4938565ce62767dce0fab5a8b401230a0f49fce61e80f32e55f",
+    "sha256_file": "sapmachine-jre-21.0.8_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "c4fcabc0a4c2ae186fe946e7fc16b17c0db0282485dcdb60a44c44d3a509ba6bead756d0c0d20c6b62fe97caa6fa5d140a27cf82cadc56159a4e75e5c3587867",
+    "sha512_file": "sapmachine-jre-21.0.8_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 52506378,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8/sapmachine-jre-21.0.8_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.8"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jre-21_linux-ppc64le_bin.tar.gz",
     "image_type": "jre",
     "java_version": "21",
@@ -1831,6 +1881,31 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24.0.1/sapmachine-jre-24.0.1_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "24.0.1"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-24.0.2_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "24.0.2",
+    "jvm_impl": "hotspot",
+    "md5": "359b1aa3d6cc9edeb99d11ff0814d2eb",
+    "md5_file": "sapmachine-jre-24.0.2_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "994a7f6738e371ce4896ce1862dc2b8a20e1d170",
+    "sha1_file": "sapmachine-jre-24.0.2_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "bdc412fc8f8afc50de5dc7ce2bb720345370ef419372d1a343cb9b7f761a7d85",
+    "sha256_file": "sapmachine-jre-24.0.2_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "c8cb0c5530b17dad73a1db8b0efd29f90f217ec4f8f53d4ee947795f0228a4dd36a24a50a4b5a0bf5fe8e4c59de7ed78780e34bda226576aef0a6b0d7ef6caee",
+    "sha512_file": "sapmachine-jre-24.0.2_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 60507985,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24.0.2/sapmachine-jre-24.0.2_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "24.0.2"
   },
   {
     "architecture": "ppc64",
