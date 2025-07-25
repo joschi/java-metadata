@@ -2313,6 +2313,31 @@
       "certified"
     ],
     "file_type": "rpm",
+    "filename": "ibm-semeru-certified-11-jre-11.0.28.0-1.ppc64.rpm",
+    "image_type": "jre",
+    "java_version": "11.0.28+6",
+    "jvm_impl": "openj9",
+    "md5": "d8ab2f4db623724cb3fecf156c7b508d",
+    "md5_file": "ibm-semeru-certified-11-jre-11.0.28.0-1.ppc64.rpm.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "444d38c7e6576acf5224ad4d204a5b68af6259ab",
+    "sha1_file": "ibm-semeru-certified-11-jre-11.0.28.0-1.ppc64.rpm.sha1",
+    "sha256": "a13ae0fba2789dce530d0cf175c5ea256041430d82c23f25e019659de76c04a3",
+    "sha256_file": "ibm-semeru-certified-11-jre-11.0.28.0-1.ppc64.rpm.sha256",
+    "sha512": "ffa409eef4d7deece5c9b7102f03dc51254211bd9dd8ea086a8b3455dee639b773bec701fce0c1a6f0547d922f315bfb87022098f0bea9b38d96ab7934008911",
+    "sha512_file": "ibm-semeru-certified-11-jre-11.0.28.0-1.ppc64.rpm.sha512",
+    "size": 66929504,
+    "url": "https://github.com/ibmruntimes/semeru11-certified-binaries/releases/download/jdk-11.0.28+6_openj9-0.53.0/ibm-semeru-certified-11-jre-11.0.28.0-1.ppc64.rpm",
+    "vendor": "semeru",
+    "version": "11.0.28+6_openj9-0.53.0"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "certified"
+    ],
+    "file_type": "rpm",
     "filename": "ibm-semeru-certified-17-jre-17.0.10.0-1.ppc64.rpm",
     "image_type": "jre",
     "java_version": "17.0.10+7",
@@ -2481,6 +2506,31 @@
     "url": "https://github.com/ibmruntimes/semeru17-certified-binaries/releases/download/jdk-17.0.15+6_openj9-0.51.0/ibm-semeru-certified-17-jre-17.0.15.0-1.ppc64.rpm",
     "vendor": "semeru",
     "version": "17.0.15+6_openj9-0.51.0"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "certified"
+    ],
+    "file_type": "rpm",
+    "filename": "ibm-semeru-certified-17-jre-17.0.16.0-1.ppc64.rpm",
+    "image_type": "jre",
+    "java_version": "17.0.16+8",
+    "jvm_impl": "openj9",
+    "md5": "c91d650cdd45b4f59d62ea5ca4dd147f",
+    "md5_file": "ibm-semeru-certified-17-jre-17.0.16.0-1.ppc64.rpm.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "6b71b797ce86c1dde699ee35c2585ca14f4fa4de",
+    "sha1_file": "ibm-semeru-certified-17-jre-17.0.16.0-1.ppc64.rpm.sha1",
+    "sha256": "79afa769f1c6f53827d12a17d48d2e86fc86aeb2a94be5e9f3cfd354938c7193",
+    "sha256_file": "ibm-semeru-certified-17-jre-17.0.16.0-1.ppc64.rpm.sha256",
+    "sha512": "9cb9fb9df83853e4a4d46f5ff643d7123adbac7f2b0fc0652813fed2bb377d99ad49df035e9299fff7d32d92fded9cfd2ced5742f065a6ca9bb3e4946a082fed",
+    "sha512_file": "ibm-semeru-certified-17-jre-17.0.16.0-1.ppc64.rpm.sha512",
+    "size": 65652581,
+    "url": "https://github.com/ibmruntimes/semeru17-certified-binaries/releases/download/jdk-17.0.16+8_openj9-0.53.0/ibm-semeru-certified-17-jre-17.0.16.0-1.ppc64.rpm",
+    "vendor": "semeru",
+    "version": "17.0.16+8_openj9-0.53.0"
   },
   {
     "architecture": "ppc64",
@@ -2881,6 +2931,31 @@
     "url": "https://github.com/ibmruntimes/semeru21-certified-binaries/releases/download/jdk-21.0.7+6_openj9-0.51.0/ibm-semeru-certified-21-jre-21.0.7.0-1.ppc64.rpm",
     "vendor": "semeru",
     "version": "21.0.7+6_openj9-0.51.0"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "certified"
+    ],
+    "file_type": "rpm",
+    "filename": "ibm-semeru-certified-21-jre-21.0.8.0-1.ppc64.rpm",
+    "image_type": "jre",
+    "java_version": "21.0.8+9",
+    "jvm_impl": "openj9",
+    "md5": "eccfbc5ba62d12a0868579c869cdf95e",
+    "md5_file": "ibm-semeru-certified-21-jre-21.0.8.0-1.ppc64.rpm.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "85f8d9e08d7de2f0bf45d72e6eda61ea38928246",
+    "sha1_file": "ibm-semeru-certified-21-jre-21.0.8.0-1.ppc64.rpm.sha1",
+    "sha256": "addda1716c1b2a9ab822e503708701417196361cb6b3f3d67af58094d6eb1bca",
+    "sha256_file": "ibm-semeru-certified-21-jre-21.0.8.0-1.ppc64.rpm.sha256",
+    "sha512": "7c09227c75c3eecd8f8138f88b6c17f6ef1ac1b2306dcc8b055decb9885d78c764849a4fdfa7066b343e1399e767afc83f111b77289976eff6113f246a91b07e",
+    "sha512_file": "ibm-semeru-certified-21-jre-21.0.8.0-1.ppc64.rpm.sha512",
+    "size": 69687528,
+    "url": "https://github.com/ibmruntimes/semeru21-certified-binaries/releases/download/jdk-21.0.8+9_openj9-0.53.0/ibm-semeru-certified-21-jre-21.0.8.0-1.ppc64.rpm",
+    "vendor": "semeru",
+    "version": "21.0.8+9_openj9-0.53.0"
   },
   {
     "architecture": "ppc64",
