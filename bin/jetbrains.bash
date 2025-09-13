@@ -88,6 +88,11 @@ function download {
 			FEATURES="$FEATURES jcef"
 		fi
 
+		if [[ "${description}" =~ "Legacy Binary" ]]
+		then
+			FEATURES="$FEATURES legacy"
+		fi
+
 		if [[ "${OS}" = "linux-musl" ]]
 		then
 			FEATURES="$FEATURES musl"
