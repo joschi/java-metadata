@@ -82972,7 +82972,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-aarch64-b1020.35.tar.gz",
     "image_type": "jre",
@@ -82995,7 +82997,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-aarch64-b1034.51.tar.gz",
     "image_type": "jre",
@@ -83018,7 +83022,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-aarch64-b1038.54.tar.gz",
     "image_type": "jre",
@@ -83041,7 +83047,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-aarch64-b1038.58.tar.gz",
     "image_type": "jre",
@@ -83064,7 +83072,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-aarch64-b968.13.tar.gz",
     "image_type": "jre",
@@ -83087,7 +83097,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-aarch64-b982.16.tar.gz",
     "image_type": "jre",
@@ -83096,7 +83108,7 @@
     "md5": "68de363bd06e3b6733395cab2b1b0c2f",
     "md5_file": "jbr_lb-21.0.7-linux-aarch64-b982.16.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "9cacf7e2be5caf3a924a3a0183ef6225b844326f",
     "sha1_file": "jbr_lb-21.0.7-linux-aarch64-b982.16.tar.gz.sha1",
     "sha256": "2b1e3ee729c0b4f8be6c597cc795adee4ecace32be7511e7ab72cde83d86741d",
@@ -83110,7 +83122,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-aarch64-b992.24.tar.gz",
     "image_type": "jre",
@@ -83133,7 +83147,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b1020.35.tar.gz",
     "image_type": "jre",
@@ -83156,7 +83172,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b1034.51.tar.gz",
     "image_type": "jre",
@@ -83179,7 +83197,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b1038.54.tar.gz",
     "image_type": "jre",
@@ -83202,7 +83222,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b1038.58.tar.gz",
     "image_type": "jre",
@@ -83225,7 +83247,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b968.13.tar.gz",
     "image_type": "jre",
@@ -83248,7 +83272,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b982.16.tar.gz",
     "image_type": "jre",
@@ -83257,7 +83283,7 @@
     "md5": "f3d94be9e97923cda25a86dfa7391cf0",
     "md5_file": "jbr_lb-21.0.7-linux-x64-b982.16.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "e100bea2e776cfb265bcd33ba33737855bfc3cfd",
     "sha1_file": "jbr_lb-21.0.7-linux-x64-b982.16.tar.gz.sha1",
     "sha256": "6d25dbe4b4f8b4183fef0f8859e602efed81ce72a6a889aa3fb40c4019e07d7a",
@@ -83271,7 +83297,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b992.24.tar.gz",
     "image_type": "jre",
@@ -83294,7 +83322,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.8-linux-aarch64-b1038.68.tar.gz",
     "image_type": "jre",
@@ -83317,7 +83347,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.8-linux-aarch64-b1038.71.tar.gz",
     "image_type": "jre",
@@ -83340,7 +83372,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.8-linux-aarch64-b1097.42.tar.gz",
     "image_type": "jre",
@@ -83349,7 +83383,7 @@
     "md5": "153ba27c29b4c3a47251a1e8346e007f",
     "md5_file": "jbr_lb-21.0.8-linux-aarch64-b1097.42.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "b32192bf30fafa8dc7116c4b333a1df1e4cf17fa",
     "sha1_file": "jbr_lb-21.0.8-linux-aarch64-b1097.42.tar.gz.sha1",
     "sha256": "07d13b8acbb54aaf094e722d8ab1437af4ca60cb3156be25895b3b75ee88e9c7",
@@ -83363,7 +83397,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.8-linux-x64-b1038.68.tar.gz",
     "image_type": "jre",
@@ -83386,7 +83422,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.8-linux-x64-b1038.71.tar.gz",
     "image_type": "jre",
@@ -83409,7 +83447,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.8-linux-x64-b1097.42.tar.gz",
     "image_type": "jre",
@@ -83418,7 +83458,7 @@
     "md5": "3868747a053b652cbb4ddee11ce4542a",
     "md5_file": "jbr_lb-21.0.8-linux-x64-b1097.42.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "0339690ca97d0e375d2c344d6544a8e8b18ecc06",
     "sha1_file": "jbr_lb-21.0.8-linux-x64-b1097.42.tar.gz.sha1",
     "sha256": "fc31ee73f08586d626d04f9ee55b455e26f327472984b9d43c3f16ec0f0727b4",
@@ -214127,7 +214167,7 @@
     "md5": "741eb22560024ac98a95d860ef75db6f",
     "md5_file": "jbrsdk_lb-21.0.7-linux-aarch64-b982.16.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "a98fc1f69c931c9c48822aa6a6b9813b81336bf0",
     "sha1_file": "jbrsdk_lb-21.0.7-linux-aarch64-b982.16.tar.gz.sha1",
     "sha256": "8f6b66bbf8ced6eaf11634a1daff9f681e1b5c2fce594a7a0aa0c117c37b2f96",
@@ -214150,7 +214190,7 @@
     "md5": "05a391c74445c27731bb8a6e331a24a1",
     "md5_file": "jbrsdk_lb-21.0.7-linux-aarch64-b982.16_diz.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "64082fcfd8778ebd1cec03fb4e93656d43d61e8a",
     "sha1_file": "jbrsdk_lb-21.0.7-linux-aarch64-b982.16_diz.tar.gz.sha1",
     "sha256": "6b56184f38d50c496dc86123440ab237a8ee4027c3ccda128939588665d87dfc",
@@ -214449,7 +214489,7 @@
     "md5": "56676e66fdf6b7a9c3e075a79424b8ee",
     "md5_file": "jbrsdk_lb-21.0.7-linux-x64-b982.16.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "7db74a05ce22372af89fe1868227428e47b4e3a0",
     "sha1_file": "jbrsdk_lb-21.0.7-linux-x64-b982.16.tar.gz.sha1",
     "sha256": "eae84cbd234f92d588faf64aaf07f1eef8ee6879c30e7e78142f40098add272f",
@@ -214472,7 +214512,7 @@
     "md5": "cc66c8aceb7cc8f10fddedea4ed8dfde",
     "md5_file": "jbrsdk_lb-21.0.7-linux-x64-b982.16_diz.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "d6190c2ee73d1e5a324e5f47cc840db3ad6583d8",
     "sha1_file": "jbrsdk_lb-21.0.7-linux-x64-b982.16_diz.tar.gz.sha1",
     "sha256": "a03f5e987cfc3f307da755767f4c5d6b985f734042eecd04b3937a0f09528956",
@@ -214578,7 +214618,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbrsdk_lb-21.0.8-linux-aarch64-b1038.71.tar.gz",
     "image_type": "jdk",
@@ -214602,7 +214644,8 @@
   {
     "architecture": "aarch64",
     "features": [
-      "debug"
+      "debug",
+      "legacy"
     ],
     "file_type": "tar.gz",
     "filename": "jbrsdk_lb-21.0.8-linux-aarch64-b1038.71_diz.tar.gz",
@@ -214626,7 +214669,9 @@
   },
   {
     "architecture": "aarch64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbrsdk_lb-21.0.8-linux-aarch64-b1097.42.tar.gz",
     "image_type": "jdk",
@@ -214635,7 +214680,7 @@
     "md5": "b25a7277bb8e7ee12b6e281223863c2e",
     "md5_file": "jbrsdk_lb-21.0.8-linux-aarch64-b1097.42.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "a1968ee33ee25bfa81661f85ceefcab7f8cc73c7",
     "sha1_file": "jbrsdk_lb-21.0.8-linux-aarch64-b1097.42.tar.gz.sha1",
     "sha256": "0178e34cd873f09c2d2f697b2a8cd99e8e79237f1ae30d8fb326bab858a51086",
@@ -214650,7 +214695,8 @@
   {
     "architecture": "aarch64",
     "features": [
-      "debug"
+      "debug",
+      "legacy"
     ],
     "file_type": "tar.gz",
     "filename": "jbrsdk_lb-21.0.8-linux-aarch64-b1097.42_diz.tar.gz",
@@ -214660,7 +214706,7 @@
     "md5": "064bb309e7588a9641bb5d5c37ded035",
     "md5_file": "jbrsdk_lb-21.0.8-linux-aarch64-b1097.42_diz.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "1a485f31ff1a52b1a3a6c31002940e7a1c03b7c9",
     "sha1_file": "jbrsdk_lb-21.0.8-linux-aarch64-b1097.42_diz.tar.gz.sha1",
     "sha256": "6214e87a542ba8c199a8857e115b3226da52e02c7400439cdce8941b43982f5a",
@@ -214720,7 +214766,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbrsdk_lb-21.0.8-linux-x64-b1038.71.tar.gz",
     "image_type": "jdk",
@@ -214744,7 +214792,8 @@
   {
     "architecture": "x86_64",
     "features": [
-      "debug"
+      "debug",
+      "legacy"
     ],
     "file_type": "tar.gz",
     "filename": "jbrsdk_lb-21.0.8-linux-x64-b1038.71_diz.tar.gz",
@@ -214768,7 +214817,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbrsdk_lb-21.0.8-linux-x64-b1097.42.tar.gz",
     "image_type": "jdk",
@@ -214777,7 +214828,7 @@
     "md5": "ae93d5a184998637a63969982028e770",
     "md5_file": "jbrsdk_lb-21.0.8-linux-x64-b1097.42.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "41e31b745af1fe9b7f59fc021e968bc45c70e829",
     "sha1_file": "jbrsdk_lb-21.0.8-linux-x64-b1097.42.tar.gz.sha1",
     "sha256": "a5ae779f7dbd43a2964ed97b9add5bcff964c5747f27f0e192e49a888e2cdf72",
@@ -214792,7 +214843,8 @@
   {
     "architecture": "x86_64",
     "features": [
-      "debug"
+      "debug",
+      "legacy"
     ],
     "file_type": "tar.gz",
     "filename": "jbrsdk_lb-21.0.8-linux-x64-b1097.42_diz.tar.gz",
@@ -214802,7 +214854,7 @@
     "md5": "d59e5ceb28de8a05afc3c5260c7c319a",
     "md5_file": "jbrsdk_lb-21.0.8-linux-x64-b1097.42_diz.tar.gz.md5",
     "os": "linux",
-    "release_type": "ga",
+    "release_type": "ea",
     "sha1": "54a9f329e8dee8748785f3b3a84ee187b10160e3",
     "sha1_file": "jbrsdk_lb-21.0.8-linux-x64-b1097.42_diz.tar.gz.sha1",
     "sha256": "e049b2243efad951c667fba072dac3947344c482197bacd12fe1aef3c738b3eb",

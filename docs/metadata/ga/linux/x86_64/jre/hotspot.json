@@ -17414,7 +17414,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b1020.35.tar.gz",
     "image_type": "jre",
@@ -17437,7 +17439,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b1034.51.tar.gz",
     "image_type": "jre",
@@ -17460,7 +17464,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b1038.54.tar.gz",
     "image_type": "jre",
@@ -17483,7 +17489,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b1038.58.tar.gz",
     "image_type": "jre",
@@ -17506,7 +17514,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b968.13.tar.gz",
     "image_type": "jre",
@@ -17529,30 +17539,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
-    "file_type": "tar.gz",
-    "filename": "jbr_lb-21.0.7-linux-x64-b982.16.tar.gz",
-    "image_type": "jre",
-    "java_version": "linux",
-    "jvm_impl": "hotspot",
-    "md5": "f3d94be9e97923cda25a86dfa7391cf0",
-    "md5_file": "jbr_lb-21.0.7-linux-x64-b982.16.tar.gz.md5",
-    "os": "linux",
-    "release_type": "ga",
-    "sha1": "e100bea2e776cfb265bcd33ba33737855bfc3cfd",
-    "sha1_file": "jbr_lb-21.0.7-linux-x64-b982.16.tar.gz.sha1",
-    "sha256": "6d25dbe4b4f8b4183fef0f8859e602efed81ce72a6a889aa3fb40c4019e07d7a",
-    "sha256_file": "jbr_lb-21.0.7-linux-x64-b982.16.tar.gz.sha256",
-    "sha512": "4a95bfb8cf3919253e45645074c7c242969074d5cb10cacad36a2f673f9cab3b079cbd1cc399e70ea4f5227bdf974efda4e65c24b9c09519f5d1887cd42d6509",
-    "sha512_file": "jbr_lb-21.0.7-linux-x64-b982.16.tar.gz.sha512",
-    "size": 218131900,
-    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.7-linux-x64-b982.16.tar.gz",
-    "vendor": "jetbrains",
-    "version": "21.0.7b982.16"
-  },
-  {
-    "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.7-linux-x64-b992.24.tar.gz",
     "image_type": "jre",
@@ -17575,7 +17564,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.8-linux-x64-b1038.68.tar.gz",
     "image_type": "jre",
@@ -17598,7 +17589,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "legacy"
+    ],
     "file_type": "tar.gz",
     "filename": "jbr_lb-21.0.8-linux-x64-b1038.71.tar.gz",
     "image_type": "jre",
@@ -17618,29 +17611,6 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.8-linux-x64-b1038.71.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.8b1038.71"
-  },
-  {
-    "architecture": "x86_64",
-    "features": [],
-    "file_type": "tar.gz",
-    "filename": "jbr_lb-21.0.8-linux-x64-b1097.42.tar.gz",
-    "image_type": "jre",
-    "java_version": "linux",
-    "jvm_impl": "hotspot",
-    "md5": "3868747a053b652cbb4ddee11ce4542a",
-    "md5_file": "jbr_lb-21.0.8-linux-x64-b1097.42.tar.gz.md5",
-    "os": "linux",
-    "release_type": "ga",
-    "sha1": "0339690ca97d0e375d2c344d6544a8e8b18ecc06",
-    "sha1_file": "jbr_lb-21.0.8-linux-x64-b1097.42.tar.gz.sha1",
-    "sha256": "fc31ee73f08586d626d04f9ee55b455e26f327472984b9d43c3f16ec0f0727b4",
-    "sha256_file": "jbr_lb-21.0.8-linux-x64-b1097.42.tar.gz.sha256",
-    "sha512": "0a9de3d0d2e633e3c0b3b36d0d3541be7e2a941251f8f08bb941c148562c19ffc1e798130cc5bf2bb72c9cf5a667c74d8c968d3e5d27f3d96aacdd0d85c41b58",
-    "sha512_file": "jbr_lb-21.0.8-linux-x64-b1097.42.tar.gz.sha512",
-    "size": 238902780,
-    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.8-linux-x64-b1097.42.tar.gz",
-    "vendor": "jetbrains",
-    "version": "21.0.8b1097.42"
   },
   {
     "architecture": "x86_64",
