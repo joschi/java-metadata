@@ -42,6 +42,10 @@ function normalize_features {
 	then
 		features+=("large_heap")
 	fi
+	if [[ "${2}" == "alpine-linux" ]]
+	then
+		features+=("musl")
+	fi
 	echo "${features[@]}"
 }
 
@@ -61,7 +65,7 @@ function download {
 		echo "Skipping non-JRE, non-JDK image ${filename}"
 		return 0
 		;;
-	esac		
+	esac
 
 	local ext
 	# shellcheck disable=SC2016
@@ -88,6 +92,9 @@ function download {
 			return 0
 		fi
 
+		local os
+		os="$(jq -r '.os' <<< "${json}")"
+
 		local md_json
 		md_json="$(metadata_json \
 			"${VENDOR}" \
@@ -96,11 +103,11 @@ function download {
 			"${normalized_version}" \
 			"$(jq -r '.java_version' <<< "${json}")" \
 			"${jvm_impl}" \
-			"$(normalize_os "$(jq -r '.os' <<< "${json}")")" \
+			"$(normalize_os "$os")" \
 			"$(normalize_arch "$(jq -r '.architecture' <<< "${json}")")" \
 			"${ext}" \
 			"$(jq -r '.image_type' <<< "${json}")" \
-			"$(normalize_features "$(jq -r '.heap_size' <<< "${json}")")" \
+			"$(normalize_features "$(jq -r '.heap_size' <<< "${json}")" "$os")" \
 			"${url}" \
 			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}")" \
