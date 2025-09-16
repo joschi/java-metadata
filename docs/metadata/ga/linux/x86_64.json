@@ -212,7 +212,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.13_8.tar.gz",
     "image_type": "jdk",
@@ -235,7 +237,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.14.1_1.tar.gz",
     "image_type": "jdk",
@@ -258,7 +262,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.14_9.tar.gz",
     "image_type": "jdk",
@@ -281,7 +287,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.15_10.tar.gz",
     "image_type": "jdk",
@@ -304,7 +312,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.16.1_1.tar.gz",
     "image_type": "jdk",
@@ -327,7 +337,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.16_8.tar.gz",
     "image_type": "jdk",
@@ -350,7 +362,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.17_8.tar.gz",
     "image_type": "jdk",
@@ -373,7 +387,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.18_10.tar.gz",
     "image_type": "jdk",
@@ -396,7 +412,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.19_7.tar.gz",
     "image_type": "jdk",
@@ -419,7 +437,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.20.1_1.tar.gz",
     "image_type": "jdk",
@@ -442,7 +462,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.20_8.tar.gz",
     "image_type": "jdk",
@@ -465,7 +487,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.21_9.tar.gz",
     "image_type": "jdk",
@@ -488,7 +512,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.22_7.tar.gz",
     "image_type": "jdk",
@@ -511,7 +537,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.23_9.tar.gz",
     "image_type": "jdk",
@@ -534,7 +562,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.24_8.tar.gz",
     "image_type": "jdk",
@@ -557,7 +587,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.25_9.tar.gz",
     "image_type": "jdk",
@@ -580,7 +612,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.26_4.tar.gz",
     "image_type": "jdk",
@@ -603,7 +637,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.27_6.tar.gz",
     "image_type": "jdk",
@@ -626,7 +662,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.28_6.tar.gz",
     "image_type": "jdk",
@@ -2053,7 +2091,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.13_8.tar.gz",
     "image_type": "jre",
@@ -2076,7 +2116,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.14.1_1.tar.gz",
     "image_type": "jre",
@@ -2099,7 +2141,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.14_9.tar.gz",
     "image_type": "jre",
@@ -2122,7 +2166,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.15_10.tar.gz",
     "image_type": "jre",
@@ -2145,7 +2191,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.16.1_1.tar.gz",
     "image_type": "jre",
@@ -2168,7 +2216,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.16_8.tar.gz",
     "image_type": "jre",
@@ -2191,7 +2241,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.17_8.tar.gz",
     "image_type": "jre",
@@ -2214,7 +2266,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.18_10.tar.gz",
     "image_type": "jre",
@@ -2237,7 +2291,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.19_7.tar.gz",
     "image_type": "jre",
@@ -2260,7 +2316,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.20.1_1.tar.gz",
     "image_type": "jre",
@@ -2283,7 +2341,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.20_8.tar.gz",
     "image_type": "jre",
@@ -2306,7 +2366,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.21_9.tar.gz",
     "image_type": "jre",
@@ -2329,7 +2391,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.22_7.tar.gz",
     "image_type": "jre",
@@ -2352,7 +2416,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.23_9.tar.gz",
     "image_type": "jre",
@@ -2375,7 +2441,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.24_8.tar.gz",
     "image_type": "jre",
@@ -2398,7 +2466,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.25_9.tar.gz",
     "image_type": "jre",
@@ -2421,7 +2491,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.26_4.tar.gz",
     "image_type": "jre",
@@ -2444,7 +2516,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.27_6.tar.gz",
     "image_type": "jre",
@@ -2467,7 +2541,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.28_6.tar.gz",
     "image_type": "jre",
@@ -5675,29 +5751,6 @@
     "architecture": "x86_64",
     "features": [],
     "file_type": "tar.gz",
-    "filename": "OpenJDK16-jdk_x64_alpine-linux_hotspot_16_36.tar.gz",
-    "image_type": "jdk",
-    "java_version": "16+36",
-    "jvm_impl": "hotspot",
-    "md5": "3b90f3e11a7cbef5bc5218d4cc63fa2a",
-    "md5_file": "OpenJDK16-jdk_x64_alpine-linux_hotspot_16_36.tar.gz.md5",
-    "os": "linux",
-    "release_type": "ga",
-    "sha1": "489b2b684b1d40581def8f5f4849f918524ae6c4",
-    "sha1_file": "OpenJDK16-jdk_x64_alpine-linux_hotspot_16_36.tar.gz.sha1",
-    "sha256": "588c2bc69e3007663308f3913819edeb552ea186c4069b8b59341d742d98ae38",
-    "sha256_file": "OpenJDK16-jdk_x64_alpine-linux_hotspot_16_36.tar.gz.sha256",
-    "sha512": "abfb2476d4b86b6e11f796eec94ee169d8f9c3fec8ca89e3842ef56f2c3fb5c0579ee54eef3f4c74fc2fb169265231b2368ec046bff01227d8b4f80dd4fc4851",
-    "sha512_file": "OpenJDK16-jdk_x64_alpine-linux_hotspot_16_36.tar.gz.sha512",
-    "size": 206412810,
-    "url": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16%2B36/OpenJDK16-jdk_x64_alpine-linux_hotspot_16_36.tar.gz",
-    "vendor": "adoptopenjdk",
-    "version": "16.0.0+36"
-  },
-  {
-    "architecture": "x86_64",
-    "features": [],
-    "file_type": "tar.gz",
     "filename": "OpenJDK16-jdk_x64_linux_hotspot_16_36.tar.gz",
     "image_type": "jdk",
     "java_version": "16+36",
@@ -5739,29 +5792,6 @@
     "url": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16%2B36_openj9-0.25.0/OpenJDK16-jdk_x64_linux_openj9_16_36_openj9-0.25.0.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "16.0.0+36.openj9-0.25.0"
-  },
-  {
-    "architecture": "x86_64",
-    "features": [],
-    "file_type": "tar.gz",
-    "filename": "OpenJDK16-jre_x64_alpine-linux_hotspot_16_36.tar.gz",
-    "image_type": "jre",
-    "java_version": "16+36",
-    "jvm_impl": "hotspot",
-    "md5": "55b31a2fcd5e1d6c9f7028760c767868",
-    "md5_file": "OpenJDK16-jre_x64_alpine-linux_hotspot_16_36.tar.gz.md5",
-    "os": "linux",
-    "release_type": "ga",
-    "sha1": "809d5c4491c14d0917d5f4b80665bb3333a53030",
-    "sha1_file": "OpenJDK16-jre_x64_alpine-linux_hotspot_16_36.tar.gz.sha1",
-    "sha256": "8b3130d9eb5261898b7d5641280356bb3fb6774f966caf317cae324b4ff5f0e0",
-    "sha256_file": "OpenJDK16-jre_x64_alpine-linux_hotspot_16_36.tar.gz.sha256",
-    "sha512": "9479f4347e00dfd0bde15a8fc838c5e457f0cbd6bc7f29f740d643b6cdf8e39eabc5ccd04ed874dcfbadac33d48c50919a5041231a75418ead7e637096601adf",
-    "sha512_file": "OpenJDK16-jre_x64_alpine-linux_hotspot_16_36.tar.gz.sha512",
-    "size": 49503814,
-    "url": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16%2B36/OpenJDK16-jre_x64_alpine-linux_hotspot_16_36.tar.gz",
-    "vendor": "adoptopenjdk",
-    "version": "16.0.0+36"
   },
   {
     "architecture": "x86_64",
@@ -5811,30 +5841,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
-    "file_type": "tar.gz",
-    "filename": "OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.1_9.tar.gz",
-    "image_type": "jdk",
-    "java_version": "16.0.1+9",
-    "jvm_impl": "hotspot",
-    "md5": "5f6af50f3a57e157ed881cd822ae1652",
-    "md5_file": "OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.1_9.tar.gz.md5",
-    "os": "linux",
-    "release_type": "ga",
-    "sha1": "bed828a2ebc182c7c7b82bcaed8d6123cecb9749",
-    "sha1_file": "OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.1_9.tar.gz.sha1",
-    "sha256": "6a3e93ca05ea9c4062e8086baea68101748c5a1b433c7aac0cac48b4a7a7f2c7",
-    "sha256_file": "OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.1_9.tar.gz.sha256",
-    "sha512": "b3a5bc75b37601346910a2b32abc60bb7ccea20587002292018723542d7b3f1f18c896c4d9b50a4ce372e6dd159c1a8362691ae34f3d0f57f097b3497e2a46af",
-    "sha512_file": "OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.1_9.tar.gz.sha512",
-    "size": 206438302,
-    "url": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.1_9.tar.gz",
-    "vendor": "adoptopenjdk",
-    "version": "16.0.1+9"
-  },
-  {
-    "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.2_7.tar.gz",
     "image_type": "jdk",
@@ -5928,29 +5937,6 @@
     "architecture": "x86_64",
     "features": [],
     "file_type": "tar.gz",
-    "filename": "OpenJDK16U-jre_x64_alpine-linux_hotspot_16.0.1_9.tar.gz",
-    "image_type": "jre",
-    "java_version": "16.0.1+9",
-    "jvm_impl": "hotspot",
-    "md5": "6d98e835e07dfd02ac1fd5c77aabc38a",
-    "md5_file": "OpenJDK16U-jre_x64_alpine-linux_hotspot_16.0.1_9.tar.gz.md5",
-    "os": "linux",
-    "release_type": "ga",
-    "sha1": "3407cc48f62f623a0bb097919722385b10fbc005",
-    "sha1_file": "OpenJDK16U-jre_x64_alpine-linux_hotspot_16.0.1_9.tar.gz.sha1",
-    "sha256": "5f10ffc12056b735f5fe505ec6c481fff94de27e80c1d77ea9f9e2830669cc1d",
-    "sha256_file": "OpenJDK16U-jre_x64_alpine-linux_hotspot_16.0.1_9.tar.gz.sha256",
-    "sha512": "2e35273331a8402d577b5e3b6eaf7658026b01fa25ceacf8dcd98d369e578b9d976e8887d698a49b9b6c25234b595bf81c1e0970c0ea83853fd848289ed057ac",
-    "sha512_file": "OpenJDK16U-jre_x64_alpine-linux_hotspot_16.0.1_9.tar.gz.sha512",
-    "size": 49500650,
-    "url": "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_alpine-linux_hotspot_16.0.1_9.tar.gz",
-    "vendor": "adoptopenjdk",
-    "version": "16.0.1+9"
-  },
-  {
-    "architecture": "x86_64",
-    "features": [],
-    "file_type": "tar.gz",
     "filename": "OpenJDK16U-jre_x64_linux_hotspot_16.0.1_9.tar.gz",
     "image_type": "jre",
     "java_version": "16.0.1+9",
@@ -5995,7 +5981,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17-jdk_x64_alpine-linux_hotspot_17_35.tar.gz",
     "image_type": "jdk",
@@ -6041,7 +6029,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.10_7.tar.gz",
     "image_type": "jdk",
@@ -6064,7 +6054,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.11_9.tar.gz",
     "image_type": "jdk",
@@ -6087,7 +6079,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.12_7.tar.gz",
     "image_type": "jdk",
@@ -6110,7 +6104,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.13_11.tar.gz",
     "image_type": "jdk",
@@ -6133,7 +6129,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.14_7.tar.gz",
     "image_type": "jdk",
@@ -6156,7 +6154,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.15_6.tar.gz",
     "image_type": "jdk",
@@ -6179,7 +6179,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.16_8.tar.gz",
     "image_type": "jdk",
@@ -6202,7 +6204,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.1_12.tar.gz",
     "image_type": "jdk",
@@ -6225,7 +6229,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.2_8.tar.gz",
     "image_type": "jdk",
@@ -6248,7 +6254,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.3_7.tar.gz",
     "image_type": "jdk",
@@ -6271,7 +6279,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.4.1_1.tar.gz",
     "image_type": "jdk",
@@ -6294,7 +6304,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.4_8.tar.gz",
     "image_type": "jdk",
@@ -6317,7 +6329,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.5_8.tar.gz",
     "image_type": "jdk",
@@ -6340,7 +6354,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.6_10.tar.gz",
     "image_type": "jdk",
@@ -6363,7 +6379,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.7_7.tar.gz",
     "image_type": "jdk",
@@ -6386,7 +6404,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.8.1_1.tar.gz",
     "image_type": "jdk",
@@ -6409,7 +6429,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.8_7.tar.gz",
     "image_type": "jdk",
@@ -6432,7 +6454,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.9_9.tar.gz",
     "image_type": "jdk",
@@ -6869,7 +6893,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.10_7.tar.gz",
     "image_type": "jre",
@@ -6892,7 +6918,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.11_9.tar.gz",
     "image_type": "jre",
@@ -6915,7 +6943,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.12_7.tar.gz",
     "image_type": "jre",
@@ -6938,7 +6968,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.13_11.tar.gz",
     "image_type": "jre",
@@ -6961,7 +6993,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.14_7.tar.gz",
     "image_type": "jre",
@@ -6984,7 +7018,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.15_6.tar.gz",
     "image_type": "jre",
@@ -7007,7 +7043,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.16_8.tar.gz",
     "image_type": "jre",
@@ -7030,7 +7068,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.1_12.tar.gz",
     "image_type": "jre",
@@ -7053,7 +7093,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.2_8.tar.gz",
     "image_type": "jre",
@@ -7076,7 +7118,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.3_7.tar.gz",
     "image_type": "jre",
@@ -7099,7 +7143,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.4.1_1.tar.gz",
     "image_type": "jre",
@@ -7122,7 +7168,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.4_8.tar.gz",
     "image_type": "jre",
@@ -7145,7 +7193,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.5_8.tar.gz",
     "image_type": "jre",
@@ -7168,7 +7218,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.6_10.tar.gz",
     "image_type": "jre",
@@ -7191,7 +7243,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.7_7.tar.gz",
     "image_type": "jre",
@@ -7214,7 +7268,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.8.1_1.tar.gz",
     "image_type": "jre",
@@ -7237,7 +7293,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.8_7.tar.gz",
     "image_type": "jre",
@@ -7260,7 +7318,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.9_9.tar.gz",
     "image_type": "jre",
@@ -7697,7 +7757,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jdk_x64_alpine-linux_hotspot_18.0.1_10.tar.gz",
     "image_type": "jdk",
@@ -7720,7 +7782,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jdk_x64_alpine-linux_hotspot_18.0.2.1_1.tar.gz",
     "image_type": "jdk",
@@ -7743,7 +7807,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jdk_x64_alpine-linux_hotspot_18.0.2_9.tar.gz",
     "image_type": "jdk",
@@ -7766,7 +7832,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jdk_x64_alpine-linux_hotspot_18_36.tar.gz",
     "image_type": "jdk",
@@ -7881,7 +7949,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jre_x64_alpine-linux_hotspot_18.0.1_10.tar.gz",
     "image_type": "jre",
@@ -7904,7 +7974,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jre_x64_alpine-linux_hotspot_18.0.2.1_1.tar.gz",
     "image_type": "jre",
@@ -7927,7 +7999,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jre_x64_alpine-linux_hotspot_18.0.2_9.tar.gz",
     "image_type": "jre",
@@ -8019,7 +8093,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19.0.1_10.tar.gz",
     "image_type": "jdk",
@@ -8042,7 +8118,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19.0.2_7.tar.gz",
     "image_type": "jdk",
@@ -8065,30 +8143,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
-    "file_type": "tar.gz",
-    "filename": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz",
-    "image_type": "jdk",
-    "java_version": "19-beta+36-202208190932",
-    "jvm_impl": "hotspot",
-    "md5": "f3727747e7b6e10137a5f6295e938de7",
-    "md5_file": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.md5",
-    "os": "linux",
-    "release_type": "ga",
-    "sha1": "7801444d85e347990f3666a617b84c75c183ef76",
-    "sha1_file": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha1",
-    "sha256": "db0b9653fac88d78859e47213a3e310b5d47d5c26a788b5f0db1ebd5edee0207",
-    "sha256_file": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha256",
-    "sha512": "c5f74e88b93e9f89389ddbe2e687d85077c1ef04a873e83f3a713beb536f0dd7b862b64bf4a0bf250aa7f2240d70ce8548eea7a0e9026a752bf83ff78dc39580",
-    "sha512_file": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha512",
-    "size": 199010919,
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36-RC1-beta/OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz",
-    "vendor": "adoptopenjdk",
-    "version": "19.0.0-beta+36.0.202208190932"
-  },
-  {
-    "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36.tar.gz",
     "image_type": "jdk",
@@ -8203,7 +8260,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19.0.1_10.tar.gz",
     "image_type": "jre",
@@ -8226,7 +8285,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19.0.2_7.tar.gz",
     "image_type": "jre",
@@ -8249,30 +8310,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
-    "file_type": "tar.gz",
-    "filename": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz",
-    "image_type": "jre",
-    "java_version": "19-beta+36-202208190932",
-    "jvm_impl": "hotspot",
-    "md5": "36e5d4144e307e1f03ebae466ef1bad2",
-    "md5_file": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.md5",
-    "os": "linux",
-    "release_type": "ga",
-    "sha1": "4658f08368fefb85849ca8c5202020d17b9e078d",
-    "sha1_file": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha1",
-    "sha256": "bac64a5c99ff32bdfeed609380694399a53715183b48f621e4dcd1f9f7ab4e23",
-    "sha256_file": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha256",
-    "sha512": "75e09ab6212901d486522cb20f397dd8666afbf22d9ab5882553e5c8fc012d3d64cbd843999fcab7b1310dec7455465263ef758d5f3773c726a5d1f8ad3c5c84",
-    "sha512_file": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha512",
-    "size": 48090611,
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36-RC1-beta/OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz",
-    "vendor": "adoptopenjdk",
-    "version": "19.0.0-beta+36.0.202208190932"
-  },
-  {
-    "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36.tar.gz",
     "image_type": "jre",
@@ -8387,7 +8427,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jdk_x64_alpine-linux_hotspot_20.0.1_9.tar.gz",
     "image_type": "jdk",
@@ -8410,7 +8452,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jdk_x64_alpine-linux_hotspot_20.0.2_9.tar.gz",
     "image_type": "jdk",
@@ -8433,7 +8477,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jdk_x64_alpine-linux_hotspot_20_36.tar.gz",
     "image_type": "jdk",
@@ -8525,7 +8571,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jre_x64_alpine-linux_hotspot_20.0.1_9.tar.gz",
     "image_type": "jre",
@@ -8548,7 +8596,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jre_x64_alpine-linux_hotspot_20.0.2_9.tar.gz",
     "image_type": "jre",
@@ -8571,7 +8621,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jre_x64_alpine-linux_hotspot_20_36.tar.gz",
     "image_type": "jre",
@@ -8663,7 +8715,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.1_12.tar.gz",
     "image_type": "jdk",
@@ -8686,7 +8740,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.2_13.tar.gz",
     "image_type": "jdk",
@@ -8709,7 +8765,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.3_9.tar.gz",
     "image_type": "jdk",
@@ -8732,7 +8790,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.4_7.tar.gz",
     "image_type": "jdk",
@@ -8755,7 +8815,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.5_11.tar.gz",
     "image_type": "jdk",
@@ -8778,7 +8840,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.6_7.tar.gz",
     "image_type": "jdk",
@@ -8801,7 +8865,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.7_6.tar.gz",
     "image_type": "jdk",
@@ -8824,7 +8890,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.8_9.tar.gz",
     "image_type": "jdk",
@@ -8847,7 +8915,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21_35.tar.gz",
     "image_type": "jdk",
@@ -9077,7 +9147,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.1_12.tar.gz",
     "image_type": "jre",
@@ -9100,7 +9172,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.2_13.tar.gz",
     "image_type": "jre",
@@ -9123,7 +9197,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.3_9.tar.gz",
     "image_type": "jre",
@@ -9146,7 +9222,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.4_7.tar.gz",
     "image_type": "jre",
@@ -9169,7 +9247,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.5_11.tar.gz",
     "image_type": "jre",
@@ -9192,7 +9272,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.6_7.tar.gz",
     "image_type": "jre",
@@ -9215,7 +9297,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.7_6.tar.gz",
     "image_type": "jre",
@@ -9238,7 +9322,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.8_9.tar.gz",
     "image_type": "jre",
@@ -9261,7 +9347,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21_35.tar.gz",
     "image_type": "jre",
@@ -9491,7 +9579,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jdk_x64_alpine-linux_hotspot_22.0.1_8.tar.gz",
     "image_type": "jdk",
@@ -9514,7 +9604,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jdk_x64_alpine-linux_hotspot_22.0.2_9.tar.gz",
     "image_type": "jdk",
@@ -9537,7 +9629,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jdk_x64_alpine-linux_hotspot_22_36.tar.gz",
     "image_type": "jdk",
@@ -9629,7 +9723,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jre_x64_alpine-linux_hotspot_22.0.1_8.tar.gz",
     "image_type": "jre",
@@ -9652,7 +9748,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jre_x64_alpine-linux_hotspot_22.0.2_9.tar.gz",
     "image_type": "jre",
@@ -9675,7 +9773,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jre_x64_alpine-linux_hotspot_22_36.tar.gz",
     "image_type": "jre",
@@ -9767,7 +9867,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jdk_x64_alpine-linux_hotspot_23.0.1_11.tar.gz",
     "image_type": "jdk",
@@ -9790,7 +9892,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jdk_x64_alpine-linux_hotspot_23.0.2_7.tar.gz",
     "image_type": "jdk",
@@ -9813,7 +9917,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jdk_x64_alpine-linux_hotspot_23_37.tar.gz",
     "image_type": "jdk",
@@ -9905,7 +10011,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jre_x64_alpine-linux_hotspot_23.0.1_11.tar.gz",
     "image_type": "jre",
@@ -9928,7 +10036,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jre_x64_alpine-linux_hotspot_23.0.2_7.tar.gz",
     "image_type": "jre",
@@ -9951,7 +10061,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jre_x64_alpine-linux_hotspot_23_37.tar.gz",
     "image_type": "jre",
@@ -10043,7 +10155,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jdk_x64_alpine-linux_hotspot_24.0.1_9.tar.gz",
     "image_type": "jdk",
@@ -10066,7 +10180,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jdk_x64_alpine-linux_hotspot_24.0.2_12.tar.gz",
     "image_type": "jdk",
@@ -10089,7 +10205,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jdk_x64_alpine-linux_hotspot_24_36.tar.gz",
     "image_type": "jdk",
@@ -10181,7 +10299,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jre_x64_alpine-linux_hotspot_24.0.1_9.tar.gz",
     "image_type": "jre",
@@ -10204,7 +10324,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jre_x64_alpine-linux_hotspot_24.0.2_12.tar.gz",
     "image_type": "jre",
@@ -10227,7 +10349,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jre_x64_alpine-linux_hotspot_24_36.tar.gz",
     "image_type": "jre",
@@ -10438,7 +10562,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u322b06.tar.gz",
     "image_type": "jdk",
@@ -10461,7 +10587,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u332b09.tar.gz",
     "image_type": "jdk",
@@ -10484,7 +10612,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u342b07.tar.gz",
     "image_type": "jdk",
@@ -10507,7 +10637,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u345b01.tar.gz",
     "image_type": "jdk",
@@ -10530,7 +10662,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u352b08.tar.gz",
     "image_type": "jdk",
@@ -10553,7 +10687,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u362b09.tar.gz",
     "image_type": "jdk",
@@ -10576,7 +10712,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u372b07.tar.gz",
     "image_type": "jdk",
@@ -10599,7 +10737,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u382b05.tar.gz",
     "image_type": "jdk",
@@ -10622,7 +10762,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u392b08.tar.gz",
     "image_type": "jdk",
@@ -10645,7 +10787,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u402b06.tar.gz",
     "image_type": "jdk",
@@ -10668,7 +10812,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u412b08.tar.gz",
     "image_type": "jdk",
@@ -10691,7 +10837,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u422b05.tar.gz",
     "image_type": "jdk",
@@ -10714,7 +10862,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u432b06.tar.gz",
     "image_type": "jdk",
@@ -10737,7 +10887,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u442b06.tar.gz",
     "image_type": "jdk",
@@ -10760,7 +10912,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u452b09.tar.gz",
     "image_type": "jdk",
@@ -10783,7 +10937,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u462b08.tar.gz",
     "image_type": "jdk",
@@ -12333,7 +12489,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u322b06.tar.gz",
     "image_type": "jre",
@@ -12356,7 +12514,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u332b09.tar.gz",
     "image_type": "jre",
@@ -12379,7 +12539,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u342b07.tar.gz",
     "image_type": "jre",
@@ -12402,7 +12564,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u345b01.tar.gz",
     "image_type": "jre",
@@ -12425,7 +12589,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u352b08.tar.gz",
     "image_type": "jre",
@@ -12448,7 +12614,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u362b09.tar.gz",
     "image_type": "jre",
@@ -12471,7 +12639,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u372b07.tar.gz",
     "image_type": "jre",
@@ -12494,7 +12664,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u382b05.tar.gz",
     "image_type": "jre",
@@ -12517,7 +12689,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u392b08.tar.gz",
     "image_type": "jre",
@@ -12540,7 +12714,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u402b06.tar.gz",
     "image_type": "jre",
@@ -12563,7 +12739,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u412b08.tar.gz",
     "image_type": "jre",
@@ -12586,7 +12764,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u422b05.tar.gz",
     "image_type": "jre",
@@ -12609,7 +12789,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u432b06.tar.gz",
     "image_type": "jre",
@@ -12632,7 +12814,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u442b06.tar.gz",
     "image_type": "jre",
@@ -12655,7 +12839,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u452b09.tar.gz",
     "image_type": "jre",
@@ -12678,7 +12864,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u462b08.tar.gz",
     "image_type": "jre",
@@ -146593,6 +146781,54 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-25_linux-x64-musl_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25",
+    "jvm_impl": "hotspot",
+    "md5": "30b3e3a6d4af730114e252c437491867",
+    "md5_file": "sapmachine-jdk-25_linux-x64-musl_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "a6306f6274861e15ed408b696b23e2bb12ab3c16",
+    "sha1_file": "sapmachine-jdk-25_linux-x64-musl_bin.tar.gz.sha1",
+    "sha256": "325699e647af27f7c5692cfb48e2a70972c0535ccd8c0d4290d440ae86c5dc45",
+    "sha256_file": "sapmachine-jdk-25_linux-x64-musl_bin.tar.gz.sha256",
+    "sha512": "e20c8307c0bd174860102474c98995a651a67001a50b885d8d90cc54c47eccd81709a95f8709a8738eddbb166f04be184844e8c15f60ec61ffdc0a515841350f",
+    "sha512_file": "sapmachine-jdk-25_linux-x64-musl_bin.tar.gz.sha512",
+    "size": 227633375,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25/sapmachine-jdk-25_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-25_linux-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25",
+    "jvm_impl": "hotspot",
+    "md5": "fe622134df3df8a7b6f1094d40144ae9",
+    "md5_file": "sapmachine-jdk-25_linux-x64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "2dd26f07996eeeeda647d0ee8a49c3189c26de0b",
+    "sha1_file": "sapmachine-jdk-25_linux-x64_bin.tar.gz.sha1",
+    "sha256": "2b3181a0e99c0af43c375b15b4f26c35d73fd624358178cee25bbc10c0f15700",
+    "sha256_file": "sapmachine-jdk-25_linux-x64_bin.tar.gz.sha256",
+    "sha512": "8871f92e48f2fbb6fdf93cf5008e8497c902201fa4a00fcf9a4e65d139b23e547c4a10fb2401069d656c4e497e5f24c4dc97133d999b2281b2361a641912ecf2",
+    "sha512_file": "sapmachine-jdk-25_linux-x64_bin.tar.gz.sha512",
+    "size": 227335575,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25/sapmachine-jdk-25_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "sapmachine-jre-11.0.10_linux-x64_bin.tar.gz",
@@ -149854,6 +150090,54 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jre-24_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "24"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-25_linux-x64-musl_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "25",
+    "jvm_impl": "hotspot",
+    "md5": "e89078d638843d23b39e23f792923d7a",
+    "md5_file": "sapmachine-jre-25_linux-x64-musl_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "1c23484d6c63f35bda1fc39bdca47278c1556396",
+    "sha1_file": "sapmachine-jre-25_linux-x64-musl_bin.tar.gz.sha1",
+    "sha256": "0bda66d23a4bab730e05f2cb2ef3d69718eb92b9fd564f7213057b600e5a721a",
+    "sha256_file": "sapmachine-jre-25_linux-x64-musl_bin.tar.gz.sha256",
+    "sha512": "0101dee3f299e15886cf1ffb593624b34b1c7efd430b924c22cf3cfeed97b2cb14599e6abe7d74e6d195848fd1ce263893b796cf039601c91768e336a0b3657c",
+    "sha512_file": "sapmachine-jre-25_linux-x64-musl_bin.tar.gz.sha512",
+    "size": 62072825,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25/sapmachine-jre-25_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-25_linux-x64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "25",
+    "jvm_impl": "hotspot",
+    "md5": "4ad2ce3e9e0159adde75cde08b865553",
+    "md5_file": "sapmachine-jre-25_linux-x64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "008022d2dd0b4cebe7106ef19f053a8698c78c87",
+    "sha1_file": "sapmachine-jre-25_linux-x64_bin.tar.gz.sha1",
+    "sha256": "91aaa04433659a4260215162ba14025f5e103c1cc7173912ec777f48cb7de3a3",
+    "sha256_file": "sapmachine-jre-25_linux-x64_bin.tar.gz.sha256",
+    "sha512": "503d17678ac920efb2ba804031b5872b4d1e7bafb6525524f22650f8e61cfe49f875d8b6704736b31a5974071b7e04fb4095970d099e2540485325cc29a42222",
+    "sha512_file": "sapmachine-jre-25_linux-x64_bin.tar.gz.sha512",
+    "size": 62827714,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25/sapmachine-jre-25_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25"
   },
   {
     "architecture": "x86_64",
@@ -163503,7 +163787,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.13_8.tar.gz",
     "image_type": "jdk",
@@ -163526,7 +163812,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.14.1_1.tar.gz",
     "image_type": "jdk",
@@ -163549,7 +163837,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.14_9.tar.gz",
     "image_type": "jdk",
@@ -163572,7 +163862,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.15_10.tar.gz",
     "image_type": "jdk",
@@ -163595,7 +163887,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.16.1_1.tar.gz",
     "image_type": "jdk",
@@ -163618,7 +163912,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.16_8.tar.gz",
     "image_type": "jdk",
@@ -163641,7 +163937,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.17_8.tar.gz",
     "image_type": "jdk",
@@ -163664,7 +163962,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.18_10.tar.gz",
     "image_type": "jdk",
@@ -163687,7 +163987,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.19_7.tar.gz",
     "image_type": "jdk",
@@ -163710,7 +164012,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.20.1_1.tar.gz",
     "image_type": "jdk",
@@ -163733,7 +164037,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.20_8.tar.gz",
     "image_type": "jdk",
@@ -163756,7 +164062,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.21_9.tar.gz",
     "image_type": "jdk",
@@ -163779,7 +164087,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.22_7.tar.gz",
     "image_type": "jdk",
@@ -163802,7 +164112,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.23_9.tar.gz",
     "image_type": "jdk",
@@ -163825,7 +164137,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.24_8.tar.gz",
     "image_type": "jdk",
@@ -163848,7 +164162,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.25_9.tar.gz",
     "image_type": "jdk",
@@ -163871,7 +164187,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.26_4.tar.gz",
     "image_type": "jdk",
@@ -163894,7 +164212,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.27_6.tar.gz",
     "image_type": "jdk",
@@ -163917,7 +164237,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.28_6.tar.gz",
     "image_type": "jdk",
@@ -164400,7 +164722,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.13_8.tar.gz",
     "image_type": "jre",
@@ -164423,7 +164747,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.14.1_1.tar.gz",
     "image_type": "jre",
@@ -164446,7 +164772,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.14_9.tar.gz",
     "image_type": "jre",
@@ -164469,7 +164797,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.15_10.tar.gz",
     "image_type": "jre",
@@ -164492,7 +164822,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.16.1_1.tar.gz",
     "image_type": "jre",
@@ -164515,7 +164847,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.16_8.tar.gz",
     "image_type": "jre",
@@ -164538,7 +164872,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.17_8.tar.gz",
     "image_type": "jre",
@@ -164561,7 +164897,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.18_10.tar.gz",
     "image_type": "jre",
@@ -164584,7 +164922,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.19_7.tar.gz",
     "image_type": "jre",
@@ -164607,7 +164947,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.20.1_1.tar.gz",
     "image_type": "jre",
@@ -164630,7 +164972,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.20_8.tar.gz",
     "image_type": "jre",
@@ -164653,7 +164997,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.21_9.tar.gz",
     "image_type": "jre",
@@ -164676,7 +165022,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.22_7.tar.gz",
     "image_type": "jre",
@@ -164699,7 +165047,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.23_9.tar.gz",
     "image_type": "jre",
@@ -164722,7 +165072,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.24_8.tar.gz",
     "image_type": "jre",
@@ -164745,7 +165097,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.25_9.tar.gz",
     "image_type": "jre",
@@ -164768,7 +165122,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.26_4.tar.gz",
     "image_type": "jre",
@@ -164791,7 +165147,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.27_6.tar.gz",
     "image_type": "jre",
@@ -164814,7 +165172,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.28_6.tar.gz",
     "image_type": "jre",
@@ -165297,7 +165657,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.2_7.tar.gz",
     "image_type": "jdk",
@@ -165343,7 +165705,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17-jdk_x64_alpine-linux_hotspot_17_35.tar.gz",
     "image_type": "jdk",
@@ -165389,7 +165753,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.10_7.tar.gz",
     "image_type": "jdk",
@@ -165412,7 +165778,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.11_9.tar.gz",
     "image_type": "jdk",
@@ -165435,7 +165803,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.12_7.tar.gz",
     "image_type": "jdk",
@@ -165458,7 +165828,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.13_11.tar.gz",
     "image_type": "jdk",
@@ -165481,7 +165853,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.14_7.tar.gz",
     "image_type": "jdk",
@@ -165504,7 +165878,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.15_6.tar.gz",
     "image_type": "jdk",
@@ -165527,7 +165903,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.16_8.tar.gz",
     "image_type": "jdk",
@@ -165550,7 +165928,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.1_12.tar.gz",
     "image_type": "jdk",
@@ -165573,7 +165953,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.2_8.tar.gz",
     "image_type": "jdk",
@@ -165596,7 +165978,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.3_7.tar.gz",
     "image_type": "jdk",
@@ -165619,7 +166003,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.4.1_1.tar.gz",
     "image_type": "jdk",
@@ -165642,7 +166028,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.4_8.tar.gz",
     "image_type": "jdk",
@@ -165665,7 +166053,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.5_8.tar.gz",
     "image_type": "jdk",
@@ -165688,7 +166078,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.6_10.tar.gz",
     "image_type": "jdk",
@@ -165711,7 +166103,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.7_7.tar.gz",
     "image_type": "jdk",
@@ -165734,7 +166128,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.8.1_1.tar.gz",
     "image_type": "jdk",
@@ -165757,7 +166153,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.8_7.tar.gz",
     "image_type": "jdk",
@@ -165780,7 +166178,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.9_9.tar.gz",
     "image_type": "jdk",
@@ -166217,7 +166617,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.10_7.tar.gz",
     "image_type": "jre",
@@ -166240,7 +166642,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.11_9.tar.gz",
     "image_type": "jre",
@@ -166263,7 +166667,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.12_7.tar.gz",
     "image_type": "jre",
@@ -166286,7 +166692,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.13_11.tar.gz",
     "image_type": "jre",
@@ -166309,7 +166717,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.14_7.tar.gz",
     "image_type": "jre",
@@ -166332,7 +166742,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.15_6.tar.gz",
     "image_type": "jre",
@@ -166355,7 +166767,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.16_8.tar.gz",
     "image_type": "jre",
@@ -166378,7 +166792,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.1_12.tar.gz",
     "image_type": "jre",
@@ -166401,7 +166817,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.2_8.tar.gz",
     "image_type": "jre",
@@ -166424,7 +166842,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.3_7.tar.gz",
     "image_type": "jre",
@@ -166447,7 +166867,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.4.1_1.tar.gz",
     "image_type": "jre",
@@ -166470,7 +166892,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.4_8.tar.gz",
     "image_type": "jre",
@@ -166493,7 +166917,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.5_8.tar.gz",
     "image_type": "jre",
@@ -166516,7 +166942,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.6_10.tar.gz",
     "image_type": "jre",
@@ -166539,7 +166967,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.7_7.tar.gz",
     "image_type": "jre",
@@ -166562,7 +166992,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.8.1_1.tar.gz",
     "image_type": "jre",
@@ -166585,7 +167017,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.8_7.tar.gz",
     "image_type": "jre",
@@ -166608,7 +167042,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.9_9.tar.gz",
     "image_type": "jre",
@@ -167045,7 +167481,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jdk_x64_alpine-linux_hotspot_18.0.1_10.tar.gz",
     "image_type": "jdk",
@@ -167068,7 +167506,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jdk_x64_alpine-linux_hotspot_18.0.2.1_1.tar.gz",
     "image_type": "jdk",
@@ -167091,7 +167531,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jdk_x64_alpine-linux_hotspot_18.0.2_9.tar.gz",
     "image_type": "jdk",
@@ -167114,7 +167556,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jdk_x64_alpine-linux_hotspot_18_36.tar.gz",
     "image_type": "jdk",
@@ -167229,7 +167673,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jre_x64_alpine-linux_hotspot_18.0.1_10.tar.gz",
     "image_type": "jre",
@@ -167252,7 +167698,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jre_x64_alpine-linux_hotspot_18.0.2.1_1.tar.gz",
     "image_type": "jre",
@@ -167275,7 +167723,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK18U-jre_x64_alpine-linux_hotspot_18.0.2_9.tar.gz",
     "image_type": "jre",
@@ -167367,7 +167817,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19.0.1_10.tar.gz",
     "image_type": "jdk",
@@ -167390,7 +167842,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19.0.2_7.tar.gz",
     "image_type": "jdk",
@@ -167413,30 +167867,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
-    "file_type": "tar.gz",
-    "filename": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz",
-    "image_type": "jdk",
-    "java_version": "19-beta+36-202208190932",
-    "jvm_impl": "hotspot",
-    "md5": "f3727747e7b6e10137a5f6295e938de7",
-    "md5_file": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.md5",
-    "os": "linux",
-    "release_type": "ga",
-    "sha1": "7801444d85e347990f3666a617b84c75c183ef76",
-    "sha1_file": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha1",
-    "sha256": "db0b9653fac88d78859e47213a3e310b5d47d5c26a788b5f0db1ebd5edee0207",
-    "sha256_file": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha256",
-    "sha512": "c5f74e88b93e9f89389ddbe2e687d85077c1ef04a873e83f3a713beb536f0dd7b862b64bf4a0bf250aa7f2240d70ce8548eea7a0e9026a752bf83ff78dc39580",
-    "sha512_file": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha512",
-    "size": 199010919,
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36-RC1-beta/OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36-RC1.tar.gz",
-    "vendor": "temurin",
-    "version": "19.0.0-beta+36.0.202208190932"
-  },
-  {
-    "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jdk_x64_alpine-linux_hotspot_19_36.tar.gz",
     "image_type": "jdk",
@@ -167551,7 +167984,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19.0.1_10.tar.gz",
     "image_type": "jre",
@@ -167574,7 +168009,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19.0.2_7.tar.gz",
     "image_type": "jre",
@@ -167597,30 +168034,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
-    "file_type": "tar.gz",
-    "filename": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz",
-    "image_type": "jre",
-    "java_version": "19-beta+36-202208190932",
-    "jvm_impl": "hotspot",
-    "md5": "36e5d4144e307e1f03ebae466ef1bad2",
-    "md5_file": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.md5",
-    "os": "linux",
-    "release_type": "ga",
-    "sha1": "4658f08368fefb85849ca8c5202020d17b9e078d",
-    "sha1_file": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha1",
-    "sha256": "bac64a5c99ff32bdfeed609380694399a53715183b48f621e4dcd1f9f7ab4e23",
-    "sha256_file": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha256",
-    "sha512": "75e09ab6212901d486522cb20f397dd8666afbf22d9ab5882553e5c8fc012d3d64cbd843999fcab7b1310dec7455465263ef758d5f3773c726a5d1f8ad3c5c84",
-    "sha512_file": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz.sha512",
-    "size": 48090611,
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36-RC1-beta/OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36-RC1.tar.gz",
-    "vendor": "temurin",
-    "version": "19.0.0-beta+36.0.202208190932"
-  },
-  {
-    "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK19U-jre_x64_alpine-linux_hotspot_19_36.tar.gz",
     "image_type": "jre",
@@ -167735,7 +168151,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jdk_x64_alpine-linux_hotspot_20.0.1_9.tar.gz",
     "image_type": "jdk",
@@ -167758,7 +168176,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jdk_x64_alpine-linux_hotspot_20.0.2_9.tar.gz",
     "image_type": "jdk",
@@ -167781,7 +168201,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jdk_x64_alpine-linux_hotspot_20_36.tar.gz",
     "image_type": "jdk",
@@ -167873,7 +168295,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jre_x64_alpine-linux_hotspot_20.0.1_9.tar.gz",
     "image_type": "jre",
@@ -167896,7 +168320,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jre_x64_alpine-linux_hotspot_20.0.2_9.tar.gz",
     "image_type": "jre",
@@ -167919,7 +168345,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK20U-jre_x64_alpine-linux_hotspot_20_36.tar.gz",
     "image_type": "jre",
@@ -168011,7 +168439,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.1_12.tar.gz",
     "image_type": "jdk",
@@ -168034,7 +168464,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.2_13.tar.gz",
     "image_type": "jdk",
@@ -168057,7 +168489,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.3_9.tar.gz",
     "image_type": "jdk",
@@ -168080,7 +168514,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.4_7.tar.gz",
     "image_type": "jdk",
@@ -168103,7 +168539,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.5_11.tar.gz",
     "image_type": "jdk",
@@ -168126,7 +168564,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.6_7.tar.gz",
     "image_type": "jdk",
@@ -168149,7 +168589,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.7_6.tar.gz",
     "image_type": "jdk",
@@ -168172,7 +168614,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.8_9.tar.gz",
     "image_type": "jdk",
@@ -168195,7 +168639,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jdk_x64_alpine-linux_hotspot_21_35.tar.gz",
     "image_type": "jdk",
@@ -168425,7 +168871,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.1_12.tar.gz",
     "image_type": "jre",
@@ -168448,7 +168896,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.2_13.tar.gz",
     "image_type": "jre",
@@ -168471,7 +168921,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.3_9.tar.gz",
     "image_type": "jre",
@@ -168494,7 +168946,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.4_7.tar.gz",
     "image_type": "jre",
@@ -168517,7 +168971,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.5_11.tar.gz",
     "image_type": "jre",
@@ -168540,7 +168996,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.6_7.tar.gz",
     "image_type": "jre",
@@ -168563,7 +169021,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.7_6.tar.gz",
     "image_type": "jre",
@@ -168586,7 +169046,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.8_9.tar.gz",
     "image_type": "jre",
@@ -168609,7 +169071,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_x64_alpine-linux_hotspot_21_35.tar.gz",
     "image_type": "jre",
@@ -168839,7 +169303,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jdk_x64_alpine-linux_hotspot_22.0.1_8.tar.gz",
     "image_type": "jdk",
@@ -168862,7 +169328,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jdk_x64_alpine-linux_hotspot_22.0.2_9.tar.gz",
     "image_type": "jdk",
@@ -168885,7 +169353,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jdk_x64_alpine-linux_hotspot_22_36.tar.gz",
     "image_type": "jdk",
@@ -168977,7 +169447,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jre_x64_alpine-linux_hotspot_22.0.1_8.tar.gz",
     "image_type": "jre",
@@ -169000,7 +169472,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jre_x64_alpine-linux_hotspot_22.0.2_9.tar.gz",
     "image_type": "jre",
@@ -169023,7 +169497,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK22U-jre_x64_alpine-linux_hotspot_22_36.tar.gz",
     "image_type": "jre",
@@ -169115,7 +169591,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jdk_x64_alpine-linux_hotspot_23.0.1_11.tar.gz",
     "image_type": "jdk",
@@ -169138,7 +169616,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jdk_x64_alpine-linux_hotspot_23.0.2_7.tar.gz",
     "image_type": "jdk",
@@ -169161,7 +169641,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jdk_x64_alpine-linux_hotspot_23_37.tar.gz",
     "image_type": "jdk",
@@ -169253,7 +169735,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jre_x64_alpine-linux_hotspot_23.0.1_11.tar.gz",
     "image_type": "jre",
@@ -169276,7 +169760,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jre_x64_alpine-linux_hotspot_23.0.2_7.tar.gz",
     "image_type": "jre",
@@ -169299,7 +169785,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK23U-jre_x64_alpine-linux_hotspot_23_37.tar.gz",
     "image_type": "jre",
@@ -169391,7 +169879,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jdk_x64_alpine-linux_hotspot_24.0.1_9.tar.gz",
     "image_type": "jdk",
@@ -169414,7 +169904,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jdk_x64_alpine-linux_hotspot_24.0.2_12.tar.gz",
     "image_type": "jdk",
@@ -169437,7 +169929,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jdk_x64_alpine-linux_hotspot_24_36.tar.gz",
     "image_type": "jdk",
@@ -169529,7 +170023,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jre_x64_alpine-linux_hotspot_24.0.1_9.tar.gz",
     "image_type": "jre",
@@ -169552,7 +170048,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jre_x64_alpine-linux_hotspot_24.0.2_12.tar.gz",
     "image_type": "jre",
@@ -169575,7 +170073,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK24U-jre_x64_alpine-linux_hotspot_24_36.tar.gz",
     "image_type": "jre",
@@ -169667,7 +170167,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u322b06.tar.gz",
     "image_type": "jdk",
@@ -169690,7 +170192,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u332b09.tar.gz",
     "image_type": "jdk",
@@ -169713,7 +170217,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u342b07.tar.gz",
     "image_type": "jdk",
@@ -169736,7 +170242,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u345b01.tar.gz",
     "image_type": "jdk",
@@ -169759,7 +170267,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u352b08.tar.gz",
     "image_type": "jdk",
@@ -169782,7 +170292,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u362b09.tar.gz",
     "image_type": "jdk",
@@ -169805,7 +170317,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u372b07.tar.gz",
     "image_type": "jdk",
@@ -169828,7 +170342,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u382b05.tar.gz",
     "image_type": "jdk",
@@ -169851,7 +170367,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u392b08.tar.gz",
     "image_type": "jdk",
@@ -169874,7 +170392,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u402b06.tar.gz",
     "image_type": "jdk",
@@ -169897,7 +170417,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u412b08.tar.gz",
     "image_type": "jdk",
@@ -169920,7 +170442,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u422b05.tar.gz",
     "image_type": "jdk",
@@ -169943,7 +170467,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u432b06.tar.gz",
     "image_type": "jdk",
@@ -169966,7 +170492,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u442b06.tar.gz",
     "image_type": "jdk",
@@ -169989,7 +170517,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u452b09.tar.gz",
     "image_type": "jdk",
@@ -170012,7 +170542,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u462b08.tar.gz",
     "image_type": "jdk",
@@ -170449,7 +170981,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u322b06.tar.gz",
     "image_type": "jre",
@@ -170472,7 +171006,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u332b09.tar.gz",
     "image_type": "jre",
@@ -170495,7 +171031,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u342b07.tar.gz",
     "image_type": "jre",
@@ -170518,7 +171056,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u345b01.tar.gz",
     "image_type": "jre",
@@ -170541,7 +171081,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u352b08.tar.gz",
     "image_type": "jre",
@@ -170564,7 +171106,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u362b09.tar.gz",
     "image_type": "jre",
@@ -170587,7 +171131,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u372b07.tar.gz",
     "image_type": "jre",
@@ -170610,7 +171156,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u382b05.tar.gz",
     "image_type": "jre",
@@ -170633,7 +171181,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u392b08.tar.gz",
     "image_type": "jre",
@@ -170656,7 +171206,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u402b06.tar.gz",
     "image_type": "jre",
@@ -170679,7 +171231,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u412b08.tar.gz",
     "image_type": "jre",
@@ -170702,7 +171256,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u422b05.tar.gz",
     "image_type": "jre",
@@ -170725,7 +171281,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u432b06.tar.gz",
     "image_type": "jre",
@@ -170748,7 +171306,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u442b06.tar.gz",
     "image_type": "jre",
@@ -170771,7 +171331,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u452b09.tar.gz",
     "image_type": "jre",
@@ -170794,7 +171356,9 @@
   },
   {
     "architecture": "x86_64",
-    "features": [],
+    "features": [
+      "musl"
+    ],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u462b08.tar.gz",
     "image_type": "jre",
