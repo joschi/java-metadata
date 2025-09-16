@@ -37,6 +37,7 @@ vendors=(
 	"$(cmd 'semeru22')"
 	"$(cmd 'semeru23')"
 	"$(cmd 'semeru24')"
+	"$(cmd 'semeru25')"
 	"$(cmd 'semeru11-certified')"
 	"$(cmd 'semeru17-certified')"
 	"$(cmd 'semeru21-certified')"
