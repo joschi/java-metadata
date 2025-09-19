@@ -5317,6 +5317,31 @@
   {
     "architecture": "x86_64",
     "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25+36-LTS",
+    "jvm_impl": "hotspot",
+    "md5": "7ecef695a9a723bd5aadc873d1032f6d",
+    "md5_file": "OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "3923abf61112777aee44b328ef117f191898fc17",
+    "sha1_file": "OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz.sha1",
+    "sha256": "637e47474d411ed86134f413af7d5fef4180ddb0bf556347b7e74a88cf8904c8",
+    "sha256_file": "OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz.sha256",
+    "sha512": "9673ed249db7425865720280949c37582c90f543365f765f92377f9e41606e555bb071bcb4e68417218a5fe21f3d6b1138f2209ce619408a81123841e81cd638",
+    "sha512_file": "OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz.sha512",
+    "size": 139912688,
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "25.0.0+36.0.LTS"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
       "large_heap"
     ],
     "file_type": "tar.gz",
@@ -14994,6 +15019,54 @@
     "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.7.0.7+6_jdk-21.0.7-ga/Alibaba_Dragonwell_Extended_21.0.7.0.7.6_x64_linux.tar.gz",
     "vendor": "dragonwell",
     "version": "21.0.7.0.7.6"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_alpine-linux.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8.0.8.9",
+    "jvm_impl": "hotspot",
+    "md5": "5ebd0677247c75295fcb68e93f714b02",
+    "md5_file": "Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_alpine-linux.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "ea55f5ab8c1a3888d3d1cc3f2ba2383292dd731d",
+    "sha1_file": "Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_alpine-linux.tar.gz.sha1",
+    "sha256": "19624e3fdbfa6ca01397520a184921209ed23c1c551281beabce65c31e2f8f4c",
+    "sha256_file": "Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_alpine-linux.tar.gz.sha256",
+    "sha512": "ae57149727ab40f245761dfadc17444df14b6809fcebebcbeaaa1e58d33a5b41d283cdfbfdca3fd6b56410fea6d5da1fcc0d6ef53986592d1250911c5bc9ed5c",
+    "sha512_file": "Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_alpine-linux.tar.gz.sha512",
+    "size": 216542708,
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.8.0.8+9_jdk-21.0.8-ga/Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.8.0.8.9"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_linux.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8.0.8.9",
+    "jvm_impl": "hotspot",
+    "md5": "d279ef62de13920c9dc24344ab2b0890",
+    "md5_file": "Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_linux.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "958007b5aae0158dab7e85e9d608dc7a2d775a4b",
+    "sha1_file": "Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_linux.tar.gz.sha1",
+    "sha256": "eccbd08b431cbd2bd6a0b8f4809373997d4339c6ef8447c1c1b63aeec1e63e3e",
+    "sha256_file": "Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_linux.tar.gz.sha256",
+    "sha512": "2a8cb9b50b2372c2479e155457d956bb33b8b137a22609d75c4de81be3e8e5613b5e4b90744930f1cdc4a197c1fea295ed25085c7c4735507d7fcc3eb0044f60",
+    "sha512_file": "Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_linux.tar.gz.sha512",
+    "size": 217446345,
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.8.0.8+9_jdk-21.0.8-ga/Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.8.0.8.9"
   },
   {
     "architecture": "x86_64",
@@ -113789,6 +113862,31 @@
     "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_linux_hotspot_24_36.tar.gz",
     "vendor": "temurin",
     "version": "24.0.0+36"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25+36-LTS",
+    "jvm_impl": "hotspot",
+    "md5": "7ecef695a9a723bd5aadc873d1032f6d",
+    "md5_file": "OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "3923abf61112777aee44b328ef117f191898fc17",
+    "sha1_file": "OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz.sha1",
+    "sha256": "637e47474d411ed86134f413af7d5fef4180ddb0bf556347b7e74a88cf8904c8",
+    "sha256_file": "OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz.sha256",
+    "sha512": "9673ed249db7425865720280949c37582c90f543365f765f92377f9e41606e555bb071bcb4e68417218a5fe21f3d6b1138f2209ce619408a81123841e81cd638",
+    "sha512_file": "OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz.sha512",
+    "size": 139912688,
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.0+36.0.LTS"
   },
   {
     "architecture": "x86_64",
