@@ -4857,5 +4857,53 @@
     "url": "https://corretto.aws/downloads/resources/8.462.08.1/amazon-corretto-8.462.08.1-linux-aarch64.tar.gz",
     "vendor": "corretto",
     "version": "8.462.08.1"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "amazon-corretto-8.472.08.1-alpine-linux-aarch64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.472.08.1",
+    "jvm_impl": "hotspot",
+    "md5": "d1047ff655af2c0bf2c3595d55db8a69",
+    "md5_file": "amazon-corretto-8.472.08.1-alpine-linux-aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "2c90e7668fe27b4c4b16388c7ed80d7d2c0d8983",
+    "sha1_file": "amazon-corretto-8.472.08.1-alpine-linux-aarch64.tar.gz.sha1",
+    "sha256": "b1409f11cf314b5332e7e26092710ab91f7c1828283f8075c2bfb7b78e22311f",
+    "sha256_file": "amazon-corretto-8.472.08.1-alpine-linux-aarch64.tar.gz.sha256",
+    "sha512": "6a36617e90b95cdcd5d312d74c1b42afe70d68f6cd00685d8c590a8b5627e689f9d9733949eff404ab953f5f9801f2899fd1403664d591b20c5252659a4874e7",
+    "sha512_file": "amazon-corretto-8.472.08.1-alpine-linux-aarch64.tar.gz.sha512",
+    "size": 100322079,
+    "url": "https://corretto.aws/downloads/resources/8.472.08.1/amazon-corretto-8.472.08.1-alpine-linux-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.472.08.1"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "amazon-corretto-8.472.08.1-linux-aarch64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.472.08.1",
+    "jvm_impl": "hotspot",
+    "md5": "55412f82ea5307b95ef87dd51b19a5da",
+    "md5_file": "amazon-corretto-8.472.08.1-linux-aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "592ce8bcf71b47eab7a74d7275a3f029e07065ba",
+    "sha1_file": "amazon-corretto-8.472.08.1-linux-aarch64.tar.gz.sha1",
+    "sha256": "13c732b6f7ed1d024fa896b45de74f24bb5eacd9c7ceab8f2aee69c4260325e8",
+    "sha256_file": "amazon-corretto-8.472.08.1-linux-aarch64.tar.gz.sha256",
+    "sha512": "cef30e2262137012b5ff676bee5b0eaa5475a53ca0a5ca28f25063c7df91ac9b2a8fc3152fa65966e25e5c815ac5ecf48caea6be3a60f3363de4fb53339a2d4b",
+    "sha512_file": "amazon-corretto-8.472.08.1-linux-aarch64.tar.gz.sha512",
+    "size": 102516727,
+    "url": "https://corretto.aws/downloads/resources/8.472.08.1/amazon-corretto-8.472.08.1-linux-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.472.08.1"
   }
 ]
