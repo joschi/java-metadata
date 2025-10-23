@@ -324,9 +324,48 @@ GITHUB_TOKEN=ghp_... ./java-metadata validate
 - Better resilience with retry logic
 - Clearer progress feedback with progress bars
 
-### Phase 5: Deployment
-- Update GitHub Actions workflows
-- Deprecate Bash scripts after successful production runs
+### ✅ Phase 5: Deployment - COMPLETE
+
+**GitHub Actions Workflows Updated**
+
+All workflows have been migrated to use the Go implementation via `go run`:
+
+1. **update.yml** - Update release metadata (runs every 6 hours)
+   - Uses `go run ./cmd/java-metadata update`
+   - Configures concurrency (4 providers, 3 downloads)
+   - Sets `GITHUB_TOKEN` environment variable for API access
+   - No system dependencies required (was: jq, jo, perl, curl, parallel)
+
+2. **validate.yml** - Validate release metadata (runs daily at 3am)
+   - Uses `go run ./cmd/java-metadata validate --delete`
+   - Concurrent validation with 10 parallel checks
+   - Automatically removes invalid files with `--delete` flag
+   - No system dependencies required (was: jq, curl)
+
+3. **test.yml** - Run tests
+   - Added `test-go` job: runs `go test -v ./...` and builds binary
+   - Kept `test-bash` job: continues to run shellcheck on bash scripts
+   - Both jobs run in parallel
+
+4. **dash0.yml** - Export workflow telemetry
+   - No changes needed (monitoring only)
+
+**Key Improvements:**
+- ✅ Zero system dependencies (except Go runtime)
+- ✅ Faster execution with connection pooling and concurrent downloads
+- ✅ Better error handling with retry logic
+- ✅ Structured logging for easier debugging
+- ✅ Consistent behavior between local and CI environments
+
+**Migration Status:**
+- ✅ All workflows migrated to Go implementation
+- ✅ Bash scripts preserved in `bin/` directory for reference
+- ⏭️ Bash scripts can be removed after 3 successful production cycles
+
+**Testing:**
+- Workflows use `go run` to avoid pre-compilation step
+- Go 1.21+ required (set via `actions/setup-go@v5`)
+- All dependencies automatically fetched via `go run`
 
 ## Key Design Decisions
 

@@ -11,10 +11,16 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
     - uses: actions/checkout@v6
-    - name: Install dependencies
-      run: sudo apt -y install jq curl
-    - name: Run validation script
-      run: "git rm $(find docs/metadata/vendor -name '*.json' ! -name all.json | xargs -t -P 8 -I % -n 1 bin/validate.bash %) || true"
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+    - name: Run validation (Go implementation)
+      run: |
+        go run ./cmd/java-metadata validate \
+          --metadata-dir=./docs/metadata \
+          --concurrency=10 \
+          --delete || true
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
