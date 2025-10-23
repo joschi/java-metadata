@@ -1,11 +1,13 @@
 package main
 
 import (
+	"encoding/json"
 	"flag"
 	"fmt"
 	"os"
 	"path/filepath"
 	"sync"
+	"sync/atomic"
 
 	"github.com/joschi/java-metadata/internal/downloader"
 	"github.com/joschi/java-metadata/internal/models"
@@ -20,10 +22,15 @@ func main() {
 	checksumDir := updateCmd.String("checksum-dir", "./docs/checksums", "Output directory for checksums")
 	concurrency := updateCmd.Int("concurrency", 4, "Number of concurrent provider fetches")
 
+	validateCmd := flag.NewFlagSet("validate", flag.ExitOnError)
+	validateMetadataDir := validateCmd.String("metadata-dir", "./docs/metadata", "Directory containing metadata files")
+	validateConcurrency := validateCmd.Int("concurrency", 10, "Number of concurrent URL checks")
+
 	if len(os.Args) < 2 {
 		fmt.Println("Usage: java-metadata <command> [options]")
 		fmt.Println("Commands:")
-		fmt.Println("  update    Fetch and update metadata for all vendors")
+		fmt.Println("  update      Fetch and update metadata for all vendors")
+		fmt.Println("  validate    Validate URLs in metadata files")
 		os.Exit(1)
 	}
 
@@ -31,6 +38,12 @@ func main() {
 	case "update":
 		updateCmd.Parse(os.Args[2:])
 		if err := runUpdate(*metadataDir, *checksumDir, *concurrency); err != nil {
+			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+			os.Exit(1)
+		}
+	case "validate":
+		validateCmd.Parse(os.Args[2:])
+		if err := runValidate(*validateMetadataDir, *validateConcurrency); err != nil {
 			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 			os.Exit(1)
 		}
@@ -222,5 +235,107 @@ func downloadAndComputeChecksums(metadata []models.Metadata, metadataDir, checks
 		os.Remove(archivePath)
 	}
 
+	return nil
+}
+
+func runValidate(metadataDir string, concurrency int) error {
+	fmt.Printf("Validating URLs in metadata files from %s\n", metadataDir)
+
+	// Find all metadata JSON files
+	var metadataFiles []string
+	err := filepath.Walk(metadataDir, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+		if !info.IsDir() && filepath.Ext(path) == ".json" && filepath.Base(path) != "all.json" {
+			metadataFiles = append(metadataFiles, path)
+		}
+		return nil
+	})
+	if err != nil {
+		return fmt.Errorf("failed to walk metadata directory: %w", err)
+	}
+
+	if len(metadataFiles) == 0 {
+		fmt.Println("No metadata files found")
+		return nil
+	}
+
+	fmt.Printf("Found %d metadata files to validate\n", len(metadataFiles))
+
+	// Create downloader for URL checking
+	dl := downloader.NewDownloader()
+
+	// Validate URLs concurrently
+	var wg sync.WaitGroup
+	var checked, failed int64
+	semaphore := make(chan struct{}, concurrency)
+	failedFilesChan := make(chan string, len(metadataFiles))
+
+	for _, file := range metadataFiles {
+		wg.Add(1)
+		go func(metadataFile string) {
+			defer wg.Done()
+
+			// Acquire semaphore
+			semaphore <- struct{}{}
+			defer func() { <-semaphore }()
+
+			// Read metadata file
+			data, err := os.ReadFile(metadataFile)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "Failed to read %s: %v\n", metadataFile, err)
+				atomic.AddInt64(&failed, 1)
+				return
+			}
+
+			// Parse metadata
+			var metadata models.Metadata
+			if err := json.Unmarshal(data, &metadata); err != nil {
+				fmt.Fprintf(os.Stderr, "Failed to parse %s: %v\n", metadataFile, err)
+				atomic.AddInt64(&failed, 1)
+				return
+			}
+
+			// Check URL
+			if err := dl.CheckURLExists(metadata.URL); err != nil {
+				failedFilesChan <- metadataFile
+				atomic.AddInt64(&failed, 1)
+			}
+
+			atomic.AddInt64(&checked, 1)
+
+			// Progress indicator
+			if c := atomic.LoadInt64(&checked); c%100 == 0 {
+				fmt.Printf("Checked %d/%d URLs...\n", c, len(metadataFiles))
+			}
+		}(file)
+	}
+
+	// Wait for all validations to complete
+	wg.Wait()
+	close(failedFilesChan)
+
+	// Collect failed files
+	var failedFiles []string
+	for file := range failedFilesChan {
+		failedFiles = append(failedFiles, file)
+	}
+
+	// Print results
+	fmt.Printf("\nValidation complete:\n")
+	fmt.Printf("  Checked: %d\n", checked)
+	fmt.Printf("  Failed:  %d\n", failed)
+	fmt.Printf("  Success: %d\n", checked-failed)
+
+	if len(failedFiles) > 0 {
+		fmt.Println("\nFailed files:")
+		for _, file := range failedFiles {
+			fmt.Println(file)
+		}
+		return fmt.Errorf("%d URLs are not accessible", len(failedFiles))
+	}
+
+	fmt.Println("\nAll URLs are accessible!")
 	return nil
 }
