@@ -14,6 +14,7 @@ import (
 	"github.com/joschi/java-metadata/internal/providers/microsoft"
 	"github.com/joschi/java-metadata/internal/providers/sapmachine"
 	"github.com/joschi/java-metadata/internal/providers/temurin"
+	"github.com/joschi/java-metadata/internal/providers/zulu"
 )
 
 func main() {
@@ -48,6 +49,7 @@ func runUpdate(metadataDir, checksumDir string, concurrency int) error {
 	registry.Register(temurin.NewProvider())
 	registry.Register(microsoft.NewProvider())
 	registry.Register(sapmachine.NewProvider())
+	registry.Register(zulu.NewProvider())
 
 	// Create output directories
 	if err := os.MkdirAll(metadataDir, 0755); err != nil {
