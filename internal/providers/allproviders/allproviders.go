@@ -6,7 +6,11 @@ import (
 	"github.com/joschi/java-metadata/internal/providers/adoptopenjdk"
 	"github.com/joschi/java-metadata/internal/providers/corretto"
 	"github.com/joschi/java-metadata/internal/providers/github"
+	"github.com/joschi/java-metadata/internal/providers/ibm"
+	"github.com/joschi/java-metadata/internal/providers/javase"
 	"github.com/joschi/java-metadata/internal/providers/microsoft"
+	"github.com/joschi/java-metadata/internal/providers/oracle"
+	"github.com/joschi/java-metadata/internal/providers/oraclegraalvm"
 	"github.com/joschi/java-metadata/internal/providers/sapmachine"
 	"github.com/joschi/java-metadata/internal/providers/semeru"
 	"github.com/joschi/java-metadata/internal/providers/temurin"
@@ -101,4 +105,21 @@ func RegisterAll(registry *providers.Registry) {
 	// BiSheng JDK
 	registry.Register(github.NewGenericProvider(models.VendorBisheng, "openeuler-mirror", "bishengjdk-11",
 		github.ParseBiShengFilename()))
+
+	// BellSoft Liberica
+	registry.Register(github.NewGenericProvider(models.VendorLiberica, "bell-sw", "Liberica",
+		github.ParseLibericaFilename()))
+
+	// Java SE Reference Implementation
+	registry.Register(javase.NewProvider())
+
+	// Oracle JDK
+	registry.Register(oracle.NewProvider())
+
+	// Oracle GraalVM
+	registry.Register(oraclegraalvm.NewProvider())
+	registry.Register(oraclegraalvm.NewEAProvider())
+
+	// IBM JDK (legacy)
+	registry.Register(ibm.NewProvider())
 }

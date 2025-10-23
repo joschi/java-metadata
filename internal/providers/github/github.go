@@ -587,3 +587,74 @@ func ParseBiShengFilename() FilenameParser {
 		}
 	}
 }
+
+// ParseLibericaFilename parses BellSoft Liberica filename
+func ParseLibericaFilename() FilenameParser {
+	return func(filename, url, tagName string) models.Metadata {
+		// Skip checksums
+		if strings.HasSuffix(filename, ".sha1") || strings.HasSuffix(filename, ".sha256") {
+			return models.Metadata{}
+		}
+
+		// Pattern: bellsoft-{jre|jdk}{version}-{os}-{arch}-{features}.{ext}
+		re := regexp.MustCompile(`^bellsoft-(jre|jdk)(.+?)-(?:ea-)?(linux|windows|macos|solaris)-(amd64|i386|i586|aarch64|arm64|ppc64le|arm32-vfp-hflt|x64|sparcv9|riscv64)-?(fx|lite|full|musl|musl-lite|crac|musl-crac|leyden|musl-leyden|lite-leyden|musl-lite-leyden)?\.(apk|deb|rpm|msi|dmg|pkg|tar\.gz|zip)$`)
+		matches := re.FindStringSubmatch(filename)
+		
+		if len(matches) < 7 {
+			return models.Metadata{}
+		}
+
+		imageType := matches[1]
+		version := matches[2]
+		os := matches[3]
+		arch := matches[4]
+		featuresStr := matches[5]
+		ext := matches[6]
+
+		// Parse features
+		var features []string
+		if strings.Contains(featuresStr, "fx") {
+			features = append(features, "javafx")
+		}
+		if strings.Contains(featuresStr, "lite") {
+			features = append(features, "lite")
+		}
+		if strings.Contains(featuresStr, "full") {
+			features = append(features, "full")
+		}
+		if strings.Contains(featuresStr, "musl") {
+			features = append(features, "musl")
+		}
+		if strings.Contains(featuresStr, "crac") {
+			features = append(features, "crac")
+		}
+		if strings.Contains(featuresStr, "leyden") {
+			features = append(features, "leyden")
+		}
+
+		// Determine release type
+		releaseType := models.ReleaseTypeGA
+		if strings.Contains(version, "ea") || strings.Contains(filename, "-ea-") {
+			releaseType = models.ReleaseTypeEA
+		}
+
+		return models.Metadata{
+			Vendor:       models.VendorLiberica,
+			Filename:     filename,
+			ReleaseType:  releaseType,
+			Version:      version,
+			JavaVersion:  version,
+			JVMImpl:      models.JVMImplHotSpot,
+			OS:           models.NormalizeOS(os),
+			Architecture: models.NormalizeArchitecture(arch),
+			FileType:     ext,
+			ImageType:    imageType,
+			Features:     features,
+			URL:          url,
+			MD5File:      filename + ".md5",
+			SHA1File:     filename + ".sha1",
+			SHA256File:   filename + ".sha256",
+			SHA512File:   filename + ".sha512",
+		}
+	}
+}
