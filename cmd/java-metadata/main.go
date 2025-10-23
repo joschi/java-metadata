@@ -11,6 +11,8 @@ import (
 	"github.com/joschi/java-metadata/internal/models"
 	"github.com/joschi/java-metadata/internal/output"
 	"github.com/joschi/java-metadata/internal/providers"
+	"github.com/joschi/java-metadata/internal/providers/microsoft"
+	"github.com/joschi/java-metadata/internal/providers/sapmachine"
 	"github.com/joschi/java-metadata/internal/providers/temurin"
 )
 
@@ -44,7 +46,8 @@ func runUpdate(metadataDir, checksumDir string, concurrency int) error {
 	// Create registry and register providers
 	registry := providers.NewRegistry()
 	registry.Register(temurin.NewProvider())
-	// TODO: Register other providers as they are implemented
+	registry.Register(microsoft.NewProvider())
+	registry.Register(sapmachine.NewProvider())
 
 	// Create output directories
 	if err := os.MkdirAll(metadataDir, 0755); err != nil {
