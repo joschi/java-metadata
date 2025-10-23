@@ -69,4 +69,36 @@ func RegisterAll(registry *providers.Registry) {
 	// JetBrains Runtime
 	registry.Register(github.NewGenericProvider(models.VendorJetBrains, "JetBrains", "JetBrainsRuntime",
 		github.ParseJetBrainsFilename()))
+
+	// Tencent Kona variants (4)
+	registry.Register(github.NewGenericProvider(models.VendorKona, "Tencent", "TencentKona-8",
+		github.ParseKonaFilename(models.VendorKona)))
+	registry.Register(github.NewGenericProvider(models.VendorKona, "Tencent", "TencentKona-11",
+		github.ParseKonaFilename(models.VendorKona)))
+	registry.Register(github.NewGenericProvider(models.VendorKona, "Tencent", "TencentKona-17",
+		github.ParseKonaFilename(models.VendorKona)))
+	registry.Register(github.NewGenericProvider(models.VendorKona, "Tencent", "TencentKona-21",
+		github.ParseKonaFilename(models.VendorKona)))
+
+	// OpenJDK variants (4)
+	registry.Register(github.NewGenericProvider(models.VendorOpenJDK, "openjdk", "jdk",
+		github.ParseOpenJDKFilename(models.VendorOpenJDK)))
+	registry.Register(github.NewGenericProvider(models.VendorOpenJDK, "openjdk", "leyden",
+		github.ParseOpenJDKFilename(models.VendorOpenJDK)))
+	registry.Register(github.NewGenericProvider(models.VendorOpenJDK, "openjdk", "loom",
+		github.ParseOpenJDKFilename(models.VendorOpenJDK)))
+	registry.Register(github.NewGenericProvider(models.VendorOpenJDK, "openjdk", "valhalla",
+		github.ParseOpenJDKFilename(models.VendorOpenJDK)))
+
+	// GraalVM Legacy
+	registry.Register(github.NewGenericProvider(models.VendorGraalVM, "graalvm", "graalvm-ce-builds",
+		github.ParseGraalVMFilename(models.VendorGraalVM)))
+
+	// Red Hat OpenJDK
+	registry.Register(github.NewGenericProvider(models.VendorRedHat, "redhat-openjdk", "openjdk",
+		github.ParseRedHatFilename()))
+
+	// BiSheng JDK
+	registry.Register(github.NewGenericProvider(models.VendorBisheng, "openeuler-mirror", "bishengjdk-11",
+		github.ParseBiShengFilename()))
 }

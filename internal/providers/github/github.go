@@ -364,3 +364,226 @@ func ParseJetBrainsFilename() FilenameParser {
 		}
 	}
 }
+
+// ParseKonaFilename parses Tencent Kona filename
+func ParseKonaFilename(vendorName string) FilenameParser {
+	return func(filename, url, tagName string) models.Metadata {
+		// Skip checksums and signatures
+		if strings.HasSuffix(filename, ".sha256") || strings.HasSuffix(filename, ".sig") {
+			return models.Metadata{}
+		}
+
+		var os, arch, ext string
+		var features []string
+
+		// Pattern: TencentKona-{version}_jdk_{fiber}_{os}-{arch}.{ext}
+		if strings.HasPrefix(filename, "TencentKona-") {
+			if strings.Contains(filename, "_linux-") || strings.Contains(filename, "_linux_") {
+				os = "linux"
+			} else if strings.Contains(filename, "_macosx-") || strings.Contains(filename, "_macosx_") {
+				os = "macosx"
+			} else if strings.Contains(filename, "_windows-") || strings.Contains(filename, "_windows_") {
+				os = "windows"
+			}
+
+			if strings.Contains(filename, "-aarch64") || strings.Contains(filename, "_aarch64") {
+				arch = "aarch64"
+			} else if strings.Contains(filename, "-x86_64") || strings.Contains(filename, "_x86_64") || strings.Contains(filename, "-x64") {
+				arch = "x64"
+			}
+
+			if strings.Contains(filename, "_fiber_") {
+				features = append(features, "fiber")
+			}
+
+			if strings.HasSuffix(filename, ".tar.gz") {
+				ext = "tar.gz"
+			} else if strings.HasSuffix(filename, ".zip") {
+				ext = "zip"
+			}
+		} else if strings.HasSuffix(filename, ".tgz") {
+			// Pattern: TencentKona{version}.tgz (old format)
+			os = "linux"
+			arch = "x64"
+			ext = "tgz"
+		}
+
+		if os == "" || arch == "" || ext == "" {
+			return models.Metadata{}
+		}
+
+		return models.Metadata{
+			Vendor:       vendorName,
+			Filename:     filename,
+			ReleaseType:  models.ReleaseTypeGA,
+			Version:      tagName,
+			JavaVersion:  tagName,
+			JVMImpl:      models.JVMImplHotSpot,
+			OS:           models.NormalizeOS(os),
+			Architecture: models.NormalizeArchitecture(arch),
+			FileType:     ext,
+			ImageType:    models.ImageTypeJDK,
+			Features:     features,
+			URL:          url,
+			MD5File:      filename + ".md5",
+			SHA1File:     filename + ".sha1",
+			SHA256File:   filename + ".sha256",
+			SHA512File:   filename + ".sha512",
+		}
+	}
+}
+
+// ParseOpenJDKFilename parses OpenJDK filename (generic for openjdk, leyden, loom, valhalla)
+func ParseOpenJDKFilename(vendorName string) FilenameParser {
+	return func(filename, url, tagName string) models.Metadata {
+		// Skip checksums
+		if strings.HasSuffix(filename, ".sha256") || strings.HasSuffix(filename, ".txt") {
+			return models.Metadata{}
+		}
+
+		var os, arch, ext string
+		
+		if strings.Contains(filename, "_linux_") || strings.Contains(filename, "_linux-") {
+			os = "linux"
+		} else if strings.Contains(filename, "_macos_") || strings.Contains(filename, "_osx_") {
+			os = "macosx"
+		} else if strings.Contains(filename, "_windows_") {
+			os = "windows"
+		}
+
+		if strings.Contains(filename, "_x64_") || strings.Contains(filename, "-x64_") {
+			arch = "x64"
+		} else if strings.Contains(filename, "_aarch64_") {
+			arch = "aarch64"
+		}
+
+		if strings.HasSuffix(filename, ".tar.gz") {
+			ext = "tar.gz"
+		} else if strings.HasSuffix(filename, ".zip") {
+			ext = "zip"
+		}
+
+		if os == "" || arch == "" || ext == "" {
+			return models.Metadata{}
+		}
+
+		return models.Metadata{
+			Vendor:       vendorName,
+			Filename:     filename,
+			ReleaseType:  models.ReleaseTypeEA, // Most OpenJDK builds are EA
+			Version:      tagName,
+			JavaVersion:  tagName,
+			JVMImpl:      models.JVMImplHotSpot,
+			OS:           models.NormalizeOS(os),
+			Architecture: models.NormalizeArchitecture(arch),
+			FileType:     ext,
+			ImageType:    models.ImageTypeJDK,
+			Features:     []string{},
+			URL:          url,
+			MD5File:      filename + ".md5",
+			SHA1File:     filename + ".sha1",
+			SHA256File:   filename + ".sha256",
+			SHA512File:   filename + ".sha512",
+		}
+	}
+}
+
+// ParseRedHatFilename parses Red Hat OpenJDK filename
+func ParseRedHatFilename() FilenameParser {
+	return func(filename, url, tagName string) models.Metadata {
+		if strings.HasSuffix(filename, ".sha256") {
+			return models.Metadata{}
+		}
+
+		var os, arch, ext string
+		
+		if strings.Contains(filename, "_linux_") {
+			os = "linux"
+		} else if strings.Contains(filename, "_windows_") {
+			os = "windows"
+		}
+
+		if strings.Contains(filename, "_x64") || strings.Contains(filename, "-x64") {
+			arch = "x64"
+		}
+
+		if strings.HasSuffix(filename, ".tar.gz") {
+			ext = "tar.gz"
+		} else if strings.HasSuffix(filename, ".zip") {
+			ext = "zip"
+		} else if strings.HasSuffix(filename, ".msi") {
+			ext = "msi"
+		}
+
+		if os == "" || arch == "" || ext == "" {
+			return models.Metadata{}
+		}
+
+		return models.Metadata{
+			Vendor:       models.VendorRedHat,
+			Filename:     filename,
+			ReleaseType:  models.ReleaseTypeGA,
+			Version:      tagName,
+			JavaVersion:  tagName,
+			JVMImpl:      models.JVMImplHotSpot,
+			OS:           models.NormalizeOS(os),
+			Architecture: models.NormalizeArchitecture(arch),
+			FileType:     ext,
+			ImageType:    models.ImageTypeJDK,
+			Features:     []string{},
+			URL:          url,
+			MD5File:      filename + ".md5",
+			SHA1File:     filename + ".sha1",
+			SHA256File:   filename + ".sha256",
+			SHA512File:   filename + ".sha512",
+		}
+	}
+}
+
+// ParseBiShengFilename parses BiSheng JDK filename
+func ParseBiShengFilename() FilenameParser {
+	return func(filename, url, tagName string) models.Metadata {
+		if strings.HasSuffix(filename, ".sha256") {
+			return models.Metadata{}
+		}
+
+		var os, arch, ext string
+		
+		if strings.Contains(filename, "-linux-") {
+			os = "linux"
+		}
+
+		if strings.Contains(filename, "-x86_64") || strings.Contains(filename, "-x64") {
+			arch = "x64"
+		} else if strings.Contains(filename, "-aarch64") {
+			arch = "aarch64"
+		}
+
+		if strings.HasSuffix(filename, ".tar.gz") {
+			ext = "tar.gz"
+		}
+
+		if os == "" || arch == "" || ext == "" {
+			return models.Metadata{}
+		}
+
+		return models.Metadata{
+			Vendor:       models.VendorBisheng,
+			Filename:     filename,
+			ReleaseType:  models.ReleaseTypeGA,
+			Version:      tagName,
+			JavaVersion:  tagName,
+			JVMImpl:      models.JVMImplHotSpot,
+			OS:           models.NormalizeOS(os),
+			Architecture: models.NormalizeArchitecture(arch),
+			FileType:     ext,
+			ImageType:    models.ImageTypeJDK,
+			Features:     []string{},
+			URL:          url,
+			MD5File:      filename + ".md5",
+			SHA1File:     filename + ".sha1",
+			SHA256File:   filename + ".sha256",
+			SHA512File:   filename + ".sha512",
+		}
+	}
+}
