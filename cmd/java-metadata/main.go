@@ -11,9 +11,11 @@ import (
 	"github.com/joschi/java-metadata/internal/models"
 	"github.com/joschi/java-metadata/internal/output"
 	"github.com/joschi/java-metadata/internal/providers"
+	"github.com/joschi/java-metadata/internal/providers/adoptopenjdk"
 	"github.com/joschi/java-metadata/internal/providers/corretto"
 	"github.com/joschi/java-metadata/internal/providers/microsoft"
 	"github.com/joschi/java-metadata/internal/providers/sapmachine"
+	"github.com/joschi/java-metadata/internal/providers/semeru"
 	"github.com/joschi/java-metadata/internal/providers/temurin"
 	"github.com/joschi/java-metadata/internal/providers/zulu"
 )
@@ -47,11 +49,31 @@ func main() {
 func runUpdate(metadataDir, checksumDir string, concurrency int) error {
 	// Create registry and register providers
 	registry := providers.NewRegistry()
-	registry.Register(temurin.NewProvider())
+	// Register all providers
+	registry.Register(adoptopenjdk.NewProvider())
+	registry.Register(corretto.NewProvider())
 	registry.Register(microsoft.NewProvider())
 	registry.Register(sapmachine.NewProvider())
+
+	// IBM Semeru (15 variants)
+	registry.Register(semeru.NewSemeru8Provider())
+	registry.Register(semeru.NewSemeru11Provider())
+	registry.Register(semeru.NewSemeru11CertifiedProvider())
+	registry.Register(semeru.NewSemeru16Provider())
+	registry.Register(semeru.NewSemeru17Provider())
+	registry.Register(semeru.NewSemeru17CertifiedProvider())
+	registry.Register(semeru.NewSemeru18Provider())
+	registry.Register(semeru.NewSemeru19Provider())
+	registry.Register(semeru.NewSemeru20Provider())
+	registry.Register(semeru.NewSemeru21Provider())
+	registry.Register(semeru.NewSemeru21CertifiedProvider())
+	registry.Register(semeru.NewSemeru22Provider())
+	registry.Register(semeru.NewSemeru23Provider())
+	registry.Register(semeru.NewSemeru24Provider())
+	registry.Register(semeru.NewSemeru25Provider())
+
+	registry.Register(temurin.NewProvider())
 	registry.Register(zulu.NewProvider())
-	registry.Register(corretto.NewProvider())
 
 	// Create output directories
 	if err := os.MkdirAll(metadataDir, 0755); err != nil {

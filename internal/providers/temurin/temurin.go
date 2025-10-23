@@ -14,19 +14,29 @@ import (
 
 // Provider implements the Provider interface for Eclipse Temurin (Adoptium)
 type Provider struct {
-	client *http.Client
+	client     *http.Client
+	vendorName string
+	apiVendor  string
 }
 
 // NewProvider creates a new Temurin provider
 func NewProvider() *Provider {
+	return NewProviderWithVendor(models.VendorTemurin, "adoptium")
+}
+
+// NewProviderWithVendor creates a provider with custom vendor name and API parameter
+// This allows reusing the Adoptium API for different vendors (e.g., adoptopenjdk)
+func NewProviderWithVendor(vendorName, apiVendor string) *Provider {
 	return &Provider{
-		client: &http.Client{},
+		client:     &http.Client{},
+		vendorName: vendorName,
+		apiVendor:  apiVendor,
 	}
 }
 
 // Name returns the vendor name
 func (p *Provider) Name() string {
-	return models.VendorTemurin
+	return p.vendorName
 }
 
 // AdoptiumAvailableReleases represents the response from /v3/info/available_releases
@@ -119,7 +129,7 @@ func (p *Provider) fetchReleaseMetadata(release int) ([]models.Metadata, error) 
 	// Paginate through releases
 	page := 0
 	for {
-		url := fmt.Sprintf("https://api.adoptium.net/v3/assets/feature_releases/%d/ga?page=%d&page_size=20&project=jdk&sort_order=ASC&vendor=adoptium", release, page)
+		url := fmt.Sprintf("https://api.adoptium.net/v3/assets/feature_releases/%d/ga?page=%d&page_size=20&project=jdk&sort_order=ASC&vendor=%s", release, page, p.apiVendor)
 
 		resp, err := p.client.Get(url)
 		if err != nil {
@@ -177,7 +187,7 @@ func (p *Provider) convertToMetadata(release AdoptiumRelease, binary AdoptiumBin
 	features := normalizeFeatures(binary.HeapSize, binary.OS)
 
 	return models.Metadata{
-		Vendor:       models.VendorTemurin,
+		Vendor:       p.vendorName,
 		Filename:     filename,
 		ReleaseType:  models.ReleaseTypeGA, // Temurin only provides GA releases
 		Version:      version,
