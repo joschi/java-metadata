@@ -326,8 +326,6 @@ GITHUB_TOKEN=ghp_... ./java-metadata validate
 
 ### Phase 5: Deployment
 - Update GitHub Actions workflows
-- Cross-compile binaries (Linux, macOS, Windows)
-- Dockerfile
 - Deprecate Bash scripts after successful production runs
 
 ## Key Design Decisions
