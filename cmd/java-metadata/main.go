@@ -25,6 +25,7 @@ func main() {
 	validateCmd := flag.NewFlagSet("validate", flag.ExitOnError)
 	validateMetadataDir := validateCmd.String("metadata-dir", "./docs/metadata", "Directory containing metadata files")
 	validateConcurrency := validateCmd.Int("concurrency", 10, "Number of concurrent URL checks")
+	validateDelete := validateCmd.Bool("delete", false, "Delete files that fail validation")
 
 	if len(os.Args) < 2 {
 		fmt.Println("Usage: java-metadata <command> [options]")
@@ -43,7 +44,7 @@ func main() {
 		}
 	case "validate":
 		validateCmd.Parse(os.Args[2:])
-		if err := runValidate(*validateMetadataDir, *validateConcurrency); err != nil {
+		if err := runValidate(*validateMetadataDir, *validateConcurrency, *validateDelete); err != nil {
 			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 			os.Exit(1)
 		}
@@ -238,8 +239,11 @@ func downloadAndComputeChecksums(metadata []models.Metadata, metadataDir, checks
 	return nil
 }
 
-func runValidate(metadataDir string, concurrency int) error {
+func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) error {
 	fmt.Printf("Validating URLs in metadata files from %s\n", metadataDir)
+	if deleteOnFailure {
+		fmt.Println("⚠️  Delete mode enabled: Files with failed URLs will be deleted")
+	}
 
 	// Find all metadata JSON files
 	var metadataFiles []string
@@ -333,6 +337,25 @@ func runValidate(metadataDir string, concurrency int) error {
 		for _, file := range failedFiles {
 			fmt.Println(file)
 		}
+
+		// Delete files if requested
+		if deleteOnFailure {
+			fmt.Printf("\nDeleting %d failed files...\n", len(failedFiles))
+			var deletedCount, deleteFailedCount int
+			for _, file := range failedFiles {
+				if err := os.Remove(file); err != nil {
+					fmt.Fprintf(os.Stderr, "Failed to delete %s: %v\n", file, err)
+					deleteFailedCount++
+				} else {
+					deletedCount++
+				}
+			}
+			fmt.Printf("Deleted: %d files\n", deletedCount)
+			if deleteFailedCount > 0 {
+				fmt.Printf("Failed to delete: %d files\n", deleteFailedCount)
+			}
+		}
+
 		return fmt.Errorf("%d URLs are not accessible", len(failedFiles))
 	}
 
