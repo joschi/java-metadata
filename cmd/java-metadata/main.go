@@ -8,8 +8,10 @@ import (
 	"path/filepath"
 	"sync"
 	"sync/atomic"
+	"time"
 
 	"github.com/joschi/java-metadata/internal/downloader"
+	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
 	"github.com/joschi/java-metadata/internal/output"
 	"github.com/joschi/java-metadata/internal/providers"
@@ -17,10 +19,18 @@ import (
 )
 
 func main() {
+	// Global flags
+	logLevel := flag.String("log-level", "info", "Log level (debug, info, warn, error)")
+	verbose := flag.Bool("verbose", false, "Enable verbose output (same as --log-level=debug)")
+	quiet := flag.Bool("quiet", false, "Quiet mode (same as --log-level=error)")
+
 	updateCmd := flag.NewFlagSet("update", flag.ExitOnError)
 	metadataDir := updateCmd.String("metadata-dir", "./docs/metadata", "Output directory for metadata")
 	checksumDir := updateCmd.String("checksum-dir", "./docs/checksums", "Output directory for checksums")
 	concurrency := updateCmd.Int("concurrency", 4, "Number of concurrent provider fetches")
+	downloadConcurrency := updateCmd.Int("download-concurrency", 3, "Number of concurrent downloads")
+	noProgress := updateCmd.Bool("no-progress", false, "Disable progress bars")
+	maxRetries := updateCmd.Int("max-retries", 3, "Maximum number of retry attempts for downloads")
 
 	validateCmd := flag.NewFlagSet("validate", flag.ExitOnError)
 	validateMetadataDir := validateCmd.String("metadata-dir", "./docs/metadata", "Directory containing metadata files")
@@ -28,24 +38,39 @@ func main() {
 	validateDelete := validateCmd.Bool("delete", false, "Delete files that fail validation")
 
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: java-metadata <command> [options]")
-		fmt.Println("Commands:")
+		fmt.Println("Usage: java-metadata [global-options] <command> [options]")
+		fmt.Println("\nGlobal Options:")
+		flag.PrintDefaults()
+		fmt.Println("\nCommands:")
 		fmt.Println("  update      Fetch and update metadata for all vendors")
 		fmt.Println("  validate    Validate URLs in metadata files")
 		os.Exit(1)
 	}
 
+	// Parse global flags
+	flag.Parse()
+
+	// Configure logging
+	level := logger.ParseLevel(*logLevel)
+	if *verbose {
+		level = logger.LevelDebug
+	}
+	if *quiet {
+		level = logger.LevelError
+	}
+	logger.SetLevel(level)
+
 	switch os.Args[1] {
 	case "update":
 		updateCmd.Parse(os.Args[2:])
-		if err := runUpdate(*metadataDir, *checksumDir, *concurrency); err != nil {
-			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+		if err := runUpdate(*metadataDir, *checksumDir, *concurrency, *downloadConcurrency, !*noProgress, *maxRetries); err != nil {
+			logger.Error("update failed", "error", err)
 			os.Exit(1)
 		}
 	case "validate":
 		validateCmd.Parse(os.Args[2:])
 		if err := runValidate(*validateMetadataDir, *validateConcurrency, *validateDelete); err != nil {
-			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+			logger.Error("validation failed", "error", err)
 			os.Exit(1)
 		}
 	default:
@@ -54,7 +79,10 @@ func main() {
 	}
 }
 
-func runUpdate(metadataDir, checksumDir string, concurrency int) error {
+func runUpdate(metadataDir, checksumDir string, concurrency, downloadConcurrency int, showProgress bool, maxRetries int) error {
+	startTime := time.Now()
+	logger.Info("starting update", "metadataDir", metadataDir, "checksumDir", checksumDir)
+
 	// Create registry and register all providers
 	registry := providers.NewRegistry()
 	allproviders.RegisterAll(registry)
@@ -68,12 +96,14 @@ func runUpdate(metadataDir, checksumDir string, concurrency int) error {
 	}
 
 	// Fetch metadata from all providers concurrently
+	logger.Info("fetching releases from providers", "concurrency", concurrency)
 	allProviders := registry.All()
 	var wg sync.WaitGroup
 	metadataChan := make(chan []models.Metadata, len(allProviders))
 	errorChan := make(chan error, len(allProviders))
 	semaphore := make(chan struct{}, concurrency)
 
+	fetchStart := time.Now()
 	for _, provider := range allProviders {
 		wg.Add(1)
 		go func(p providers.Provider) {
@@ -83,14 +113,17 @@ func runUpdate(metadataDir, checksumDir string, concurrency int) error {
 			semaphore <- struct{}{}
 			defer func() { <-semaphore }()
 
-			fmt.Printf("Fetching releases from %s...\n", p.Name())
+			logger.Info("fetching releases", "provider", p.Name())
+			providerStart := time.Now()
 			metadata, err := p.FetchReleases()
 			if err != nil {
+				logger.Error("failed to fetch releases", "provider", p.Name(), "error", err)
 				errorChan <- fmt.Errorf("%s: %w", p.Name(), err)
 				return
 			}
 
-			fmt.Printf("Fetched %d releases from %s\n", len(metadata), p.Name())
+			elapsed := time.Since(providerStart)
+			logger.Info("fetched releases", "provider", p.Name(), "count", len(metadata), "duration", elapsed)
 			metadataChan <- metadata
 		}(provider)
 	}
@@ -109,10 +142,11 @@ func runUpdate(metadataDir, checksumDir string, concurrency int) error {
 	}
 
 	if len(errors) > 0 {
+		logger.Warn("some providers failed", "errorCount", len(errors))
 		for _, err := range errors {
-			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+			logger.Error("provider error", "error", err)
 		}
-		return fmt.Errorf("failed to fetch releases from some providers")
+		return fmt.Errorf("failed to fetch releases from %d providers", len(errors))
 	}
 
 	// Combine all metadata
@@ -126,15 +160,29 @@ func runUpdate(metadataDir, checksumDir string, concurrency int) error {
 		}
 	}
 
-	fmt.Printf("Total releases collected: %d\n", len(allMetadata))
+	fetchDuration := time.Since(fetchStart)
+	logger.Info("fetch complete", "totalReleases", len(allMetadata), "duration", fetchDuration)
 
 	// Download artifacts and compute checksums
-	fmt.Println("Downloading artifacts and computing checksums...")
-	if err := downloadAndComputeChecksums(allMetadata, metadataDir, checksumDir); err != nil {
+	logger.Info("downloading artifacts and computing checksums", "concurrency", downloadConcurrency)
+	downloadStart := time.Now()
+	downloadedCount, skippedCount, failedCount, totalBytes, err := downloadAndComputeChecksums(
+		allMetadata, metadataDir, checksumDir, downloadConcurrency, showProgress, maxRetries,
+	)
+	if err != nil {
 		return fmt.Errorf("failed to download artifacts: %w", err)
 	}
+	downloadDuration := time.Since(downloadStart)
+	logger.Info("downloads complete",
+		"downloaded", downloadedCount,
+		"skipped", skippedCount,
+		"failed", failedCount,
+		"totalBytes", totalBytes,
+		"duration", downloadDuration,
+	)
 
 	// Write vendor-specific metadata
+	logger.Info("writing vendor-specific metadata")
 	for vendor, metadata := range vendorMetadata {
 		vendorDir := filepath.Join(metadataDir, "vendor", vendor)
 		if err := os.MkdirAll(vendorDir, 0755); err != nil {
@@ -156,23 +204,45 @@ func runUpdate(metadataDir, checksumDir string, concurrency int) error {
 	}
 
 	// Write combined all.json
-	fmt.Println("Writing combined metadata...")
+	logger.Info("writing combined metadata")
 	if err := output.WriteMetadataJSON(filepath.Join(metadataDir, "all.json"), allMetadata); err != nil {
 		return fmt.Errorf("failed to write all.json: %w", err)
 	}
 
 	// Generate aggregated metadata structure
-	fmt.Println("Generating aggregated metadata structure...")
+	logger.Info("generating aggregated metadata structure")
+	aggStart := time.Now()
 	if err := output.AggregateMetadata(allMetadata, metadataDir); err != nil {
 		return fmt.Errorf("failed to aggregate metadata: %w", err)
 	}
+	aggDuration := time.Since(aggStart)
+	logger.Info("aggregation complete", "duration", aggDuration)
 
-	fmt.Println("Update completed successfully!")
+	totalDuration := time.Since(startTime)
+	logger.Info("update completed successfully",
+		"totalDuration", totalDuration,
+		"fetchDuration", fetchDuration,
+		"downloadDuration", downloadDuration,
+		"aggDuration", aggDuration,
+	)
 	return nil
 }
 
-func downloadAndComputeChecksums(metadata []models.Metadata, metadataDir, checksumDir string) error {
-	dl := downloader.NewDownloader()
+func downloadAndComputeChecksums(metadata []models.Metadata, metadataDir, checksumDir string, concurrency int, showProgress bool, maxRetries int) (downloaded, skipped, failed int, totalBytes int64, err error) {
+	// Create downloader with options
+	dl := downloader.NewDownloader(
+		downloader.WithProgress(showProgress),
+		downloader.WithMaxRetries(maxRetries),
+	)
+
+	// Counters
+	var downloadedCount, skippedCount, failedCount int64
+	var bytesDownloaded int64
+
+	// Worker pool for concurrent downloads
+	var wg sync.WaitGroup
+	semaphore := make(chan struct{}, concurrency)
+	var metadataMu sync.Mutex // Protects metadata slice updates
 
 	for i := range metadata {
 		m := &metadata[i]
@@ -185,64 +255,86 @@ func downloadAndComputeChecksums(metadata []models.Metadata, metadataDir, checks
 
 		// Skip if metadata file already exists
 		if _, err := os.Stat(metadataFile); err == nil {
-			fmt.Printf("Skipping %s (already exists)\n", m.Filename)
+			logger.Debug("skipping existing file", "filename", m.Filename)
+			atomic.AddInt64(&skippedCount, 1)
 			continue
 		}
 
-		// Download the artifact
-		if err := dl.DownloadFile(m.URL, archivePath); err != nil {
-			fmt.Printf("Failed to download %s: %v\n", m.Filename, err)
-			continue
-		}
+		wg.Add(1)
+		go func(metadata *models.Metadata, archivePath, metadataFile, vendorChecksumDir string) {
+			defer wg.Done()
 
-		// Compute checksums
-		md5sum, sha1sum, sha256sum, sha512sum, err := downloader.ComputeChecksums(archivePath)
-		if err != nil {
-			fmt.Printf("Failed to compute checksums for %s: %v\n", m.Filename, err)
+			// Acquire semaphore
+			semaphore <- struct{}{}
+			defer func() { <-semaphore }()
+
+			// Download the artifact
+			if err := dl.DownloadFile(metadata.URL, archivePath); err != nil {
+				logger.Error("failed to download", "filename", metadata.Filename, "error", err)
+				atomic.AddInt64(&failedCount, 1)
+				return
+			}
+
+			// Compute checksums
+			md5sum, sha1sum, sha256sum, sha512sum, err := downloader.ComputeChecksums(archivePath)
+			if err != nil {
+				logger.Error("failed to compute checksums", "filename", metadata.Filename, "error", err)
+				os.Remove(archivePath)
+				atomic.AddInt64(&failedCount, 1)
+				return
+			}
+
+			// Get file size
+			size, err := downloader.FileSize(archivePath)
+			if err != nil {
+				logger.Error("failed to get file size", "filename", metadata.Filename, "error", err)
+				os.Remove(archivePath)
+				atomic.AddInt64(&failedCount, 1)
+				return
+			}
+
+			// Update metadata (needs mutex since we're updating slice element)
+			metadataMu.Lock()
+			metadata.MD5 = md5sum
+			metadata.SHA1 = sha1sum
+			metadata.SHA256 = sha256sum
+			metadata.SHA512 = sha512sum
+			metadata.Size = size
+			metadataMu.Unlock()
+
+			// Write checksum files
+			if err := downloader.WriteChecksumFile(filepath.Join(vendorChecksumDir, metadata.Filename+".md5"), md5sum, metadata.Filename); err != nil {
+				logger.Warn("failed to write MD5 checksum", "filename", metadata.Filename, "error", err)
+			}
+			if err := downloader.WriteChecksumFile(filepath.Join(vendorChecksumDir, metadata.Filename+".sha1"), sha1sum, metadata.Filename); err != nil {
+				logger.Warn("failed to write SHA1 checksum", "filename", metadata.Filename, "error", err)
+			}
+			if err := downloader.WriteChecksumFile(filepath.Join(vendorChecksumDir, metadata.Filename+".sha256"), sha256sum, metadata.Filename); err != nil {
+				logger.Warn("failed to write SHA256 checksum", "filename", metadata.Filename, "error", err)
+			}
+			if err := downloader.WriteChecksumFile(filepath.Join(vendorChecksumDir, metadata.Filename+".sha512"), sha512sum, metadata.Filename); err != nil {
+				logger.Warn("failed to write SHA512 checksum", "filename", metadata.Filename, "error", err)
+			}
+
+			// Remove the downloaded archive to save space
 			os.Remove(archivePath)
-			continue
-		}
 
-		// Update metadata
-		m.MD5 = md5sum
-		m.SHA1 = sha1sum
-		m.SHA256 = sha256sum
-		m.SHA512 = sha512sum
-
-		// Get file size
-		size, err := downloader.FileSize(archivePath)
-		if err != nil {
-			fmt.Printf("Failed to get size for %s: %v\n", m.Filename, err)
-			os.Remove(archivePath)
-			continue
-		}
-		m.Size = size
-
-		// Write checksum files
-		if err := downloader.WriteChecksumFile(filepath.Join(vendorChecksumDir, m.Filename+".md5"), md5sum, m.Filename); err != nil {
-			fmt.Printf("Failed to write MD5 checksum for %s: %v\n", m.Filename, err)
-		}
-		if err := downloader.WriteChecksumFile(filepath.Join(vendorChecksumDir, m.Filename+".sha1"), sha1sum, m.Filename); err != nil {
-			fmt.Printf("Failed to write SHA1 checksum for %s: %v\n", m.Filename, err)
-		}
-		if err := downloader.WriteChecksumFile(filepath.Join(vendorChecksumDir, m.Filename+".sha256"), sha256sum, m.Filename); err != nil {
-			fmt.Printf("Failed to write SHA256 checksum for %s: %v\n", m.Filename, err)
-		}
-		if err := downloader.WriteChecksumFile(filepath.Join(vendorChecksumDir, m.Filename+".sha512"), sha512sum, m.Filename); err != nil {
-			fmt.Printf("Failed to write SHA512 checksum for %s: %v\n", m.Filename, err)
-		}
-
-		// Remove the downloaded archive to save space
-		os.Remove(archivePath)
+			atomic.AddInt64(&downloadedCount, 1)
+			atomic.AddInt64(&bytesDownloaded, size)
+			logger.Debug("download complete", "filename", metadata.Filename, "size", size)
+		}(m, archivePath, metadataFile, vendorChecksumDir)
 	}
 
-	return nil
+	// Wait for all downloads to complete
+	wg.Wait()
+
+	return int(downloadedCount), int(skippedCount), int(failedCount), bytesDownloaded, nil
 }
 
 func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) error {
-	fmt.Printf("Validating URLs in metadata files from %s\n", metadataDir)
+	logger.Info("starting validation", "metadataDir", metadataDir)
 	if deleteOnFailure {
-		fmt.Println("⚠️  Delete mode enabled: Files with failed URLs will be deleted")
+		logger.Warn("delete mode enabled: files with failed URLs will be deleted")
 	}
 
 	// Find all metadata JSON files
@@ -261,14 +353,14 @@ func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) erro
 	}
 
 	if len(metadataFiles) == 0 {
-		fmt.Println("No metadata files found")
+		logger.Info("no metadata files found")
 		return nil
 	}
 
-	fmt.Printf("Found %d metadata files to validate\n", len(metadataFiles))
+	logger.Info("found metadata files to validate", "count", len(metadataFiles))
 
 	// Create downloader for URL checking
-	dl := downloader.NewDownloader()
+	dl := downloader.NewDownloader(downloader.WithProgress(false))
 
 	// Validate URLs concurrently
 	var wg sync.WaitGroup
@@ -276,6 +368,7 @@ func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) erro
 	semaphore := make(chan struct{}, concurrency)
 	failedFilesChan := make(chan string, len(metadataFiles))
 
+	startTime := time.Now()
 	for _, file := range metadataFiles {
 		wg.Add(1)
 		go func(metadataFile string) {
@@ -288,7 +381,7 @@ func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) erro
 			// Read metadata file
 			data, err := os.ReadFile(metadataFile)
 			if err != nil {
-				fmt.Fprintf(os.Stderr, "Failed to read %s: %v\n", metadataFile, err)
+				logger.Error("failed to read metadata file", "file", metadataFile, "error", err)
 				atomic.AddInt64(&failed, 1)
 				return
 			}
@@ -296,13 +389,14 @@ func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) erro
 			// Parse metadata
 			var metadata models.Metadata
 			if err := json.Unmarshal(data, &metadata); err != nil {
-				fmt.Fprintf(os.Stderr, "Failed to parse %s: %v\n", metadataFile, err)
+				logger.Error("failed to parse metadata file", "file", metadataFile, "error", err)
 				atomic.AddInt64(&failed, 1)
 				return
 			}
 
 			// Check URL
 			if err := dl.CheckURLExists(metadata.URL); err != nil {
+				logger.Debug("URL not accessible", "file", metadataFile, "url", metadata.URL, "error", err)
 				failedFilesChan <- metadataFile
 				atomic.AddInt64(&failed, 1)
 			}
@@ -311,7 +405,7 @@ func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) erro
 
 			// Progress indicator
 			if c := atomic.LoadInt64(&checked); c%100 == 0 {
-				fmt.Printf("Checked %d/%d URLs...\n", c, len(metadataFiles))
+				logger.Info("validation progress", "checked", c, "total", len(metadataFiles))
 			}
 		}(file)
 	}
@@ -326,39 +420,40 @@ func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) erro
 		failedFiles = append(failedFiles, file)
 	}
 
+	duration := time.Since(startTime)
+
 	// Print results
-	fmt.Printf("\nValidation complete:\n")
-	fmt.Printf("  Checked: %d\n", checked)
-	fmt.Printf("  Failed:  %d\n", failed)
-	fmt.Printf("  Success: %d\n", checked-failed)
+	logger.Info("validation complete",
+		"checked", checked,
+		"failed", failed,
+		"success", checked-failed,
+		"duration", duration,
+	)
 
 	if len(failedFiles) > 0 {
-		fmt.Println("\nFailed files:")
+		logger.Warn("found inaccessible URLs", "count", len(failedFiles))
 		for _, file := range failedFiles {
-			fmt.Println(file)
+			logger.Warn("inaccessible file", "path", file)
 		}
 
 		// Delete files if requested
 		if deleteOnFailure {
-			fmt.Printf("\nDeleting %d failed files...\n", len(failedFiles))
+			logger.Info("deleting failed files", "count", len(failedFiles))
 			var deletedCount, deleteFailedCount int
 			for _, file := range failedFiles {
 				if err := os.Remove(file); err != nil {
-					fmt.Fprintf(os.Stderr, "Failed to delete %s: %v\n", file, err)
+					logger.Error("failed to delete file", "file", file, "error", err)
 					deleteFailedCount++
 				} else {
 					deletedCount++
 				}
 			}
-			fmt.Printf("Deleted: %d files\n", deletedCount)
-			if deleteFailedCount > 0 {
-				fmt.Printf("Failed to delete: %d files\n", deleteFailedCount)
-			}
+			logger.Info("deletion complete", "deleted", deletedCount, "failed", deleteFailedCount)
 		}
 
 		return fmt.Errorf("%d URLs are not accessible", len(failedFiles))
 	}
 
-	fmt.Println("\nAll URLs are accessible!")
+	logger.Info("all URLs are accessible")
 	return nil
 }

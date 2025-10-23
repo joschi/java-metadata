@@ -11,6 +11,71 @@ func TestNewDownloader(t *testing.T) {
 	if d == nil {
 		t.Fatal("NewDownloader returned nil")
 	}
+	if d.maxRetries != 3 {
+		t.Errorf("Expected maxRetries=3, got %d", d.maxRetries)
+	}
+	if !d.showProgress {
+		t.Error("Expected showProgress=true by default")
+	}
+}
+
+func TestNewDownloaderWithOptions(t *testing.T) {
+	d := NewDownloader(
+		WithMaxRetries(5),
+		WithProgress(false),
+	)
+	if d == nil {
+		t.Fatal("NewDownloader returned nil")
+	}
+	if d.maxRetries != 5 {
+		t.Errorf("Expected maxRetries=5, got %d", d.maxRetries)
+	}
+	if d.showProgress {
+		t.Error("Expected showProgress=false")
+	}
+}
+
+func TestIsPermanentError(t *testing.T) {
+	tests := []struct {
+		name       string
+		err        error
+		isPerm     bool
+	}{
+		{
+			name:   "HTTP 404",
+			err:    &httpError{statusCode: 404, url: "http://example.com"},
+			isPerm: true,
+		},
+		{
+			name:   "HTTP 403",
+			err:    &httpError{statusCode: 403, url: "http://example.com"},
+			isPerm: true,
+		},
+		{
+			name:   "HTTP 500",
+			err:    &httpError{statusCode: 500, url: "http://example.com"},
+			isPerm: false,
+		},
+		{
+			name:   "HTTP 503",
+			err:    &httpError{statusCode: 503, url: "http://example.com"},
+			isPerm: false,
+		},
+		{
+			name:   "Non-HTTP error",
+			err:    os.ErrNotExist,
+			isPerm: false,
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := isPermanentError(tt.err)
+			if result != tt.isPerm {
+				t.Errorf("isPermanentError() = %v, want %v", result, tt.isPerm)
+			}
+		})
+	}
 }
 
 func TestComputeChecksums(t *testing.T) {

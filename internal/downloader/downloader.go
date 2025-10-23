@@ -13,31 +13,100 @@ import (
 	"os"
 	"path/filepath"
 	"time"
+
+	"github.com/joschi/java-metadata/internal/logger"
+	"github.com/schollz/progressbar/v3"
 )
 
 // Downloader handles downloading files and computing checksums
 type Downloader struct {
-	client *http.Client
+	client     *http.Client
+	maxRetries int
+	showProgress bool
 }
 
-// NewDownloader creates a new Downloader instance
-func NewDownloader() *Downloader {
-	return &Downloader{
-		client: &http.Client{
-			Timeout: 30 * time.Minute, // Large files may take time
-		},
+// Option configures a Downloader
+type Option func(*Downloader)
+
+// WithMaxRetries sets the maximum number of retry attempts
+func WithMaxRetries(retries int) Option {
+	return func(d *Downloader) {
+		d.maxRetries = retries
 	}
 }
 
-// DownloadFile downloads a file from the given URL to the specified path
+// WithProgress enables or disables progress bars
+func WithProgress(show bool) Option {
+	return func(d *Downloader) {
+		d.showProgress = show
+	}
+}
+
+// NewDownloader creates a new Downloader instance with optimized HTTP settings
+func NewDownloader(opts ...Option) *Downloader {
+	d := &Downloader{
+		client: &http.Client{
+			Timeout: 30 * time.Minute, // Large files may take time
+			Transport: &http.Transport{
+				MaxIdleConns:        100,
+				MaxIdleConnsPerHost: 10,
+				IdleConnTimeout:     90 * time.Second,
+				DisableCompression:  false,
+				DisableKeepAlives:   false,
+			},
+		},
+		maxRetries:   3,
+		showProgress: true,
+	}
+
+	for _, opt := range opts {
+		opt(d)
+	}
+
+	return d
+}
+
+// DownloadFile downloads a file from the given URL to the specified path with retry logic
 func (d *Downloader) DownloadFile(url, outputPath string) error {
+	var lastErr error
+
+	for attempt := 1; attempt <= d.maxRetries; attempt++ {
+		if attempt > 1 {
+			backoff := time.Duration(1<<uint(attempt-2)) * time.Second
+			logger.Debug("retrying download after backoff", "url", url, "attempt", attempt, "backoff", backoff)
+			time.Sleep(backoff)
+		}
+
+		err := d.downloadOnce(url, outputPath)
+		if err == nil {
+			return nil
+		}
+
+		lastErr = err
+
+		// Don't retry on permanent errors (4xx status codes)
+		if isPermanentError(err) {
+			logger.Debug("permanent error, not retrying", "url", url, "error", err)
+			break
+		}
+
+		if attempt < d.maxRetries {
+			logger.Warn("download failed, will retry", "url", url, "attempt", attempt, "error", err)
+		}
+	}
+
+	return fmt.Errorf("failed after %d attempts: %w", d.maxRetries, lastErr)
+}
+
+// downloadOnce performs a single download attempt
+func (d *Downloader) downloadOnce(url, outputPath string) error {
 	// Create output directory if it doesn't exist
 	dir := filepath.Dir(outputPath)
 	if err := os.MkdirAll(dir, 0755); err != nil {
 		return fmt.Errorf("failed to create directory %s: %w", dir, err)
 	}
 
-	fmt.Printf("Downloading %s\n", url)
+	logger.Info("downloading", "url", url)
 
 	// Create the HTTP request
 	req, err := http.NewRequest("GET", url, nil)
@@ -53,7 +122,7 @@ func (d *Downloader) DownloadFile(url, outputPath string) error {
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		return fmt.Errorf("failed to download %s: HTTP %d", url, resp.StatusCode)
+		return &httpError{statusCode: resp.StatusCode, url: url}
 	}
 
 	// Create the output file
@@ -63,13 +132,44 @@ func (d *Downloader) DownloadFile(url, outputPath string) error {
 	}
 	defer out.Close()
 
-	// Copy the response body to the file
-	_, err = io.Copy(out, resp.Body)
+	// Copy the response body to the file with optional progress bar
+	if d.showProgress && resp.ContentLength > 0 {
+		bar := progressbar.DefaultBytes(
+			resp.ContentLength,
+			filepath.Base(outputPath),
+		)
+		defer bar.Close()
+
+		// Wrap the response body with the progress bar
+		proxyReader := progressbar.NewReader(resp.Body, bar)
+		_, err = io.Copy(out, &proxyReader)
+	} else {
+		_, err = io.Copy(out, resp.Body)
+	}
 	if err != nil {
 		return fmt.Errorf("failed to write file %s: %w", outputPath, err)
 	}
 
 	return nil
+}
+
+// httpError represents an HTTP error with status code
+type httpError struct {
+	statusCode int
+	url        string
+}
+
+func (e *httpError) Error() string {
+	return fmt.Sprintf("HTTP %d for %s", e.statusCode, e.url)
+}
+
+// isPermanentError returns true if the error is permanent (should not retry)
+func isPermanentError(err error) bool {
+	if httpErr, ok := err.(*httpError); ok {
+		// 4xx errors are permanent (client errors)
+		return httpErr.statusCode >= 400 && httpErr.statusCode < 500
+	}
+	return false
 }
 
 // CheckURLExists checks if a URL is accessible using a HEAD request
