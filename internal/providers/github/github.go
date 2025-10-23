@@ -60,7 +60,12 @@ func (p *GenericProvider) FetchReleases() ([]models.Metadata, error) {
 	}
 
 	// Add GitHub token if available
-	if token := os.Getenv("GITHUB_API_TOKEN"); token != "" {
+	// Check GITHUB_TOKEN first (standard), then GITHUB_API_TOKEN (for compatibility)
+	token := os.Getenv("GITHUB_TOKEN")
+	if token == "" {
+		token = os.Getenv("GITHUB_API_TOKEN")
+	}
+	if token != "" {
 		req.Header.Set("Authorization", "token "+token)
 	}
 
