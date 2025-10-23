@@ -169,3 +169,198 @@ func ParseSemeruFilename(vendorName string) FilenameParser {
 		}
 	}
 }
+
+// ParseGraalVMFilename parses GraalVM filename
+func ParseGraalVMFilename(vendorName string) FilenameParser {
+	return func(filename, url, tagName string) models.Metadata {
+		if !strings.Contains(filename, "java") || strings.Contains(filename, "polyglot") {
+			return models.Metadata{}
+		}
+		var os, arch, ext string
+		if strings.Contains(filename, "linux") {
+			os = "linux"
+		} else if strings.Contains(filename, "darwin") || strings.Contains(filename, "macos") {
+			os = "macosx"
+		} else if strings.Contains(filename, "windows") {
+			os = "windows"
+		}
+		if strings.Contains(filename, "amd64") || strings.Contains(filename, "x64") {
+			arch = "x64"
+		} else if strings.Contains(filename, "aarch64") {
+			arch = "aarch64"
+		}
+		if strings.HasSuffix(filename, ".tar.gz") {
+			ext = "tar.gz"
+		} else if strings.HasSuffix(filename, ".zip") {
+			ext = "zip"
+		}
+		if os == "" || arch == "" || ext == "" {
+			return models.Metadata{}
+		}
+		return models.Metadata{
+			Vendor:       vendorName,
+			Filename:     filename,
+			ReleaseType:  models.ReleaseTypeGA,
+			Version:      tagName,
+			JavaVersion:  tagName,
+			JVMImpl:      models.JVMImplGraalVM,
+			OS:           models.NormalizeOS(os),
+			Architecture: models.NormalizeArchitecture(arch),
+			FileType:     ext,
+			ImageType:    models.ImageTypeJDK,
+			Features:     []string{},
+			URL:          url,
+			MD5File:      filename + ".md5",
+			SHA1File:     filename + ".sha1",
+			SHA256File:   filename + ".sha256",
+			SHA512File:   filename + ".sha512",
+		}
+	}
+}
+
+// ParseMandrelFilename parses Mandrel filename
+func ParseMandrelFilename() FilenameParser {
+	return ParseGraalVMFilename(models.VendorMandrel)
+}
+
+// ParseDragonwellFilename parses Dragonwell filename
+func ParseDragonwellFilename(vendorName string) FilenameParser {
+	return func(filename, url, tagName string) models.Metadata {
+		if strings.Contains(filename, "_src") || strings.HasSuffix(filename, ".txt") {
+			return models.Metadata{}
+		}
+		var os, arch, ext string
+		if strings.Contains(filename, "_linux_") {
+			os = "linux"
+		} else if strings.Contains(filename, "_windows_") {
+			os = "windows"
+		}
+		if strings.Contains(filename, "_x64") {
+			arch = "x64"
+		} else if strings.Contains(filename, "_aarch64") {
+			arch = "aarch64"
+		}
+		if strings.HasSuffix(filename, ".tar.gz") {
+			ext = "tar.gz"
+		} else if strings.HasSuffix(filename, ".zip") {
+			ext = "zip"
+		}
+		if os == "" || arch == "" || ext == "" {
+			return models.Metadata{}
+		}
+		imageType := models.ImageTypeJDK
+		if strings.Contains(filename, "_jre_") {
+			imageType = models.ImageTypeJRE
+		}
+		return models.Metadata{
+			Vendor:       vendorName,
+			Filename:     filename,
+			ReleaseType:  models.ReleaseTypeGA,
+			Version:      tagName,
+			JavaVersion:  tagName,
+			JVMImpl:      models.JVMImplHotSpot,
+			OS:           models.NormalizeOS(os),
+			Architecture: models.NormalizeArchitecture(arch),
+			FileType:     ext,
+			ImageType:    imageType,
+			Features:     []string{},
+			URL:          url,
+			MD5File:      filename + ".md5",
+			SHA1File:     filename + ".sha1",
+			SHA256File:   filename + ".sha256",
+			SHA512File:   filename + ".sha512",
+		}
+	}
+}
+
+// ParseTravaFilename parses Trava OpenJDK filename
+func ParseTravaFilename(vendorName string) FilenameParser {
+	return func(filename, url, tagName string) models.Metadata {
+		if strings.HasSuffix(filename, ".sha256") || strings.HasSuffix(filename, ".sig") {
+			return models.Metadata{}
+		}
+		var os, arch, ext string
+		if strings.Contains(filename, "-linux-") {
+			os = "linux"
+		} else if strings.Contains(filename, "-windows-") {
+			os = "windows"
+		}
+		if strings.Contains(filename, "-x64-") || strings.Contains(filename, "-x86_64-") {
+			arch = "x64"
+		}
+		if strings.HasSuffix(filename, ".tar.gz") {
+			ext = "tar.gz"
+		} else if strings.HasSuffix(filename, ".zip") {
+			ext = "zip"
+		}
+		if os == "" || arch == "" || ext == "" {
+			return models.Metadata{}
+		}
+		return models.Metadata{
+			Vendor:       vendorName,
+			Filename:     filename,
+			ReleaseType:  models.ReleaseTypeGA,
+			Version:      tagName,
+			JavaVersion:  tagName,
+			JVMImpl:      models.JVMImplHotSpot,
+			OS:           models.NormalizeOS(os),
+			Architecture: models.NormalizeArchitecture(arch),
+			FileType:     ext,
+			ImageType:    models.ImageTypeJDK,
+			Features:     []string{},
+			URL:          url,
+			MD5File:      filename + ".md5",
+			SHA1File:     filename + ".sha1",
+			SHA256File:   filename + ".sha256",
+			SHA512File:   filename + ".sha512",
+		}
+	}
+}
+
+// ParseJetBrainsFilename parses JetBrains Runtime filename
+func ParseJetBrainsFilename() FilenameParser {
+	return func(filename, url, tagName string) models.Metadata {
+		if !strings.HasPrefix(filename, "jbr") {
+			return models.Metadata{}
+		}
+		var os, arch, ext string
+		if strings.Contains(filename, "-linux-") {
+			os = "linux"
+		} else if strings.Contains(filename, "-osx-") {
+			os = "macosx"
+		} else if strings.Contains(filename, "-windows-") {
+			os = "windows"
+		}
+		if strings.Contains(filename, "-x64-") || strings.Contains(filename, "_x64.") {
+			arch = "x64"
+		} else if strings.Contains(filename, "-aarch64-") {
+			arch = "aarch64"
+		}
+		if strings.HasSuffix(filename, ".tar.gz") {
+			ext = "tar.gz"
+		} else if strings.HasSuffix(filename, ".zip") {
+			ext = "zip"
+		}
+		if os == "" || arch == "" || ext == "" {
+			return models.Metadata{}
+		}
+		return models.Metadata{
+			Vendor:       models.VendorJetBrains,
+			Filename:     filename,
+			ReleaseType:  models.ReleaseTypeGA,
+			Version:      tagName,
+			JavaVersion:  tagName,
+			JVMImpl:      models.JVMImplHotSpot,
+			OS:           models.NormalizeOS(os),
+			Architecture: models.NormalizeArchitecture(arch),
+			FileType:     ext,
+			ImageType:    models.ImageTypeJDK,
+			Features:     []string{},
+			URL:          url,
+			MD5File:      filename + ".md5",
+			SHA1File:     filename + ".sha1",
+			SHA256File:   filename + ".sha256",
+			SHA512File:   filename + ".sha512",
+		}
+	}
+}
