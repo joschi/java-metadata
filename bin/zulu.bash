@@ -57,16 +57,13 @@ REGEX='s/^zulu([0-9+_.]{2,})-(?:(ca-crac|ca-fx-dbg|ca-fx|ca-hl|ca-dbg|ea-cp3|ca|
 INDEX_FILE="${TEMP_DIR}/index.html"
 download_file 'https://static.azul.com/zulu/bin/' "${INDEX_FILE}"
 
-ZULU_FILES=$(grep -o -E '<a href=".*/(zulu.+-(linux|macosx|win|solaris)_(musl_x64|musl_aarch64|x64|i686|aarch32hf|aarch32sf|aarch64|ppc64|sparcv9)\.(tar\.gz|zip|msi|dmg))">' "${INDEX_FILE}" | perl -pe 's#<a href=".*/(zulu[^/]+)">#$1#g' | sort -V)
+ZULU_FILES=$(grep -o -E '<a href=".*/(zulu[0-9]+.+-(linux|macosx|win|solaris)_(musl_x64|musl_aarch64|x64|i686|aarch32hf|aarch32sf|aarch64|ppc64|sparcv9)\.(tar\.gz|zip|msi|dmg))">' "${INDEX_FILE}" | perl -pe 's#<a href=".*/(zulu[^/]+)">#$1#g' | sort -V)
 for ZULU_FILE in ${ZULU_FILES}
 do
 	METADATA_FILE="${METADATA_DIR}/${ZULU_FILE}.json"
 	ZULU_ARCHIVE="${TEMP_DIR}/${ZULU_FILE}"
 	ZULU_URL="https://static.azul.com/zulu/bin/${ZULU_FILE}"
-	if [[ "${ZULU_FILE}" == *"zre"* ]]
-	then
-		echo  "Ignoring ${ZULU_FILE}"	    
-	elif [[ -f "${METADATA_FILE}" ]]
+	if [[ -f "${METADATA_FILE}" ]]
 	then
 		echo "Skipping ${ZULU_FILE}"
 	else
