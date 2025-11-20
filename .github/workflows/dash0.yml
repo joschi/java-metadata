@@ -12,7 +12,7 @@ jobs:
   otel-export-dash0:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Export workflow to Dash0
         uses: corentinmusard/otel-cicd-action@v2
         with:
