@@ -37354,6 +37354,31 @@
       "musl"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-26-ea.28_linux-x64-musl_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "26-ea.28",
+    "jvm_impl": "hotspot",
+    "md5": "eedfb2c7f2868a89ed06bdd714b5c6f3",
+    "md5_file": "sapmachine-jdk-26-ea.28_linux-x64-musl_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "afa1185e09e111246752e219402c48e18efb2d52",
+    "sha1_file": "sapmachine-jdk-26-ea.28_linux-x64-musl_bin.tar.gz.sha1",
+    "sha256": "0d72508e2505cd78dd39c0cbe461a3f5e9ebcf4ae0ec9aca30bb6d9be6b077f2",
+    "sha256_file": "sapmachine-jdk-26-ea.28_linux-x64-musl_bin.tar.gz.sha256",
+    "sha512": "6d3bb73e5ecd17f517a2619b73b260899dbf93a3c261ca2724f2cad41c2649f694de8dd021ab887414d86a87fc949c0f76fabbc1dc57e254ec6f061b854a0c99",
+    "sha512_file": "sapmachine-jdk-26-ea.28_linux-x64-musl_bin.tar.gz.sha512",
+    "size": 220450027,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26+28/sapmachine-jdk-26-ea.28_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26-ea.28"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jdk-26-ea.2_linux-x64-musl_bin.tar.gz",
     "image_type": "jdk",
     "java_version": "26-ea.2",
