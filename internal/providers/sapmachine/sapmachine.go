@@ -158,7 +158,9 @@ func (p *Provider) parseFilename(filename, url, tagName string) models.Metadata 
 	}
 
 	// If parsing failed, return empty metadata
-	logger.Warn(context.Background(), "failed to parse SAPMachine filename", slog.String("filename", filename))
+	logger.Warn(context.Background(), "failed to parse SAPMachine filename",
+		slog.String("provider", models.VendorSAPMachine),
+		slog.String("filename", filename))
 	return models.Metadata{}
 }
 

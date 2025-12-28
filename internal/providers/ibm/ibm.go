@@ -68,6 +68,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 		archReq, err := http.NewRequestWithContext(ctx, "GET", versionURL, nil)
 		if err != nil {
 			logger.Warn(ctx, "failed to build IBM version request",
+				slog.String("provider", p.Name()),
 				slog.String("version", version),
 				slog.Any("error", err),
 			)
@@ -77,6 +78,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 		archResp, err := p.client.Do(archReq)
 		if err != nil {
 			logger.Warn(ctx, "failed to fetch IBM version",
+				slog.String("provider", p.Name()),
 				slog.String("version", version),
 				slog.Any("error", err),
 			)
@@ -104,6 +106,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 			fileReq, err := http.NewRequestWithContext(ctx, "GET", archURL, nil)
 			if err != nil {
 				logger.Warn(ctx, "failed to build IBM arch request",
+					slog.String("provider", p.Name()),
 					slog.String("version", version),
 					slog.String("arch", arch),
 					slog.Any("error", err),
@@ -114,6 +117,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 			fileResp, err := p.client.Do(fileReq)
 			if err != nil {
 				logger.Warn(ctx, "failed to fetch IBM arch",
+					slog.String("provider", p.Name()),
 					slog.String("version", version),
 					slog.String("arch", arch),
 					slog.Any("error", err),

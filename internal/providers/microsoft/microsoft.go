@@ -93,7 +93,9 @@ func (p *Provider) parseFilename(filename string) models.Metadata {
 	matches := re.FindStringSubmatch(filename)
 
 	if len(matches) < 5 {
-		logger.Warn(context.Background(), "failed to parse Microsoft JDK filename", slog.String("filename", filename))
+		logger.Warn(context.Background(), "failed to parse Microsoft JDK filename",
+			slog.String("provider", models.VendorMicrosoft),
+			slog.String("filename", filename))
 		return models.Metadata{}
 	}
 

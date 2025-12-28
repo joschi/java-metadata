@@ -54,6 +54,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 		versions, err := p.fetchVersionsFromRepo(ctx, repo)
 		if err != nil {
 			logger.Warn(ctx, "failed to fetch from repository",
+				slog.String("provider", p.Name()),
 				slog.String("repo", repo),
 				slog.Any("error", err),
 			)

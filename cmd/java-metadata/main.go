@@ -237,10 +237,11 @@ func runUpdate(parentCtx context.Context, metadataDir, checksumDir string, concu
 
 	if len(errors) > 0 {
 		logger.Warn(parentCtx, "some providers failed", "errorCount", len(errors))
+		logger.Warn(parentCtx, "failed providers:")
 		for _, err := range errors {
-			logger.Error(parentCtx, "provider error", "error", err)
+			logger.Error(parentCtx, "  provider error", "error", err)
 		}
-		return fmt.Errorf("failed to fetch releases from %d providers", len(errors))
+		// Continue processing with data from successful providers
 	}
 
 	// Combine all metadata
@@ -264,7 +265,8 @@ func runUpdate(parentCtx context.Context, metadataDir, checksumDir string, concu
 		allMetadata, metadataDir, checksumDir, downloadConcurrency, showProgress, maxRetries,
 	)
 	if err != nil {
-		return fmt.Errorf("failed to download artifacts: %w", err)
+		// Log error but continue - individual download failures are already logged
+		logger.Warn(parentCtx, "some downloads encountered errors", "error", err)
 	}
 	downloadDuration := time.Since(downloadStart)
 	logger.Info(parentCtx, "downloads complete",
@@ -313,12 +315,32 @@ func runUpdate(parentCtx context.Context, metadataDir, checksumDir string, concu
 	logger.Info(parentCtx, "aggregation complete", "duration", aggDuration)
 
 	totalDuration := time.Since(startTime)
-	logger.Info(parentCtx, "update completed successfully",
-		"totalDuration", totalDuration,
-		"fetchDuration", fetchDuration,
-		"downloadDuration", downloadDuration,
-		"aggDuration", aggDuration,
-	)
+
+	// Provide detailed summary
+	successfulProviders := len(allProviders) - len(errors)
+	if len(errors) > 0 || failedCount > 0 {
+		logger.Warn(parentCtx, "update completed with some failures",
+			"totalDuration", totalDuration,
+			"providersSucceeded", successfulProviders,
+			"providersFailed", len(errors),
+			"totalProviders", len(allProviders),
+			"releasesProcessed", len(allMetadata),
+			"downloadsSucceeded", downloadedCount,
+			"downloadsFailed", failedCount,
+			"downloadsSkipped", skippedCount,
+		)
+	} else {
+		logger.Info(parentCtx, "update completed successfully",
+			"totalDuration", totalDuration,
+			"fetchDuration", fetchDuration,
+			"downloadDuration", downloadDuration,
+			"aggDuration", aggDuration,
+			"providers", successfulProviders,
+			"releases", len(allMetadata),
+			"downloads", downloadedCount,
+			"skipped", skippedCount,
+		)
+	}
 	return nil
 }
 

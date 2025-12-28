@@ -43,6 +43,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 		req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 		if err != nil {
 			logger.Warn(ctx, "failed to build Java SE RI request",
+				slog.String("provider", p.Name()),
 				slog.String("version", ver),
 				slog.Any("error", err),
 			)
@@ -52,6 +53,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 		resp, err := p.client.Do(req)
 		if err != nil {
 			logger.Warn(ctx, "failed to fetch Java SE RI download page",
+				slog.String("provider", p.Name()),
 				slog.String("version", ver),
 				slog.Any("error", err),
 			)

@@ -41,12 +41,16 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 	// Fetch latest versions from Oracle API
 	latestReq, err := http.NewRequestWithContext(ctx, "GET", "https://java.oraclecloud.com/javaVersions", nil)
 	if err != nil {
-		logger.Warn(ctx, "failed to build Oracle latest request", slog.Any("error", err))
+		logger.Warn(ctx, "failed to build Oracle latest request",
+			slog.String("provider", p.Name()),
+			slog.Any("error", err))
 	}
 
 	latestResp, err := p.client.Do(latestReq)
 	if err != nil {
-		logger.Warn(ctx, "failed to fetch Oracle latest versions", slog.Any("error", err))
+		logger.Warn(ctx, "failed to fetch Oracle latest versions",
+			slog.String("provider", p.Name()),
+			slog.Any("error", err))
 	} else {
 		body, err := io.ReadAll(latestResp.Body)
 		latestResp.Body.Close()
@@ -82,6 +86,7 @@ func (p *Provider) fetchVersionMetadata(ctx context.Context, version string) []m
 	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 	if err != nil {
 		logger.Warn(ctx, "failed to build Oracle version request",
+			slog.String("provider", p.Name()),
 			slog.String("version", version),
 			slog.Any("error", err),
 		)
@@ -91,6 +96,7 @@ func (p *Provider) fetchVersionMetadata(ctx context.Context, version string) []m
 	resp, err := p.client.Do(req)
 	if err != nil {
 		logger.Warn(ctx, "failed to fetch Oracle version",
+			slog.String("provider", p.Name()),
 			slog.String("version", version),
 			slog.Any("error", err),
 		)
@@ -118,7 +124,9 @@ func (p *Provider) fetchVersionMetadata(ctx context.Context, version string) []m
 
 	// Skip OTN licensed versions
 	if release.LicenseDetails.LicenseType == "OTN" {
-		logger.Info(ctx, "skipping OTN licensed version", slog.String("version", version))
+		logger.Info(ctx, "skipping OTN licensed version",
+			slog.String("provider", p.Name()),
+			slog.String("version", version))
 		return metadata
 	}
 
@@ -140,6 +148,7 @@ func (p *Provider) fetchArchiveMetadata(ctx context.Context, majorVersion string
 	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 	if err != nil {
 		logger.Warn(ctx, "failed to build Oracle archive request",
+			slog.String("provider", p.Name()),
 			slog.String("version", majorVersion),
 			slog.Any("error", err),
 		)
@@ -149,6 +158,7 @@ func (p *Provider) fetchArchiveMetadata(ctx context.Context, majorVersion string
 	resp, err := p.client.Do(req)
 	if err != nil {
 		logger.Warn(ctx, "failed to fetch Oracle archive",
+			slog.String("provider", p.Name()),
 			slog.String("version", majorVersion),
 			slog.Any("error", err),
 		)

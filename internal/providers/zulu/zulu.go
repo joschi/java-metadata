@@ -99,7 +99,9 @@ func (p *Provider) parseFilename(filename string) models.Metadata {
 	matches := re.FindStringSubmatch(filename)
 
 	if len(matches) < 8 {
-		logger.Warn(context.Background(), "failed to parse Zulu filename", slog.String("filename", filename))
+		logger.Warn(context.Background(), "failed to parse Zulu filename",
+			slog.String("provider", models.VendorZulu),
+			slog.String("filename", filename))
 		return models.Metadata{}
 	}
 
