@@ -3,10 +3,12 @@ package zulu
 import (
 	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 	"regexp"
 	"strings"
 
+	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
 )
 
@@ -90,7 +92,7 @@ func (p *Provider) parseFilename(filename string) models.Metadata {
 	matches := re.FindStringSubmatch(filename)
 
 	if len(matches) < 8 {
-		fmt.Printf("Failed to parse Zulu filename: %s\n", filename)
+		logger.Warn("failed to parse Zulu filename", slog.String("filename", filename))
 		return models.Metadata{}
 	}
 
@@ -114,9 +116,10 @@ func (p *Provider) parseFilename(filename string) models.Metadata {
 
 	// Normalize architecture (handle musl variants)
 	normalizedArch := arch
-	if arch == "musl_aarch64" {
+	switch arch {
+	case "musl_aarch64":
 		normalizedArch = "aarch64"
-	} else if arch == "musl_x64" {
+	case "musl_x64":
 		normalizedArch = "x64"
 	}
 

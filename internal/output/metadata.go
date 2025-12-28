@@ -115,9 +115,7 @@ func AggregateMetadata(allMetadata models.MetadataList, metadataDir string) erro
 				continue
 			}
 
-			wg.Add(1)
-			go func() {
-				defer wg.Done()
+			wg.Go(func() {
 
 				if err := WriteMetadataJSON(filepath.Join(releaseTypeDir, os+".json"), osMetadata); err != nil {
 					errorChan <- err
@@ -182,7 +180,7 @@ func AggregateMetadata(allMetadata models.MetadataList, metadataDir string) erro
 						}
 					}
 				}
-			}()
+			})
 		}
 	}
 

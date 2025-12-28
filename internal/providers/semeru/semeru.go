@@ -94,3 +94,9 @@ func NewSemeru21CertifiedProvider() *github.GenericProvider {
 	return github.NewGenericProvider(models.VendorSemeru, "ibmruntimes", "semeru21-certified-binaries",
 		github.ParseSemeruFilename(models.VendorSemeru))
 }
+
+// NewSemeru25CertifiedProvider creates IBM Semeru 25 Certified provider
+func NewSemeru25CertifiedProvider() *github.GenericProvider {
+	return github.NewGenericProvider(models.VendorSemeru, "ibmruntimes", "semeru25-certified-binaries",
+		github.ParseSemeruFilename(models.VendorSemeru))
+}

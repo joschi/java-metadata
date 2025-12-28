@@ -4,10 +4,12 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 	"os"
 
 	"github.com/joschi/java-metadata/internal/downloader"
+	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
 )
 
@@ -49,7 +51,10 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 	for _, repo := range repos {
 		versions, err := p.fetchVersionsFromRepo(repo)
 		if err != nil {
-			fmt.Printf("Warning: failed to fetch from %s: %v\n", repo, err)
+			logger.Warn("failed to fetch from repository",
+				slog.String("repo", repo),
+				slog.Any("error", err),
+			)
 			continue
 		}
 		allVersions = append(allVersions, versions...)

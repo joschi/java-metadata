@@ -3,9 +3,11 @@ package microsoft
 import (
 	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 	"regexp"
 
+	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
 )
 
@@ -84,7 +86,7 @@ func (p *Provider) parseFilename(filename string) models.Metadata {
 	matches := re.FindStringSubmatch(filename)
 
 	if len(matches) < 5 {
-		fmt.Printf("Failed to parse filename: %s\n", filename)
+		logger.Warn("failed to parse Microsoft JDK filename", slog.String("filename", filename))
 		return models.Metadata{}
 	}
 

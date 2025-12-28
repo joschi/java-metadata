@@ -3,10 +3,12 @@ package oraclegraalvm
 import (
 	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 	"regexp"
 	"strings"
 
+	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
 )
 
@@ -70,7 +72,7 @@ func (p *Provider) fetchCurrentReleases() []models.Metadata {
 	url := "https://www.oracle.com/java/technologies/downloads/"
 	resp, err := p.client.Get(url)
 	if err != nil {
-		fmt.Printf("Warning: failed to fetch Oracle GraalVM current releases: %v\n", err)
+		logger.Warn("failed to fetch Oracle GraalVM current releases", slog.Any("error", err))
 		return metadata
 	}
 	defer resp.Body.Close()
@@ -124,7 +126,10 @@ func (p *Provider) fetchArchiveMetadata(majorVersion string) []models.Metadata {
 	url := fmt.Sprintf("https://www.oracle.com/java/technologies/javase/graalvm-jdk%s-archive-downloads.html", majorVersion)
 	resp, err := p.client.Get(url)
 	if err != nil {
-		fmt.Printf("Warning: failed to fetch Oracle GraalVM archive for version %s: %v\n", majorVersion, err)
+		logger.Warn("failed to fetch Oracle GraalVM archive",
+			slog.String("version", majorVersion),
+			slog.Any("error", err),
+		)
 		return metadata
 	}
 	defer resp.Body.Close()

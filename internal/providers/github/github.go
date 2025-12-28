@@ -447,7 +447,7 @@ func ParseOpenJDKFilename(vendorName string) FilenameParser {
 		}
 
 		var os, arch, ext string
-		
+
 		if strings.Contains(filename, "_linux_") || strings.Contains(filename, "_linux-") {
 			os = "linux"
 		} else if strings.Contains(filename, "_macos_") || strings.Contains(filename, "_osx_") {
@@ -501,7 +501,7 @@ func ParseRedHatFilename() FilenameParser {
 		}
 
 		var os, arch, ext string
-		
+
 		if strings.Contains(filename, "_linux_") {
 			os = "linux"
 		} else if strings.Contains(filename, "_windows_") {
@@ -553,7 +553,7 @@ func ParseBiShengFilename() FilenameParser {
 		}
 
 		var os, arch, ext string
-		
+
 		if strings.Contains(filename, "-linux-") {
 			os = "linux"
 		}
@@ -604,7 +604,7 @@ func ParseLibericaFilename() FilenameParser {
 		// Pattern: bellsoft-{jre|jdk}{version}-{os}-{arch}-{features}.{ext}
 		re := regexp.MustCompile(`^bellsoft-(jre|jdk)(.+?)-(?:ea-)?(linux|windows|macos|solaris)-(amd64|i386|i586|aarch64|arm64|ppc64le|arm32-vfp-hflt|x64|sparcv9|riscv64)-?(fx|lite|full|musl|musl-lite|crac|musl-crac|leyden|musl-leyden|lite-leyden|musl-lite-leyden)?\.(apk|deb|rpm|msi|dmg|pkg|tar\.gz|zip)$`)
 		matches := re.FindStringSubmatch(filename)
-		
+
 		if len(matches) < 7 {
 			return models.Metadata{}
 		}

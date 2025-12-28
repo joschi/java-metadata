@@ -3,10 +3,12 @@ package javase
 import (
 	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 	"regexp"
 	"strings"
 
+	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
 )
 
@@ -38,7 +40,10 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 		url := fmt.Sprintf("https://jdk.java.net/java-se-ri/%s", ver)
 		resp, err := p.client.Get(url)
 		if err != nil {
-			fmt.Printf("Warning: failed to fetch %s: %v\n", ver, err)
+			logger.Warn("failed to fetch Java SE RI download page",
+				slog.String("version", ver),
+				slog.Any("error", err),
+			)
 			continue
 		}
 

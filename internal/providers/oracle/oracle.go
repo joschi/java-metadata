@@ -4,10 +4,12 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 	"regexp"
 	"strings"
 
+	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
 )
 
@@ -37,7 +39,7 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 	// Fetch latest versions from Oracle API
 	latestResp, err := p.client.Get("https://java.oraclecloud.com/javaVersions")
 	if err != nil {
-		fmt.Printf("Warning: failed to fetch Oracle latest versions: %v\n", err)
+		logger.Warn("failed to fetch Oracle latest versions", slog.Any("error", err))
 	} else {
 		body, err := io.ReadAll(latestResp.Body)
 		latestResp.Body.Close()
@@ -72,7 +74,10 @@ func (p *Provider) fetchVersionMetadata(version string) []models.Metadata {
 	url := fmt.Sprintf("https://java.oraclecloud.com/javaReleases/%s", version)
 	resp, err := p.client.Get(url)
 	if err != nil {
-		fmt.Printf("Warning: failed to fetch Oracle version %s: %v\n", version, err)
+		logger.Warn("failed to fetch Oracle version",
+			slog.String("version", version),
+			slog.Any("error", err),
+		)
 		return metadata
 	}
 	defer resp.Body.Close()
@@ -97,7 +102,7 @@ func (p *Provider) fetchVersionMetadata(version string) []models.Metadata {
 
 	// Skip OTN licensed versions
 	if release.LicenseDetails.LicenseType == "OTN" {
-		fmt.Printf("Skipping OTN licensed version: %s\n", version)
+		logger.Info("skipping OTN licensed version", slog.String("version", version))
 		return metadata
 	}
 
@@ -118,7 +123,10 @@ func (p *Provider) fetchArchiveMetadata(majorVersion string) []models.Metadata {
 	url := fmt.Sprintf("https://www.oracle.com/java/technologies/javase/jdk%s-archive-downloads.html", majorVersion)
 	resp, err := p.client.Get(url)
 	if err != nil {
-		fmt.Printf("Warning: failed to fetch Oracle archive for version %s: %v\n", majorVersion, err)
+		logger.Warn("failed to fetch Oracle archive",
+			slog.String("version", majorVersion),
+			slog.Any("error", err),
+		)
 		return metadata
 	}
 	defer resp.Body.Close()

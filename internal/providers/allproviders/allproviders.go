@@ -43,6 +43,7 @@ func RegisterAll(registry *providers.Registry) {
 	registry.Register(semeru.NewSemeru23Provider())
 	registry.Register(semeru.NewSemeru24Provider())
 	registry.Register(semeru.NewSemeru25Provider())
+	registry.Register(semeru.NewSemeru25CertifiedProvider())
 
 	// GraalVM variants (using GitHub)
 	registry.Register(github.NewGenericProvider(models.VendorGraalVM, "graalvm", "graalvm-ce-builds",

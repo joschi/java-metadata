@@ -3,10 +3,12 @@ package ibm
 import (
 	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 	"regexp"
 	"strings"
 
+	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
 )
 
@@ -58,7 +60,10 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 		versionURL := fmt.Sprintf("%s%s/linux/", baseURL, version)
 		archResp, err := p.client.Get(versionURL)
 		if err != nil {
-			fmt.Printf("Warning: failed to fetch IBM version %s: %v\n", version, err)
+			logger.Warn("failed to fetch IBM version",
+				slog.String("version", version),
+				slog.Any("error", err),
+			)
 			continue
 		}
 
@@ -82,7 +87,11 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 			archURL := fmt.Sprintf("%s%s/linux/%s/", baseURL, version, arch)
 			fileResp, err := p.client.Get(archURL)
 			if err != nil {
-				fmt.Printf("Warning: failed to fetch IBM arch %s for version %s: %v\n", arch, version, err)
+				logger.Warn("failed to fetch IBM arch",
+					slog.String("version", version),
+					slog.String("arch", arch),
+					slog.Any("error", err),
+				)
 				continue
 			}
 

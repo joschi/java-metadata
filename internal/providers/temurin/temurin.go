@@ -4,11 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 	"path/filepath"
 	"regexp"
 	"strings"
 
+	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
 )
 
@@ -46,9 +48,9 @@ type AdoptiumAvailableReleases struct {
 
 // AdoptiumRelease represents a release from the Adoptium API
 type AdoptiumRelease struct {
-	ReleaseType string                 `json:"release_type"`
-	VersionData AdoptiumVersionData    `json:"version_data"`
-	Binaries    []AdoptiumBinary       `json:"binaries"`
+	ReleaseType string              `json:"release_type"`
+	VersionData AdoptiumVersionData `json:"version_data"`
+	Binaries    []AdoptiumBinary    `json:"binaries"`
 }
 
 // AdoptiumVersionData contains version information
@@ -59,12 +61,12 @@ type AdoptiumVersionData struct {
 
 // AdoptiumBinary represents a binary download
 type AdoptiumBinary struct {
-	Architecture string               `json:"architecture"`
-	OS           string               `json:"os"`
-	HeapSize     string               `json:"heap_size"`
-	ImageType    string               `json:"image_type"`
-	JVMImpl      string               `json:"jvm_impl"`
-	Package      AdoptiumPackage      `json:"package"`
+	Architecture string          `json:"architecture"`
+	OS           string          `json:"os"`
+	HeapSize     string          `json:"heap_size"`
+	ImageType    string          `json:"image_type"`
+	JVMImpl      string          `json:"jvm_impl"`
+	Package      AdoptiumPackage `json:"package"`
 }
 
 // AdoptiumPackage contains download information
@@ -87,7 +89,10 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 	for _, release := range releases {
 		metadata, err := p.fetchReleaseMetadata(release)
 		if err != nil {
-			fmt.Printf("Warning: failed to fetch release %d: %v\n", release, err)
+			logger.Warn("failed to fetch release",
+				slog.Int("release", release),
+				slog.Any("error", err),
+			)
 			continue
 		}
 		allMetadata = append(allMetadata, metadata...)

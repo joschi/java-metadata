@@ -4,11 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 	"os"
 	"regexp"
 	"strings"
 
+	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
 )
 
@@ -154,7 +156,7 @@ func (p *Provider) parseFilename(filename, url, tagName string) models.Metadata 
 	}
 
 	// If parsing failed, return empty metadata
-	fmt.Printf("Failed to parse SAPMachine filename: %s\n", filename)
+	logger.Warn("failed to parse SAPMachine filename", slog.String("filename", filename))
 	return models.Metadata{}
 }
 

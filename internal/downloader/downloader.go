@@ -20,8 +20,8 @@ import (
 
 // Downloader handles downloading files and computing checksums
 type Downloader struct {
-	client     *http.Client
-	maxRetries int
+	client       *http.Client
+	maxRetries   int
 	showProgress bool
 }
 

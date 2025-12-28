@@ -37,9 +37,9 @@ func TestNewDownloaderWithOptions(t *testing.T) {
 
 func TestIsPermanentError(t *testing.T) {
 	tests := []struct {
-		name       string
-		err        error
-		isPerm     bool
+		name   string
+		err    error
+		isPerm bool
 	}{
 		{
 			name:   "HTTP 404",
@@ -112,6 +112,7 @@ func TestComputeChecksums(t *testing.T) {
 	expectedMD5 := "65a8e27d8879283831b664bd8b7f0ad4"
 	expectedSHA1 := "0a0a9f2a6772942557ab5355d76af442f8f65e01"
 	expectedSHA256 := "dffd6021bb2bd5b0af676290809ec3a53191dd81c7f70a4b28688a362182986f"
+	expectedSHA512 := "374d794a95cdcfd8b35993185fef9ba368f160d8daf432d08ba9f1ed1e5abe6cc69291e0fa2fe0006a52570ef18c19def4e617c33ce52ef0a6e5fbe318cb0387"
 
 	if md5sum != expectedMD5 {
 		t.Errorf("MD5 mismatch: got %s, want %s", md5sum, expectedMD5)
@@ -121,6 +122,9 @@ func TestComputeChecksums(t *testing.T) {
 	}
 	if sha256sum != expectedSHA256 {
 		t.Errorf("SHA256 mismatch: got %s, want %s", sha256sum, expectedSHA256)
+	}
+	if sha512sum != expectedSHA512 {
+		t.Errorf("SHA512 mismatch: got %s, want %s", sha512sum, expectedSHA512)
 	}
 }
 
