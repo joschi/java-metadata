@@ -453,31 +453,25 @@ func runValidate(parentCtx context.Context, metadataDir string, concurrency int,
 		logger.Warn(parentCtx, "delete mode enabled: files with failed URLs will be deleted")
 	}
 
-	// Find all metadata JSON files
-	var metadataFiles []string
-	err := filepath.Walk(metadataDir, func(path string, info os.FileInfo, err error) error {
-		if err != nil {
-			return err
-		}
-		// Respect cancellation during directory walk
-		if cerr := parentCtx.Err(); cerr != nil {
-			return cerr
-		}
-		if !info.IsDir() && filepath.Ext(path) == ".json" && filepath.Base(path) != "all.json" {
-			metadataFiles = append(metadataFiles, path)
-		}
-		return nil
-	})
+	// Read all.json file
+	allJsonPath := filepath.Join(metadataDir, "all.json")
+	data, err := os.ReadFile(allJsonPath)
 	if err != nil {
-		return fmt.Errorf("failed to walk metadata directory: %w", err)
+		return fmt.Errorf("failed to read all.json: %w", err)
 	}
 
-	if len(metadataFiles) == 0 {
-		logger.Info(parentCtx, "no metadata files found")
+	// Parse metadata list
+	var allMetadata []models.Metadata
+	if err := json.Unmarshal(data, &allMetadata); err != nil {
+		return fmt.Errorf("failed to parse all.json: %w", err)
+	}
+
+	if len(allMetadata) == 0 {
+		logger.Info(parentCtx, "no metadata entries found in all.json")
 		return nil
 	}
 
-	logger.Info(parentCtx, "found metadata files to validate", "count", len(metadataFiles))
+	logger.Info(parentCtx, "found metadata entries to validate", "count", len(allMetadata))
 
 	// Create downloader for URL checking
 	dl := downloader.NewDownloader(downloader.WithProgress(false))
@@ -486,12 +480,12 @@ func runValidate(parentCtx context.Context, metadataDir string, concurrency int,
 	var wg sync.WaitGroup
 	var checked, failed int64
 	semaphore := make(chan struct{}, concurrency)
-	failedFilesChan := make(chan string, len(metadataFiles))
+	failedFilesChan := make(chan models.Metadata, len(allMetadata))
 
 	startTime := time.Now()
-	for _, file := range metadataFiles {
+	for _, metadata := range allMetadata {
 		wg.Add(1)
-		go func(metadataFile string) {
+		go func(m models.Metadata) {
 			defer wg.Done()
 
 			// Acquire semaphore
@@ -503,30 +497,10 @@ func runValidate(parentCtx context.Context, metadataDir string, concurrency int,
 				return
 			}
 
-			// Read metadata file
-			data, err := os.ReadFile(metadataFile)
-			if err != nil {
-				logger.Error(context.Background(), "failed to read metadata file", "file", metadataFile, "error", err)
-				atomic.AddInt64(&failed, 1)
-				return
-			}
-
-			// Parse metadata
-			var metadata models.Metadata
-			if err := json.Unmarshal(data, &metadata); err != nil {
-				logger.Error(context.Background(), "failed to parse metadata file", "file", metadataFile, "error", err)
-				atomic.AddInt64(&failed, 1)
-				return
-			}
-
 			// Check URL
-			if err := parentCtx.Err(); err != nil {
-				return
-			}
-
-			if err := dl.CheckURLExists(parentCtx, metadata.URL); err != nil {
-				logger.Debug(context.Background(), "URL not accessible", "file", metadataFile, "url", metadata.URL, "error", err)
-				failedFilesChan <- metadataFile
+			if err := dl.CheckURLExists(parentCtx, m.URL); err != nil {
+				logger.Info(context.Background(), "URL not accessible", "filename", m.Filename, "url", m.URL, "error", err)
+				failedFilesChan <- m
 				atomic.AddInt64(&failed, 1)
 			}
 
@@ -534,19 +508,19 @@ func runValidate(parentCtx context.Context, metadataDir string, concurrency int,
 
 			// Progress indicator
 			if c := atomic.LoadInt64(&checked); c%100 == 0 {
-				logger.Info(context.Background(), "validation progress", "checked", c, "total", len(metadataFiles))
+				logger.Info(context.Background(), "validation progress", "checked", c, "total", len(allMetadata))
 			}
-		}(file)
+		}(metadata)
 	}
 
 	// Wait for all validations to complete
 	wg.Wait()
 	close(failedFilesChan)
 
-	// Collect failed files
-	var failedFiles []string
-	for file := range failedFilesChan {
-		failedFiles = append(failedFiles, file)
+	// Collect failed entries
+	var failedEntries []models.Metadata
+	for m := range failedFilesChan {
+		failedEntries = append(failedEntries, m)
 	}
 
 	duration := time.Since(startTime)
@@ -559,28 +533,42 @@ func runValidate(parentCtx context.Context, metadataDir string, concurrency int,
 		"duration", duration,
 	)
 
-	if len(failedFiles) > 0 {
-		logger.Warn(parentCtx, "found inaccessible URLs", "count", len(failedFiles))
-		for _, file := range failedFiles {
-			logger.Warn(parentCtx, "inaccessible file", "path", file)
+	if len(failedEntries) > 0 {
+		logger.Warn(parentCtx, "found inaccessible URLs", "count", len(failedEntries))
+		for _, m := range failedEntries {
+			logger.Warn(parentCtx, "inaccessible file", "filename", m.Filename, "vendor", m.Vendor)
 		}
 
 		// Delete files if requested
 		if deleteOnFailure {
-			logger.Info(parentCtx, "deleting failed files", "count", len(failedFiles))
-			var deletedCount, deleteFailedCount int
-			for _, file := range failedFiles {
-				if err := os.Remove(file); err != nil {
-					logger.Error(parentCtx, "failed to delete file", "file", file, "error", err)
-					deleteFailedCount++
-				} else {
-					deletedCount++
+			logger.Info(parentCtx, "deleting failed entries", "count", len(failedEntries))
+			checksumBase := filepath.Join(filepath.Dir(metadataDir), "checksums")
+			var deletedChecksumCount, deleteFailedCount int
+
+			for _, m := range failedEntries {
+				// Delete checksum files using the explicit file paths from metadata
+				checksumFiles := []string{m.MD5File, m.SHA1File, m.SHA256File, m.SHA512File}
+				for _, checksumFile := range checksumFiles {
+					if checksumFile == "" {
+						continue
+					}
+					checksumPath := filepath.Join(checksumBase, m.Vendor, checksumFile)
+					if err := os.Remove(checksumPath); err != nil {
+						// Only log if file exists and deletion failed; ignore missing files
+						if _, statErr := os.Stat(checksumPath); statErr == nil {
+							logger.Error(parentCtx, "failed to delete checksum file", "file", checksumPath, "error", err)
+							deleteFailedCount++
+						}
+					} else {
+						deletedChecksumCount++
+					}
 				}
 			}
-			logger.Info(parentCtx, "deletion complete", "deleted", deletedCount, "failed", deleteFailedCount)
+
+			logger.Info(parentCtx, "deletion complete", "checksumsDeleted", deletedChecksumCount, "failed", deleteFailedCount)
 		}
 
-		return fmt.Errorf("%d URLs are not accessible", len(failedFiles))
+		return fmt.Errorf("%d URLs are not accessible", len(failedEntries))
 	}
 
 	logger.Info(parentCtx, "all URLs are accessible")
