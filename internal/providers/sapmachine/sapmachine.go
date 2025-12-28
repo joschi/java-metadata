@@ -13,6 +13,7 @@ import (
 
 	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Provider implements the Provider interface for SAPMachine
@@ -23,7 +24,7 @@ type Provider struct {
 // NewProvider creates a new SAPMachine provider
 func NewProvider() *Provider {
 	return &Provider{
-		client: &http.Client{},
+		client: &http.Client{Transport: otelhttp.NewTransport(http.DefaultTransport)},
 	}
 }
 
@@ -157,7 +158,7 @@ func (p *Provider) parseFilename(filename, url, tagName string) models.Metadata 
 	}
 
 	// If parsing failed, return empty metadata
-	logger.Warn("failed to parse SAPMachine filename", slog.String("filename", filename))
+	logger.Warn(context.Background(), "failed to parse SAPMachine filename", slog.String("filename", filename))
 	return models.Metadata{}
 }
 

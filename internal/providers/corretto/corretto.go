@@ -12,6 +12,7 @@ import (
 	"github.com/joschi/java-metadata/internal/downloader"
 	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Provider implements the Provider interface for Amazon Corretto
@@ -23,7 +24,7 @@ type Provider struct {
 // NewProvider creates a new Corretto provider
 func NewProvider() *Provider {
 	return &Provider{
-		client:     &http.Client{},
+		client:     &http.Client{Transport: otelhttp.NewTransport(http.DefaultTransport)},
 		downloader: downloader.NewDownloader(),
 	}
 }
@@ -52,7 +53,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 	for _, repo := range repos {
 		versions, err := p.fetchVersionsFromRepo(ctx, repo)
 		if err != nil {
-			logger.Warn("failed to fetch from repository",
+			logger.Warn(ctx, "failed to fetch from repository",
 				slog.String("repo", repo),
 				slog.Any("error", err),
 			)

@@ -11,6 +11,7 @@ import (
 
 	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Provider implements the Provider interface for Java SE Reference Implementation
@@ -21,7 +22,7 @@ type Provider struct {
 // NewProvider creates a new Java SE RI provider
 func NewProvider() *Provider {
 	return &Provider{
-		client: &http.Client{},
+		client: &http.Client{Transport: otelhttp.NewTransport(http.DefaultTransport)},
 	}
 }
 
@@ -41,7 +42,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 		url := fmt.Sprintf("https://jdk.java.net/java-se-ri/%s", ver)
 		req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 		if err != nil {
-			logger.Warn("failed to build Java SE RI request",
+			logger.Warn(ctx, "failed to build Java SE RI request",
 				slog.String("version", ver),
 				slog.Any("error", err),
 			)
@@ -50,7 +51,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 
 		resp, err := p.client.Do(req)
 		if err != nil {
-			logger.Warn("failed to fetch Java SE RI download page",
+			logger.Warn(ctx, "failed to fetch Java SE RI download page",
 				slog.String("version", ver),
 				slog.Any("error", err),
 			)

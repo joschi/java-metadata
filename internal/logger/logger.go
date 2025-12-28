@@ -1,9 +1,12 @@
 package logger
 
 import (
+	"context"
 	"io"
 	"log/slog"
 	"os"
+
+	"github.com/go-slog/otelslog"
 )
 
 var defaultLogger *slog.Logger
@@ -43,7 +46,8 @@ func SetLevel(level Level) {
 		Level: slogLevel,
 	}
 	handler := slog.NewTextHandler(os.Stderr, opts)
-	defaultLogger = slog.New(handler)
+	// Wrap with otelslog to add trace context to logs
+	defaultLogger = slog.New(otelslog.NewHandler(handler))
 }
 
 // SetOutput configures the logger to write to the specified writer
@@ -66,27 +70,28 @@ func SetOutput(w io.Writer, level Level) {
 		Level: slogLevel,
 	}
 	handler := slog.NewTextHandler(w, opts)
-	defaultLogger = slog.New(handler)
+	// Wrap with otelslog to add trace context to logs
+	defaultLogger = slog.New(otelslog.NewHandler(handler))
 }
 
 // Debug logs a debug message
-func Debug(msg string, args ...any) {
-	defaultLogger.Debug(msg, args...)
+func Debug(ctx context.Context, msg string, args ...any) {
+	defaultLogger.DebugContext(ctx, msg, args...)
 }
 
 // Info logs an informational message
-func Info(msg string, args ...any) {
-	defaultLogger.Info(msg, args...)
+func Info(ctx context.Context, msg string, args ...any) {
+	defaultLogger.InfoContext(ctx, msg, args...)
 }
 
 // Warn logs a warning message
-func Warn(msg string, args ...any) {
-	defaultLogger.Warn(msg, args...)
+func Warn(ctx context.Context, msg string, args ...any) {
+	defaultLogger.WarnContext(ctx, msg, args...)
 }
 
 // Error logs an error message
-func Error(msg string, args ...any) {
-	defaultLogger.Error(msg, args...)
+func Error(ctx context.Context, msg string, args ...any) {
+	defaultLogger.ErrorContext(ctx, msg, args...)
 }
 
 // ParseLevel converts a string level to Level

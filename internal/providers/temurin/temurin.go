@@ -13,6 +13,7 @@ import (
 
 	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Provider implements the Provider interface for Eclipse Temurin (Adoptium)
@@ -31,7 +32,7 @@ func NewProvider() *Provider {
 // This allows reusing the Adoptium API for different vendors (e.g., adoptopenjdk)
 func NewProviderWithVendor(vendorName, apiVendor string) *Provider {
 	return &Provider{
-		client:     &http.Client{},
+		client:     &http.Client{Transport: otelhttp.NewTransport(http.DefaultTransport)},
 		vendorName: vendorName,
 		apiVendor:  apiVendor,
 	}
@@ -90,7 +91,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 	for _, release := range releases {
 		metadata, err := p.fetchReleaseMetadata(ctx, release)
 		if err != nil {
-			logger.Warn("failed to fetch release",
+			logger.Warn(ctx, "failed to fetch release",
 				slog.Int("release", release),
 				slog.Any("error", err),
 			)

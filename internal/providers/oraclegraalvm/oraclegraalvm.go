@@ -11,6 +11,7 @@ import (
 
 	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Provider implements the Provider interface for Oracle GraalVM
@@ -23,7 +24,7 @@ type Provider struct {
 // NewProvider creates a new Oracle GraalVM provider (GA releases)
 func NewProvider() *Provider {
 	return &Provider{
-		client:      &http.Client{},
+		client:      &http.Client{Transport: otelhttp.NewTransport(http.DefaultTransport)},
 		vendorName:  models.VendorOracleGraalVM,
 		releaseType: models.ReleaseTypeGA,
 	}
@@ -32,7 +33,7 @@ func NewProvider() *Provider {
 // NewEAProvider creates a new Oracle GraalVM provider for Early Access releases
 func NewEAProvider() *Provider {
 	return &Provider{
-		client:      &http.Client{},
+		client:      &http.Client{Transport: otelhttp.NewTransport(http.DefaultTransport)},
 		vendorName:  models.VendorOracleGraalVM,
 		releaseType: models.ReleaseTypeEA,
 	}
@@ -73,13 +74,13 @@ func (p *Provider) fetchCurrentReleases(ctx context.Context) []models.Metadata {
 	url := "https://www.oracle.com/java/technologies/downloads/"
 	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 	if err != nil {
-		logger.Warn("failed to build Oracle GraalVM current request", slog.Any("error", err))
+		logger.Warn(ctx, "failed to build Oracle GraalVM current request", slog.Any("error", err))
 		return metadata
 	}
 
 	resp, err := p.client.Do(req)
 	if err != nil {
-		logger.Warn("failed to fetch Oracle GraalVM current releases", slog.Any("error", err))
+		logger.Warn(ctx, "failed to fetch Oracle GraalVM current releases", slog.Any("error", err))
 		return metadata
 	}
 	defer resp.Body.Close()
@@ -133,7 +134,7 @@ func (p *Provider) fetchArchiveMetadata(ctx context.Context, majorVersion string
 	url := fmt.Sprintf("https://www.oracle.com/java/technologies/javase/graalvm-jdk%s-archive-downloads.html", majorVersion)
 	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 	if err != nil {
-		logger.Warn("failed to build Oracle GraalVM archive request",
+		logger.Warn(ctx, "failed to build Oracle GraalVM archive request",
 			slog.String("version", majorVersion),
 			slog.Any("error", err),
 		)
@@ -142,7 +143,7 @@ func (p *Provider) fetchArchiveMetadata(ctx context.Context, majorVersion string
 
 	resp, err := p.client.Do(req)
 	if err != nil {
-		logger.Warn("failed to fetch Oracle GraalVM archive",
+		logger.Warn(ctx, "failed to fetch Oracle GraalVM archive",
 			slog.String("version", majorVersion),
 			slog.Any("error", err),
 		)

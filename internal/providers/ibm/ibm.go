@@ -11,6 +11,7 @@ import (
 
 	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Provider implements the Provider interface for IBM JDK (legacy)
@@ -21,7 +22,7 @@ type Provider struct {
 // NewProvider creates a new IBM JDK provider
 func NewProvider() *Provider {
 	return &Provider{
-		client: &http.Client{},
+		client: &http.Client{Transport: otelhttp.NewTransport(http.DefaultTransport)},
 	}
 }
 
@@ -66,7 +67,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 		versionURL := fmt.Sprintf("%s%s/linux/", baseURL, version)
 		archReq, err := http.NewRequestWithContext(ctx, "GET", versionURL, nil)
 		if err != nil {
-			logger.Warn("failed to build IBM version request",
+			logger.Warn(ctx, "failed to build IBM version request",
 				slog.String("version", version),
 				slog.Any("error", err),
 			)
@@ -75,7 +76,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 
 		archResp, err := p.client.Do(archReq)
 		if err != nil {
-			logger.Warn("failed to fetch IBM version",
+			logger.Warn(ctx, "failed to fetch IBM version",
 				slog.String("version", version),
 				slog.Any("error", err),
 			)
@@ -102,7 +103,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 			archURL := fmt.Sprintf("%s%s/linux/%s/", baseURL, version, arch)
 			fileReq, err := http.NewRequestWithContext(ctx, "GET", archURL, nil)
 			if err != nil {
-				logger.Warn("failed to build IBM arch request",
+				logger.Warn(ctx, "failed to build IBM arch request",
 					slog.String("version", version),
 					slog.String("arch", arch),
 					slog.Any("error", err),
@@ -112,7 +113,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 
 			fileResp, err := p.client.Do(fileReq)
 			if err != nil {
-				logger.Warn("failed to fetch IBM arch",
+				logger.Warn(ctx, "failed to fetch IBM arch",
 					slog.String("version", version),
 					slog.String("arch", arch),
 					slog.Any("error", err),

@@ -12,6 +12,7 @@ import (
 
 	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Provider implements the Provider interface for Oracle JDK
@@ -23,7 +24,7 @@ type Provider struct {
 // NewProvider creates a new Oracle JDK provider
 func NewProvider() *Provider {
 	return &Provider{
-		client:     &http.Client{},
+		client:     &http.Client{Transport: otelhttp.NewTransport(http.DefaultTransport)},
 		vendorName: models.VendorOracle,
 	}
 }
@@ -40,12 +41,12 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error)
 	// Fetch latest versions from Oracle API
 	latestReq, err := http.NewRequestWithContext(ctx, "GET", "https://java.oraclecloud.com/javaVersions", nil)
 	if err != nil {
-		logger.Warn("failed to build Oracle latest request", slog.Any("error", err))
+		logger.Warn(ctx, "failed to build Oracle latest request", slog.Any("error", err))
 	}
 
 	latestResp, err := p.client.Do(latestReq)
 	if err != nil {
-		logger.Warn("failed to fetch Oracle latest versions", slog.Any("error", err))
+		logger.Warn(ctx, "failed to fetch Oracle latest versions", slog.Any("error", err))
 	} else {
 		body, err := io.ReadAll(latestResp.Body)
 		latestResp.Body.Close()
@@ -80,7 +81,7 @@ func (p *Provider) fetchVersionMetadata(ctx context.Context, version string) []m
 	url := fmt.Sprintf("https://java.oraclecloud.com/javaReleases/%s", version)
 	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 	if err != nil {
-		logger.Warn("failed to build Oracle version request",
+		logger.Warn(ctx, "failed to build Oracle version request",
 			slog.String("version", version),
 			slog.Any("error", err),
 		)
@@ -89,7 +90,7 @@ func (p *Provider) fetchVersionMetadata(ctx context.Context, version string) []m
 
 	resp, err := p.client.Do(req)
 	if err != nil {
-		logger.Warn("failed to fetch Oracle version",
+		logger.Warn(ctx, "failed to fetch Oracle version",
 			slog.String("version", version),
 			slog.Any("error", err),
 		)
@@ -117,7 +118,7 @@ func (p *Provider) fetchVersionMetadata(ctx context.Context, version string) []m
 
 	// Skip OTN licensed versions
 	if release.LicenseDetails.LicenseType == "OTN" {
-		logger.Info("skipping OTN licensed version", slog.String("version", version))
+		logger.Info(ctx, "skipping OTN licensed version", slog.String("version", version))
 		return metadata
 	}
 
@@ -138,7 +139,7 @@ func (p *Provider) fetchArchiveMetadata(ctx context.Context, majorVersion string
 	url := fmt.Sprintf("https://www.oracle.com/java/technologies/javase/jdk%s-archive-downloads.html", majorVersion)
 	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 	if err != nil {
-		logger.Warn("failed to build Oracle archive request",
+		logger.Warn(ctx, "failed to build Oracle archive request",
 			slog.String("version", majorVersion),
 			slog.Any("error", err),
 		)
@@ -147,7 +148,7 @@ func (p *Provider) fetchArchiveMetadata(ctx context.Context, majorVersion string
 
 	resp, err := p.client.Do(req)
 	if err != nil {
-		logger.Warn("failed to fetch Oracle archive",
+		logger.Warn(ctx, "failed to fetch Oracle archive",
 			slog.String("version", majorVersion),
 			slog.Any("error", err),
 		)

@@ -10,6 +10,7 @@ import (
 
 	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/joschi/java-metadata/internal/models"
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Provider implements the Provider interface for Microsoft OpenJDK
@@ -20,7 +21,7 @@ type Provider struct {
 // NewProvider creates a new Microsoft provider
 func NewProvider() *Provider {
 	return &Provider{
-		client: &http.Client{},
+		client: &http.Client{Transport: otelhttp.NewTransport(http.DefaultTransport)},
 	}
 }
 
@@ -92,7 +93,7 @@ func (p *Provider) parseFilename(filename string) models.Metadata {
 	matches := re.FindStringSubmatch(filename)
 
 	if len(matches) < 5 {
-		logger.Warn("failed to parse Microsoft JDK filename", slog.String("filename", filename))
+		logger.Warn(context.Background(), "failed to parse Microsoft JDK filename", slog.String("filename", filename))
 		return models.Metadata{}
 	}
 

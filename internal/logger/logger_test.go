@@ -2,6 +2,7 @@ package logger
 
 import (
 	"bytes"
+	"context"
 	"strings"
 	"testing"
 )
@@ -54,10 +55,11 @@ func TestLogging(t *testing.T) {
 	var buf bytes.Buffer
 	SetOutput(&buf, LevelDebug)
 
-	Debug("debug message", "key", "value")
-	Info("info message", "key", "value")
-	Warn("warn message", "key", "value")
-	Error("error message", "key", "value")
+	ctx := context.Background()
+	Debug(ctx, "debug message", "key", "value")
+	Info(ctx, "info message", "key", "value")
+	Warn(ctx, "warn message", "key", "value")
+	Error(ctx, "error message", "key", "value")
 
 	output := buf.String()
 
@@ -86,8 +88,9 @@ func TestLevelFiltering(t *testing.T) {
 	var buf bytes.Buffer
 	SetOutput(&buf, LevelInfo)
 
-	Debug("debug message")
-	Info("info message")
+	ctx := context.Background()
+	Debug(ctx, "debug message")
+	Info(ctx, "info message")
 
 	output := buf.String()
 

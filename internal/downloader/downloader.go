@@ -17,6 +17,7 @@ import (
 
 	"github.com/joschi/java-metadata/internal/logger"
 	"github.com/schollz/progressbar/v3"
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Downloader handles downloading files and computing checksums
@@ -45,16 +46,18 @@ func WithProgress(show bool) Option {
 
 // NewDownloader creates a new Downloader instance with optimized HTTP settings
 func NewDownloader(opts ...Option) *Downloader {
+	transport := &http.Transport{
+		MaxIdleConns:        100,
+		MaxIdleConnsPerHost: 10,
+		IdleConnTimeout:     90 * time.Second,
+		DisableCompression:  false,
+		DisableKeepAlives:   false,
+	}
+
 	d := &Downloader{
 		client: &http.Client{
-			Timeout: 30 * time.Minute, // Large files may take time
-			Transport: &http.Transport{
-				MaxIdleConns:        100,
-				MaxIdleConnsPerHost: 10,
-				IdleConnTimeout:     90 * time.Second,
-				DisableCompression:  false,
-				DisableKeepAlives:   false,
-			},
+			Timeout:   30 * time.Minute, // Large files may take time
+			Transport: otelhttp.NewTransport(transport),
 		},
 		maxRetries:   3,
 		showProgress: true,
@@ -68,17 +71,17 @@ func NewDownloader(opts ...Option) *Downloader {
 }
 
 // DownloadFile downloads a file from the given URL to the specified path with retry logic
-func (d *Downloader) DownloadFile(url, outputPath string) error {
+func (d *Downloader) DownloadFile(ctx context.Context, url, outputPath string) error {
 	var lastErr error
 
 	for attempt := 1; attempt <= d.maxRetries; attempt++ {
 		if attempt > 1 {
 			backoff := time.Duration(1<<uint(attempt-2)) * time.Second
-			logger.Debug("retrying download after backoff", "url", url, "attempt", attempt, "backoff", backoff)
+			logger.Debug(ctx, "retrying download after backoff", "url", url, "attempt", attempt, "backoff", backoff)
 			time.Sleep(backoff)
 		}
 
-		err := d.downloadOnce(url, outputPath)
+		err := d.downloadOnce(ctx, url, outputPath)
 		if err == nil {
 			return nil
 		}
@@ -87,12 +90,12 @@ func (d *Downloader) DownloadFile(url, outputPath string) error {
 
 		// Don't retry on permanent errors (4xx status codes)
 		if isPermanentError(err) {
-			logger.Debug("permanent error, not retrying", "url", url, "error", err)
+			logger.Debug(ctx, "permanent error, not retrying", "url", url, "error", err)
 			break
 		}
 
 		if attempt < d.maxRetries {
-			logger.Warn("download failed, will retry", "url", url, "attempt", attempt, "error", err)
+			logger.Warn(ctx, "download failed, will retry", "url", url, "attempt", attempt, "error", err)
 		}
 	}
 
@@ -100,14 +103,14 @@ func (d *Downloader) DownloadFile(url, outputPath string) error {
 }
 
 // downloadOnce performs a single download attempt
-func (d *Downloader) downloadOnce(url, outputPath string) error {
+func (d *Downloader) downloadOnce(ctx context.Context, url, outputPath string) error {
 	// Create output directory if it doesn't exist
 	dir := filepath.Dir(outputPath)
 	if err := os.MkdirAll(dir, 0755); err != nil {
 		return fmt.Errorf("failed to create directory %s: %w", dir, err)
 	}
 
-	logger.Info("downloading", "url", url)
+	logger.Info(ctx, "downloading", "url", url)
 
 	// Create the HTTP request
 	req, err := http.NewRequest("GET", url, nil)

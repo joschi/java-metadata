@@ -11,6 +11,7 @@ import (
 	"strings"
 
 	"github.com/joschi/java-metadata/internal/models"
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Release represents a GitHub release
@@ -38,7 +39,7 @@ type GenericProvider struct {
 // NewGenericProvider creates a new generic GitHub provider
 func NewGenericProvider(vendorName, org, repo string, parser FilenameParser) *GenericProvider {
 	return &GenericProvider{
-		client:     &http.Client{},
+		client:     &http.Client{Transport: otelhttp.NewTransport(http.DefaultTransport)},
 		vendorName: vendorName,
 		org:        org,
 		repo:       repo,
