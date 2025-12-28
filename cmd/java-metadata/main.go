@@ -566,6 +566,13 @@ func runValidate(parentCtx context.Context, metadataDir string, concurrency int,
 			}
 
 			logger.Info(parentCtx, "deletion complete", "checksumsDeleted", deletedChecksumCount, "failed", deleteFailedCount)
+
+			// Regenerate aggregated metadata files after deletions
+			logger.Info(parentCtx, "regenerating aggregated metadata files")
+			if err := regenerateAggregateMetadata(parentCtx, metadataDir, allMetadata); err != nil {
+				logger.Error(parentCtx, "failed to regenerate aggregated metadata", "error", err)
+				// Don't fail validation if aggregation fails - deletions were successful
+			}
 		}
 
 		return fmt.Errorf("%d URLs are not accessible", len(failedEntries))
@@ -573,4 +580,22 @@ func runValidate(parentCtx context.Context, metadataDir string, concurrency int,
 
 	logger.Info(parentCtx, "all URLs are accessible")
 	return nil
+}
+
+// regenerateAggregateMetadata reads all.json and regenerates aggregated metadata files
+func regenerateAggregateMetadata(ctx context.Context, metadataDir string, allMetadata []models.Metadata) error {
+	// Read all.json to ensure we have the latest state
+	allJsonPath := filepath.Join(metadataDir, "all.json")
+	data, err := os.ReadFile(allJsonPath)
+	if err != nil {
+		return fmt.Errorf("failed to read all.json: %w", err)
+	}
+
+	var currentMetadata models.MetadataList
+	if err := json.Unmarshal(data, &currentMetadata); err != nil {
+		return fmt.Errorf("failed to parse all.json: %w", err)
+	}
+
+	// Regenerate all aggregated files
+	return output.AggregateMetadata(currentMetadata, metadataDir)
 }
