@@ -93,7 +93,6 @@ func AggregateMetadata(allMetadata models.MetadataList, metadataDir string) erro
 
 	// Create hierarchical structure: {release_type}/{os}/{arch}/{image_type}/{jvm_impl}/{vendor}.json
 	for _, releaseType := range releaseTypes {
-		releaseType := releaseType // Capture for goroutine
 		releaseTypeDir := filepath.Join(metadataDir, releaseType)
 		releaseTypeMetadata := filterMetadata(allMetadata, func(m models.Metadata) bool {
 			return m.ReleaseType == releaseType
@@ -106,7 +105,6 @@ func AggregateMetadata(allMetadata models.MetadataList, metadataDir string) erro
 
 		// Parallelize OS-level processing
 		for _, os := range operatingSystems {
-			os := os // Capture for goroutine
 			osDir := filepath.Join(releaseTypeDir, os)
 			osMetadata := filterMetadata(releaseTypeMetadata, func(m models.Metadata) bool {
 				return m.OS == os
