@@ -38,7 +38,6 @@ func main() {
 	checksumDir := updateCmd.String("checksum-dir", "./docs/checksums", "Output directory for checksums")
 	concurrency := updateCmd.Int("concurrency", 4, "Number of concurrent provider fetches")
 	downloadConcurrency := updateCmd.Int("download-concurrency", 3, "Number of concurrent downloads")
-	noProgress := updateCmd.Bool("no-progress", false, "Disable progress bars")
 	maxRetries := updateCmd.Int("max-retries", 3, "Maximum number of retry attempts for downloads")
 	providerTimeout := updateCmd.Duration("provider-timeout", 5*time.Minute, "Per-provider timeout (e.g. 2m, 30s)")
 
@@ -99,7 +98,7 @@ func main() {
 	switch os.Args[1] {
 	case "update":
 		updateCmd.Parse(os.Args[2:])
-		if err := runUpdate(ctx, *metadataDir, *checksumDir, *concurrency, *downloadConcurrency, !*noProgress, *maxRetries, *providerTimeout); err != nil {
+		if err := runUpdate(ctx, *metadataDir, *checksumDir, *concurrency, *downloadConcurrency, *maxRetries, *providerTimeout); err != nil {
 			logger.Error(ctx, "update failed", "error", err)
 			os.Exit(1)
 		}
@@ -160,7 +159,7 @@ func initTracer() (*sdktrace.TracerProvider, error) {
 	return tp, nil
 }
 
-func runUpdate(parentCtx context.Context, metadataDir, checksumDir string, concurrency, downloadConcurrency int, showProgress bool, maxRetries int, providerTimeout time.Duration) error {
+func runUpdate(parentCtx context.Context, metadataDir, checksumDir string, concurrency, downloadConcurrency int, maxRetries int, providerTimeout time.Duration) error {
 	startTime := time.Now()
 	logger.Info(parentCtx, "starting update", "metadataDir", metadataDir, "checksumDir", checksumDir)
 
@@ -262,7 +261,7 @@ func runUpdate(parentCtx context.Context, metadataDir, checksumDir string, concu
 	logger.Info(parentCtx, "downloading artifacts and computing checksums", "concurrency", downloadConcurrency)
 	downloadStart := time.Now()
 	downloadedCount, skippedCount, failedCount, totalBytes, err := downloadAndComputeChecksums(
-		allMetadata, metadataDir, checksumDir, downloadConcurrency, showProgress, maxRetries,
+		allMetadata, metadataDir, checksumDir, downloadConcurrency, maxRetries,
 	)
 	if err != nil {
 		// Log error but continue - individual download failures are already logged
@@ -344,10 +343,9 @@ func runUpdate(parentCtx context.Context, metadataDir, checksumDir string, concu
 	return nil
 }
 
-func downloadAndComputeChecksums(metadata []models.Metadata, metadataDir, checksumDir string, concurrency int, showProgress bool, maxRetries int) (downloaded, skipped, failed int, totalBytes int64, err error) {
+func downloadAndComputeChecksums(metadata []models.Metadata, metadataDir, checksumDir string, concurrency int, maxRetries int) (downloaded, skipped, failed int, totalBytes int64, err error) {
 	// Create downloader with options
 	dl := downloader.NewDownloader(
-		downloader.WithProgress(showProgress),
 		downloader.WithMaxRetries(maxRetries),
 	)
 
@@ -474,7 +472,7 @@ func runValidate(parentCtx context.Context, metadataDir string, concurrency int,
 	logger.Info(parentCtx, "found metadata entries to validate", "count", len(allMetadata))
 
 	// Create downloader for URL checking
-	dl := downloader.NewDownloader(downloader.WithProgress(false))
+	dl := downloader.NewDownloader()
 
 	// Validate URLs concurrently
 	var wg sync.WaitGroup

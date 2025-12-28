@@ -16,15 +16,13 @@ import (
 	"time"
 
 	"github.com/joschi/java-metadata/internal/logger"
-	"github.com/schollz/progressbar/v3"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
 // Downloader handles downloading files and computing checksums
 type Downloader struct {
-	client       *http.Client
-	maxRetries   int
-	showProgress bool
+	client     *http.Client
+	maxRetries int
 }
 
 // Option configures a Downloader
@@ -34,13 +32,6 @@ type Option func(*Downloader)
 func WithMaxRetries(retries int) Option {
 	return func(d *Downloader) {
 		d.maxRetries = retries
-	}
-}
-
-// WithProgress enables or disables progress bars
-func WithProgress(show bool) Option {
-	return func(d *Downloader) {
-		d.showProgress = show
 	}
 }
 
@@ -59,8 +50,7 @@ func NewDownloader(opts ...Option) *Downloader {
 			Timeout:   30 * time.Minute, // Large files may take time
 			Transport: otelhttp.NewTransport(transport),
 		},
-		maxRetries:   3,
-		showProgress: true,
+		maxRetries: 3,
 	}
 
 	for _, opt := range opts {
@@ -136,20 +126,8 @@ func (d *Downloader) downloadOnce(ctx context.Context, url, outputPath string) e
 	}
 	defer out.Close()
 
-	// Copy the response body to the file with optional progress bar
-	if d.showProgress && resp.ContentLength > 0 {
-		bar := progressbar.DefaultBytes(
-			resp.ContentLength,
-			filepath.Base(outputPath),
-		)
-		defer bar.Close()
-
-		// Wrap the response body with the progress bar
-		proxyReader := progressbar.NewReader(resp.Body, bar)
-		_, err = io.Copy(out, &proxyReader)
-	} else {
-		_, err = io.Copy(out, resp.Body)
-	}
+	// Copy the response body to the file
+	_, err = io.Copy(out, resp.Body)
 	if err != nil {
 		return fmt.Errorf("failed to write file %s: %w", outputPath, err)
 	}

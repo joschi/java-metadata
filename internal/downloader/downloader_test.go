@@ -14,24 +14,17 @@ func TestNewDownloader(t *testing.T) {
 	if d.maxRetries != 3 {
 		t.Errorf("Expected maxRetries=3, got %d", d.maxRetries)
 	}
-	if !d.showProgress {
-		t.Error("Expected showProgress=true by default")
-	}
 }
 
 func TestNewDownloaderWithOptions(t *testing.T) {
 	d := NewDownloader(
 		WithMaxRetries(5),
-		WithProgress(false),
 	)
 	if d == nil {
 		t.Fatal("NewDownloader returned nil")
 	}
 	if d.maxRetries != 5 {
 		t.Errorf("Expected maxRetries=5, got %d", d.maxRetries)
-	}
-	if d.showProgress {
-		t.Error("Expected showProgress=false")
 	}
 }
 
