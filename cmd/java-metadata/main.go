@@ -5,7 +5,6 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"flag"
 	"fmt"
 	"log/slog"
 	"os"
@@ -22,6 +21,7 @@ import (
 	"github.com/joschi/java-metadata/internal/output"
 	"github.com/joschi/java-metadata/internal/providers"
 	"github.com/joschi/java-metadata/internal/providers/allproviders"
+	"github.com/spf13/cobra"
 
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp"
@@ -36,83 +36,10 @@ import (
 )
 
 func main() {
-	// Global flags
-	logLevel := flag.String("log-level", "info", "Log level (debug, info, warn, error)")
-	verbose := flag.Bool("verbose", false, "Enable verbose output (same as --log-level=debug)")
-	quiet := flag.Bool("quiet", false, "Quiet mode (same as --log-level=error)")
-
-	updateCmd := flag.NewFlagSet("update", flag.ExitOnError)
-	metadataDir := updateCmd.String("metadata-dir", "./docs/metadata", "Output directory for metadata")
-	checksumDir := updateCmd.String("checksum-dir", "./docs/checksums", "Output directory for checksums")
-	concurrency := updateCmd.Int("concurrency", 4, "Number of concurrent provider fetches")
-	downloadConcurrency := updateCmd.Int("download-concurrency", 3, "Number of concurrent downloads")
-	maxRetries := updateCmd.Int("max-retries", 3, "Maximum number of retry attempts for downloads")
-	providerTimeout := updateCmd.Duration("provider-timeout", 5*time.Minute, "Per-provider timeout (e.g. 2m, 30s)")
-
-	validateCmd := flag.NewFlagSet("validate", flag.ExitOnError)
-	validateMetadataDir := validateCmd.String("metadata-dir", "./docs/metadata", "Directory containing metadata files")
-	validateConcurrency := validateCmd.Int("concurrency", 10, "Number of concurrent URL checks")
-	validateDelete := validateCmd.Bool("delete", false, "Delete files that fail validation")
-
-	if len(os.Args) < 2 {
-		fmt.Println("Usage: java-metadata [global-options] <command> [options]")
-		fmt.Println("\nGlobal Options:")
-		flag.PrintDefaults()
-		fmt.Println("\nCommands:")
-		fmt.Println("  update      Fetch and update metadata for all vendors")
-		fmt.Println("  validate    Validate URLs in metadata files")
-		os.Exit(1)
-	}
-
-	// Parse global flags
-	flag.Parse()
-
-	// Configure logging
-	level := logger.ParseLevel(*logLevel)
-	if *verbose {
-		level = logger.LevelDebug
-	}
-	if *quiet {
-		level = logger.LevelError
-	}
-	logger.SetLevel(level)
-
+	// Root context and signal handling
 	rootCtx := context.Background()
-
-	// Initialize OpenTelemetry with standard environment variable configuration
-	res, err := initResource(rootCtx)
-	if err != nil {
-		logger.Error(rootCtx, "failed to initialize resource", "error", err)
-		os.Exit(1)
-	}
-	tp, err := initTracer(rootCtx, res)
-	if err != nil {
-		logger.Error(rootCtx, "failed to initialize tracer", "error", err)
-		// Continue without tracing rather than failing
-	} else if tp != nil {
-		defer func() {
-			if err := tp.Shutdown(rootCtx); err != nil {
-				logger.Error(rootCtx, "error shutting down tracer provider", "error", err)
-			}
-		}()
-	}
-	lp, err := initLogger(rootCtx, res)
-	if err != nil {
-		logger.Error(rootCtx, "failed to initialize logger", "error", err)
-		// Continue without logging rather than failing
-	} else if lp != nil {
-		defer func() {
-			if err := lp.Shutdown(rootCtx); err != nil {
-				logger.Error(rootCtx, "error shutting down logger provider", "error", err)
-			}
-		}()
-	}
-
-	// Root context to allow coordinated cancellation (e.g., future signal handling)
 	ctx, cancel := context.WithCancel(rootCtx)
 	defer cancel()
-
-	// Handle SIGINT/SIGTERM to cancel in-flight work
 	sigs := make(chan os.Signal, 1)
 	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
 	go func() {
@@ -121,21 +48,108 @@ func main() {
 		cancel()
 	}()
 
-	switch os.Args[1] {
-	case "update":
-		updateCmd.Parse(os.Args[2:])
-		if err := runUpdate(ctx, *metadataDir, *checksumDir, *concurrency, *downloadConcurrency, *maxRetries, *providerTimeout); err != nil {
-			logger.Error(ctx, "update failed", "error", err)
-			os.Exit(1)
-		}
-	case "validate":
-		validateCmd.Parse(os.Args[2:])
-		if err := runValidate(ctx, *validateMetadataDir, *validateConcurrency, *validateDelete); err != nil {
-			logger.Error(ctx, "validation failed", "error", err)
-			os.Exit(1)
-		}
-	default:
-		fmt.Printf("Unknown command: %s\n", os.Args[1])
+	// Global options
+	var (
+		optLogLevel string
+		optVerbose  bool
+		optQuiet    bool
+	)
+
+	rootCmd := &cobra.Command{
+		Use:   "java-metadata",
+		Short: "Collect and validate Java JDK/JRE metadata",
+		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
+			// Configure logging from persistent flags
+			level := logger.ParseLevel(optLogLevel)
+			if optVerbose {
+				level = logger.LevelDebug
+			}
+			if optQuiet {
+				level = logger.LevelError
+			}
+			logger.SetLevel(level)
+
+			// Initialize OpenTelemetry
+			res, err := initResource(cmd.Context())
+			if err != nil {
+				logger.Error(cmd.Context(), "failed to initialize resource", "error", err)
+				return nil // continue without resource
+			}
+			tp, err := initTracer(cmd.Context(), res)
+			if err == nil && tp != nil {
+				// Ensure shutdown on exit
+				defer func() {
+					if err := tp.Shutdown(rootCtx); err != nil {
+						logger.Error(rootCtx, "error shutting down tracer provider", "error", err)
+					}
+				}()
+			}
+			lp, err := initLogger(cmd.Context(), res)
+			if err == nil && lp != nil {
+				defer func() {
+					if err := lp.Shutdown(rootCtx); err != nil {
+						logger.Error(rootCtx, "error shutting down logger provider", "error", err)
+					}
+				}()
+			}
+			return nil
+		},
+		Run: func(cmd *cobra.Command, args []string) {
+			// Show help when no subcommand is provided
+			_ = cmd.Help()
+		},
+	}
+
+	// Persistent flags
+	rootCmd.PersistentFlags().StringVar(&optLogLevel, "log-level", "info", "Log level (debug, info, warn, error)")
+	rootCmd.PersistentFlags().BoolVar(&optVerbose, "verbose", false, "Enable verbose output (same as --log-level=debug)")
+	rootCmd.PersistentFlags().BoolVar(&optQuiet, "quiet", false, "Quiet mode (same as --log-level=error)")
+
+	// Update command flags
+	var (
+		metadataDir         string
+		checksumDir         string
+		concurrency         int
+		downloadConcurrency int
+		maxRetries          int
+		providerTimeout     time.Duration
+	)
+	updateCmd := &cobra.Command{
+		Use:   "update",
+		Short: "Fetch and update metadata for all vendors",
+		RunE: func(cmd *cobra.Command, args []string) error {
+			return runUpdate(cmd.Context(), metadataDir, checksumDir, concurrency, downloadConcurrency, maxRetries, providerTimeout)
+		},
+	}
+	updateCmd.Flags().StringVar(&metadataDir, "metadata-dir", "./docs/metadata", "Output directory for metadata")
+	updateCmd.Flags().StringVar(&checksumDir, "checksum-dir", "./docs/checksums", "Output directory for checksums")
+	updateCmd.Flags().IntVar(&concurrency, "concurrency", 4, "Number of concurrent provider fetches")
+	updateCmd.Flags().IntVar(&downloadConcurrency, "download-concurrency", 3, "Number of concurrent downloads")
+	updateCmd.Flags().IntVar(&maxRetries, "max-retries", 3, "Maximum number of retry attempts for downloads")
+	updateCmd.Flags().DurationVar(&providerTimeout, "provider-timeout", 5*time.Minute, "Per-provider timeout (e.g. 2m, 30s)")
+
+	// Validate command flags
+	var (
+		validateMetadataDir string
+		validateConcurrency int
+		validateDelete      bool
+	)
+	validateCmd := &cobra.Command{
+		Use:   "validate",
+		Short: "Validate URLs in metadata files",
+		RunE: func(cmd *cobra.Command, args []string) error {
+			return runValidate(cmd.Context(), validateMetadataDir, validateConcurrency, validateDelete)
+		},
+	}
+	validateCmd.Flags().StringVar(&validateMetadataDir, "metadata-dir", "./docs/metadata", "Directory containing metadata files")
+	validateCmd.Flags().IntVar(&validateConcurrency, "concurrency", 10, "Number of concurrent URL checks")
+	validateCmd.Flags().BoolVar(&validateDelete, "delete", false, "Delete files that fail validation")
+
+	rootCmd.AddCommand(updateCmd, validateCmd)
+	rootCmd.SetContext(ctx)
+
+	if err := rootCmd.Execute(); err != nil {
+		logger.Error(ctx, "command failed", "error", err)
 		os.Exit(1)
 	}
 }
