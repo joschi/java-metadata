@@ -66,9 +66,9 @@ func RegisterAll(registry *providers.Registry) {
 		github.ParseDragonwellFilename(models.VendorDragonwell)))
 
 	// Trava variants (2)
-	registry.Register(github.NewGenericProvider(models.VendorTrava, "TravaOpenJDK", "trava-jdk-8",
+	registry.Register(github.NewGenericProvider(models.VendorTrava, "TravaOpenJDK", "trava-jdk-8-dcevm",
 		github.ParseTravaFilename(models.VendorTrava)))
-	registry.Register(github.NewGenericProvider(models.VendorTrava, "TravaOpenJDK", "trava-jdk-11",
+	registry.Register(github.NewGenericProvider(models.VendorTrava, "TravaOpenJDK", "trava-jdk-11-dcevm",
 		github.ParseTravaFilename(models.VendorTrava)))
 
 	// JetBrains Runtime
