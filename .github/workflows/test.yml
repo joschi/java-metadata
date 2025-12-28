@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - main
+    - go-go-gadgetto
   pull_request:
     branches:
     - main

@@ -27,13 +27,17 @@ jobs:
           --checksum-dir=./docs/checksums \
           --concurrency=4 \
           --download-concurrency=3
-    - name: Commit files
+    - name: Diff
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
         git add docs/
-        git diff-index --quiet HEAD || git commit -m "Update release metadata"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        git diff --cached
+    #- name: Commit files
+    #  run: |
+    #    git config --local user.email "action@github.com"
+    #    git config --local user.name "GitHub Action"
+    #    git add docs/
+    #    git diff-index --quiet HEAD || git commit -m "Update release metadata"
+    #- name: Push changes
+    #  uses: ad-m/github-push-action@master
+    #  with:
+    #    github_token: ${{ secrets.GITHUB_TOKEN }}
