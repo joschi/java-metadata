@@ -1,10 +1,13 @@
 package main
 
 import (
+	"cmp"
 	"context"
 	"encoding/json"
+	"errors"
 	"flag"
 	"fmt"
+	"log/slog"
 	"os"
 	"os/signal"
 	"path/filepath"
@@ -21,7 +24,12 @@ import (
 	"github.com/joschi/java-metadata/internal/providers/allproviders"
 
 	"go.opentelemetry.io/otel"
+	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp"
+	"go.opentelemetry.io/otel/exporters/stdout/stdoutlog"
+	"go.opentelemetry.io/otel/exporters/stdout/stdouttrace"
+	"go.opentelemetry.io/otel/log/global"
+	"go.opentelemetry.io/otel/sdk/log"
 	"go.opentelemetry.io/otel/sdk/resource"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 	semconv "go.opentelemetry.io/otel/semconv/v1.26.0"
@@ -69,21 +77,39 @@ func main() {
 	}
 	logger.SetLevel(level)
 
+	rootCtx := context.Background()
+
 	// Initialize OpenTelemetry with standard environment variable configuration
-	tp, err := initTracer()
+	res, err := initResource(rootCtx)
 	if err != nil {
-		logger.Error(context.Background(), "failed to initialize tracer", "error", err)
+		logger.Error(rootCtx, "failed to initialize resource", "error", err)
+		os.Exit(1)
+	}
+	tp, err := initTracer(rootCtx, res)
+	if err != nil {
+		logger.Error(rootCtx, "failed to initialize tracer", "error", err)
 		// Continue without tracing rather than failing
 	} else if tp != nil {
 		defer func() {
-			if err := tp.Shutdown(context.Background()); err != nil {
-				logger.Error(context.Background(), "error shutting down tracer provider", "error", err)
+			if err := tp.Shutdown(rootCtx); err != nil {
+				logger.Error(rootCtx, "error shutting down tracer provider", "error", err)
+			}
+		}()
+	}
+	lp, err := initLogger(rootCtx, res)
+	if err != nil {
+		logger.Error(rootCtx, "failed to initialize logger", "error", err)
+		// Continue without logging rather than failing
+	} else if lp != nil {
+		defer func() {
+			if err := lp.Shutdown(rootCtx); err != nil {
+				logger.Error(rootCtx, "error shutting down logger provider", "error", err)
 			}
 		}()
 	}
 
 	// Root context to allow coordinated cancellation (e.g., future signal handling)
-	ctx, cancel := context.WithCancel(context.Background())
+	ctx, cancel := context.WithCancel(rootCtx)
 	defer cancel()
 
 	// Handle SIGINT/SIGTERM to cancel in-flight work
@@ -114,37 +140,55 @@ func main() {
 	}
 }
 
+func initResource(ctx context.Context) (*resource.Resource, error) {
+	// Get service name from environment or use default
+	serviceName := cmp.Or(os.Getenv("OTEL_SERVICE_NAME"), "java-metadata")
+
+	// Create resource with service name
+	res, err := resource.New(
+		ctx,
+		resource.WithFromEnv(),      // Discover and provide attributes from OTEL_RESOURCE_ATTRIBUTES and OTEL_SERVICE_NAME environment variables.
+		resource.WithTelemetrySDK(), // Discover and provide information about the OpenTelemetry SDK used.
+		resource.WithProcess(),      // Discover and provide process information.
+		resource.WithOS(),           // Discover and provide OS information.
+		resource.WithContainer(),    // Discover and provide container information.
+		resource.WithHost(),         // Discover and provide host information.
+		resource.WithAttributes(
+			semconv.ServiceName(serviceName),
+		),
+	)
+	if errors.Is(err, resource.ErrPartialResource) || errors.Is(err, resource.ErrSchemaURLConflict) {
+		logger.Warn(ctx, "non-fatal resource creation issue", slog.Any("error", err))
+	} else if err != nil {
+		return nil, fmt.Errorf("failed to create resource: %w", err)
+	}
+	return res, nil
+}
+
 // initTracer initializes the OpenTelemetry tracer provider using standard environment variables
 // Configuration is controlled by OTEL_* environment variables:
 // - OTEL_EXPORTER_OTLP_ENDPOINT: OTLP endpoint (default: http://localhost:4318)
-// - OTEL_SERVICE_NAME: service name (default: java-metadata)
-// - OTEL_TRACES_EXPORTER: exporter type (otlp, none, etc.)
-func initTracer() (*sdktrace.TracerProvider, error) {
+// - OTEL_TRACES_EXPORTER: exporter type (otlp, console, none, etc.)
+func initTracer(ctx context.Context, res *resource.Resource) (*sdktrace.TracerProvider, error) {
+	var exporter sdktrace.SpanExporter
+	var err error
 	// Check if tracing is disabled
-	if os.Getenv("OTEL_TRACES_EXPORTER") == "none" {
+	switch os.Getenv("OTEL_TRACES_EXPORTER") {
+	case "console":
+		exporter, err = stdouttrace.New(stdouttrace.WithPrettyPrint())
+		if err != nil {
+			return nil, fmt.Errorf("failed to create console exporter: %w", err)
+		}
+	case "otlp":
+		// Create OTLP HTTP exporter (uses OTEL_EXPORTER_OTLP_ENDPOINT env var)
+		exporter, err = otlptracehttp.New(ctx)
+		if err != nil {
+			return nil, fmt.Errorf("failed to create OTLP exporter: %w", err)
+		}
+	case "", "none":
 		return nil, nil
-	}
-
-	// Create OTLP HTTP exporter (uses OTEL_EXPORTER_OTLP_ENDPOINT env var)
-	exporter, err := otlptracehttp.New(context.Background())
-	if err != nil {
-		return nil, fmt.Errorf("failed to create OTLP exporter: %w", err)
-	}
-
-	// Get service name from environment or use default
-	serviceName := os.Getenv("OTEL_SERVICE_NAME")
-	if serviceName == "" {
-		serviceName = "java-metadata"
-	}
-
-	// Create resource with service name
-	res, err := resource.New(context.Background(),
-		resource.WithAttributes(
-			semconv.ServiceNameKey.String(serviceName),
-		),
-	)
-	if err != nil {
-		return nil, fmt.Errorf("failed to create resource: %w", err)
+	default:
+		return nil, fmt.Errorf("unsupported OTEL_TRACES_EXPORTER: %s", os.Getenv("OTEL_TRACES_EXPORTER"))
 	}
 
 	// Create tracer provider
@@ -157,6 +201,40 @@ func initTracer() (*sdktrace.TracerProvider, error) {
 	otel.SetTracerProvider(tp)
 
 	return tp, nil
+}
+
+func initLogger(ctx context.Context, res *resource.Resource) (*log.LoggerProvider, error) {
+	var exporter log.Exporter
+	var err error
+
+	// Check if logging is disabled
+	switch os.Getenv("OTEL_LOGS_EXPORTER") {
+	case "console":
+		exporter, err = stdoutlog.New(stdoutlog.WithPrettyPrint())
+		if err != nil {
+			return nil, err
+		}
+	case "otlp":
+		exporter, err = otlploghttp.New(ctx)
+		if err != nil {
+			return nil, err
+		}
+	case "", "none":
+		return nil, nil
+	default:
+		return nil, fmt.Errorf("unsupported OTEL_LOGS_EXPORTER: %s", os.Getenv("OTEL_LOGS_EXPORTER"))
+	}
+
+	processor := log.NewBatchProcessor(exporter)
+	provider := log.NewLoggerProvider(
+		log.WithResource(res),
+		log.WithProcessor(processor),
+	)
+
+	// Set global tracer provider
+	global.SetLoggerProvider(provider)
+
+	return provider, nil
 }
 
 func runUpdate(parentCtx context.Context, metadataDir, checksumDir string, concurrency, downloadConcurrency int, maxRetries int, providerTimeout time.Duration) error {

@@ -6,10 +6,12 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/go-slog/otelslog"
+	slogmulti "github.com/samber/slog-multi"
+	"go.opentelemetry.io/contrib/bridges/otelslog"
 )
 
 var defaultLogger *slog.Logger
+var otelSlogHandler = otelslog.NewHandler("java-metadata", otelslog.WithSource(true))
 
 // Level represents a log level
 type Level int
@@ -46,8 +48,12 @@ func SetLevel(level Level) {
 		Level: slogLevel,
 	}
 	handler := slog.NewTextHandler(os.Stderr, opts)
+
 	// Wrap with otelslog to add trace context to logs
-	defaultLogger = slog.New(otelslog.NewHandler(handler))
+	defaultLogger = slog.New(slogmulti.Fanout(
+		handler,
+		otelSlogHandler,
+	))
 }
 
 // SetOutput configures the logger to write to the specified writer
@@ -71,7 +77,10 @@ func SetOutput(w io.Writer, level Level) {
 	}
 	handler := slog.NewTextHandler(w, opts)
 	// Wrap with otelslog to add trace context to logs
-	defaultLogger = slog.New(otelslog.NewHandler(handler))
+	defaultLogger = slog.New(slogmulti.Fanout(
+		handler,
+		otelSlogHandler,
+	))
 }
 
 // Debug logs a debug message
