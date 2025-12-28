@@ -1,6 +1,7 @@
 package downloader
 
 import (
+	"context"
 	"crypto/md5"
 	"crypto/sha1"
 	"crypto/sha256"
@@ -173,8 +174,8 @@ func isPermanentError(err error) bool {
 }
 
 // CheckURLExists checks if a URL is accessible using a HEAD request
-func (d *Downloader) CheckURLExists(url string) error {
-	req, err := http.NewRequest("HEAD", url, nil)
+func (d *Downloader) CheckURLExists(ctx context.Context, url string) error {
+	req, err := http.NewRequestWithContext(ctx, "HEAD", url, nil)
 	if err != nil {
 		return fmt.Errorf("failed to create request: %w", err)
 	}

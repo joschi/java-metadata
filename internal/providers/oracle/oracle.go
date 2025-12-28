@@ -1,6 +1,7 @@
 package oracle
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -33,11 +34,16 @@ func (p *Provider) Name() string {
 }
 
 // FetchReleases fetches all available Oracle JDK releases
-func (p *Provider) FetchReleases() ([]models.Metadata, error) {
+func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error) {
 	var metadata []models.Metadata
 
 	// Fetch latest versions from Oracle API
-	latestResp, err := p.client.Get("https://java.oraclecloud.com/javaVersions")
+	latestReq, err := http.NewRequestWithContext(ctx, "GET", "https://java.oraclecloud.com/javaVersions", nil)
+	if err != nil {
+		logger.Warn("failed to build Oracle latest request", slog.Any("error", err))
+	}
+
+	latestResp, err := p.client.Do(latestReq)
 	if err != nil {
 		logger.Warn("failed to fetch Oracle latest versions", slog.Any("error", err))
 	} else {
@@ -51,7 +57,7 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 			}
 			if err := json.Unmarshal(body, &versions); err == nil {
 				for _, item := range versions.Items {
-					releaseMetadata := p.fetchVersionMetadata(item.LatestReleaseVersion)
+					releaseMetadata := p.fetchVersionMetadata(ctx, item.LatestReleaseVersion)
 					metadata = append(metadata, releaseMetadata...)
 				}
 			}
@@ -60,7 +66,7 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 
 	// Fetch archive downloads for major versions
 	for _, version := range []string{"17", "18", "19", "20", "21", "22", "23", "24"} {
-		archiveMetadata := p.fetchArchiveMetadata(version)
+		archiveMetadata := p.fetchArchiveMetadata(ctx, version)
 		metadata = append(metadata, archiveMetadata...)
 	}
 
@@ -68,11 +74,20 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 }
 
 // fetchVersionMetadata fetches metadata for a specific version from Oracle API
-func (p *Provider) fetchVersionMetadata(version string) []models.Metadata {
+func (p *Provider) fetchVersionMetadata(ctx context.Context, version string) []models.Metadata {
 	var metadata []models.Metadata
 
 	url := fmt.Sprintf("https://java.oraclecloud.com/javaReleases/%s", version)
-	resp, err := p.client.Get(url)
+	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+	if err != nil {
+		logger.Warn("failed to build Oracle version request",
+			slog.String("version", version),
+			slog.Any("error", err),
+		)
+		return metadata
+	}
+
+	resp, err := p.client.Do(req)
 	if err != nil {
 		logger.Warn("failed to fetch Oracle version",
 			slog.String("version", version),
@@ -117,11 +132,20 @@ func (p *Provider) fetchVersionMetadata(version string) []models.Metadata {
 }
 
 // fetchArchiveMetadata fetches metadata from Oracle archive pages
-func (p *Provider) fetchArchiveMetadata(majorVersion string) []models.Metadata {
+func (p *Provider) fetchArchiveMetadata(ctx context.Context, majorVersion string) []models.Metadata {
 	var metadata []models.Metadata
 
 	url := fmt.Sprintf("https://www.oracle.com/java/technologies/javase/jdk%s-archive-downloads.html", majorVersion)
-	resp, err := p.client.Get(url)
+	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+	if err != nil {
+		logger.Warn("failed to build Oracle archive request",
+			slog.String("version", majorVersion),
+			slog.Any("error", err),
+		)
+		return metadata
+	}
+
+	resp, err := p.client.Do(req)
 	if err != nil {
 		logger.Warn("failed to fetch Oracle archive",
 			slog.String("version", majorVersion),

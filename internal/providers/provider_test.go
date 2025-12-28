@@ -1,6 +1,7 @@
 package providers
 
 import (
+	"context"
 	"errors"
 	"testing"
 
@@ -16,7 +17,7 @@ func (m *mockProvider) Name() string {
 	return m.name
 }
 
-func (m *mockProvider) FetchReleases() ([]models.Metadata, error) {
+func (m *mockProvider) FetchReleases(ctx context.Context) ([]models.Metadata, error) {
 	return []models.Metadata{
 		{
 			Vendor:   m.name,
@@ -34,7 +35,7 @@ func (f *failingProvider) Name() string {
 	return f.name
 }
 
-func (f *failingProvider) FetchReleases() ([]models.Metadata, error) {
+func (f *failingProvider) FetchReleases(ctx context.Context) ([]models.Metadata, error) {
 	return nil, errors.New("intentional test failure")
 }
 
@@ -111,7 +112,7 @@ func TestProviderInterface(t *testing.T) {
 
 func TestProviderFetchReleases(t *testing.T) {
 	p := &mockProvider{name: "test-vendor"}
-	metadata, err := p.FetchReleases()
+	metadata, err := p.FetchReleases(context.Background())
 
 	if err != nil {
 		t.Fatalf("FetchReleases failed: %v", err)
@@ -128,7 +129,7 @@ func TestProviderFetchReleases(t *testing.T) {
 
 func TestFailingProvider(t *testing.T) {
 	p := &failingProvider{name: "failing-vendor"}
-	_, err := p.FetchReleases()
+	_, err := p.FetchReleases(context.Background())
 
 	if err == nil {
 		t.Error("Expected error from failing provider, got nil")

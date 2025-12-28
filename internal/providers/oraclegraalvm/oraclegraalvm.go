@@ -1,6 +1,7 @@
 package oraclegraalvm
 
 import (
+	"context"
 	"fmt"
 	"io"
 	"log/slog"
@@ -46,18 +47,18 @@ func (p *Provider) Name() string {
 }
 
 // FetchReleases fetches all available Oracle GraalVM releases
-func (p *Provider) FetchReleases() ([]models.Metadata, error) {
+func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error) {
 	var metadata []models.Metadata
 
 	// Fetch current releases from main downloads page
-	currentMetadata := p.fetchCurrentReleases()
+	currentMetadata := p.fetchCurrentReleases(ctx)
 	metadata = append(metadata, currentMetadata...)
 
 	// Only fetch archives for GA releases
 	if p.releaseType == models.ReleaseTypeGA {
 		// Fetch archive downloads for major versions
 		for _, version := range []string{"17", "19", "20", "21", "22", "23", "24"} {
-			archiveMetadata := p.fetchArchiveMetadata(version)
+			archiveMetadata := p.fetchArchiveMetadata(ctx, version)
 			metadata = append(metadata, archiveMetadata...)
 		}
 	}
@@ -66,11 +67,17 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 }
 
 // fetchCurrentReleases fetches current releases from Oracle downloads page
-func (p *Provider) fetchCurrentReleases() []models.Metadata {
+func (p *Provider) fetchCurrentReleases(ctx context.Context) []models.Metadata {
 	var metadata []models.Metadata
 
 	url := "https://www.oracle.com/java/technologies/downloads/"
-	resp, err := p.client.Get(url)
+	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+	if err != nil {
+		logger.Warn("failed to build Oracle GraalVM current request", slog.Any("error", err))
+		return metadata
+	}
+
+	resp, err := p.client.Do(req)
 	if err != nil {
 		logger.Warn("failed to fetch Oracle GraalVM current releases", slog.Any("error", err))
 		return metadata
@@ -120,11 +127,20 @@ func (p *Provider) fetchCurrentReleases() []models.Metadata {
 }
 
 // fetchArchiveMetadata fetches metadata from Oracle GraalVM archive pages
-func (p *Provider) fetchArchiveMetadata(majorVersion string) []models.Metadata {
+func (p *Provider) fetchArchiveMetadata(ctx context.Context, majorVersion string) []models.Metadata {
 	var metadata []models.Metadata
 
 	url := fmt.Sprintf("https://www.oracle.com/java/technologies/javase/graalvm-jdk%s-archive-downloads.html", majorVersion)
-	resp, err := p.client.Get(url)
+	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+	if err != nil {
+		logger.Warn("failed to build Oracle GraalVM archive request",
+			slog.String("version", majorVersion),
+			slog.Any("error", err),
+		)
+		return metadata
+	}
+
+	resp, err := p.client.Do(req)
 	if err != nil {
 		logger.Warn("failed to fetch Oracle GraalVM archive",
 			slog.String("version", majorVersion),

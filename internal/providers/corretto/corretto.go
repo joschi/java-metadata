@@ -1,6 +1,7 @@
 package corretto
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -38,7 +39,7 @@ type GitHubRelease struct {
 }
 
 // FetchReleases fetches all available releases for Amazon Corretto
-func (p *Provider) FetchReleases() ([]models.Metadata, error) {
+func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error) {
 	// Corretto has multiple GitHub repos by version
 	repos := []string{
 		"corretto-8", "corretto-11", "corretto-17", "corretto-18", "corretto-19",
@@ -49,7 +50,7 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 	// Fetch all versions from GitHub releases
 	var allVersions []string
 	for _, repo := range repos {
-		versions, err := p.fetchVersionsFromRepo(repo)
+		versions, err := p.fetchVersionsFromRepo(ctx, repo)
 		if err != nil {
 			logger.Warn("failed to fetch from repository",
 				slog.String("repo", repo),
@@ -73,7 +74,7 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 						url := fmt.Sprintf("https://corretto.aws/downloads/resources/%s/%s", version, filename)
 
 						// Check if URL exists (HEAD request)
-						if err := p.downloader.CheckURLExists(url); err == nil {
+						if err := p.downloader.CheckURLExists(ctx, url); err == nil {
 							// URL exists, create metadata
 							m := models.Metadata{
 								Vendor:       models.VendorCorretto,
@@ -105,10 +106,10 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 }
 
 // fetchVersionsFromRepo fetches version tags from a Corretto GitHub repository
-func (p *Provider) fetchVersionsFromRepo(repo string) ([]string, error) {
+func (p *Provider) fetchVersionsFromRepo(ctx context.Context, repo string) ([]string, error) {
 	url := fmt.Sprintf("https://api.github.com/repos/corretto/%s/releases?per_page=100", repo)
 
-	req, err := http.NewRequest("GET", url, nil)
+	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 	if err != nil {
 		return nil, err
 	}

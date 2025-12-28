@@ -1,6 +1,7 @@
 package sapmachine
 
 import (
+	"context"
 	"testing"
 
 	"github.com/joschi/java-metadata/internal/models"
@@ -22,6 +23,6 @@ func TestNewProvider(t *testing.T) {
 func TestProviderInterface(t *testing.T) {
 	var _ interface {
 		Name() string
-		FetchReleases() ([]models.Metadata, error)
+		FetchReleases(context.Context) ([]models.Metadata, error)
 	} = (*Provider)(nil)
 }

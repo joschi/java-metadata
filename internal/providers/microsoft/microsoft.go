@@ -1,6 +1,7 @@
 package microsoft
 
 import (
+	"context"
 	"fmt"
 	"io"
 	"log/slog"
@@ -29,10 +30,15 @@ func (p *Provider) Name() string {
 }
 
 // FetchReleases fetches all available releases for Microsoft OpenJDK
-func (p *Provider) FetchReleases() ([]models.Metadata, error) {
+func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error) {
 	// Fetch the download page
 	url := "https://docs.microsoft.com/en-us/java/openjdk/download"
-	resp, err := p.client.Get(url)
+	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+	if err != nil {
+		return nil, fmt.Errorf("failed to build request: %w", err)
+	}
+
+	resp, err := p.client.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch download page: %w", err)
 	}

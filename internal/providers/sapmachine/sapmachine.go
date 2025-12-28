@@ -1,6 +1,7 @@
 package sapmachine
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -42,10 +43,10 @@ type GitHubRelease struct {
 }
 
 // FetchReleases fetches all available releases for SAPMachine
-func (p *Provider) FetchReleases() ([]models.Metadata, error) {
+func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error) {
 	url := "https://api.github.com/repos/SAP/SapMachine/releases?per_page=100"
 
-	req, err := http.NewRequest("GET", url, nil)
+	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 	if err != nil {
 		return nil, err
 	}

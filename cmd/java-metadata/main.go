@@ -1,13 +1,16 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"flag"
 	"fmt"
 	"os"
+	"os/signal"
 	"path/filepath"
 	"sync"
 	"sync/atomic"
+	"syscall"
 	"time"
 
 	"github.com/joschi/java-metadata/internal/downloader"
@@ -31,6 +34,7 @@ func main() {
 	downloadConcurrency := updateCmd.Int("download-concurrency", 3, "Number of concurrent downloads")
 	noProgress := updateCmd.Bool("no-progress", false, "Disable progress bars")
 	maxRetries := updateCmd.Int("max-retries", 3, "Maximum number of retry attempts for downloads")
+	providerTimeout := updateCmd.Duration("provider-timeout", 5*time.Minute, "Per-provider timeout (e.g. 2m, 30s)")
 
 	validateCmd := flag.NewFlagSet("validate", flag.ExitOnError)
 	validateMetadataDir := validateCmd.String("metadata-dir", "./docs/metadata", "Directory containing metadata files")
@@ -60,16 +64,29 @@ func main() {
 	}
 	logger.SetLevel(level)
 
+	// Root context to allow coordinated cancellation (e.g., future signal handling)
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
+
+	// Handle SIGINT/SIGTERM to cancel in-flight work
+	sigs := make(chan os.Signal, 1)
+	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
+	go func() {
+		s := <-sigs
+		logger.Warn("received signal, cancelling", "signal", s.String())
+		cancel()
+	}()
+
 	switch os.Args[1] {
 	case "update":
 		updateCmd.Parse(os.Args[2:])
-		if err := runUpdate(*metadataDir, *checksumDir, *concurrency, *downloadConcurrency, !*noProgress, *maxRetries); err != nil {
+		if err := runUpdate(ctx, *metadataDir, *checksumDir, *concurrency, *downloadConcurrency, !*noProgress, *maxRetries, *providerTimeout); err != nil {
 			logger.Error("update failed", "error", err)
 			os.Exit(1)
 		}
 	case "validate":
 		validateCmd.Parse(os.Args[2:])
-		if err := runValidate(*validateMetadataDir, *validateConcurrency, *validateDelete); err != nil {
+		if err := runValidate(ctx, *validateMetadataDir, *validateConcurrency, *validateDelete); err != nil {
 			logger.Error("validation failed", "error", err)
 			os.Exit(1)
 		}
@@ -79,7 +96,7 @@ func main() {
 	}
 }
 
-func runUpdate(metadataDir, checksumDir string, concurrency, downloadConcurrency int, showProgress bool, maxRetries int) error {
+func runUpdate(parentCtx context.Context, metadataDir, checksumDir string, concurrency, downloadConcurrency int, showProgress bool, maxRetries int, providerTimeout time.Duration) error {
 	startTime := time.Now()
 	logger.Info("starting update", "metadataDir", metadataDir, "checksumDir", checksumDir)
 
@@ -115,7 +132,10 @@ func runUpdate(metadataDir, checksumDir string, concurrency, downloadConcurrency
 
 			logger.Info("fetching releases", "provider", p.Name())
 			providerStart := time.Now()
-			metadata, err := p.FetchReleases()
+			// Per-provider deadline derived from the shared parent context
+			ctx, cancel := context.WithTimeout(parentCtx, providerTimeout)
+			defer cancel()
+			metadata, err := p.FetchReleases(ctx)
 			if err != nil {
 				logger.Error("failed to fetch releases", "provider", p.Name(), "error", err)
 				errorChan <- fmt.Errorf("%s: %w", p.Name(), err)
@@ -331,7 +351,7 @@ func downloadAndComputeChecksums(metadata []models.Metadata, metadataDir, checks
 	return int(downloadedCount), int(skippedCount), int(failedCount), bytesDownloaded, nil
 }
 
-func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) error {
+func runValidate(parentCtx context.Context, metadataDir string, concurrency int, deleteOnFailure bool) error {
 	logger.Info("starting validation", "metadataDir", metadataDir)
 	if deleteOnFailure {
 		logger.Warn("delete mode enabled: files with failed URLs will be deleted")
@@ -342,6 +362,10 @@ func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) erro
 	err := filepath.Walk(metadataDir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
+		}
+		// Respect cancellation during directory walk
+		if cerr := parentCtx.Err(); cerr != nil {
+			return cerr
 		}
 		if !info.IsDir() && filepath.Ext(path) == ".json" && filepath.Base(path) != "all.json" {
 			metadataFiles = append(metadataFiles, path)
@@ -378,6 +402,11 @@ func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) erro
 			semaphore <- struct{}{}
 			defer func() { <-semaphore }()
 
+			// Exit early if cancelled
+			if err := parentCtx.Err(); err != nil {
+				return
+			}
+
 			// Read metadata file
 			data, err := os.ReadFile(metadataFile)
 			if err != nil {
@@ -395,7 +424,11 @@ func runValidate(metadataDir string, concurrency int, deleteOnFailure bool) erro
 			}
 
 			// Check URL
-			if err := dl.CheckURLExists(metadata.URL); err != nil {
+			if err := parentCtx.Err(); err != nil {
+				return
+			}
+
+			if err := dl.CheckURLExists(parentCtx, metadata.URL); err != nil {
 				logger.Debug("URL not accessible", "file", metadataFile, "url", metadata.URL, "error", err)
 				failedFilesChan <- metadataFile
 				atomic.AddInt64(&failed, 1)

@@ -1,6 +1,7 @@
 package temurin
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -76,9 +77,9 @@ type AdoptiumPackage struct {
 }
 
 // FetchReleases fetches all available releases for Temurin
-func (p *Provider) FetchReleases() ([]models.Metadata, error) {
+func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error) {
 	// Fetch available release versions
-	releases, err := p.fetchAvailableReleases()
+	releases, err := p.fetchAvailableReleases(ctx)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch available releases: %w", err)
 	}
@@ -87,7 +88,7 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 
 	// Fetch release data for each version
 	for _, release := range releases {
-		metadata, err := p.fetchReleaseMetadata(release)
+		metadata, err := p.fetchReleaseMetadata(ctx, release)
 		if err != nil {
 			logger.Warn("failed to fetch release",
 				slog.Int("release", release),
@@ -102,9 +103,14 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 }
 
 // fetchAvailableReleases fetches the list of available release versions
-func (p *Provider) fetchAvailableReleases() ([]int, error) {
+func (p *Provider) fetchAvailableReleases(ctx context.Context) ([]int, error) {
 	url := "https://api.adoptium.net/v3/info/available_releases"
-	resp, err := p.client.Get(url)
+	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+	if err != nil {
+		return nil, err
+	}
+
+	resp, err := p.client.Do(req)
 	if err != nil {
 		return nil, err
 	}
@@ -128,7 +134,7 @@ func (p *Provider) fetchAvailableReleases() ([]int, error) {
 }
 
 // fetchReleaseMetadata fetches metadata for a specific release version
-func (p *Provider) fetchReleaseMetadata(release int) ([]models.Metadata, error) {
+func (p *Provider) fetchReleaseMetadata(ctx context.Context, release int) ([]models.Metadata, error) {
 	var allReleases []AdoptiumRelease
 
 	// Paginate through releases
@@ -136,7 +142,12 @@ func (p *Provider) fetchReleaseMetadata(release int) ([]models.Metadata, error) 
 	for {
 		url := fmt.Sprintf("https://api.adoptium.net/v3/assets/feature_releases/%d/ga?page=%d&page_size=20&project=jdk&sort_order=ASC&vendor=%s", release, page, p.apiVendor)
 
-		resp, err := p.client.Get(url)
+		req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+		if err != nil {
+			return nil, err
+		}
+
+		resp, err := p.client.Do(req)
 		if err != nil {
 			return nil, err
 		}

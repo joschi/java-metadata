@@ -1,6 +1,7 @@
 package github
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -51,10 +52,10 @@ func (p *GenericProvider) Name() string {
 }
 
 // FetchReleases fetches all releases from GitHub
-func (p *GenericProvider) FetchReleases() ([]models.Metadata, error) {
+func (p *GenericProvider) FetchReleases(ctx context.Context) ([]models.Metadata, error) {
 	url := fmt.Sprintf("https://api.github.com/repos/%s/%s/releases?per_page=100", p.org, p.repo)
 
-	req, err := http.NewRequest("GET", url, nil)
+	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 	if err != nil {
 		return nil, err
 	}

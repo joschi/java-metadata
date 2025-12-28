@@ -1,6 +1,7 @@
 package ibm
 
 import (
+	"context"
 	"fmt"
 	"io"
 	"log/slog"
@@ -30,12 +31,17 @@ func (p *Provider) Name() string {
 }
 
 // FetchReleases fetches all available IBM JDK releases (legacy, Java 7-8 only)
-func (p *Provider) FetchReleases() ([]models.Metadata, error) {
+func (p *Provider) FetchReleases(ctx context.Context) ([]models.Metadata, error) {
 	var metadata []models.Metadata
 
 	// Fetch index page
 	baseURL := "https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/"
-	resp, err := p.client.Get(baseURL)
+	req, err := http.NewRequestWithContext(ctx, "GET", baseURL, nil)
+	if err != nil {
+		return nil, fmt.Errorf("failed to build IBM index request: %w", err)
+	}
+
+	resp, err := p.client.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch IBM index: %w", err)
 	}
@@ -58,7 +64,16 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 
 		// Fetch architectures for this version (Linux only)
 		versionURL := fmt.Sprintf("%s%s/linux/", baseURL, version)
-		archResp, err := p.client.Get(versionURL)
+		archReq, err := http.NewRequestWithContext(ctx, "GET", versionURL, nil)
+		if err != nil {
+			logger.Warn("failed to build IBM version request",
+				slog.String("version", version),
+				slog.Any("error", err),
+			)
+			continue
+		}
+
+		archResp, err := p.client.Do(archReq)
 		if err != nil {
 			logger.Warn("failed to fetch IBM version",
 				slog.String("version", version),
@@ -85,7 +100,17 @@ func (p *Provider) FetchReleases() ([]models.Metadata, error) {
 
 			// Fetch files for this architecture
 			archURL := fmt.Sprintf("%s%s/linux/%s/", baseURL, version, arch)
-			fileResp, err := p.client.Get(archURL)
+			fileReq, err := http.NewRequestWithContext(ctx, "GET", archURL, nil)
+			if err != nil {
+				logger.Warn("failed to build IBM arch request",
+					slog.String("version", version),
+					slog.String("arch", arch),
+					slog.Any("error", err),
+				)
+				continue
+			}
+
+			fileResp, err := p.client.Do(fileReq)
 			if err != nil {
 				logger.Warn("failed to fetch IBM arch",
 					slog.String("version", version),

@@ -1,6 +1,8 @@
 package providers
 
 import (
+	"context"
+
 	"github.com/joschi/java-metadata/internal/models"
 )
 
@@ -11,7 +13,7 @@ type Provider interface {
 
 	// FetchReleases fetches all available releases for this vendor
 	// It returns metadata entries without checksums/sizes (those are computed separately)
-	FetchReleases() ([]models.Metadata, error)
+	FetchReleases(ctx context.Context) ([]models.Metadata, error)
 }
 
 // Registry maintains a list of all available providers
