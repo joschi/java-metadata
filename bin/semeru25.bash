@@ -33,7 +33,7 @@ function download {
 	local asset_name="${2}"
 	local filename="${asset_name}"
 
-	local url="https://github.com/ibmruntimes/semeru24-binaries/releases/download/${tag_name}/${asset_name}"
+	local url="https://github.com/ibmruntimes/semeru25-binaries/releases/download/${tag_name}/${asset_name}"
 	local metadata_file="${METADATA_DIR}/${filename}.json"
 	local archive="${TEMP_DIR}/${filename}"
 
