@@ -113,4 +113,4 @@ do
 	done
 done
 
-jq -s -S . "${METADATA_DIR}"/ibm-semeru-open-*.json > "${METADATA_DIR}/all.json"
+jq -s -S . "${METADATA_DIR}"/ibm-semeru-*.json > "${METADATA_DIR}/all.json"
