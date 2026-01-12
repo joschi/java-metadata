@@ -43611,6 +43611,56 @@
     "features": [
       "certified"
     ],
+    "file_type": "rpm",
+    "filename": "ibm-semeru-certified-25-jre-25.0.0.0-1.aarch64.rpm",
+    "image_type": "jre",
+    "java_version": "25+36",
+    "jvm_impl": "openj9",
+    "md5": "a6cf49a231f55a499a96a020e8171e70",
+    "md5_file": "ibm-semeru-certified-25-jre-25.0.0.0-1.aarch64.rpm.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "bbd495db39ca24c5e18de78adb07b066ef50adf7",
+    "sha1_file": "ibm-semeru-certified-25-jre-25.0.0.0-1.aarch64.rpm.sha1",
+    "sha256": "76d33d27bd40dcac6bdd8d7890a8f71923ab6ba156b13e8b6be97027ddf84991",
+    "sha256_file": "ibm-semeru-certified-25-jre-25.0.0.0-1.aarch64.rpm.sha256",
+    "sha512": "9d084539d0cb32be751677dd430012bd6583e66b02ef0ce323d5f0a8a9f45318b0f73b443aa523851f97455f37653affebbd465eaf9e9b79ab3dce6fd029018e",
+    "sha512_file": "ibm-semeru-certified-25-jre-25.0.0.0-1.aarch64.rpm.sha512",
+    "size": 33999348,
+    "url": "https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25+36_openj9-0.55.0/ibm-semeru-certified-25-jre-25.0.0.0-1.aarch64.rpm",
+    "vendor": "semeru",
+    "version": "25+36_openj9-0.55.0"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "certified"
+    ],
+    "file_type": "rpm",
+    "filename": "ibm-semeru-certified-25-jre-25.0.1.0-1.aarch64.rpm",
+    "image_type": "jre",
+    "java_version": "25.0.1+8",
+    "jvm_impl": "openj9",
+    "md5": "1e9402467f0182a957d73a9a3217f51f",
+    "md5_file": "ibm-semeru-certified-25-jre-25.0.1.0-1.aarch64.rpm.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "9f80d156395b866008d76a304f4a8cd9842f3114",
+    "sha1_file": "ibm-semeru-certified-25-jre-25.0.1.0-1.aarch64.rpm.sha1",
+    "sha256": "74b6780e8a5292d5a4f60176cbd040d94cd07cd40ec766644a9c8125433a730c",
+    "sha256_file": "ibm-semeru-certified-25-jre-25.0.1.0-1.aarch64.rpm.sha256",
+    "sha512": "0f7191641fd2e5d4ac362434d4caeb6545216a2fdb862acd862afd7ebcb48e5c3646b4615340e60e9dd43539264e4d680cc398a920fb604c8888a80d86db39e1",
+    "sha512_file": "ibm-semeru-certified-25-jre-25.0.1.0-1.aarch64.rpm.sha512",
+    "size": 33988732,
+    "url": "https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25.0.1+8_openj9-0.56.0/ibm-semeru-certified-25-jre-25.0.1.0-1.aarch64.rpm",
+    "vendor": "semeru",
+    "version": "25.0.1+8_openj9-0.56.0"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "certified"
+    ],
     "file_type": "tar.gz",
     "filename": "ibm-semeru-certified-jre_aarch64_linux_11.0.15.0.tar.gz",
     "image_type": "jre",
@@ -44705,6 +44755,56 @@
     "url": "https://github.com/ibmruntimes/semeru21-certified-binaries/releases/download/jdk-21.0.9+10_openj9-0.56.0/ibm-semeru-certified-jre_aarch64_linux_21.0.9.0.tar.gz",
     "vendor": "semeru",
     "version": "21.0.9+10_openj9-0.56.0"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "certified"
+    ],
+    "file_type": "tar.gz",
+    "filename": "ibm-semeru-certified-jre_aarch64_linux_25.0.0.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "25+36",
+    "jvm_impl": "openj9",
+    "md5": "be335f090927ec70f370b78d615ef736",
+    "md5_file": "ibm-semeru-certified-jre_aarch64_linux_25.0.0.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "5b595acfb3f760300cc5a35a8f73e45a4cc0f5a5",
+    "sha1_file": "ibm-semeru-certified-jre_aarch64_linux_25.0.0.0.tar.gz.sha1",
+    "sha256": "0713c49444003a38b5733a5d452f5c3760d5347c3bdc31c876c07311bc97ec31",
+    "sha256_file": "ibm-semeru-certified-jre_aarch64_linux_25.0.0.0.tar.gz.sha256",
+    "sha512": "46e837c666060979e721343e0ed190ffe1f2470f7171193973eb8fefb3aa0d6403b5aa81d75f924239f4734ee114cc42d9c93937af17a3991d3dc593f1fe57a5",
+    "sha512_file": "ibm-semeru-certified-jre_aarch64_linux_25.0.0.0.tar.gz.sha512",
+    "size": 56843708,
+    "url": "https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25+36_openj9-0.55.0/ibm-semeru-certified-jre_aarch64_linux_25.0.0.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25+36_openj9-0.55.0"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "certified"
+    ],
+    "file_type": "tar.gz",
+    "filename": "ibm-semeru-certified-jre_aarch64_linux_25.0.1.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.1+8",
+    "jvm_impl": "openj9",
+    "md5": "c133d12a7957b19253d0857409c46f0a",
+    "md5_file": "ibm-semeru-certified-jre_aarch64_linux_25.0.1.0.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "02633c19dc44a36d975a6b72639247ad6261d54b",
+    "sha1_file": "ibm-semeru-certified-jre_aarch64_linux_25.0.1.0.tar.gz.sha1",
+    "sha256": "8e0e83e15e3d44f728b0e38b45b8899185efae2229f5f72e2a4974a1f618ece9",
+    "sha256_file": "ibm-semeru-certified-jre_aarch64_linux_25.0.1.0.tar.gz.sha256",
+    "sha512": "6fca16f6897fb054ef51953a5074fa752b05afc888eca30a05eeab912c51a0b1a4f53bb1cb9bb7d1f9fa3c36c96a0ea8d3c0bd0c651df57e88bbbebdc0dc72f3",
+    "sha512_file": "ibm-semeru-certified-jre_aarch64_linux_25.0.1.0.tar.gz.sha512",
+    "size": 56862212,
+    "url": "https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25.0.1+8_openj9-0.56.0/ibm-semeru-certified-jre_aarch64_linux_25.0.1.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.1+8_openj9-0.56.0"
   },
   {
     "architecture": "aarch64",
