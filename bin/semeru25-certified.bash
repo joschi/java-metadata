@@ -33,7 +33,7 @@ function download {
 	local asset_name="${2}"
 	local filename="${asset_name}"
 
-	local url="https://github.com/ibmruntimes/semeru19-binaries/releases/download/${tag_name}/${asset_name}"
+	local url="https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/${tag_name}/${asset_name}"
 	local metadata_file="${METADATA_DIR}/${filename}.json"
 	local archive="${TEMP_DIR}/${filename}"
 
@@ -64,10 +64,10 @@ function download {
 			EXT='rpm'
 
 			# shellcheck disable=SC2016
-			regex='s/^ibm-semeru-open-[0-9]+-(jre|jdk)-(.+)\.(x86_64|s390x|ppc64|ppc64le|aarch64)\.rpm$/IMAGE_TYPE="$1" RPM_VERSION="$2" ARCH="$3"/g'
+			regex='s/^ibm-semeru-certified-[0-9]+-(jre|jdk)-(.+)\.(x86_64|s390x|ppc64|ppc64le|aarch64)\.rpm$/IMAGE_TYPE="$1" RPM_VERSION="$2" ARCH="$3"/g'
 		else
 			# shellcheck disable=SC2016
-			regex='s/^ibm-semeru-open-(jre|jdk)_(x64|x86-32|s390x|ppc64|ppc64le|aarch64)_(aix|linux|mac|windows)_.+_openj9-.+\.(tar\.gz|zip|msi)$/IMAGE_TYPE="$1" ARCH="$2" OS="$3" EXT="$4"/g'
+			regex='s/^ibm-semeru-certified-(jre|jdk)_(x64|x86-32|x86-64|x86_64|s390x|ppc64|ppc64le|aarch64)_(aix|linux|mac|windows)_.+\.(tar\.gz|zip|msi)$/IMAGE_TYPE="$1" ARCH="$2" OS="$3" EXT="$4"/g'
 		fi
 
 		# Parse meta-data from file name
@@ -85,7 +85,7 @@ function download {
 			"$(normalize_arch "${ARCH}")" \
 			"${EXT}" \
 			"${IMAGE_TYPE}" \
-			'' \
+			'certified' \
 			"${url}" \
 			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
 			"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}")" \
@@ -100,13 +100,13 @@ function download {
 	fi
 }
 
-RELEASE_FILE="${TEMP_DIR}/releases-${VENDOR}-19.json"
-download_github_releases 'ibmruntimes' 'semeru19-binaries' "${RELEASE_FILE}"
+RELEASE_FILE="${TEMP_DIR}/releases-${VENDOR}-25.json"
+download_github_releases 'ibmruntimes' 'semeru25-certified-binaries' "${RELEASE_FILE}"
 
 versions=$(jq -r '.[].tag_name' "${RELEASE_FILE}" | sort -V)
 for version in ${versions}
 do
-	assets=$(jq -r  ".[] | select(.prerelease == false) | select(.tag_name == \"${version}\") | .assets[] | select(.name | endswith(\"zip\") or endswith(\"tar.gz\") or endswith(\"msi\") or endswith(\"rpm\")) | select(.name | contains(\"debugimage\") | not) | select(.name | contains(\"testimage\") | not) | select(.name | contains(\"certified\") | not) | .name" "${RELEASE_FILE}")
+	assets=$(jq -r  ".[] | select(.prerelease == false) | select(.tag_name == \"${version}\") | .assets[] | select(.name | endswith(\"zip\") or endswith(\"tar.gz\") or endswith(\"msi\") or endswith(\"rpm\")) | select(.name | contains(\"debugimage\") | not) | select(.name | contains(\"testimage\") | not) | .name" "${RELEASE_FILE}")
 	for asset in ${assets}
 	do
 		download "${version}" "${asset}" || echo "Cannot download ${asset}"
