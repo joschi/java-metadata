@@ -41,6 +41,7 @@ vendors=(
 	"$(cmd 'semeru11-certified')"
 	"$(cmd 'semeru17-certified')"
 	"$(cmd 'semeru21-certified')"
+	"$(cmd 'semeru25-certified')"
 	"$(cmd 'graalvm-legacy')"
 	"$(cmd 'graalvm-ce')"
 	"$(cmd 'graalvm-community')"
