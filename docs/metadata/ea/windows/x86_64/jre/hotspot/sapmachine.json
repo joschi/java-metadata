@@ -28012,5 +28012,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27+3/sapmachine-jre-27-ea.3_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "27-ea.3"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "sapmachine-jre-27-ea.4_windows-x64_bin.zip",
+    "image_type": "jre",
+    "java_version": "27-ea.4",
+    "jvm_impl": "hotspot",
+    "md5": "59c16a8584eec92510d28d251aed929b",
+    "md5_file": "sapmachine-jre-27-ea.4_windows-x64_bin.zip.md5",
+    "os": "windows",
+    "release_type": "ea",
+    "sha1": "d658343007f2bcd350dd6bba68c4b534cccd2a36",
+    "sha1_file": "sapmachine-jre-27-ea.4_windows-x64_bin.zip.sha1",
+    "sha256": "3d293dbf5df6d964287ea02b545af5966029a73420a0ed459a03563fb4728cf9",
+    "sha256_file": "sapmachine-jre-27-ea.4_windows-x64_bin.zip.sha256",
+    "sha512": "e0d2a0a696291e958bf1e05b24ddc4eecde9a099cc18b8e64f79d41251f55dc96646f6e28d0fe4734daa889ea1e3452f3efcee89beb86e63ec5e9626ff25919e",
+    "sha512_file": "sapmachine-jre-27-ea.4_windows-x64_bin.zip.sha512",
+    "size": 53192358,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27+4/sapmachine-jre-27-ea.4_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "27-ea.4"
   }
 ]
