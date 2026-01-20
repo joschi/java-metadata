@@ -435,5 +435,28 @@
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-25.0.1/graalvm-community-jdk-25.0.1_windows-x64_bin.zip",
     "vendor": "graalvm-community",
     "version": "25.0.1"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "graalvm-community-jdk-25.0.2_windows-x64_bin.zip",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "graalvm",
+    "md5": "81219146c466fe04cbe4a43ff30b275f",
+    "md5_file": "graalvm-community-jdk-25.0.2_windows-x64_bin.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "cb3ba707da5d52a493389f2e8b62fad9e9b2965d",
+    "sha1_file": "graalvm-community-jdk-25.0.2_windows-x64_bin.zip.sha1",
+    "sha256": "72edc27ce2dd3c156332144a339c97995745cae291205ed2f9b5cc26aa9cb422",
+    "sha256_file": "graalvm-community-jdk-25.0.2_windows-x64_bin.zip.sha256",
+    "sha512": "67700fb0b3aec2ccc92aadc696afdf56b4c7e72540d19c8fbadf04434ca254513a4ceedec414d663daa5177fcddebc67432fc4509020c2a31bffd6ff61e0187d",
+    "sha512_file": "graalvm-community-jdk-25.0.2_windows-x64_bin.zip.sha512",
+    "size": 334940614,
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-25.0.2/graalvm-community-jdk-25.0.2_windows-x64_bin.zip",
+    "vendor": "graalvm-community",
+    "version": "25.0.2"
   }
 ]
