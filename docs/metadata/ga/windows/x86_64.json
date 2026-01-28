@@ -42220,6 +42220,31 @@
       "signed"
     ],
     "file_type": "zip",
+    "filename": "TencentKona-17.0.18.b1_jdk_windows-x86_64_signed.zip",
+    "image_type": "jdk",
+    "java_version": "17.0.18.b1",
+    "jvm_impl": "hotspot",
+    "md5": "0921beabc0c915acc10cd012aedd7906",
+    "md5_file": "TencentKona-17.0.18.b1_jdk_windows-x86_64_signed.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "489763df9ce00ddcff91a925cdd739b1765a7297",
+    "sha1_file": "TencentKona-17.0.18.b1_jdk_windows-x86_64_signed.zip.sha1",
+    "sha256": "6c6254f327ce2812ff1ad67f81fc50701a40e741dfa833314a98c96485179405",
+    "sha256_file": "TencentKona-17.0.18.b1_jdk_windows-x86_64_signed.zip.sha256",
+    "sha512": "32af0ad90b3945497af0223fd945026480c1a9aee509755b7090995652ee794d55bc865a9af9e80190989839c2fcb3aa6ce6dc60ea290064b5e3b1e25dfc6404",
+    "sha512_file": "TencentKona-17.0.18.b1_jdk_windows-x86_64_signed.zip.sha512",
+    "size": 196144276,
+    "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.18/TencentKona-17.0.18.b1_jdk_windows-x86_64_signed.zip",
+    "vendor": "kona",
+    "version": "17.0.18.b1"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "signed"
+    ],
+    "file_type": "zip",
     "filename": "TencentKona-17.0.2.b1_jdk_windows-x86_64_signed.zip",
     "image_type": "jdk",
     "java_version": "17.0.2.b1",
@@ -42488,6 +42513,31 @@
     "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.1/TencentKona-21.0.1.b1_jdk_windows-x86_64_signed.zip",
     "vendor": "kona",
     "version": "21.0.1.b1"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "signed"
+    ],
+    "file_type": "zip",
+    "filename": "TencentKona-21.0.10.b1_jdk_windows-x86_64_signed.zip",
+    "image_type": "jdk",
+    "java_version": "21.0.10.b1",
+    "jvm_impl": "hotspot",
+    "md5": "0f59ea4955fdb1683b28557d26f48cbf",
+    "md5_file": "TencentKona-21.0.10.b1_jdk_windows-x86_64_signed.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "03190ab4611d52b3db39c4bcc70d13ba3a2fff5c",
+    "sha1_file": "TencentKona-21.0.10.b1_jdk_windows-x86_64_signed.zip.sha1",
+    "sha256": "dac342c627ef16a1d7ab1ee6a5866a40efd01d11fac567e8ea068539d40205f5",
+    "sha256_file": "TencentKona-21.0.10.b1_jdk_windows-x86_64_signed.zip.sha256",
+    "sha512": "36b5b1d5737664f3100186d6ef533eafe269547537fb61007fcb4418e480f36ab7a672d67096f1c4d469d72fc174162d0534d4176460ed3f9a4ddaea25feeb8e",
+    "sha512_file": "TencentKona-21.0.10.b1_jdk_windows-x86_64_signed.zip.sha512",
+    "size": 209804164,
+    "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.10/TencentKona-21.0.10.b1_jdk_windows-x86_64_signed.zip",
+    "vendor": "kona",
+    "version": "21.0.10.b1"
   },
   {
     "architecture": "x86_64",
