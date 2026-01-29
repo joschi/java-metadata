@@ -22912,6 +22912,31 @@
   },
   {
     "architecture": "i686",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu11.86.21-ca-fx-jre11.0.30-win_i686.zip",
+    "image_type": "jre",
+    "java_version": "11.0.30",
+    "jvm_impl": "hotspot",
+    "md5": "82fa32e873e4500925a4d978ae7b7be7",
+    "md5_file": "zulu11.86.21-ca-fx-jre11.0.30-win_i686.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "3caabd96ee06a659bb8899d8945e94922e84d4de",
+    "sha1_file": "zulu11.86.21-ca-fx-jre11.0.30-win_i686.zip.sha1",
+    "sha256": "efa567bc924ff91fbf0ab533069a36a2af6aeaaca311687a2da2aca561d228a5",
+    "sha256_file": "zulu11.86.21-ca-fx-jre11.0.30-win_i686.zip.sha256",
+    "sha512": "f2455bd1563a4b96df2f41f1b26b1e3e922537e5c211ca061a98ccac510b7954cf6bec474716b081e56f3eb02b404cd6f0947cedcdb86a130e4c09c93af8e3c0",
+    "sha512_file": "zulu11.86.21-ca-fx-jre11.0.30-win_i686.zip.sha512",
+    "size": 77674459,
+    "url": "https://static.azul.com/zulu/bin/zulu11.86.21-ca-fx-jre11.0.30-win_i686.zip",
+    "vendor": "zulu",
+    "version": "11.86.21"
+  },
+  {
+    "architecture": "i686",
     "features": [],
     "file_type": "zip",
     "filename": "zulu13.28.11-ca-jre13.0.1-win_i686.zip",
@@ -26304,6 +26329,31 @@
       "javafx"
     ],
     "file_type": "zip",
+    "filename": "zulu17.64.17-ca-fx-jre17.0.18-win_i686.zip",
+    "image_type": "jre",
+    "java_version": "17.0.18",
+    "jvm_impl": "hotspot",
+    "md5": "0971a7e6ae0f9bbc884e11bfa4f3fd7f",
+    "md5_file": "zulu17.64.17-ca-fx-jre17.0.18-win_i686.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "11c8fdf195d52d867687429a05baf127c5efd04e",
+    "sha1_file": "zulu17.64.17-ca-fx-jre17.0.18-win_i686.zip.sha1",
+    "sha256": "8156c5e7854acfa4cffdbaa6fb97f04e532e663c533591af10cf82871f19ce6f",
+    "sha256_file": "zulu17.64.17-ca-fx-jre17.0.18-win_i686.zip.sha256",
+    "sha512": "a8b391f1225dbc956e8b5cf4fe12c64f9e5e529163c4e5d2982f8736de54620e3afdcc3e279102e90c41f595925c3a48ef5d67e2046af242c5cb2044339288b1",
+    "sha512_file": "zulu17.64.17-ca-fx-jre17.0.18-win_i686.zip.sha512",
+    "size": 80596266,
+    "url": "https://static.azul.com/zulu/bin/zulu17.64.17-ca-fx-jre17.0.18-win_i686.zip",
+    "vendor": "zulu",
+    "version": "17.64.17"
+  },
+  {
+    "architecture": "i686",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
     "filename": "zulu18.28.13-ca-fx-jre18.0.0-win_i686.zip",
     "image_type": "jre",
     "java_version": "18.0.0",
@@ -29564,5 +29614,30 @@
     "url": "https://static.azul.com/zulu/bin/zulu8.92.0.19-ca-jre8.0.482-win_i686.zip",
     "vendor": "zulu",
     "version": "8.92.0.19"
+  },
+  {
+    "architecture": "i686",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu8.92.0.21-ca-fx-jre8.0.482-win_i686.zip",
+    "image_type": "jre",
+    "java_version": "8.0.482",
+    "jvm_impl": "hotspot",
+    "md5": "7088f2672817bf795ccabdf7e8e33564",
+    "md5_file": "zulu8.92.0.21-ca-fx-jre8.0.482-win_i686.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "c450fecad13dc7057a7108b8b99cdb39f1a36881",
+    "sha1_file": "zulu8.92.0.21-ca-fx-jre8.0.482-win_i686.zip.sha1",
+    "sha256": "10081f9d104c6c3fb3a7a1d30173e65f9c97ff4338094ca6badece60548ec080",
+    "sha256_file": "zulu8.92.0.21-ca-fx-jre8.0.482-win_i686.zip.sha256",
+    "sha512": "cb84ae0e9ae8adacffcef4af86d0fccd890dfa841cca80d8ce7e9f5714b5a361b17af0fa0109f6d90899694ceeb68a34c6808a05d797969502e916305c608e49",
+    "sha512_file": "zulu8.92.0.21-ca-fx-jre8.0.482-win_i686.zip.sha512",
+    "size": 80915801,
+    "url": "https://static.azul.com/zulu/bin/zulu8.92.0.21-ca-fx-jre8.0.482-win_i686.zip",
+    "vendor": "zulu",
+    "version": "8.92.0.21"
   }
 ]
