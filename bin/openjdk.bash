@@ -40,6 +40,7 @@ INDEX_23="${TEMP_DIR}/index-23.html"
 INDEX_24="${TEMP_DIR}/index-24.html"
 INDEX_25="${TEMP_DIR}/index-25.html"
 INDEX_26="${TEMP_DIR}/index-26.html"
+INDEX_27="${TEMP_DIR}/index-27.html"
 
 download_file 'http://jdk.java.net/archive/' "${INDEX_ARCHIVE}"
 download_file 'http://jdk.java.net/21/' "${INDEX_21}"
@@ -48,8 +49,9 @@ download_file 'http://jdk.java.net/23/' "${INDEX_23}"
 download_file 'http://jdk.java.net/24/' "${INDEX_24}"
 download_file 'http://jdk.java.net/25/' "${INDEX_25}"
 download_file 'http://jdk.java.net/26/' "${INDEX_26}"
+download_file 'http://jdk.java.net/26/' "${INDEX_27}"
 
-URLS=$(grep -h -o -E 'href="https://download.java.net/java/.*/[^/]*\.(tar\.gz|zip)"' "${INDEX_ARCHIVE}" "${INDEX_21}" "${INDEX_22}" "${INDEX_23}" "${INDEX_24}" "${INDEX_25}" | perl -pe 's/href="(.+)"/$1/g' | sort -V)
+URLS=$(grep -h -o -E 'href="https://download.java.net/java/.*/[^/]*\.(tar\.gz|zip)"' "${INDEX_ARCHIVE}" "${INDEX_21}" "${INDEX_22}" "${INDEX_23}" "${INDEX_24}" "${INDEX_25}" "${INDEX_26}" "${INDEX_27}" | perl -pe 's/href="(.+)"/$1/g' | sort -V)
 for URL in ${URLS}
 do
 	FILE="$(perl -pe 's/https.*\/([^\/]+)/$1/g' <<< "${URL}")"
