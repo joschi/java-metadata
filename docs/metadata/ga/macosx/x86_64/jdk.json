@@ -108418,6 +108418,56 @@
   {
     "architecture": "x86_64",
     "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18",
+    "jvm_impl": "hotspot",
+    "md5": "b1ae57d79041bf769378f522c869d86d",
+    "md5_file": "zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "b9c80e0a6eda071ff57f77df0a0aea7dfab295e2",
+    "sha1_file": "zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.tar.gz.sha1",
+    "sha256": "45c07119f3021310b4946be9e0be4020a089ae0241340558795d6b6f1cba211b",
+    "sha256_file": "zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.tar.gz.sha256",
+    "sha512": "8e1cc22517354d3be6c9036b47e8623bcf1a06e1dc6d919669817557fc3e44c53f971fb312f4d09083ea0375be4a7bb7567be20c16ea07b52770426b31a212a7",
+    "sha512_file": "zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.tar.gz.sha512",
+    "size": 194246785,
+    "url": "https://static.azul.com/zulu/bin/zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.64.17"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "filename": "zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.zip",
+    "image_type": "jdk",
+    "java_version": "17.0.18",
+    "jvm_impl": "hotspot",
+    "md5": "c2a8d3ccb28dc0dabc071acf768bb937",
+    "md5_file": "zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.zip.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "0509802df850a8b2d07487eccebbf591f20918df",
+    "sha1_file": "zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.zip.sha1",
+    "sha256": "cbff48e0a199fb7bbc171719943288750aba18da498c6ddf50c52b6d3bb55dd6",
+    "sha256_file": "zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.zip.sha256",
+    "sha512": "9d77753ee617976e36a1abc01409df3a7c803496a978c85efe071d0f58f850ed7040e5f8a1248b961a4152b512c84344a900e4ab8e5680d7f3a20d1efb02f25f",
+    "sha512_file": "zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.zip.sha512",
+    "size": 198063369,
+    "url": "https://static.azul.com/zulu/bin/zulu17.64.17-ca-crac-jdk17.0.18-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "17.64.17"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
       "javafx"
     ],
     "file_type": "dmg",
@@ -112030,6 +112080,56 @@
   {
     "architecture": "x86_64",
     "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10",
+    "jvm_impl": "hotspot",
+    "md5": "d8f4a183453109b0384fa6e1357ceb4b",
+    "md5_file": "zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "621d88049538b4b669fdf8405625b630f7978208",
+    "sha1_file": "zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.tar.gz.sha1",
+    "sha256": "b133778024add9c4833ec24ca4c86c9d4a6b87675848ca380567d8be0a7ee24e",
+    "sha256_file": "zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.tar.gz.sha256",
+    "sha512": "067cd052dabebafb9305d8575eb3dffb69b1b6b5d10c4cccf1779327f12baa4330099acd349c2c5a721835ca2c09d449676e4ba836b21856b7f74f7e1f67fe23",
+    "sha512_file": "zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.tar.gz.sha512",
+    "size": 208632734,
+    "url": "https://static.azul.com/zulu/bin/zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.48.17"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "filename": "zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.zip",
+    "image_type": "jdk",
+    "java_version": "21.0.10",
+    "jvm_impl": "hotspot",
+    "md5": "9ea632f395759ec87f4e1c988dd87bfb",
+    "md5_file": "zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.zip.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "5b12502c18927c0ad477c0dd245400bd98ba6e44",
+    "sha1_file": "zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.zip.sha1",
+    "sha256": "e511b72d75f924574374ba0bfc9a04fdd7880329b9d49792fc2301c0472b3d91",
+    "sha256_file": "zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.zip.sha256",
+    "sha512": "e61ec02532dcc912f5b900e27644fa6e95ae4fe8ba2d30ab2391578e54f4e165c389e4e3f9e8b298f98061d6bf055b4221b94507c63da30a9c8028451cb643fc",
+    "sha512_file": "zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.zip.sha512",
+    "size": 212283894,
+    "url": "https://static.azul.com/zulu/bin/zulu21.48.17-ca-crac-jdk21.0.10-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "21.48.17"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
       "javafx"
     ],
     "file_type": "dmg",
@@ -114523,6 +114623,56 @@
     "url": "https://static.azul.com/zulu/bin/zulu25.32.17-ca-jdk25.0.2-macosx_x64.zip",
     "vendor": "zulu",
     "version": "25.32.17"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "md5": "b412057d069e7c32a12c87a5543824f1",
+    "md5_file": "zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "cfa21654804744e6d2c5570b5d359773490d793a",
+    "sha1_file": "zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.tar.gz.sha1",
+    "sha256": "d1f33ea51f435a79679d09e226650f6031d79461be12317dcac4e1b88b56a9d6",
+    "sha256_file": "zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.tar.gz.sha256",
+    "sha512": "309a777cbb6f48d79d1bca42b52d7f9a5bc00001a84529b6de3892a22241b41e7df3df3322194c9a4efe3809a2fac76bfa2fb5e3e59f1f9d3c542374e83e2c08",
+    "sha512_file": "zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.tar.gz.sha512",
+    "size": 227366587,
+    "url": "https://static.azul.com/zulu/bin/zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.21"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "filename": "zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.zip",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "md5": "7ac1ef825c29d529f0254d9fab442259",
+    "md5_file": "zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.zip.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "bbb8cb2fddda75dfd65711bb76669f8c95e9aab4",
+    "sha1_file": "zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.zip.sha1",
+    "sha256": "af3e830853ea9806c0c14b5020a61e01456680ec2d823c348a0e89271874978a",
+    "sha256_file": "zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.zip.sha256",
+    "sha512": "4598eefdd92720808e37f4b8be0b03339bd2a7de11da0144a9cbe238b1ac793d8ddc42858c5d0e38d2c75d9a1f1e5afa3edc1d087aa8416ac019bd36d78fb6ce",
+    "sha512_file": "zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.zip.sha512",
+    "size": 230900666,
+    "url": "https://static.azul.com/zulu/bin/zulu25.32.21-ca-crac-jdk25.0.2-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "25.32.21"
   },
   {
     "architecture": "x86_64",
