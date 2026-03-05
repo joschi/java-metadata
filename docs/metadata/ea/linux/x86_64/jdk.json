@@ -20974,6 +20974,31 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-17.0.19-ea.4_linux-x64-musl_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19-ea.4",
+    "jvm_impl": "hotspot",
+    "md5": "4572f609ce9000ea9443546b015a77f1",
+    "md5_file": "sapmachine-jdk-17.0.19-ea.4_linux-x64-musl_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "a79176ea71494c2e4aaf34a13292aa69de88981c",
+    "sha1_file": "sapmachine-jdk-17.0.19-ea.4_linux-x64-musl_bin.tar.gz.sha1",
+    "sha256": "9c5c59315e3ca6bede9ce70be873bf2946cd19911445aaca60456a09672e6d58",
+    "sha256_file": "sapmachine-jdk-17.0.19-ea.4_linux-x64-musl_bin.tar.gz.sha256",
+    "sha512": "50122f93ac9bc52c9e6959a30d5ca6424457501d66bccf182d7df1f13a3f08dbce1487d250aa99ac6cee63f6caf05835b8b69c838d8419d13b64ae76d50bce65",
+    "sha512_file": "sapmachine-jdk-17.0.19-ea.4_linux-x64-musl_bin.tar.gz.sha512",
+    "size": 195144131,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.19+4/sapmachine-jdk-17.0.19-ea.4_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.19-ea.4"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "sapmachine-jdk-17.0.2-ea.1_linux-x64_bin.tar.gz",
@@ -42086,6 +42111,31 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27+10/sapmachine-jdk-27-ea.10_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "27-ea.10"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-27-ea.11_linux-x64-musl_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "27-ea.11",
+    "jvm_impl": "hotspot",
+    "md5": "5bfce6dba0d789a0fa19473c71dd2537",
+    "md5_file": "sapmachine-jdk-27-ea.11_linux-x64-musl_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "b3011c68a2ae021e86d70dce7ea981c7f2a858f5",
+    "sha1_file": "sapmachine-jdk-27-ea.11_linux-x64-musl_bin.tar.gz.sha1",
+    "sha256": "234744ccbfac64c373b015224a26ca681ff57242f4c43a7985dc95bbb78f5eff",
+    "sha256_file": "sapmachine-jdk-27-ea.11_linux-x64-musl_bin.tar.gz.sha256",
+    "sha512": "544247ecc3f155d6c45261553555ba68982dffd82f843b359996d5e2ccd9c26f40d82a8ef8e20c343e5c4bd29bc2bc5816f3f4cb5355495b1e3ef3b5bc7fc009",
+    "sha512_file": "sapmachine-jdk-27-ea.11_linux-x64-musl_bin.tar.gz.sha512",
+    "size": 221061037,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27+11/sapmachine-jdk-27-ea.11_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27-ea.11"
   },
   {
     "architecture": "x86_64",
