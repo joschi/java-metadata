@@ -49,7 +49,7 @@ download_file 'http://jdk.java.net/23/' "${INDEX_23}"
 download_file 'http://jdk.java.net/24/' "${INDEX_24}"
 download_file 'http://jdk.java.net/25/' "${INDEX_25}"
 download_file 'http://jdk.java.net/26/' "${INDEX_26}"
-download_file 'http://jdk.java.net/26/' "${INDEX_27}"
+download_file 'http://jdk.java.net/27/' "${INDEX_27}"
 
 URLS=$(grep -h -o -E 'href="https://download.java.net/java/.*/[^/]*\.(tar\.gz|zip)"' "${INDEX_ARCHIVE}" "${INDEX_21}" "${INDEX_22}" "${INDEX_23}" "${INDEX_24}" "${INDEX_25}" "${INDEX_26}" "${INDEX_27}" | perl -pe 's/href="(.+)"/$1/g' | sort -V)
 for URL in ${URLS}
