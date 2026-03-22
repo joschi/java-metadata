@@ -52,6 +52,7 @@ vendors=(
 	"$(cmd 'dragonwell11')"
 	"$(cmd 'dragonwell17')"
 	"$(cmd 'dragonwell21')"
+	"$(cmd 'dragonwell25')"
 	"$(cmd 'oracle')"
 	"$(cmd 'oracle-graalvm')"
 	"$(cmd 'oracle-graalvm-ea')"
