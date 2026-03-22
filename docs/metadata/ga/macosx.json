@@ -104376,6 +104376,106 @@
     "version": "21.0.9.b1"
   },
   {
+    "architecture": "aarch64",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "filename": "TencentKona-25.0.1.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1.b1",
+    "jvm_impl": "hotspot",
+    "md5": "41ce6c83bf5c5cd648e80de30a9d5cca",
+    "md5_file": "TencentKona-25.0.1.b1_jdk_macosx-aarch64_notarized.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "c8fd62cb4c1eb67b57e9eeebc8f61dd5f4d61509",
+    "sha1_file": "TencentKona-25.0.1.b1_jdk_macosx-aarch64_notarized.tar.gz.sha1",
+    "sha256": "739e53f61af1ad368e2d302c3b71ff7448cc3bb4a2c201de4739e2f1deda5e81",
+    "sha256_file": "TencentKona-25.0.1.b1_jdk_macosx-aarch64_notarized.tar.gz.sha256",
+    "sha512": "0fafaf67741459e4080ec4c15b967cf061831504cfeb22081e90edc5e643f3cc50df3ba6e8138aaa6102749e13bf6326615f841a88323801e625e5229e0c35c7",
+    "sha512_file": "TencentKona-25.0.1.b1_jdk_macosx-aarch64_notarized.tar.gz.sha512",
+    "size": 223615854,
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.1/TencentKona-25.0.1.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.1.b1"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "filename": "TencentKona-25.0.1.b1_jdk_macosx-x86_64_notarized.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1.b1",
+    "jvm_impl": "hotspot",
+    "md5": "1d63574d6c6d8bc58b7977b03ae29f3e",
+    "md5_file": "TencentKona-25.0.1.b1_jdk_macosx-x86_64_notarized.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "ce5f7dff68f944c128c47bea4fa86fe38a778eb9",
+    "sha1_file": "TencentKona-25.0.1.b1_jdk_macosx-x86_64_notarized.tar.gz.sha1",
+    "sha256": "d1f601d9dff61c101ea24ac0b22593f93ba16babf9893847a4a5d03810e02b3a",
+    "sha256_file": "TencentKona-25.0.1.b1_jdk_macosx-x86_64_notarized.tar.gz.sha256",
+    "sha512": "07418a2fdf5153c2153e86b4f61c8c98f2680cfd47b567679595c66e3ab29bd044b9522c987efda3088c06870c3899fd7ef8cfae9b2114e5916db99c588a3142",
+    "sha512_file": "TencentKona-25.0.1.b1_jdk_macosx-x86_64_notarized.tar.gz.sha512",
+    "size": 225999539,
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.1/TencentKona-25.0.1.b1_jdk_macosx-x86_64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.1.b1"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "filename": "TencentKona-25.0.2.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2.b1",
+    "jvm_impl": "hotspot",
+    "md5": "54bc3f274486082a3c5cc5baaf76409c",
+    "md5_file": "TencentKona-25.0.2.b1_jdk_macosx-aarch64_notarized.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "69360add08ec41bc4100a561997c698af976563e",
+    "sha1_file": "TencentKona-25.0.2.b1_jdk_macosx-aarch64_notarized.tar.gz.sha1",
+    "sha256": "6cfec37e5c4bd427ece884f043cd3c14cc65df6ab8c8e9f9cea8788d5c41fe10",
+    "sha256_file": "TencentKona-25.0.2.b1_jdk_macosx-aarch64_notarized.tar.gz.sha256",
+    "sha512": "645a5597aaa404257c70cb1c2c55819d9ca375888cdec104bb37bfaeb3d2c3175e3001dca4002f4a67c29adc048624d5f3021ab5db14ce8b6714f5408cc4e96d",
+    "sha512_file": "TencentKona-25.0.2.b1_jdk_macosx-aarch64_notarized.tar.gz.sha512",
+    "size": 224118320,
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.2/TencentKona-25.0.2.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.2.b1"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "filename": "TencentKona-25.0.2.b1_jdk_macosx-x86_64_notarized.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2.b1",
+    "jvm_impl": "hotspot",
+    "md5": "6204ab0b60cacd069ccc221444c183be",
+    "md5_file": "TencentKona-25.0.2.b1_jdk_macosx-x86_64_notarized.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "d847e9297cdbe130b45febae279ddfd8f43e3a00",
+    "sha1_file": "TencentKona-25.0.2.b1_jdk_macosx-x86_64_notarized.tar.gz.sha1",
+    "sha256": "46c9dbbd551ea3842a789b9c6b74207a69025a0121b143f1b1cadba1ab8dc721",
+    "sha256_file": "TencentKona-25.0.2.b1_jdk_macosx-x86_64_notarized.tar.gz.sha256",
+    "sha512": "6a6c0a15affb75e9f9dabd9b1c0ce4a9a347c3a4c4113eedbf1d52ad493e1fc80d2172dc9b14d68190910ad81406e178d5e915aa86d7a1fb3fb746f1cca94aaa",
+    "sha512_file": "TencentKona-25.0.2.b1_jdk_macosx-x86_64_notarized.tar.gz.sha512",
+    "size": 226490914,
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.2/TencentKona-25.0.2.b1_jdk_macosx-x86_64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.2.b1"
+  },
+  {
     "architecture": "x86_64",
     "features": [
       "notarized"

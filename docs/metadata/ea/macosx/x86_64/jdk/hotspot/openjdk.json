@@ -3862,5 +3862,28 @@
     "url": "https://download.java.net/java/early_access/loom/1/openjdk-25-loom+1-11_macos-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "25-loom+1-11"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "openjdk-27-ea+14_macos-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "27-ea+14",
+    "jvm_impl": "hotspot",
+    "md5": "491553a106f6ff40496643a48a96c28f",
+    "md5_file": "openjdk-27-ea+14_macos-x64_bin.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ea",
+    "sha1": "9186750678d94d78c1d469d49996c062ee1355ea",
+    "sha1_file": "openjdk-27-ea+14_macos-x64_bin.tar.gz.sha1",
+    "sha256": "3fe28564c6ac445790a5f6d07bfa69a727312ea8d4b2483bbf49dc009f3b0363",
+    "sha256_file": "openjdk-27-ea+14_macos-x64_bin.tar.gz.sha256",
+    "sha512": "a2ead264ae51f55a0f1f111f409f7c6dc7092e91afd54e69f867e95a9adfdc285cd849ba0d2f5b12077a15ed3e471af155230ddd3e9be8c5eb2f3eda3e887bd3",
+    "sha512_file": "openjdk-27-ea+14_macos-x64_bin.tar.gz.sha512",
+    "size": 222951376,
+    "url": "https://download.java.net/java/early_access/jdk27/14/GPL/openjdk-27-ea+14_macos-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "27-ea+14"
   }
 ]
