@@ -52389,6 +52389,31 @@
   },
   {
     "architecture": "aarch64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu25.32.23-ca-crac-jre25.0.2-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "md5": "11d90ee4d2e8e9c431846455951c55db",
+    "md5_file": "zulu25.32.23-ca-crac-jre25.0.2-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "e9f8f363f0f82ed345dbc77c956f8e3c226199bc",
+    "sha1_file": "zulu25.32.23-ca-crac-jre25.0.2-linux_aarch64.tar.gz.sha1",
+    "sha256": "3d2d89b01a8a16f3803fca407ec283839cf82ace5af75c632fecbca4ff254b81",
+    "sha256_file": "zulu25.32.23-ca-crac-jre25.0.2-linux_aarch64.tar.gz.sha256",
+    "sha512": "e76142014c431b73cc448309bc4048661976ef9cdfc79b5e697c36bd6ec32e76f529a52a9e2df9abbd5992b84ec8a8ba20f8fe56c0efa046304cc2b613ef4eb4",
+    "sha512_file": "zulu25.32.23-ca-crac-jre25.0.2-linux_aarch64.tar.gz.sha512",
+    "size": 63639028,
+    "url": "https://static.azul.com/zulu/bin/zulu25.32.23-ca-crac-jre25.0.2-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.23"
+  },
+  {
+    "architecture": "aarch64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "zulu26.28.59-ca-jre26.0.0-linux_aarch64.tar.gz",
