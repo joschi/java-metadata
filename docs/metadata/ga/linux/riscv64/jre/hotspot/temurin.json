@@ -665,5 +665,28 @@
     "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jre_riscv64_linux_hotspot_25_36.tar.gz",
     "vendor": "temurin",
     "version": "25.0.0+36.0.LTS"
+  },
+  {
+    "architecture": "riscv64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK26U-jre_riscv64_linux_hotspot_26_35.tar.gz",
+    "image_type": "jre",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "md5": "2fa75aff2882b40843b345226e5138f5",
+    "md5_file": "OpenJDK26U-jre_riscv64_linux_hotspot_26_35.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "06ebb6372ce169118fc0fd2bd886dc59608c54a9",
+    "sha1_file": "OpenJDK26U-jre_riscv64_linux_hotspot_26_35.tar.gz.sha1",
+    "sha256": "6b53b35f4995c1fe200e4ebd711393d8bcab18f948fcbbf4e0590b1825775630",
+    "sha256_file": "OpenJDK26U-jre_riscv64_linux_hotspot_26_35.tar.gz.sha256",
+    "sha512": "d7b8746473bb3b6d47b109062828c05da94548b2d230e964d5cc7d3e33ecaa4f42873d4fc8069834e388450301b4c4c2e55127762b41bae050737eb20cde06f0",
+    "sha512_file": "OpenJDK26U-jre_riscv64_linux_hotspot_26_35.tar.gz.sha512",
+    "size": 61921536,
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jre_riscv64_linux_hotspot_26_35.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.0+35"
   }
 ]

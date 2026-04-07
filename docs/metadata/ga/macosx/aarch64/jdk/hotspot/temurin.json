@@ -1677,5 +1677,28 @@
     "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_aarch64_mac_hotspot_25_36.tar.gz",
     "vendor": "temurin",
     "version": "25.0.0+36.0.LTS"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.tar.gz",
+    "image_type": "jdk",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "md5": "1d75954908c452157b4721a38439d5b8",
+    "md5_file": "OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "741c25d1bfce8d608048bfe93dffd00bdae809b9",
+    "sha1_file": "OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.tar.gz.sha1",
+    "sha256": "596ba026474808b75e934aa8c32cf9b340fafc455d06f366ede4f2932f206eb1",
+    "sha256_file": "OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.tar.gz.sha256",
+    "sha512": "c701d32076bd1e3acd3d0c70d6114c5849d57482068d393773ae4981e1d87e85f793240b4004b653cb3006bed0c5c729320ea122b8f60d351c7592f6938bacf8",
+    "sha512_file": "OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.tar.gz.sha512",
+    "size": 139617548,
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.0+35"
   }
 ]
