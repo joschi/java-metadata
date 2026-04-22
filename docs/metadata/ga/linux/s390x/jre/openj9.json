@@ -1699,6 +1699,29 @@
   },
   {
     "architecture": "s390x",
+    "features": [],
+    "file_type": "tgz",
+    "filename": "ibm-java-jre-8.0-8.65-linux-s390x.tgz",
+    "image_type": "jre",
+    "java_version": "8.0.8.65",
+    "jvm_impl": "openj9",
+    "md5": "c3f21221b3e8fa6551068993d742a371",
+    "md5_file": "ibm-java-jre-8.0-8.65-linux-s390x.tgz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "53549cd26f90f727a39a9976f18008d0c924c60b",
+    "sha1_file": "ibm-java-jre-8.0-8.65-linux-s390x.tgz.sha1",
+    "sha256": "c844b329e2161a7d0c5810b30085b5deeec28b911844220cb3b930f860b10884",
+    "sha256_file": "ibm-java-jre-8.0-8.65-linux-s390x.tgz.sha256",
+    "sha512": "d47789cfa7552eb33b3ac44c76691821670a71a58504e76f6d3d6304bd7a835a496f381d33cb95629849ea396ec4805fcf361be8518a942b520efc1c7e96fd69",
+    "sha512_file": "ibm-java-jre-8.0-8.65-linux-s390x.tgz.sha512",
+    "size": 134138262,
+    "url": "https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/8.0.8.65/linux/s390x/ibm-java-jre-8.0-8.65-linux-s390x.tgz",
+    "vendor": "ibm",
+    "version": "8.0.8.65"
+  },
+  {
+    "architecture": "s390x",
     "features": [
       "certified"
     ],
