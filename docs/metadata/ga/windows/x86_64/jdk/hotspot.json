@@ -23480,6 +23480,31 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "signed"
+    ],
+    "file_type": "zip",
+    "filename": "TencentKona-25.0.3.b1_jdk_windows-x86_64_signed.zip",
+    "image_type": "jdk",
+    "java_version": "25.0.3.b1",
+    "jvm_impl": "hotspot",
+    "md5": "d5c5a521a2217a5089b9d1785e807d10",
+    "md5_file": "TencentKona-25.0.3.b1_jdk_windows-x86_64_signed.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "ae7616f7bcca2a56c96022d8388244fa6235ee7c",
+    "sha1_file": "TencentKona-25.0.3.b1_jdk_windows-x86_64_signed.zip.sha1",
+    "sha256": "865bce92ccbbca75115076e618a98baa1d0f30fcccdce954c0a22bee33d6ae83",
+    "sha256_file": "TencentKona-25.0.3.b1_jdk_windows-x86_64_signed.zip.sha256",
+    "sha512": "614a8c65733e4868c17fc9d08b703f08594e163839b95069698c24201260665587eb4f5de83fb7b49a4d4ffd83ec11c1b4d333f3791d58d966513aa78426522a",
+    "sha512_file": "TencentKona-25.0.3.b1_jdk_windows-x86_64_signed.zip.sha512",
+    "size": 230372434,
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.3/TencentKona-25.0.3.b1_jdk_windows-x86_64_signed.zip",
+    "vendor": "kona",
+    "version": "25.0.3.b1"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "zip",
     "filename": "bellsoft-jdk1.8.0-windows-amd64.zip",
