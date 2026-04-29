@@ -572,6 +572,31 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.31+11",
+    "jvm_impl": "hotspot",
+    "md5": "87c2657b9370ece75e2067d6ad8803d3",
+    "md5_file": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "7eb6a56f45a050cabe2b2d0e6e8a652a7f3b2fb7",
+    "sha1_file": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz.sha1",
+    "sha256": "4a1ba44d0b28523ff5b73a5015f3bcc6b9d36f3ac313ffb87762946af7f642ce",
+    "sha256_file": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz.sha256",
+    "sha512": "6e3511a767cdb4a3876c067dd8aeefeebb7466b2b7b994930bac7d3306cb401b0850eff074da3a170bc55ccdb98a2fa203b625faa45f6a751af1679f6b8e41c1",
+    "sha512_file": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz.sha512",
+    "size": 42880751,
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.31%2B11/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "11.0.31+11"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jre_x64_linux_hotspot_11.0.10_9.tar.gz",
@@ -52717,6 +52742,31 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.30%2B7/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.30_7.tar.gz",
     "vendor": "temurin",
     "version": "11.0.30+7"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.31+11",
+    "jvm_impl": "hotspot",
+    "md5": "87c2657b9370ece75e2067d6ad8803d3",
+    "md5_file": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "7eb6a56f45a050cabe2b2d0e6e8a652a7f3b2fb7",
+    "sha1_file": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz.sha1",
+    "sha256": "4a1ba44d0b28523ff5b73a5015f3bcc6b9d36f3ac313ffb87762946af7f642ce",
+    "sha256_file": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz.sha256",
+    "sha512": "6e3511a767cdb4a3876c067dd8aeefeebb7466b2b7b994930bac7d3306cb401b0850eff074da3a170bc55ccdb98a2fa203b625faa45f6a751af1679f6b8e41c1",
+    "sha512_file": "OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz.sha512",
+    "size": 42880751,
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.31%2B11/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.31_11.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.31+11"
   },
   {
     "architecture": "x86_64",
