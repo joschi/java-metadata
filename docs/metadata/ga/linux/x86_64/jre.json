@@ -6202,6 +6202,31 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_492-b09",
+    "jvm_impl": "hotspot",
+    "md5": "765f6a80792be6072592160437a50a56",
+    "md5_file": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "267896fc0ceaa950d9bc8c6bb437a20dcd9cab8f",
+    "sha1_file": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz.sha1",
+    "sha256": "82b74dc9042ce6735624a1ca9585e6a43c44f0f6093a7f2088b0a622f304d62c",
+    "sha256_file": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz.sha256",
+    "sha512": "11140c0f60bedf877f51db7c4e148f2183b29838ea0878f40fa638f47c523405206ec7758615317ed4eb43e17d7a65becadd758ec8f10cbacb0df34eca2aa018",
+    "sha512_file": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz.sha512",
+    "size": 41784692,
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "8.0.492+9"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_x64_linux_hotspot_8u181b13.tar.gz",
@@ -66456,6 +66481,31 @@
     "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jre_x64_alpine-linux_hotspot_8u482b08.tar.gz",
     "vendor": "temurin",
     "version": "8.0.482+8"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_492-b09",
+    "jvm_impl": "hotspot",
+    "md5": "765f6a80792be6072592160437a50a56",
+    "md5_file": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "267896fc0ceaa950d9bc8c6bb437a20dcd9cab8f",
+    "sha1_file": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz.sha1",
+    "sha256": "82b74dc9042ce6735624a1ca9585e6a43c44f0f6093a7f2088b0a622f304d62c",
+    "sha256_file": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz.sha256",
+    "sha512": "11140c0f60bedf877f51db7c4e148f2183b29838ea0878f40fa638f47c523405206ec7758615317ed4eb43e17d7a65becadd758ec8f10cbacb0df34eca2aa018",
+    "sha512_file": "OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz.sha512",
+    "size": 41784692,
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.492+9"
   },
   {
     "architecture": "x86_64",
