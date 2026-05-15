@@ -3979,5 +3979,28 @@
     "url": "https://download.java.net/java/early_access/jdk27/21/GPL/openjdk-27-ea+21_linux-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "27-ea+21"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "openjdk-27-ea+22_linux-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "27-ea+22",
+    "jvm_impl": "hotspot",
+    "md5": "e61d5a7f011c63e1e3d230bbbc8b376f",
+    "md5_file": "openjdk-27-ea+22_linux-aarch64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "276729a153168720f363d5842b6c89f473785098",
+    "sha1_file": "openjdk-27-ea+22_linux-aarch64_bin.tar.gz.sha1",
+    "sha256": "87c706c502d3fa5d8a8ff7bf543c7903207fb8d5a11ed637fe05ed33b8179702",
+    "sha256_file": "openjdk-27-ea+22_linux-aarch64_bin.tar.gz.sha256",
+    "sha512": "3fcb43e9ba25d200c48fe6a36fec6632043b1f6859eb303d5654915e25502bd88eae50bd52285205c147eb577771bac854ddc77ea379f9113d6820cbd6a3cecc",
+    "sha512_file": "openjdk-27-ea+22_linux-aarch64_bin.tar.gz.sha512",
+    "size": 226069077,
+    "url": "https://download.java.net/java/early_access/jdk27/22/GPL/openjdk-27-ea+22_linux-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "27-ea+22"
   }
 ]
