@@ -14379,6 +14379,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "Alibaba_Dragonwell_Extended_11.0.31.28.11_x64_linux.tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.31.28.11",
+    "jvm_impl": "hotspot",
+    "md5": "8cb09849898519ca17becf0dad678dec",
+    "md5_file": "Alibaba_Dragonwell_Extended_11.0.31.28.11_x64_linux.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "92a51ed62ee6ebfaeebd1b694c8e9544f741b8f0",
+    "sha1_file": "Alibaba_Dragonwell_Extended_11.0.31.28.11_x64_linux.tar.gz.sha1",
+    "sha256": "dc55f6c9f77663d1a2ab32512507ade2b518b7c490e2540c6007e686c88c4774",
+    "sha256_file": "Alibaba_Dragonwell_Extended_11.0.31.28.11_x64_linux.tar.gz.sha256",
+    "sha512": "090ca5cd20f5a188d4714b9d46a7360b42a916604d1b2f1b992b61c2560289fe704eefb8b5b161fed83e9b6d528d8f067b2e25e7d2b58be6af85b277cfb24e84",
+    "sha512_file": "Alibaba_Dragonwell_Extended_11.0.31.28.11_x64_linux.tar.gz.sha512",
+    "size": 198542636,
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.31.28_jdk-11.0.31-ga/Alibaba_Dragonwell_Extended_11.0.31.28.11_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "11.0.31.28.11"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "musl"
     ],
