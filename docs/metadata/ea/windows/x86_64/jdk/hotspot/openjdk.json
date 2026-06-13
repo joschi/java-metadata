@@ -4138,5 +4138,28 @@
     "url": "https://download.java.net/java/early_access/jdk27/25/GPL/openjdk-27-ea+25_windows-x64_bin.zip",
     "vendor": "openjdk",
     "version": "27-ea+25"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "openjdk-27-ea+26_windows-x64_bin.zip",
+    "image_type": "jdk",
+    "java_version": "27-ea+26",
+    "jvm_impl": "hotspot",
+    "md5": "d4894c656b08a47d30ee2fa7b544472a",
+    "md5_file": "openjdk-27-ea+26_windows-x64_bin.zip.md5",
+    "os": "windows",
+    "release_type": "ea",
+    "sha1": "ab4dbb08bad3465b8f79de24355b630086721021",
+    "sha1_file": "openjdk-27-ea+26_windows-x64_bin.zip.sha1",
+    "sha256": "007c293206270ff1040e9d27b573b2c3373cecfe97da2798206c6c1000cab9b9",
+    "sha256_file": "openjdk-27-ea+26_windows-x64_bin.zip.sha256",
+    "sha512": "12720944478e9fd7dd32108a42d77be19a29b97b74c023e14d052158f895fb5f13aa847e5a40312828dcd2d2d655f3713630e1ae3435a991e74d8bd9ffc4c8ce",
+    "sha512_file": "openjdk-27-ea+26_windows-x64_bin.zip.sha512",
+    "size": 226049822,
+    "url": "https://download.java.net/java/early_access/jdk27/26/GPL/openjdk-27-ea+26_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "27-ea+26"
   }
 ]
