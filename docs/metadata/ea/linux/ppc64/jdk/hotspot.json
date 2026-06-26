@@ -11808,6 +11808,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-21.0.12-ea.7_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12-ea.7",
+    "jvm_impl": "hotspot",
+    "md5": "4c28a478160beefc7d2fc9c4a2a110bc",
+    "md5_file": "sapmachine-jdk-21.0.12-ea.7_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "427adb078f3d2b413baa2567059596f14c943be3",
+    "sha1_file": "sapmachine-jdk-21.0.12-ea.7_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "7df3cb8d5aaf738827f4c834bd958cd7f7dea2d92d95af48c6a926d830a3b1d9",
+    "sha256_file": "sapmachine-jdk-21.0.12-ea.7_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "9151b04a55d378c99b4ba52fcef8eb7c5c9de5803675c5a7da1696b2770fca1b5ea96ee951320b2bc9a4ec919d37e8f66a8a8d425711f28490ae74983c800005",
+    "sha512_file": "sapmachine-jdk-21.0.12-ea.7_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 209866458,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12+7/sapmachine-jdk-21.0.12-ea.7_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12-ea.7"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jdk-21.0.2-ea.1_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
     "java_version": "21.0.2-ea.1",
@@ -17608,6 +17633,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-25.0.4-ea.6_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4-ea.6",
+    "jvm_impl": "hotspot",
+    "md5": "f2328fab0ff722aa9a8951ad44e1e3cf",
+    "md5_file": "sapmachine-jdk-25.0.4-ea.6_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "1841ab9d2cbc5c7c5c4b131ab69710ea119c9acd",
+    "sha1_file": "sapmachine-jdk-25.0.4-ea.6_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "92026961daef905169e44dd9132faa406db4364cb66b963cf372ceda70a8565b",
+    "sha256_file": "sapmachine-jdk-25.0.4-ea.6_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "81a9a9b72f6453c9e3e61f45edf15078a33f4197580e7d9c4a5b77a961174d3e733ec63df4d2774a0887c1822add0f88b15e8d4a88b6bc07da23c9184708192f",
+    "sha512_file": "sapmachine-jdk-25.0.4-ea.6_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 213122357,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.4+6/sapmachine-jdk-25.0.4-ea.6_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.4-ea.6"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jdk-26-ea.10_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
     "java_version": "26-ea.10",
@@ -19001,6 +19051,31 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27+27/sapmachine-jdk-27-ea.27_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "27-ea.27"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-27-ea.28_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "27-ea.28",
+    "jvm_impl": "hotspot",
+    "md5": "8d15c9e0d04084fbe4e65ccee6341bb0",
+    "md5_file": "sapmachine-jdk-27-ea.28_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "47550a06a1771b12996da572250559c35a4f220e",
+    "sha1_file": "sapmachine-jdk-27-ea.28_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "b5eb5b3ed3574b42b3dce893d281d44104d880c762777c961bcfc52a1f4aebd9",
+    "sha256_file": "sapmachine-jdk-27-ea.28_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "b45fdea5249bd6dcf0d1d94182bd6e0e93438bf84b70ebed11502cf8897380b9fa9c0cfd84c32622b12e297ec0c198339be2368e29eebb2ad917d8dd2660be7b",
+    "sha512_file": "sapmachine-jdk-27-ea.28_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 128871717,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27+28/sapmachine-jdk-27-ea.28_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27-ea.28"
   },
   {
     "architecture": "ppc64",
