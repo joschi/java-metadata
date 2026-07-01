@@ -7151,5 +7151,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28+3/sapmachine-jre-28-ea.3_aix-ppc64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "28-ea.3"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-28-ea.4_aix-ppc64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "28-ea.4",
+    "jvm_impl": "hotspot",
+    "md5": "66d12718a48bc3a43d6cb4b4e5a764a9",
+    "md5_file": "sapmachine-jre-28-ea.4_aix-ppc64_bin.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ea",
+    "sha1": "9f389b3a64bdc3f71172a59817769883979a740b",
+    "sha1_file": "sapmachine-jre-28-ea.4_aix-ppc64_bin.tar.gz.sha1",
+    "sha256": "bcb16c3decb2f6b3ccb09f04f7416ea30f12e26eca10381652458050cc67cfb6",
+    "sha256_file": "sapmachine-jre-28-ea.4_aix-ppc64_bin.tar.gz.sha256",
+    "sha512": "b84a192f139f8b77f42298b9146c61baade2e0ba6b6273b659021bc3fe91cc3659f78db535060c2b46143d954a10313256add1aef7fee0a77a9415489e4f46e5",
+    "sha512_file": "sapmachine-jre-28-ea.4_aix-ppc64_bin.tar.gz.sha512",
+    "size": 43203494,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28+4/sapmachine-jre-28-ea.4_aix-ppc64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "28-ea.4"
   }
 ]
