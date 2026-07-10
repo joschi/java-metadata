@@ -33,7 +33,7 @@ function normalize_release_type {
 # shellcheck disable=SC2016
 REGEX='s/^openjdk-([0-9ub-]{1,}[^_]*)[-_](linux|osx|windows)-(aarch64|x64-musl|x64|i586).*\.(tar\.gz|zip)$/VERSION="$1" OS="$2" ARCH="$3" EXT="$4"/g'
 
-for URL_VERSION in '7' '8-MR3' '9' '10' '11' '12' '13' '14' '15' '16' '17' '18' '19' '20' '21' '22' '23' '24' '25'
+for URL_VERSION in '7' '8-MR3' '9' '10' '11' '12' '13' '14' '15' '16' '17' '18' '19' '20' '21' '22' '23' '24' '25' '26'
 do
 	download_file "https://jdk.java.net/java-se-ri/${URL_VERSION}" "${TEMP_DIR}/index-${URL_VERSION}.html"
 done
