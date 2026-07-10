@@ -343,5 +343,28 @@
     "url": "https://download.java.net/openjdk/jdk25/ri/openjdk-25+36_windows-x64_bin.zip",
     "vendor": "java-se-ri",
     "version": "25+36"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "openjdk-26+35_windows-x64_bin.zip",
+    "image_type": "jdk",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "md5": "271824835d096eb85a7e795d106a0939",
+    "md5_file": "openjdk-26+35_windows-x64_bin.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "edd6f9bd76b93337bf3d6defdf8236838a875e18",
+    "sha1_file": "openjdk-26+35_windows-x64_bin.zip.sha1",
+    "sha256": "2dd2d92c9374cd49a120fe9d916732840bf6bb9f0e0cc29794917a3c08b99c5f",
+    "sha256_file": "openjdk-26+35_windows-x64_bin.zip.sha256",
+    "sha512": "b9866ba14bf986e9211b2657cc30fa5d07dcc3555eb02b6287ef398fbbb1aa07ed5c85e8506dbc582aead0db1913b5306eda07b221c918c6306e7b1f115f416b",
+    "sha512_file": "openjdk-26+35_windows-x64_bin.zip.sha512",
+    "size": 226956568,
+    "url": "https://download.java.net/openjdk/jdk26/ri/openjdk-26+35_windows-x64_bin.zip",
+    "vendor": "java-se-ri",
+    "version": "26+35"
   }
 ]
