@@ -30151,5 +30151,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28+5/sapmachine-jre-28-ea.5_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "28-ea.5"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "sapmachine-jre-28-ea.6_windows-x64_bin.zip",
+    "image_type": "jre",
+    "java_version": "28-ea.6",
+    "jvm_impl": "hotspot",
+    "md5": "be01dbdc8970d0fa349878f74ba2638c",
+    "md5_file": "sapmachine-jre-28-ea.6_windows-x64_bin.zip.md5",
+    "os": "windows",
+    "release_type": "ea",
+    "sha1": "ceda6bd3af721002f624de26f943bdfc7d4e0443",
+    "sha1_file": "sapmachine-jre-28-ea.6_windows-x64_bin.zip.sha1",
+    "sha256": "040c782b2d35a70a02ae40db2f6aba1841f872854741948a9c66001f33052028",
+    "sha256_file": "sapmachine-jre-28-ea.6_windows-x64_bin.zip.sha256",
+    "sha512": "6e53a44a4ce26b60b9d14d85b7b4cbecacc848af1249df06aac6ac28889142fe4b691c8d6d286646f2603590c2563bb67dc3e90a99d3f738cba54f8e0e927e43",
+    "sha512_file": "sapmachine-jre-28-ea.6_windows-x64_bin.zip.sha512",
+    "size": 52666153,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28+6/sapmachine-jre-28-ea.6_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "28-ea.6"
   }
 ]
