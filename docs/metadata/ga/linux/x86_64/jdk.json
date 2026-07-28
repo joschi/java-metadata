@@ -668,6 +668,31 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32+9",
+    "jvm_impl": "hotspot",
+    "md5": "813e76757726960d1ac4e65d0936e171",
+    "md5_file": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "5f230570be0084dcece906b20dce0317ddffa1c2",
+    "sha1_file": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz.sha1",
+    "sha256": "be9831861b7a4b5fc8ec0d9540d462230f6b9bd6c7ee29585ec1ce52d1435d6c",
+    "sha256_file": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz.sha256",
+    "sha512": "437480300edd9ef827f6007cfdadbd00d11d2e7ccee4e21e3f0fe07053e3616be5e1d48bb7ce2e8d69e032aa88a0a3836482b8b22e338c29fbaf43f7e53c332a",
+    "sha512_file": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz.sha512",
+    "size": 194413256,
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32%2B9/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "11.0.32+9"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "OpenJDK11U-jdk_x64_linux_hotspot_11.0.10_9.tar.gz",
@@ -50579,6 +50604,29 @@
     "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.31/TencentKona-11.0.31.b1-jdk_linux-x86_64.tar.gz",
     "vendor": "kona",
     "version": "11.0.31.b1"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "TencentKona-11.0.32.b1-jdk_linux-x86_64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32.b1",
+    "jvm_impl": "hotspot",
+    "md5": "bcfde2ab38f3db57c1da729fbe4289ce",
+    "md5_file": "TencentKona-11.0.32.b1-jdk_linux-x86_64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "dd1b4c9f61442b12d75d7346270aa80be0fef082",
+    "sha1_file": "TencentKona-11.0.32.b1-jdk_linux-x86_64.tar.gz.sha1",
+    "sha256": "ebf18397c06a5c36bc6f3a6b5ddd8e71cc2b8300e3a259e2d614a6dcecefbf23",
+    "sha256_file": "TencentKona-11.0.32.b1-jdk_linux-x86_64.tar.gz.sha256",
+    "sha512": "cc19443d7501a83f4a48a1dc6f27527ca22d6025e9d0a491cae3a91dc44ecc9537e3d903f36abf0d44f2fba52bf939aa6b72e2a087cb68d627c6ae5bc28fd9ba",
+    "sha512_file": "TencentKona-11.0.32.b1-jdk_linux-x86_64.tar.gz.sha512",
+    "size": 199784881,
+    "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.32/TencentKona-11.0.32.b1-jdk_linux-x86_64.tar.gz",
+    "vendor": "kona",
+    "version": "11.0.32.b1"
   },
   {
     "architecture": "x86_64",
@@ -130397,6 +130445,31 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.31%2B11/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.31_11.tar.gz",
     "vendor": "temurin",
     "version": "11.0.31+11"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32+9",
+    "jvm_impl": "hotspot",
+    "md5": "813e76757726960d1ac4e65d0936e171",
+    "md5_file": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "5f230570be0084dcece906b20dce0317ddffa1c2",
+    "sha1_file": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz.sha1",
+    "sha256": "be9831861b7a4b5fc8ec0d9540d462230f6b9bd6c7ee29585ec1ce52d1435d6c",
+    "sha256_file": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz.sha256",
+    "sha512": "437480300edd9ef827f6007cfdadbd00d11d2e7ccee4e21e3f0fe07053e3616be5e1d48bb7ce2e8d69e032aa88a0a3836482b8b22e338c29fbaf43f7e53c332a",
+    "sha512_file": "OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz.sha512",
+    "size": 194413256,
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32%2B9/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32_9.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.32+9"
   },
   {
     "architecture": "x86_64",
