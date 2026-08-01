@@ -1129,6 +1129,31 @@
     "features": [
       "certified"
     ],
+    "file_type": "zip",
+    "filename": "ibm-semeru-certified-jdk_ppc64_aix_11.0.32.0.tap.zip",
+    "image_type": "jdk",
+    "java_version": "",
+    "jvm_impl": "openj9",
+    "md5": "db86d087fc6de27c20f9362603d977d6",
+    "md5_file": "ibm-semeru-certified-jdk_ppc64_aix_11.0.32.0.tap.zip.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "e01b21750a8e985bcd9a8193d6e1a31dd7eba56b",
+    "sha1_file": "ibm-semeru-certified-jdk_ppc64_aix_11.0.32.0.tap.zip.sha1",
+    "sha256": "87b30bb080142a06f099203544165e7e836819103cacfa151aa525c70c2c65f5",
+    "sha256_file": "ibm-semeru-certified-jdk_ppc64_aix_11.0.32.0.tap.zip.sha256",
+    "sha512": "e4434270504244c0e8ba39b0dc8b005956c78f18b5f38223533a70d7e9fc98a887f844bf98e5c6a1df8fcc888cd7b7c3b8c4296504658ed5e8e9cb4f1f1ad0d0",
+    "sha512_file": "ibm-semeru-certified-jdk_ppc64_aix_11.0.32.0.tap.zip.sha512",
+    "size": 80085,
+    "url": "https://github.com/ibmruntimes/semeru11-certified-binaries/releases/download/jdk-11.0.32.0/ibm-semeru-certified-jdk_ppc64_aix_11.0.32.0.tap.zip",
+    "vendor": "semeru",
+    "version": "_openj9-"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "certified"
+    ],
     "file_type": "tar.gz",
     "filename": "ibm-semeru-certified-jdk_ppc64_aix_11.0.32.0.tar.gz",
     "image_type": "jdk",
@@ -2504,6 +2529,31 @@
     "features": [
       "certified"
     ],
+    "file_type": "zip",
+    "filename": "ibm-semeru-certified-jdk_ppc64_aix_21.0.12.0.tap.zip",
+    "image_type": "jdk",
+    "java_version": "",
+    "jvm_impl": "openj9",
+    "md5": "13296d764dfdede2acc031ccd3969e0c",
+    "md5_file": "ibm-semeru-certified-jdk_ppc64_aix_21.0.12.0.tap.zip.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "e4f9ff6a96890287eaf759b2ba6ee3ff837d9e5d",
+    "sha1_file": "ibm-semeru-certified-jdk_ppc64_aix_21.0.12.0.tap.zip.sha1",
+    "sha256": "3636941a01457d8a277200c9bd984f7c6edbeb15cc6a66749e6017145c34cf54",
+    "sha256_file": "ibm-semeru-certified-jdk_ppc64_aix_21.0.12.0.tap.zip.sha256",
+    "sha512": "756a126416ca7213aa243da52cfc931262b63e3343efd72de29d36fe8340fc0a810c39add53b11f91e17f9ed2a39d8f4e22dda6eb615ca9e2f976c3deb765d85",
+    "sha512_file": "ibm-semeru-certified-jdk_ppc64_aix_21.0.12.0.tap.zip.sha512",
+    "size": 87070,
+    "url": "https://github.com/ibmruntimes/semeru21-certified-binaries/releases/download/jdk-21.0.12.0/ibm-semeru-certified-jdk_ppc64_aix_21.0.12.0.tap.zip",
+    "vendor": "semeru",
+    "version": "_openj9-"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "certified"
+    ],
     "file_type": "tar.gz",
     "filename": "ibm-semeru-certified-jdk_ppc64_aix_21.0.12.0.tar.gz",
     "image_type": "jdk",
@@ -3271,6 +3321,31 @@
     "sha512_file": "ibm-semeru-certified-jdk_ppc64_aix_25.0.3.0.tar.gz.sha512",
     "size": 274785753,
     "url": "https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25.0.3.0/ibm-semeru-certified-jdk_ppc64_aix_25.0.3.0.tar.gz",
+    "vendor": "semeru",
+    "version": "_openj9-"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "certified"
+    ],
+    "file_type": "zip",
+    "filename": "ibm-semeru-certified-jdk_ppc64_aix_25.0.4.0.tap.zip",
+    "image_type": "jdk",
+    "java_version": "",
+    "jvm_impl": "openj9",
+    "md5": "0ca50f17f88273b6fa180adb2fe7d8e7",
+    "md5_file": "ibm-semeru-certified-jdk_ppc64_aix_25.0.4.0.tap.zip.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "d2be3936fdf6dc95e9e8435d6d47a9fae0ba653a",
+    "sha1_file": "ibm-semeru-certified-jdk_ppc64_aix_25.0.4.0.tap.zip.sha1",
+    "sha256": "e63170da9a3646fc4aec55c835a7fcec3fbae7c361e790b3330cb17501468565",
+    "sha256_file": "ibm-semeru-certified-jdk_ppc64_aix_25.0.4.0.tap.zip.sha256",
+    "sha512": "6a46b91b48c0d24d43c8c9f46b56b9bfd38597cef13e6fe1d98372b388128cbdd97e0d0157c9e8ca24b41599ed768068d992e4fd065bab863bbcd9733ec07ddf",
+    "sha512_file": "ibm-semeru-certified-jdk_ppc64_aix_25.0.4.0.tap.zip.sha512",
+    "size": 175152,
+    "url": "https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25.0.4.0/ibm-semeru-certified-jdk_ppc64_aix_25.0.4.0.tap.zip",
     "vendor": "semeru",
     "version": "_openj9-"
   },

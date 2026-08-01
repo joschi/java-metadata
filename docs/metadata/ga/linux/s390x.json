@@ -13778,6 +13778,31 @@
     "features": [
       "certified"
     ],
+    "file_type": "zip",
+    "filename": "ibm-semeru-certified-jdk_s390x_linux_11.0.32.0.tap.zip",
+    "image_type": "jdk",
+    "java_version": "",
+    "jvm_impl": "openj9",
+    "md5": "3d326bc578c60b219fc0b549973a9818",
+    "md5_file": "ibm-semeru-certified-jdk_s390x_linux_11.0.32.0.tap.zip.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "6aaa3f25acbeba5a736b55e980fbf68c2cdddb6f",
+    "sha1_file": "ibm-semeru-certified-jdk_s390x_linux_11.0.32.0.tap.zip.sha1",
+    "sha256": "0d1f3be4d82a364f3c4bcfe24b30c928b610e6e2f54c80ec92233fa2a3703814",
+    "sha256_file": "ibm-semeru-certified-jdk_s390x_linux_11.0.32.0.tap.zip.sha256",
+    "sha512": "22ea0bd1080ac5f242e6eab8d146b96ae823c9bb1f67a29421387bdb9956359008372f51bf737a5df5b82aba00fe6f11b6da8c030309f4d710e9f8ce0d4177b1",
+    "sha512_file": "ibm-semeru-certified-jdk_s390x_linux_11.0.32.0.tap.zip.sha512",
+    "size": 2173805,
+    "url": "https://github.com/ibmruntimes/semeru11-certified-binaries/releases/download/jdk-11.0.32.0/ibm-semeru-certified-jdk_s390x_linux_11.0.32.0.tap.zip",
+    "vendor": "semeru",
+    "version": "_openj9-"
+  },
+  {
+    "architecture": "s390x",
+    "features": [
+      "certified"
+    ],
     "file_type": "tar.gz",
     "filename": "ibm-semeru-certified-jdk_s390x_linux_11.0.32.0.tar.gz",
     "image_type": "jdk",
@@ -15153,6 +15178,31 @@
     "features": [
       "certified"
     ],
+    "file_type": "zip",
+    "filename": "ibm-semeru-certified-jdk_s390x_linux_21.0.12.0.tap.zip",
+    "image_type": "jdk",
+    "java_version": "",
+    "jvm_impl": "openj9",
+    "md5": "1508c2e9a3e88c3a6e58f0ec3120a0a3",
+    "md5_file": "ibm-semeru-certified-jdk_s390x_linux_21.0.12.0.tap.zip.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "935e3deb53414b80b7b91031b91438cf170c3701",
+    "sha1_file": "ibm-semeru-certified-jdk_s390x_linux_21.0.12.0.tap.zip.sha1",
+    "sha256": "06d986f0184f47457f92a813bc2b63955424275e04214e8e6b1d9b0020af1f5b",
+    "sha256_file": "ibm-semeru-certified-jdk_s390x_linux_21.0.12.0.tap.zip.sha256",
+    "sha512": "3416bf4a28c02f9ccaae1ead815b4dfaf40a14c46c50c855bf9bb5dce37460bd35af5ae4371ceaf134041abc540d54cbb8d4529b743a68a908f7dd1e0a55f6c4",
+    "sha512_file": "ibm-semeru-certified-jdk_s390x_linux_21.0.12.0.tap.zip.sha512",
+    "size": 95218,
+    "url": "https://github.com/ibmruntimes/semeru21-certified-binaries/releases/download/jdk-21.0.12.0/ibm-semeru-certified-jdk_s390x_linux_21.0.12.0.tap.zip",
+    "vendor": "semeru",
+    "version": "_openj9-"
+  },
+  {
+    "architecture": "s390x",
+    "features": [
+      "certified"
+    ],
     "file_type": "tar.gz",
     "filename": "ibm-semeru-certified-jdk_s390x_linux_21.0.12.0.tar.gz",
     "image_type": "jdk",
@@ -15920,6 +15970,31 @@
     "sha512_file": "ibm-semeru-certified-jdk_s390x_linux_25.0.3.0.tar.gz.sha512",
     "size": 273703149,
     "url": "https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25.0.3.0/ibm-semeru-certified-jdk_s390x_linux_25.0.3.0.tar.gz",
+    "vendor": "semeru",
+    "version": "_openj9-"
+  },
+  {
+    "architecture": "s390x",
+    "features": [
+      "certified"
+    ],
+    "file_type": "zip",
+    "filename": "ibm-semeru-certified-jdk_s390x_linux_25.0.4.0.tap.zip",
+    "image_type": "jdk",
+    "java_version": "",
+    "jvm_impl": "openj9",
+    "md5": "d0522748f3a9a6d887e782d4fec754b7",
+    "md5_file": "ibm-semeru-certified-jdk_s390x_linux_25.0.4.0.tap.zip.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "932c212ae70874c3bade01bc639179fd2d2f7ba3",
+    "sha1_file": "ibm-semeru-certified-jdk_s390x_linux_25.0.4.0.tap.zip.sha1",
+    "sha256": "b242a4ae88330cf22f14f7fb6eca3670f9f4c7b247f5c1f991699f2651a930b1",
+    "sha256_file": "ibm-semeru-certified-jdk_s390x_linux_25.0.4.0.tap.zip.sha256",
+    "sha512": "2d1690c99a66e3aa7f80bf68de177ac22fb5c2f3e9d18f9c10b86391b267de0914ade018f9627ce9c20b6f829b152aa70c1c6c57cbf6c82fe38721b7f035e1dc",
+    "sha512_file": "ibm-semeru-certified-jdk_s390x_linux_25.0.4.0.tap.zip.sha512",
+    "size": 184828,
+    "url": "https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25.0.4.0/ibm-semeru-certified-jdk_s390x_linux_25.0.4.0.tap.zip",
     "vendor": "semeru",
     "version": "_openj9-"
   },
