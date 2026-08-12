@@ -35590,6 +35590,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-28-ea.10_linux-x64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "28-ea.10",
+    "jvm_impl": "hotspot",
+    "md5": "64c71c9a0b3b50f6dfc7cd1920b17574",
+    "md5_file": "sapmachine-jre-28-ea.10_linux-x64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "f14a026d70b721e6143b846abf559d36ae4adc1c",
+    "sha1_file": "sapmachine-jre-28-ea.10_linux-x64_bin.tar.gz.sha1",
+    "sha256": "a856306c5c8ef6b181033502b5ea9a1b6e3076c5733863ad4f1794853f7b1571",
+    "sha256_file": "sapmachine-jre-28-ea.10_linux-x64_bin.tar.gz.sha256",
+    "sha512": "9e57b7e2c3b2a0751b3bf3c6054a05d5d9987895cd3bbd73a4d0f7de1d0a8a3aa5d8d9dacb24a102b1320c9cadf660fdf04554b9fb3c4064af3dc310b67db725",
+    "sha512_file": "sapmachine-jre-28-ea.10_linux-x64_bin.tar.gz.sha512",
+    "size": 53212067,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28+10/sapmachine-jre-28-ea.10_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "28-ea.10"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "musl"
     ],
