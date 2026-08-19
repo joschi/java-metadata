@@ -1063,6 +1063,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jre-17.0.20.1_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.20.1",
+    "jvm_impl": "hotspot",
+    "md5": "60704a2f28a5445e451b040feff68c71",
+    "md5_file": "sapmachine-jre-17.0.20.1_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "35665458c610b736bb07fd647e5b456a48f034e0",
+    "sha1_file": "sapmachine-jre-17.0.20.1_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "219dfe39a9c32816bf652a0b8f51fcf0f8c2c776fe595fb3b9a557f8fc51a3ae",
+    "sha256_file": "sapmachine-jre-17.0.20.1_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "6e029c6743b3450787be593e8d9c76b06f9c291a99a42499235c73ea8cd3f433f10b31c9c2660d714249b3a8dcfe1b50a0f8995e4cdfa73cc0b81503fed9cb05",
+    "sha512_file": "sapmachine-jre-17.0.20.1_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 47660351,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.20.1/sapmachine-jre-17.0.20.1_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.20.1"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jre-17.0.20_linux-ppc64le_bin.tar.gz",
     "image_type": "jre",
     "java_version": "17.0.20",
@@ -1663,6 +1688,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jre-21.0.12.1_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.12.1",
+    "jvm_impl": "hotspot",
+    "md5": "c5dea35b539d4af08045baad9acc7200",
+    "md5_file": "sapmachine-jre-21.0.12.1_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "5d4ce0025fbd9cc7e9a9a87549740ae7f1c08f83",
+    "sha1_file": "sapmachine-jre-21.0.12.1_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "3bb8b17ea5a54874cd8b3d95a6711fbbf3b1a861bb207e7509d5912327b3c88f",
+    "sha256_file": "sapmachine-jre-21.0.12.1_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "1332c562b0d91dc788a08c653d2f7614938337e11fdf16713dbbbbb3e704c65abc8635a016c9df221d8f741d1ce6fbe98bdaa31df78ff17b55ad454a816c21b8",
+    "sha512_file": "sapmachine-jre-21.0.12.1_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 53714729,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12.1/sapmachine-jre-21.0.12.1_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12.1"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jre-21.0.12_linux-ppc64le_bin.tar.gz",
     "image_type": "jre",
     "java_version": "21.0.12",
@@ -2231,6 +2281,31 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.3/sapmachine-jre-25.0.3_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "25.0.3"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-25.0.4.1_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1",
+    "jvm_impl": "hotspot",
+    "md5": "a3953ec7e43965ae80fa6bb324a70bb2",
+    "md5_file": "sapmachine-jre-25.0.4.1_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "63a86be0f52c7fe16dab64d1492cac178c4dcd12",
+    "sha1_file": "sapmachine-jre-25.0.4.1_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "b99e5a197bb825850bbad9153f6fa23bed2af477f4206f2522bfd6cb1aa4790e",
+    "sha256_file": "sapmachine-jre-25.0.4.1_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "f22353f719fe0eafd5cc2e0bbd4adbb3f64af94a0fe20c4191631d688ac36b7698b79dff63c08c65a9dc3d583ad4ee5c1173e69a122cca0028eebf07c96f4476",
+    "sha512_file": "sapmachine-jre-25.0.4.1_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 50097825,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.4.1/sapmachine-jre-25.0.4.1_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.4.1"
   },
   {
     "architecture": "ppc64",

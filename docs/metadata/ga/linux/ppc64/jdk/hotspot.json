@@ -1017,6 +1017,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-17.0.20.1_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1",
+    "jvm_impl": "hotspot",
+    "md5": "acd22946d559db4e4b96ae8d3c2be9d7",
+    "md5_file": "sapmachine-jdk-17.0.20.1_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "23f4c82bd58168aed51a4b599f30ab5f91e66541",
+    "sha1_file": "sapmachine-jdk-17.0.20.1_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "a37a9038b0549494cb206842705c1d80fa4dc1366c389ca5976be80a63352438",
+    "sha256_file": "sapmachine-jdk-17.0.20.1_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "8346455f5b3ca3c16fcad719fa029c14741710ee23750aac530d12e7b19f96c91fdc3c383d541158efee43528f41b827336d01374978388ee25fa2160983502c",
+    "sha512_file": "sapmachine-jdk-17.0.20.1_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 194308265,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.20.1/sapmachine-jdk-17.0.20.1_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.20.1"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jdk-17.0.20_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
     "java_version": "17.0.20",
@@ -1617,6 +1642,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-21.0.12.1_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1",
+    "jvm_impl": "hotspot",
+    "md5": "1bc22380ce4489b2cfd6a9d27563ecdd",
+    "md5_file": "sapmachine-jdk-21.0.12.1_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "8f72213ad4939887a47bcf2f22a14f1049446fa4",
+    "sha1_file": "sapmachine-jdk-21.0.12.1_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "a11056509b6492b73c3442c7f2e04c839d2a84296d46781fd77202238aa95885",
+    "sha256_file": "sapmachine-jdk-21.0.12.1_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "c5fa9169f49d3420dccf8ad94dedb33e146315578d7644677e1a23fb61ee19179b6102213781b9f1111e73ad3517ecc4163cd73418ebec63eb1cb4d842f32708",
+    "sha512_file": "sapmachine-jdk-21.0.12.1_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 209886212,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12.1/sapmachine-jdk-21.0.12.1_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12.1"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jdk-21.0.12_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
     "java_version": "21.0.12",
@@ -2192,6 +2242,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-25.0.4.1_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1",
+    "jvm_impl": "hotspot",
+    "md5": "ea731e5a0a937dbf364902ed3865c47d",
+    "md5_file": "sapmachine-jdk-25.0.4.1_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "2a583a83d038f7140f9f6a8f267cad5692a1f6cc",
+    "sha1_file": "sapmachine-jdk-25.0.4.1_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "2c48dfc15a8b05cf21f9976b16c04a4604ed19086645de0be3a6685dc59a3058",
+    "sha256_file": "sapmachine-jdk-25.0.4.1_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "23f4e9080cf4b851b5bf2162eea222ddc45821505cbd6953281575451b8736fc68e0e66440a4ff217e5db78115126e9f5935815a8c46c82286036c4e3f56e3b6",
+    "sha512_file": "sapmachine-jdk-25.0.4.1_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 213149553,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.4.1/sapmachine-jdk-25.0.4.1_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.4.1"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jdk-25.0.4_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
     "java_version": "25.0.4",
@@ -2260,6 +2335,31 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26.0.1/sapmachine-jdk-26.0.1_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "26.0.1"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-26.0.2.1_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.2.1",
+    "jvm_impl": "hotspot",
+    "md5": "a767cb75dbd1115f01e914cbd4fb5ba5",
+    "md5_file": "sapmachine-jdk-26.0.2.1_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "22d2dffd798f771d151b67afde4f8c56f4bc5746",
+    "sha1_file": "sapmachine-jdk-26.0.2.1_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "05e39b257661a36ed27a5bde676a8c756299876505ed8ca839bde82657fd89ae",
+    "sha256_file": "sapmachine-jdk-26.0.2.1_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "da4e8baa50117a99817988c39fc0fd62f2d9b4628bc8cb11c96b3a700ce2786faff9f9edb2937caae5e0fedb98dd2e03e4e8d6ce0e428366fed8ea158f542c0a",
+    "sha512_file": "sapmachine-jdk-26.0.2.1_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 130370028,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26.0.2.1/sapmachine-jdk-26.0.2.1_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.2.1"
   },
   {
     "architecture": "ppc64",
@@ -2471,5 +2571,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu8.94.0.17-ca-hl-jdk8.0.492-linux_ppc64.tar.gz",
     "vendor": "zulu",
     "version": "8.94.0.17"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "zulu8.96.0.21-ca-hl-jdk8.0.502-linux_ppc64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.502",
+    "jvm_impl": "hotspot",
+    "md5": "f1e773f8d6fce78717437b6e74ffaf20",
+    "md5_file": "zulu8.96.0.21-ca-hl-jdk8.0.502-linux_ppc64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "16a439748d9e0e98ebe47a6d6cc50763b2080100",
+    "sha1_file": "zulu8.96.0.21-ca-hl-jdk8.0.502-linux_ppc64.tar.gz.sha1",
+    "sha256": "84d614869271b8922d3cae2edf2fd609350f9a631c5776dad945ee7d5e27d72c",
+    "sha256_file": "zulu8.96.0.21-ca-hl-jdk8.0.502-linux_ppc64.tar.gz.sha256",
+    "sha512": "a06c23597ba564cebc9e0f02d0be8bfed89ce7040db3b654b4f77d22557e95bf0358ee87118808bb991e5915a702c29505700ca97e8b487be4101c5e114c2b48",
+    "sha512_file": "zulu8.96.0.21-ca-hl-jdk8.0.502-linux_ppc64.tar.gz.sha512",
+    "size": 115800442,
+    "url": "https://static.azul.com/zulu/bin/zulu8.96.0.21-ca-hl-jdk8.0.502-linux_ppc64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.96.0.21"
   }
 ]
