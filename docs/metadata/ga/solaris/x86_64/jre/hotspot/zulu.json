@@ -550,5 +550,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu11.90.19-ca-jre11.0.32-solaris_x64.zip",
     "vendor": "zulu",
     "version": "11.90.19"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "zulu11.90.205-ca-jre11.0.32.1-solaris_x64.zip",
+    "image_type": "jre",
+    "java_version": "11.0.32.1",
+    "jvm_impl": "hotspot",
+    "md5": "939229bbeba92d8540c10dcb63782036",
+    "md5_file": "zulu11.90.205-ca-jre11.0.32.1-solaris_x64.zip.md5",
+    "os": "solaris",
+    "release_type": "ga",
+    "sha1": "3248b5baa61a95b119bc2b0194de3f4e7e7de6b4",
+    "sha1_file": "zulu11.90.205-ca-jre11.0.32.1-solaris_x64.zip.sha1",
+    "sha256": "3a3fae5977071788ed60b5367ab5712237337b5b099915580d8fd00681b9e5e5",
+    "sha256_file": "zulu11.90.205-ca-jre11.0.32.1-solaris_x64.zip.sha256",
+    "sha512": "66dc5df0335d0b690d8736a9d852dadc0b16c91f1f1716aaa6f57d31aa091b9867300b75f4ebfce835ad8b0f34fd2a40c39801f166253ddf1918a3dcabdc19b5",
+    "sha512_file": "zulu11.90.205-ca-jre11.0.32.1-solaris_x64.zip.sha512",
+    "size": 60406249,
+    "url": "https://static.azul.com/zulu/bin/zulu11.90.205-ca-jre11.0.32.1-solaris_x64.zip",
+    "vendor": "zulu",
+    "version": "11.90.205"
   }
 ]
