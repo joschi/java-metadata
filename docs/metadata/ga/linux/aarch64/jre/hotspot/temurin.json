@@ -1343,6 +1343,31 @@
       "musl"
     ],
     "file_type": "tar.gz",
+    "filename": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.12.1_1.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.12.1+1-LTS",
+    "jvm_impl": "hotspot",
+    "md5": "32c9939a726aceb3428999a0bb333e25",
+    "md5_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.12.1_1.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "1955bab1e96ad1c3aee4f61975f0287d9d28be71",
+    "sha1_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.12.1_1.tar.gz.sha1",
+    "sha256": "98e15ae359e1f87160ee4c0abb43336513e41712d439fd4a805a5474af32b2c7",
+    "sha256_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.12.1_1.tar.gz.sha256",
+    "sha512": "4acb9950e3e1f740e9130d047a5ad84fdcb1b1680e18ff752fc7627567dcc022d30f55408c5eead5a1b5b54520b937733904d0a2177d8216399257c994d5a536",
+    "sha512_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.12.1_1.tar.gz.sha512",
+    "size": 51189819,
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.12.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.12+101.0.LTS"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.12_8.tar.gz",
     "image_type": "jre",
     "java_version": "21.0.12+8-LTS",
