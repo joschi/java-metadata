@@ -251,5 +251,28 @@
     "url": "https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/8.0.8.70/linux/ppc64le/ibm-java-sdk-8.0-8.70-linux-ppc64le.tgz",
     "vendor": "ibm",
     "version": "8.0.8.70"
+  },
+  {
+    "architecture": "ppc64le",
+    "features": [],
+    "file_type": "tgz",
+    "filename": "ibm-java-sdk-8.0-8.71-linux-ppc64le.tgz",
+    "image_type": "jdk",
+    "java_version": "8.0.8.71",
+    "jvm_impl": "openj9",
+    "md5": "345487c7f09da4e9be3303971c1356c3",
+    "md5_file": "ibm-java-sdk-8.0-8.71-linux-ppc64le.tgz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "a518de080977bcbca68f6a60bb54a828d5520f90",
+    "sha1_file": "ibm-java-sdk-8.0-8.71-linux-ppc64le.tgz.sha1",
+    "sha256": "946f8e56cc033e8b964da34c5554fa6b50b66a0a220699b5dfb436f780c192eb",
+    "sha256_file": "ibm-java-sdk-8.0-8.71-linux-ppc64le.tgz.sha256",
+    "sha512": "59621f719c315fc251c26a4238762c90c151c86c56ffe0059d2c5d5a4636dc28fd763e2d9b2dc6ecf0675795039693d4dd02e84e96340cda6589c53dc0e77e60",
+    "sha512_file": "ibm-java-sdk-8.0-8.71-linux-ppc64le.tgz.sha512",
+    "size": 173885816,
+    "url": "https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/8.0.8.71/linux/ppc64le/ibm-java-sdk-8.0-8.71-linux-ppc64le.tgz",
+    "vendor": "ibm",
+    "version": "8.0.8.71"
   }
 ]

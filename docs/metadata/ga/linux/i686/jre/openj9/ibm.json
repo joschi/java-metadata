@@ -251,5 +251,28 @@
     "url": "https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/8.0.8.70/linux/i386/ibm-java-jre-8.0-8.70-linux-i386.tgz",
     "vendor": "ibm",
     "version": "8.0.8.70"
+  },
+  {
+    "architecture": "i686",
+    "features": [],
+    "file_type": "tgz",
+    "filename": "ibm-java-jre-8.0-8.71-linux-i386.tgz",
+    "image_type": "jre",
+    "java_version": "8.0.8.71",
+    "jvm_impl": "openj9",
+    "md5": "916399fe229b30ab059a09c3b2e803fb",
+    "md5_file": "ibm-java-jre-8.0-8.71-linux-i386.tgz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "5e112c4fe3ef0a4bfda1f380ea391e2df8829473",
+    "sha1_file": "ibm-java-jre-8.0-8.71-linux-i386.tgz.sha1",
+    "sha256": "cf1cd302f156d80f0c358e0fa0f679808a536a6ef3fc587024de143f046570c6",
+    "sha256_file": "ibm-java-jre-8.0-8.71-linux-i386.tgz.sha256",
+    "sha512": "b7ca1b752e1a68192a2bca6a3445f1f1acfbc5e7609b6f5d6dc303c64f01821ce6c6b892813a71e877851f3ef0704a08128b7592ab4239ee6698f17d8ee3389c",
+    "sha512_file": "ibm-java-jre-8.0-8.71-linux-i386.tgz.sha512",
+    "size": 118994953,
+    "url": "https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/8.0.8.71/linux/i386/ibm-java-jre-8.0-8.71-linux-i386.tgz",
+    "vendor": "ibm",
+    "version": "8.0.8.71"
   }
 ]
