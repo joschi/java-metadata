@@ -138084,6 +138084,31 @@
   {
     "architecture": "x86_64",
     "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "filename": "zulu17.68.203-ca-crac-jdk17.0.20.1-win_x64.zip",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1",
+    "jvm_impl": "hotspot",
+    "md5": "7d601ecbe0a987710f19952f92c708dd",
+    "md5_file": "zulu17.68.203-ca-crac-jdk17.0.20.1-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "97071a2a3729554990498bbb38384771f248d729",
+    "sha1_file": "zulu17.68.203-ca-crac-jdk17.0.20.1-win_x64.zip.sha1",
+    "sha256": "99f4a11a067f58a5b7db03df9b19f308b29fb8666fc3a3acf16ba691a2d6f1da",
+    "sha256_file": "zulu17.68.203-ca-crac-jdk17.0.20.1-win_x64.zip.sha256",
+    "sha512": "6353474f23d161adf4f14edffa261ae32005a80c7c10edd17cbec2820efb934d364216324e67096414334b6d7f108bff329adaa886b156946dbacf603b7a453f",
+    "sha512_file": "zulu17.68.203-ca-crac-jdk17.0.20.1-win_x64.zip.sha512",
+    "size": 196413661,
+    "url": "https://static.azul.com/zulu/bin/zulu17.68.203-ca-crac-jdk17.0.20.1-win_x64.zip",
+    "vendor": "zulu",
+    "version": "17.68.203"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
       "javafx"
     ],
     "file_type": "msi",
@@ -142477,6 +142502,31 @@
   {
     "architecture": "x86_64",
     "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "filename": "zulu21.52.203-ca-crac-jdk21.0.12.1-win_x64.zip",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1",
+    "jvm_impl": "hotspot",
+    "md5": "4355ea7de15b3d32588cd9c5903a1d7b",
+    "md5_file": "zulu21.52.203-ca-crac-jdk21.0.12.1-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "feef9394eff9ad92fc134592059bb161b7509da4",
+    "sha1_file": "zulu21.52.203-ca-crac-jdk21.0.12.1-win_x64.zip.sha1",
+    "sha256": "59e55d506747d90911d45aeefefbbb7b2d119d17917fbadf5566018fbac46f64",
+    "sha256_file": "zulu21.52.203-ca-crac-jdk21.0.12.1-win_x64.zip.sha256",
+    "sha512": "6b89eca3594f945eb721a8d7b8b3ff21d04a274d230bafc7ed68022bb50f37cea2a5e250c4b90b6eda5adf4f4f3ce2e6c5f247a28e3778a65bf6bf0d4117cd91",
+    "sha512_file": "zulu21.52.203-ca-crac-jdk21.0.12.1-win_x64.zip.sha512",
+    "size": 211191433,
+    "url": "https://static.azul.com/zulu/bin/zulu21.52.203-ca-crac-jdk21.0.12.1-win_x64.zip",
+    "vendor": "zulu",
+    "version": "21.52.203"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
       "javafx"
     ],
     "file_type": "msi",
@@ -145534,6 +145584,31 @@
   {
     "architecture": "x86_64",
     "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "filename": "zulu25.36.205-ca-crac-jdk25.0.4.1-win_x64.zip",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1",
+    "jvm_impl": "hotspot",
+    "md5": "211c3ca6bb86f7663036b815fb0f52a6",
+    "md5_file": "zulu25.36.205-ca-crac-jdk25.0.4.1-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "72d8932d92c6381b776406e8bd569d30340922d2",
+    "sha1_file": "zulu25.36.205-ca-crac-jdk25.0.4.1-win_x64.zip.sha1",
+    "sha256": "b3e8151b4b8370568bd9194c6665c02aaf035438c860ca8af1bee4d201534e70",
+    "sha256_file": "zulu25.36.205-ca-crac-jdk25.0.4.1-win_x64.zip.sha256",
+    "sha512": "0ee630d23ed108c6ce786b43d5996367c74100f70799c8c28c46903a60dd5698454126424e6f3f6be48bf0acee8768fb00c7ce2157fc7f90987ab10d02f794b4",
+    "sha512_file": "zulu25.36.205-ca-crac-jdk25.0.4.1-win_x64.zip.sha512",
+    "size": 230532959,
+    "url": "https://static.azul.com/zulu/bin/zulu25.36.205-ca-crac-jdk25.0.4.1-win_x64.zip",
+    "vendor": "zulu",
+    "version": "25.36.205"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
       "javafx"
     ],
     "file_type": "msi",
@@ -146229,6 +146304,31 @@
     "url": "https://static.azul.com/zulu/bin/zulu26.32.15-ca-crac-jdk26.0.2-win_x64.zip",
     "vendor": "zulu",
     "version": "26.32.15"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "filename": "zulu26.32.203-ca-crac-jdk26.0.2.1-win_x64.zip",
+    "image_type": "jdk",
+    "java_version": "26.0.2.1",
+    "jvm_impl": "hotspot",
+    "md5": "37550d95cd7165a7e55b52d1a7919369",
+    "md5_file": "zulu26.32.203-ca-crac-jdk26.0.2.1-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "acf552e44f04de9c466b534ec453fc855c107858",
+    "sha1_file": "zulu26.32.203-ca-crac-jdk26.0.2.1-win_x64.zip.sha1",
+    "sha256": "9ec1c0372f748d5a99649d3607cd9485501e2b47d9d4677fcd81e74d73187b1f",
+    "sha256_file": "zulu26.32.203-ca-crac-jdk26.0.2.1-win_x64.zip.sha256",
+    "sha512": "a21450a4d4c3da3f5658d89ac22f900e4575d7f13bbe2eee3c13ebf35d4987136a88d38b32033f4833ec4f1fffeee8f70f6f3fd26ea2e0649bf16c8e270b4ff1",
+    "sha512_file": "zulu26.32.203-ca-crac-jdk26.0.2.1-win_x64.zip.sha512",
+    "size": 235585569,
+    "url": "https://static.azul.com/zulu/bin/zulu26.32.203-ca-crac-jdk26.0.2.1-win_x64.zip",
+    "vendor": "zulu",
+    "version": "26.32.203"
   },
   {
     "architecture": "x86_64",
