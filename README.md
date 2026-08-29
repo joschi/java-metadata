@@ -17,6 +17,7 @@ Supported OpenJDK distributions:
 * [IBM Semeru](https://developer.ibm.com/languages/java/semeru-runtimes/)
 * [Java SE Reference Implementations](https://jdk.java.net/)
 * [Liberica](https://bell-sw.com/)
+* [Liberica Native Image Kit](https://bell-sw.com/liberica-native-image-kit/)
 * [Mandrel](https://github.com/graalvm/mandrel)
 * [Microsoft OpenJDK](https://www.microsoft.com/openjdk)
 * [OpenJDK](https://jdk.java.net/)
