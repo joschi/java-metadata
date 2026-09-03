@@ -43501,6 +43501,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-25.0.5-ea.4_linux-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5-ea.4",
+    "jvm_impl": "hotspot",
+    "md5": "006f8d2301d9ecdc9e64ade31b7bc78d",
+    "md5_file": "sapmachine-jdk-25.0.5-ea.4_linux-x64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "7006f6e2badafcbe3b5540e48a2e02a0d6c2e4df",
+    "sha1_file": "sapmachine-jdk-25.0.5-ea.4_linux-x64_bin.tar.gz.sha1",
+    "sha256": "06a1ead5d28e718b239f5d688f2b197e0a2dc7f5c472c180509627534d0661a7",
+    "sha256_file": "sapmachine-jdk-25.0.5-ea.4_linux-x64_bin.tar.gz.sha256",
+    "sha512": "4b5a2f399fa70dcef2ba427c07e917b12fc9e50ad4dcc449a81483b27c1e682713e72cd97e52d9496db8686ffbb4e4b91deab3c94450089cad11e15c2ef6973e",
+    "sha512_file": "sapmachine-jdk-25.0.5-ea.4_linux-x64_bin.tar.gz.sha512",
+    "size": 130016561,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.5+4/sapmachine-jdk-25.0.5-ea.4_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.5-ea.4"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "musl"
     ],
