@@ -36,6 +36,7 @@ components:
         - "jetbrains"
         - "kona"
         - "liberica"
+        - "liberica-nik"
         - "mandrel"
         - "microsoft"
         - "openjdk"
