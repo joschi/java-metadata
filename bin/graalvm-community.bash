@@ -21,6 +21,29 @@ CHECKSUM_DIR="${2}/${VENDOR}"
 ensure_directory "${METADATA_DIR}"
 ensure_directory "${CHECKSUM_DIR}"
 
+# Parse an asset file name and echo "JAVA_VERSION|OS|ARCH|EXT".
+# Exits non-zero when the name does not match, so the caller can skip the asset
+# instead of silently producing metadata with empty fields.
+#
+# Handles both naming schemes seen so far:
+#   graalvm-community-jdk-17.0.7_linux-x64_bin.tar.gz        -> 17.0.7
+#   graalvm-community-jdk-21.0.2_macos-aarch64_bin.tar.gz    -> 21.0.2
+#   graalvm-community-jdk-25i3-25.0.4.1_windows-x64_bin.zip  -> 25.0.4.1
+#
+# The middle part between "jdk-" and "_<os>-<arch>" is treated as an opaque
+# blob; the Java version is the trailing dotted-numeric run inside it. That way
+# extra stream labels (25i3, and whatever comes next) do not break parsing, and
+# version numbers with any number of components are accepted.
+function parse_asset_name {
+	perl -e '
+		my $name = $ARGV[0];
+		exit 1 unless $name =~ /^graalvm-community-jdk-(.+)_(linux|macos|windows)-(aarch64|x64)_bin\.(zip|tar\.gz)$/;
+		my ($blob, $os, $arch, $ext) = ($1, $2, $3, $4);
+		exit 1 unless $blob =~ /(\d+(?:\.\d+)*)$/;
+		print join("|", $1, $os, $arch, $ext);
+	' "${1}"
+}
+
 function download {
 	local tag_name="${1}"
 	local asset_name="${2}"
@@ -33,52 +56,68 @@ function download {
 	if [[ -f "${metadata_file}" ]]
 	then
 		echo "Skipping ${filename}"
-	else
-		# Starting from graalvm 23 : graalvm-community-jdk-17.0.7_macos-aarch64_bin.tar.gz
-		#                            graalvm-community-jdk-17.0.7_linux-x64_bin.tar.gz
-		# shellcheck disable=SC2016
-		local regex='s/^graalvm-community-jdk-([0-9]{1,2}\.[0-9]{1}\.[0-9]{1,3})_(linux|macos|windows)-(aarch64|x64)_bin\.(zip|tar\.gz)$/JAVA_VERSION="$1" OS="$2" ARCH="$3" EXT="$4"/g'
-
-		local JAVA_VERSION=""
-		local OS=""
-		local ARCH=""
-		local EXT=""
-
-		# Parse meta-data from file name
-		eval "$(echo "${asset_name}" | perl -pe "${regex}")"
-
-		download_file "${url}" "${archive}" || return 1
-
-		local json
-		json="$(metadata_json \
-			"${VENDOR}" \
-			"${filename}" \
-			'ga' \
-			"${JAVA_VERSION}" \
-			"${JAVA_VERSION}" \
-			'graalvm' \
-			"$(normalize_os "${OS}")" \
-			"$(normalize_arch "${ARCH}")" \
-			"${EXT}" \
-			'jdk' \
-			'' \
-			"${url}" \
-			"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
-			"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}")" \
-			"$(hash_file 'sha256' "${archive}" "${CHECKSUM_DIR}")" \
-			"$(hash_file 'sha512' "${archive}" "${CHECKSUM_DIR}")" \
-			"$(file_size "${archive}")" \
-			"${filename}"
-		)"
-
-		echo "${json}" > "${metadata_file}"
-		rm -f "${archive}"
+		return 0
 	fi
+
+	# Parse meta-data from file name
+	local parsed
+	if ! parsed="$(parse_asset_name "${asset_name}")"
+	then
+		echo "Cannot parse asset name ${asset_name}"
+		return 1
+	fi
+
+	local JAVA_VERSION OS ARCH EXT
+	IFS='|' read -r JAVA_VERSION OS ARCH EXT <<< "${parsed}"
+
+	if [[ -z "${JAVA_VERSION}" || -z "${OS}" || -z "${ARCH}" || -z "${EXT}" ]]
+	then
+		echo "Incomplete meta-data parsed from ${asset_name}"
+		return 1
+	fi
+
+	download_file "${url}" "${archive}" || return 1
+
+	local json
+	json="$(metadata_json \
+		"${VENDOR}" \
+		"${filename}" \
+		'ga' \
+		"${JAVA_VERSION}" \
+		"${JAVA_VERSION}" \
+		'graalvm' \
+		"$(normalize_os "${OS}")" \
+		"$(normalize_arch "${ARCH}")" \
+		"${EXT}" \
+		'jdk' \
+		'' \
+		"${url}" \
+		"$(hash_file 'md5' "${archive}" "${CHECKSUM_DIR}")" \
+		"$(hash_file 'sha1' "${archive}" "${CHECKSUM_DIR}")" \
+		"$(hash_file 'sha256' "${archive}" "${CHECKSUM_DIR}")" \
+		"$(hash_file 'sha512' "${archive}" "${CHECKSUM_DIR}")" \
+		"$(file_size "${archive}")" \
+		"${filename}"
+	)"
+
+	echo "${json}" > "${metadata_file}"
+	rm -f "${archive}"
 }
 
 download_github_releases 'graalvm' 'graalvm-ce-builds' "${TEMP_DIR}/releases-graalvm-community.json"
 
-versions=$(jq -r '.[].tag_name' "${TEMP_DIR}/releases-graalvm-community.json" | sort -V | grep "^jdk")
+# Release tags changed prefix: older releases use "jdk-21.0.2", newer ones use
+# "graal-25.3.4.1". The real guard is the asset-name filter below, which only
+# accepts assets starting with "graalvm-community" - so this grep only needs to
+# be loose enough not to drop valid releases.
+versions=$(jq -r '.[].tag_name' "${TEMP_DIR}/releases-graalvm-community.json" | sort -V | grep -E '^(jdk|graal)-' || true)
+
+if [[ -z "${versions}" ]]
+then
+	echo "No matching release tags found - has the tag naming changed again?"
+	exit 1
+fi
+
 for version in ${versions}
 do
 	assets=$(jq -r  ".[] | select(.tag_name == \"${version}\") | .assets[].name | select(startswith(\"graalvm-community\")) | select(endswith(\"tar.gz\") or endswith(\"zip\"))" "${TEMP_DIR}/releases-graalvm-community.json")
