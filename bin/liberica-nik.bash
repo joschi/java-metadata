@@ -63,7 +63,7 @@ function normalize_features {
 
 # Fetch releases
 RELEASES_FILE="${TEMP_DIR}/releases.json"
-curl -s "${API_URL}" > "${RELEASES_FILE}"
+download_file "${API_URL}" "${RELEASES_FILE}"
 
 # Iterate over releases
 # We filter for nik component
