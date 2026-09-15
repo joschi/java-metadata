@@ -2528,5 +2528,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26/sapmachine-jdk-26_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "26"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-27_linux-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "27",
+    "jvm_impl": "hotspot",
+    "md5": "b8bab6f203e0572ec06c7e20f4c0db73",
+    "md5_file": "sapmachine-jdk-27_linux-aarch64_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "708552293f1f60597d814e31bc8c6a729ad168b0",
+    "sha1_file": "sapmachine-jdk-27_linux-aarch64_bin.tar.gz.sha1",
+    "sha256": "cee720ad293ade5c13d2a8f286e7c2f4a58b09c3623b6c5c44757b22c7f3f58b",
+    "sha256_file": "sapmachine-jdk-27_linux-aarch64_bin.tar.gz.sha256",
+    "sha512": "3d7006e81d5a7dc8000b294f2385a7695fde09ec128c47eef9452bd49222a37b479b08bfe6c57c679b93b5ae8afe84e7cb89a2f4f3c366655126de22e1c55164",
+    "sha512_file": "sapmachine-jdk-27_linux-aarch64_bin.tar.gz.sha512",
+    "size": 129897374,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27/sapmachine-jdk-27_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27"
   }
 ]

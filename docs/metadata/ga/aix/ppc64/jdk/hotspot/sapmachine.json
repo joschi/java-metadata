@@ -757,5 +757,28 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26/sapmachine-jdk-26_aix-ppc64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "26"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-27_aix-ppc64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "27",
+    "jvm_impl": "hotspot",
+    "md5": "9c24bb752d72e36bb89bd576ef7a374b",
+    "md5_file": "sapmachine-jdk-27_aix-ppc64_bin.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "5c9e487e380ef0bfa5967ae03712284f4cdbd798",
+    "sha1_file": "sapmachine-jdk-27_aix-ppc64_bin.tar.gz.sha1",
+    "sha256": "13570ced22367a32fd94f6bc61e7198b4b4e84272f9e4a34e8a4b238916cf031",
+    "sha256_file": "sapmachine-jdk-27_aix-ppc64_bin.tar.gz.sha256",
+    "sha512": "5c3218da65c473a9addb458b435f611aef50f19d91f297dcb7947d46045c029ae5fa0187561743ecb92d02b76e7d0e81d2e60e23ddd091940803f38434f2f2e0",
+    "sha512_file": "sapmachine-jdk-27_aix-ppc64_bin.tar.gz.sha512",
+    "size": 118019234,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27/sapmachine-jdk-27_aix-ppc64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27"
   }
 ]
