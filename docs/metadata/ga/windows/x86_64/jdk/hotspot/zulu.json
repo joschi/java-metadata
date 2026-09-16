@@ -15022,6 +15022,31 @@
   },
   {
     "architecture": "x86_64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "filename": "zulu27.28.101-ca-crac-jdk27.0.0-win_x64.zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "md5": "06a34ed03fb7731c8187590f038979f5",
+    "md5_file": "zulu27.28.101-ca-crac-jdk27.0.0-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "91c774dbb261d1e5857ff65444588f66d21f5d6b",
+    "sha1_file": "zulu27.28.101-ca-crac-jdk27.0.0-win_x64.zip.sha1",
+    "sha256": "79b3c631aa6189f46f995607e69cc8960d6704321082ba491054290e513ef3ee",
+    "sha256_file": "zulu27.28.101-ca-crac-jdk27.0.0-win_x64.zip.sha256",
+    "sha512": "f507893ff7a42cd94fec7603eee8200e33ebe681ddbf8a718788a3c4c44273cdf1511cb9064c601d36fb081a9025f3f90b3602ec5416eaf2467d84ba11eaf113",
+    "sha512_file": "zulu27.28.101-ca-crac-jdk27.0.0-win_x64.zip.sha512",
+    "size": 232370140,
+    "url": "https://static.azul.com/zulu/bin/zulu27.28.101-ca-crac-jdk27.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "27.28.101"
+  },
+  {
+    "architecture": "x86_64",
     "features": [],
     "file_type": "msi",
     "filename": "zulu27.28.101-ca-jdk27.0.0-win_x64.msi",

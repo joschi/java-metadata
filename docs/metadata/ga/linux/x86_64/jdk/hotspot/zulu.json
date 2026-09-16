@@ -16576,6 +16576,57 @@
   {
     "architecture": "x86_64",
     "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu27.28.101-ca-crac-jdk27.0.0-linux_musl_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "md5": "8864b79ea0057007c0af45f12e8a932a",
+    "md5_file": "zulu27.28.101-ca-crac-jdk27.0.0-linux_musl_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "18bd998fb895a23ec3aa05d491e7b6df8801a54f",
+    "sha1_file": "zulu27.28.101-ca-crac-jdk27.0.0-linux_musl_x64.tar.gz.sha1",
+    "sha256": "533dcbeecef6851dacbedd519dad800562e9abef8bacedf9ad1f33603abafea8",
+    "sha256_file": "zulu27.28.101-ca-crac-jdk27.0.0-linux_musl_x64.tar.gz.sha256",
+    "sha512": "e783bc61e73538e72c5bcb104a9ee4eb7b5e93c7acd58852a754d9103c69129c4c5be73ea8f79b55b9e3f329cd105eda92fde03dc26482af961496793146bc41",
+    "sha512_file": "zulu27.28.101-ca-crac-jdk27.0.0-linux_musl_x64.tar.gz.sha512",
+    "size": 243947552,
+    "url": "https://static.azul.com/zulu/bin/zulu27.28.101-ca-crac-jdk27.0.0-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu27.28.101-ca-crac-jdk27.0.0-linux_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "md5": "6f10964a1f2b80f71d8a41943ce9e851",
+    "md5_file": "zulu27.28.101-ca-crac-jdk27.0.0-linux_x64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "ce3d0b9dcb17e4c1cb4e80e748f4eaa89390f726",
+    "sha1_file": "zulu27.28.101-ca-crac-jdk27.0.0-linux_x64.tar.gz.sha1",
+    "sha256": "65f9dee7d4a700fa013c336e4a969f94ffc8e5970485ef3ee0ee43149a03569d",
+    "sha256_file": "zulu27.28.101-ca-crac-jdk27.0.0-linux_x64.tar.gz.sha256",
+    "sha512": "1be652792613a451fc1ca885a433feae06ab61927baecf6f8b40d0df648c24b9cb4d97cf9745049899dc672e25a11b69fe57d4fdd2feed2cbdbdc83e91c0b52c",
+    "sha512_file": "zulu27.28.101-ca-crac-jdk27.0.0-linux_x64.tar.gz.sha512",
+    "size": 240047883,
+    "url": "https://static.azul.com/zulu/bin/zulu27.28.101-ca-crac-jdk27.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [
       "musl"
     ],
     "file_type": "tar.gz",
