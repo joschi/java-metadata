@@ -2919,6 +2919,31 @@
   },
   {
     "architecture": "aarch64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK27U-jre_aarch64_alpine-linux_hotspot_27_35.tar.gz",
+    "image_type": "jre",
+    "java_version": "27+35",
+    "jvm_impl": "hotspot",
+    "md5": "0495f7ea5082b5087d5a367bb758504a",
+    "md5_file": "OpenJDK27U-jre_aarch64_alpine-linux_hotspot_27_35.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "438984c295e6b9e124c5173df360ace09ebd637a",
+    "sha1_file": "OpenJDK27U-jre_aarch64_alpine-linux_hotspot_27_35.tar.gz.sha1",
+    "sha256": "65177a444f1a8201ef6e557c6f24c1dded80ae2e4dc33987fb31173f6c06cd74",
+    "sha256_file": "OpenJDK27U-jre_aarch64_alpine-linux_hotspot_27_35.tar.gz.sha256",
+    "sha512": "3de2cc6323f2e5fbf6df40d84e3bfdd9f90ba70917edab31b231e3c8642a80c4669dad95bb6db49f953f434d3e34dbd39bb8bb8d040e5329d502cb60d04d62e6",
+    "sha512_file": "OpenJDK27U-jre_aarch64_alpine-linux_hotspot_27_35.tar.gz.sha512",
+    "size": 60306778,
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jre_aarch64_alpine-linux_hotspot_27_35.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.0+35"
+  },
+  {
+    "architecture": "aarch64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "OpenJDK8U-jre_aarch64_linux_hotspot_8u302b08.tar.gz",
