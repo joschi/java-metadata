@@ -60267,6 +60267,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK27U-jre_x64_linux_hotspot_27_35.tar.gz",
+    "image_type": "jre",
+    "java_version": "27+35",
+    "jvm_impl": "hotspot",
+    "md5": "8ee0cde8617ea0c5e1ef8b3c7214d72b",
+    "md5_file": "OpenJDK27U-jre_x64_linux_hotspot_27_35.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "41df42178fa88ab105ada9e0ce22cb7d28bc7036",
+    "sha1_file": "OpenJDK27U-jre_x64_linux_hotspot_27_35.tar.gz.sha1",
+    "sha256": "2cb1b81ab49f516e5aeb28ee8acf3c73d64c77ca432ac959c6511a335342d8e9",
+    "sha256_file": "OpenJDK27U-jre_x64_linux_hotspot_27_35.tar.gz.sha256",
+    "sha512": "f96a458bad8510195cfd2c7bd30dc9a728e32305c929f2b47bf74b9cc18abd12fee93758ac6bb0386064c9a85568b56edc2a66a8c22235b43f090aa345c4c8ff",
+    "sha512_file": "OpenJDK27U-jre_x64_linux_hotspot_27_35.tar.gz.sha512",
+    "size": 62130166,
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jre_x64_linux_hotspot_27_35.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.0+35"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "musl"
     ],
