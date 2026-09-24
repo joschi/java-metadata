@@ -50,7 +50,7 @@ function download {
 		if [[ "${filename}" =~ ^Alibaba_Dragonwell_(Standard|Extended) ]]
 		then
 			# shellcheck disable=SC2016
-			regex='s/^Alibaba_Dragonwell_(?:Standard|Extended)[–_]([0-9\+.]{1,}[^_]*)_(aarch64|x64)(?:_alpine)?[-_](Linux|linux|Windows|windows)\.(.*)$/VERSION="$1" JAVA_VERSION="$1" ARCH="$2" OS="$3" EXT="$4"/g'
+			regex='s/^Alibaba_Dragonwell_(Standard|Extended)[–_]([0-9\+.]{1,}[^_]*)_(aarch64|x64)(?:_alpine)?[-_](Linux|linux|Windows|windows)\.(.*)$/EDITION="$1" VERSION="$2" JAVA_VERSION="$2" ARCH="$3" OS="$4" EXT="$5"/g'
 		elif [[ "${filename}" = Alibaba_Dragonwell* ]];
 		then
 			# shellcheck disable=SC2016
@@ -60,6 +60,7 @@ function download {
 			regex='s/^OpenJDK(?:[0-9\+].{1,})_(x64|aarch64)_(linux|windows)_dragonwell_dragonwell-([0-9.]+)(?:_jdk)?[-_]([0-9._]+)-?(ga|.*)\.(tar\.gz|zip)$/ARCH="$1" OS="$2" VERSION="$3" JAVA_VERSION="$4" RELEASE_TYPE="$5" EXT="$6"/g'
 		fi
 
+    local EDITION=""
 		local VERSION=""
 		local JAVA_VERSION=""
 		local RELEASE_TYPE=""
@@ -98,6 +99,11 @@ function download {
 		then
 			FEATURES='musl'
 		fi
+
+    if [[ "${EDITION}" = "Extended" ]]
+    then
+      FEATURES+="${FEATURES:+ }cloud"
+    fi
 
 		local json
 		json="$(metadata_json \
