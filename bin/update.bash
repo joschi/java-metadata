@@ -50,6 +50,7 @@ vendors=(
 	"$(cmd 'zulu')"
 	"$(cmd 'sapmachine')"
 	"$(cmd 'liberica')"
+	"$(cmd 'liberica-nik')"
 	"$(cmd 'dragonwell8')"
 	"$(cmd 'dragonwell11')"
 	"$(cmd 'dragonwell17')"

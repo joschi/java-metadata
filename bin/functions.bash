@@ -116,7 +116,7 @@ function metadata_json {
 
 function normalize_os {
 	case "${1}" in
-	'linux'|'Linux'|'alpine-linux') echo 'linux'
+	'linux'|'Linux'|'alpine-linux'|'linux-musl') echo 'linux'
 		;;
 	'mac'|'macos'|'macosx'|'osx'|'darwin'|'macOS') echo 'macosx'
 		;;
