@@ -1784,6 +1784,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-21.0.13_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13",
+    "jvm_impl": "hotspot",
+    "md5": "4199ec034a2737305580fab661394cbd",
+    "md5_file": "sapmachine-jdk-21.0.13_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "aa7098794dd843a3c1d04a5cd62e8b00846c9930",
+    "sha1_file": "sapmachine-jdk-21.0.13_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "91dc27f9fec0404b329516440b14a9ec6b5918b83f2587505382293ec9b8da8c",
+    "sha256_file": "sapmachine-jdk-21.0.13_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "4bd054008281b76c066519d2757c4bfd37141dbeeaf2c32de8547cb989c768826d736e795a00616c93026e98a16ac3976918dee92e495099ba6359f401535a28",
+    "sha512_file": "sapmachine-jdk-21.0.13_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 210217594,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.13/sapmachine-jdk-21.0.13_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.13"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jdk-21.0.1_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
     "java_version": "21.0.1",
@@ -2384,6 +2409,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-25.0.5_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5",
+    "jvm_impl": "hotspot",
+    "md5": "291abc0e178dac87e5131cb78bea1b3c",
+    "md5_file": "sapmachine-jdk-25.0.5_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "91dd0f28dc8b5296e81bc4d1671a0831e80c5008",
+    "sha1_file": "sapmachine-jdk-25.0.5_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "2cde30a10df843fc6877da2e0667e1efa75dcfdad377a52670156f1b8c816a08",
+    "sha256_file": "sapmachine-jdk-25.0.5_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "d049a7af045977ecf98e358b9fa633d95a4042ec07fcfc8ec855a5e4e0b1cd74d89ffe1300135392da3efe2b2b6809dc16440f797287e88c6f2c5bd40361e91f",
+    "sha512_file": "sapmachine-jdk-25.0.5_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 126675849,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.5/sapmachine-jdk-25.0.5_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.5"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jdk-25_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
     "java_version": "25",
@@ -2502,6 +2552,31 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26/sapmachine-jdk-26_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "26"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-27.0.1_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1",
+    "jvm_impl": "hotspot",
+    "md5": "0b58f220d4b23c441c347d07cd69cc28",
+    "md5_file": "sapmachine-jdk-27.0.1_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "8374d766942668754d9880934b00ed580691a2b4",
+    "sha1_file": "sapmachine-jdk-27.0.1_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "77144630de4a026252d52127676491156631a288b6c3cff8f34f7479731cf7e9",
+    "sha256_file": "sapmachine-jdk-27.0.1_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "c32b0c4b727845b51fdb4f4054b8d8446b4afae072005753701973bcc063348974e80a6891909cf5fc60fe3d7f86987c1595a27671f5e24487ae674185ce1541",
+    "sha512_file": "sapmachine-jdk-27.0.1_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 128945287,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27.0.1/sapmachine-jdk-27.0.1_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.1"
   },
   {
     "architecture": "ppc64",
@@ -4221,6 +4296,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jre-21.0.13_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.13",
+    "jvm_impl": "hotspot",
+    "md5": "e09ba65d45184cd4551222196d59d3f7",
+    "md5_file": "sapmachine-jre-21.0.13_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "f760971ae894c7fc8e78a61eeffbc01a3850a178",
+    "sha1_file": "sapmachine-jre-21.0.13_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "b8313d728647e4fbdf112dfd9979cf99ccf730c2be3a778dcd49d63e17361ab8",
+    "sha256_file": "sapmachine-jre-21.0.13_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "11c9003a7e73ae1d240ed946fab106aba13ca6a6fcd8b51c053acf341a976e1a2982a06c62f81b420ce8db2b281f1dd641a953f54fa38dedf48a1bab090405a8",
+    "sha512_file": "sapmachine-jre-21.0.13_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 53807760,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.13/sapmachine-jre-21.0.13_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.13"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jre-21.0.1_linux-ppc64le_bin.tar.gz",
     "image_type": "jre",
     "java_version": "21.0.1",
@@ -4821,6 +4921,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jre-25.0.5_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5",
+    "jvm_impl": "hotspot",
+    "md5": "938a451fc1795a81dc31d9a28e707683",
+    "md5_file": "sapmachine-jre-25.0.5_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "5567ae406541450705e41aa330555eb27514c52b",
+    "sha1_file": "sapmachine-jre-25.0.5_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "6e1c2db2f4b394446576c92df1446299560f5a1c05cd3eead86af09f00f70569",
+    "sha256_file": "sapmachine-jre-25.0.5_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "6dd9b6ca68b286812c788027764f1f73b1f726e7871b9253900c38fe652a4e9473c0d502283417efcc98e8fb21d57a59f12ae32e59061e8feee4e5a29f549dfa",
+    "sha512_file": "sapmachine-jre-25.0.5_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 49350406,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.5/sapmachine-jre-25.0.5_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.5"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jre-25_linux-ppc64le_bin.tar.gz",
     "image_type": "jre",
     "java_version": "25",
@@ -4939,6 +5064,31 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26/sapmachine-jre-26_linux-ppc64le_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "26"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-27.0.1_linux-ppc64le_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1",
+    "jvm_impl": "hotspot",
+    "md5": "133a84307867a483011879194405e3a9",
+    "md5_file": "sapmachine-jre-27.0.1_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "15446e139b39cffc43a3183ee4a7bde83d08017b",
+    "sha1_file": "sapmachine-jre-27.0.1_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "a5261a7a6932518b7749258d33a9d1ac51ed188530aac78ac534f4c5dad1385d",
+    "sha256_file": "sapmachine-jre-27.0.1_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "1806ce4843a95538803d691e7115a4c28e92f76091a28af65ff3605d802c982c4ee8c9baea2e56660ddc2c076f17f1293ef1693acca185e6face954d93989895",
+    "sha512_file": "sapmachine-jre-27.0.1_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 50247062,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27.0.1/sapmachine-jre-27.0.1_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.1"
   },
   {
     "architecture": "ppc64",
