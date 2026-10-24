@@ -6626,5 +6626,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu28.0.45-beta-jdk28.0.0-beta.18-linux_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "28.0.45"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "zulu28.0.47-beta-jdk28.0.0-beta.19-linux_aarch64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "28.0.0-beta.19",
+    "jvm_impl": "hotspot",
+    "md5": "7baa3e79325fc32a3e83d6cd139d7406",
+    "md5_file": "zulu28.0.47-beta-jdk28.0.0-beta.19-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "b33b00ae34c45c683a89fcef7385ccb475624bdb",
+    "sha1_file": "zulu28.0.47-beta-jdk28.0.0-beta.19-linux_aarch64.tar.gz.sha1",
+    "sha256": "2cee25f632dc02c2490a91caa6060d07fdbb78daa378e5272c9804fd13cc1044",
+    "sha256_file": "zulu28.0.47-beta-jdk28.0.0-beta.19-linux_aarch64.tar.gz.sha256",
+    "sha512": "8f139a147b0e38c44814c1986e24eaa4bec04bff1a8188b64f347fb96d1e8e82a34cc90b83b4d43ee523d57c63f6ecc7ffa1d5215c1377bb71d457ffcd4d2d43",
+    "sha512_file": "zulu28.0.47-beta-jdk28.0.0-beta.19-linux_aarch64.tar.gz.sha512",
+    "size": 249289419,
+    "url": "https://static.azul.com/zulu/bin/zulu28.0.47-beta-jdk28.0.0-beta.19-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "28.0.47"
   }
 ]
