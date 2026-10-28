@@ -2296,6 +2296,31 @@
       "certified"
     ],
     "file_type": "tar.gz",
+    "filename": "ibm-semeru-certified-jre_ppc64_aix_21.0.13.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "",
+    "jvm_impl": "openj9",
+    "md5": "484d2ec716d204d2836004d13a5e5687",
+    "md5_file": "ibm-semeru-certified-jre_ppc64_aix_21.0.13.0.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "03df18e23b7d0a50db3969d2517163ee0dd32f43",
+    "sha1_file": "ibm-semeru-certified-jre_ppc64_aix_21.0.13.0.tar.gz.sha1",
+    "sha256": "df76eff617dcdb312011ef5a84fca1b3cffe9f749b9bf7885b777c2000c208ad",
+    "sha256_file": "ibm-semeru-certified-jre_ppc64_aix_21.0.13.0.tar.gz.sha256",
+    "sha512": "d18e5617a2b33603a41856a0588c4933df786e760c4b664bdef8061e63f000c970550fe0bad05254263a48dd55691f58fa498e11055347c1544b45314caca251",
+    "sha512_file": "ibm-semeru-certified-jre_ppc64_aix_21.0.13.0.tar.gz.sha512",
+    "size": 70406433,
+    "url": "https://github.com/ibmruntimes/semeru21-certified-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-certified-jre_ppc64_aix_21.0.13.0.tar.gz",
+    "vendor": "semeru",
+    "version": "_openj9-"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "certified"
+    ],
+    "file_type": "tar.gz",
     "filename": "ibm-semeru-certified-jre_ppc64_aix_21.0.2.0.tar.gz",
     "image_type": "jre",
     "java_version": "21.0.2+13",
