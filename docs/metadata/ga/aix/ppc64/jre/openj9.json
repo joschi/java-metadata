@@ -1921,6 +1921,31 @@
       "certified"
     ],
     "file_type": "tar.gz",
+    "filename": "ibm-semeru-certified-jre_ppc64_aix_17.0.21.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "",
+    "jvm_impl": "openj9",
+    "md5": "f5439653139e3131b7faf208895bcc33",
+    "md5_file": "ibm-semeru-certified-jre_ppc64_aix_17.0.21.0.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "3d6fefd5d13c0c9b1f9dc89887eb63358e7a197c",
+    "sha1_file": "ibm-semeru-certified-jre_ppc64_aix_17.0.21.0.tar.gz.sha1",
+    "sha256": "41bd382e237b22fda3fba48070ae8b3bf1c6ae6c9ce4f198e5ee63a11c6099c0",
+    "sha256_file": "ibm-semeru-certified-jre_ppc64_aix_17.0.21.0.tar.gz.sha256",
+    "sha512": "4c289a5268f196a8721daaad2941c41979c5bcdf7888c928abdb5f21bce633291cfe7fee46885dc9b6af32e3fb37e6be3720b8ee6eee6afa99ecb667a774eceb",
+    "sha512_file": "ibm-semeru-certified-jre_ppc64_aix_17.0.21.0.tar.gz.sha512",
+    "size": 66438898,
+    "url": "https://github.com/ibmruntimes/semeru17-certified-binaries/releases/download/jdk-17.0.21.0/ibm-semeru-certified-jre_ppc64_aix_17.0.21.0.tar.gz",
+    "vendor": "semeru",
+    "version": "_openj9-"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "certified"
+    ],
+    "file_type": "tar.gz",
     "filename": "ibm-semeru-certified-jre_ppc64_aix_17.0.3.0.tar.gz",
     "image_type": "jre",
     "java_version": "17.0.3+7",
@@ -2737,6 +2762,31 @@
     "sha512_file": "ibm-semeru-certified-jre_ppc64_aix_25.0.4.15.tar.gz.sha512",
     "size": 63252111,
     "url": "https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25.0.4.15/ibm-semeru-certified-jre_ppc64_aix_25.0.4.15.tar.gz",
+    "vendor": "semeru",
+    "version": "_openj9-"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "certified"
+    ],
+    "file_type": "tar.gz",
+    "filename": "ibm-semeru-certified-jre_ppc64_aix_25.0.5.0.tar.gz",
+    "image_type": "jre",
+    "java_version": "",
+    "jvm_impl": "openj9",
+    "md5": "f71c336884bf58822987f667ee80c2b9",
+    "md5_file": "ibm-semeru-certified-jre_ppc64_aix_25.0.5.0.tar.gz.md5",
+    "os": "aix",
+    "release_type": "ga",
+    "sha1": "9edac70c5ad1b69d6b3c21ddad3cb5ba86cf3319",
+    "sha1_file": "ibm-semeru-certified-jre_ppc64_aix_25.0.5.0.tar.gz.sha1",
+    "sha256": "052ac458bc294f5a447549844b4ff54529c598e5a0f6b49a364c99a3570f03b1",
+    "sha256_file": "ibm-semeru-certified-jre_ppc64_aix_25.0.5.0.tar.gz.sha256",
+    "sha512": "e0aacdbd031568fe575c49138d1824a8573d9e691708917f0781311d932369775ac2c47353fe94fa4c85abd33945aa543f504de668ca159c6ea2389d98832a87",
+    "sha512_file": "ibm-semeru-certified-jre_ppc64_aix_25.0.5.0.tar.gz.sha512",
+    "size": 63380416,
+    "url": "https://github.com/ibmruntimes/semeru25-certified-binaries/releases/download/jdk-25.0.5.0/ibm-semeru-certified-jre_ppc64_aix_25.0.5.0.tar.gz",
     "vendor": "semeru",
     "version": "_openj9-"
   },
