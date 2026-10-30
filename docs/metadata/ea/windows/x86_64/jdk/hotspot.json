@@ -46365,5 +46365,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu28.0.47-beta-jdk28.0.0-beta.19-win_x64.zip",
     "vendor": "zulu",
     "version": "28.0.47"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "zip",
+    "filename": "zulu28.0.49-beta-jdk28.0.0-beta.20-win_x64.zip",
+    "image_type": "jdk",
+    "java_version": "28.0.0-beta.20",
+    "jvm_impl": "hotspot",
+    "md5": "7785de36cd6faceb424627d0a4df8dcf",
+    "md5_file": "zulu28.0.49-beta-jdk28.0.0-beta.20-win_x64.zip.md5",
+    "os": "windows",
+    "release_type": "ea",
+    "sha1": "6c119f37114c804f2d2fc78f2c7df5253a831c53",
+    "sha1_file": "zulu28.0.49-beta-jdk28.0.0-beta.20-win_x64.zip.sha1",
+    "sha256": "89201707876fcb875e155eaf1f9aad1fd689da57ec80e9e18f3cc0a1e21968a4",
+    "sha256_file": "zulu28.0.49-beta-jdk28.0.0-beta.20-win_x64.zip.sha256",
+    "sha512": "508b064e8d82095f57f21ebb2fc6ccad3dfa569f79d740bb57d73050a48d58d1d2d6ddad15b449d980deb83fd32a202df7f934c3af45ed59b05c0fefebcddc00",
+    "sha512_file": "zulu28.0.49-beta-jdk28.0.0-beta.20-win_x64.zip.sha512",
+    "size": 247998570,
+    "url": "https://static.azul.com/zulu/bin/zulu28.0.49-beta-jdk28.0.0-beta.20-win_x64.zip",
+    "vendor": "zulu",
+    "version": "28.0.49"
   }
 ]
