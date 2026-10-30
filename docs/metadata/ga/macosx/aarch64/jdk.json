@@ -33815,6 +33815,31 @@
       "notarized"
     ],
     "file_type": "tar.gz",
+    "filename": "TencentKona-21.0.13.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.3.b1",
+    "jvm_impl": "hotspot",
+    "md5": "de44011928d0b51fe5a266b1c24312cb",
+    "md5_file": "TencentKona-21.0.13.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "ddf5d8ddda6cfc029848e6f11659c88e8b931303",
+    "sha1_file": "TencentKona-21.0.13.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz.sha1",
+    "sha256": "2e64f0dbe2c1ed4b71bd083a6623f4b12a55ea6de210a627b5a6eb43ad1d8df1",
+    "sha256_file": "TencentKona-21.0.13.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz.sha256",
+    "sha512": "b2e033e26c9798e184d4d2a010fb1d9c52675409fe7a5b27df6d4fab52e699af496987301a7b3afc41cde5d2c71fe06f38e4f01933318f65cffd88e9633f5bee",
+    "sha512_file": "TencentKona-21.0.13.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz.sha512",
+    "size": 205657888,
+    "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.13.0.3/TencentKona-21.0.13.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "21.0.13.0.3.b1"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
     "filename": "TencentKona-21.0.2.b1_jdk_macosx-aarch64_notarized.tar.gz",
     "image_type": "jdk",
     "java_version": "21.0.2.b1",
@@ -34108,6 +34133,31 @@
     "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.4/TencentKona-25.0.4.b1_jdk_macosx-aarch64_notarized.tar.gz",
     "vendor": "kona",
     "version": "25.0.4.b1"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "filename": "TencentKona-25.0.5.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.3.b1",
+    "jvm_impl": "hotspot",
+    "md5": "14b3b9cb8509b9f19bee85580d151610",
+    "md5_file": "TencentKona-25.0.5.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "1e5570be2a0f6ca62b289fa50279f0fe8fddbeba",
+    "sha1_file": "TencentKona-25.0.5.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz.sha1",
+    "sha256": "92b6a31c92246bba7fe6c93e6dbef98fcf32341fb855bc618f3f9f122d7b4d03",
+    "sha256_file": "TencentKona-25.0.5.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz.sha256",
+    "sha512": "63a058b44bdfe92b5e83e6d85f2be2692e7fc89a121fc057cf78f7acf0da81dab7d01108163e3daaff94d76a17b99fb9afefd193e534a781713c724aab70aaf4",
+    "sha512_file": "TencentKona-25.0.5.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz.sha512",
+    "size": 224068756,
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.5.0.3/TencentKona-25.0.5.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.5.0.3.b1"
   },
   {
     "architecture": "aarch64",
@@ -81058,6 +81108,29 @@
     "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-25.0.4.1-Final/mandrel-java25-macos-aarch64-25.0.4.1-Final.tar.gz",
     "vendor": "mandrel",
     "version": "25.0.4.1-Final+java25"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "mandrel-java25-macos-aarch64-25.0.5.0-Final.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25",
+    "jvm_impl": "graalvm",
+    "md5": "3b2339b4b0d855c07b4b3bb01cb7f4f2",
+    "md5_file": "mandrel-java25-macos-aarch64-25.0.5.0-Final.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "8be0cb243a56f9fa777b8f2243cb8e9b3ddc75c6",
+    "sha1_file": "mandrel-java25-macos-aarch64-25.0.5.0-Final.tar.gz.sha1",
+    "sha256": "bef93bae36710af5ac938149c0cbe93cad984d9185c73c763b240b7b2064dfc9",
+    "sha256_file": "mandrel-java25-macos-aarch64-25.0.5.0-Final.tar.gz.sha256",
+    "sha512": "1104fcd710b44b8d493f37214296bf85d3a43153dad0436562e8266cc8ce45c6e6f1aa48f541a7c5288d426b9f8754ddcca6936d675246d8a2faa4c206ac128a",
+    "sha512_file": "mandrel-java25-macos-aarch64-25.0.5.0-Final.tar.gz.sha512",
+    "size": 188569498,
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-25.0.5.0-Final/mandrel-java25-macos-aarch64-25.0.5.0-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "25.0.5.0-Final+java25"
   },
   {
     "architecture": "aarch64",
