@@ -20658,6 +20658,31 @@
       "le"
     ],
     "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-28-ea.22_linux-ppc64le_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "28-ea.22",
+    "jvm_impl": "hotspot",
+    "md5": "63f9b7e8d429b2bb0f15dc88b7768234",
+    "md5_file": "sapmachine-jdk-28-ea.22_linux-ppc64le_bin.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ea",
+    "sha1": "de3400607a10997e048fb56f6e1fffb2350d4d58",
+    "sha1_file": "sapmachine-jdk-28-ea.22_linux-ppc64le_bin.tar.gz.sha1",
+    "sha256": "8e898cbf4307764ba8378ea5855c97e44e8b88631dfc70261fa472b75ab57f5a",
+    "sha256_file": "sapmachine-jdk-28-ea.22_linux-ppc64le_bin.tar.gz.sha256",
+    "sha512": "63afd86ddb44b6885bd53ef2083d29dec2fa62f687194963990ae8ab08bfb0b06b732d3debe9b882c229a420800835f45c55eea3e172fe92f728dbe6c3298dd5",
+    "sha512_file": "sapmachine-jdk-28-ea.22_linux-ppc64le_bin.tar.gz.sha512",
+    "size": 127876933,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28+22/sapmachine-jdk-28-ea.22_linux-ppc64le_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "28-ea.22"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [
+      "le"
+    ],
+    "file_type": "tar.gz",
     "filename": "sapmachine-jdk-28-ea.2_linux-ppc64le_bin.tar.gz",
     "image_type": "jdk",
     "java_version": "28-ea.2",
