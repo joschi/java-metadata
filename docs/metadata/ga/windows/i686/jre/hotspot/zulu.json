@@ -6388,6 +6388,31 @@
   },
   {
     "architecture": "i686",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu17.70.113-ca-fx-jre17.0.21.0.3-win_i686.zip",
+    "image_type": "jre",
+    "java_version": "17.0.21.0.3",
+    "jvm_impl": "hotspot",
+    "md5": "afb80ec4e01b72ff7c8f2499ae42b284",
+    "md5_file": "zulu17.70.113-ca-fx-jre17.0.21.0.3-win_i686.zip.md5",
+    "os": "windows",
+    "release_type": "ga",
+    "sha1": "deec044366fc76953c7e2d8205c22c4e231a723c",
+    "sha1_file": "zulu17.70.113-ca-fx-jre17.0.21.0.3-win_i686.zip.sha1",
+    "sha256": "18a4c5768cdc3ca0e874c5e84873fa3d65bf1f9f6924c973e169c0f290147754",
+    "sha256_file": "zulu17.70.113-ca-fx-jre17.0.21.0.3-win_i686.zip.sha256",
+    "sha512": "be21a7ebbc48d71a161ee790f9bf6915f733d27e3ad46c28ecb3b734022fc728db01ab5fb85139b993aea613579c592c92378f72d65743727003dab134376c77",
+    "sha512_file": "zulu17.70.113-ca-fx-jre17.0.21.0.3-win_i686.zip.sha512",
+    "size": 83005864,
+    "url": "https://static.azul.com/zulu/bin/zulu17.70.113-ca-fx-jre17.0.21.0.3-win_i686.zip",
+    "vendor": "zulu",
+    "version": "17.70.113"
+  },
+  {
+    "architecture": "i686",
     "features": [],
     "file_type": "msi",
     "filename": "zulu17.70.113-ca-jre17.0.21.0.3-win_i686.msi",
