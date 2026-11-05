@@ -1176,6 +1176,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK11U-jdk_x64_linux_hotspot_11.0.33_10.tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33+10",
+    "jvm_impl": "hotspot",
+    "md5": "f7c2e97631d8a6fe28d11a8d35a6b610",
+    "md5_file": "OpenJDK11U-jdk_x64_linux_hotspot_11.0.33_10.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "7997f998ef2778935c9e31ac800ffd4035b0c8bc",
+    "sha1_file": "OpenJDK11U-jdk_x64_linux_hotspot_11.0.33_10.tar.gz.sha1",
+    "sha256": "c4b8eaf56c93b95b689ffc08d155df1bcdbbffb666f8f71d21d97aedaea6f0ec",
+    "sha256_file": "OpenJDK11U-jdk_x64_linux_hotspot_11.0.33_10.tar.gz.sha256",
+    "sha512": "cdc837a320e1b97ef2fa7afa5bcbaee58958130be29f7621a7e330badb1117927be74ac51d34757ec79d0bdd4fcbea627550996f5f7c34009f179680e09fa620",
+    "sha512_file": "OpenJDK11U-jdk_x64_linux_hotspot_11.0.33_10.tar.gz.sha512",
+    "size": 195735669,
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.33_10.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.33+10"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "musl"
     ],
@@ -5754,5 +5777,28 @@
     "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_x64_linux_hotspot_8u504b01.tar.gz",
     "vendor": "temurin",
     "version": "8.0.504+1"
+  },
+  {
+    "architecture": "x86_64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK8U-jdk_x64_linux_hotspot_8u512b09.tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_512-b09",
+    "jvm_impl": "hotspot",
+    "md5": "60cf75637a67bd97401ad80ec6dde0a0",
+    "md5_file": "OpenJDK8U-jdk_x64_linux_hotspot_8u512b09.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "f792692c65f6a2c81cea334615b1b3bddb20661a",
+    "sha1_file": "OpenJDK8U-jdk_x64_linux_hotspot_8u512b09.tar.gz.sha1",
+    "sha256": "fb3bfa869012419b562bb4235d0d83ec4f8c1dda62ae432ba20c6c3a7e43f7e4",
+    "sha256_file": "OpenJDK8U-jdk_x64_linux_hotspot_8u512b09.tar.gz.sha256",
+    "sha512": "dce6bb77b0e79f872d58afd2c9cc670b940965aa1f5c37af65888eb622345faed682faaea9b3ff262004a638b35747bcdf0158a575ad66b3cecf4213b4d61c98",
+    "sha512_file": "OpenJDK8U-jdk_x64_linux_hotspot_8u512b09.tar.gz.sha512",
+    "size": 103570317,
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u512b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.512+9"
   }
 ]
