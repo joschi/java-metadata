@@ -8020,5 +8020,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu8.96.0.21-ca-hl-jdk8.0.502-linux_ppc64.tar.gz",
     "vendor": "zulu",
     "version": "8.96.0.21"
+  },
+  {
+    "architecture": "ppc64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "zulu8.98.0.111-ca-hl-jdk8.0.512-linux_ppc64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.512",
+    "jvm_impl": "hotspot",
+    "md5": "d4807545ad86985bc54308e713ef7c07",
+    "md5_file": "zulu8.98.0.111-ca-hl-jdk8.0.512-linux_ppc64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "009c9c638817d9a61dc7c38f94dba51399851c6f",
+    "sha1_file": "zulu8.98.0.111-ca-hl-jdk8.0.512-linux_ppc64.tar.gz.sha1",
+    "sha256": "815cb22d227d4be803307cc288bc8f5ec079f4385d53377de98bfd93ef80395c",
+    "sha256_file": "zulu8.98.0.111-ca-hl-jdk8.0.512-linux_ppc64.tar.gz.sha256",
+    "sha512": "53f4a648e14fb7cb9da192c9831846986d616ca0eeb078a235184474e94c5c0b8002c1a9570980caa5fbfa452a61e4e2ecd19050a1ace29f829b6bb42f146703",
+    "sha512_file": "zulu8.98.0.111-ca-hl-jdk8.0.512-linux_ppc64.tar.gz.sha512",
+    "size": 116059433,
+    "url": "https://static.azul.com/zulu/bin/zulu8.98.0.111-ca-hl-jdk8.0.512-linux_ppc64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.98.0.111"
   }
 ]

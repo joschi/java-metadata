@@ -918,5 +918,28 @@
     "url": "https://static.azul.com/zulu/bin/zulu8.96.0.21-ca-jdk8.0.502-linux_aarch32hf.tar.gz",
     "vendor": "zulu",
     "version": "8.96.0.21"
+  },
+  {
+    "architecture": "arm32-vfp-hflt",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "zulu8.98.0.111-ca-jdk8.0.512-linux_aarch32hf.tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.512",
+    "jvm_impl": "hotspot",
+    "md5": "c812d2285e9606aa75f2f727313e14cb",
+    "md5_file": "zulu8.98.0.111-ca-jdk8.0.512-linux_aarch32hf.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "63ffaf7d7bdab71e1778532bcf85bd0ba719e7ea",
+    "sha1_file": "zulu8.98.0.111-ca-jdk8.0.512-linux_aarch32hf.tar.gz.sha1",
+    "sha256": "48e59d5ec9947bd5426533945d3efe7e6aa1130ecdb8a78acb7a790c3745efe9",
+    "sha256_file": "zulu8.98.0.111-ca-jdk8.0.512-linux_aarch32hf.tar.gz.sha256",
+    "sha512": "859c8531635f64c19a2b1f3be208a4826cfb7fd670b39f66a4646a79d77226de8fa7efa94a1644e868f0e33d7a9c66e778cba7cd9c50631e09de6fe4cce28220",
+    "sha512_file": "zulu8.98.0.111-ca-jdk8.0.512-linux_aarch32hf.tar.gz.sha512",
+    "size": 114602826,
+    "url": "https://static.azul.com/zulu/bin/zulu8.98.0.111-ca-jdk8.0.512-linux_aarch32hf.tar.gz",
+    "vendor": "zulu",
+    "version": "8.98.0.111"
   }
 ]
