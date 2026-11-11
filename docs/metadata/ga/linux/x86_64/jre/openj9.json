@@ -2339,6 +2339,29 @@
   },
   {
     "architecture": "x86_64",
+    "features": [],
+    "file_type": "tgz",
+    "filename": "ibm-java-jre-8.0-8.75-linux-x86_64.tgz",
+    "image_type": "jre",
+    "java_version": "8.0.8.75",
+    "jvm_impl": "openj9",
+    "md5": "0d0bbf6d3509dc6b9261ccf2e7f2fd41",
+    "md5_file": "ibm-java-jre-8.0-8.75-linux-x86_64.tgz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "d546c3a30029170a5aef7d00d270d860fad794b5",
+    "sha1_file": "ibm-java-jre-8.0-8.75-linux-x86_64.tgz.sha1",
+    "sha256": "fcdaa101b8609c520b49e481f4e370db3e6877dab9e78c8e9319da683f30b226",
+    "sha256_file": "ibm-java-jre-8.0-8.75-linux-x86_64.tgz.sha256",
+    "sha512": "1fddb63a865c3127240865cd5f81874729039a37a1790c054b0b3e02cc2db94d99221876bfac845a7f39479f851f4457a90787e7cd73119d7edff5d43d26cc06",
+    "sha512_file": "ibm-java-jre-8.0-8.75-linux-x86_64.tgz.sha512",
+    "size": 136032580,
+    "url": "https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/8.0.8.75/linux/x86_64/ibm-java-jre-8.0-8.75-linux-x86_64.tgz",
+    "vendor": "ibm",
+    "version": "8.0.8.75"
+  },
+  {
+    "architecture": "x86_64",
     "features": [
       "certified"
     ],
