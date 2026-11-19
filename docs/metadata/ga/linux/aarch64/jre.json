@@ -2463,6 +2463,31 @@
       "musl"
     ],
     "file_type": "tar.gz",
+    "filename": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.13.1+2-LTS",
+    "jvm_impl": "hotspot",
+    "md5": "aa1d48157376af3b91d546fb5293c9d4",
+    "md5_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "b2e7ab1232aac6a0f05efecbee133760c90d986b",
+    "sha1_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz.sha1",
+    "sha256": "0236751150c82f1ef91be8cc32a36091a95e97650285fea848f2bb82311e5da7",
+    "sha256_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz.sha256",
+    "sha512": "36bbd12876d8401e6abb573d561a4835355ea2e1e439ec02f83703935dcecafc6b307dfc2466770e35967438e964525b2b7f102fbe261af1ff9c5857ec12ee33",
+    "sha512_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz.sha512",
+    "size": 51326014,
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13.1%2B2/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "21.0.13+100000002.0.LTS"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13_9.tar.gz",
     "image_type": "jre",
     "java_version": "21.0.13+9-LTS",
@@ -3633,6 +3658,31 @@
     "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.4_7.tar.gz",
     "vendor": "adoptopenjdk",
     "version": "25.0.4+7.0.LTS"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.1+2-LTS",
+    "jvm_impl": "hotspot",
+    "md5": "b760d39d895fbef6c4e29a34aea55cdb",
+    "md5_file": "OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "6f7126386780f56014449e2913abff3900635d60",
+    "sha1_file": "OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz.sha1",
+    "sha256": "2d50e05c4120fb1f35ced1a3cc53aa83040e5732c4e5955461cf2749db69cc2f",
+    "sha256_file": "OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz.sha256",
+    "sha512": "0f6aeda18b3f326929e8f1a3f99be417659f3b9cdb7839bbb4e54a2b372e43b8f0a112f24f07b0129bd267ca331ca6bedf9ca5cf84999ccfb4cc8d5cd269228a",
+    "sha512_file": "OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz.sha512",
+    "size": 59761040,
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5.1%2B2/OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz",
+    "vendor": "adoptopenjdk",
+    "version": "25.0.5+100000002.0.LTS"
   },
   {
     "architecture": "aarch64",
@@ -64407,6 +64457,31 @@
       "musl"
     ],
     "file_type": "tar.gz",
+    "filename": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.13.1+2-LTS",
+    "jvm_impl": "hotspot",
+    "md5": "aa1d48157376af3b91d546fb5293c9d4",
+    "md5_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "b2e7ab1232aac6a0f05efecbee133760c90d986b",
+    "sha1_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz.sha1",
+    "sha256": "0236751150c82f1ef91be8cc32a36091a95e97650285fea848f2bb82311e5da7",
+    "sha256_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz.sha256",
+    "sha512": "36bbd12876d8401e6abb573d561a4835355ea2e1e439ec02f83703935dcecafc6b307dfc2466770e35967438e964525b2b7f102fbe261af1ff9c5857ec12ee33",
+    "sha512_file": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz.sha512",
+    "size": 51326014,
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13.1%2B2/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13.1_2.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.13+100000002.0.LTS"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
     "filename": "OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.13_9.tar.gz",
     "image_type": "jre",
     "java_version": "21.0.13+9-LTS",
@@ -65577,6 +65652,31 @@
     "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.4_7.tar.gz",
     "vendor": "temurin",
     "version": "25.0.4+7.0.LTS"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "filename": "OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.1+2-LTS",
+    "jvm_impl": "hotspot",
+    "md5": "b760d39d895fbef6c4e29a34aea55cdb",
+    "md5_file": "OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "6f7126386780f56014449e2913abff3900635d60",
+    "sha1_file": "OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz.sha1",
+    "sha256": "2d50e05c4120fb1f35ced1a3cc53aa83040e5732c4e5955461cf2749db69cc2f",
+    "sha256_file": "OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz.sha256",
+    "sha512": "0f6aeda18b3f326929e8f1a3f99be417659f3b9cdb7839bbb4e54a2b372e43b8f0a112f24f07b0129bd267ca331ca6bedf9ca5cf84999ccfb4cc8d5cd269228a",
+    "sha512_file": "OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz.sha512",
+    "size": 59761040,
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5.1%2B2/OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5.1_2.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.5+100000002.0.LTS"
   },
   {
     "architecture": "aarch64",
@@ -67965,6 +68065,31 @@
     "url": "https://static.azul.com/zulu/bin/zulu11.92.113-ca-jre11.0.33-linux_musl_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "11.92.113"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu11.92.201-ca-fx-jre11.0.33.1-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33.1",
+    "jvm_impl": "hotspot",
+    "md5": "12f2873ead6b0d9e274537315cc1b610",
+    "md5_file": "zulu11.92.201-ca-fx-jre11.0.33.1-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "45b42c5f94f4ee8a84d6f2e941bb49f90b4447d8",
+    "sha1_file": "zulu11.92.201-ca-fx-jre11.0.33.1-linux_aarch64.tar.gz.sha1",
+    "sha256": "e5b4e08686e9a7c721b6916929dd14c2d75d1cd378bea6ed186327e74b1ed048",
+    "sha256_file": "zulu11.92.201-ca-fx-jre11.0.33.1-linux_aarch64.tar.gz.sha256",
+    "sha512": "d89c9edc9e09b5e44f77a0a70b86685e1d6cf8fa73fb6ee417e24ebf1a4a008a463f190d19ea096e10f297f12e3305de22556052891b18ca94ec4f6b4edd9694",
+    "sha512_file": "zulu11.92.201-ca-fx-jre11.0.33.1-linux_aarch64.tar.gz.sha512",
+    "size": 92349162,
+    "url": "https://static.azul.com/zulu/bin/zulu11.92.201-ca-fx-jre11.0.33.1-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.92.201"
   },
   {
     "architecture": "aarch64",
@@ -70611,6 +70736,31 @@
   },
   {
     "architecture": "aarch64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu17.70.201-ca-fx-jre17.0.21.1-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.21.1",
+    "jvm_impl": "hotspot",
+    "md5": "124ba1afa7229a17e9bf86b237830f34",
+    "md5_file": "zulu17.70.201-ca-fx-jre17.0.21.1-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "ce4d1acf7375a34837f0650b8d82dba050e3ff69",
+    "sha1_file": "zulu17.70.201-ca-fx-jre17.0.21.1-linux_aarch64.tar.gz.sha1",
+    "sha256": "ae892589f128d5a2dcda6eccfd9c1852360df8d5f2d308a01b5e1d49fb5033ae",
+    "sha256_file": "zulu17.70.201-ca-fx-jre17.0.21.1-linux_aarch64.tar.gz.sha256",
+    "sha512": "8c1afe8e5562879225839259b9861aa5bce23d0b96840c6e03282c9587a74d6ed2f31816ea041a6ddc4ef9fd9fc40bfd2d1d0262914fc7ffa37c1d24407774eb",
+    "sha512_file": "zulu17.70.201-ca-fx-jre17.0.21.1-linux_aarch64.tar.gz.sha512",
+    "size": 96122558,
+    "url": "https://static.azul.com/zulu/bin/zulu17.70.201-ca-fx-jre17.0.21.1-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.70.201"
+  },
+  {
+    "architecture": "aarch64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "zulu17.70.201-ca-jre17.0.21.1-linux_aarch64.tar.gz",
@@ -72882,6 +73032,31 @@
   },
   {
     "architecture": "aarch64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu21.54.201-ca-fx-jre21.0.13.1-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.13.1",
+    "jvm_impl": "hotspot",
+    "md5": "80d44362416dd669112c09075e4435c4",
+    "md5_file": "zulu21.54.201-ca-fx-jre21.0.13.1-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "496f99a5a99677806f7e7d3a61fc5a2b936fc200",
+    "sha1_file": "zulu21.54.201-ca-fx-jre21.0.13.1-linux_aarch64.tar.gz.sha1",
+    "sha256": "27f2953e08bb6f0a136788a28ff7f70de6e79c9ba67df54ac051a64d0464b00a",
+    "sha256_file": "zulu21.54.201-ca-fx-jre21.0.13.1-linux_aarch64.tar.gz.sha256",
+    "sha512": "ec89452820d2752c8cc56e3ccead9f5d054007d96e731d1ee47e13787b972465216a48d6ffc58a670f331df8c856ca754397e2b6d17302c8cce117749ad245f4",
+    "sha512_file": "zulu21.54.201-ca-fx-jre21.0.13.1-linux_aarch64.tar.gz.sha512",
+    "size": 101838358,
+    "url": "https://static.azul.com/zulu/bin/zulu21.54.201-ca-fx-jre21.0.13.1-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.54.201"
+  },
+  {
+    "architecture": "aarch64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "zulu21.54.201-ca-jre21.0.13.1-linux_aarch64.tar.gz",
@@ -74898,6 +75073,31 @@
   },
   {
     "architecture": "aarch64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu25.38.201-ca-fx-jre25.0.5.1-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.1",
+    "jvm_impl": "hotspot",
+    "md5": "772847dea16f234dbf26ee412287110f",
+    "md5_file": "zulu25.38.201-ca-fx-jre25.0.5.1-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "e4472ef51cb5261b74f3370b91f551f6ec971b2f",
+    "sha1_file": "zulu25.38.201-ca-fx-jre25.0.5.1-linux_aarch64.tar.gz.sha1",
+    "sha256": "ccdbab2ac4f692a0c51fa460cb9b39b30143f2505eb551dc137d6a21c597fabb",
+    "sha256_file": "zulu25.38.201-ca-fx-jre25.0.5.1-linux_aarch64.tar.gz.sha256",
+    "sha512": "4724b0f4aabe245e24382b50766b42d1deeba4528f47650ea117f8469273d59f9f64307a138a84ff23c0e297dd7c80efbf27053e963b495b19ed01cbeb9469cf",
+    "sha512_file": "zulu25.38.201-ca-fx-jre25.0.5.1-linux_aarch64.tar.gz.sha512",
+    "size": 111153288,
+    "url": "https://static.azul.com/zulu/bin/zulu25.38.201-ca-fx-jre25.0.5.1-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.38.201"
+  },
+  {
+    "architecture": "aarch64",
     "features": [],
     "file_type": "tar.gz",
     "filename": "zulu25.38.201-ca-jre25.0.5.1-linux_aarch64.tar.gz",
@@ -75784,6 +75984,31 @@
     "sha512_file": "zulu27.30.201-ca-crac-jre27.0.1.1-linux_musl_aarch64.tar.gz.sha512",
     "size": 65471602,
     "url": "https://static.azul.com/zulu/bin/zulu27.30.201-ca-crac-jre27.0.1.1-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.30.201"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu27.30.201-ca-fx-jre27.0.1.1-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1.1",
+    "jvm_impl": "hotspot",
+    "md5": "ea4e9d93b7b8845b6dae8ae9b3db6542",
+    "md5_file": "zulu27.30.201-ca-fx-jre27.0.1.1-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "a80b7a427e665da8f1b62383958f3fbfb5ad3a36",
+    "sha1_file": "zulu27.30.201-ca-fx-jre27.0.1.1-linux_aarch64.tar.gz.sha1",
+    "sha256": "81438eb579d0b11b23e05a186a043a4379cda8261457cac8ba3a0f3c32203f18",
+    "sha256_file": "zulu27.30.201-ca-fx-jre27.0.1.1-linux_aarch64.tar.gz.sha256",
+    "sha512": "1c00cb2205332644da24766ad11667e94e53638ab70dce79acb9786b6599bd3be2f7f179a6d0eccfde776d14e4c72df6d5da92ee7ee1d37dcf43a16bb4428d06",
+    "sha512_file": "zulu27.30.201-ca-fx-jre27.0.1.1-linux_aarch64.tar.gz.sha512",
+    "size": 111833390,
+    "url": "https://static.azul.com/zulu/bin/zulu27.30.201-ca-fx-jre27.0.1.1-linux_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "27.30.201"
   },
@@ -77102,6 +77327,31 @@
     "url": "https://static.azul.com/zulu/bin/zulu8.98.0.111-ca-jre8.0.512-linux_musl_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "8.98.0.111"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu8.98.0.201-ca-fx-jre8.0.514-linux_aarch64.tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.514",
+    "jvm_impl": "hotspot",
+    "md5": "090d41fe1e185e40701abccca1b0eb71",
+    "md5_file": "zulu8.98.0.201-ca-fx-jre8.0.514-linux_aarch64.tar.gz.md5",
+    "os": "linux",
+    "release_type": "ga",
+    "sha1": "903f6c1d126a253122fbe39f71b96458d93930c5",
+    "sha1_file": "zulu8.98.0.201-ca-fx-jre8.0.514-linux_aarch64.tar.gz.sha1",
+    "sha256": "0e9a1db6f12133c5ca23101c0b91b2d61996f5d72743ae1fe924b42a7521981e",
+    "sha256_file": "zulu8.98.0.201-ca-fx-jre8.0.514-linux_aarch64.tar.gz.sha256",
+    "sha512": "9d3dd310e2b8885d950c4831a5fcec9c3b3eca7edb6b4290b7b2d2cc17c57e8673a8b3c39f60dbf8b6fec421c4b788c0654924b3b88d0d11b1a8abb0f437c6ce",
+    "sha512_file": "zulu8.98.0.201-ca-fx-jre8.0.514-linux_aarch64.tar.gz.sha512",
+    "size": 105559891,
+    "url": "https://static.azul.com/zulu/bin/zulu8.98.0.201-ca-fx-jre8.0.514-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.98.0.201"
   },
   {
     "architecture": "aarch64",
