@@ -642,5 +642,28 @@
     "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-25.0.5.0-Final/mandrel-java25-macos-aarch64-25.0.5.0-Final.tar.gz",
     "vendor": "mandrel",
     "version": "25.0.5.0-Final+java25"
+  },
+  {
+    "architecture": "aarch64",
+    "features": [],
+    "file_type": "tar.gz",
+    "filename": "mandrel-java25-macos-aarch64-25.0.5.1-Final.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25",
+    "jvm_impl": "graalvm",
+    "md5": "c3c64dbeb7330083adcd2159f0ce2bc7",
+    "md5_file": "mandrel-java25-macos-aarch64-25.0.5.1-Final.tar.gz.md5",
+    "os": "macosx",
+    "release_type": "ga",
+    "sha1": "0618784a0602176ce06716c60cf61787fd381e7c",
+    "sha1_file": "mandrel-java25-macos-aarch64-25.0.5.1-Final.tar.gz.sha1",
+    "sha256": "c6f227e5c08f9726abb6b2e6856e2105139bb3fb002582e70f49e18a67255213",
+    "sha256_file": "mandrel-java25-macos-aarch64-25.0.5.1-Final.tar.gz.sha256",
+    "sha512": "cff779556f45c1e9c8f7d54b1326bce3a921af4bcb100a8629381133c852f1462f5fe9dd3006711cd9c53aa20f6e99ebc9b1eb7442f601f51ffe86374208d831",
+    "sha512_file": "mandrel-java25-macos-aarch64-25.0.5.1-Final.tar.gz.sha512",
+    "size": 188588050,
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-25.0.5.1-Final/mandrel-java25-macos-aarch64-25.0.5.1-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "25.0.5.1-Final+java25"
   }
 ]
